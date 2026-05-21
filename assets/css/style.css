@@ -1350,3 +1350,200 @@ blockquote p {
     animation-duration: 0.001ms !important;
   }
 }
+
+/* Background / origin section */
+
+.background-section {
+  width: min(var(--max), calc(100% - 48px));
+  margin: 8px auto 88px;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
+  gap: clamp(28px, 6vw, 76px);
+  align-items: center;
+  position: relative;
+  padding: 26px 0 34px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  left: 26%;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(12, 143, 176, 0.34), rgba(75, 146, 108, 0.20), transparent);
+}
+
+.background-photo-panel {
+  position: relative;
+  max-width: 390px;
+  justify-self: center;
+}
+
+.background-photo-panel::before {
+  content: "";
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  z-index: -1;
+  border: 1px solid rgba(12, 143, 176, 0.14);
+  border-radius: 32px;
+  background:
+    linear-gradient(rgba(14,62,68,0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,62,68,0.022) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(232, 247, 251, 0.48), rgba(237, 248, 241, 0.36));
+  background-size: 34px 34px, 34px 34px, auto;
+}
+
+.background-photo-panel::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  top: 38px;
+  width: 70px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(12, 143, 176, 0.38), transparent);
+}
+
+.background-photo-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid rgba(14, 62, 68, 0.12);
+  background: #f6fbfb;
+  box-shadow: 0 18px 42px rgba(18, 74, 80, 0.12);
+}
+
+.background-copy {
+  max-width: 690px;
+}
+
+.background-copy h2 {
+  max-width: 670px;
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 4.2vw, 4.2rem);
+  letter-spacing: -0.07em;
+}
+
+.background-copy p {
+  max-width: 650px;
+  color: #36575b;
+  font-size: 1.05rem;
+  line-height: 1.78;
+}
+
+.background-mini-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(14, 62, 68, 0.10);
+}
+
+.background-mini-flow span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  color: #456b70;
+  font-family: var(--mono);
+  font-size: 0.67rem;
+  font-weight: 760;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.background-mini-flow span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  border: 1px solid rgba(12, 143, 176, 0.50);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 0 0 5px rgba(12, 143, 176, 0.055);
+}
+
+.background-mini-flow i {
+  width: 32px;
+  height: 1px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(90deg, rgba(12, 143, 176, 0.28), rgba(75, 146, 108, 0.18));
+}
+
+.background-mini-flow i::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid rgba(12, 143, 176, 0.38);
+  border-right: 1px solid rgba(12, 143, 176, 0.38);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 980px) {
+  .background-section {
+    width: min(100% - 32px, var(--max));
+    grid-template-columns: 1fr;
+    gap: 34px;
+    margin-bottom: 72px;
+  }
+
+  .background-photo-panel {
+    width: min(360px, 100%);
+    justify-self: start;
+  }
+
+  .background-photo-panel::after {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .background-section {
+    width: min(100% - 24px, var(--max));
+    padding-top: 22px;
+    margin-bottom: 64px;
+  }
+
+  .background-photo-panel::before {
+    inset: 14px -12px -14px 14px;
+    border-radius: 26px;
+  }
+
+  .background-photo-panel img {
+    border-radius: 24px;
+  }
+
+  .background-copy h2 {
+    font-size: clamp(2.15rem, 12vw, 3.25rem);
+  }
+
+  .background-mini-flow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .background-mini-flow i {
+    width: 1px;
+    height: 22px;
+    margin-left: 3px;
+    background: linear-gradient(180deg, rgba(12, 143, 176, 0.28), rgba(75, 146, 108, 0.18));
+  }
+
+  .background-mini-flow i::after {
+    left: -4px;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    transform: rotate(135deg);
+  }
+}

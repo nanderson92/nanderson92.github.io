@@ -42,6 +42,7 @@
 
     <nav class="nav-links">
       <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/#background' | relative_url }}">Background</a>
       <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
       <a href="{{ '/research/' | relative_url }}">Research</a>
       <a href="{{ '/resume/' | relative_url }}">Resume</a>
@@ -71,6 +72,7 @@
       <p>© 2026 Nathan Anderson</p>
       <nav>
         <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/#background' | relative_url }}">Background</a>
         <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
         <a href="{{ '/resume/' | relative_url }}">Resume</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
@@ -91,11 +93,15 @@
 
     function setActiveNav() {
       const current = normalizePath(window.location.pathname);
+      const currentHash = window.location.hash;
       navLinks.forEach((link) => {
-        const linkPath = normalizePath(new URL(link.href).pathname);
-        const isActive = current === linkPath;
+        const linkUrl = new URL(link.href);
+        const linkPath = normalizePath(linkUrl.pathname);
+        const linkHash = linkUrl.hash;
+        const isActive = current === linkPath && (linkHash ? currentHash === linkHash : !currentHash);
         link.classList.toggle('is-active', isActive);
         if (isActive) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
       });
     }
 
@@ -108,6 +114,7 @@
     }
 
     setActiveNav();
+    window.addEventListener('hashchange', setActiveNav);
     toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
     closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
     document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
