@@ -2,7 +2,7 @@
 layout: page
 title: Background
 category: Personal Background
-subtitle: Built between worlds, oriented toward systems that scale.
+subtitle: A concise look at the experiences behind my engineering direction.
 ---
 
 <div class="background-grid">
@@ -11,24 +11,20 @@ subtitle: Built between worlds, oriented toward systems that scale.
   </aside>
 
   <div>
-    <h2>Built between worlds, oriented toward systems that scale.</h2>
-
-    <div class="map-line" aria-label="Personal trajectory">
-      <span>INCHEON</span><i></i><span>MINNESOTA</span><i></i><span>ATLANTA</span><i></i><span>FUTURE BUILT ENVIRONMENT</span>
-    </div>
+    <h2>Incheon → Minnesota → Georgia Tech.</h2>
 
     <p>
       I was adopted from Incheon, South Korea and grew up in a small town in Minnesota before studying Chemical & Biomolecular Engineering at Georgia Tech.
     </p>
 
     <p>
-      That background shaped my interest in mobility, belonging, accessible technology, and systems that can scale across different communities. I am drawn to engineering work that turns advanced research into tangible infrastructure, manufacturing capability, cleaner technology, and future-facing products.
+      That background shaped an interest in systems that are not only technically impressive, but scalable, accessible, and real in people’s daily lives. I am drawn to engineering work that turns advanced research into tangible infrastructure, manufacturing capability, cleaner technology, and future-facing products.
     </p>
 
     <div class="callout">
       <p class="system-label small">ENGINEERING IDENTITY</p>
       <p>
-        My background shaped an interest in systems that are not only technically impressive, but scalable, accessible, and real in people’s daily lives.
+        I want to help build technology that feels futuristic without being inaccessible: clean systems, advanced manufacturing, better materials, and engineering processes that can move from lab demonstrations into the built environment.
       </p>
     </div>
 

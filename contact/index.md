@@ -5,43 +5,34 @@ category: Contact
 subtitle: Direct contact for internship, co-op, research, and technical opportunities.
 ---
 
-<div class="contact-panel landing-card">
-  <p class="system-label small">LET'S CONNECT</p>
-  <h2>I’m interested in process engineering, manufacturing, R&D, semiconductors, advanced materials, clean technology, and scale-up opportunities.</h2>
+<div class="contact-panel">
+  <p class="system-label small">CURRENTLY SEEKING</p>
+  <h2>Process engineering, manufacturing engineering, R&D, semiconductor, advanced materials, and clean-technology internship/co-op opportunities.</h2>
   <p>
-    I am looking for technical internship/co-op conversations where chemical engineering fundamentals, experimental thinking, and manufacturing systems meet real deployment constraints.
+    I am interested in technical roles where chemical engineering fundamentals, experimental thinking, and manufacturing systems meet real deployment constraints.
   </p>
 
   <div class="resume-actions">
-    <a class="button primary" href="mailto:{{ site.email }}">Email me</a>
+    <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
     <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
     <a class="button secondary" href="{{ site.github }}">GitHub</a>
-    <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Resume</a>
   </div>
 </div>
 
-## Best-fit conversations
+## Opportunity fit
 
 <div class="matrix">
   <div class="matrix-card">
-    <h3>Process engineering internships/co-ops</h3>
-    <p>Manufacturing, process development, validation, wet processing, and scale-up-oriented work.</p>
+    <h3>Internship / Co-op</h3>
+    <p>Process engineering, manufacturing engineering, validation, R&D, clean technology, and semiconductor-related roles.</p>
   </div>
   <div class="matrix-card">
-    <h3>Advanced manufacturing roles</h3>
-    <p>Printed electronics, advanced materials, process windows, reliability data, and manufacturing systems.</p>
+    <h3>Research</h3>
+    <p>Advanced manufacturing, printed electronics, wet processing, interfacial transport, materials systems, and image analysis.</p>
   </div>
   <div class="matrix-card">
-    <h3>Semiconductor/materials process development</h3>
-    <p>Roles where chemical engineering, surface/process control, and technical data analysis matter.</p>
-  </div>
-  <div class="matrix-card">
-    <h3>Clean technology and scale-up</h3>
-    <p>Opportunities connected to cleaner infrastructure, future-facing built environments, and deployment.</p>
-  </div>
-  <div class="matrix-card">
-    <h3>Research-to-manufacturing translation</h3>
-    <p>Teams turning lab-scale observations into engineering metrics, design rules, and production logic.</p>
+    <h3>Location</h3>
+    <p>Open to opportunities where the work is technically credible, hands-on, and aligned with scalable engineering systems.</p>
   </div>
 </div>
 

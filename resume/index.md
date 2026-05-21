@@ -26,17 +26,6 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
   </div>
 </div>
 
-<div class="resume-preview-card">
-  <div>
-    <p class="system-label small">TARGET FIT</p>
-    <h2>Built for process and manufacturing-facing roles.</h2>
-    <p>Best-fit roles include process engineering, manufacturing engineering, validation, R&D, semiconductor/materials process development, and clean-technology scale-up.</p>
-  </div>
-  <div class="mini-resume-lines" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span>
-  </div>
-</div>
-
 ## Tools and how I use them
 
 <div class="skill-use-grid">
