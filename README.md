@@ -1,14 +1,21 @@
-# Nathan Anderson Portfolio — Modern Clean Technology Theme
+# Nathan Anderson Portfolio
 
-Static GitHub Pages/Jekyll portfolio files.
+GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergraduate focused on process development, advanced manufacturing, research translation, and clean technology.
 
-## Includes
+## Publish
 
-- Light Apple-style clean technology color system
-- Homepage hero using the provided solar waterfront city image
-- Anti-lag CSS: no heavy backdrop blur, no CSS image filters, reduced shadows, simplified fixed overlays
-- Portfolio, research, resume, giving back, contact, and project pages
+1. Copy these files into the root of `nanderson92.github.io`.
+2. Delete any old `/giving-back/` folder if it still exists in your repository.
+3. Replace `assets/files/Nathan_Anderson_Resume.pdf` with the current resume PDF.
+4. Commit and push to `main`.
+5. Wait for GitHub Pages to redeploy, then hard-refresh the browser.
 
-## Deploy
+## Pages
 
-Copy these files into the root of `nanderson92.github.io`, commit, and push to `main`. Replace `assets/files/Nathan_Anderson_Resume.pdf` with the current resume before sending the site professionally.
+- Home
+- Background
+- Portfolio
+- Research
+- Resume
+- Contact
+- Project case study: Micromodular Printed Electronics Deposition

@@ -1,32 +1,47 @@
 ---
-layout: default
+layout: page
 title: Background
-body_class: background-page
+category: Personal Background
+subtitle: A concise look at the experiences behind my engineering direction.
 ---
 
-<section class="background-page-hero" aria-labelledby="background-title">
-  <div class="background-page-photo">
+<div class="background-grid">
+  <aside class="portrait-card">
     <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Portrait of Nathan Anderson">
-  </div>
+  </aside>
 
-  <article class="background-page-copy">
-    <p class="system-label">BACKGROUND // ORIGIN + DIRECTION</p>
-    <h1 id="background-title">Built between worlds, oriented toward systems that scale.</h1>
-    <p class="background-lede">
-      I was adopted from Incheon, South Korea and grew up in a small town in Minnesota. That background shaped how I think about mobility, belonging, and the importance of building technology that feels tangible and accessible—not just impressive on paper.
-    </p>
+  <div>
+    <h2>Incheon → Minnesota → Georgia Tech.</h2>
+
     <p>
-      At Georgia Tech, I am channeling that perspective into chemical engineering, process development, and advanced manufacturing: translating research signals into cleaner, more reproducible systems that can eventually move beyond the lab.
+      I was adopted from Incheon, South Korea and grew up in a small town in Minnesota before studying Chemical & Biomolecular Engineering at Georgia Tech.
     </p>
 
-    <div class="background-mini-flow" aria-label="Background to engineering direction">
-      <span>INCHEON</span>
-      <i aria-hidden="true"></i>
-      <span>MINNESOTA</span>
-      <i aria-hidden="true"></i>
-      <span>GEORGIA TECH</span>
-      <i aria-hidden="true"></i>
-      <span>CLEAN-TECH SYSTEMS</span>
+    <p>
+      That background shaped an interest in systems that are not only technically impressive, but scalable, accessible, and real in people’s daily lives. I am drawn to engineering work that turns advanced research into tangible infrastructure, manufacturing capability, cleaner technology, and future-facing products.
+    </p>
+
+    <div class="callout">
+      <p class="system-label small">ENGINEERING IDENTITY</p>
+      <p>
+        I want to help build technology that feels futuristic without being inaccessible: clean systems, advanced manufacturing, better materials, and engineering processes that can move from lab demonstrations into the built environment.
+      </p>
     </div>
-  </article>
-</section>
+
+    <h2>How this shows up in my work</h2>
+    <div class="matrix">
+      <div class="matrix-card">
+        <h3>Systems thinking</h3>
+        <p>Looking beyond isolated experiments toward constraints, interfaces, process windows, and implementation.</p>
+      </div>
+      <div class="matrix-card">
+        <h3>Accessibility</h3>
+        <p>Interest in technologies that can scale beyond elite labs into practical manufacturing and daily life.</p>
+      </div>
+      <div class="matrix-card">
+        <h3>Translation</h3>
+        <p>Connecting research observations to metrics, design rules, and engineering decisions.</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,69 +1,127 @@
 ---
 layout: page
 title: Micromodular Printed Electronics Deposition
-category: Research Project
+category: Flagship Case Study
 subtitle: Substrate-mediated droplet deposition, device placement, and process-window development for scalable printed electronics.
 ---
 
-## One-Sentence Summary
+## Summary
 
-I study how substrate boundary conditions control droplet deposition, device placement,
-and process reproducibility in micromodular printed electronics.
+I am investigating how substrate boundary conditions control droplet deposition, microscale device placement, and process reproducibility in micromodular printed electronics.
 
-## Engineering Motivation
+<div class="role-block">
+  <p class="system-label small">MY ROLE</p>
+  <p>
+    Designed experiments, captured top/side-view droplet videos, extracted contact-line dynamics, compared substrate boundary conditions, and developed process-window metrics for manufacturable deposition.
+  </p>
+</div>
 
-Printed electronics could enable lower-cost, more distributed, and more flexible manufacturing
-of electronic systems. A major challenge is not only fabricating high-performance devices,
-but assembling them reproducibly into useful circuits.
+## Problem / motivation
 
-This project focuses on the deposition step: how microscale devices suspended in a liquid are
-transported, concentrated, and deposited as the droplet spreads, evaporates, imbibes, and
-interacts with the substrate.
+Printed electronics could enable more distributed and flexible manufacturing of electronic systems. A key challenge is not only fabricating devices, but assembling them reproducibly. When a suspension droplet dries, suspended microdevices can accumulate nonuniformly, often forming edge-heavy deposits that reduce placement fidelity and complicate later interconnect printing.
 
-## Technical Problem
+## System schematic
 
-When a suspension droplet dries, particles or devices can accumulate nonuniformly, often forming
-edge-heavy deposits. For printed electronics, this can reduce placement fidelity and make later
-interconnect printing more difficult.
+<div class="project-schematic" aria-label="Representative schematic of droplet, substrate, and suspended microdevices">
+  <div class="droplet-system">
+    <div class="droplet"></div>
+    <div class="devices"></div>
+    <div class="substrate"></div>
+    <span class="callout-label one">recreated schematic · not raw data</span>
+    <span class="callout-label two">porous substrate boundary condition</span>
+  </div>
+</div>
 
-> What substrate boundary conditions produce repeatable, spatially uniform, and manufacturable
-> deposition of micromodular electronic devices?
+## Technical challenge
 
-## Methods
+The central engineering question is:
 
-- Sessile droplet deposition experiments
-- Optical microscopy
-- Side-view and top-view droplet imaging
-- Contact-line and droplet-radius tracking
-- Substrate comparison
-- Image-based quantification of deposition patterns
-- Process-window framing
+> What substrate boundary conditions produce repeatable, spatially uniform, and manufacturable deposition of micromodular electronic devices?
 
-## Variables of Interest
+The project treats the substrate as an active process boundary condition rather than a passive surface. Wetting, imbibition, evaporation, and contact-line behavior all influence where devices end up after deposition.
+
+## Variables studied
 
 | Variable | Why it matters |
 |---|---|
-| Substrate porosity | Controls liquid drainage and imbibition |
-| Contact angle | Affects spreading and droplet footprint |
-| Pinning behavior | Influences coffee-ring formation |
-| Evaporation rate | Controls concentration and transport timescale |
-| Device density | Affects crowding and placement statistics |
-| Droplet volume | Changes drying time and transport length scale |
+| Substrate porosity | Controls liquid drainage and imbibition. |
+| Contact angle | Affects spreading, droplet footprint, and device transport length scale. |
+| Pinning behavior | Influences edge accumulation and coffee-ring-like deposition. |
+| Evaporation rate | Controls concentration and transport timescale. |
+| Device density | Affects crowding, interactions, and placement statistics. |
+| Droplet volume | Changes drying time, footprint, and process repeatability. |
 
-## Engineering Outputs
+## Methods and tools
 
-The goal is to define measurable process descriptors that connect substrate properties to deposition outcomes.
+<div class="two-col">
+  <div class="matrix-card">
+    <h3>Experimental methods</h3>
+    <p>Sessile droplet deposition, substrate comparison, optical microscopy, top-view videos, side-view videos, and process observation.</p>
+  </div>
+  <div class="matrix-card">
+    <h3>Analysis methods</h3>
+    <p>Contact-line tracking, droplet-radius extraction, deposition-pattern quantification, process-window framing, and statistical comparison.</p>
+  </div>
+</div>
+
+<div class="badge-row">
+  <span class="badge">Keyence</span>
+  <span class="badge">Python</span>
+  <span class="badge">ImageJ/Fiji</span>
+  <span class="badge">JMP</span>
+  <span class="badge">Optical Microscopy</span>
+  <span class="badge">Droplet Tracking</span>
+</div>
+
+## Data / metrics to extract
+
+<div class="metric-grid">
+  <div class="metric-card">
+    <h3>r(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+  <div class="metric-card">
+    <h3>θ(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+  <div class="metric-card">
+    <h3>V(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+</div>
+
+Potential engineering metrics include:
 
 - Areal density uniformity
 - Edge-to-center deposition ratio
 - Droplet radius versus time
 - Contact angle versus time
-- Imbibition/evaporation timescale ratio
+- Droplet volume versus time
+- Imbibition/evaporation flow comparison
 - Placement fidelity metrics
 - Process maps for substrate selection
 
-## Why This Matters
+## Engineering interpretation
 
-This project connects fundamental transport phenomena to manufacturable electronics assembly.
-The broader goal is to move from empirical droplet deposition toward a process-engineered
-framework for scalable printed electronics.
+The goal is to connect observed droplet behavior to process descriptors. Instead of treating deposition quality as purely empirical, the project frames it as a coupled transport/process-window problem involving evaporation, imbibition, pinning, and device crowding.
+
+## Manufacturing relevance
+
+A manufacturable printed-electronics assembly process needs repeatable placement, compatible substrate boundary conditions, and predictable integration with later interconnect printing. This project aims to define measurable descriptors that make deposition conditions easier to compare, tune, and eventually scale.
+
+## Next steps
+
+<div class="matrix">
+  <div class="matrix-card">
+    <h3>Data extraction</h3>
+    <p>Convert top/side-view videos into consistent r(t), θ(t), V(t), and deposition-distribution measurements.</p>
+  </div>
+  <div class="matrix-card">
+    <h3>Process windows</h3>
+    <p>Compare substrates and backing conditions using normalized metrics and repeatability checks.</p>
+  </div>
+  <div class="matrix-card">
+    <h3>Manufacturing logic</h3>
+    <p>Translate metrics into substrate-selection logic and process constraints for scalable assembly.</p>
+  </div>
+</div>
