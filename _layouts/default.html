@@ -50,7 +50,7 @@
     </nav>
 
     <div class="drawer-note">
-      <p>Research, process engineering, advanced manufacturing, and clean-technology systems.</p>
+      <p>Process engineering, advanced manufacturing, research, and clean-technology systems.</p>
     </div>
 
     <div class="social-links" aria-label="Social links">
@@ -83,6 +83,21 @@
     const toggle = document.querySelector('.menu-toggle');
     const drawer = document.querySelector('#site-drawer');
     const closeTargets = document.querySelectorAll('[data-close-drawer]');
+    const navLinks = document.querySelectorAll('.nav-links a, .footer-inner a');
+
+    function normalizePath(path) {
+      return path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/') || '/';
+    }
+
+    function setActiveNav() {
+      const current = normalizePath(window.location.pathname);
+      navLinks.forEach((link) => {
+        const linkPath = normalizePath(new URL(link.href).pathname);
+        const isActive = current === linkPath;
+        link.classList.toggle('is-active', isActive);
+        if (isActive) link.setAttribute('aria-current', 'page');
+      });
+    }
 
     function setDrawer(open) {
       body.classList.toggle('drawer-open', open);
@@ -92,8 +107,10 @@
       else toggle.focus({ preventScroll: true });
     }
 
+    setActiveNav();
     toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
     closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
+    document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false);
     });

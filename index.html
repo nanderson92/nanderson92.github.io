@@ -6,7 +6,7 @@ body_class: home-page
 
 <section class="hero-layout">
   <div class="hero-copy">
-    <p class="eyebrow">Chemical Engineering · Process Engineering · Research</p>
+    <p class="system-label">PORTFOLIO SYSTEM // PROCESS + MANUFACTURING</p>
 
     <h1>Hi, I’m Nathan Anderson.</h1>
 
@@ -15,92 +15,118 @@ body_class: home-page
     </p>
 
     <p class="hero-proof">
-      Currently focused on micromodular printed electronics, substrate-mediated droplet deposition,
-      wet processing, image analysis, reliability testing, and process-window development.
+      Chemical engineering, micromodular printed electronics, wet processing, image analysis,
+      reliability testing, and process-window development.
     </p>
 
+    <div class="hero-flow" aria-hidden="true">
+      <span>INPUT</span>
+      <i></i>
+      <span>PROCESS</span>
+      <i></i>
+      <span>OUTPUT</span>
+      <i></i>
+      <span>VALIDATION</span>
+    </div>
+
     <div class="cta-row">
-      <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View Portfolio</a>
+      <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View Portfolio <span aria-hidden="true">→</span></a>
       <a class="button secondary" href="{{ '/resume/' | relative_url }}">Resume</a>
     </div>
   </div>
 </section>
 
-<section class="mission-band">
-  <div class="mission-band-inner">
-    <article class="mission-card mission-card-horizontal">
-      <div class="orbital-ring"></div>
-      <div>
-        <p class="caption">Engineering on a mission</p>
-        <h2>From research signal to manufacturable process.</h2>
-        <p>
-          My technical direction combines chemical engineering fundamentals, experimental design,
-          interfacial transport, and advanced manufacturing to build cleaner, more futuristic infrastructure.
-        </p>
-      </div>
-    </article>
+<section class="mission-band" aria-label="Engineering mission">
+  <div class="mission-track">
+    <div class="track-kicker" aria-hidden="true">
+      <span class="node"></span>
+      <span class="line"></span>
+      <span class="node node-green"></span>
+      <span class="line"></span>
+      <span class="node node-solar"></span>
+    </div>
+    <p class="caption">SYSTEM / PROCESS ENGINEERING</p>
+    <h2>From research signal to manufacturable process.</h2>
+    <p>
+      A clean-technology portfolio system built around process logic, experimental evidence,
+      manufacturing translation, and future-facing engineering infrastructure.
+    </p>
   </div>
 </section>
 
-<section class="feature-grid">
-  <article class="image-panel image-reference-panel">
-    <div class="image-preview-frame" aria-hidden="true"></div>
-    <p class="image-caption">A clean-technology visual system: pearl white surfaces, water blue, park green, soft chrome, and restrained solar accents.</p>
-  </article>
+<section class="feature-system">
+  <div class="system-visual" aria-hidden="true">
+    <div class="visual-header">
+      <span>PROCESS MAP</span>
+      <span>REV_01</span>
+    </div>
+    <div class="process-map">
+      <div class="process-node input">INPUT</div>
+      <div class="process-arrow"></div>
+      <div class="process-node process">PROCESS</div>
+      <div class="process-arrow"></div>
+      <div class="process-node output">OUTPUT</div>
+      <div class="process-node validation">VALIDATION</div>
+      <div class="loop-line"></div>
+    </div>
+  </div>
 
-  <article class="content-card home-about">
-    <p class="eyebrow">Current Direction</p>
-    <h2>Engineering toward a clean, futuristic built environment.</h2>
+  <article class="system-copy">
+    <p class="system-label">CURRENT DIRECTION</p>
+    <h2>Engineering toward a cleaner, more futuristic built environment.</h2>
     <p>
       I am a Chemical Engineering undergraduate at Georgia Tech interested in process engineering,
       advanced manufacturing, semiconductors, clean energy, clean technology, and scalable materials systems.
     </p>
     <p>
-      My portfolio emphasizes proof-of-work: experimental framing, technical communication,
-      process logic, data analysis, and the ability to translate ambiguous research problems
+      The site is designed as proof-of-work: technical framing, system-level thinking,
+      experimental methods, quantitative analysis, and the ability to translate ambiguous research
       into engineering metrics.
     </p>
     <div class="inline-links">
-      <a href="{{ '/research/' | relative_url }}">Research</a>
-      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">→</span></a>
+      <a href="{{ '/portfolio/' | relative_url }}">Portfolio <span aria-hidden="true">→</span></a>
+      <a href="{{ '/contact/' | relative_url }}">Contact <span aria-hidden="true">→</span></a>
     </div>
   </article>
 </section>
 
 <section class="portfolio-strip">
-  <p class="eyebrow">Selected Work</p>
+  <p class="system-label">SELECTED WORK</p>
   <h2>Research and process engineering projects</h2>
 
   <div class="card-grid">
-    <article class="project-card">
-      <p class="tag">Research</p>
+    <article class="project-card research-card">
+      <div class="card-motif motif-droplet" aria-hidden="true"></div>
+      <p class="tag">PROJECT_01 · RESEARCH</p>
       <h3>Micromodular Printed Electronics Deposition</h3>
       <p>
         Substrate-mediated droplet deposition, device placement, imbibition/evaporation dynamics,
         and process-window development for scalable printed electronics.
       </p>
-      <a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open project →</a>
+      <a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open project <span aria-hidden="true">→</span></a>
     </article>
 
-    <article class="project-card">
-      <p class="tag">Process Engineering</p>
+    <article class="project-card process-card">
+      <div class="card-motif motif-pfd" aria-hidden="true"></div>
+      <p class="tag">PROJECT_02 · PROCESS</p>
       <h3>Process Simulation and Design</h3>
       <p>
         Process flow diagrams, material and energy balances, separations logic,
         thermodynamic model selection, and Aspen-based engineering analysis.
       </p>
-      <a href="{{ '/portfolio/' | relative_url }}">View portfolio →</a>
+      <a href="{{ '/portfolio/' | relative_url }}">View portfolio <span aria-hidden="true">→</span></a>
     </article>
 
-    <article class="project-card">
-      <p class="tag">Data + Reliability</p>
+    <article class="project-card reliability-card">
+      <div class="card-motif motif-signal" aria-hidden="true"></div>
+      <p class="tag">PROJECT_03 · DATA</p>
       <h3>Reliability and Experimental Analysis</h3>
       <p>
         Resistance tracking, humidity/temperature stress testing, JMP statistics,
         Python analysis, and interpretation of process drift and failure behavior.
       </p>
-      <a href="{{ '/portfolio/' | relative_url }}">View portfolio →</a>
+      <a href="{{ '/portfolio/' | relative_url }}">View portfolio <span aria-hidden="true">→</span></a>
     </article>
   </div>
 </section>

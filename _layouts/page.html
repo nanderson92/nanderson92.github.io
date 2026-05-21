@@ -3,13 +3,13 @@ layout: default
 ---
 
 <section class="page-hero">
-  <p class="eyebrow">{{ page.category }}</p>
+  <p class="system-label">{{ page.category }}</p>
   <h1>{{ page.title }}</h1>
   {% if page.subtitle %}
     <p class="page-subtitle">{{ page.subtitle }}</p>
   {% endif %}
 </section>
 
-<section class="content-card prose">
+<section class="page-content prose">
   {{ content }}
 </section>
