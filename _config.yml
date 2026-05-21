@@ -1,0 +1,12 @@
+title: "Nathan Anderson"
+description: "Chemical Engineering · Process Engineering · Research · Advanced Manufacturing"
+url: "https://nanderson92.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+author: "Nathan Anderson"
+email: "fivemoc@gmail.com"
+linkedin: "https://www.linkedin.com/in/nanderson92/"
+github: "https://github.com/nanderson92"
