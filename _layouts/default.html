@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to Content</a>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+        <span class="brand-name">Nathan Anderson</span>
+        <span class="brand-subtitle">Chemical Engineering · Georgia Tech</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/resume/' | relative_url }}">Resume</a>
+        <a href="{{ '/giving-back/' | relative_url }}">Giving Back</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+
+      <div class="social-links" aria-label="Social links">
+        <a href="{{ site.linkedin }}">LinkedIn</a>
+        <a href="{{ site.github }}">GitHub</a>
+        <a href="mailto:{{ site.email }}">Email</a>
+      </div>
+    </aside>
+
+    <main id="content" class="main-panel">
+      {{ content }}
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Nathan Anderson</p>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+        <a href="{{ '/resume/' | relative_url }}">Resume</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
