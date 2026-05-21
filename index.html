@@ -7,26 +7,23 @@ body_class: home-page
 <section class="hero-layout">
   <div class="hero-copy">
     <p class="system-label">PORTFOLIO SYSTEM // PROCESS + MANUFACTURING</p>
+    <p class="name-kicker">Nathan Anderson · Chemical Engineering</p>
 
-    <h1>Hi, I’m Nathan Anderson.</h1>
+    <h1>Turning lab-scale phenomena into manufacturable systems.</h1>
 
     <p class="hero-lede">
-      I work at the process layer between emerging materials and scalable manufacturing: turning lab-scale phenomena into clean, reproducible engineering systems.
+      A clean-technology engineering portfolio focused on process logic, experimental methods,
+      wet processing, data analysis, and scalable manufacturing translation.
     </p>
 
-    <p class="hero-proof">
-      Chemical engineering, micromodular printed electronics, wet processing, image analysis,
-      reliability testing, and process-window development.
-    </p>
-
-    <div class="hero-flow" aria-hidden="true">
-      <span>INPUT</span>
-      <i></i>
-      <span>PROCESS</span>
-      <i></i>
-      <span>OUTPUT</span>
-      <i></i>
-      <span>VALIDATION</span>
+    <div class="hero-flow" aria-label="Engineering workflow">
+      <span class="flow-node">INPUT</span>
+      <span class="flow-line" aria-hidden="true"></span>
+      <span class="flow-node">PROCESS</span>
+      <span class="flow-line" aria-hidden="true"></span>
+      <span class="flow-node">OUTPUT</span>
+      <span class="flow-line" aria-hidden="true"></span>
+      <span class="flow-node">VALIDATION</span>
     </div>
 
     <div class="cta-row">
@@ -45,43 +42,50 @@ body_class: home-page
       <span class="line"></span>
       <span class="node node-solar"></span>
     </div>
-    <p class="caption">SYSTEM / PROCESS ENGINEERING</p>
-    <h2>From research signal to manufacturable process.</h2>
-    <p>
-      A clean-technology portfolio system built around process logic, experimental evidence,
-      manufacturing translation, and future-facing engineering infrastructure.
-    </p>
+    <div class="mission-copy">
+      <h2>From research signal to process window.</h2>
+      <p>
+        A light engineering interface for research, process development, manufacturing thinking,
+        and future-facing clean-technology systems.
+      </p>
+    </div>
   </div>
 </section>
 
 <section class="feature-system">
   <div class="system-visual" aria-hidden="true">
-    <div class="visual-header">
-      <span>PROCESS MAP</span>
-      <span>REV_01</span>
-    </div>
-    <div class="process-map">
-      <div class="process-node input">INPUT</div>
-      <div class="process-arrow"></div>
-      <div class="process-node process">PROCESS</div>
-      <div class="process-arrow"></div>
-      <div class="process-node output">OUTPUT</div>
-      <div class="process-node validation">VALIDATION</div>
-      <div class="loop-line"></div>
+    <div class="process-strip">
+      <div class="strip-step">
+        <span class="strip-node"></span>
+        <strong>INPUT</strong>
+        <small>materials · data · constraints</small>
+      </div>
+      <span class="strip-arrow"></span>
+      <div class="strip-step">
+        <span class="strip-node green"></span>
+        <strong>PROCESS</strong>
+        <small>experiments · models · controls</small>
+      </div>
+      <span class="strip-arrow"></span>
+      <div class="strip-step">
+        <span class="strip-node blue"></span>
+        <strong>OUTPUT</strong>
+        <small>metrics · design rules</small>
+      </div>
+      <span class="strip-arrow"></span>
+      <div class="strip-step">
+        <span class="strip-node solar"></span>
+        <strong>VALIDATION</strong>
+        <small>reliability · reproducibility</small>
+      </div>
     </div>
   </div>
 
   <article class="system-copy">
-    <p class="system-label">CURRENT DIRECTION</p>
-    <h2>Engineering toward a cleaner, more futuristic built environment.</h2>
+    <h2>Process engineering for emerging materials and clean technology.</h2>
     <p>
       I am a Chemical Engineering undergraduate at Georgia Tech interested in process engineering,
       advanced manufacturing, semiconductors, clean energy, clean technology, and scalable materials systems.
-    </p>
-    <p>
-      The site is designed as proof-of-work: technical framing, system-level thinking,
-      experimental methods, quantitative analysis, and the ability to translate ambiguous research
-      into engineering metrics.
     </p>
     <div class="inline-links">
       <a href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">→</span></a>
@@ -92,7 +96,6 @@ body_class: home-page
 </section>
 
 <section class="portfolio-strip">
-  <p class="system-label">SELECTED WORK</p>
   <h2>Research and process engineering projects</h2>
 
   <div class="card-grid">
