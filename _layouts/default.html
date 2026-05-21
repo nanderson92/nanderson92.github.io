@@ -29,23 +29,23 @@
     <div class="drawer-header">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
         <span class="brand-name">Nathan Anderson</span>
-        <span class="brand-subtitle">Process Development · Manufacturing · Clean Tech</span>
+        <span class="brand-subtitle">Research signal → engineering metric → manufacturing rule</span>
       </a>
       <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>×</button>
     </div>
 
     <nav class="nav-links">
       <a href="{{ '/' | relative_url }}">Home</a>
-      <a href="{{ '/background/' | relative_url }}">Background</a>
-      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
       <a href="{{ '/research/' | relative_url }}">Research</a>
+      <a href="{{ '/background/' | relative_url }}">Background</a>
       <a href="{{ '/resume/' | relative_url }}">Resume</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
 
     <div class="drawer-system">
       <p class="system-label small">PORTFOLIO SYSTEM</p>
-      <p>Research translation, process logic, experimental data, and future-facing manufacturing systems.</p>
+      <p>Process development, wet processing, reliability, data analysis, and clean-technology manufacturing systems.</p>
     </div>
 
     <div class="social-links" aria-label="Social links">
@@ -61,10 +61,11 @@
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Nathan Anderson · Chemical Engineering · Georgia Tech</p>
+      <p>© 2026 Nathan Anderson · Chemical & Biomolecular Engineering · Georgia Tech</p>
       <nav>
-        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
         <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/background/' | relative_url }}">Background</a>
         <a href="{{ '/resume/' | relative_url }}">Resume</a>
         <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </nav>
@@ -86,7 +87,8 @@
       const current = normalizePath(window.location.pathname);
       navLinks.forEach((link) => {
         const linkPath = normalizePath(new URL(link.href).pathname);
-        const isActive = current === linkPath;
+        const isProjectParent = current.startsWith('/projects/') && linkPath === '/projects/';
+        const isActive = current === linkPath || isProjectParent;
         link.classList.toggle('is-active', isActive);
         if (isActive) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');
