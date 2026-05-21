@@ -1,11 +1,11 @@
-# Nathan Anderson Portfolio — Misty Futuristic City Theme
+# Nathan Anderson Portfolio — Light Clean-Technology Theme
 
 This is a GitHub Pages / Jekyll portfolio built for a professional research + process engineering identity.
 
 ## What changed in this version
 
 - The **home page top/hero section uses your uploaded city image** as `assets/images/homepage-background.jpg`.
-- The visual system now matches the image: **black graphite, fog-silver chrome, muted blue-green, glass panels, and cool metallic borders**.
+- The visual system now matches the image with a lighter **futuristic clean-technology** direction: pearl white, water blue, park green, soft chrome, and restrained solar accents.
 - The site keeps the left navigation rail, large editorial hero, mission/about card, portfolio cards, and technical project pages.
 
 ## Install
@@ -28,6 +28,6 @@ This is a GitHub Pages / Jekyll portfolio built for a professional research + pr
 
 ## Design notes
 
-- The hero background is intentionally darkened on the left and bottom for text readability.
-- The palette is image-driven: graphite black, mist gray, fogged chrome, steel blue-green, and pale cyan highlights.
+- The hero background uses a light static overlay for text readability without heavy CSS filters.
+- The palette is image-driven: pearl white, water blue, park green, soft chrome, and solar highlights.
 - Make sure you have the rights to publish the image publicly before using it on a portfolio site.
