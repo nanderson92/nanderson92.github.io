@@ -13,29 +13,54 @@
 <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
   <a class="skip-link" href="#content">Skip to Content</a>
 
-  <div class="site-shell">
-    <aside class="sidebar" aria-label="Primary navigation">
+  <header class="topbar" aria-label="Site header">
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-drawer" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a class="topbar-brand" href="{{ '/' | relative_url }}" aria-label="Home">
+      <span>Nathan Anderson</span>
+      <em>Chemical Engineering · Georgia Tech</em>
+    </a>
+
+    <a class="topbar-resume" href="{{ '/resume/' | relative_url }}">Resume</a>
+  </header>
+
+  <div class="drawer-overlay" data-close-drawer></div>
+
+  <aside id="site-drawer" class="drawer" aria-label="Primary navigation" aria-hidden="true">
+    <div class="drawer-header">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
         <span class="brand-name">Nathan Anderson</span>
         <span class="brand-subtitle">Chemical Engineering · Georgia Tech</span>
       </a>
 
-      <nav class="nav-links">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
-        <a href="{{ '/research/' | relative_url }}">Research</a>
-        <a href="{{ '/resume/' | relative_url }}">Resume</a>
-        <a href="{{ '/giving-back/' | relative_url }}">Giving Back</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      </nav>
+      <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>×</button>
+    </div>
 
-      <div class="social-links" aria-label="Social links">
-        <a href="{{ site.linkedin }}">LinkedIn</a>
-        <a href="{{ site.github }}">GitHub</a>
-        <a href="mailto:{{ site.email }}">Email</a>
-      </div>
-    </aside>
+    <nav class="nav-links">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+      <a href="{{ '/research/' | relative_url }}">Research</a>
+      <a href="{{ '/resume/' | relative_url }}">Resume</a>
+      <a href="{{ '/giving-back/' | relative_url }}">Giving Back</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
 
+    <div class="drawer-note">
+      <p>Research, process engineering, advanced manufacturing, and clean-technology systems.</p>
+    </div>
+
+    <div class="social-links" aria-label="Social links">
+      <a href="{{ site.linkedin }}">LinkedIn</a>
+      <a href="{{ site.github }}">GitHub</a>
+      <a href="mailto:{{ site.email }}">Email</a>
+    </div>
+  </aside>
+
+  <div class="site-shell">
     <main id="content" class="main-panel">
       {{ content }}
     </main>
@@ -52,5 +77,26 @@
       </nav>
     </div>
   </footer>
+
+  <script>
+    const body = document.body;
+    const toggle = document.querySelector('.menu-toggle');
+    const drawer = document.querySelector('#site-drawer');
+    const closeTargets = document.querySelectorAll('[data-close-drawer]');
+
+    function setDrawer(open) {
+      body.classList.toggle('drawer-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      drawer.setAttribute('aria-hidden', String(!open));
+      if (open) drawer.querySelector('a').focus({ preventScroll: true });
+      else toggle.focus({ preventScroll: true });
+    }
+
+    toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
+    closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false);
+    });
+  </script>
 </body>
 </html>
