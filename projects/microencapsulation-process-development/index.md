@@ -19,11 +19,11 @@ This case file presents microfluidic process-development work for producing core
 
 ## Problem / motivation
 
-Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The process challenge is balancing capsule complexity, throughput, uniformity, and cell compatibility.</p>
+Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The process challenge is balancing capsule complexity, throughput, uniformity, and cell compatibility.
 
 ## Process schematic
 
-<div class="project-schematic" aria-label="Representative microencapsulation process schematic">
+<div class="project-schematic schematic-pfd" aria-label="Representative microencapsulation process schematic">
   <div class="pfd-row"><span>CORE</span><i></i><span>SHELL</span><i></i><span>NOZZLE</span><i></i><span>CAPSULE QC</span></div>
   <p>Representative flow-focused encapsulation logic · recreated schematic, not raw lab imagery.</p>
 </div>
@@ -33,7 +33,7 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 <div class="matrix">
   <div class="matrix-card"><h3>Inputs</h3><p>Core stream, shell precursor, continuous phase, crosslinker chemistry, cell suspension, and flow conditions.</p></div>
   <div class="matrix-card"><h3>Process knobs</h3><p>Continuous/dispersed flow ratio, nozzle behavior, shear, crosslink dwell time, and collection conditions.</p></div>
-  <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</div>
+  <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</p></div>
 </div>
 
 ## Variables studied
