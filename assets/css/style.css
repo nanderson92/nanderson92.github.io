@@ -2396,3 +2396,24 @@ body.home-page .site-footer::after,
   bottom: auto !important;
   top: auto !important;
 }
+
+/* === Hero background clarity tune ===
+   Keep the fixed-city scroll fade, but make the initial hero image feel
+   slightly sharper and less washed-out before the user scrolls. */
+.home-page #content::before {
+  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  filter: none !important;
+}
+
+.home-page .hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.925) 0%, rgba(255,255,255,.78) 34%, rgba(255,255,255,.44) 64%, rgba(255,255,255,.10) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.16) 44%, rgba(255,255,255,.58) 76%, #ffffff 100%) !important;
+}
+
+@media (max-width: 640px) {
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.78) 0%, rgba(255,255,255,.64) 38%, rgba(255,255,255,.50) 68%, #ffffff 100%) !important;
+  }
+}
