@@ -102,6 +102,44 @@
     }
 
     setActiveNav();
+
+    document.documentElement.classList.add('js');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealTargets = document.querySelectorAll([
+      '.proof-section',
+      '.proof-group',
+      '.project-card',
+      '.portfolio-card',
+      '.matrix-card',
+      '.human-service-band',
+      '.cta-band',
+      '.page-hero-inner',
+      '.background-editorial',
+      '.two-col > *',
+      '.metric-card',
+      '.result-panel',
+      '.result-visual'
+    ].join(','));
+
+    revealTargets.forEach((target, index) => {
+      target.classList.add('reveal');
+      target.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 70, 210)}ms`);
+    });
+
+    if ('IntersectionObserver' in window && !prefersReducedMotion) {
+      const observer = new IntersectionObserver((entries, activeObserver) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            activeObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      revealTargets.forEach((target) => observer.observe(target));
+    } else {
+      revealTargets.forEach((target) => target.classList.add('in-view'));
+    }
+
     toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
     closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
     document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));

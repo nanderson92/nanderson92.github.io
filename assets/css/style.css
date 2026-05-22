@@ -911,3 +911,183 @@ body {
     margin-top: -16px;
   }
 }
+
+/* === Apple-style lightweight motion system === */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    --motion-apple: cubic-bezier(.22, .8, .28, 1);
+    --motion-soft: cubic-bezier(.16, 1, .3, 1);
+  }
+
+  @keyframes appleFadeUp {
+    from { opacity: 0; transform: translate3d(0, 18px, 0); filter: blur(6px); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); filter: blur(0); }
+  }
+
+  @keyframes appleFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes appleHeaderDrop {
+    from { opacity: 0; transform: translate3d(0, -10px, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+
+  @keyframes appleScaleIn {
+    from { opacity: 0; transform: translate3d(0, 10px, 0) scale(.985); }
+    to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+  }
+
+  .topbar {
+    animation: appleHeaderDrop 620ms var(--motion-soft) 80ms both;
+    will-change: transform, opacity;
+  }
+
+  .home-page .hero::before {
+    animation: appleFadeIn 900ms ease-out 120ms both;
+  }
+
+  .home-page .hero .system-label,
+  .home-page .hero .name-kicker,
+  .home-page .hero h1,
+  .home-page .hero .hero-lede,
+  .home-page .hero .cta-row {
+    opacity: 0;
+    animation: appleFadeUp 760ms var(--motion-soft) both;
+    will-change: transform, opacity;
+  }
+
+  .home-page .hero .system-label { animation-delay: 620ms; }
+  .home-page .hero .name-kicker { animation-delay: 760ms; }
+  .home-page .hero h1 { animation-delay: 1000ms; }
+  .home-page .hero .hero-lede { animation-delay: 1160ms; }
+  .home-page .hero .cta-row { animation-delay: 1320ms; }
+
+  .button,
+  .menu-toggle,
+  .topbar-resume,
+  .project-card,
+  .portfolio-card,
+  .proof-tag,
+  .nav-links a {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+
+  .button:active,
+  .menu-toggle:active,
+  .topbar-resume:active {
+    transform: translateY(0) scale(.985);
+  }
+
+  .project-card:hover,
+  .portfolio-card:hover {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  .proof-tag,
+  .badge,
+  .status-pill {
+    transition: transform 180ms var(--motion-apple), border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  }
+
+  .proof-tag:hover,
+  .badge:hover,
+  .status-pill:hover {
+    transform: translate3d(0, -2px, 0);
+    border-color: rgba(13,142,177,.22);
+    background: rgba(255,255,255,.96);
+    box-shadow: 0 12px 24px rgba(28,84,91,.055);
+  }
+
+  .js .reveal {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    transition:
+      opacity 680ms var(--motion-soft) var(--reveal-delay, 0ms),
+      transform 680ms var(--motion-soft) var(--reveal-delay, 0ms);
+    will-change: transform, opacity;
+  }
+
+  .js .reveal.in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    will-change: auto;
+  }
+
+  .drawer {
+    transition: transform 300ms var(--motion-soft), box-shadow 300ms ease;
+  }
+
+  .drawer-overlay {
+    transition: opacity 260ms ease;
+  }
+
+  .drawer .nav-links a,
+  .drawer .drawer-system,
+  .drawer .social-links {
+    opacity: 0;
+    transform: translate3d(-10px, 0, 0);
+    transition: opacity 260ms var(--motion-soft), transform 260ms var(--motion-soft);
+  }
+
+  .drawer-open .drawer .nav-links a,
+  .drawer-open .drawer .drawer-system,
+  .drawer-open .drawer .social-links {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .drawer-open .drawer .nav-links a:nth-child(1) { transition-delay: 80ms; }
+  .drawer-open .drawer .nav-links a:nth-child(2) { transition-delay: 110ms; }
+  .drawer-open .drawer .nav-links a:nth-child(3) { transition-delay: 140ms; }
+  .drawer-open .drawer .nav-links a:nth-child(4) { transition-delay: 170ms; }
+  .drawer-open .drawer .nav-links a:nth-child(5) { transition-delay: 200ms; }
+  .drawer-open .drawer .nav-links a:nth-child(6) { transition-delay: 230ms; }
+  .drawer-open .drawer .drawer-system { transition-delay: 260ms; }
+  .drawer-open .drawer .social-links { transition-delay: 290ms; }
+
+  .card-visual::after,
+  .project-schematic::after,
+  .schematic-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    background: linear-gradient(110deg, transparent 0%, rgba(255,255,255,.55) 44%, transparent 66%);
+    transform: translateX(-120%);
+    transition: opacity 220ms ease, transform 760ms var(--motion-soft);
+  }
+
+  .project-card:hover .card-visual::after,
+  .portfolio-card:hover .card-visual::after,
+  .project-schematic:hover::after,
+  .schematic-card:hover::after {
+    opacity: 1;
+    transform: translateX(120%);
+  }
+
+  .project-strip,
+  .human-service-band,
+  .cta-band,
+  .page-content,
+  .proof-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 720px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+  }
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
