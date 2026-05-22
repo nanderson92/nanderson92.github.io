@@ -3,6 +3,7 @@ layout: page
 title: Projects
 category: Case File Library
 subtitle: Engineering case files: process development, micro/nano manufacturing, reliability, automation, and operations systems.
+body_class: projects-page
 ---
 
 <div class="portfolio-grid projects-library">
@@ -67,68 +68,40 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
   </article>
 </div>
 
-<div class="section-note">
-  <strong>Additional Technical Work</strong> — compact cards for earlier research and supporting methods. These add breadth without distracting from the four flagship case files.
-</div>
 
-<div class="portfolio-grid projects-library">
-  <article class="portfolio-card evidence-card">
-    <div class="card-visual visual-signal" aria-hidden="true"></div>
-    <div class="card-topline"><span>Semiconductors · Thin Films</span><span>Status: Compact case</span></div>
-    <h2>Thin Film Semiconductor Growth &amp; Characterization</h2>
-    <p class="problem-line">MBE deposition and characterization of Se/In thin films for band-gap and device-relevant semiconductor research.</p>
-    <div class="evidence-table">
-      <span><strong>Method</strong> High-vacuum deposition, parameter optimization, and materials characterization.</span>
-      <span class="output-row"><strong>Output</strong> Research summary focused on process parameters, crystal quality, and characterization evidence.</span>
-      <span><strong>Tools</strong> MBE · SEM · XRD · XPS · Raman.</span>
-    </div>
-    <p><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open compact case →</a></p>
-  </article>
+<section class="supporting-proof-band" aria-label="Additional technical work and operations proof">
+  <div class="section-note compact-section-note">
+    <strong>Supporting proof</strong> — earlier research, operations, and strategy work kept intentionally compact so the four flagship engineering case files stay dominant.
+  </div>
 
-  <article class="portfolio-card evidence-card">
-    <div class="card-visual visual-compute" aria-hidden="true"></div>
-    <div class="card-topline"><span>Molecular Biology · Assay Development</span><span>Status: Earlier research</span></div>
-    <h2>DNA/PCR Flexibility Assay Development</h2>
-    <p class="problem-line">Experimental work measuring DNA flexibility at extremely short base-pair lengths.</p>
-    <div class="evidence-table">
-      <span><strong>Method</strong> PCR-based experimental development, molecular-biology workflow execution, and assay troubleshooting.</span>
-      <span class="output-row"><strong>Output</strong> Earlier research case emphasizing experimental design, precision, and biological measurement discipline.</span>
-      <span><strong>Tools</strong> PCR · gel/workflow methods · DNA assay development.</span>
-    </div>
-    <p><a href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">Open compact case →</a></p>
-  </article>
-</div>
+  <div class="mini-case-grid">
+    <a class="mini-case-card" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">
+      <span class="mini-meta">Semiconductors · Thin Films</span>
+      <strong>Thin Film Semiconductor Growth</strong>
+      <p>MBE deposition and characterization of Se/In thin films; process-parameter logic, band-gap relevance, and materials evidence.</p>
+      <em>MBE · SEM · XRD · XPS · Raman</em>
+    </a>
 
-<div class="section-note">
-  <strong>Systems, Quality, and Strategy</strong> — transferable process instincts from operations leadership and client-facing consulting.
-</div>
+    <a class="mini-case-card" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">
+      <span class="mini-meta">Molecular Biology · Assays</span>
+      <strong>DNA/PCR Flexibility Assay Development</strong>
+      <p>PCR-based experimental design for measuring very short-length DNA flexibility; precision workflow execution and troubleshooting.</p>
+      <em>PCR · DNA assays · experimental design</em>
+    </a>
 
-<div class="portfolio-grid projects-library">
-  <article class="portfolio-card evidence-card">
-    <div class="card-visual visual-pfd" aria-hidden="true"></div>
-    <div class="card-topline"><span>Operations · Quality · Throughput</span><span>Status: Transferable proof</span></div>
-    <h2>Operations &amp; Quality Systems</h2>
-    <p class="problem-line">Food-service operations translated into manufacturing-relevant instincts: throughput, standard work, quality logs, and corrective action.</p>
-    <div class="evidence-table">
-      <span><strong>Problem</strong> High-volume operations fail when bottlenecks, quality checks, maintenance, and training are not controlled.</span>
-      <span><strong>Method</strong> Line balancing, queue analysis, CCP logs, shift training, corrective actions, and preventive-maintenance routines.</span>
-      <span class="output-row"><strong>Output</strong> Quantified throughput, handoff-time, compliance, downtime, and maintenance improvements across leadership roles.</span>
-      <span><strong>Places</strong> McDonald’s · Chick-fil-A · Flapdoodles.</span>
-    </div>
-    <p><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open systems summary →</a></p>
-  </article>
+    <a class="mini-case-card" href="{{ '/projects/operations-quality-systems/' | relative_url }}">
+      <span class="mini-meta">Operations · Quality · Throughput</span>
+      <strong>Operations &amp; Quality Systems</strong>
+      <p>High-volume service operations translated into standard work, bottleneck control, CCP logs, corrective actions, and training routines.</p>
+      <em>Throughput · QC logs · PM routines</em>
+    </a>
 
-  <article class="portfolio-card evidence-card">
-    <div class="card-visual visual-pfd" aria-hidden="true"></div>
-    <div class="card-topline"><span>Consulting · Strategy · Communication</span><span>Status: Compact case</span></div>
-    <h2>Consult Your Community: Nonprofit Growth Strategy</h2>
-    <p class="problem-line">Pro-bono consulting for a local Atlanta nonprofit, focused on practical growth recommendations and client communication.</p>
-    <div class="evidence-table">
-      <span><strong>Problem</strong> Small organizations need actionable strategy that fits real bandwidth, constraints, and execution capacity.</span>
-      <span><strong>Method</strong> Client discovery, market/communication analysis, recommendation synthesis, and slide-based delivery.</span>
-      <span class="output-row"><strong>Output</strong> Growth and social-media recommendations translated into a client-facing implementation plan.</span>
-      <span><strong>Tools</strong> PowerPoint · research · client interviews · communication strategy.</span>
-    </div>
-    <p><a href="{{ '/projects/consult-your-community/' | relative_url }}">Open compact case →</a></p>
-  </article>
-</div>
+    <a class="mini-case-card" href="{{ '/projects/consult-your-community/' | relative_url }}">
+      <span class="mini-meta">Consulting · Strategy</span>
+      <strong>Nonprofit Growth Strategy</strong>
+      <p>Client discovery, market/communication analysis, and practical recommendations for a local Atlanta nonprofit’s execution capacity.</p>
+      <em>Client discovery · strategy · delivery</em>
+    </a>
+  </div>
+</section>
+
