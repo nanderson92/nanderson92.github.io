@@ -1657,142 +1657,153 @@ body {
   .process-window-mini { min-height: 230px; }
 }
 
-/* === Home hero fixed-city transition + overlap cleanup === */
-.home-page {
-  background: #fff;
+/* === Homepage depth/scroll-fade repair ===
+   Keeps the clean-tech city scene visually fixed while the page content and
+   white fade move over it. Also prevents Technical Proof from overlapping the
+   flagship card. */
+body.home-page {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(247, 251, 251, 0) 0vh,
+      rgba(247, 251, 251, 0.08) 38vh,
+      rgba(247, 251, 251, 0.34) 78vh,
+      rgba(255, 255, 255, 0.78) 126vh,
+      #ffffff 188vh
+    ),
+    url('../images/homepage-background.jpg');
+  background-size: 100% 220vh, cover;
+  background-position: top center, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+body.home-page::before {
+  opacity: 0;
 }
 
 .home-page #content {
   position: relative;
-  isolation: isolate;
-  background: transparent;
-  overflow: hidden;
-}
-
-.home-page #content::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.88) 32%, rgba(255,255,255,.52) 58%, rgba(255,255,255,.18) 100%),
-    linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.03) 52%, rgba(255,255,255,.22) 100%),
-    url('../images/homepage-background.jpg');
-  background-size: cover;
-  background-position: center 28%;
-  background-repeat: no-repeat;
-}
-
-.home-page #content::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: clamp(560px, 72vh, 760px);
-  height: 2100px;
-  z-index: 1;
-  pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,.18) 10%,
-    rgba(255,255,255,.46) 22%,
-    rgba(255,255,255,.72) 38%,
-    rgba(255,255,255,.92) 58%,
-    #fff 78%,
-    #fff 100%
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0) 42rem,
+    rgba(248, 251, 251, 0.18) 58rem,
+    rgba(255, 255, 255, 0.72) 86rem,
+    #ffffff 132rem
   );
 }
 
-.home-page .hero,
-.home-page .signature-case-section,
-.home-page .proof-section,
-.home-page .home-library,
-.home-page .project-strip,
-.home-page .system-section,
-.home-page .cta-band,
-.home-page .human-service-band {
-  position: relative;
-  z-index: 2;
-}
-
 .home-page .hero {
-  min-height: clamp(650px, 78vh, 780px);
-  padding-bottom: clamp(130px, 17vh, 190px);
+  position: relative;
+  overflow: visible;
   background: transparent;
+  min-height: 760px;
+  padding-bottom: clamp(120px, 16vh, 176px);
 }
 
-.home-page .hero::before,
+.home-page .hero::before {
+  z-index: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.86) 34%, rgba(255,255,255,.50) 62%, rgba(255,255,255,.08) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.04) 66%, rgba(255,255,255,0) 100%);
+  background-size: 100% 100%, 100% 100%;
+  background-position: center, center;
+}
+
 .home-page .hero::after {
-  display: none;
+  z-index: 0;
+  bottom: -220px;
+  height: 560px;
+  background: linear-gradient(
+    180deg,
+    rgba(247,251,251,0) 0%,
+    rgba(247,251,251,.10) 24%,
+    rgba(247,251,251,.40) 52%,
+    rgba(255,255,255,.82) 78%,
+    #ffffff 100%
+  );
+}
+
+.home-page .hero-inner,
+.home-page .hero-copy {
+  position: relative;
+  z-index: 1;
 }
 
 .home-page .signature-case-section {
-  margin-top: clamp(-118px, -10vw, -72px);
-  margin-bottom: 0;
+  position: relative;
+  z-index: 3;
+  margin-top: -74px;
 }
 
 .home-page .signature-case-card {
-  background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(244,251,250,.86));
+  background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(241,250,249,.84));
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
 
 .home-page .proof-section {
-  margin: clamp(56px, 6vw, 84px) auto 0 !important;
+  position: relative;
   z-index: 2;
-  clear: both;
-  background: rgba(255,255,255,.91);
+  margin-top: 72px !important;
+  background: rgba(255,255,255,.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
-.home-page .supporting-home-cases {
-  margin-top: clamp(48px, 6vw, 84px);
-}
-
-.home-page .home-library,
-.home-page .project-strip,
-.home-page .system-section,
-.home-page .cta-band,
-.home-page .human-service-band {
-  background-color: transparent;
+.home-page .supporting-home-cases,
+.home-page .human-service-band,
+.home-page .recruiter-cta {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 980px) {
+  body.home-page {
+    background-attachment: scroll, scroll;
+    background-size: 100% 170vh, cover;
+    background-position: top center, center top;
+  }
   .home-page .hero {
-    min-height: 640px;
-    padding-bottom: 140px;
+    min-height: 650px;
+    padding-bottom: 118px;
+  }
+  .home-page .hero::after {
+    bottom: -170px;
+    height: 430px;
   }
   .home-page .signature-case-section {
-    margin-top: -72px;
+    margin-top: -46px;
   }
-  .home-page #content::after {
-    top: 610px;
-    height: 2300px;
+  .home-page .proof-section {
+    margin-top: 52px !important;
   }
 }
 
 @media (max-width: 640px) {
-  .home-page #content::before {
+  body.home-page {
     background-image:
-      linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.78) 38%, rgba(255,255,255,.36) 100%),
+      linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.42) 48%, #ffffff 100%),
       url('../images/homepage-background.jpg');
-    background-position: center top;
-  }
-  .home-page #content::after {
-    top: 520px;
-    height: 2600px;
   }
   .home-page .hero {
-    min-height: 570px;
-    padding-bottom: 118px;
+    min-height: 590px;
+    padding-bottom: 92px;
+  }
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.76) 44%, rgba(255,255,255,.34) 100%);
+  }
+  .home-page .hero::after {
+    bottom: -130px;
+    height: 340px;
   }
   .home-page .signature-case-section {
-    margin-top: -54px;
+    margin-top: -28px;
   }
   .home-page .proof-section {
-    margin-top: 44px !important;
+    margin-top: 40px !important;
   }
 }
