@@ -1,48 +1,29 @@
 ---
 layout: page
 title: Background
-category: Personal Background
-subtitle: A concise human layer behind the engineering direction.
+category: Human Layer
+subtitle: Built between places, oriented toward engineering that reaches real people.
 ---
 
-<div class="background-grid">
-  <aside class="portrait-card">
+<div class="background-editorial">
+  <div class="portrait-panel">
     <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Portrait of Nathan Anderson">
-  </aside>
-
-  <div>
-    <p class="label small">INCHEON ── MINNESOTA ── ATLANTA ── FUTURE BUILT ENVIRONMENT</p>
-    <h2>Built between worlds, oriented toward systems that scale.</h2>
-
-    <p>
-      I was adopted from Incheon, South Korea and grew up in a small town in Minnesota before studying Chemical & Biomolecular Engineering at Georgia Tech.
-    </p>
-
-    <p>
-      That background shaped an interest in mobility, belonging, and technology that is not only impressive in a lab, but accessible in real communities. I am drawn to chemical engineering because it connects materials, energy, infrastructure, manufacturing, and daily life.
-    </p>
-
-    <div class="callout quiet-callout">
-      <p class="label small">ENGINEERING IDENTITY</p>
-      <p>
-        I want to help make futuristic, cleaner technology tangible: process windows, scalable manufacturing methods, advanced materials, and systems that can move from research demonstrations into the built environment.
-      </p>
-    </div>
-
-    <h2>How this shows up in my work</h2>
-    <div class="matrix">
-      <div class="matrix-card">
-        <h3>Systems thinking</h3>
-        <p>Looking beyond isolated experiments toward constraints, interfaces, reproducibility, and implementation.</p>
-      </div>
-      <div class="matrix-card">
-        <h3>Accessibility</h3>
-        <p>Interest in technologies that can scale beyond elite labs into practical manufacturing and daily use.</p>
-      </div>
-      <div class="matrix-card">
-        <h3>Technical translation</h3>
-        <p>Connecting observations to metrics, design rules, and engineering decisions.</p>
-      </div>
-    </div>
   </div>
+  <article class="background-copy">
+    <p class="system-label small">INCHEON → MINNESOTA → ATLANTA</p>
+    <h2>Built between worlds, oriented toward systems that scale.</h2>
+    <p>
+      I was adopted from Incheon, South Korea and grew up in a small town in Minnesota. That background shaped how I think about mobility, belonging, and the difference between technology that is impressive in isolation and technology that can actually reach people.
+    </p>
+    <p>
+      Chemical engineering appeals to me because it sits at that boundary: materials, transport, data, equipment, cost, reliability, and manufacturing all have to work together before an idea becomes real in daily life.
+    </p>
+    <p>
+      My long-term direction is to help make cleaner, more futuristic infrastructure tangible and accessible through process development, advanced manufacturing, and clean technology.
+    </p>
+  </article>
+</div>
+
+<div class="map-line" aria-label="Background path">
+  <span>INCHEON</span><i></i><span>MINNESOTA</span><i></i><span>GEORGIA TECH</span><i></i><span>FUTURE BUILT ENVIRONMENT</span>
 </div>

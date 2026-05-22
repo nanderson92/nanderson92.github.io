@@ -2,17 +2,19 @@
 layout: page
 title: Micromodular Printed Electronics Deposition
 category: Flagship Case Study
-subtitle: Substrate-mediated droplet deposition, microscale device placement, and process-window development for scalable printed electronics.
+subtitle: Substrate-mediated droplet deposition, device placement, and process-window development for scalable printed electronics.
 ---
 
 ## Summary
 
 I am investigating how substrate boundary conditions control droplet deposition, microscale device placement, and process reproducibility in micromodular printed electronics.
 
+<div class="buildout-note">Case study buildout in progress — current focus: method, metrics, and representative figures. Recreated schematics are used where raw lab visuals are not appropriate for public sharing.</div>
+
 <div class="role-block">
-  <p class="label small">MY ROLE</p>
+  <p class="system-label small">MY ROLE</p>
   <p>
-    Designed experiments, captured top/side-view droplet videos, extracted contact-line dynamics, compared substrate boundary conditions, and developed process-window metrics for manufacturable deposition.
+    Designed experiments, captured top/side-view droplet videos, extracted contact-line dynamics, compared substrate boundary conditions, and developed process-window metrics for repeatable deposition.
   </p>
 </div>
 
@@ -34,11 +36,11 @@ Printed electronics could enable more distributed and flexible manufacturing of 
 
 ## Technical challenge
 
-The core engineering question is:
+The central engineering question is:
 
-> What substrate boundary conditions produce repeatable, spatially uniform, and manufacturable deposition of micromodular electronic devices?
+> What substrate boundary conditions produce repeatable, spatially uniform, and repeatable deposition of micromodular electronic devices?
 
-The substrate is treated as an active process boundary condition rather than a passive surface. Wetting, imbibition, evaporation, and contact-line behavior all influence where devices end up after deposition.
+The project treats the substrate as an active process boundary condition rather than a passive surface. Wetting, imbibition, evaporation, and contact-line behavior all influence where devices end up after deposition.
 
 ## Variables studied
 
@@ -103,11 +105,11 @@ Potential engineering metrics include:
 
 ## Engineering interpretation
 
-The goal is to connect observed droplet behavior to process descriptors. Instead of treating deposition quality as purely empirical, the project frames it as a coupled transport problem involving evaporation, imbibition, pinning, and device crowding.
+The goal is to connect observed droplet behavior to process descriptors. Instead of treating deposition quality as purely empirical, the project frames it as a coupled transport/process-window problem involving evaporation, imbibition, pinning, and device crowding.
 
 ## Manufacturing relevance
 
-A manufacturable printed-electronics assembly process needs repeatable placement, compatible substrate boundary conditions, and predictable integration with later interconnect printing. This project aims to define measurable descriptors that make deposition conditions easier to compare, tune, and scale.
+A manufacturable printed-electronics assembly process needs repeatable placement, compatible substrate boundary conditions, and predictable integration with later interconnect printing. This project aims to define measurable descriptors that make deposition conditions easier to compare, tune, and eventually scale.
 
 ## Next steps
 
@@ -121,7 +123,7 @@ A manufacturable printed-electronics assembly process needs repeatable placement
     <p>Compare substrates and backing conditions using normalized metrics and repeatability checks.</p>
   </div>
   <div class="matrix-card">
-    <h3>Decision logic</h3>
+    <h3>Design rule</h3>
     <p>Translate metrics into substrate-selection logic and process constraints for scalable assembly.</p>
   </div>
 </div>

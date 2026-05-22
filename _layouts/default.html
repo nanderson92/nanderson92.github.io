@@ -17,10 +17,10 @@
 
     <a class="topbar-brand" href="{{ '/' | relative_url }}" aria-label="Home">
       <span>Nathan Anderson</span>
-      <em>Chemical Engineering · Georgia Tech</em>
+      <em>ChemE · Process Development · Georgia Tech</em>
     </a>
 
-    <a class="topbar-resume" href="{{ '/resume/' | relative_url }}">Resume</a>
+    <a class="topbar-resume" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Resume PDF</a>
   </header>
 
   <div class="drawer-overlay" data-close-drawer></div>
@@ -29,7 +29,7 @@
     <div class="drawer-header">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
         <span class="brand-name">Nathan Anderson</span>
-        <span class="brand-subtitle">Process · Manufacturing · Clean Technology</span>
+        <span class="brand-subtitle">Chemical Engineering · Process Development · Clean Technology</span>
       </a>
       <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>×</button>
     </div>
@@ -43,9 +43,9 @@
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
 
-    <div class="drawer-note">
-      <p class="label small">ENGINEERING FOCUS</p>
-      <p>Process development, wet processing, experimental data, and manufacturable clean-technology systems.</p>
+    <div class="drawer-system">
+      <p class="system-label small">TECHNICAL FOCUS</p>
+      <p>Droplet transport, substrate screening, wet processing, reliability drift, image-derived metrics, Aspen models, and process windows.</p>
     </div>
 
     <div class="social-links" aria-label="Social links">
@@ -86,7 +86,7 @@
       const current = normalizePath(window.location.pathname);
       navLinks.forEach((link) => {
         const linkPath = normalizePath(new URL(link.href).pathname);
-        const isActive = current === linkPath || (current.startsWith(linkPath) && linkPath !== '/');
+        const isActive = current === linkPath;
         link.classList.toggle('is-active', isActive);
         if (isActive) link.setAttribute('aria-current', 'page');
         else link.removeAttribute('aria-current');

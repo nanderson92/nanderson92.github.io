@@ -1,79 +1,58 @@
 ---
 layout: page
 title: Research
-category: Research Direction
-subtitle: Interfacial transport, wet processing, micromodular printed electronics, and process metrics for scalable manufacturing.
+category: Technical Direction
+subtitle: Wet processing, interfacial transport, printed electronics, image-derived metrics, and manufacturing-relevant process windows.
 ---
 
 ## Research direction
 
-I am interested in how research-stage materials behavior becomes measurable, controllable, and useful for manufacturing. My current focus is printed electronics and droplet-based deposition: how liquid motion, porous substrates, device transport, and experimental variability can be converted into process metrics.
+My research interests sit at the intersection of chemical engineering, advanced manufacturing, interfacial transport, and scalable electronics fabrication. I am especially interested in turning small-scale materials behavior into reproducible process conditions: droplet transport, substrate screening, deposition uniformity, reliability drift, and image-derived metrics.
 
 <div class="translation-strip">
   <div>
     <h3>Materials Phenomena</h3>
-    <p>Wetting, evaporation, imbibition, pinning, device motion, and contact-line behavior.</p>
+    <p>Wetting, evaporation, imbibition, pinning, interfacial flow, and microscale device motion.</p>
   </div>
   <div>
-    <h3>Engineering Metrics</h3>
-    <p>Radius, contact angle, volume, edge/center ratio, density uniformity, and reliability trends.</p>
+    <h3>Process Metrics</h3>
+    <p>Radius, contact angle, volume, edge/center ratio, areal density, drift, and process-window descriptors.</p>
   </div>
   <div>
-    <h3>Manufacturing Rules</h3>
-    <p>Repeatability checks, substrate selection, process windows, routing compatibility, and scale-up logic.</p>
+    <h3>Manufacturing Decisions</h3>
+    <p>Substrate selection, deposition repeatability, routing compatibility, reliability screens, and scale-up logic.</p>
   </div>
 </div>
 
 ## Current research question
 
-<div class="research-question-large">
-  How can substrate boundary conditions be engineered to improve microscale device deposition uniformity from evaporating or imbibing droplets?
+<div class="research-focus">
+  <h3>How can substrate boundary conditions be engineered to improve microscale device deposition uniformity from evaporating or imbibing droplets?</h3>
 </div>
 
-## Technical themes
+## Current research questions
 
-<div class="matrix">
-  <div class="matrix-card">
-    <h3>Micromodular printed electronics</h3>
-    <p>Assembly of fabricated microdevices into useful electronic systems through repeatable deposition and later interconnect routing.</p>
-  </div>
-  <div class="matrix-card">
-    <h3>Wet processing + interfacial transport</h3>
-    <p>Solvent motion, wetting, capillarity, evaporation, and porous-substrate effects that shape deposition outcomes.</p>
-  </div>
-  <div class="matrix-card">
-    <h3>Process development</h3>
-    <p>Turning qualitative observations into metrics, constraints, operating windows, and engineering decisions.</p>
-  </div>
+<div class="research-questions">
+  <div class="question">How do porous substrate boundary conditions control microscale device deposition?</div>
+  <div class="question">How can droplet drying, imbibition, and pinning be converted into process-window metrics?</div>
+  <div class="question">Which measurable descriptors predict uniform, repeatable, manufacturable deposition?</div>
 </div>
 
 ## Methods stack
 
 <div class="badge-row">
-  <span class="badge">Optical microscopy</span>
-  <span class="badge">Contact-angle analysis</span>
-  <span class="badge">Image segmentation</span>
-  <span class="badge">Time-series extraction</span>
-  <span class="badge">Substrate comparison</span>
-  <span class="badge">Reliability statistics</span>
+  <span class="badge">Optical Microscopy</span>
+  <span class="badge">Contact-Angle Analysis</span>
+  <span class="badge">Image Segmentation</span>
+  <span class="badge">Time-Series Extraction</span>
+  <span class="badge">Statistical Reliability Analysis</span>
+  <span class="badge">Substrate Screening</span>
 </div>
 
 ## Representative outputs
 
-<div class="output-grid">
-  <div class="output-card">
-    <div class="mini-plot" aria-hidden="true"></div>
-    <h3>Droplet curves</h3>
-    <p>r(t), θ(t), V(t), and normalized time-series views.</p>
-  </div>
-  <div class="output-card">
-    <div class="mini-map" aria-hidden="true"></div>
-    <h3>Process maps</h3>
-    <p>Comparison of substrate conditions and process windows.</p>
-  </div>
-  <div class="output-card">
-    <div class="mini-uniformity" aria-hidden="true"></div>
-    <h3>Uniformity metrics</h3>
-    <p>Edge bias, areal density, placement distribution, and repeatability.</p>
-  </div>
+<div class="matrix">
+  <div class="matrix-card"><h3>Process maps</h3><p>Operating regions that compare substrates, droplet behavior, and deposition outcomes.</p></div>
+  <div class="matrix-card"><h3>Deposition metrics</h3><p>Uniformity, edge bias, areal density, placement fidelity, and repeatability descriptors.</p></div>
+  <div class="matrix-card"><h3>Time-series plots</h3><p>Droplet radius, contact angle, volume, drying/imbibition behavior, and reliability curves.</p></div>
 </div>

@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Projects
-category: Case Study Library
-subtitle: Selected technical work in process development, manufacturing, data analysis, computation, and research translation.
+category: Case File Library
+subtitle: Selected technical work in process development, manufacturing, computation, and research-stage engineering.
 ---
 
-<div class="filter-row" aria-label="Project categories">
+<div class="page-cta-line">
+  <strong>Seeking Fall 2026 co-ops / internships</strong> in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
+</div>
+
+<div class="filter-row" aria-label="Project filters">
   <span class="filter-chip active">All</span>
   <span class="filter-chip">Research</span>
   <span class="filter-chip">Process Engineering</span>
@@ -14,57 +18,61 @@ subtitle: Selected technical work in process development, manufacturing, data an
   <span class="filter-chip">Manufacturing</span>
 </div>
 
-<div class="project-library">
-  <article class="case-card case-feature">
+<div class="portfolio-grid projects-library">
+  <article class="portfolio-card feature-project evidence-card">
     <div class="card-visual visual-droplet" aria-hidden="true"></div>
-    <div class="case-topline"><span>Research · Advanced Manufacturing · Interfacial Transport</span><span>Status: In progress</span></div>
+    <div class="card-topline"><span>Research · Advanced Manufacturing · Interfacial Transport</span><span>Status: In progress</span></div>
     <h2>Micromodular Printed Electronics Deposition</h2>
-    <p class="case-problem">Nonuniform deposition limits scalable printed electronics assembly.</p>
-    <dl>
-      <div><dt>Problem</dt><dd>Suspended microdevices can accumulate nonuniformly during droplet drying and substrate imbibition.</dd></div>
-      <div><dt>Method</dt><dd>Optical microscopy, top/side-view droplet videos, contact-line tracking, substrate comparison, and image analysis.</dd></div>
-      <div><dt>Output</dt><dd>Process-window metrics, deposition-distribution maps, and substrate-selection logic for more uniform deposition.</dd></div>
-      <div><dt>Tools</dt><dd>Keyence · Python · ImageJ/Fiji · JMP</dd></div>
-    </dl>
-    <a class="text-link" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open full case study <span aria-hidden="true">→</span></a>
+    <p class="problem-line">Nonuniform deposition limits scalable printed electronics assembly.</p>
+    <div class="evidence-table">
+      <span><strong>Problem</strong> Microscale devices can accumulate nonuniformly during droplet drying or imbibition.</span>
+      <span><strong>Method</strong> Optical microscopy, droplet tracking, substrate comparison, contact-line dynamics, image analysis.</span>
+      <span class="output-row"><strong>Output</strong> Process-window metrics and substrate-selection logic for more uniform deposition.</span>
+      <span><strong>Tools</strong> Keyence · Python · ImageJ/Fiji · JMP.</span>
+      <span><strong>Status</strong> In progress.</span>
+    </div>
+    <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open full case study →</a></p>
   </article>
 
-  <article class="case-card">
+  <article class="portfolio-card evidence-card">
     <div class="card-visual visual-pfd" aria-hidden="true"></div>
-    <div class="case-topline"><span>Process Engineering · Simulation</span><span>Status: Buildout</span></div>
+    <div class="card-topline"><span>Process Engineering · Simulation</span><span>Status: Buildout</span></div>
     <h2>Process Simulation and Design</h2>
-    <p class="case-problem">Convert process requirements into flowsheets, balances, and defensible design decisions.</p>
-    <dl>
-      <div><dt>Problem</dt><dd>Engineering decisions need traceable mass/energy balances, thermodynamic assumptions, and realistic operating conditions.</dd></div>
-      <div><dt>Method</dt><dd>PFDs, material and energy balances, VLE reasoning, Aspen simulation, and design comparison.</dd></div>
-      <div><dt>Output</dt><dd>Process models, flow diagrams, operating-condition comparisons, and calculation packages.</dd></div>
-      <div><dt>Tools</dt><dd>Aspen · MATLAB · Excel</dd></div>
-    </dl>
+    <p class="problem-line">Translate process requirements into flowsheets, balances, and operating decisions.</p>
+    <div class="evidence-table">
+      <span><strong>Problem</strong> Chemical process design needs defensible assumptions, model choices, and balance closure.</span>
+      <span><strong>Method</strong> PFDs, material/energy balances, VLE reasoning, Aspen simulation, design comparison.</span>
+      <span class="output-row"><strong>Output</strong> Process models, design tradeoffs, operating-condition comparisons, and engineering calculations.</span>
+      <span><strong>Tools</strong> Aspen · MATLAB · Excel.</span>
+      <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
+    </div>
   </article>
 
-  <article class="case-card">
+  <article class="portfolio-card evidence-card">
     <div class="card-visual visual-signal" aria-hidden="true"></div>
-    <div class="case-topline"><span>Reliability · Experimental Analysis</span><span>Status: Developing</span></div>
+    <div class="card-topline"><span>Reliability · Experimental Analysis</span><span>Status: Developing</span></div>
     <h2>Printed Interconnect Reliability</h2>
-    <p class="case-problem">Understand how printed interconnect resistance changes under stress and aging.</p>
-    <dl>
-      <div><dt>Problem</dt><dd>Resistance drift and failure behavior must be separated from measurement noise and limited-sample uncertainty.</dd></div>
-      <div><dt>Method</dt><dd>Resistance tracking, reliability plots, ANOVA-style comparisons, trend analysis, and engineering interpretation.</dd></div>
-      <div><dt>Output</dt><dd>Stress-response summaries and reliability interpretation for manufacturing-relevant decisions.</dd></div>
-      <div><dt>Tools</dt><dd>JMP · Excel · Python</dd></div>
-    </dl>
+    <p class="problem-line">Understand how printed interconnect resistance changes under stress and aging.</p>
+    <div class="evidence-table">
+      <span><strong>Problem</strong> Resistance drift can hide process instability or reliability issues.</span>
+      <span><strong>Method</strong> Resistance tracking, reliability plots, ANOVA-style comparisons, trend analysis.</span>
+      <span class="output-row"><strong>Output</strong> Stress-response summaries and process/reliability interpretation.</span>
+      <span><strong>Tools</strong> JMP · Excel · Python.</span>
+      <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
+    </div>
   </article>
 
-  <article class="case-card">
+  <article class="portfolio-card evidence-card">
     <div class="card-visual visual-compute" aria-hidden="true"></div>
-    <div class="case-topline"><span>Computation · Image Analysis</span><span>Status: In progress</span></div>
+    <div class="card-topline"><span>Computation · Image Analysis</span><span>Status: In progress</span></div>
     <h2>Droplet and Image Analysis Workflows</h2>
-    <p class="case-problem">Extract quantitative engineering variables from videos, microscopy images, and experimental time series.</p>
-    <dl>
-      <div><dt>Problem</dt><dd>Low contrast, calibration, lighting variation, and noisy boundaries make manual measurement slow and inconsistent.</dd></div>
-      <div><dt>Method</dt><dd>Segmentation, time-series extraction, curve plotting, and validation against baseline observations.</dd></div>
-      <div><dt>Output</dt><dd>Measurement workflows for r(t), θ(t), V(t), and deposition-distribution analysis.</dd></div>
-      <div><dt>Tools</dt><dd>Python · ImageJ/Fiji · MATLAB</dd></div>
-    </dl>
+    <p class="problem-line">Extract usable engineering variables from videos, microscopy images, and time series.</p>
+    <div class="evidence-table">
+      <span><strong>Problem</strong> Raw microscopy and droplet videos need consistent measurement workflows before they can support process decisions.</span>
+      <span><strong>Method</strong> Segmentation, scale calibration, time-series extraction, plotting, validation against baseline observations.</span>
+      <span class="output-row"><strong>Output</strong> Workflows for r(t), θ(t), V(t), edge/center ratio, and deposition distributions.</span>
+      <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB.</span>
+      <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
+    </div>
   </article>
 </div>
