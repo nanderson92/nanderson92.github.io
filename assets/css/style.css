@@ -1808,150 +1808,158 @@ body.home-page::before {
   }
 }
 
-/* === Homepage performance + bottom-white repair ===
-   Removes the expensive fixed-background/backdrop-filter treatment and keeps
-   the home page fully white after the hero transition. */
-html,
+
+/* === Homepage performance + fixed-city white-scroll repair ===
+   Keeps the city visually stationary without background-attachment: fixed,
+   removes expensive backdrop filters, and guarantees the page resolves to
+   solid white at the bottom. */
 body.home-page {
   background: #ffffff !important;
-}
-
-body.home-page {
   background-image: none !important;
   background-attachment: scroll !important;
-  background-size: auto !important;
-  background-position: initial !important;
 }
 
 body.home-page::before {
-  display: none !important;
+  opacity: 0 !important;
+  background: none !important;
 }
 
 .home-page #content {
   position: relative;
   isolation: isolate;
-  background: #ffffff !important;
-}
-
-.home-page .hero {
-  position: relative;
   overflow: hidden;
-  min-height: clamp(690px, 82vh, 820px);
-  padding-bottom: clamp(170px, 22vh, 245px);
-  margin-bottom: 0;
-  background: #ffffff;
-  contain: layout paint;
+  background: transparent !important;
 }
 
-.home-page .hero::before {
+.home-page #content::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image: url('../images/homepage-background.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  transform: translateZ(0);
+}
+
+.home-page #content::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;
-  background-image:
-    linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.84) 35%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.12) 100%),
-    linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.06) 48%, rgba(255,255,255,.60) 78%, #ffffff 100%),
-    url('../images/homepage-background.jpg');
-  background-size: cover, cover, cover;
-  background-position: center top, center top, center top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  transform: translateZ(0);
-  will-change: auto;
-}
-
-.home-page .hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  height: min(52vh, 520px);
+  z-index: -1;
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,.18) 24%,
-    rgba(255,255,255,.58) 55%,
-    rgba(255,255,255,.88) 80%,
+    rgba(255, 255, 255, 0.00) 0vh,
+    rgba(255, 255, 255, 0.06) 32vh,
+    rgba(255, 255, 255, 0.18) 70vh,
+    rgba(255, 255, 255, 0.44) 116vh,
+    rgba(255, 255, 255, 0.76) 162vh,
+    rgba(255, 255, 255, 0.94) 218vh,
+    #ffffff 276vh,
     #ffffff 100%
   );
 }
 
-.home-page .hero-inner,
-.home-page .hero-copy {
+.home-page #content > * {
   position: relative;
   z-index: 1;
 }
 
-.home-page .signature-case-section {
-  position: relative;
-  z-index: 3;
-  margin-top: clamp(-120px, -11vh, -76px);
-  margin-bottom: clamp(58px, 7vw, 92px);
+.home-page .hero {
+  background: transparent !important;
+  overflow: visible;
 }
 
-.home-page .proof-section {
-  position: relative;
-  z-index: 2;
-  margin-top: 0 !important;
-  background: rgba(255,255,255,.96);
+.home-page .hero::before {
+  z-index: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.84) 34%, rgba(255,255,255,.50) 64%, rgba(255,255,255,.10) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.03) 64%, rgba(255,255,255,0) 100%) !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat !important;
+}
+
+.home-page .hero::after {
+  z-index: 0;
+  bottom: -260px;
+  height: 640px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.08) 24%,
+    rgba(255,255,255,.32) 50%,
+    rgba(255,255,255,.74) 77%,
+    #ffffff 100%
+  ) !important;
 }
 
 .home-page .signature-case-card,
-.home-page .proof-section,
-.home-page .cta-band,
-.home-page .portfolio-card,
-.home-page .human-service-band article {
+.home-page .proof-section {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
 
-.home-page .supporting-home-cases,
-.home-page .human-service-band,
-.home-page .recruiter-cta,
-.site-footer {
-  position: relative;
-  z-index: 2;
-  background-color: #ffffff;
+.home-page .signature-case-card {
+  background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(244,251,250,.90)) !important;
 }
 
-.site-footer {
+.home-page .proof-section {
+  background: rgba(255,255,255,.97) !important;
+}
+
+.home-page .site-footer,
+body.home-page .site-footer {
+  position: relative;
+  z-index: 2;
   background: rgba(255,255,255,.96) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 @media (max-width: 980px) {
-  .home-page .hero {
-    min-height: 640px;
-    padding-bottom: 150px;
+  .home-page #content::before {
+    position: absolute;
+    top: 0;
+    height: 1260px;
+    bottom: auto;
+    background-position: center top;
   }
-  .home-page .hero::after {
-    height: 380px;
-  }
-  .home-page .signature-case-section {
-    margin-top: -70px;
-    margin-bottom: 64px;
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.04) 0vh,
+      rgba(255,255,255,.30) 62vh,
+      rgba(255,255,255,.72) 118vh,
+      #ffffff 178vh,
+      #ffffff 100%
+    );
   }
 }
 
 @media (max-width: 640px) {
-  .home-page .hero {
-    min-height: 590px;
-    padding-bottom: 120px;
+  .home-page #content::before {
+    height: 980px;
+    background-position: center top;
   }
-  .home-page .hero::before {
-    background-image:
-      linear-gradient(180deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.78) 46%, rgba(255,255,255,.62) 72%, #ffffff 100%),
-      url('../images/homepage-background.jpg');
-    background-size: cover, cover;
-    background-position: center top, center top;
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.16) 0vh,
+      rgba(255,255,255,.46) 48vh,
+      rgba(255,255,255,.86) 104vh,
+      #ffffff 150vh,
+      #ffffff 100%
+    );
   }
+
   .home-page .hero::after {
-    height: 300px;
-  }
-  .home-page .signature-case-section {
-    margin-top: -42px;
-    margin-bottom: 52px;
+    bottom: -150px;
+    height: 380px;
   }
 }
