@@ -70,38 +70,32 @@ body_class: projects-page
 
 
 <section class="supporting-proof-band" aria-label="Additional technical work and operations proof">
-  <div class="section-note compact-section-note">
-    <strong>Supporting proof</strong> — earlier research, operations, and strategy work kept intentionally compact so the four flagship engineering case files stay dominant.
+  <div class="supporting-proof-header">
+    <strong>Additional technical work</strong>
+    <span>Compact context beyond the four flagship case files.</span>
   </div>
 
-  <div class="mini-case-grid">
-    <a class="mini-case-card" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">
-      <span class="mini-meta">Semiconductors · Thin Films</span>
+  <div class="supporting-proof-list">
+    <a class="supporting-proof-item" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">
       <strong>Thin Film Semiconductor Growth</strong>
-      <p>MBE deposition and characterization of Se/In thin films; process-parameter logic, band-gap relevance, and materials evidence.</p>
-      <em>MBE · SEM · XRD · XPS · Raman</em>
+      <span>MBE · SEM/XRD/XPS · band-gap materials</span>
     </a>
 
-    <a class="mini-case-card" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">
-      <span class="mini-meta">Molecular Biology · Assays</span>
-      <strong>DNA/PCR Flexibility Assay Development</strong>
-      <p>PCR-based experimental design for measuring very short-length DNA flexibility; precision workflow execution and troubleshooting.</p>
-      <em>PCR · DNA assays · experimental design</em>
+    <a class="supporting-proof-item" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">
+      <strong>DNA/PCR Assay Development</strong>
+      <span>PCR · experimental design · troubleshooting</span>
     </a>
 
-    <a class="mini-case-card" href="{{ '/projects/operations-quality-systems/' | relative_url }}">
-      <span class="mini-meta">Operations · Quality · Throughput</span>
+    <a class="supporting-proof-item" href="{{ '/projects/operations-quality-systems/' | relative_url }}">
       <strong>Operations &amp; Quality Systems</strong>
-      <p>High-volume service operations translated into standard work, bottleneck control, CCP logs, corrective actions, and training routines.</p>
-      <em>Throughput · QC logs · PM routines</em>
+      <span>Throughput · QC logs · corrective actions</span>
     </a>
 
-    <a class="mini-case-card" href="{{ '/projects/consult-your-community/' | relative_url }}">
-      <span class="mini-meta">Consulting · Strategy</span>
+    <a class="supporting-proof-item" href="{{ '/projects/consult-your-community/' | relative_url }}">
       <strong>Nonprofit Growth Strategy</strong>
-      <p>Client discovery, market/communication analysis, and practical recommendations for a local Atlanta nonprofit’s execution capacity.</p>
-      <em>Client discovery · strategy · delivery</em>
+      <span>Discovery · communications · execution planning</span>
     </a>
   </div>
 </section>
+
 
