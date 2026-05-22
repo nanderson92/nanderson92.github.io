@@ -2357,3 +2357,42 @@ body.home-page .site-footer::after {
     height: 270px;
   }
 }
+
+/* === Footer scroll-stop repair ===
+   Keep the fixed-city-to-white homepage treatment, but prevent footer helper
+   layers from creating scrollable overflow below the footer. The page now ends
+   cleanly at the footer with a solid white root/background. */
+html,
+body,
+body.home-page {
+  background: #ffffff !important;
+  overscroll-behavior-y: none;
+}
+
+body.home-page {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.home-page #content {
+  overflow: hidden;
+  background: transparent !important;
+}
+
+body.home-page .site-footer,
+.home-page .site-footer {
+  margin-bottom: 0 !important;
+  background: #ffffff !important;
+  box-shadow: 0 -14px 42px rgba(255,255,255,.90), 0 -1px 0 rgba(9,51,56,.055) !important;
+}
+
+body.home-page .site-footer::before,
+body.home-page .site-footer::after,
+.home-page .site-footer::before,
+.home-page .site-footer::after {
+  content: none !important;
+  display: none !important;
+  height: 0 !important;
+  bottom: auto !important;
+  top: auto !important;
+}
