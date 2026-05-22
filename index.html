@@ -13,19 +13,35 @@ body_class: home-page
       <p class="hero-lede">
         Chemical engineering student at Georgia Tech building process-development workflows for printed electronics, wet processing, image analysis, and manufacturing-scale decision-making.
       </p>
+      <p class="opportunity-line">
+        Seeking Fall 2026 co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
+      </p>
       <div class="cta-row">
-        <a class="button primary" href="{{ '/projects/' | relative_url }}">View Projects <span aria-hidden="true">→</span></a>
+        <a class="button primary" href="{{ '/projects/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
         <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
+        <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
       </div>
     </div>
 
+    <aside class="hero-anchor" aria-label="Technical workflow anchor">
+      <p class="system-label small">TECHNICAL ANCHOR</p>
+      <h2>Observation → metric → rule</h2>
+      <div class="mini-pipeline compact">
+        <span>Observation</span><i></i><span>Experiment</span><i></i><span>Data Extraction</span><i></i><span>Metrics</span><i></i><span>Process Window</span><i></i><span>Manufacturing Rule</span>
+      </div>
+      <div class="anchor-examples">
+        <p><strong>Microscopy video</strong> → r(t), θ(t), V(t) → process window</p>
+        <p><strong>Droplet behavior</strong> → deposition uniformity → substrate rule</p>
+        <p><strong>Resistance drift</strong> → reliability curve → manufacturing decision</p>
+      </div>
+    </aside>
   </div>
 </section>
 
 <section class="proof-section" aria-label="Technical proof bar">
   <div class="proof-heading">
     <p class="system-label small">TECHNICAL PROOF</p>
-    <p>Grouped for recruiter scan speed: process/manufacturing, research/materials, and data/computation.</p>
+    <p>Grouped for fast recruiter scanning: process/manufacturing, research/materials, and data/computation.</p>
   </div>
   <div class="proof-groups">
     <div class="proof-group">
@@ -64,7 +80,7 @@ body_class: home-page
   <div class="section-heading compact-heading">
     <p class="system-label">SIGNATURE WORKFLOW</p>
     <h2>From messy observations to usable engineering decisions.</h2>
-    <p>Designed for work where raw lab behavior must become a measurable process window, reliability screen, or design rule.</p>
+    <p>Raw videos, substrate conditions, and experimental variation become measurements, figures, and process-window logic.</p>
   </div>
   <div class="workflow-line">
     <div><span class="flow-dot"></span><strong>Observation</strong><p>Droplet motion, microscopy frames, resistance drift, substrate response.</p></div>
@@ -80,7 +96,7 @@ body_class: home-page
   <div class="section-heading">
     <p class="system-label">FEATURED PROJECTS</p>
     <h2>Engineering case files.</h2>
-    <p>Each preview is organized around technical evidence: problem, method, output, tools, and status.</p>
+    <p>Each preview is organized around evidence: problem, method, output, tools, and status.</p>
   </div>
 
   <div class="project-grid evidence-grid">
@@ -109,7 +125,7 @@ body_class: home-page
         <span><strong>Tools</strong> Aspen · MATLAB · Excel</span>
         <span><strong>Status</strong> Case study buildout in progress</span>
       </div>
-      <p><a href="{{ '/projects/' | relative_url }}">View in Projects <span aria-hidden="true">→</span></a></p>
+      <p><a href="{{ '/projects/process-simulation-design/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
     </article>
 
     <article class="project-card evidence-card">
@@ -123,7 +139,7 @@ body_class: home-page
         <span><strong>Tools</strong> JMP · Excel · Python</span>
         <span><strong>Status</strong> Case study buildout in progress</span>
       </div>
-      <p><a href="{{ '/projects/' | relative_url }}">View in Projects <span aria-hidden="true">→</span></a></p>
+      <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
     </article>
 
     <article class="project-card evidence-card">
@@ -137,26 +153,32 @@ body_class: home-page
         <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB</span>
         <span><strong>Status</strong> Tooling in progress</span>
       </div>
-      <p><a href="{{ '/projects/' | relative_url }}">View in Projects <span aria-hidden="true">→</span></a></p>
+      <p><a href="{{ '/projects/droplet-image-analysis/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
     </article>
   </div>
 </section>
 
-<section class="manufacturing-note" aria-label="Technical direction">
-  <div class="note-visual" aria-hidden="true">
-    <span>Observation</span><i></i><span>Metric</span><i></i><span>Rule</span>
+<section class="human-band" aria-label="Giving back and background">
+  <div>
+    <p class="system-label small">HUMAN LAYER</p>
+    <h2>Technical work, grounded in access.</h2>
+    <p><strong>Giving Back</strong> highlights tutoring, mentorship, and service work aimed at helping technical opportunity reach more students and communities.</p>
   </div>
-  <article>
-    <p class="system-label">TECHNICAL DIRECTION</p>
-    <h2>Concrete engineering nouns first.</h2>
-    <p>
-      Current focus: droplet transport, porous substrates, interfacial flow, deposition uniformity, reliability drift, image-derived metrics, Aspen models, PFDs, and process windows.
-    </p>
-    <div class="inline-links">
-      <a href="{{ '/projects/' | relative_url }}">Projects <span aria-hidden="true">→</span></a>
-      <a href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">→</span></a>
-      <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
-    </div>
-  </article>
+  <div class="inline-links">
+    <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
+    <a href="{{ '/giving-back/' | relative_url }}">Giving Back <span aria-hidden="true">→</span></a>
+  </div>
 </section>
 
+<section class="cta-band recruiter-cta">
+  <div>
+    <p class="system-label small">OPEN TO FALL 2026 TECHNICAL OPPORTUNITIES</p>
+    <h2>Seeking co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.</h2>
+    <p>Best-fit conversations: wet processing, R&D, process development, reliability, image analysis, scale-up, and research-to-manufacturing decision work.</p>
+  </div>
+  <div class="cta-row compact-cta">
+    <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
+    <a class="button secondary" href="mailto:{{ site.email }}">Email Me</a>
+    <a class="button tertiary" href="{{ '/projects/' | relative_url }}">View Projects</a>
+  </div>
+</section>

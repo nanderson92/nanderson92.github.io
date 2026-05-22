@@ -1,23 +1,23 @@
 ---
 layout: page
 title: Giving Back
-category: Service + Leadership
-subtitle: Technical leadership, mentorship, and community-oriented engineering work.
+category: Human Layer
+subtitle: Tutoring, mentorship, and service connected to technical access.
 ---
 
-## Service Direction
+## Purpose
 
-I am interested in making advanced engineering and clean-technology futures feel tangible,
-inclusive, and accessible across backgrounds.
+Giving Back is where I will collect tutoring, mentorship, volunteering, and outreach work that helps technical opportunity reach more students and communities.
 
-## Relevant Leadership Themes
-
-- Technical communication for non-specialist audiences
-- Student organization leadership
-- Career and professional preparation work
-- Community-facing education and outreach
-- Translating complex technology into accessible narratives
-
-## Future Additions
-
-Use this page for leadership, mentoring, outreach, nonprofit consulting, and student-organization work.
+<div class="background-editorial giving-layout">
+  <article class="background-copy">
+    <p class="system-label small">ACCESS · MENTORSHIP · TECHNICAL CONFIDENCE</p>
+    <h2>Helping more people see engineering as reachable.</h2>
+    <p>
+      My technical interests are future-facing, but I care about whether the future is actually accessible. This section will focus on practical service: tutoring, mentoring younger students, sharing technical resources, and supporting people who are still building confidence in STEM.
+    </p>
+    <p>
+      Buildout in progress — current focus: adding specific examples, organizations, and artifacts from mentorship, volunteering, and teaching-related work.
+    </p>
+  </article>
+</div>

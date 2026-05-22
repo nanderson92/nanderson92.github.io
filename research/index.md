@@ -2,8 +2,12 @@
 layout: page
 title: Research
 category: Technical Direction
-subtitle: Wet processing, interfacial transport, printed electronics, image-derived metrics, and manufacturing-relevant process windows.
+subtitle: Academic framing and research context. Projects shows proof-of-work artifacts; Research explains the questions behind them.
 ---
+
+<div class="section-clarifier">
+  <strong>Research = context.</strong> This page explains the technical questions, phenomena, and methods behind my work. For concrete artifacts and case-study previews, see <a href="{{ '/projects/' | relative_url }}">Projects</a>.
+</div>
 
 ## Research direction
 

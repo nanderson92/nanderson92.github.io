@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Recreated deposition pattern schematic</title>
+<desc id="desc">Comparison of edge-heavy glass deposition and more distributed porous substrate deposition.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef9f8"/></linearGradient>
+  <linearGradient id="blue" x1="0" x2="1"><stop offset="0" stop-color="#4da3ff"/><stop offset="1" stop-color="#8ee6c9"/></linearGradient>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1b5360" flood-opacity="0.10"/></filter>
+</defs>
+<rect width="1200" height="720" rx="38" fill="url(#bg)"/>
+<text x="64" y="80" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#0f172a">Pilot deposition-pattern observation</text>
+<text x="64" y="116" font-family="monospace" font-size="15" font-weight="700" fill="#517579" letter-spacing="2">RECREATED SCHEMATIC · REPLACE WITH RAW MICROSCOPY WHEN PUBLIC-SAFE</text>
+<g transform="translate(88 178)" filter="url(#shadow)">
+  <rect x="0" y="0" width="472" height="394" rx="28" fill="#fff" stroke="#d9e2ec"/>
+  <text x="30" y="52" font-family="Inter, Arial" font-size="22" font-weight="800" fill="#102a2e">Nonporous glass control</text>
+  <text x="30" y="84" font-family="Inter, Arial" font-size="16" fill="#64748b">Qualitative tendency: stronger rim accumulation</text>
+  <circle cx="236" cy="230" r="128" fill="#f8fbfc" stroke="#cbd5e1" stroke-width="3"/>
+  <circle cx="236" cy="230" r="119" fill="none" stroke="#0d8eb1" stroke-width="24" opacity="0.38"/>
+  <g fill="#184e5a" opacity="0.52">
+    <circle cx="166" cy="148" r="6"/><circle cx="188" cy="354" r="5"/><circle cx="338" cy="186" r="5"/><circle cx="296" cy="330" r="4"/><circle cx="254" cy="196" r="4"/>
+  </g>
+  <path d="M122 358 C190 390 282 392 350 358" fill="none" stroke="#b4b5bb" stroke-width="2" stroke-dasharray="7 9"/>
+</g>
+<g transform="translate(640 178)" filter="url(#shadow)">
+  <rect x="0" y="0" width="472" height="394" rx="28" fill="#fff" stroke="#d9e2ec"/>
+  <text x="30" y="52" font-family="Inter, Arial" font-size="22" font-weight="800" fill="#102a2e">Porous substrate condition</text>
+  <text x="30" y="84" font-family="Inter, Arial" font-size="16" fill="#64748b">Qualitative tendency: smaller footprint + more distributed deposit</text>
+  <circle cx="236" cy="230" r="106" fill="#f8fbfc" stroke="#cbd5e1" stroke-width="3"/>
+  <circle cx="236" cy="230" r="98" fill="none" stroke="#4c936c" stroke-width="8" opacity="0.34"/>
+  <g fill="#184e5a" opacity="0.60">
+    <circle cx="236" cy="146" r="5"/><circle cx="194" cy="178" r="5"/><circle cx="285" cy="190" r="4"/><circle cx="218" cy="222" r="4"/><circle cx="260" cy="244" r="5"/><circle cx="178" cy="266" r="4"/><circle cx="310" cy="278" r="5"/><circle cx="232" cy="312" r="4"/><circle cx="278" cy="325" r="5"/>
+  </g>
+  <g stroke="#4c936c" stroke-width="2" opacity="0.18">
+    <path d="M130 125 H342"/><path d="M130 160 H342"/><path d="M130 195 H342"/><path d="M130 230 H342"/><path d="M130 265 H342"/><path d="M130 300 H342"/><path d="M160 108 V346"/><path d="M198 108 V346"/><path d="M236 108 V346"/><path d="M274 108 V346"/><path d="M312 108 V346"/>
+  </g>
+</g>
+<g transform="translate(206 628)">
+  <rect x="0" y="0" width="788" height="40" rx="20" fill="#ffffff" stroke="#d9e2ec"/>
+  <circle cx="26" cy="20" r="6" fill="#0d8eb1"/><text x="44" y="26" font-family="Inter, Arial" font-size="16" fill="#334155">Preliminary observation: substrate boundary condition changes footprint and edge bias.</text>
+</g>
+</svg>

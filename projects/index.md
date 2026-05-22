@@ -2,9 +2,16 @@
 layout: page
 title: Projects
 category: Case File Library
-subtitle: Selected technical work in process development, manufacturing, computation, and research-stage engineering.
+subtitle: Proof-of-work artifacts and case studies. Research explains the academic framing; Projects shows the engineering outputs.
 ---
 
+<div class="page-cta-line">
+  <strong>Seeking Fall 2026 co-ops / internships</strong> in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
+</div>
+
+<div class="section-clarifier">
+  <strong>Projects = evidence.</strong> This page organizes work as case files: problem, method, output, tools, and status. For broader research questions and technical context, see <a href="{{ '/research/' | relative_url }}">Research</a>.
+</div>
 
 <div class="filter-row" aria-label="Project filters">
   <span class="filter-chip active">All</span>
@@ -43,6 +50,7 @@ subtitle: Selected technical work in process development, manufacturing, computa
       <span><strong>Tools</strong> Aspen · MATLAB · Excel.</span>
       <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
     </div>
+    <p><a href="{{ '/projects/process-simulation-design/' | relative_url }}">Open full case study →</a></p>
   </article>
 
   <article class="portfolio-card evidence-card">
@@ -57,6 +65,7 @@ subtitle: Selected technical work in process development, manufacturing, computa
       <span><strong>Tools</strong> JMP · Excel · Python.</span>
       <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
     </div>
+    <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open full case study →</a></p>
   </article>
 
   <article class="portfolio-card evidence-card">
@@ -71,5 +80,6 @@ subtitle: Selected technical work in process development, manufacturing, computa
       <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB.</span>
       <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
     </div>
+    <p><a href="{{ '/projects/droplet-image-analysis/' | relative_url }}">Open full case study →</a></p>
   </article>
 </div>

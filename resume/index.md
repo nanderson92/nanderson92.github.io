@@ -11,8 +11,8 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
   <p>
     Georgia Tech Chemical & Biomolecular Engineering undergraduate building experience across printed electronics, wet processing, image-derived metrics, reliability analysis, process simulation, and clean-technology systems.
   </p>
-  <p class="target-line">
-    Target areas: process engineering · manufacturing · advanced materials · semiconductors · clean technology.
+  <p class="opportunity-line compact">
+    Seeking Fall 2026 co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
   </p>
   <div class="resume-actions">
     <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume PDF</a>
