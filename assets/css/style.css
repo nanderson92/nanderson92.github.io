@@ -2288,3 +2288,72 @@ body.home-page .site-footer::after {
     margin-top: -14px;
   }
 }
+
+/* === Seamless hero-to-flagship transition polish ===
+   Removes the visible horizontal handoff line by extending the hero's white veil
+   behind the flagship card while keeping the fixed city background lightweight. */
+.home-page .hero {
+  margin-bottom: -1px;
+}
+
+.home-page .hero::before {
+  inset: 0 0 -360px 0 !important;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.955) 0%, rgba(255,255,255,.86) 34%, rgba(255,255,255,.58) 64%, rgba(255,255,255,.18) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.22) 44%, rgba(255,255,255,.62) 76%, #ffffff 100%) !important;
+}
+
+.home-page .hero::after {
+  display: block !important;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -300px;
+  height: 460px;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.34) 24%,
+    rgba(255,255,255,.78) 58%,
+    #ffffff 86%,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page #content::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02) 0vh,
+    rgba(255,255,255,0.14) 14vh,
+    rgba(255,255,255,0.32) 30vh,
+    rgba(255,255,255,0.60) 50vh,
+    rgba(255,255,255,0.86) 70vh,
+    #ffffff 92vh,
+    #ffffff 100%
+  ) !important;
+}
+
+@media (max-width: 980px) {
+  .home-page .hero::before {
+    inset: 0 0 -260px 0 !important;
+  }
+
+  .home-page .hero::after {
+    bottom: -230px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero::before {
+    inset: 0 0 -180px 0 !important;
+  }
+
+  .home-page .hero::after {
+    bottom: -170px;
+    height: 270px;
+  }
+}
