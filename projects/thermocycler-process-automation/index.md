@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thermocycler Process Automation
-category: Flagship Case Study
+category: Supporting Case Study
 tags: Automation · Controls · Diagnostics · Hardware
 subtitle: PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.
 ---
@@ -10,12 +10,14 @@ subtitle: PID-controlled thermal cycling hardware for rapid molecular-diagnostic
 
 This case file presents a thermocycler automation project focused on building repeatable thermal control for RT-qPCR-style workflows. The engineering challenge is turning a biological protocol into a controllable temperature-time process.
 
-<div class="buildout-note">New case file — add control-loop diagram, thermal-profile plot, and prototype notes as public-safe artifacts.</div>
+<div class="buildout-note">Public-safe artifact buildout — add control-loop diagram, thermal-profile plot, and prototype notes as public-safe artifacts.</div>
 
 <div class="role-block">
   <p class="system-label small">MY ROLE</p>
   <p>Prototyped an embedded-controller thermocycler, integrated heating/cooling and sensor feedback, tuned PID behavior, and evaluated ramp rate and steady-state temperature stability.</p>
 </div>
+
+<div class="connection-note"><strong>Connection to flagship:</strong> This project extends the same process-control mindset into automation: define the controlled variable, measure dynamic response, tune the system, and quantify repeatability.</div>
 
 ## Problem / motivation
 
@@ -68,6 +70,6 @@ PCR thermal cycling depends on repeatable heating and cooling between temperatur
 
 This project shows automation as process engineering: define the required state trajectory, build the feedback loop, measure performance, and tune the system until the physical process follows the protocol.
 
-## Next steps
+## Ongoing development
 
 Add a public-safe thermal-profile plot, describe controller tuning constraints, and include a concise bill-of-system diagram for the prototype.

@@ -22,6 +22,28 @@ body_class: home-page
   </div>
 </section>
 
+<section class="signature-case-section" aria-label="Signature engineering case study">
+  <div class="signature-case-card">
+    <div class="signature-copy">
+      <p class="system-label small">SIGNATURE CASE STUDY</p>
+      <h2>Micromodular Electronics Deposition</h2>
+      <p class="signature-subtitle">Substrate-controlled process windows for printed-electronics assembly.</p>
+      <p>
+        I use this project as the clearest example of how I think as a process engineer: define the physical bottleneck, isolate controllable boundary conditions, convert visual behavior into metrics, and translate the result into manufacturing selection criteria.
+      </p>
+      <div class="signature-proof-grid" aria-label="Flagship proof points">
+        <span><strong>Problem</strong> Suspended microdevices can crowd, raft, pin, and accumulate near the droplet edge during spreading, drying, and imbibition.</span>
+        <span><strong>Method</strong> Compare substrate/backing conditions using top-view and side-view microscopy, then extract contact-line dynamics, deposition density, and edge/center uniformity metrics.</span>
+        <span class="signature-output"><strong>Output</strong> A public-safe process-development case study connecting droplet transport, substrate design, image analysis, and scalable micromodular electronics assembly.</span>
+      </div>
+      <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case study <span aria-hidden="true">→</span></a>
+    </div>
+    <figure class="signature-visual">
+      <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
+    </figure>
+  </div>
+</section>
+
 <section class="proof-section" aria-label="Technical proof bar">
   <div class="proof-heading">
     <p class="system-label small">TECHNICAL PROOF</p>
@@ -78,46 +100,19 @@ body_class: home-page
 
 
 
-<section class="home-library project-strip" aria-label="Featured engineering work">
+
+<section class="home-library project-strip supporting-home-cases" aria-label="Supporting engineering work">
   <div class="content-shell home-content-shell">
     <div class="section-heading">
-      <p class="system-label">FEATURED PROJECTS</p>
-      <h2>Engineering case files.</h2>
-      <p>Homepage project previews now follow the same case-file structure as the Projects page: problem, method, output, tools, and status.</p>
+      <p class="system-label">SUPPORTING ENGINEERING CASE FILES</p>
+      <h2>Other proof-of-work, same process mindset.</h2>
+      <p>The flagship deposition project is the anchor. These supporting case files show the same engineering pattern across reliability, microfluidics, and automation.</p>
     </div>
 
-    <div class="section-note compact-note">
-      <strong>Featured Engineering Case Files</strong> — the four strongest technical stories currently being built out with public-safe figures, recreated schematics, methods, metrics, and implementation notes.
-    </div>
-
-    <div class="filter-row home-filter-row" aria-label="Project themes">
-      <span class="filter-chip active">Featured</span>
-      <span class="filter-chip">Process Development</span>
-      <span class="filter-chip">Semiconductors</span>
-      <span class="filter-chip">Microfluidics</span>
-      <span class="filter-chip">Reliability</span>
-      <span class="filter-chip">Automation</span>
-    </div>
-
-    <div class="portfolio-grid projects-library">
-      <article class="portfolio-card feature-project evidence-card">
-        <div class="card-visual visual-droplet" aria-hidden="true"></div>
-        <div class="card-topline"><span>Featured · Semiconductors · Interfacial Transport</span><span>Status: Active buildout</span></div>
-        <h2>Micromodular Electronics Deposition</h2>
-        <p class="problem-line">Substrate-controlled process windows for stochastic microdevice placement.</p>
-        <div class="evidence-table">
-          <span><strong>Problem</strong> Suspended microdevices can accumulate nonuniformly during droplet spreading, drying, and imbibition.</span>
-          <span><strong>Method</strong> AAO/substrate comparisons, top/side-view microscopy, droplet kinematics, and deposition-density mapping.</span>
-          <span class="output-row"><strong>Output</strong> Process-window metrics, deposition-pattern figures, and substrate-selection criteria.</span>
-          <span><strong>Tools</strong> Keyence · Rame-Hart · Python · ImageJ/Fiji · JMP.</span>
-          <span><strong>Status</strong> Flagship case page includes public-safe schematics and buildout targets.</span>
-        </div>
-        <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open full case study →</a></p>
-      </article>
-
+    <div class="portfolio-grid projects-library supporting-card-grid">
       <article class="portfolio-card evidence-card">
         <div class="card-visual visual-signal" aria-hidden="true"></div>
-        <div class="card-topline"><span>Featured · Reliability · Process Control</span><span>Status: Active buildout</span></div>
+        <div class="card-topline"><span>Reliability · Process Control</span><span>Status: Active buildout</span></div>
         <h2>Printed Interconnect &amp; FET Reliability</h2>
         <p class="problem-line">Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.</p>
         <div class="evidence-table">
@@ -125,43 +120,41 @@ body_class: home-page
           <span><strong>Method</strong> Keithley screening, threshold logic, stress comparisons, JMP analysis, and failure-mode interpretation.</span>
           <span class="output-row"><strong>Output</strong> Reliability plots, CTQ logic, screening notes, and process-window recommendations.</span>
           <span><strong>Tools</strong> Keithley · Python · JMP · Excel · optical microscopy.</span>
-          <span><strong>Status</strong> Public-safe plots and process-control artifacts are being added.</span>
         </div>
-        <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open full case study →</a></p>
+        <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case study →</a></p>
       </article>
 
       <article class="portfolio-card evidence-card">
         <div class="card-visual visual-droplet" aria-hidden="true"></div>
-        <div class="card-topline"><span>Featured · Microfluidics · Process Development</span><span>Status: New case file</span></div>
+        <div class="card-topline"><span>Microfluidics · Process Development</span><span>Status: New case file</span></div>
         <h2>Scalable Stem-Cell Microencapsulation</h2>
         <p class="problem-line">Flow-focused core–shell capsule process development for regenerative-medicine workflows.</p>
         <div class="evidence-table">
-          <span><strong>Problem</strong> Complex hydrogel microcapsules need throughput, low coalescence, and repeatable capsule quality.</span>
-          <span><strong>Method</strong> Flow-ratio tuning, crosslink dwell-time optimization, capsule fabrication, and microscopy-based QC.</span>
-          <span class="output-row"><strong>Output</strong> Improved encapsulation yield, reduced coalescence, and stable capsule-production conditions.</span>
-          <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control · image-based inspection.</span>
-          <span><strong>Status</strong> New portfolio page; final visuals should use public-safe schematics.</span>
+          <span><strong>Problem</strong> Hydrogel capsules need throughput, low coalescence, repeatable quality, and biological utility.</span>
+          <span><strong>Method</strong> Flow-ratio tuning, crosslink dwell-time optimization, capsule fabrication, and microscopy QC.</span>
+          <span class="output-row"><strong>Output</strong> Yield/coalescence logic and process-development notes for stable capsule production.</span>
+          <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control.</span>
         </div>
-        <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open full case study →</a></p>
+        <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case study →</a></p>
       </article>
 
       <article class="portfolio-card evidence-card">
         <div class="card-visual visual-compute" aria-hidden="true"></div>
-        <div class="card-topline"><span>Featured · Automation · Diagnostics</span><span>Status: New case file</span></div>
+        <div class="card-topline"><span>Automation · Diagnostics</span><span>Status: New case file</span></div>
         <h2>Thermocycler Process Automation</h2>
         <p class="problem-line">PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.</p>
         <div class="evidence-table">
-          <span><strong>Problem</strong> RT-qPCR workflows require fast ramping, stable temperature holds, and repeatable automated thermal control.</span>
-          <span><strong>Method</strong> Embedded-controller prototyping, heater/cooling integration, sensor feedback, and PID tuning.</span>
-          <span class="output-row"><strong>Output</strong> Functional thermocycler prototype with quantified ramp rate and steady-state stability.</span>
-          <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · Python/microcontroller code.</span>
-          <span><strong>Status</strong> New portfolio page; add control-loop figure and thermal-profile plot.</span>
+          <span><strong>Problem</strong> RT-qPCR workflows require fast ramping, stable holds, and repeatable automated thermal control.</span>
+          <span><strong>Method</strong> Embedded controller prototyping, heater/cooling integration, feedback sensing, PID tuning, and validation.</span>
+          <span class="output-row"><strong>Output</strong> Functional thermocycler prototype with ramp-rate and steady-state stability logic.</span>
+          <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · RT-qPCR workflow logic.</span>
         </div>
-        <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open full case study →</a></p>
+        <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case study →</a></p>
       </article>
     </div>
   </div>
 </section>
+
 
 <section class="human-service-band" aria-label="Background and giving back">
   <article>

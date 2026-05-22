@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scalable Stem-Cell Microencapsulation
-category: Flagship Case Study
+category: Supporting Case Study
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
 ---
@@ -10,12 +10,14 @@ subtitle: Flow-focused core–shell capsule process development for regenerative
 
 This case file presents microfluidic process-development work for producing core–shell hydrogel microcapsules. The technical goal is to make capsules that are structurally useful, biologically compatible, and scalable enough to support stem-cell workflows.
 
-<div class="buildout-note">New case file — add public-safe capsule schematics, process-variable tables, and QC visuals as available.</div>
+<div class="buildout-note">Public-safe artifact buildout — add public-safe capsule schematics, process-variable tables, and QC visuals as available.</div>
 
 <div class="role-block">
   <p class="system-label small">MY ROLE</p>
   <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
+
+<div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as a process-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
 
 ## Problem / motivation
 
@@ -68,6 +70,6 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 This project is process development in a biomedical context: identify the critical process variables, connect them to capsule quality, and tune the operating window to improve yield and stability.
 
-## Next steps
+## Ongoing development
 
 Add a recreated microfluidic-device schematic, one capsule-quality figure, and a short process table showing how flow and crosslinking conditions affected yield/coalescence.

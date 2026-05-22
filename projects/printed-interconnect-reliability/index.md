@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Printed Interconnect & FET Reliability
-category: Flagship Case Study
+category: Supporting Case Study
 tags: Semiconductors · Reliability · Process Control · Manufacturing
 subtitle: Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.
 ---
@@ -10,12 +10,14 @@ subtitle: Electrical test, resistance drift, yield visibility, and process-contr
 
 This case file focuses on reliability and process control for printed interconnects and device test structures in a micromodular electronics workflow. The project turns electrical measurements into manufacturing decisions: what is stable, what is drifting, what fails, and which process step likely caused it.
 
-<div class="buildout-note">Case study buildout in progress — public-safe plots, simplified device schematics, and threshold logic will be added as artifacts.</div>
+<div class="buildout-note">Public-safe artifact buildout — public-safe plots, simplified device schematics, and threshold logic will be added as artifacts.</div>
 
 <div class="role-block">
   <p class="system-label small">MY ROLE</p>
   <p>Built and used electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, correlated failures to surface-prep/deposition/cure steps, and framed the results as CTQs, acceptance limits, and process-window feedback.</p>
 </div>
+
+<div class="connection-note"><strong>Connection to flagship:</strong> The deposition project asks where devices land. This reliability project asks whether the printed interconnects and device interfaces remain electrically usable after assembly.</div>
 
 ## Problem / motivation
 
@@ -79,6 +81,6 @@ The value of this project is not just plotting resistance. It is building a feed
 
 This is the language of process engineering inside semiconductor-adjacent R&amp;D: CTQs, screening, yield visibility, reliability, acceptance limits, failure mechanisms, and standardization.
 
-## Next steps
+## Ongoing development
 
 Add a public-safe resistance drift plot, define failure/drift thresholds, and include one simplified process-control diagram that shows how test data feeds back into process changes.
