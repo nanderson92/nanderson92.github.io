@@ -5,9 +5,6 @@ category: Case File Library
 subtitle: Selected technical work in process development, manufacturing, computation, and research-stage engineering.
 ---
 
-<div class="page-cta-line">
-  <strong>Seeking Fall 2026 co-ops / internships</strong> in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
-</div>
 
 <div class="filter-row" aria-label="Project filters">
   <span class="filter-chip active">All</span>

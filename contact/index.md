@@ -7,9 +7,9 @@ subtitle: Recruiter-friendly contact page for technical internships, co-ops, res
 
 <div class="contact-card recruiter-contact">
   <p class="system-label small">LET'S CONNECT</p>
-  <h2>Seeking Fall 2026 co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.</h2>
+  <h2>Let’s connect around process engineering, R&D, manufacturing, and clean technology.</h2>
   <p>
-    I’m interested in process engineering, manufacturing engineering, R&D, semiconductor process development, advanced materials, clean technology, and scale-up opportunities.
+    I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, and clean-technology deployment.
   </p>
   <div class="resume-actions">
     <a class="button primary" href="mailto:{{ site.email }}">Email Me</a>
