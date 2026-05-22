@@ -18,3 +18,8 @@ GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergra
 - Resume
 - Contact
 - Project case study: Micromodular Printed Electronics Deposition
+
+
+## Cleanup note
+
+This version removes the Research page from the site navigation and excludes any leftover `/research/` folder from the Jekyll build. If you previously committed a `research/` directory to GitHub, delete that folder from the repository as well so GitHub Pages cannot serve the old page from a stale file.
