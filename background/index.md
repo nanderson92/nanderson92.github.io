@@ -2,7 +2,7 @@
 layout: page
 title: Background
 category: Personal Background
-subtitle: A concise look at the experiences behind my engineering direction.
+subtitle: A concise human layer behind the engineering direction.
 ---
 
 <div class="background-grid">
@@ -11,20 +11,21 @@ subtitle: A concise look at the experiences behind my engineering direction.
   </aside>
 
   <div>
-    <h2>Incheon → Minnesota → Georgia Tech.</h2>
+    <p class="label small">INCHEON ── MINNESOTA ── ATLANTA ── FUTURE BUILT ENVIRONMENT</p>
+    <h2>Built between worlds, oriented toward systems that scale.</h2>
 
     <p>
       I was adopted from Incheon, South Korea and grew up in a small town in Minnesota before studying Chemical & Biomolecular Engineering at Georgia Tech.
     </p>
 
     <p>
-      That background shaped an interest in systems that are not only technically impressive, but scalable, accessible, and real in people’s daily lives. I am drawn to engineering work that turns advanced research into tangible infrastructure, manufacturing capability, cleaner technology, and future-facing products.
+      That background shaped an interest in mobility, belonging, and technology that is not only impressive in a lab, but accessible in real communities. I am drawn to chemical engineering because it connects materials, energy, infrastructure, manufacturing, and daily life.
     </p>
 
-    <div class="callout">
-      <p class="system-label small">ENGINEERING IDENTITY</p>
+    <div class="callout quiet-callout">
+      <p class="label small">ENGINEERING IDENTITY</p>
       <p>
-        I want to help build technology that feels futuristic without being inaccessible: clean systems, advanced manufacturing, better materials, and engineering processes that can move from lab demonstrations into the built environment.
+        I want to help make futuristic, cleaner technology tangible: process windows, scalable manufacturing methods, advanced materials, and systems that can move from research demonstrations into the built environment.
       </p>
     </div>
 
@@ -32,15 +33,15 @@ subtitle: A concise look at the experiences behind my engineering direction.
     <div class="matrix">
       <div class="matrix-card">
         <h3>Systems thinking</h3>
-        <p>Looking beyond isolated experiments toward constraints, interfaces, process windows, and implementation.</p>
+        <p>Looking beyond isolated experiments toward constraints, interfaces, reproducibility, and implementation.</p>
       </div>
       <div class="matrix-card">
         <h3>Accessibility</h3>
-        <p>Interest in technologies that can scale beyond elite labs into practical manufacturing and daily life.</p>
+        <p>Interest in technologies that can scale beyond elite labs into practical manufacturing and daily use.</p>
       </div>
       <div class="matrix-card">
-        <h3>Translation</h3>
-        <p>Connecting research observations to metrics, design rules, and engineering decisions.</p>
+        <h3>Technical translation</h3>
+        <p>Connecting observations to metrics, design rules, and engineering decisions.</p>
       </div>
     </div>
   </div>

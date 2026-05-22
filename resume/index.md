@@ -6,13 +6,13 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
 ---
 
 <div class="resume-panel">
-  <p class="system-label small">RESUME / RECRUITER ACCESS</p>
+  <p class="label small">RECRUITER ACCESS</p>
   <h2>Technical profile</h2>
   <p>
-    Chemical & Biomolecular Engineering undergraduate at Georgia Tech focused on process development, advanced manufacturing, research translation, and clean-technology systems.
+    Chemical & Biomolecular Engineering undergraduate at Georgia Tech focused on process development, advanced manufacturing, experimental data, and clean-technology systems.
   </p>
   <div class="resume-actions">
-    <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume PDF</a>
+    <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download resume PDF</a>
     <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
     <a class="button secondary" href="{{ site.github }}">GitHub</a>
   </div>
@@ -39,7 +39,7 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
   </div>
   <div class="skill-use">
     <h3>JMP</h3>
-    <p>ANOVA, reliability/statistical analysis, process comparisons, and experimental interpretation.</p>
+    <p>ANOVA, reliability analysis, process comparisons, and experimental interpretation.</p>
   </div>
   <div class="skill-use">
     <h3>Aspen</h3>
@@ -47,7 +47,7 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
   </div>
   <div class="skill-use">
     <h3>ImageJ/Fiji</h3>
-    <p>Microscopy and video segmentation workflows, image calibration, and experimental measurement support.</p>
+    <p>Microscopy and video segmentation workflows, image calibration, and measurement support.</p>
   </div>
   <div class="skill-use">
     <h3>Excel</h3>
@@ -59,7 +59,7 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
 
 <div class="badge-row">
   <span class="badge">Process Development</span>
-  <span class="badge">Advanced Manufacturing</span>
+  <span class="badge">Wet Processing</span>
   <span class="badge">Interfacial Transport</span>
   <span class="badge">Printed Electronics</span>
   <span class="badge">Reliability Testing</span>

@@ -6,33 +6,34 @@ subtitle: Direct contact for internship, co-op, research, and technical opportun
 ---
 
 <div class="contact-panel">
-  <p class="system-label small">CURRENTLY SEEKING</p>
-  <h2>Process engineering, manufacturing engineering, R&D, semiconductor, advanced materials, and clean-technology internship/co-op opportunities.</h2>
+  <p class="label small">LET’S CONNECT</p>
+  <h2>I’m seeking process engineering, manufacturing, R&D, semiconductor, advanced materials, and clean-technology internship/co-op opportunities.</h2>
   <p>
-    I am interested in technical roles where chemical engineering fundamentals, experimental thinking, and manufacturing systems meet real deployment constraints.
+    I am interested in technical roles where chemical engineering fundamentals, experimental thinking, and manufacturing constraints meet real deployment.
   </p>
 
   <div class="resume-actions">
     <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
     <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
     <a class="button secondary" href="{{ site.github }}">GitHub</a>
+    <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Resume</a>
   </div>
 </div>
 
-## Opportunity fit
+## Best-fit conversations
 
 <div class="matrix">
   <div class="matrix-card">
-    <h3>Internship / Co-op</h3>
+    <h3>Internships / Co-ops</h3>
     <p>Process engineering, manufacturing engineering, validation, R&D, clean technology, and semiconductor-related roles.</p>
   </div>
   <div class="matrix-card">
-    <h3>Research</h3>
-    <p>Advanced manufacturing, printed electronics, wet processing, interfacial transport, materials systems, and image analysis.</p>
+    <h3>Advanced manufacturing</h3>
+    <p>Printed electronics, wet processing, materials systems, interfacial transport, and image-based analysis.</p>
   </div>
   <div class="matrix-card">
-    <h3>Location</h3>
-    <p>Open to opportunities where the work is technically credible, hands-on, and aligned with scalable engineering systems.</p>
+    <h3>Research-to-process work</h3>
+    <p>Projects that convert experimental observations into metrics, constraints, and manufacturing-relevant decisions.</p>
   </div>
 </div>
 

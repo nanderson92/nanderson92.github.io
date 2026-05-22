@@ -7,179 +7,162 @@ body_class: home-page
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="system-label">PORTFOLIO SYSTEM // PROCESS + MANUFACTURING</p>
+      <p class="label">ENGINEERING PORTFOLIO // PROCESS + MANUFACTURING</p>
       <p class="name-kicker">Nathan Anderson · Chemical & Biomolecular Engineering · Georgia Tech</p>
       <h1>Engineering the systems that make tomorrow possible.</h1>
       <p class="hero-lede">
-        I work at the process layer between emerging materials and manufacturable systems: connecting research observations, interfacial transport, data extraction, and process-window thinking for advanced manufacturing and clean technology.
+        Chemical engineering portfolio focused on process development, advanced manufacturing, interfacial transport, experimental data, and scalable clean-technology systems.
       </p>
-      <div class="cta-row">
-        <a class="button primary" href="{{ '/portfolio/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
-        <a class="button secondary" href="{{ '/resume/' | relative_url }}">View Resume</a>
+      <div class="hero-actions">
+        <a class="button primary" href="{{ '/projects/' | relative_url }}">View engineering projects <span aria-hidden="true">→</span></a>
+        <a class="button secondary" href="{{ '/resume/' | relative_url }}">View resume</a>
       </div>
     </div>
 
-    <aside class="hero-meta" aria-label="Current engineering direction">
-      <div class="meta-panel">
-        <div class="orbit-mark" aria-hidden="true"></div>
-        <p class="system-label small">ENGINEERING DIRECTION</p>
-        <h2>Research signal → process metric → manufacturing logic.</h2>
-        <p>Process development, printed electronics, wet processing, image analysis, reliability, and clean-technology systems.</p>
+    <aside class="hero-diagram" aria-label="Research signal to manufacturing rule diagram">
+      <p class="label small">SIGNATURE WORKFLOW</p>
+      <div class="signal-stack">
+        <div class="signal-row">
+          <span class="signal-dot blue"></span>
+          <div>
+            <h2>Research signal</h2>
+            <p>Microscopy video · droplet behavior · resistance drift</p>
+          </div>
+        </div>
+        <span class="vertical-connector"></span>
+        <div class="signal-row">
+          <span class="signal-dot green"></span>
+          <div>
+            <h2>Engineering metric</h2>
+            <p>r(t), θ(t), V(t) · uniformity · reliability curve</p>
+          </div>
+        </div>
+        <span class="vertical-connector"></span>
+        <div class="signal-row">
+          <span class="signal-dot solar"></span>
+          <div>
+            <h2>Manufacturing rule</h2>
+            <p>Process window · substrate logic · go/no-go decision</p>
+          </div>
+        </div>
       </div>
     </aside>
   </div>
 </section>
 
-<section class="proof-section" aria-label="Technical proof bar">
-  <p class="system-label small">TECHNICAL STACK / PROOF BAR</p>
-  <div class="proof-bar">
-    <span class="proof-tag">Process Development</span>
-    <span class="proof-tag">Advanced Manufacturing</span>
-    <span class="proof-tag">Interfacial Transport</span>
-    <span class="proof-tag">Printed Electronics</span>
-    <span class="proof-tag">Image Analysis</span>
-    <span class="proof-tag">Reliability Testing</span>
-    <span class="proof-tag">Process Simulation</span>
-    <span class="proof-tag">Clean Technology</span>
-    <span class="proof-tag">Python</span>
-    <span class="proof-tag">MATLAB</span>
-    <span class="proof-tag">JMP</span>
-    <span class="proof-tag">Aspen</span>
-    <span class="proof-tag">ImageJ/Fiji</span>
+<section class="proof-section" aria-label="Technical proof and skills">
+  <div class="proof-header">
+    <p class="label small">TECHNICAL PROOF</p>
+    <h2>Concrete tools and domains behind the portfolio.</h2>
+  </div>
+  <div class="proof-groups">
+    <article class="proof-group">
+      <h3>Process</h3>
+      <div class="chip-row"><span>Process development</span><span>Wet processing</span><span>PFDs</span><span>Balances</span><span>Aspen</span></div>
+    </article>
+    <article class="proof-group">
+      <h3>Data</h3>
+      <div class="chip-row"><span>Python</span><span>MATLAB</span><span>JMP</span><span>Time series</span><span>Reliability</span></div>
+    </article>
+    <article class="proof-group">
+      <h3>Research</h3>
+      <div class="chip-row"><span>Microscopy</span><span>ImageJ/Fiji</span><span>Interfacial transport</span><span>Printed electronics</span></div>
+    </article>
   </div>
 </section>
 
-<section class="framework" aria-label="Input Process Output Validation framework">
-  <div class="section-heading">
-    <p class="system-label">INPUT → PROCESS → OUTPUT → VALIDATION</p>
-    <h2>A process-engineering framework for research translation.</h2>
-    <p>Technical work is organized as a pipeline from raw observations to engineering metrics and manufacturability checks.</p>
+<section class="workflow-section" aria-label="Engineering workflow diagram">
+  <div class="section-heading compact">
+    <p class="label">OBSERVATION → MANUFACTURING RULE</p>
+    <h2>How I structure engineering work.</h2>
+    <p>Less abstract branding, more traceable movement from experiment to metric to decision.</p>
   </div>
-
-  <div class="flow-strip">
-    <div class="flow-item">
-      <span class="flow-node"></span>
-      <h3>INPUT</h3>
-      <p>Experimental observations, raw videos, substrate conditions, material systems, and operating constraints.</p>
-    </div>
-    <div class="flow-item">
-      <span class="flow-node"></span>
-      <h3>PROCESS</h3>
-      <p>Transport analysis, image processing, process maps, simulation, and engineering interpretation.</p>
-    </div>
-    <div class="flow-item">
-      <span class="flow-node"></span>
-      <h3>OUTPUT</h3>
-      <p>Metrics, deposition distributions, design rules, engineering figures, and decision logic.</p>
-    </div>
-    <div class="flow-item">
-      <span class="flow-node"></span>
-      <h3>VALIDATION</h3>
-      <p>Replicates, reliability data, statistical analysis, process stability, and manufacturability checks.</p>
-    </div>
+  <div class="workflow-strip">
+    <div class="workflow-step"><span>01</span><strong>Observation</strong><p>Raw video, substrate behavior, microscopy frames, resistance drift.</p></div>
+    <div class="workflow-step"><span>02</span><strong>Experiment</strong><p>Controlled conditions, replicate plans, constraints, and variables.</p></div>
+    <div class="workflow-step"><span>03</span><strong>Data extraction</strong><p>Segmentation, tracking, calibration, curves, and distributions.</p></div>
+    <div class="workflow-step"><span>04</span><strong>Metrics</strong><p>r(t), θ(t), V(t), edge/center ratio, density, reliability trends.</p></div>
+    <div class="workflow-step"><span>05</span><strong>Process window</strong><p>Operating regions, design tradeoffs, repeatability checks.</p></div>
+    <div class="workflow-step"><span>06</span><strong>Manufacturing rule</strong><p>Substrate logic, process limits, and technical decisions.</p></div>
   </div>
 </section>
 
-<section class="project-strip" aria-label="Featured engineering work">
+<section class="project-strip" aria-label="Featured engineering case files">
   <div class="section-heading">
-    <p class="system-label">FEATURED ENGINEERING WORK</p>
-    <h2>Case-study style project previews.</h2>
+    <p class="label">FEATURED CASE FILES</p>
+    <h2>Project previews built for engineering review.</h2>
+    <p>Each preview uses the same structure: problem, method, output, tools, and status.</p>
   </div>
 
-  <div class="project-grid">
-    <article class="project-card">
+  <div class="case-grid">
+    <article class="case-card case-feature">
       <div class="card-visual visual-droplet" aria-hidden="true"></div>
-      <p class="tag">PROJECT_01 · RESEARCH · ADVANCED MANUFACTURING</p>
+      <div class="case-topline"><span>Research · Advanced Manufacturing</span><span>In progress</span></div>
       <h3>Micromodular Printed Electronics Deposition</h3>
-      <p><strong>Problem:</strong> Nonuniform deposition limits scalable printed electronics assembly.</p>
-      <div class="card-meta">
-        <span><strong>System:</strong> IPA droplet + porous substrate + suspended microdevices</span>
-        <span><strong>Methods:</strong> Optical microscopy · droplet tracking · image analysis</span>
-        <span><strong>Output:</strong> Process-window metrics for more uniform deposition</span>
-      </div>
-      <span class="status-pill">In progress</span>
-      <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
+      <p class="case-problem">Nonuniform deposition limits scalable printed electronics assembly.</p>
+      <dl>
+        <div><dt>Method</dt><dd>Optical microscopy · droplet tracking · substrate comparison</dd></div>
+        <div><dt>Output</dt><dd>Process-window metrics · deposition maps · substrate logic</dd></div>
+        <div><dt>Tools</dt><dd>Keyence · Python · ImageJ/Fiji · JMP</dd></div>
+      </dl>
+      <a class="text-link" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a>
     </article>
 
-    <article class="project-card">
+    <article class="case-card">
       <div class="card-visual visual-pfd" aria-hidden="true"></div>
-      <p class="tag">PROJECT_02 · PROCESS ENGINEERING</p>
+      <div class="case-topline"><span>Process Engineering</span><span>Buildout</span></div>
       <h3>Process Simulation and Design</h3>
-      <p><strong>Problem:</strong> Translate chemical engineering fundamentals into defensible process decisions.</p>
-      <div class="card-meta">
-        <span><strong>System:</strong> Unit operations, separations, thermodynamics, and process flows</span>
-        <span><strong>Methods:</strong> PFDs · material/energy balances · Aspen simulation</span>
-        <span><strong>Output:</strong> Process models, design tradeoffs, and engineering calculations</span>
-      </div>
-      <span class="status-pill">Coursework + buildout</span>
-      <p><a href="{{ '/portfolio/' | relative_url }}">View portfolio <span aria-hidden="true">→</span></a></p>
+      <p class="case-problem">Translate process requirements into flowsheets, balances, and defensible design decisions.</p>
+      <dl>
+        <div><dt>Method</dt><dd>PFDs · material/energy balances · Aspen simulation</dd></div>
+        <div><dt>Output</dt><dd>Process models · design tradeoffs · engineering calculations</dd></div>
+        <div><dt>Tools</dt><dd>Aspen · MATLAB · Excel</dd></div>
+      </dl>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}">View project library <span aria-hidden="true">→</span></a>
     </article>
 
-    <article class="project-card">
+    <article class="case-card">
       <div class="card-visual visual-signal" aria-hidden="true"></div>
-      <p class="tag">PROJECT_03 · RELIABILITY · DATA</p>
-      <h3>Printed Interconnect Reliability / Experimental Analysis</h3>
-      <p><strong>Problem:</strong> Quantify process drift and failure behavior under environmental stress.</p>
-      <div class="card-meta">
-        <span><strong>System:</strong> Printed Ag nanoparticle interconnects and resistance data</span>
-        <span><strong>Methods:</strong> Resistance tracking · JMP statistics · reliability interpretation</span>
-        <span><strong>Output:</strong> Stress-response summaries and experimental analysis workflow</span>
-      </div>
-      <span class="status-pill">Framework developing</span>
-      <p><a href="{{ '/portfolio/' | relative_url }}">View portfolio <span aria-hidden="true">→</span></a></p>
+      <div class="case-topline"><span>Reliability · Data</span><span>Developing</span></div>
+      <h3>Printed Interconnect Reliability</h3>
+      <p class="case-problem">Quantify resistance drift and stress response in printed interconnects.</p>
+      <dl>
+        <div><dt>Method</dt><dd>Resistance tracking · reliability plots · JMP analysis</dd></div>
+        <div><dt>Output</dt><dd>Stress-response summaries · process interpretation</dd></div>
+        <div><dt>Tools</dt><dd>JMP · Excel · Python</dd></div>
+      </dl>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}">View project library <span aria-hidden="true">→</span></a>
     </article>
 
-    <article class="project-card">
+    <article class="case-card">
       <div class="card-visual visual-compute" aria-hidden="true"></div>
-      <p class="tag">PROJECT_04 · COMPUTATION</p>
-      <h3>Image Analysis / Technical Computation</h3>
-      <p><strong>Problem:</strong> Convert microscopy and video data into usable engineering variables.</p>
-      <div class="card-meta">
-        <span><strong>System:</strong> Droplet videos, microscopy frames, time-series extraction</span>
-        <span><strong>Methods:</strong> Python · ImageJ/Fiji · segmentation · plotting</span>
-        <span><strong>Output:</strong> r(t), θ(t), V(t), and deposition-distribution workflows</span>
-      </div>
-      <span class="status-pill">Tooling in progress</span>
-      <p><a href="{{ '/portfolio/' | relative_url }}">View portfolio <span aria-hidden="true">→</span></a></p>
+      <div class="case-topline"><span>Computation</span><span>In progress</span></div>
+      <h3>Droplet and Image Analysis Workflows</h3>
+      <p class="case-problem">Convert microscopy and video data into quantitative engineering variables.</p>
+      <dl>
+        <div><dt>Method</dt><dd>Segmentation · calibration · plotting · validation</dd></div>
+        <div><dt>Output</dt><dd>r(t), θ(t), V(t) · deposition-distribution workflows</dd></div>
+        <div><dt>Tools</dt><dd>Python · ImageJ/Fiji · MATLAB</dd></div>
+      </dl>
+      <a class="text-link" href="{{ '/projects/' | relative_url }}">View project library <span aria-hidden="true">→</span></a>
     </article>
   </div>
 </section>
 
-<section class="system-section" aria-label="Process to manufacturing schematic">
-  <div class="schematic-card" aria-hidden="true">
-    <div class="pipeline">
-      <div class="pipeline-step"><span class="dot"></span><span>Observation</span></div>
-      <span class="connector"></span>
-      <div class="pipeline-step"><span class="dot"></span><span>Experiment</span></div>
-      <span class="connector"></span>
-      <div class="pipeline-step"><span class="dot"></span><span>Data Extraction</span></div>
-      <span class="connector"></span>
-      <div class="pipeline-step"><span class="dot"></span><span>Metrics</span></div>
-      <span class="connector"></span>
-      <div class="pipeline-step"><span class="dot"></span><span>Process Window</span></div>
-      <span class="connector"></span>
-      <div class="pipeline-step"><span class="dot"></span><span>Manufacturing Translation</span></div>
-    </div>
+<section class="human-band" aria-label="Background preview">
+  <div class="human-copy">
+    <p class="label small">BACKGROUND</p>
+    <h2>Built between worlds, oriented toward systems that scale.</h2>
+    <p>Adopted from Incheon, raised in small-town Minnesota, and now studying Chemical & Biomolecular Engineering at Georgia Tech.</p>
   </div>
-  <article class="system-copy">
-    <p class="system-label">OBSERVATION → MANUFACTURING TRANSLATION</p>
-    <h2>A technical operating system for engineering work.</h2>
-    <p>
-      The portfolio is structured so a recruiter can skim quickly, while a technical manager can dig into system definitions, constraints, methods, tools, metrics, and engineering outputs.
-    </p>
-    <div class="inline-links">
-      <a href="{{ '/portfolio/' | relative_url }}">Portfolio <span aria-hidden="true">→</span></a>
-      <a href="{{ '/research/' | relative_url }}">Research <span aria-hidden="true">→</span></a>
-      <a href="{{ '/contact/' | relative_url }}">Contact <span aria-hidden="true">→</span></a>
-    </div>
-  </article>
+  <a class="button secondary" href="{{ '/background/' | relative_url }}">Read background</a>
 </section>
 
 <section class="cta-band">
   <div>
-    <p class="system-label small">OPEN TO TECHNICAL OPPORTUNITIES</p>
-    <h2>Process engineering, manufacturing, R&D, semiconductors, advanced materials, and clean technology.</h2>
-    <p>Seeking internship/co-op opportunities where chemical engineering fundamentals meet real manufacturing systems.</p>
+    <p class="label small">CURRENTLY SEEKING</p>
+    <h2>Internship/co-op opportunities in process engineering, manufacturing, R&D, semiconductors, advanced materials, and clean technology.</h2>
+    <p>Looking for technical work where experimental thinking, chemical engineering fundamentals, and real manufacturing constraints meet.</p>
   </div>
-  <a class="button primary" href="{{ '/contact/' | relative_url }}">Contact <span aria-hidden="true">→</span></a>
+  <a class="button primary" href="{{ '/contact/' | relative_url }}">Start a conversation <span aria-hidden="true">→</span></a>
 </section>
