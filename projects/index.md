@@ -6,7 +6,7 @@ subtitle: Proof-of-work artifacts: project pages, methods, figures, tools, outpu
 ---
 
 <div class="section-note">
-  <strong>Projects vs. Research:</strong> Projects are artifact-focused case files: what problem was addressed, what methods were used, what outputs were produced, and what tools supported the work. Research explains the broader academic framing, technical questions, and manufacturing relevance behind those projects.
+  <strong>Projects = technical proof-of-work:</strong> this page collects case files around problem, method, output, tools, and status so visitors can quickly scan the engineering work behind the portfolio.
 </div>
 
 <div class="filter-row" aria-label="Project filters">
