@@ -25,7 +25,7 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
 </div>
 
 <div class="portfolio-grid projects-library">
-  <article class="portfolio-card feature-project evidence-card">
+  <article id="process-development" class="portfolio-card feature-project evidence-card">
     <div class="card-visual visual-droplet" aria-hidden="true"></div>
     <div class="card-topline"><span>Featured · Semiconductors · Interfacial Transport</span><span>Status: Active buildout</span></div>
     <h2>Micromodular Electronics Deposition</h2>
@@ -40,7 +40,7 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
     <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open full case study →</a></p>
   </article>
 
-  <article class="portfolio-card evidence-card">
+  <article id="reliability-quality" class="portfolio-card evidence-card">
     <div class="card-visual visual-signal" aria-hidden="true"></div>
     <div class="card-topline"><span>Featured · Reliability · Process Control</span><span>Status: Active buildout</span></div>
     <h2>Printed Interconnect &amp; FET Reliability</h2>
@@ -55,7 +55,7 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
     <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open full case study →</a></p>
   </article>
 
-  <article class="portfolio-card evidence-card">
+  <article id="microfluidics" class="portfolio-card evidence-card">
     <div class="card-visual visual-droplet" aria-hidden="true"></div>
     <div class="card-topline"><span>Featured · Microfluidics · Process Development</span><span>Status: New case file</span></div>
     <h2>Scalable Stem-Cell Microencapsulation</h2>
@@ -70,7 +70,7 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
     <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open full case study →</a></p>
   </article>
 
-  <article class="portfolio-card evidence-card">
+  <article id="automation-data" class="portfolio-card evidence-card">
     <div class="card-visual visual-compute" aria-hidden="true"></div>
     <div class="card-topline"><span>Featured · Automation · Diagnostics</span><span>Status: New case file</span></div>
     <h2>Thermocycler Process Automation</h2>
@@ -85,6 +85,9 @@ subtitle: Engineering case files: process development, micro/nano manufacturing,
     <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open full case study →</a></p>
   </article>
 </div>
+
+
+<div id="process-simulation" class="skill-anchor" aria-label="Process simulation, PFDs, balances, Aspen, and MATLAB evidence"></div>
 
 <section class="supporting-work" aria-labelledby="supporting-work-title">
   <div class="supporting-header">
