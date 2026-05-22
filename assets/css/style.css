@@ -2151,3 +2151,167 @@ body.home-page .site-footer::before {
     height: 460px;
   }
 }
+
+/* === Homepage seam removal: one fixed city layer + continuous white wash ===
+   Removes the hard horizontal band near the flagship card and keeps the bottom white. */
+html,
+body,
+body.home-page {
+  background: #ffffff !important;
+  overscroll-behavior-y: none;
+}
+
+body.home-page {
+  background-image: none !important;
+}
+
+.home-page #content {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: #ffffff !important;
+}
+
+@supports not (overflow: clip) {
+  .home-page #content { overflow: hidden; }
+}
+
+/* Single source of the city image. Keeping it here avoids the hero/flagship mismatch seam. */
+.home-page #content::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  background: url('../images/homepage-background.jpg') center top / cover no-repeat;
+  transform: translateZ(0);
+  will-change: auto;
+}
+
+/* Continuous page-level fade: visible through hero, white by the lower homepage. */
+.home-page #content::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 -180px 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.18) 0vh,
+      rgba(255,255,255,0.22) 32vh,
+      rgba(255,255,255,0.34) 58vh,
+      rgba(255,255,255,0.54) 82vh,
+      rgba(255,255,255,0.76) 104vh,
+      rgba(255,255,255,0.92) 124vh,
+      #ffffff 140vh,
+      #ffffff 100%
+    );
+}
+
+/* Do not draw a second hero image or a clipped hero-bottom fade; that was creating the line. */
+.home-page .hero {
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+.home-page .hero::before {
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.84) 34%, rgba(255,255,255,.42) 62%, rgba(255,255,255,.10) 100%) !important;
+}
+
+.home-page .hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Let the flagship card sit in the same continuous field instead of starting a new white block. */
+.home-page .signature-case-section,
+.home-page .flagship-project-section {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+}
+
+.home-page .signature-case-card,
+.home-page .flagship-project-card {
+  background: linear-gradient(135deg, rgba(255,255,255,.965), rgba(248,253,252,.93)) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Once the reader reaches the lower homepage, everything is true white. */
+.home-page .supporting-home-cases,
+.home-page .human-service-band,
+.home-page .cta-band.recruiter-cta,
+.home-page .site-footer,
+body.home-page .site-footer {
+  position: relative;
+  z-index: 2;
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.home-page .site-footer,
+body.home-page .site-footer {
+  margin-bottom: 0 !important;
+  border-top: 0 !important;
+  box-shadow: none !important;
+}
+
+.home-page .site-footer::before,
+body.home-page .site-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -180px;
+  height: 180px;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0), #ffffff 62%, #ffffff 100%);
+}
+
+@media (max-width: 980px) {
+  .home-page #content::before {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    height: 1120px;
+    background-position: center top;
+  }
+
+  .home-page #content::after {
+    inset-bottom: -140px;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,.22) 0vh,
+        rgba(255,255,255,.40) 42vh,
+        rgba(255,255,255,.70) 78vh,
+        rgba(255,255,255,.94) 108vh,
+        #ffffff 124vh,
+        #ffffff 100%
+      );
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page #content::before {
+    height: 900px;
+  }
+
+  .home-page #content::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,.28) 0vh,
+        rgba(255,255,255,.56) 44vh,
+        rgba(255,255,255,.88) 74vh,
+        #ffffff 96vh,
+        #ffffff 100%
+      );
+  }
+}
