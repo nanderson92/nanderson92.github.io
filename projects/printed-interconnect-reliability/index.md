@@ -21,6 +21,15 @@ This case file focuses on reliability and process control for printed interconne
 
 Printed interconnects can look acceptable initially but fail later through resistance drift, intermittent opens, weak contacts, surface-prep defects, or stress-induced degradation. A useful manufacturing process needs more than a one-time “works / does not work” check; it needs a measurement loop that makes yield and failure modes visible.
 
+## Roadmap context
+
+This project covers the **interconnect system** within the broader micromodular workflow. After devices are placed, the challenge becomes routing, printing, testing, and using electrical data to decide whether the assembly process is stable enough for manufacturing.
+
+<figure class="wide-figure">
+  <img src="{{ '/assets/images/micromodular-roadmap-interconnect.svg' | relative_url }}" alt="High-level roadmap of micromodular electronics with the interconnect system highlighted">
+  <figcaption>High-level roadmap of the micromodular electronics workflow. The highlighted region marks the interconnect system addressed in this case study.</figcaption>
+</figure>
+
 ## System schematic
 
 <div class="project-schematic schematic-reliability" aria-label="Representative resistance drift schematic">

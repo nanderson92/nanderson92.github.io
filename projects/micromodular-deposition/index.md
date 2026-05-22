@@ -25,6 +25,15 @@ The practical question is:
 
 > What substrate boundary conditions produce repeatable, spatially useful deposition instead of edge-heavy accumulation?
 
+## Roadmap context
+
+This project sits inside a larger micromodular electronics workflow. The immediate focus is the **deposition subsystem**: suspending modular devices in an ink, printing them onto the substrate, and creating a placement state that downstream interconnect printing can use.
+
+<figure class="wide-figure">
+  <img src="{{ '/assets/images/micromodular-roadmap-deposition.svg' | relative_url }}" alt="High-level roadmap of micromodular electronics with the deposition subsystem highlighted">
+  <figcaption>High-level roadmap of the micromodular electronics workflow. The highlighted region marks the deposition subsystem that this case study develops.</figcaption>
+</figure>
+
 ## Public-safe system schematic
 
 <div class="project-schematic" aria-label="Representative schematic of droplet, substrate, and suspended microdevices">
