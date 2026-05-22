@@ -1807,3 +1807,151 @@ body.home-page::before {
     margin-top: 40px !important;
   }
 }
+
+/* === Homepage performance + bottom-white repair ===
+   Removes the expensive fixed-background/backdrop-filter treatment and keeps
+   the home page fully white after the hero transition. */
+html,
+body.home-page {
+  background: #ffffff !important;
+}
+
+body.home-page {
+  background-image: none !important;
+  background-attachment: scroll !important;
+  background-size: auto !important;
+  background-position: initial !important;
+}
+
+body.home-page::before {
+  display: none !important;
+}
+
+.home-page #content {
+  position: relative;
+  isolation: isolate;
+  background: #ffffff !important;
+}
+
+.home-page .hero {
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(690px, 82vh, 820px);
+  padding-bottom: clamp(170px, 22vh, 245px);
+  margin-bottom: 0;
+  background: #ffffff;
+  contain: layout paint;
+}
+
+.home-page .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.84) 35%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.12) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.06) 48%, rgba(255,255,255,.60) 78%, #ffffff 100%),
+    url('../images/homepage-background.jpg');
+  background-size: cover, cover, cover;
+  background-position: center top, center top, center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  transform: translateZ(0);
+  will-change: auto;
+}
+
+.home-page .hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: min(52vh, 520px);
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.18) 24%,
+    rgba(255,255,255,.58) 55%,
+    rgba(255,255,255,.88) 80%,
+    #ffffff 100%
+  );
+}
+
+.home-page .hero-inner,
+.home-page .hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .signature-case-section {
+  position: relative;
+  z-index: 3;
+  margin-top: clamp(-120px, -11vh, -76px);
+  margin-bottom: clamp(58px, 7vw, 92px);
+}
+
+.home-page .proof-section {
+  position: relative;
+  z-index: 2;
+  margin-top: 0 !important;
+  background: rgba(255,255,255,.96);
+}
+
+.home-page .signature-case-card,
+.home-page .proof-section,
+.home-page .cta-band,
+.home-page .portfolio-card,
+.home-page .human-service-band article {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.home-page .supporting-home-cases,
+.home-page .human-service-band,
+.home-page .recruiter-cta,
+.site-footer {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.site-footer {
+  background: rgba(255,255,255,.96) !important;
+}
+
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: 640px;
+    padding-bottom: 150px;
+  }
+  .home-page .hero::after {
+    height: 380px;
+  }
+  .home-page .signature-case-section {
+    margin-top: -70px;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    min-height: 590px;
+    padding-bottom: 120px;
+  }
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.93) 0%, rgba(255,255,255,.78) 46%, rgba(255,255,255,.62) 72%, #ffffff 100%),
+      url('../images/homepage-background.jpg');
+    background-size: cover, cover;
+    background-position: center top, center top;
+  }
+  .home-page .hero::after {
+    height: 300px;
+  }
+  .home-page .signature-case-section {
+    margin-top: -42px;
+    margin-bottom: 52px;
+  }
+}
