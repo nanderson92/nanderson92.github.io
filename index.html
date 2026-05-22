@@ -13,8 +13,8 @@ body_class: home-page
       <p class="hero-lede">
         Chemical engineering student at Georgia Tech building process-development workflows for printed electronics, wet processing, image analysis, and manufacturing-scale decision-making.
       </p>
-      <p class="opportunity-line">
-        Seeking Fall 2026 co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
+      <p class="opportunity-callout">
+        Seeking Fall 2026 co-ops and internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
       </p>
       <div class="cta-row">
         <a class="button primary" href="{{ '/projects/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
@@ -22,26 +22,13 @@ body_class: home-page
         <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
       </div>
     </div>
-
-    <aside class="hero-anchor" aria-label="Technical workflow anchor">
-      <p class="system-label small">TECHNICAL ANCHOR</p>
-      <h2>Observation → metric → rule</h2>
-      <div class="mini-pipeline compact">
-        <span>Observation</span><i></i><span>Experiment</span><i></i><span>Data Extraction</span><i></i><span>Metrics</span><i></i><span>Process Window</span><i></i><span>Manufacturing Rule</span>
-      </div>
-      <div class="anchor-examples">
-        <p><strong>Microscopy video</strong> → r(t), θ(t), V(t) → process window</p>
-        <p><strong>Droplet behavior</strong> → deposition uniformity → substrate rule</p>
-        <p><strong>Resistance drift</strong> → reliability curve → manufacturing decision</p>
-      </div>
-    </aside>
   </div>
 </section>
 
 <section class="proof-section" aria-label="Technical proof bar">
   <div class="proof-heading">
     <p class="system-label small">TECHNICAL PROOF</p>
-    <p>Grouped for fast recruiter scanning: process/manufacturing, research/materials, and data/computation.</p>
+    <p>Grouped by what recruiters and technical managers scan for first.</p>
   </div>
   <div class="proof-groups">
     <div class="proof-group">
@@ -60,7 +47,7 @@ body_class: home-page
       <div class="proof-bar">
         <span class="proof-tag">Printed Electronics</span>
         <span class="proof-tag">Interfacial Transport</span>
-        <span class="proof-tag">Substrates</span>
+        <span class="proof-tag">Substrate Screening</span>
         <span class="proof-tag">Microscopy</span>
       </div>
     </div>
@@ -79,10 +66,10 @@ body_class: home-page
 <section class="workflow-section" aria-label="Signature engineering workflow">
   <div class="section-heading compact-heading">
     <p class="system-label">SIGNATURE WORKFLOW</p>
-    <h2>From messy observations to usable engineering decisions.</h2>
-    <p>Raw videos, substrate conditions, and experimental variation become measurements, figures, and process-window logic.</p>
+    <h2>Observation → experiment → engineering decision.</h2>
+    <p>How I organize research-stage behavior into metrics, process windows, and manufacturable constraints.</p>
   </div>
-  <div class="workflow-line">
+  <div class="workflow-line workflow-line-compact">
     <div><span class="flow-dot"></span><strong>Observation</strong><p>Droplet motion, microscopy frames, resistance drift, substrate response.</p></div>
     <div><span class="flow-dot"></span><strong>Experiment</strong><p>Controlled deposition, substrate comparison, stress testing, process variables.</p></div>
     <div><span class="flow-dot"></span><strong>Data Extraction</strong><p>Segmentation, time series, measurements, plots, screening tables.</p></div>
@@ -96,7 +83,7 @@ body_class: home-page
   <div class="section-heading">
     <p class="system-label">FEATURED PROJECTS</p>
     <h2>Engineering case files.</h2>
-    <p>Each preview is organized around evidence: problem, method, output, tools, and status.</p>
+    <p>Project previews are organized around technical artifacts: problem, method, output, tools, and status.</p>
   </div>
 
   <div class="project-grid evidence-grid">
@@ -106,8 +93,9 @@ body_class: home-page
       <h3>Micromodular Printed Electronics Deposition</h3>
       <p class="problem-line">Nonuniform deposition limits scalable printed electronics assembly.</p>
       <div class="evidence-table">
+        <span><strong>Problem</strong> Suspended microdevices can accumulate at the rim during droplet drying or imbibition.</span>
         <span><strong>Method</strong> Optical microscopy · droplet tracking · substrate comparison</span>
-        <span class="output-row"><strong>Output</strong> Process-window metrics and substrate-selection logic</span>
+        <span class="output-row"><strong>Output</strong> Process-window metrics, deposition-pattern figures, and substrate-selection logic</span>
         <span><strong>Tools</strong> Keyence · Python · ImageJ/Fiji · JMP</span>
         <span><strong>Status</strong> In progress</span>
       </div>
@@ -118,10 +106,11 @@ body_class: home-page
       <div class="card-visual visual-pfd" aria-hidden="true"></div>
       <p class="tag">PROJECT_02 · PROCESS ENGINEERING</p>
       <h3>Process Simulation and Design</h3>
-      <p class="problem-line">Convert requirements into flowsheets, balances, and defensible design decisions.</p>
+      <p class="problem-line">Convert process requirements into flowsheets, balances, and defensible design decisions.</p>
       <div class="evidence-table">
+        <span><strong>Problem</strong> Process alternatives need balance closure, assumptions, and thermodynamic reasoning.</span>
         <span><strong>Method</strong> PFDs · material/energy balances · Aspen simulation</span>
-        <span class="output-row"><strong>Output</strong> Process models, design tradeoffs, and engineering calculations</span>
+        <span class="output-row"><strong>Output</strong> Flowsheet logic, calculated design tradeoffs, and simulation-based recommendations</span>
         <span><strong>Tools</strong> Aspen · MATLAB · Excel</span>
         <span><strong>Status</strong> Case study buildout in progress</span>
       </div>
@@ -131,11 +120,12 @@ body_class: home-page
     <article class="project-card evidence-card">
       <div class="card-visual visual-signal" aria-hidden="true"></div>
       <p class="tag">PROJECT_03 · RELIABILITY</p>
-      <h3>Printed Interconnect Reliability</h3>
+      <h3>Printed Interconnect Reliability Analysis</h3>
       <p class="problem-line">Quantify resistance drift and failure behavior under environmental stress.</p>
       <div class="evidence-table">
+        <span><strong>Problem</strong> Resistance drift can hide process instability or early reliability failure.</span>
         <span><strong>Method</strong> Resistance tracking · trend analysis · JMP comparisons</span>
-        <span class="output-row"><strong>Output</strong> Stress-response summaries and reliability interpretation</span>
+        <span class="output-row"><strong>Output</strong> Stress-response summaries, drift plots, and reliability interpretation</span>
         <span><strong>Tools</strong> JMP · Excel · Python</span>
         <span><strong>Status</strong> Case study buildout in progress</span>
       </div>
@@ -148,33 +138,36 @@ body_class: home-page
       <h3>Droplet and Image Analysis Workflows</h3>
       <p class="problem-line">Extract quantitative variables from microscopy videos and experimental time series.</p>
       <div class="evidence-table">
+        <span><strong>Problem</strong> Raw videos need repeatable measurement workflows before they can support decisions.</span>
         <span><strong>Method</strong> Segmentation · calibration · plotting · validation checks</span>
-        <span class="output-row"><strong>Output</strong> r(t), θ(t), V(t), and deposition-distribution workflows</span>
+        <span class="output-row"><strong>Output</strong> r(t), θ(t), V(t), and deposition-distribution analysis workflows</span>
         <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB</span>
         <span><strong>Status</strong> Tooling in progress</span>
       </div>
-      <p><a href="{{ '/projects/droplet-image-analysis/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
+      <p><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
     </article>
   </div>
 </section>
 
-<section class="human-band" aria-label="Giving back and background">
-  <div>
-    <p class="system-label small">HUMAN LAYER</p>
-    <h2>Technical work, grounded in access.</h2>
-    <p><strong>Giving Back</strong> highlights tutoring, mentorship, and service work aimed at helping technical opportunity reach more students and communities.</p>
-  </div>
-  <div class="inline-links">
-    <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
-    <a href="{{ '/giving-back/' | relative_url }}">Giving Back <span aria-hidden="true">→</span></a>
-  </div>
+<section class="human-service-band" aria-label="Background and giving back">
+  <article>
+    <p class="system-label">HUMAN CONTEXT</p>
+    <h2>Built for technical work that reaches people.</h2>
+    <p>
+      Background explains the personal thread behind my interest in accessible, scalable technology; Giving Back will collect tutoring, mentorship, and service work as those experiences are added.
+    </p>
+    <div class="inline-links">
+      <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
+      <a href="{{ '/giving-back/' | relative_url }}">Giving Back <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
 </section>
 
-<section class="cta-band recruiter-cta">
+<section class="cta-band recruiter-cta" aria-label="Recruiting call to action">
   <div>
-    <p class="system-label small">OPEN TO FALL 2026 TECHNICAL OPPORTUNITIES</p>
-    <h2>Seeking co-ops / internships in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.</h2>
-    <p>Best-fit conversations: wet processing, R&D, process development, reliability, image analysis, scale-up, and research-to-manufacturing decision work.</p>
+    <p class="system-label small">FALL 2026 OPPORTUNITIES</p>
+    <h2>Seeking process engineering, manufacturing, R&D, advanced materials, semiconductor, and clean-technology co-ops/internships.</h2>
+    <p>Best-fit work: wet processing, process development, reliability, data analysis, clean manufacturing, and research-to-engineering workflows.</p>
   </div>
   <div class="cta-row compact-cta">
     <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>

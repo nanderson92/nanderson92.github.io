@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Representative radius versus time plot</title>
+  <desc id="desc">Representative plot for droplet radius over normalized time across substrate conditions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef8f7"/></linearGradient>
+    <style>
+      .axis{stroke:#35565c;stroke-width:2}.grid{stroke:#dbe8ea;stroke-width:1}.label{font:700 13px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;fill:#35565c}.body{font:500 15px Inter,Arial,sans-serif;fill:#61787c}.series1{fill:none;stroke:#0d8eb1;stroke-width:4;stroke-linecap:round}.series2{fill:none;stroke:#4c936c;stroke-width:4;stroke-linecap:round}.series3{fill:none;stroke:#a8b5bb;stroke-width:4;stroke-linecap:round;stroke-dasharray:10 10}.legend{font:600 14px Inter,Arial,sans-serif;fill:#35565c}
+    </style>
+  </defs>
+  <rect width="920" height="420" rx="28" fill="url(#bg)"/>
+  <text x="54" y="56" class="label">REPRESENTATIVE ANALYSIS TARGET · r(t)</text>
+  <text x="54" y="82" class="body">Public-safe schematic plot for comparing droplet footprint dynamics across substrate conditions.</text>
+  <g transform="translate(86 110)">
+    <line x1="0" y1="240" x2="740" y2="240" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="240" class="axis"/>
+    <g opacity=".9">
+      <line x1="0" y1="60" x2="740" y2="60" class="grid"/><line x1="0" y1="120" x2="740" y2="120" class="grid"/><line x1="0" y1="180" x2="740" y2="180" class="grid"/>
+      <line x1="185" y1="0" x2="185" y2="240" class="grid"/><line x1="370" y1="0" x2="370" y2="240" class="grid"/><line x1="555" y1="0" x2="555" y2="240" class="grid"/>
+    </g>
+    <path class="series1" d="M0 190 C70 118 132 100 210 96 C330 91 430 100 535 122 C630 143 700 170 740 205"/>
+    <path class="series2" d="M0 198 C42 150 80 134 130 132 C200 130 270 150 330 174 C430 214 560 232 740 238"/>
+    <path class="series3" d="M0 202 C100 168 240 152 390 154 C520 157 650 174 740 198"/>
+    <text x="276" y="290" class="label">normalized time</text>
+    <text x="-58" y="112" transform="rotate(-90 -58 112)" class="label">relative footprint radius</text>
+    <g transform="translate(500 14)">
+      <line x1="0" y1="0" x2="28" y2="0" class="series1"/><text x="38" y="5" class="legend">glass-like control</text>
+      <line x1="0" y1="28" x2="28" y2="28" class="series2"/><text x="38" y="33" class="legend">porous condition</text>
+      <line x1="0" y1="56" x2="28" y2="56" class="series3"/><text x="38" y="61" class="legend">repeatability target</text>
+    </g>
+  </g>
+</svg>

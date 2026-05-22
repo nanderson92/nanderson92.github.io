@@ -1,23 +1,22 @@
 ---
 layout: page
 title: Giving Back
-category: Human Layer
-subtitle: Tutoring, mentorship, and service connected to technical access.
+category: Service / Mentorship
+subtitle: Tutoring, mentorship, volunteering, and technical communication work will live here as this section grows.
 ---
 
 ## Purpose
 
-Giving Back is where I will collect tutoring, mentorship, volunteering, and outreach work that helps technical opportunity reach more students and communities.
+This section is a concise home for work that shows how I use technical skills and communication to support other people: tutoring, mentorship, volunteering, outreach, and education-oriented projects.
 
-<div class="background-editorial giving-layout">
-  <article class="background-copy">
-    <p class="system-label small">ACCESS · MENTORSHIP · TECHNICAL CONFIDENCE</p>
-    <h2>Helping more people see engineering as reachable.</h2>
-    <p>
-      My technical interests are future-facing, but I care about whether the future is actually accessible. This section will focus on practical service: tutoring, mentoring younger students, sharing technical resources, and supporting people who are still building confidence in STEM.
-    </p>
-    <p>
-      Buildout in progress — current focus: adding specific examples, organizations, and artifacts from mentorship, volunteering, and teaching-related work.
-    </p>
-  </article>
+<div class="buildout-note">Section buildout in progress — current focus: tutoring, mentorship, volunteering, and technical communication experiences.</div>
+
+## Why it belongs on an engineering portfolio
+
+Engineering work matters most when it reaches people. This page is intentionally separate from Projects and Research so the technical case files stay focused, while the human/service layer remains visible to recruiters, collaborators, and community partners.
+
+<div class="matrix">
+  <div class="matrix-card"><h3>Tutoring / mentoring</h3><p>Support for students learning technical material, study habits, or early career navigation.</p></div>
+  <div class="matrix-card"><h3>Technical communication</h3><p>Explaining engineering ideas clearly to non-specialists and early learners.</p></div>
+  <div class="matrix-card"><h3>Community orientation</h3><p>Service work connected to accessibility, education, and practical impact.</p></div>
 </div>

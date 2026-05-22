@@ -22,20 +22,6 @@ I am investigating how substrate boundary conditions control droplet deposition,
 
 Printed electronics could enable more distributed and flexible manufacturing of electronic systems. A key challenge is not only fabricating devices, but assembling them reproducibly. When a suspension droplet dries, suspended microdevices can accumulate nonuniformly, often forming edge-heavy deposits that reduce placement fidelity and complicate later interconnect printing.
 
-## Preliminary observation and visual artifact
-
-<div class="result-callout">
-  <p class="system-label small">PRELIMINARY OBSERVATION</p>
-  <p>
-    Early deposition trials suggest that porous substrate boundary conditions change the droplet footprint and can reduce edge-dominated accumulation compared with a nonporous glass control. The current analysis workflow is focused on converting these observations into repeatable metrics: r(t), θ(t), V(t), edge/center ratio, and areal-density uniformity.
-  </p>
-</div>
-
-<figure class="technical-figure">
-  <img src="{{ '/assets/images/deposition-pattern-schematic.svg' | relative_url }}" alt="Recreated schematic comparing edge-heavy glass deposition with more distributed porous-substrate deposition">
-  <figcaption>Recreated schematic based on pilot observations. This is not raw microscopy data; it is a public-safe visual summary of the deposition-pattern comparison being quantified.</figcaption>
-</figure>
-
 ## System schematic
 
 <div class="project-schematic" aria-label="Representative schematic of droplet, substrate, and suspended microdevices">
@@ -48,13 +34,35 @@ Printed electronics could enable more distributed and flexible manufacturing of 
   </div>
 </div>
 
+## Preliminary result / public-safe artifact
+
+<div class="result-panel">
+  <div>
+    <p class="system-label small">PRELIMINARY OBSERVATION</p>
+    <h3>Porous AAO-type boundary conditions are currently the strongest deposition baseline in early substrate screening.</h3>
+    <p>
+      Early screening indicates that porous substrate/backing conditions produce more useful deposition behavior than smooth glass-like controls for this IPA-based micromodular deposition workflow. The current public-facing result is qualitative: porous conditions appear to reduce extreme edge-only accumulation and create a more useful central deposition region. The next buildout converts this into edge/center ratio, areal density, and repeatability metrics.
+    </p>
+    <p class="figure-note">Figures below are recreated, public-safe schematics and representative analysis targets, not raw confidential lab images.</p>
+  </div>
+  <figure class="result-figure">
+    <img src="{{ '/assets/images/deposition-pattern-schematic.svg' | relative_url }}" alt="Recreated schematic comparing edge-biased and more uniform deposition patterns">
+    <figcaption>Recreated deposition-pattern schematic: edge-biased evaporative baseline vs. porous-boundary deposition target.</figcaption>
+  </figure>
+</div>
+
+<figure class="wide-figure">
+  <img src="{{ '/assets/images/preliminary-radius-plot.svg' | relative_url }}" alt="Representative droplet radius versus normalized time plot">
+  <figcaption>Representative analysis plot showing the intended r(t) extraction workflow for comparing droplet footprint dynamics across substrate conditions.</figcaption>
+</figure>
+
 ## Technical challenge
 
 The central engineering question is:
 
-> What substrate boundary conditions produce repeatable, spatially uniform deposition of micromodular electronic devices?
+> What substrate boundary conditions produce repeatable, spatially uniform, and manufacturable deposition of micromodular electronic devices?
 
-The project treats the substrate as an active boundary condition rather than a passive surface. Wetting, imbibition, evaporation, and contact-line behavior all influence where devices end up after deposition.
+The project treats the substrate as an active process boundary condition rather than a passive surface. Wetting, imbibition, evaporation, and contact-line behavior all influence where devices end up after deposition.
 
 ## Variables studied
 
@@ -91,10 +99,20 @@ The project treats the substrate as an active boundary condition rather than a p
 
 ## Data / metrics to extract
 
-<figure class="technical-figure compact-figure">
-  <img src="{{ '/assets/images/droplet-metric-panel.svg' | relative_url }}" alt="Representative metric extraction panel for droplet radius, contact angle, and volume over time">
-  <figcaption>Representative metric panel showing the analysis targets from droplet videos. Replace with measured traces once the public data export is ready.</figcaption>
-</figure>
+<div class="metric-grid">
+  <div class="metric-card">
+    <h3>r(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+  <div class="metric-card">
+    <h3>θ(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+  <div class="metric-card">
+    <h3>V(t)</h3>
+    <div class="plot-placeholder" aria-hidden="true"></div>
+  </div>
+</div>
 
 Potential engineering metrics include:
 

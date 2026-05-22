@@ -2,15 +2,11 @@
 layout: page
 title: Projects
 category: Case File Library
-subtitle: Proof-of-work artifacts and case studies. Research explains the academic framing; Projects shows the engineering outputs.
+subtitle: Proof-of-work artifacts: project pages, methods, figures, tools, outputs, and current buildout status.
 ---
 
-<div class="page-cta-line">
-  <strong>Seeking Fall 2026 co-ops / internships</strong> in process engineering, manufacturing, advanced materials, semiconductors, and clean technology.
-</div>
-
-<div class="section-clarifier">
-  <strong>Projects = evidence.</strong> This page organizes work as case files: problem, method, output, tools, and status. For broader research questions and technical context, see <a href="{{ '/research/' | relative_url }}">Research</a>.
+<div class="section-note">
+  <strong>Projects vs. Research:</strong> Projects are artifact-focused case files: what problem was addressed, what methods were used, what outputs were produced, and what tools supported the work. Research explains the broader academic framing, technical questions, and manufacturing relevance behind those projects.
 </div>
 
 <div class="filter-row" aria-label="Project filters">
@@ -31,7 +27,7 @@ subtitle: Proof-of-work artifacts and case studies. Research explains the academ
     <div class="evidence-table">
       <span><strong>Problem</strong> Microscale devices can accumulate nonuniformly during droplet drying or imbibition.</span>
       <span><strong>Method</strong> Optical microscopy, droplet tracking, substrate comparison, contact-line dynamics, image analysis.</span>
-      <span class="output-row"><strong>Output</strong> Process-window metrics and substrate-selection logic for more uniform deposition.</span>
+      <span class="output-row"><strong>Output</strong> Process-window metrics, deposition-pattern figures, and substrate-selection logic for more uniform deposition.</span>
       <span><strong>Tools</strong> Keyence · Python · ImageJ/Fiji · JMP.</span>
       <span><strong>Status</strong> In progress.</span>
     </div>
@@ -56,12 +52,12 @@ subtitle: Proof-of-work artifacts and case studies. Research explains the academ
   <article class="portfolio-card evidence-card">
     <div class="card-visual visual-signal" aria-hidden="true"></div>
     <div class="card-topline"><span>Reliability · Experimental Analysis</span><span>Status: Developing</span></div>
-    <h2>Printed Interconnect Reliability</h2>
+    <h2>Printed Interconnect Reliability Analysis</h2>
     <p class="problem-line">Understand how printed interconnect resistance changes under stress and aging.</p>
     <div class="evidence-table">
       <span><strong>Problem</strong> Resistance drift can hide process instability or reliability issues.</span>
       <span><strong>Method</strong> Resistance tracking, reliability plots, ANOVA-style comparisons, trend analysis.</span>
-      <span class="output-row"><strong>Output</strong> Stress-response summaries and process/reliability interpretation.</span>
+      <span class="output-row"><strong>Output</strong> Stress-response summaries, drift plots, and process/reliability interpretation.</span>
       <span><strong>Tools</strong> JMP · Excel · Python.</span>
       <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
     </div>
@@ -80,6 +76,6 @@ subtitle: Proof-of-work artifacts and case studies. Research explains the academ
       <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB.</span>
       <span><strong>Status</strong> Case study buildout in progress — current focus: method, metrics, and representative figures.</span>
     </div>
-    <p><a href="{{ '/projects/droplet-image-analysis/' | relative_url }}">Open full case study →</a></p>
+    <p><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open full case study →</a></p>
   </article>
 </div>

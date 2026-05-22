@@ -2,73 +2,66 @@
 layout: page
 title: Process Simulation and Design
 category: Process Engineering Case Study
-subtitle: Flowsheets, balances, thermodynamic reasoning, and Aspen-style process modeling for design decisions.
+subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions.
 ---
-
 ## Summary
 
-This project area translates process requirements into structured engineering artifacts: PFDs, balance tables, simulation assumptions, and design tradeoff summaries.
+This case study collects process-engineering work where a chemical process must be converted from a description into a defensible flowsheet, balance structure, and operating decision.
 
-<div class="buildout-note">Case study buildout in progress — current focus: method, metrics, and representative figures. This page is structured to make the project usable before the final data package is added.</div>
-
-<div class="role-block">
-  <p class="system-label small">MY ROLE</p>
-  <p>Built process logic, organized assumptions, performed balance and calculation workflows, and framed design decisions around operating constraints and engineering tradeoffs.</p>
-</div>
+<div class="buildout-note">Case study buildout in progress — current focus: method, metrics, and representative figures.</div>
 
 ## Problem / motivation
 
-Process design work becomes credible when assumptions, model choices, and balance closure are explicit. The goal is to show how a chemical engineering problem becomes a defendable process model rather than an isolated calculation.
+Process design work can look abstract until the assumptions are visible. A credible design needs a process flow diagram, stated thermodynamic reasoning, material and energy balances, and a clear explanation of tradeoffs such as recovery, purity, energy demand, and equipment constraints.
 
-## System
+## System schematic
 
-<div class="technical-system-card">
-  <p class="system-label small">SYSTEM</p>
-  <h3>Feed streams + unit operations + thermodynamic model + product specifications</h3>
+<div class="project-schematic schematic-pfd" aria-label="Representative process flow diagram schematic">
+  <div class="pfd-row"><span>FEED</span><i></i><span>MIX</span><i></i><span>SEPARATE</span><i></i><span>PRODUCT</span></div>
+  <p>Representative PFD logic · replace with project-specific flowsheet when ready.</p>
 </div>
 
-## Variables / decisions
+## My role
 
-| Variable or decision | Why it matters |
+<div class="role-block">
+  <p>Built balance logic, selected appropriate modeling assumptions, organized process inputs/outputs, and translated calculations into design tradeoff summaries.</p>
+</div>
+
+## Technical challenge
+
+The core challenge is converting a process objective into quantitative design logic without overclaiming model precision. The project emphasizes balance closure, transparent assumptions, and simulation results that support engineering decisions rather than black-box outputs.
+
+## Variables studied
+
+| Variable | Why it matters |
 |---|---|
-| Thermodynamic model | Controls phase behavior, VLE assumptions, and separation feasibility. |
-| Unit sequence | Defines where conversion, separation, recycle, and heat exchange occur. |
-| Operating conditions | Affect purity, energy requirement, equipment feasibility, and safety margin. |
-| Recycle/purge logic | Controls material efficiency and accumulation risk. |
+| Feed composition | Sets material balance basis and separation difficulty. |
+| Operating temperature / pressure | Affects phase behavior, energy duty, and equipment feasibility. |
+| Recovery / purity targets | Define whether a process alternative is technically acceptable. |
+| Recycle or purge logic | Controls yield, accumulation, and steady-state feasibility. |
+| Thermodynamic model | Determines whether VLE/separation predictions are physically reasonable. |
 
 ## Methods and tools
 
 <div class="two-col">
-  <div class="matrix-card"><h3>Process mapping</h3><p>Create PFD-style representations that identify feeds, products, unit operations, and recycle logic.</p></div><div class="matrix-card"><h3>Engineering calculations</h3><p>Use balances, property models, and numerical methods to compare operating choices.</p></div>
+  <div class="matrix-card"><h3>Engineering methods</h3><p>PFD construction, material balances, energy balances, thermodynamic reasoning, sensitivity comparisons, and process tradeoff tables.</p></div>
+  <div class="matrix-card"><h3>Software / computation</h3><p>Aspen simulations, MATLAB calculations, Excel screening tables, and communication-ready engineering plots.</p></div>
 </div>
 
-<div class="badge-row">
-  <span class="badge">Aspen</span>
-<span class="badge">PFDs</span>
-<span class="badge">Material Balances</span>
-<span class="badge">Energy Balances</span>
-<span class="badge">MATLAB</span>
-<span class="badge">Excel</span>
-</div>
+<div class="badge-row"><span class="badge">Aspen</span><span class="badge">PFDs</span><span class="badge">Balances</span><span class="badge">MATLAB</span><span class="badge">Excel</span></div>
 
-## Outputs / metrics
+## Outputs to add
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Process model</h3><p>A flowsheet or calculation structure that can be audited.</p></div><div class="matrix-card"><h3>Design comparison</h3><p>Tradeoffs among purity, recovery, energy, cost, and complexity.</p></div><div class="matrix-card"><h3>Engineering memo</h3><p>Concise documentation of assumptions, constraints, and recommendations.</p></div>
+  <div class="matrix-card"><h3>Process flow diagram</h3><p>Clean PFD with numbered streams and unit-operation logic.</p></div>
+  <div class="matrix-card"><h3>Balance table</h3><p>Feed/product/recycle streams with units, assumptions, and closure checks.</p></div>
+  <div class="matrix-card"><h3>Design tradeoff summary</h3><p>Short explanation of how operating conditions affect feasibility and performance.</p></div>
 </div>
 
 ## Engineering interpretation
 
-The value is not just producing a simulation result. It is converting ambiguous process requirements into a model with traceable assumptions and clear decision points.
-
-## Manufacturing relevance
-
-Manufacturing and process-development teams need models that support operating decisions, not just classroom calculations. This case study shows the structure behind those decisions.
+The value of this project is the ability to make process assumptions visible and turn calculations into clear decisions. That is the core skill behind scale-up, process development, and manufacturing support.
 
 ## Next steps
 
-<div class="matrix">
-  <div class="matrix-card"><h3>Buildout</h3><p>Add representative figures, assumptions, sample calculations, and final artifact screenshots.</p></div>
-  <div class="matrix-card"><h3>Validation</h3><p>Clarify checks, constraints, and uncertainty before presenting final conclusions.</p></div>
-  <div class="matrix-card"><h3>Portfolio output</h3><p>Convert the project into a concise engineering case file for recruiters and technical managers.</p></div>
-</div>
+Replace the representative schematic with a real class or independent process model, add stream tables, and include one sensitivity plot or operating-condition comparison.
