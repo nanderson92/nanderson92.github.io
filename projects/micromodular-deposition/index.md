@@ -29,8 +29,8 @@ The practical question is:
 ## Where this project fits in the workflow
 
 <figure class="wide-figure">
-  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the deposition subsystem outlined across suspending components in ink and printing components." loading="lazy">
-  <figcaption><strong>Micromodular electronics workflow.</strong> The rounded outline highlights the deposition subsystem: suspending fabricated components in ink and printing them onto the substrate in a way that produces useful placement for downstream circuit assembly.</figcaption>
+  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the deposition subsystem highlighted across suspending components in ink and printing components." loading="lazy">
+  <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the deposition subsystem: suspending fabricated components in ink and printing them onto the substrate in a way that produces useful placement for downstream circuit assembly.</figcaption>
 </figure>
 
 ## Public-safe system schematic
