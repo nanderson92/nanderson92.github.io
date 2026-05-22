@@ -25,14 +25,25 @@ The practical question is:
 
 > What substrate boundary conditions produce repeatable, spatially useful deposition instead of edge-heavy accumulation?
 
-## Micromodular electronics roadmap
 
-This figure places the deposition work inside the broader micromodular electronics flow. The highlighted subsystem is the deposition side of the problem: component suspension, droplet transport, and how those steps set up downstream interconnect printing.
+## Where this project fits in the workflow
 
-<figure class="roadmap-figure">
-  <img src="{{ '/assets/images/micromodular-roadmap-deposition.svg' | relative_url }}" alt="High-level micromodular electronics roadmap with the deposition subsystem highlighted." />
-  <figcaption>High-level manufacturing roadmap. This project focuses on the deposition subsystem: suspending modular devices in ink and creating a usable component layout for later circuit assembly.</figcaption>
+<figure class="wide-figure">
+  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the deposition subsystem circled across suspending components in ink and printing components." loading="lazy">
+  <figcaption><strong>Micromodular electronics workflow.</strong> This case study focuses on the deposition subsystem: suspending fabricated components in ink and printing them onto the substrate in a way that produces useful placement for downstream circuit assembly.</figcaption>
 </figure>
+
+## Public-safe system schematic
+
+<div class="project-schematic" aria-label="Representative schematic of droplet, substrate, and suspended microdevices">
+  <div class="droplet-system">
+    <div class="droplet"></div>
+    <div class="devices"></div>
+    <div class="substrate"></div>
+    <span class="callout-label one">suspension droplet</span>
+    <span class="callout-label two">porous / coated process boundary</span>
+  </div>
+</div>
 
 ## Engineering framing
 

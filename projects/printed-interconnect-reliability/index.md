@@ -21,13 +21,11 @@ This case file focuses on reliability and process control for printed interconne
 
 Printed interconnects can look acceptable initially but fail later through resistance drift, intermittent opens, weak contacts, surface-prep defects, or stress-induced degradation. A useful manufacturing process needs more than a one-time “works / does not work” check; it needs a measurement loop that makes yield and failure modes visible.
 
-## Micromodular electronics roadmap
+## Where this project fits in the workflow
 
-This figure shows where the reliability and interconnect work fits inside the overall micromodular electronics workflow. The highlighted subsystem covers the circuit-assembly side of the process: printing around deposited devices, planning the wiring path, and validating whether the printed interconnect network stays electrically stable.
-
-<figure class="roadmap-figure">
-  <img src="{{ '/assets/images/micromodular-roadmap-interconnect.svg' | relative_url }}" alt="High-level micromodular electronics roadmap with the interconnect subsystem highlighted." />
-  <figcaption>High-level manufacturing roadmap. This project focuses on the interconnect subsystem: component printing, wiring strategy, and printed-wire reliability.</figcaption>
+<figure class="wide-figure">
+  <img src="{{ '/assets/images/micromodular-workflow-interconnect-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the interconnect subsystem circled across analyzing components, planning wiring, and printing wires." loading="lazy">
+  <figcaption><strong>Micromodular electronics workflow.</strong> This case study focuses on the interconnect subsystem: analyzing printed component layouts, planning the wiring path, and printing the interconnects that turn placed components into a working circuit.</figcaption>
 </figure>
 
 ## Engineering framing
