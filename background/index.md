@@ -13,14 +13,12 @@ subtitle: Built between places, oriented toward engineering that reaches real pe
     <p class="system-label small">INCHEON → MINNESOTA → ATLANTA</p>
     <h2>Built between worlds, oriented toward systems that scale.</h2>
     <p>
-      I was adopted from Incheon, South Korea and grew up in a small town in Minnesota. That background shaped how I think about mobility, belonging, and the difference between technology that is impressive in isolation and technology that can actually reach people.
+      I was adopted from Incheon at seven months old and grew up in small-town Minnesota — too Korean for some rooms, not Korean enough for others. That in-between feeling sent me deep into sci-fi: Ghost in the Shell, The Matrix, Final Fantasy VII. Worlds where technology had actually caught up to human ambition.
     </p>
     <p>
-      Chemical engineering appeals to me because it sits at that boundary: materials, transport, data, equipment, cost, reliability, and manufacturing all have to work together before an idea becomes real in daily life.
-    </p>
-    <p>
-      My long-term direction is to help make cleaner, more futuristic infrastructure tangible and accessible through process development, advanced manufacturing, and clean technology.
-    </p>
+
+      That's when the question started bothering me: R&D has already discovered most of the future. So why does it stay there? Chemical engineering is my answer — not the science of discovery, but the science of delivery. Turning what works in a lab into something that works at scale, for everyone, regardless of where they're from.
+  </p>
   </article>
 </div>
 
