@@ -3199,46 +3199,53 @@ body.home-page .site-footer::after,
   }
 }
 
-/* === Homepage hero motion + below-fold case study spacing ===
-   Keeps the existing fixed-city/scroll-to-white system while making the hero
-   entrance animation consistent and pushing the featured case study below the fold. */
+
+/* === Final homepage hero cue placement + unified entrance motion ===
+   Places the featured-case prompt below the CTA buttons, centered near the
+   bottom of the first viewport, while keeping the flagship card below the fold. */
 .home-page .hero {
   min-height: 100svh !important;
   min-height: 100vh !important;
-  padding-top: clamp(118px, 15vh, 156px) !important;
-  padding-bottom: clamp(118px, 16vh, 158px) !important;
+  padding-top: clamp(118px, 14vh, 152px) !important;
+  padding-bottom: clamp(138px, 18vh, 178px) !important;
 }
 
 .home-page .hero-inner {
-  min-height: calc(100svh - clamp(118px, 15vh, 156px) - clamp(118px, 16vh, 158px));
+  min-height: calc(100svh - clamp(118px, 14vh, 152px) - clamp(138px, 18vh, 178px)) !important;
   align-items: center !important;
+}
+
+.home-page .hero-copy {
+  position: relative !important;
+  z-index: 3 !important;
 }
 
 .home-page .featured-case-cue {
   position: absolute !important;
   left: 50% !important;
-  bottom: clamp(30px, 7vh, 58px) !important;
-  z-index: 2 !important;
+  bottom: clamp(38px, 7.2vh, 68px) !important;
+  z-index: 4 !important;
   display: inline-flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 12px !important;
   margin: 0 !important;
-  color: rgba(15, 23, 42, 0.62) !important;
+  color: rgba(15, 23, 42, 0.64) !important;
   font-family: var(--mono) !important;
-  font-size: clamp(0.78rem, 1.05vw, 0.95rem) !important;
+  font-size: clamp(0.78rem, 1.02vw, 0.94rem) !important;
   font-weight: 780 !important;
   letter-spacing: 0.105em !important;
+  line-height: 1 !important;
   text-transform: uppercase !important;
+  text-align: center !important;
   transform: translateX(-50%) !important;
   transition: color 180ms ease, transform 180ms cubic-bezier(.22,.8,.28,1) !important;
 }
 
 .home-page .featured-case-cue span {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  font-weight: inherit !important;
+  display: inline-block !important;
+  font: inherit !important;
   letter-spacing: inherit !important;
   text-transform: inherit !important;
   white-space: nowrap !important;
@@ -3251,12 +3258,13 @@ body.home-page .site-footer::after,
   height: 32px !important;
   border: 1px solid rgba(15, 23, 42, .12) !important;
   border-radius: 999px !important;
-  background: rgba(255,255,255,.58) !important;
-  color: rgba(15, 23, 42, .66) !important;
+  background: rgba(255,255,255,.62) !important;
+  color: rgba(15, 23, 42, .68) !important;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-size: 1.05rem !important;
   font-weight: 700 !important;
   line-height: 1 !important;
+  letter-spacing: 0 !important;
   -webkit-backdrop-filter: blur(16px) saturate(160%) !important;
   backdrop-filter: blur(16px) saturate(160%) !important;
 }
@@ -3269,15 +3277,20 @@ body.home-page .site-footer::after,
 .home-page .featured-case-cue:hover strong {
   border-color: rgba(13,142,177,.24) !important;
   color: rgba(8, 112, 139, .92) !important;
-  background: rgba(255,255,255,.74) !important;
+  background: rgba(255,255,255,.78) !important;
 }
 
 .home-page .signature-case-section {
-  margin-top: clamp(36px, 5vh, 64px) !important;
+  margin-top: clamp(52px, 7vh, 88px) !important;
+  scroll-margin-top: 88px !important;
 }
 
-.home-page .proof-section {
-  margin-top: clamp(62px, 7vh, 88px) !important;
+.home-page .proof-section,
+.home-page .home-library,
+.home-page .system-section,
+.home-page .availability-section {
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .home-page .hero .cta-row {
@@ -3297,7 +3310,6 @@ body.home-page .site-footer::after,
 
 .home-page .hero .cta-row .button:hover {
   transform: translate3d(0, -2px, 0) !important;
-  box-shadow: 0 18px 34px rgba(15, 35, 55, .14) !important;
 }
 
 .home-page .hero .cta-row .button:active {
@@ -3305,7 +3317,7 @@ body.home-page .site-footer::after,
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  @keyframes heroCueFadeUp {
+  @keyframes heroFeaturedCueFadeUpFinal {
     from { opacity: 0; transform: translateX(-50%) translate3d(0, 18px, 0); filter: blur(6px); }
     to { opacity: 1; transform: translateX(-50%) translate3d(0, 0, 0); filter: blur(0); }
   }
@@ -3323,9 +3335,10 @@ body.home-page .site-footer::after,
   .home-page .hero h1 { animation-delay: 820ms !important; }
   .home-page .hero .hero-lede { animation-delay: 980ms !important; }
   .home-page .hero .cta-row .button { animation-delay: 1140ms !important; }
+
   .home-page .featured-case-cue {
     opacity: 0;
-    animation: heroCueFadeUp 760ms var(--motion-soft) 1300ms both !important;
+    animation: heroFeaturedCueFadeUpFinal 760ms var(--motion-soft) 1300ms both !important;
     will-change: transform, opacity;
   }
 }
@@ -3334,25 +3347,27 @@ body.home-page .site-footer::after,
   .home-page .hero {
     min-height: 100svh !important;
     min-height: 100vh !important;
-    padding-bottom: clamp(112px, 15vh, 140px) !important;
+    padding-top: 108px !important;
+    padding-bottom: clamp(122px, 15vh, 148px) !important;
+  }
+
+  .home-page .hero-inner {
+    min-height: auto !important;
   }
 
   .home-page .signature-case-section {
-    margin-top: 32px !important;
+    margin-top: 36px !important;
   }
 }
 
 @media (max-width: 640px) {
   .home-page .hero {
-    min-height: 100svh !important;
-    min-height: 100vh !important;
-    padding-top: 104px !important;
+    padding-top: 96px !important;
     padding-bottom: 112px !important;
   }
 
   .home-page .featured-case-cue {
-    display: inline-flex !important;
-    bottom: 28px !important;
+    bottom: 26px !important;
     gap: 10px !important;
     font-size: .72rem !important;
   }
