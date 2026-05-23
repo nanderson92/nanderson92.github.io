@@ -13,10 +13,10 @@ This section is a concise home for work that shows how I use technical skills an
 
 ## Why it belongs on an engineering portfolio
 
-Engineering work matters most when it reaches people. This page is intentionally separate from Projects so the technical case files stay focused, while the human/service layer remains visible to recruiters, collaborators, and community partners.
+Engineering work matters most when it reaches people. This page is intentionally separate from Projects and Research so the technical case files stay focused, while the human/service layer remains visible to recruiters, collaborators, and community partners.
 
 <div class="matrix">
- <div class="matrix-card"><h3>Tutoring / mentoring</h3><p>Support for students learning technical material, study habits, or early career navigation.</p></div>
- <div class="matrix-card"><h3>Technical communication</h3><p>Explaining engineering ideas clearly to non-specialists and early learners.</p></div>
- <div class="matrix-card"><h3>Community orientation</h3><p>Service work connected to accessibility, education, and practical impact.</p></div>
+  <div class="matrix-card"><h3>Tutoring / mentoring</h3><p>Support for students learning technical material, study habits, or early career navigation.</p></div>
+  <div class="matrix-card"><h3>Technical communication</h3><p>Explaining engineering ideas clearly to non-specialists and early learners.</p></div>
+  <div class="matrix-card"><h3>Community orientation</h3><p>Service work connected to accessibility, education, and practical impact.</p></div>
 </div>

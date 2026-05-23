@@ -10,8 +10,3 @@ author: "Nathan Anderson"
 email: "fivemoc@gmail.com"
 linkedin: "https://www.linkedin.com/in/nanderson92/"
 github: "https://github.com/nanderson92"
-
-# Prevent any stale local research folder from being published if it remains in the GitHub repo.
-exclude:
-  - research
-  - research/**
