@@ -859,11 +859,18 @@ body {
 
 .hero::before {
   background-image:
-    linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.82) 30%, rgba(255,255,255,.42) 60%, rgba(255,255,255,.08) 100%),
+    linear-gradient(
+      90deg,
+      rgba(248, 251, 252, 0.96) 0%,
+      rgba(248, 251, 252, 0.88) 34%,
+      rgba(248, 251, 252, 0.55) 62%,
+      rgba(248, 251, 252, 0.35) 100%
+    ),
     linear-gradient(180deg, rgba(248,251,251,.00) 0%, rgba(248,251,251,.08) 46%, rgba(248,251,251,.36) 72%, var(--bg) 100%),
     url('../images/homepage-background.jpg');
   background-size: cover;
   background-position: center 28%;
+  filter: saturate(0.75) contrast(1.05) brightness(0.92);
 }
 
 .hero::after {
@@ -899,10 +906,11 @@ body {
   }
   .hero::before {
     background-image:
-      linear-gradient(180deg, rgba(255,255,255,.90) 0%, rgba(255,255,255,.75) 34%, rgba(255,255,255,.38) 72%, rgba(255,255,255,.08) 100%),
+      linear-gradient(180deg, rgba(248,251,252,.94) 0%, rgba(248,251,252,.78) 34%, rgba(248,251,252,.54) 72%, rgba(248,251,252,.32) 100%),
       linear-gradient(180deg, rgba(248,251,251,.00) 0%, rgba(248,251,251,.14) 48%, rgba(248,251,251,.52) 77%, var(--bg) 100%),
       url('../images/homepage-background.jpg');
     background-position: center 24%;
+    filter: saturate(0.75) contrast(1.05) brightness(0.92);
   }
   .hero::after {
     height: 260px;
@@ -3148,7 +3156,13 @@ body.home-page .site-footer::after,
   animation: none !important;
   opacity: 1 !important;
   background-image:
-    linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 34%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.20) 100%),
+    linear-gradient(
+      90deg,
+      rgba(248, 251, 252, 0.96) 0%,
+      rgba(248, 251, 252, 0.88) 34%,
+      rgba(248, 251, 252, 0.55) 62%,
+      rgba(248, 251, 252, 0.35) 100%
+    ),
     linear-gradient(180deg, rgba(255,255,255,.04) 0%, rgba(255,255,255,.10) 44%, rgba(255,255,255,.52) 76%, #ffffff 100%) !important;
 }
 
@@ -3545,7 +3559,7 @@ body.home-page::before {
   background-position: center top !important;
   background-repeat: no-repeat !important;
   opacity: 0.84 !important;
-  filter: saturate(0.62) contrast(0.86) brightness(1.08) !important;
+  filter: saturate(0.75) contrast(1.05) brightness(0.92) !important;
   transform: translateZ(0);
 }
 
@@ -3592,7 +3606,13 @@ body.home-page::before {
   opacity: 1 !important;
   animation: none !important;
   background-image:
-    linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 34%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.20) 100%),
+    linear-gradient(
+      90deg,
+      rgba(248, 251, 252, 0.96) 0%,
+      rgba(248, 251, 252, 0.88) 34%,
+      rgba(248, 251, 252, 0.55) 62%,
+      rgba(248, 251, 252, 0.35) 100%
+    ),
     linear-gradient(180deg, rgba(255,255,255,.04) 0%, rgba(255,255,255,.10) 44%, rgba(255,255,255,.52) 76%, #ffffff 100%) !important;
   background-size: 100% 100%, 100% 100% !important;
   background-position: center, center !important;
