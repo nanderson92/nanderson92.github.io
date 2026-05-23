@@ -3068,69 +3068,56 @@ body.home-page .site-footer::after,
   }
 }
 
-/* === Hero city visibility correction ===
-   Keeps the fixed city + scroll-to-white system, but reduces the final white veil
-   so the city remains subtly visible after the initial load instead of flashing
-   briefly and disappearing. */
+/* === Hero city visibility repair ===
+   Keeps the fixed-city / scrolling-white transition, but prevents the hero
+   overlay animation from washing the image completely to white after load. */
 .home-page #content::before {
-  opacity: 0.64 !important;
+  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  opacity: 0.62 !important;
   filter: saturate(0.72) contrast(0.88) brightness(1.08) !important;
 }
 
 .home-page #content::after {
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0.22) 0vh,
-    rgba(255,255,255,0.34) 18vh,
-    rgba(255,255,255,0.56) 46vh,
-    rgba(255,255,255,0.82) 76vh,
-    rgba(255,255,255,0.96) 96vh,
-    #ffffff 112vh,
+    rgba(255,255,255,0.18) 0vh,
+    rgba(255,255,255,0.28) 22vh,
+    rgba(255,255,255,0.46) 48vh,
+    rgba(255,255,255,0.72) 78vh,
+    rgba(255,255,255,0.92) 102vh,
+    #ffffff 122vh,
     #ffffff 100%
   ) !important;
 }
 
 .home-page .hero::before {
+  animation: none !important;
+  opacity: 1 !important;
   background-image:
-    linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 34%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.18) 100%),
-    linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.14) 44%, rgba(255,255,255,.50) 76%, #ffffff 100%) !important;
+    linear-gradient(90deg, rgba(255,255,255,.90) 0%, rgba(255,255,255,.80) 36%, rgba(255,255,255,.56) 68%, rgba(255,255,255,.28) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,.18) 56%, rgba(255,255,255,.00) 100%) !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat !important;
 }
 
 @media (max-width: 980px) {
   .home-page #content::before {
-    opacity: 0.54 !important;
+    opacity: 0.50 !important;
+    filter: saturate(0.68) contrast(0.86) brightness(1.10) !important;
   }
-
   .home-page #content::after {
     background: linear-gradient(
       180deg,
-      rgba(255,255,255,.36) 0vh,
-      rgba(255,255,255,.52) 30vh,
-      rgba(255,255,255,.82) 70vh,
-      #ffffff 104vh,
+      rgba(255,255,255,.34) 0vh,
+      rgba(255,255,255,.52) 34vh,
+      rgba(255,255,255,.82) 76vh,
+      #ffffff 108vh,
       #ffffff 100%
     ) !important;
   }
-}
-
-@media (max-width: 640px) {
-  .home-page #content::before {
-    opacity: 0.48 !important;
-  }
-
-  .home-page #content::after {
-    background: linear-gradient(
-      180deg,
-      rgba(255,255,255,.44) 0vh,
-      rgba(255,255,255,.62) 30vh,
-      rgba(255,255,255,.90) 66vh,
-      #ffffff 92vh,
-      #ffffff 100%
-    ) !important;
-  }
-
   .home-page .hero::before {
     background-image:
-      linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.58) 36%, rgba(255,255,255,.48) 64%, #ffffff 100%) !important;
+      linear-gradient(180deg, rgba(255,255,255,.70) 0%, rgba(255,255,255,.54) 54%, rgba(255,255,255,.18) 100%) !important;
   }
 }
