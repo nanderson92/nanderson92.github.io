@@ -2655,3 +2655,190 @@ body.home-page .site-footer::after,
     font-size: 0.72rem !important;
   }
 }
+
+/* === Stronger homepage hero structure ===
+   Tightens the top of the homepage around identity, engineering value,
+   recruiter CTAs, and immediate proof-of-work. */
+.home-page .hero {
+  min-height: min(760px, 92vh) !important;
+  padding-top: clamp(118px, 15vh, 156px) !important;
+  padding-bottom: clamp(96px, 12vh, 130px) !important;
+}
+
+.home-page .hero-copy {
+  max-width: 920px !important;
+}
+
+.hero-identity {
+  display: grid;
+  gap: 5px;
+  margin: 0 0 22px;
+  color: rgba(8, 35, 37, 0.94);
+}
+
+.hero-identity strong {
+  display: block;
+  font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+  line-height: 1.1;
+  font-weight: 720;
+  letter-spacing: -0.032em;
+}
+
+.hero-identity span {
+  display: block;
+  color: rgba(49, 83, 87, 0.76);
+  font-size: clamp(.86rem, 1.2vw, .98rem);
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+}
+
+.home-page .hero .system-label {
+  display: none !important;
+}
+
+.home-page .hero h1 {
+  max-width: 850px !important;
+  font-size: clamp(3.85rem, 7.3vw, 7.2rem) !important;
+  line-height: .94 !important;
+  letter-spacing: -0.076em !important;
+  text-wrap: balance;
+}
+
+.home-page .hero-lede {
+  max-width: 780px !important;
+  margin-top: 24px !important;
+  color: rgba(49, 83, 87, 0.88) !important;
+  font-size: clamp(1.08rem, 1.42vw, 1.27rem) !important;
+  line-height: 1.68 !important;
+  letter-spacing: -0.022em !important;
+  text-wrap: pretty;
+}
+
+.home-page .hero .cta-row {
+  margin-top: 30px !important;
+}
+
+.home-page .hero .button.primary {
+  background: #0f172a !important;
+  color: #fff !important;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, .16) !important;
+}
+
+.home-page .hero .button.primary:hover {
+  box-shadow: 0 18px 38px rgba(15, 23, 42, .20) !important;
+}
+
+.home-page .hero .button.secondary {
+  background: rgba(255, 255, 255, .72) !important;
+  border: 1px solid rgba(15, 23, 42, .12) !important;
+  color: rgba(15, 23, 42, .86) !important;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 34px;
+  color: rgba(49, 83, 87, .66);
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 760;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.scroll-cue strong {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(15, 23, 42, .10);
+  border-radius: 999px;
+  color: rgba(15, 23, 42, .58);
+  background: rgba(255, 255, 255, .48);
+  font-family: inherit;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.scroll-cue:hover {
+  color: rgba(8, 112, 139, .86);
+  transform: translateY(1px);
+}
+
+.home-page .signature-case-section {
+  margin-top: clamp(-66px, -5vw, -34px) !important;
+  scroll-margin-top: 84px;
+}
+
+.home-page .signature-case-card {
+  grid-template-columns: minmax(0, 1.02fr) minmax(340px, .9fr) !important;
+  gap: clamp(24px, 3.5vw, 44px) !important;
+}
+
+.home-page .signature-copy h2 {
+  max-width: 740px;
+  text-wrap: balance;
+}
+
+.home-page .signature-proof-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-page .signature-proof-grid .signature-output {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: auto !important;
+    padding-top: 112px !important;
+    padding-bottom: 96px !important;
+  }
+
+  .home-page .signature-case-section {
+    margin-top: -42px !important;
+  }
+
+  .home-page .signature-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .signature-proof-grid .signature-output {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    padding-top: 104px !important;
+    padding-bottom: 82px !important;
+  }
+
+  .hero-identity {
+    margin-bottom: 18px;
+  }
+
+  .home-page .hero h1 {
+    font-size: clamp(3rem, 13vw, 4.55rem) !important;
+    line-height: .96 !important;
+    letter-spacing: -0.068em !important;
+  }
+
+  .home-page .hero-lede {
+    font-size: clamp(1rem, 4.25vw, 1.13rem) !important;
+    line-height: 1.62 !important;
+  }
+
+  .scroll-cue {
+    display: none;
+  }
+
+  .home-page .signature-case-section {
+    margin-top: -30px !important;
+  }
+}

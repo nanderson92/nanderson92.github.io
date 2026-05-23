@@ -7,32 +7,41 @@ body_class: home-page
 <section class="hero">
  <div class="hero-inner">
  <div class="hero-copy">
- <p class="system-label">CHEMICAL ENGINEERING · PROCESS DEVELOPMENT · CLEAN TECHNOLOGY</p>
- <h1>Engineering the bridge between innovation and impact.</h1>
+ <div class="hero-identity" aria-label="Identity">
+ <strong>Nathan Anderson</strong>
+ <span>Chemical &amp; Biomolecular Engineering · Georgia Tech</span>
+ </div>
+ <h1>Process development for manufacturable future technologies.</h1>
  <p class="hero-lede">
- I’m Nathan Anderson, a Chemical & Biomolecular Engineering student at Georgia Tech building process-development workflows for printed electronics, wet processing, image analysis, and manufacturing-scale decision-making.
+ I translate experimental systems into process windows, reliability data, and manufacturing-ready workflows across printed electronics, wet processing, and clean-technology-relevant R&amp;D.
  </p>
  <div class="cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View Projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
  </div>
+ <a class="scroll-cue" href="#featured-case" aria-label="Scroll to featured case study">
+ <span>Featured case study</span>
+ <strong aria-hidden="true">↓</strong>
+ </a>
  </div>
  </div>
 </section>
 
-<section class="signature-case-section" aria-label="Signature engineering case study">
+<section id="featured-case" class="signature-case-section" aria-label="Featured engineering case study">
  <div class="signature-case-card">
  <div class="signature-copy">
- <p class="system-label small">SIGNATURE CASE STUDY</p>
- <h2>Micromodular Electronics Deposition</h2>
- <p class="signature-subtitle">Substrate-controlled process windows for printed-electronics assembly.</p>
+ <p class="system-label small">FEATURED CASE STUDY</p>
+ <h2>Micromodular Printed Electronics</h2>
+ <p class="signature-subtitle">Substrate-controlled deposition windows for printed-electronics assembly.</p>
  <p>
- I use this project as the clearest example of how I think as a process engineer: define the physical bottleneck, isolate controllable boundary conditions, convert visual behavior into metrics, and translate the result into manufacturing selection criteria.
+ This case study shows how I think as a process engineer: define the physical bottleneck, isolate controllable boundary conditions, convert visual behavior into metrics, and translate the result into manufacturing selection criteria.
  </p>
  <div class="signature-proof-grid" aria-label="Flagship proof points">
  <span><strong>Problem</strong> Suspended microdevices can crowd, raft, pin, and accumulate near the droplet edge during spreading, drying, and imbibition.</span>
  <span><strong>Method</strong> Compare substrate/backing conditions using top-view and side-view microscopy, then extract contact-line dynamics, deposition density, and edge/center uniformity metrics.</span>
  <span class="signature-output"><strong>Output</strong> A process-development case study connecting droplet transport, substrate design, image analysis, and scalable micromodular electronics assembly.</span>
+ <span><strong>Tools</strong> Optical microscopy · ImageJ/Fiji · Python · substrate screening · droplet metrics.</span>
+ <span><strong>Status</strong> Active research case file with method, metrics, and representative figures in buildout.</span>
  </div>
  <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case study <span aria-hidden="true">→</span></a>
  </div>
