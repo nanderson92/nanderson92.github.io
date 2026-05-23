@@ -3706,3 +3706,69 @@ body.home-page::before {
     animation: none !important;
   }
 }
+}
+
+/* === Homepage hero alignment + floating featured-case cue polish ===
+   Aligns the large hero headline optically with the identity block/subheader
+   and makes the scroll cue read more like a floating, clickable pill. */
+.home-page .hero h1 {
+  margin-left: -0.055em !important;
+}
+
+.home-page .hero .featured-case-cue {
+  isolation: isolate !important;
+  overflow: visible !important;
+  background: rgba(255, 255, 255, .78) !important;
+  border-color: rgba(255, 255, 255, .68) !important;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, .92) inset,
+    0 10px 22px rgba(15, 23, 42, .055),
+    0 24px 64px rgba(15, 35, 55, .13) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(180%) !important;
+  backdrop-filter: blur(22px) saturate(180%) !important;
+}
+
+.home-page .hero .featured-case-cue::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 1px 1px auto 1px !important;
+  height: 50% !important;
+  border-radius: inherit !important;
+  background: linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,0)) !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+.home-page .hero .featured-case-cue::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 16% !important;
+  right: 16% !important;
+  bottom: -16px !important;
+  height: 14px !important;
+  border-radius: 999px !important;
+  background: radial-gradient(ellipse at center, rgba(15, 35, 55, .20), rgba(15, 35, 55, 0) 72%) !important;
+  filter: blur(8px) !important;
+  pointer-events: none !important;
+  z-index: -2 !important;
+}
+
+.home-page .hero .featured-case-cue:hover {
+  background: rgba(255, 255, 255, .88) !important;
+  border-color: rgba(13, 142, 177, .26) !important;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, .95) inset,
+    0 14px 28px rgba(15, 23, 42, .07),
+    0 32px 76px rgba(13, 142, 177, .17) !important;
+  transform: translateX(-50%) translateY(-4px) !important;
+}
+
+.home-page .hero .featured-case-cue strong {
+  box-shadow: 0 4px 12px rgba(15, 23, 42, .055) !important;
+}
+
+@media (max-width: 640px) {
+  .home-page .hero h1 {
+    margin-left: -0.025em !important;
+  }
+}
