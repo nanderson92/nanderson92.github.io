@@ -2698,11 +2698,15 @@ body.home-page .site-footer::after,
 }
 
 .home-page .hero h1 {
-  max-width: 850px !important;
-  font-size: clamp(3.85rem, 7.3vw, 7.2rem) !important;
-  line-height: .94 !important;
-  letter-spacing: -0.076em !important;
+  max-width: 900px !important;
+  font-size: clamp(4.05rem, 7.6vw, 7.4rem) !important;
+  line-height: .92 !important;
+  letter-spacing: -0.078em !important;
   text-wrap: balance;
+}
+
+.home-page .hero-title-line {
+  display: block;
 }
 
 .home-page .hero-lede {
@@ -2824,9 +2828,10 @@ body.home-page .site-footer::after,
   }
 
   .home-page .hero h1 {
-    font-size: clamp(3rem, 13vw, 4.55rem) !important;
-    line-height: .96 !important;
-    letter-spacing: -0.068em !important;
+    font-size: clamp(3.05rem, 13.2vw, 4.65rem) !important;
+    line-height: .95 !important;
+    letter-spacing: -0.07em !important;
+    max-width: 100% !important;
   }
 
   .home-page .hero-lede {
