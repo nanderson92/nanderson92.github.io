@@ -3655,3 +3655,242 @@ body.home-page .site-footer::after,
     transform: translate3d(0, -2px, 0) !important;
   }
 }
+
+/* === Final correction: visible hero + unified featured-case cue animation ===
+   Keeps the hero visible, centers the cue with margin-based layout rather than
+   translateX centering, and animates the cue pill as one unit so the text and
+   arrow appear together without a post-animation horizontal snap. */
+.home-page .hero,
+.home-page .hero-inner,
+.home-page .hero-copy {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.home-page .hero {
+  position: relative !important;
+  min-height: 100svh !important;
+  min-height: 100vh !important;
+  padding-top: clamp(118px, 14vh, 154px) !important;
+  padding-bottom: clamp(148px, 18vh, 188px) !important;
+}
+
+.home-page .hero-inner {
+  min-height: calc(100svh - clamp(118px, 14vh, 154px) - clamp(148px, 18vh, 188px)) !important;
+  align-items: center !important;
+}
+
+.home-page .hero .hero-identity,
+.home-page .hero .system-label,
+.home-page .hero .name-kicker,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row,
+.home-page .hero .cta-row .button,
+.home-page .hero .featured-case-cue {
+  visibility: visible !important;
+}
+
+.home-page .hero .featured-case-cue {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: auto !important;
+  bottom: clamp(44px, 8.5vh, 82px) !important;
+  z-index: 5 !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  width: max-content !important;
+  max-width: calc(100vw - 40px) !important;
+  margin: 0 auto !important;
+  padding: 12px 14px 12px 20px !important;
+  border: 1px solid rgba(15, 23, 42, .10) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, .62) !important;
+  color: rgba(15, 23, 42, .66) !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .055) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(170%) !important;
+  backdrop-filter: blur(18px) saturate(170%) !important;
+  font-family: var(--mono) !important;
+  font-size: clamp(.82rem, .95vw, .98rem) !important;
+  font-weight: 820 !important;
+  letter-spacing: .12em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+  transform-origin: center center !important;
+  transition:
+    transform 180ms cubic-bezier(.22,.8,.28,1),
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease !important;
+}
+
+.home-page .hero .featured-case-cue span,
+.home-page .hero .featured-case-cue strong,
+.home-page .featured-case-cue span,
+.home-page .featured-case-cue strong {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+.home-page .hero .featured-case-cue span {
+  display: inline-block !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  white-space: nowrap !important;
+}
+
+.home-page .hero .featured-case-cue strong {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid rgba(15, 23, 42, .12) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, .72) !important;
+  color: rgba(15, 23, 42, .72) !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 750 !important;
+  line-height: 1 !important;
+}
+
+.home-page .hero .featured-case-cue:hover {
+  color: rgba(8, 112, 139, .95) !important;
+  border-color: rgba(13, 142, 177, .22) !important;
+  background: rgba(255, 255, 255, .78) !important;
+  box-shadow: 0 18px 34px rgba(15, 35, 55, .14) !important;
+  transform: translate3d(0, -2px, 0) !important;
+}
+
+.home-page .hero .featured-case-cue:hover strong {
+  border-color: rgba(13, 142, 177, .24) !important;
+  color: rgba(8, 112, 139, .95) !important;
+  background: rgba(255, 255, 255, .86) !important;
+}
+
+.home-page .hero .featured-case-cue:active {
+  transform: translate3d(0, 0, 0) scale(.985) !important;
+}
+
+.home-page .signature-case-section {
+  margin-top: clamp(96px, 13vh, 154px) !important;
+}
+
+.home-page .hero .cta-row .button {
+  transition:
+    transform 180ms cubic-bezier(.22,.8,.28,1),
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease !important;
+}
+
+.home-page .hero .cta-row .button:hover {
+  transform: translate3d(0, -2px, 0) !important;
+  box-shadow: 0 18px 34px rgba(15, 35, 55, .14) !important;
+}
+
+.home-page .hero .cta-row .button:active {
+  transform: translate3d(0, 0, 0) scale(.985) !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes heroFadeUpStableFinal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 16px, 0);
+      filter: blur(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      filter: blur(0);
+    }
+  }
+
+  .home-page .hero .hero-identity,
+  .home-page .hero .system-label,
+  .home-page .hero .name-kicker,
+  .home-page .hero h1,
+  .home-page .hero .hero-lede,
+  .home-page .hero .cta-row .button {
+    opacity: 0 !important;
+    transform: translate3d(0, 16px, 0) !important;
+    animation: heroFadeUpStableFinal 760ms var(--motion-soft, cubic-bezier(.16, 1, .3, 1)) both !important;
+    will-change: transform, opacity, filter !important;
+  }
+
+  .home-page .hero .hero-identity,
+  .home-page .hero .system-label,
+  .home-page .hero .name-kicker { animation-delay: 620ms !important; }
+  .home-page .hero h1 { animation-delay: 820ms !important; }
+  .home-page .hero .hero-lede { animation-delay: 980ms !important; }
+  .home-page .hero .cta-row .button { animation-delay: 1140ms !important; }
+
+  .home-page .hero .featured-case-cue {
+    opacity: 0 !important;
+    transform: translate3d(0, 16px, 0) !important;
+    animation: heroFadeUpStableFinal 760ms var(--motion-soft, cubic-bezier(.16, 1, .3, 1)) 1300ms both !important;
+    will-change: transform, opacity, filter !important;
+  }
+
+  .home-page .hero .featured-case-cue span,
+  .home-page .hero .featured-case-cue strong,
+  .home-page .featured-case-cue span,
+  .home-page .featured-case-cue strong {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    will-change: auto !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: 100svh !important;
+    min-height: 100vh !important;
+    padding-bottom: clamp(140px, 17vh, 170px) !important;
+  }
+
+  .home-page .hero .featured-case-cue {
+    bottom: clamp(34px, 6.5vh, 56px) !important;
+  }
+
+  .home-page .signature-case-section {
+    margin-top: clamp(70px, 10vh, 112px) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    min-height: 100svh !important;
+    min-height: 100vh !important;
+    padding-top: 104px !important;
+    padding-bottom: 132px !important;
+  }
+
+  .home-page .hero .featured-case-cue {
+    bottom: 28px !important;
+    padding: 10px 12px 10px 16px !important;
+    gap: 10px !important;
+    font-size: .72rem !important;
+    letter-spacing: .105em !important;
+  }
+
+  .home-page .hero .featured-case-cue strong {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: .92rem !important;
+  }
+}
