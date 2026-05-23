@@ -3067,3 +3067,70 @@ body.home-page .site-footer::after,
     gap: 10px !important;
   }
 }
+
+/* === Hero city visibility correction ===
+   Keeps the fixed city + scroll-to-white system, but reduces the final white veil
+   so the city remains subtly visible after the initial load instead of flashing
+   briefly and disappearing. */
+.home-page #content::before {
+  opacity: 0.64 !important;
+  filter: saturate(0.72) contrast(0.88) brightness(1.08) !important;
+}
+
+.home-page #content::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.22) 0vh,
+    rgba(255,255,255,0.34) 18vh,
+    rgba(255,255,255,0.56) 46vh,
+    rgba(255,255,255,0.82) 76vh,
+    rgba(255,255,255,0.96) 96vh,
+    #ffffff 112vh,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page .hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 34%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.18) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.14) 44%, rgba(255,255,255,.50) 76%, #ffffff 100%) !important;
+}
+
+@media (max-width: 980px) {
+  .home-page #content::before {
+    opacity: 0.54 !important;
+  }
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.36) 0vh,
+      rgba(255,255,255,.52) 30vh,
+      rgba(255,255,255,.82) 70vh,
+      #ffffff 104vh,
+      #ffffff 100%
+    ) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page #content::before {
+    opacity: 0.48 !important;
+  }
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.44) 0vh,
+      rgba(255,255,255,.62) 30vh,
+      rgba(255,255,255,.90) 66vh,
+      #ffffff 92vh,
+      #ffffff 100%
+    ) !important;
+  }
+
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.58) 36%, rgba(255,255,255,.48) 64%, #ffffff 100%) !important;
+  }
+}
