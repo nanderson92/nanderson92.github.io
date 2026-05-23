@@ -3894,3 +3894,238 @@ body.home-page .site-footer::after,
     font-size: .92rem !important;
   }
 }
+
+/* === Hard fix: visible hero + no-snap unified featured cue ===
+   Keeps the hero visible even when animation fill states conflict, uses the
+   individual translate property for motion so transform-based centering/hover
+   rules cannot create a horizontal snap, and animates the featured cue as one
+   pill so the text and arrow appear together. */
+.home-page .hero,
+.home-page .hero-inner,
+.home-page .hero-copy,
+.home-page .hero .hero-identity,
+.home-page .hero .system-label,
+.home-page .hero .name-kicker,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row,
+.home-page .hero .cta-row .button,
+.home-page .hero .featured-case-cue,
+.home-page .hero .featured-case-cue span,
+.home-page .hero .featured-case-cue strong {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.home-page .hero .hero-identity,
+.home-page .hero .system-label,
+.home-page .hero .name-kicker,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row .button,
+.home-page .hero .featured-case-cue {
+  transform: none !important;
+}
+
+.home-page .hero {
+  position: relative !important;
+  min-height: 100svh !important;
+  min-height: 100vh !important;
+  padding-top: clamp(118px, 14vh, 154px) !important;
+  padding-bottom: clamp(150px, 19vh, 200px) !important;
+}
+
+.home-page .hero-inner {
+  min-height: calc(100svh - clamp(118px, 14vh, 154px) - clamp(150px, 19vh, 200px)) !important;
+  align-items: center !important;
+}
+
+.home-page .hero .featured-case-cue {
+  position: absolute !important;
+  inset-inline: 0 !important;
+  top: auto !important;
+  bottom: clamp(34px, 6.8vh, 68px) !important;
+  z-index: 8 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important;
+  gap: 12px !important;
+  width: max-content !important;
+  max-width: calc(100vw - 40px) !important;
+  margin-inline: auto !important;
+  margin-block: 0 !important;
+  padding: 12px 14px 12px 20px !important;
+  border: 1px solid rgba(15, 23, 42, .10) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, .66) !important;
+  color: rgba(15, 23, 42, .68) !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .055) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(170%) !important;
+  backdrop-filter: blur(18px) saturate(170%) !important;
+  font-family: var(--mono) !important;
+  font-size: clamp(.82rem, .95vw, .98rem) !important;
+  font-weight: 820 !important;
+  letter-spacing: .12em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  translate: 0 0;
+  transition:
+    translate 180ms cubic-bezier(.22,.8,.28,1),
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease !important;
+}
+
+.home-page .hero .featured-case-cue span,
+.home-page .hero .featured-case-cue strong {
+  opacity: 1 !important;
+  transform: none !important;
+  translate: 0 0 !important;
+  animation: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+.home-page .hero .featured-case-cue span {
+  display: inline-block !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  white-space: nowrap !important;
+}
+
+.home-page .hero .featured-case-cue strong {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid rgba(15, 23, 42, .12) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, .74) !important;
+  color: rgba(15, 23, 42, .72) !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 750 !important;
+  line-height: 1 !important;
+}
+
+.home-page .hero .featured-case-cue:hover {
+  color: rgba(8, 112, 139, .95) !important;
+  border-color: rgba(13, 142, 177, .22) !important;
+  background: rgba(255, 255, 255, .80) !important;
+  box-shadow: 0 18px 34px rgba(15, 35, 55, .14) !important;
+  transform: none !important;
+  translate: 0 -2px;
+}
+
+.home-page .hero .featured-case-cue:hover strong {
+  border-color: rgba(13, 142, 177, .24) !important;
+  color: rgba(8, 112, 139, .95) !important;
+  background: rgba(255, 255, 255, .88) !important;
+}
+
+.home-page .hero .featured-case-cue:active {
+  transform: none !important;
+  translate: 0 0;
+}
+
+.home-page .hero .cta-row .button {
+  transform: none !important;
+  translate: 0 0;
+  transition:
+    translate 180ms cubic-bezier(.22,.8,.28,1),
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease !important;
+}
+
+.home-page .hero .cta-row .button:hover {
+  transform: none !important;
+  translate: 0 -2px;
+  box-shadow: 0 18px 34px rgba(15, 35, 55, .14) !important;
+}
+
+.home-page .hero .cta-row .button:active {
+  transform: none !important;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes heroRevealTranslateOnlyFinal {
+    from {
+      translate: 0 16px;
+      filter: blur(6px);
+    }
+    to {
+      translate: 0 0;
+      filter: blur(0);
+    }
+  }
+
+  .home-page .hero .hero-identity,
+  .home-page .hero .system-label,
+  .home-page .hero .name-kicker,
+  .home-page .hero h1,
+  .home-page .hero .hero-lede,
+  .home-page .hero .cta-row .button,
+  .home-page .hero .featured-case-cue {
+    opacity: 1 !important;
+    transform: none !important;
+    animation-name: heroRevealTranslateOnlyFinal !important;
+    animation-duration: 760ms !important;
+    animation-timing-function: var(--motion-soft, cubic-bezier(.16, 1, .3, 1)) !important;
+    animation-fill-mode: both !important;
+    will-change: translate, filter !important;
+  }
+
+  .home-page .hero .hero-identity,
+  .home-page .hero .system-label,
+  .home-page .hero .name-kicker { animation-delay: 620ms !important; }
+  .home-page .hero h1 { animation-delay: 820ms !important; }
+  .home-page .hero .hero-lede { animation-delay: 980ms !important; }
+  .home-page .hero .cta-row .button { animation-delay: 1140ms !important; }
+  .home-page .hero .featured-case-cue { animation-delay: 1300ms !important; }
+
+  .home-page .hero .featured-case-cue span,
+  .home-page .hero .featured-case-cue strong {
+    animation: none !important;
+    translate: 0 0 !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: 100svh !important;
+    min-height: 100vh !important;
+    padding-bottom: clamp(140px, 18vh, 178px) !important;
+  }
+
+  .home-page .hero .featured-case-cue {
+    bottom: clamp(28px, 5.8vh, 50px) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero {
+    padding-top: 104px !important;
+    padding-bottom: 136px !important;
+  }
+
+  .home-page .hero .featured-case-cue {
+    bottom: 28px !important;
+    padding: 10px 12px 10px 16px !important;
+    gap: 10px !important;
+    font-size: .72rem !important;
+    letter-spacing: .105em !important;
+  }
+
+  .home-page .hero .featured-case-cue strong {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: .92rem !important;
+  }
+}
