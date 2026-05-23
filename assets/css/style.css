@@ -2700,7 +2700,7 @@ body.home-page .site-footer::after,
 .home-page .hero h1 {
   max-width: 900px !important;
   font-size: clamp(4.05rem, 7.6vw, 7.4rem) !important;
-  line-height: .92 !important;
+  line-height: .975 !important;
   letter-spacing: -0.078em !important;
   text-wrap: balance;
 }
@@ -2710,13 +2710,19 @@ body.home-page .site-footer::after,
 }
 
 .home-page .hero-lede {
-  max-width: 780px !important;
+  max-width: 760px !important;
   margin-top: 24px !important;
   color: rgba(49, 83, 87, 0.88) !important;
   font-size: clamp(1.08rem, 1.42vw, 1.27rem) !important;
-  line-height: 1.68 !important;
+  line-height: 1.62 !important;
   letter-spacing: -0.022em !important;
   text-wrap: pretty;
+}
+
+.home-page .hero-lede-break {
+  display: block;
+  content: "";
+  margin-top: 0.18rem;
 }
 
 .home-page .hero .cta-row {
@@ -2829,14 +2835,14 @@ body.home-page .site-footer::after,
 
   .home-page .hero h1 {
     font-size: clamp(3.05rem, 13.2vw, 4.65rem) !important;
-    line-height: .95 !important;
+    line-height: 1.0 !important;
     letter-spacing: -0.07em !important;
     max-width: 100% !important;
   }
 
   .home-page .hero-lede {
     font-size: clamp(1rem, 4.25vw, 1.13rem) !important;
-    line-height: 1.62 !important;
+    line-height: 1.58 !important;
   }
 
   .scroll-cue {
