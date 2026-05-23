@@ -6,25 +6,25 @@
 <text x="54" y="66" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#0f172a">Droplet video → metric extraction</text>
 <text x="54" y="101" font-family="monospace" font-size="15" font-weight="700" fill="#517579" letter-spacing="2">REPRESENTATIVE DATA PANEL · AXES SHOWN FOR WORKFLOW CLARITY</text>
 <g transform="translate(58 150)">
-  <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
-  <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">r(t)</text>
-  <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
-  <path d="M50 110 C100 112 140 114 178 124 S246 160 278 196" fill="none" stroke="#0d8eb1" stroke-width="5" stroke-linecap="round"/>
-  <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
+ <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
+ <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">r(t)</text>
+ <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
+ <path d="M50 110 C100 112 140 114 178 124 S246 160 278 196" fill="none" stroke="#0d8eb1" stroke-width="5" stroke-linecap="round"/>
+ <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
 </g>
 <g transform="translate(440 150)">
-  <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
-  <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">θ(t)</text>
-  <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
-  <path d="M50 90 C90 96 128 112 166 134 S238 180 278 204" fill="none" stroke="#4c936c" stroke-width="5" stroke-linecap="round"/>
-  <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
+ <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
+ <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">θ(t)</text>
+ <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
+ <path d="M50 90 C90 96 128 112 166 134 S238 180 278 204" fill="none" stroke="#4c936c" stroke-width="5" stroke-linecap="round"/>
+ <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
 </g>
 <g transform="translate(822 150)">
-  <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
-  <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">V(t)</text>
-  <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
-  <path d="M50 82 C104 98 150 132 192 164 S244 199 278 218" fill="none" stroke="#b59b45" stroke-width="5" stroke-linecap="round"/>
-  <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
+ <rect width="320" height="270" rx="22" fill="#fff" stroke="#d9e2ec"/>
+ <text x="24" y="40" font-family="monospace" font-size="16" font-weight="800" fill="#334155">V(t)</text>
+ <path d="M48 220 H280 M48 220 V72" stroke="#cbd5e1" stroke-width="2"/>
+ <path d="M50 82 C104 98 150 132 192 164 S244 199 278 218" fill="none" stroke="#b59b45" stroke-width="5" stroke-linecap="round"/>
+ <text x="118" y="248" font-family="Inter, Arial" font-size="13" fill="#64748b">time</text>
 </g>
 <text x="58" y="486" font-family="Inter, Arial" font-size="17" fill="#334155">Use: convert top/side-view video frames into normalized time-series for comparing evaporation, imbibition, spreading, and pinning.</text>
 </svg>

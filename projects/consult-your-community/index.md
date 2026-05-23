@@ -18,8 +18,8 @@ Small nonprofits often need strategy that is realistic, actionable, and aligned 
 ## Methods and tools
 
 <div class="two-col">
-  <div class="matrix-card"><h3>Discovery</h3><p>Client conversations, constraint identification, audience analysis, and current-state review.</p></div>
-  <div class="matrix-card"><h3>Recommendation</h3><p>Actionable strategy, implementation priorities, communication plan, and slide-based delivery.</p></div>
+ <div class="matrix-card"><h3>Discovery</h3><p>Client conversations, constraint identification, audience analysis, and current-state review.</p></div>
+ <div class="matrix-card"><h3>Recommendation</h3><p>Actionable strategy, implementation priorities, communication plan, and slide-based delivery.</p></div>
 </div>
 
 <div class="badge-row"><span class="badge">Consulting</span><span class="badge">Client Communication</span><span class="badge">Strategy</span><span class="badge">PowerPoint</span><span class="badge">Implementation</span></div>

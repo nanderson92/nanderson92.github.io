@@ -10,11 +10,11 @@ subtitle: Electrical test, resistance drift, yield visibility, and process-contr
 
 This case file focuses on reliability and process control for printed interconnects and device test structures in a micromodular electronics workflow. The project turns electrical measurements into manufacturing decisions: what is stable, what is drifting, what fails, and which process step likely caused it.
 
-<div class="buildout-note">Public-safe artifact buildout — public-safe plots, simplified device schematics, and threshold logic will be added as artifacts.</div>
+<div class="buildout-note">artifact buildout — plots, simplified device schematics, and threshold logic will be added as artifacts.</div>
 
 <div class="role-block">
-  <p class="system-label small">MY ROLE</p>
-  <p>Built and used electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, correlated failures to surface-prep/deposition/cure steps, and framed the results as CTQs, acceptance limits, and process-window feedback.</p>
+ <p class="system-label small">MY ROLE</p>
+ <p>Built and used electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, correlated failures to surface-prep/deposition/cure steps, and framed the results as CTQs, acceptance limits, and process-window feedback.</p>
 </div>
 
 <div class="connection-note"><strong>Connection to flagship:</strong> The deposition project asks where devices land. This reliability project asks whether the printed interconnects and device interfaces remain electrically usable after assembly.</div>
@@ -26,16 +26,16 @@ Printed interconnects can look acceptable initially but fail later through resis
 ## Where this project fits in the workflow
 
 <figure class="wide-figure">
-  <img src="{{ '/assets/images/micromodular-workflow-interconnect-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the interconnect subsystem highlighted across analyzing components, planning wiring, and printing wires." loading="lazy">
-  <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the interconnect subsystem: analyzing printed component layouts, planning the wiring path, and printing the interconnects that turn placed components into a working circuit.</figcaption>
+ <img src="{{ '/assets/images/micromodular-workflow-interconnect-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the interconnect subsystem highlighted across analyzing components, planning wiring, and printing wires." loading="lazy">
+ <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the interconnect subsystem: analyzing printed component layouts, planning the wiring path, and printing the interconnects that turn placed components into a working circuit.</figcaption>
 </figure>
 
 ## Engineering framing
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Process variables</h3><p>Surface preparation, primer/film chemistry, deposition conditions, curing history, geometry, and handling.</p></div>
-  <div class="matrix-card"><h3>Measured signals</h3><p>Initial resistance, drift, intermittent opens, pass/fail yield, stress response, and device-to-device variation.</p></div>
-  <div class="matrix-card"><h3>Control response</h3><p>Acceptance thresholds, rework rules, failure-mode notes, and process-window adjustments.</p></div>
+ <div class="matrix-card"><h3>Process variables</h3><p>Surface preparation, primer/film chemistry, deposition conditions, curing history, geometry, and handling.</p></div>
+ <div class="matrix-card"><h3>Measured signals</h3><p>Initial resistance, drift, intermittent opens, pass/fail yield, stress response, and device-to-device variation.</p></div>
+ <div class="matrix-card"><h3>Control response</h3><p>Acceptance thresholds, rework rules, failure-mode notes, and process-window adjustments.</p></div>
 </div>
 
 ## Variables studied
@@ -52,25 +52,25 @@ Printed interconnects can look acceptable initially but fail later through resis
 ## Methods and tools
 
 <div class="two-col">
-  <div class="matrix-card"><h3>Experimental methods</h3><p>Electrical probing, resistance tracking, stress-condition comparison, pass/fail screening, and failure interval framing.</p></div>
-  <div class="matrix-card"><h3>Data methods</h3><p>Automated logging, summary statistics, JMP comparisons, drift plots, threshold logic, and process-step correlation.</p></div>
+ <div class="matrix-card"><h3>Experimental methods</h3><p>Electrical probing, resistance tracking, stress-condition comparison, pass/fail screening, and failure interval framing.</p></div>
+ <div class="matrix-card"><h3>Data methods</h3><p>Automated logging, summary statistics, JMP comparisons, drift plots, threshold logic, and process-step correlation.</p></div>
 </div>
 
 <div class="badge-row">
-  <span class="badge">Keithley</span>
-  <span class="badge">Python</span>
-  <span class="badge">JMP</span>
-  <span class="badge">Excel</span>
-  <span class="badge">Reliability</span>
-  <span class="badge">CTQs</span>
+ <span class="badge">Keithley</span>
+ <span class="badge">Python</span>
+ <span class="badge">JMP</span>
+ <span class="badge">Excel</span>
+ <span class="badge">Reliability</span>
+ <span class="badge">CTQs</span>
 </div>
 
 ## Outputs to add
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Resistance vs. time</h3><p>Public-safe plot showing drift, stabilization, or failure behavior.</p></div>
-  <div class="matrix-card"><h3>Go/no-go screen</h3><p>Threshold logic for turning raw readings into pass/fail and rework decisions.</p></div>
-  <div class="matrix-card"><h3>Process-control loop</h3><p>Diagram linking electrical signatures back to surface prep, deposition, cure, and handling steps.</p></div>
+ <div class="matrix-card"><h3>Resistance vs. time</h3><p>plot showing drift, stabilization, or failure behavior.</p></div>
+ <div class="matrix-card"><h3>Go/no-go screen</h3><p>Threshold logic for turning raw readings into pass/fail and rework decisions.</p></div>
+ <div class="matrix-card"><h3>Process-control loop</h3><p>Diagram linking electrical signatures back to surface prep, deposition, cure, and handling steps.</p></div>
 </div>
 
 ## Engineering interpretation
@@ -83,4 +83,4 @@ This is the language of process engineering inside semiconductor-adjacent R&amp;
 
 ## Ongoing development
 
-Add a public-safe resistance drift plot, define failure/drift thresholds, and include one simplified process-control diagram that shows how test data feeds back into process changes.
+Add a resistance drift plot, define failure/drift thresholds, and include one simplified process-control diagram that shows how test data feeds back into process changes.

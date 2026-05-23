@@ -10,11 +10,11 @@ subtitle: Flow-focused core–shell capsule process development for regenerative
 
 This case file presents microfluidic process-development work for producing core–shell hydrogel microcapsules. The technical goal is to make capsules that are structurally useful, biologically compatible, and scalable enough to support stem-cell workflows.
 
-<div class="buildout-note">Public-safe artifact buildout — add public-safe capsule schematics, process-variable tables, and QC visuals as available.</div>
+<div class="buildout-note">artifact buildout — add capsule schematics, process-variable tables, and QC visuals as available.</div>
 
 <div class="role-block">
-  <p class="system-label small">MY ROLE</p>
-  <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
+ <p class="system-label small">MY ROLE</p>
+ <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
 <div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as a process-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
@@ -26,16 +26,16 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 ## Process schematic
 
 <div class="project-schematic schematic-pfd" aria-label="Representative microencapsulation process schematic">
-  <div class="pfd-row"><span>CORE</span><i></i><span>SHELL</span><i></i><span>NOZZLE</span><i></i><span>CAPSULE QC</span></div>
-  <p>Representative flow-focused encapsulation logic · recreated schematic, not raw lab imagery.</p>
+ <div class="pfd-row"><span>CORE</span><i></i><span>SHELL</span><i></i><span>NOZZLE</span><i></i><span>CAPSULE QC</span></div>
+ <p>Representative flow-focused encapsulation logic · recreated schematic, not raw lab imagery.</p>
 </div>
 
 ## Engineering framing
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Inputs</h3><p>Core stream, shell precursor, continuous phase, crosslinker chemistry, cell suspension, and flow conditions.</p></div>
-  <div class="matrix-card"><h3>Process knobs</h3><p>Continuous/dispersed flow ratio, nozzle behavior, shear, crosslink dwell time, and collection conditions.</p></div>
-  <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</p></div>
+ <div class="matrix-card"><h3>Inputs</h3><p>Core stream, shell precursor, continuous phase, crosslinker chemistry, cell suspension, and flow conditions.</p></div>
+ <div class="matrix-card"><h3>Process knobs</h3><p>Continuous/dispersed flow ratio, nozzle behavior, shear, crosslink dwell time, and collection conditions.</p></div>
+ <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</p></div>
 </div>
 
 ## Variables studied
@@ -52,8 +52,8 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 ## Methods and tools
 
 <div class="two-col">
-  <div class="matrix-card"><h3>Process methods</h3><p>Flow-focused microfluidics, capsule generation, crosslinking control, flow-ratio tuning, and yield/coalescence observation.</p></div>
-  <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
+ <div class="matrix-card"><h3>Process methods</h3><p>Flow-focused microfluidics, capsule generation, crosslinking control, flow-ratio tuning, and yield/coalescence observation.</p></div>
+ <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
 </div>
 
 <div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
@@ -61,9 +61,9 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 ## Portfolio artifacts to add
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Capsule schematic</h3><p>Public-safe drawing of core–shell capsule structure and process streams.</p></div>
-  <div class="matrix-card"><h3>Process window</h3><p>Flow ratio vs. capsule quality table or plot.</p></div>
-  <div class="matrix-card"><h3>QC summary</h3><p>Coalescence, yield, throughput, and representative acceptance criteria.</p></div>
+ <div class="matrix-card"><h3>Capsule schematic</h3><p>drawing of core–shell capsule structure and process streams.</p></div>
+ <div class="matrix-card"><h3>Process window</h3><p>Flow ratio vs. capsule quality table or plot.</p></div>
+ <div class="matrix-card"><h3>QC summary</h3><p>Coalescence, yield, throughput, and representative acceptance criteria.</p></div>
 </div>
 
 ## Engineering interpretation

@@ -18,9 +18,9 @@ Manufacturing environments care about throughput, uptime, quality checks, people
 ## Systems translated
 
 <div class="matrix">
-  <div class="matrix-card"><h3>Throughput</h3><p>Line balancing, queue monitoring, handoff-time reduction, and bottleneck response during peak demand.</p></div>
-  <div class="matrix-card"><h3>Quality</h3><p>CCP logs, temperature checks, corrective actions, and shift-level accountability.</p></div>
-  <div class="matrix-card"><h3>Reliability</h3><p>Preventive-maintenance routines, equipment checks, downtime reduction, and standard-work reinforcement.</p></div>
+ <div class="matrix-card"><h3>Throughput</h3><p>Line balancing, queue monitoring, handoff-time reduction, and bottleneck response during peak demand.</p></div>
+ <div class="matrix-card"><h3>Quality</h3><p>CCP logs, temperature checks, corrective actions, and shift-level accountability.</p></div>
+ <div class="matrix-card"><h3>Reliability</h3><p>Preventive-maintenance routines, equipment checks, downtime reduction, and standard-work reinforcement.</p></div>
 </div>
 
 ## Roles represented
