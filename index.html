@@ -5,156 +5,177 @@ body_class: home-page
 ---
 
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <p class="system-label">CHEMICAL ENGINEERING · PROCESS DEVELOPMENT · CLEAN TECHNOLOGY</p>
-      <p class="name-kicker">Nathan Anderson · Chemical & Biomolecular Engineering · Georgia Tech</p>
-      <h1>Engineering the systems that make tomorrow possible.</h1>
-      <p class="hero-lede">
-        Chemical engineering student at Georgia Tech building process-development workflows for printed electronics, wet processing, image analysis, and manufacturing-scale decision-making.
-      </p>
-      <div class="cta-row">
-        <a class="button primary" href="{{ '/projects/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
-        <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
-        <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
-      </div>
-    </div>
-  </div>
+ <div class="hero-inner">
+ <div class="hero-copy">
+ <p class="system-label">CHEMICAL ENGINEERING · PROCESS DEVELOPMENT · CLEAN TECHNOLOGY</p>
+ <h1>Engineering the bridge between innovation and impact.</h1>
+ <p class="hero-lede">
+ I’m Nathan Anderson, a Chemical & Biomolecular Engineering student at Georgia Tech building process-development workflows for printed electronics, wet processing, image analysis, and manufacturing-scale decision-making.
+ </p>
+ <div class="cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View Engineering Projects <span aria-hidden="true">→</span></a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
+ </div>
+ </div>
+ </div>
+</section>
+
+<section class="signature-case-section" aria-label="Signature engineering case study">
+ <div class="signature-case-card">
+ <div class="signature-copy">
+ <p class="system-label small">SIGNATURE CASE STUDY</p>
+ <h2>Micromodular Electronics Deposition</h2>
+ <p class="signature-subtitle">Substrate-controlled process windows for printed-electronics assembly.</p>
+ <p>
+ I use this project as the clearest example of how I think as a process engineer: define the physical bottleneck, isolate controllable boundary conditions, convert visual behavior into metrics, and translate the result into manufacturing selection criteria.
+ </p>
+ <div class="signature-proof-grid" aria-label="Flagship proof points">
+ <span><strong>Problem</strong> Suspended microdevices can crowd, raft, pin, and accumulate near the droplet edge during spreading, drying, and imbibition.</span>
+ <span><strong>Method</strong> Compare substrate/backing conditions using top-view and side-view microscopy, then extract contact-line dynamics, deposition density, and edge/center uniformity metrics.</span>
+ <span class="signature-output"><strong>Output</strong> A process-development case study connecting droplet transport, substrate design, image analysis, and scalable micromodular electronics assembly.</span>
+ </div>
+ <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case study <span aria-hidden="true">→</span></a>
+ </div>
+ <figure class="signature-visual">
+ <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
+ </figure>
+ </div>
 </section>
 
 <section class="proof-section" aria-label="Technical proof bar">
-  <div class="proof-heading">
-    <p class="system-label small">TECHNICAL PROOF</p>
-    <p>Grouped by what recruiters and technical managers scan for first.</p>
-  </div>
-  <div class="proof-groups">
-    <div class="proof-group">
-      <h3>Process / Manufacturing</h3>
-      <div class="proof-bar">
-        <span class="proof-tag">Process Development</span>
-        <span class="proof-tag">Wet Processing</span>
-        <span class="proof-tag">Reliability</span>
-        <span class="proof-tag">Aspen</span>
-        <span class="proof-tag">PFDs</span>
-        <span class="proof-tag">Balances</span>
-      </div>
-    </div>
-    <div class="proof-group">
-      <h3>Research / Materials</h3>
-      <div class="proof-bar">
-        <span class="proof-tag">Printed Electronics</span>
-        <span class="proof-tag">Interfacial Transport</span>
-        <span class="proof-tag">Substrate Screening</span>
-        <span class="proof-tag">Microscopy</span>
-      </div>
-    </div>
-    <div class="proof-group">
-      <h3>Data / Computation</h3>
-      <div class="proof-bar">
-        <span class="proof-tag">Python</span>
-        <span class="proof-tag">MATLAB</span>
-        <span class="proof-tag">JMP</span>
-        <span class="proof-tag">ImageJ/Fiji</span>
-      </div>
-    </div>
-  </div>
+ <div class="proof-heading">
+ <p class="system-label small">TECHNICAL PROOF</p>
+ <p>Grouped by what recruiters and technical managers scan for first.</p>
+ </div>
+ <div class="proof-groups">
+ <div class="proof-group">
+ <h3>Process / Manufacturing</h3>
+ <div class="proof-bar">
+ <a class="proof-tag" href="{{ '/projects/' | relative_url }}#process-development">Process Development</a>
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Wet Processing</a>
+ <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Reliability</a>
+ <a class="proof-tag" href="{{ '/projects/' | relative_url }}#process-simulation">Aspen</a>
+ <a class="proof-tag" href="{{ '/projects/' | relative_url }}#process-simulation">PFDs</a>
+ <a class="proof-tag" href="{{ '/projects/' | relative_url }}#process-simulation">Balances</a>
+ <a class="proof-tag" href="{{ '/projects/operations-quality-systems/' | relative_url }}">Quality Systems</a>
+ </div>
+ </div>
+ <div class="proof-group">
+ <h3>Research / Materials</h3>
+ <div class="proof-bar">
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Printed Electronics</a>
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Interfacial Transport</a>
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Substrate Screening</a>
+ <a class="proof-tag" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">MBE</a>
+ <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Microfluidics</a>
+ <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Cell Culture</a>
+ </div>
+ </div>
+ <div class="proof-group">
+ <h3>Data / Computation</h3>
+ <div class="proof-bar">
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Python</a>
+ <a class="proof-tag" href="{{ '/projects/' | relative_url }}#process-simulation">MATLAB</a>
+ <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">JMP</a>
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">ImageJ/Fiji</a>
+ <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Excel</a>
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Image Analysis</a>
+ </div>
+ </div>
+ <div class="proof-group">
+ <h3>Instrumentation / Automation</h3>
+ <div class="proof-bar">
+ <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Optical Microscopy</a>
+ <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Keithley</a>
+ <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">PID Control</a>
+ <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">ESP32 / Arduino</a>
+ <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Sensors</a>
+ <a class="proof-tag" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">PCR / RT-qPCR</a>
+ </div>
+ </div>
+ </div>
 </section>
 
 
 
-<section class="project-strip" aria-label="Featured engineering work">
-  <div class="section-heading">
-    <p class="system-label">FEATURED PROJECTS</p>
-    <h2>Engineering case files.</h2>
-    <p>Project previews are organized around technical artifacts: problem, method, output, tools, and status.</p>
-  </div>
 
-  <div class="project-grid evidence-grid">
-    <article class="project-card evidence-card">
-      <div class="card-visual visual-droplet" aria-hidden="true"></div>
-      <p class="tag">PROJECT_01 · RESEARCH</p>
-      <h3>Micromodular Printed Electronics Deposition</h3>
-      <p class="problem-line">Nonuniform deposition limits scalable printed electronics assembly.</p>
-      <div class="evidence-table">
-        <span><strong>Problem</strong> Suspended microdevices can accumulate at the rim during droplet drying or imbibition.</span>
-        <span><strong>Method</strong> Optical microscopy · droplet tracking · substrate comparison</span>
-        <span class="output-row"><strong>Output</strong> Process-window metrics, deposition-pattern figures, and substrate-selection logic</span>
-        <span><strong>Tools</strong> Keyence · Python · ImageJ/Fiji · JMP</span>
-        <span><strong>Status</strong> In progress</span>
-      </div>
-      <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
-    </article>
+<section class="home-library project-strip supporting-home-cases" aria-label="Supporting engineering work">
+ <div class="content-shell home-content-shell">
+ <div class="section-heading">
+ <p class="system-label">SUPPORTING ENGINEERING CASE FILES</p>
+ <h2>Other proof-of-work, same process mindset.</h2>
+ <p>The flagship deposition project is the anchor. These supporting case files show the same engineering pattern across reliability, microfluidics, and automation.</p>
+ </div>
 
-    <article class="project-card evidence-card">
-      <div class="card-visual visual-pfd" aria-hidden="true"></div>
-      <p class="tag">PROJECT_02 · PROCESS ENGINEERING</p>
-      <h3>Process Simulation and Design</h3>
-      <p class="problem-line">Convert process requirements into flowsheets, balances, and defensible design decisions.</p>
-      <div class="evidence-table">
-        <span><strong>Problem</strong> Process alternatives need balance closure, assumptions, and thermodynamic reasoning.</span>
-        <span><strong>Method</strong> PFDs · material/energy balances · Aspen simulation</span>
-        <span class="output-row"><strong>Output</strong> Flowsheet logic, calculated design tradeoffs, and simulation-based recommendations</span>
-        <span><strong>Tools</strong> Aspen · MATLAB · Excel</span>
-        <span><strong>Status</strong> Case study buildout in progress</span>
-      </div>
-      <p><a href="{{ '/projects/process-simulation-design/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
-    </article>
+ <div class="portfolio-grid projects-library supporting-card-grid">
+ <article class="portfolio-card evidence-card">
+ <div class="card-visual visual-signal" aria-hidden="true"></div>
+ <div class="card-topline"><span>Reliability · Process Control</span><span>Status: Active buildout</span></div>
+ <h2>Printed Interconnect &amp; FET Reliability</h2>
+ <p class="problem-line">Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.</p>
+ <div class="evidence-table">
+ <span><strong>Problem</strong> Printed interconnects and device interfaces can fail through drift, intermittent opens, and step variability.</span>
+ <span><strong>Method</strong> Keithley screening, threshold logic, stress comparisons, JMP analysis, and failure-mode interpretation.</span>
+ <span class="output-row"><strong>Output</strong> Reliability plots, CTQ logic, screening notes, and process-window recommendations.</span>
+ <span><strong>Tools</strong> Keithley · Python · JMP · Excel · optical microscopy.</span>
+ </div>
+ <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case study →</a></p>
+ </article>
 
-    <article class="project-card evidence-card">
-      <div class="card-visual visual-signal" aria-hidden="true"></div>
-      <p class="tag">PROJECT_03 · RELIABILITY</p>
-      <h3>Printed Interconnect Reliability Analysis</h3>
-      <p class="problem-line">Quantify resistance drift and failure behavior under environmental stress.</p>
-      <div class="evidence-table">
-        <span><strong>Problem</strong> Resistance drift can hide process instability or early reliability failure.</span>
-        <span><strong>Method</strong> Resistance tracking · trend analysis · JMP comparisons</span>
-        <span class="output-row"><strong>Output</strong> Stress-response summaries, drift plots, and reliability interpretation</span>
-        <span><strong>Tools</strong> JMP · Excel · Python</span>
-        <span><strong>Status</strong> Case study buildout in progress</span>
-      </div>
-      <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
-    </article>
+ <article class="portfolio-card evidence-card">
+ <div class="card-visual visual-droplet" aria-hidden="true"></div>
+ <div class="card-topline"><span>Microfluidics · Process Development</span><span>Status: New case file</span></div>
+ <h2>Scalable Stem-Cell Microencapsulation</h2>
+ <p class="problem-line">Flow-focused core–shell capsule process development for regenerative-medicine workflows.</p>
+ <div class="evidence-table">
+ <span><strong>Problem</strong> Hydrogel capsules need throughput, low coalescence, repeatable quality, and biological utility.</span>
+ <span><strong>Method</strong> Flow-ratio tuning, crosslink dwell-time optimization, capsule fabrication, and microscopy QC.</span>
+ <span class="output-row"><strong>Output</strong> Yield/coalescence logic and process-development notes for stable capsule production.</span>
+ <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control.</span>
+ </div>
+ <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case study →</a></p>
+ </article>
 
-    <article class="project-card evidence-card">
-      <div class="card-visual visual-compute" aria-hidden="true"></div>
-      <p class="tag">PROJECT_04 · COMPUTATION</p>
-      <h3>Droplet and Image Analysis Workflows</h3>
-      <p class="problem-line">Extract quantitative variables from microscopy videos and experimental time series.</p>
-      <div class="evidence-table">
-        <span><strong>Problem</strong> Raw videos need repeatable measurement workflows before they can support decisions.</span>
-        <span><strong>Method</strong> Segmentation · calibration · plotting · validation checks</span>
-        <span class="output-row"><strong>Output</strong> r(t), θ(t), V(t), and deposition-distribution analysis workflows</span>
-        <span><strong>Tools</strong> Python · ImageJ/Fiji · MATLAB</span>
-        <span><strong>Status</strong> Tooling in progress</span>
-      </div>
-      <p><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case study <span aria-hidden="true">→</span></a></p>
-    </article>
-  </div>
+ <article class="portfolio-card evidence-card">
+ <div class="card-visual visual-compute" aria-hidden="true"></div>
+ <div class="card-topline"><span>Automation · Diagnostics</span><span>Status: New case file</span></div>
+ <h2>Thermocycler Process Automation</h2>
+ <p class="problem-line">PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.</p>
+ <div class="evidence-table">
+ <span><strong>Problem</strong> RT-qPCR workflows require fast ramping, stable holds, and repeatable automated thermal control.</span>
+ <span><strong>Method</strong> Embedded controller prototyping, heater/cooling integration, feedback sensing, PID tuning, and validation.</span>
+ <span class="output-row"><strong>Output</strong> Functional thermocycler prototype with ramp-rate and steady-state stability logic.</span>
+ <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · RT-qPCR workflow logic.</span>
+ </div>
+ <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case study →</a></p>
+ </article>
+ </div>
+ </div>
 </section>
 
-<section class="human-service-band" aria-label="Background and giving back">
-  <article>
-    <p class="system-label">HUMAN CONTEXT</p>
-    <h2>Built for technical work that reaches people.</h2>
-    <p>
-      Background explains the personal thread behind my interest in accessible, scalable technology; Giving Back will collect tutoring, mentorship, and service work as those experiences are added.
-    </p>
-    <div class="inline-links">
-      <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
-      <a href="{{ '/giving-back/' | relative_url }}">Giving Back <span aria-hidden="true">→</span></a>
-    </div>
-  </article>
+
+<section class="human-service-band" aria-label="Background">
+ <article>
+ <p class="system-label">HUMAN CONTEXT</p>
+ <h2>Built for technical work that reaches people.</h2>
+ <p>
+ Background explains the personal thread behind my interest in accessible, scalable technology and why process engineering became the path from discovery to delivery.
+ </p>
+ <div class="inline-links">
+ <a href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
+ </div>
+ </article>
 </section>
 
 <section class="cta-band recruiter-cta" aria-label="Recruiting call to action">
-  <div>
-    <p class="system-label small">FALL 2026 OPPORTUNITIES</p>
-    <h2>Seeking process engineering, manufacturing, R&D, advanced materials, semiconductor, and clean-technology co-ops/internships.</h2>
-    <p>Best-fit work: wet processing, process development, reliability, data analysis, clean manufacturing, and research-to-engineering workflows.</p>
-  </div>
-  <div class="cta-row compact-cta">
-    <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
-    <a class="button secondary" href="mailto:{{ site.email }}">Email Me</a>
-    <a class="button tertiary" href="{{ '/projects/' | relative_url }}">View Projects</a>
-  </div>
+ <div>
+ <p class="system-label small">FALL 2026 OPPORTUNITIES</p>
+ <h2>Available for Co-ops &amp; Internships</h2>
+ <p>My strongest contributions will be in process development &amp; automation and research-to-engineering workflows. Open to advanced manufacturing, semiconductor, energy, and biotech environments.</p>
+ </div>
+ <div class="cta-row compact-cta">
+ <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
+ <a class="button secondary" href="mailto:{{ site.email }}">Email Me</a>
+ <a class="button tertiary" href="{{ '/projects/' | relative_url }}">View Projects</a>
+ </div>
 </section>
