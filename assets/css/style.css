@@ -3571,3 +3571,61 @@ body.home-page .site-footer::after,
     font-size: .92rem !important;
   }
 }
+/* === FINAL HOMEPAGE HERO VISIBILITY FIX === */
+
+.home-page #content::before,
+.home-page #content::after {
+  content: none !important;
+  display: none !important;
+}
+
+.home-page .hero {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  min-height: 100svh !important;
+  min-height: 100vh !important;
+}
+
+.home-page .hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+  animation: none !important;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 34%, rgba(255,255,255,.48) 64%, rgba(255,255,255,.20) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.04) 0%, rgba(255,255,255,.10) 44%, rgba(255,255,255,.52) 76%, #ffffff 100%),
+    url('../images/homepage-background-optimized.jpg') !important;
+  background-size: 100% 100%, 100% 100%, cover !important;
+  background-position: center, center, center top !important;
+  background-repeat: no-repeat !important;
+}
+
+.home-page .hero::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 0 !important;
+  height: 220px !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0), #ffffff) !important;
+}
+
+.home-page .hero-inner,
+.home-page .hero-copy,
+.home-page .hero .featured-case-cue {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.home-page .hero .hero-identity,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row,
+.home-page .hero .cta-row .button {
+  opacity: 1 !important;
+}
