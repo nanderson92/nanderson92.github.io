@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scalable Stem-Cell Microencapsulation
-category: Supporting Case Study
+category: Supporting Case File
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
 ---
@@ -73,3 +73,9 @@ This project is process development in a biomedical context: identify the critic
 ## Ongoing development
 
 Add a recreated microfluidic-device schematic, one capsule-quality figure, and a short process table showing how flow and crosslinking conditions affected yield/coalescence.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

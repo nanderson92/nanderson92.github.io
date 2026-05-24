@@ -34,3 +34,9 @@ Manufacturing environments care about throughput, uptime, quality checks, people
 ## Portfolio interpretation
 
 This section should sit below the technical case files. It should tell a recruiter: I have not only run experiments; I have managed live systems where quality, speed, and people execution mattered every shift.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

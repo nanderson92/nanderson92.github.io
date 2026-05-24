@@ -27,3 +27,9 @@ Small nonprofits often need strategy that is realistic, actionable, and aligned 
 ## Portfolio interpretation
 
 This project adds a different kind of evidence: I can translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, and cross-functional teams.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

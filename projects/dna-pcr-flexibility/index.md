@@ -36,3 +36,9 @@ DNA mechanics at very short lengths are difficult to probe because small length 
 ## Engineering interpretation
 
 Although this is earlier work, it adds useful context: my process-development interests started with experimental systems where measurement quality and workflow control mattered.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

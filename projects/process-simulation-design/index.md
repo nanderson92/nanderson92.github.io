@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Process Simulation and Design
-category: Process Engineering Case Study
+category: Process Engineering Case File
 subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions.
 ---
 ## Summary
@@ -65,3 +65,9 @@ The value of this project is the ability to make process assumptions visible and
 ## Next steps
 
 Replace the representative schematic with a real class or independent process model, add stream tables, and include one sensitivity plot or operating-condition comparison.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

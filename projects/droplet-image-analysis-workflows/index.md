@@ -65,3 +65,9 @@ The value of this project is measurement discipline. A better image workflow mak
 ## Next steps
 
 Add code snippets, a public-safe annotated frame, and one validated comparison plot once the workflow is stable.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

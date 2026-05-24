@@ -36,3 +36,9 @@ Thin-film semiconductor properties depend strongly on deposition conditions, cry
 ## Engineering interpretation
 
 The value of this project is materials-process thinking: changing deposition conditions changes structure, and structure determines whether a semiconductor film is useful for devices.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

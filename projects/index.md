@@ -23,7 +23,7 @@ body_class: projects-page
  <span class="output-row"><strong>Output</strong> Process-window framework connecting droplet transport, substrate design, edge/center deposition logic, and downstream interconnect feasibility.</span>
  <span><strong>Tools</strong> Keyence · Rame-Hart · Python · ImageJ/Fiji · JMP · optical microscopy.</span>
  </div>
- <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case study →</a></p>
+ <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case file →</a></p>
  </div>
  <figure class="flagship-project-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
@@ -49,7 +49,7 @@ body_class: projects-page
  <span class="output-row"><strong>Output</strong> Reliability plots, CTQ logic, screening pipeline notes, and process-window recommendations for tighter yield control.</span>
  <span><strong>Tools</strong> Keithley · Python · JMP · Excel · optical microscopy.</span>
  </div>
- <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case study →</a></p>
+ <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
@@ -63,7 +63,7 @@ body_class: projects-page
  <span class="output-row"><strong>Output</strong> Improved encapsulation yield, reduced coalescence, stable capsule-production conditions, and process-development notes.</span>
  <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control · image-based inspection.</span>
  </div>
- <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case study →</a></p>
+ <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
@@ -77,7 +77,7 @@ body_class: projects-page
  <span class="output-row"><strong>Output</strong> Functional thermocycler prototype with quantified ramp rate and steady-state temperature stability.</span>
  <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · Python/microcontroller code · RT-qPCR workflow logic.</span>
  </div>
- <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case study →</a></p>
+ <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
  </article>
  </div>
 </section>

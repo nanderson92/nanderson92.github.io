@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Printed Interconnect & FET Reliability
-category: Supporting Case Study
+category: Supporting Case File
 tags: Semiconductors · Reliability · Process Control · Manufacturing
 subtitle: Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.
 ---
@@ -84,3 +84,9 @@ This is the language of process engineering inside semiconductor-adjacent R&amp;
 ## Ongoing development
 
 Add a resistance drift plot, define failure/drift thresholds, and include one simplified process-control diagram that shows how test data feeds back into process changes.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

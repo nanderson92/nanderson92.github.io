@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thermocycler Process Automation
-category: Supporting Case Study
+category: Supporting Case File
 tags: Automation · Controls · Diagnostics · Hardware
 subtitle: PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.
 ---
@@ -73,3 +73,9 @@ This project shows automation as process engineering: define the required state 
 ## Ongoing development
 
 Add a thermal-profile plot, describe controller tuning constraints, and include a concise bill-of-system diagram for the prototype.
+
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>
