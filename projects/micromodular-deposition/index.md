@@ -207,6 +207,6 @@ This case study frames deposition as a process-control problem: define the contr
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Related reliability project →</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}">Download Resume</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" target="_blank" rel="noopener" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>
