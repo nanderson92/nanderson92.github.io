@@ -2,6 +2,7 @@
 layout: page
 title: Background
 category: Background
+body_class: background-page
 subtitle: Chemical engineering as the science of delivery.
 ---
 
@@ -762,7 +763,7 @@ subtitle: Chemical engineering as the science of delivery.
 }
 </style>
 
-<main class="bp">
+<main class="bp motion-enabled">
   <span class="sr-only">Nathan Anderson's background and philosophy as a process engineer</span>
 
   <section class="hero-shell" aria-label="Background introduction">
@@ -794,11 +795,16 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <div class="pull-quote">
+  <a class="scroll-cue featured-case-cue background-scroll-cue" href="#current-focus" aria-label="Scroll to current technical focus">
+    <span>Current technical focus</span>
+    <strong aria-hidden="true">↓</strong>
+  </a>
+
+  <div class="pull-quote reveal" style="--reveal-delay: 40ms">
     <p>Chemical engineering is my answer: the discipline that turns physical phenomena into processes that can be measured, repeated, scaled, and transferred — for people who were not in the room where the breakthrough happened.</p>
   </div>
 
-  <section class="focus-card" aria-label="Current technical focus">
+  <section id="current-focus" class="focus-card reveal" aria-label="Current technical focus" style="--reveal-delay: 80ms">
     <div class="focus-grid">
       <div>
         <p class="focus-kicker">Current technical focus</p>
@@ -816,12 +822,12 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <section class="section" aria-label="Infrastructure origins">
+  <section class="section reveal" aria-label="Infrastructure origins" style="--reveal-delay: 120ms">
     <div class="eyebrow">Where the infrastructure question started</div>
     <h2>Fiction made the stakes of infrastructure feel personal.</h2>
     <p class="subline">The stories that shaped me were not just about advanced technology. They made me look for the systems beneath the surface: materials, energy, interfaces, and control layers.</p>
 
-    <div class="media-grid">
+    <div class="media-grid reveal" style="--reveal-delay: 180ms">
       <article class="media-card">
         <span class="tag">Human-machine infrastructure</span>
         <h3>Ghost in the Shell</h3>
@@ -847,12 +853,12 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <section class="section" aria-label="Why process development">
+  <section class="section reveal" aria-label="Why process development" style="--reveal-delay: 160ms">
     <div class="eyebrow">Why process development</div>
     <h2>A breakthrough is not finished when it works once.</h2>
     <p class="subline">I want to work where the hard part is not proving that something can happen, but defining the conditions under which it can happen again.</p>
 
-    <div class="compare-table" aria-label="Discovery to delivery comparison table">
+    <div class="compare-table reveal" aria-label="Discovery to delivery comparison table" style="--reveal-delay: 200ms">
       <div class="compare-head">
         <div>Discovery</div>
         <div>Delivery</div>
@@ -886,12 +892,12 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <section class="section" aria-label="Georgia Tech and lab work">
+  <section class="section reveal" aria-label="Georgia Tech and lab work" style="--reveal-delay: 200ms">
     <div class="eyebrow">Georgia Tech → the lab</div>
     <h2>I came to ChemE expecting chemistry. I ended up studying systems.</h2>
     <p class="subline">What pulled me in was not just the material itself, but the process that puts it where it needs to go, in the right form, at the right time.</p>
 
-    <div class="system-diagram" aria-label="Droplet deposition process visual">
+    <div class="system-diagram reveal" aria-label="Droplet deposition process visual" style="--reveal-delay: 220ms">
       <div class="process-map" aria-label="Deposition input to process rule schematic">
         <div class="process-node input">
           <span>Input</span>
@@ -924,12 +930,12 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <section class="section" aria-label="Process development loop">
+  <section class="section reveal" aria-label="Process development loop" style="--reveal-delay: 240ms">
     <div class="eyebrow">My process-development loop</div>
     <h2>From observation to process rule.</h2>
     <p class="subline">Observe the phenomenon, isolate the control, measure the output, and convert the result into a decision another engineer could reproduce.</p>
 
-    <div class="loop-grid">
+    <div class="loop-grid reveal" style="--reveal-delay: 220ms">
       <article class="loop-step">
         <span class="loop-n">01</span>
         <h3>Observe</h3>
@@ -957,11 +963,11 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 
-  <section class="section" aria-label="Technical through-line">
+  <section class="section reveal" aria-label="Technical through-line" style="--reveal-delay: 280ms">
     <div class="eyebrow">The through-line</div>
     <h2>Systems built for transfer, not just demonstration.</h2>
 
-    <div class="bridge-strip" aria-label="Lab to deployment bridge">
+    <div class="bridge-strip reveal" aria-label="Lab to deployment bridge" style="--reveal-delay: 200ms">
       <div class="bridge-step">
         <strong>Lab phenomena</strong>
         <span>Physical behavior appears under specific conditions.</span>
@@ -980,14 +986,14 @@ subtitle: Chemical engineering as the science of delivery.
       </div>
     </div>
 
-    <div class="open-question">
+    <div class="open-question reveal" style="--reveal-delay: 240ms">
       <p class="q-label">A question that still bothers me</p>
       <p class="q-main">If substrate boundary conditions determine where microdevices land, what does the substrate-agnostic design rule look like?</p>
       <p class="q-body">I do not have the full answer yet, but I know what kind of answer would matter: a measurable process window another engineer could use. The work now is to connect droplet spreading, imbibition, pinning, and final device distribution into design rules that survive outside one lab setup — and eventually outside one research group.</p>
       <a class="q-link" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Follow the current state of this work →</a>
     </div>
 
-    <div class="timeline" role="list" aria-label="Journey timeline">
+    <div class="timeline reveal" role="list" aria-label="Journey timeline" style="--reveal-delay: 260ms">
       <div class="time-step" role="listitem">
         <span class="time-dot"></span>
         <span class="time-place">Incheon</span>
@@ -1017,3 +1023,39 @@ subtitle: Chemical engineering as the science of delivery.
     </div>
   </section>
 </main>
+
+<script>
+  (function () {
+    const page = document.querySelector('.bp.motion-enabled');
+    if (!page) return;
+
+    document.documentElement.classList.add('js');
+
+    const revealItems = page.querySelectorAll('.reveal');
+    if (!revealItems.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      revealItems.forEach((item) => item.classList.add('in-view'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    revealItems.forEach((item, index) => {
+      if (!item.style.getPropertyValue('--reveal-delay')) {
+        item.style.setProperty('--reveal-delay', `${Math.min(index * 60, 240)}ms`);
+      }
+      observer.observe(item);
+    });
+  })();
+</script>
+
