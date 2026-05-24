@@ -15,7 +15,7 @@ subtitle: Recruiter-friendly contact page for technical internships, co-ops, res
  <a class="button primary" href="mailto:{{ site.email }}">Email Me</a>
  <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
  <a class="button secondary" href="{{ site.github }}">GitHub</a>
- <a class="button tertiary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" target="_blank" rel="noopener" download="Nathan_Anderson_Resume.pdf">Resume</a>
+ <a class="button tertiary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
  </div>
 </div>
 
