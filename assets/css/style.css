@@ -5544,3 +5544,123 @@ body.home-page::before {
 .hero-identity-single span {
   display: inline-block !important;
 }
+
+
+/* === Final May feedback pass: startup-facing clarity, hierarchy, and accessibility === */
+:root { --max: 1320px; }
+
+/* No generic eco-city hero dependency: use a clean technical surface instead of a skyline image. */
+.home-page #content::before {
+  background-image:
+    radial-gradient(circle at 72% 18%, rgba(23, 109, 155, .12), transparent 32%),
+    radial-gradient(circle at 18% 70%, rgba(62, 154, 117, .10), transparent 34%),
+    linear-gradient(rgba(15,23,42,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,23,42,.035) 1px, transparent 1px),
+    linear-gradient(180deg, #ffffff 0%, #f7fbfb 58%, #ffffff 100%) !important;
+  background-size: auto, auto, 84px 84px, 84px 84px, auto !important;
+  background-position: center, center, center, center, center !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+.home-page .hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(248,251,252,.97) 0%, rgba(248,251,252,.88) 42%, rgba(248,251,252,.54) 72%, rgba(248,251,252,.22) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.02) 0%, rgba(255,255,255,.18) 54%, #ffffff 100%) !important;
+}
+
+.home-page .hero h1 {
+  font-size: clamp(3.5rem, 7.1vw, 6.5rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -.074em !important;
+}
+.page-hero h1 { line-height: 1.06 !important; }
+.content-shell > h2 { font-size: clamp(1.65rem, 2.6vw, 2.8rem) !important; line-height: 1.1 !important; }
+.content-shell h3 { line-height: 1.18; }
+
+/* Hero identity should materialize in the same language as the headline, slightly earlier. */
+@media (prefers-reduced-motion: no-preference) {
+  .home-page .hero .hero-identity {
+    animation-name: heroMaterialize !important;
+    animation-duration: 980ms !important;
+    animation-delay: 180ms !important;
+    animation-timing-function: cubic-bezier(.16,1,.3,1) !important;
+  }
+  .home-page .hero h1 {
+    animation-name: heroMaterialize !important;
+    animation-duration: 980ms !important;
+    animation-delay: 340ms !important;
+    animation-timing-function: cubic-bezier(.16,1,.3,1) !important;
+  }
+  .home-page .hero .hero-lede { animation-delay: 520ms !important; animation-duration: 980ms !important; }
+  .home-page .hero .cta-row .button { animation-delay: 700ms !important; animation-duration: 980ms !important; }
+}
+.hero-identity-single { max-width: 540px !important; margin-bottom: 20px !important; }
+.hero-identity-single span { font-size: clamp(.92rem, 1.08vw, 1.02rem) !important; letter-spacing: .015em !important; text-transform: uppercase !important; color: rgba(49,83,87,.78) !important; }
+
+.signature-case-card.enhanced-signature-card { grid-template-columns: minmax(0, .98fr) minmax(340px, .82fr) !important; }
+.featured-artifact-panel { display: none !important; }
+.tools-row { display: flex !important; flex-wrap: wrap !important; gap: 7px !important; }
+.tools-row strong { width: 100%; }
+.tools-row em { font-style: normal; padding: 5px 8px; border: 1px solid rgba(15,23,42,.09); border-radius: 999px; background: rgba(255,255,255,.72); }
+
+.proof-heading { align-items: center !important; }
+.proof-heading p:last-child { display: none !important; }
+.proof-groups { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+.proof-tag { cursor: default; }
+
+.home-card-stat { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 10px !important; color: var(--blue-deep) !important; }
+.home-card-stat strong { font-size: clamp(2.4rem, 4vw, 4.4rem); line-height: .82; letter-spacing: -.08em; }
+.home-card-stat span { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 760; }
+.metric-pill-strong, .stat-primary strong { color: var(--blue-deep); }
+.quote-attribution { margin-top: -6px !important; font-size: .9rem !important; color: var(--muted) !important; }
+
+.supporting-proof-header strong { font-size: clamp(1.25rem, 2.2vw, 2rem); letter-spacing: -.045em; color: var(--ink); }
+.project-decision-line { padding: 12px 14px; border: 1px solid rgba(23,109,155,.14); border-radius: 16px; background: linear-gradient(135deg,#fff,#eef9ff); color: #163f50 !important; }
+.additional-evidence-strip { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+.page-bottom-cta { width: min(var(--max), calc(100% - 40px)); margin: 56px auto 0; padding: 24px 0; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.page-bottom-cta p { margin: 0; color: var(--body); font-weight: 700; }
+
+/* Make schematic blocks impossible to read as run-together strings. */
+.pfd-row, .compute-flow, .hardware-map, .microfluidic-flow { gap: 12px !important; }
+.pfd-row span, .compute-flow span, .hardware-map span, .microfluidic-flow span, .process-map-stage span, .badge { word-break: normal !important; overflow-wrap: anywhere; }
+.process-map-stage span { display: block !important; }
+
+.operations-stats-hero, .micro-stats-hero { margin-top: 0 !important; }
+.ops-stat-strip .stat-primary strong, .stat-strip .stat-primary strong { font-size: clamp(3.2rem, 7vw, 5.8rem) !important; }
+.operations-story-grid { margin: 18px 0 10px; }
+.microencap-hard-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+
+.contact-submit.button.secondary { width: 100%; justify-content: center; }
+.contact-action-row .button.primary { box-shadow: 0 16px 32px rgba(15, 35, 55, .12) !important; }
+.contact-fit-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+
+.skip-link:focus { left: 12px !important; top: 12px !important; outline: 3px solid rgba(23,109,155,.34); outline-offset: 3px; }
+
+@media (max-width: 1024px) {
+  .proof-groups, .additional-evidence-strip { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .signature-case-card.enhanced-signature-card { grid-template-columns: 1fr !important; }
+  .microencap-hard-grid { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 768px) {
+  .home-page .hero h1 { font-size: clamp(2.75rem, 12vw, 4.8rem) !important; line-height: 1.04 !important; }
+  .proof-groups, .additional-evidence-strip, .contact-fit-grid { grid-template-columns: 1fr !important; }
+  .page-bottom-cta { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .hero-identity-single span { font-size: .82rem !important; }
+  .home-page .hero .cta-row { gap: 10px !important; }
+  .button { width: 100%; justify-content: center; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d171a; --bg-2: #101f22; --paper: #132327; --paper-soft: rgba(19,35,39,.88);
+    --ink: #eef8f8; --body: #c0d4d7; --muted: #8ea7ab; --faint: #779196;
+    --line: rgba(220,246,248,.13); --line-strong: rgba(220,246,248,.22);
+    --blue: #60c6e8; --blue-deep: #72d4f0; --green: #77d2aa;
+  }
+  body { background: linear-gradient(180deg,#091113,#0d171a 48%,#101d1f 100%) !important; }
+  .topbar, .drawer, .site-footer, .portfolio-card, .matrix-card, .role-block, .contact-panel, .process-map, .process-map-stage { background-color: rgba(15,28,31,.9) !important; color: var(--ink); }
+  .home-page #content::before { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(180deg,#0a1214,#0d171a) !important; }
+  .home-page .hero::before { background-image: linear-gradient(90deg, rgba(9,17,19,.98) 0%, rgba(9,17,19,.88) 52%, rgba(9,17,19,.54) 100%) !important; }
+}

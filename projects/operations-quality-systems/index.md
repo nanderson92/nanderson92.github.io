@@ -5,10 +5,6 @@ category: Systems / Quality / Operations
 subtitle: "Translating high-volume operations leadership into manufacturing-relevant instincts: throughput, quality, standard work, and corrective action."
 ---
 
-## Summary
-
-This page is not a lab project. It is a transferable systems case: high-volume food-service operations taught me to operate real systems under pressure — bottlenecks, quality logs, standard work, preventive maintenance, training, and real-time corrective action.
-
 <div class="selected-outcomes operations-stats-hero">
  <p class="system-label small">SELECTED OUTCOMES</p>
  <div class="metric-strip stat-strip ops-stat-strip">
@@ -17,6 +13,10 @@ This page is not a lab project. It is a transferable systems case: high-volume f
   <span class="stat-primary"><strong>~30%</strong><em>downtime reduction</em></span>
  </div>
 </div>
+
+## Summary
+
+High-volume food-service operations taught me to run real systems under pressure: bottlenecks, quality logs, standard work, preventive maintenance, training, and real-time corrective action.
 
 ## Why it belongs on the portfolio
 
@@ -39,9 +39,13 @@ Manufacturing environments care about throughput, uptime, quality checks, people
  <div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Small-business operations, staffing, customer flow, inventory awareness, and ownership mentality.</p></div>
 </div>
 
-## Portfolio interpretation
+## Operating stories
 
-This section sits below the technical case files. It tells a recruiter: I have not only run experiments; I have managed live systems where quality, speed, and people execution mattered every shift.
+<div class="matrix operations-story-grid">
+ <div class="matrix-card"><h3>McDonald’s</h3><p>Peak drive-thru shifts made throughput visible minute by minute: line balance, handoff timing, and corrective action had immediate consequences.</p></div>
+ <div class="matrix-card"><h3>Chick-fil-A</h3><p>Training work translated standard procedures into reliable execution across new team members.</p></div>
+ <div class="matrix-card"><h3>Flapdoodles</h3><p>Small-business management forced ownership of staffing, inventory, service flow, and equipment uptime.</p></div>
+</div>
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

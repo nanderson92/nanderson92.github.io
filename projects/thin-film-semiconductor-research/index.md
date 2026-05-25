@@ -8,7 +8,7 @@ subtitle: MBE deposition and characterization of Se/In thin films for band-gap a
 
 ## Summary
 
-This compact case file captures semiconductor materials work focused on thin-film growth and characterization. It supports the broader portfolio by showing cleanroom-adjacent materials experience, high-vacuum deposition exposure, and characterization literacy: how growth conditions show up as morphology, phase, composition, and structural signatures.
+This compact case file captures semiconductor materials exposure around thin-film growth and characterization. It supports the broader portfolio by showing cleanroom-adjacent materials literacy: how deposition conditions can be connected to morphology, phase, composition, and structural signatures through SEM, XRD, XPS, and Raman readouts.
 
 ## Problem / motivation
 
@@ -42,7 +42,7 @@ Thin-film semiconductor properties depend strongly on deposition conditions, cry
 
 ## Engineering interpretation
 
-The value of this project is materials-process thinking: changing deposition conditions changes structure, and structure determines whether a semiconductor film is useful for devices.
+The value of this project is materials-process thinking: deposition conditions change film structure, characterization reveals that structure, and the resulting material quality determines whether a semiconductor film is useful for devices.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

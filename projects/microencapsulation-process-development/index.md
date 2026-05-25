@@ -38,6 +38,14 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
  <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
 </figure>
 
+## Why this is hard
+
+<div class="matrix hard-problem-grid microencap-hard-grid">
+ <div class="matrix-card"><h3>Coupled flow fields</h3><p>Changing one stream changes shear, droplet breakup, shell formation, and throughput at the same time.</p></div>
+ <div class="matrix-card"><h3>Capsule stability</h3><p>Crosslinking must stabilize the shell without creating aggregation, coalescence, or handling defects.</p></div>
+ <div class="matrix-card"><h3>Biological usefulness</h3><p>A capsule is only useful if the process preserves cell-compatible handling and microscopy-visible quality.</p></div>
+</div>
+
 ## Process knobs
 
 | Knob | Mechanism | Output affected |

@@ -101,7 +101,7 @@ The value of this project is not just plotting resistance. It is building a feed
 
 ## Manufacturing relevance
 
-This is the language of process engineering inside semiconductor-adjacent R&amp;D: CTQs, screening, yield visibility, reliability, acceptance limits, failure mechanisms, and standardization.
+Two CTQs make the reliability loop actionable: initial resistance must pass the first screen, and resistance drift must stay below the chosen failure threshold after stress. Those two outputs turn electrical testing into a process-control signal rather than a one-time pass/fail check.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>

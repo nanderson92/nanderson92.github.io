@@ -27,7 +27,7 @@ PCR thermal cycling depends on repeatable heating and cooling between temperatur
  <div>
   <p class="system-label small">CONTROL PERFORMANCE VIEW</p>
   <h3>Setpoint tracking and thermal lag</h3>
-  <p>The plot format emphasizes the engineering constraints that separate a prototype from a controlled thermal process: sensor placement, ramp-rate limits, overshoot/undershoot, settling time, hold stability, and repeatability across cycles.</p>
+  <p>The representative setpoint-vs-time plot emphasizes the engineering constraints that separate a prototype from a controlled thermal process: sensor placement, ramp-rate limits, overshoot/undershoot, settling time, hold stability, and repeatability across cycles.</p>
  </div>
  <div class="thermal-plot" aria-label="Representative thermal profile with setpoint and measured temperature">
   <span class="plot-axis y">temperature</span>

@@ -9,9 +9,9 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
- <h2>Let’s connect around process engineering and advanced manufacturing.</h2>
+ <h2>Let’s connect around process engineering, R&amp;D, and manufacturing.</h2>
  <p>
- I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.
+ I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and hard-tech deployment.
  </p>
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
  <span>Process development internships / co-ops</span>
@@ -30,7 +30,7 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  <div class="contact-panel-header">
  <p class="system-label small">DIRECT MESSAGE</p>
  <h2>Send a concise note.</h2>
- <p>Use this form for recruiting, project conversations, or technical collaboration. It routes directly to my email.</p>
+ <p>Use this form for recruiting, project conversations, or technical collaboration. It routes to my portfolio inbox.</p>
  </div>
  <form class="contact-form" action="https://formspree.io/f/xkoeblkb" method="POST">
  <input type="hidden" name="_subject" value="Portfolio contact form message">
@@ -48,8 +48,8 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  <span>Message</span>
  <textarea name="message" rows="7" placeholder="A short note about the role, project, or technical conversation." required></textarea>
  </label>
- <button class="button primary contact-submit" type="submit">Send Message <span aria-hidden="true">→</span></button>
- <p class="form-note">Prefer email? Use the direct email button on the left.</p>
+ <button class="button secondary contact-submit" type="submit">Send Message <span aria-hidden="true">→</span></button>
+ <p class="form-note">Fastest route: use the direct email button on the left.</p>
  </form>
  </section>
 </div>
@@ -78,6 +78,6 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  <div class="matrix-card"><h3>Process engineering internships / co-ops</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
  <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
  <div class="matrix-card"><h3>Biotech process development</h3><p>Microfluidics, stem-cell encapsulation, microscopy QC, and scale-up-aware biological workflows.</p></div>
- <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>
+ <div class="matrix-card"><h3>Early-stage hard-tech</h3><p>Comfortable being the only ChemE in the room and helping define the first version of a wet-processing, automation, or scale-up workflow.</p></div>
  </div>
 </section>
