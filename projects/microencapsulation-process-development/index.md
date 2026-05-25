@@ -3,11 +3,10 @@ layout: page
 title: Stem-Cell Microencapsulation
 category: 20× throughput increase
 tags: Microfluidics · Process Development · Biomedical Manufacturing
-subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
+subtitle: "I built a microfluidic system for making core-shell hydrogel capsules that hold stem cells, and tuned it from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
 ---
 
 <div class="selected-outcomes micro-stats-hero">
- <p class="system-label small">SELECTED OUTCOMES</p>
  <div class="metric-strip stat-strip">
   <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
   <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
@@ -37,8 +36,8 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 ## Process schematic
 
 <figure class="microfluidic-visual-card">
- <img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Representative flow-focused microencapsulation schematic with three input streams, junction, dwell region, collection, and microscopy QC." loading="lazy">
- <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
+ <img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Flow-focused microencapsulation process schematic with three input streams, junction, dwell region, collection, and microscopy QC." loading="lazy">
+ <figcaption>Public process schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
 </figure>
 
 ## What did not work at first

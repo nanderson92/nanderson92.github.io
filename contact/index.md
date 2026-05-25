@@ -2,17 +2,21 @@
 layout: page
 title: Contact
 body_class: contact-page
-category: Opportunities
-subtitle: For process-development work, research conversations, hard-tech startups, and engineering roles.
+category: Contact
+subtitle: "I’m looking for Fall 2026 process-development, automation, and wet-processing work. Co-op, internship, full-time, or contract."
 ---
+
+<section class="contact-hero contact-reveal" aria-label="Contact introduction">
+ <p class="system-label small">CONTACT</p>
+ <h1>Get in touch</h1>
+ <p>I’m looking for Fall 2026 process-development, automation, and wet-processing work. Co-op, internship, full-time, or contract.</p>
+</section>
 
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
  <h2>Process engineering, R&amp;D, manufacturing, and clean technology.</h2>
- <p>
- I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.
- </p>
+ <p>I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.</p>
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
  <span>Process-development roles, co-ops, or contract work</span>
  <span>Advanced manufacturing and semiconductor-adjacent R&amp;D</span>
@@ -26,31 +30,21 @@ subtitle: For process-development work, research conversations, hard-tech startu
  </div>
  </section>
 
- <section class="contact-form-panel soft-form-panel" aria-label="Contact form">
+ <section class="contact-form-panel soft-form-panel email-first-panel" aria-label="Direct email panel">
  <div class="contact-panel-header">
- <p class="system-label small">DIRECT MESSAGE</p>
- <h2>Send a concise note.</h2>
- <p>Use this form for recruiting, project conversations, or technical collaboration. It routes directly to nanderson92@gatech.edu.</p>
+ <p class="system-label small">DIRECT EMAIL</p>
+ <h2>Email is the fastest route.</h2>
+ <p>GitHub Pages does not provide server-side form handling, so this page routes visitors directly to email instead of risking a silent form failure.</p>
  </div>
- <form class="contact-form" action="https://formspree.io/f/xkoeblkb" method="POST">
- <input type="hidden" name="_subject" value="Portfolio contact form message">
- <div class="form-grid">
- <label class="field">
- <span>Name</span>
- <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
- </label>
- <label class="field">
- <span>Email</span>
- <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
- </label>
+ <div class="email-large-card">
+  <span>Email</span>
+  <strong>{{ site.email }}</strong>
+  <a class="button primary contact-submit" href="mailto:{{ site.email }}?subject=Portfolio%20conversation">Start email →</a>
  </div>
- <label class="field">
- <span>Message</span>
- <textarea name="message" rows="7" placeholder="A short note about the role, project, or technical conversation." required></textarea>
- </label>
- <button class="button primary contact-submit" type="submit">Send Message <span aria-hidden="true">→</span></button>
- <p class="form-note">Prefer email? Use the direct email button on the left.</p>
- </form>
+ <div class="message-starter">
+  <strong>Useful context to include:</strong>
+  <p>Role or project, timeline, location/remote expectations, and which build log made you reach out.</p>
+ </div>
  </section>
 </div>
 
@@ -75,9 +69,17 @@ subtitle: For process-development work, research conversations, hard-tech startu
 <section class="contact-fit-panel contact-reveal" aria-label="Best-fit conversations">
  <p class="system-label small">BEST-FIT CONVERSATIONS</p>
  <div class="matrix contact-fit-grid">
- <div class="matrix-card"><h3>Process-development work</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
- <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
  <div class="matrix-card"><h3>Early-stage hard-tech</h3><p>Comfortable being the ChemE/process person in the room and figuring out the first version of a wet-processing line.</p></div>
+ <div class="matrix-card"><h3>Process-development work</h3><p>Process development from first principles: defining variables, building the measurement loop, and finding the operating window.</p></div>
+ <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
  <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>
  </div>
+</section>
+
+<section class="cta-band contact-final-cta" aria-label="Final contact call to action">
+ <div>
+  <h2>Send the note.</h2>
+  <p>I’ll prioritize messages about Fall 2026 work, process-development projects, and hard-tech teams building physical systems.</p>
+ </div>
+ <a class="button primary" href="mailto:{{ site.email }}">Email {{ site.email }} →</a>
 </section>

@@ -6,7 +6,6 @@ subtitle: "I managed a McDonald’s drive-through that served 110 cars per hour 
 ---
 
 <div class="selected-outcomes operations-stats-hero">
- <p class="system-label small">SELECTED OUTCOMES</p>
  <div class="metric-strip stat-strip ops-stat-strip">
   <span class="stat-primary"><strong>+20%</strong><em>cars/hour</em></span>
   <span class="stat-primary"><strong>-15%</strong><em>order-to-handoff time</em></span>
@@ -14,9 +13,9 @@ subtitle: "I managed a McDonald’s drive-through that served 110 cars per hour 
  </div>
 </div>
 
-## Summary
+## Why this belongs in a ChemE portfolio
 
-High-volume food-service operations taught me to operate live systems under pressure: bottlenecks, staffing, handoff timing, QC logs, preventive maintenance, training, and real-time corrective action all matter at once.
+Manufacturing lines, fast-food drive-throughs, and microfluidic systems share more than they do not: a serial process, a bottleneck, a quality loop, and a person responsible when something breaks. High-volume food-service operations taught me to operate live systems under pressure: bottlenecks, staffing, handoff timing, QC logs, preventive maintenance, training, and real-time corrective action all matter at once.
 
 ## Operations translated into manufacturing instincts
 
@@ -36,7 +35,7 @@ At McDonald’s, peak drive-through performance improved when I stopped treating
 <div class="matrix">
  <div class="matrix-card"><h3>McDonald’s Manager</h3><p>High-volume throughput, shift control, food-safety logs, maintenance discipline, and corrective action.</p></div>
  <div class="matrix-card"><h3>Chick-fil-A Lead / Crew Trainer</h3><p>Training, standard work, service consistency, and team execution.</p></div>
- <div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Small-business operations, staffing, customer flow, inventory awareness, and ownership mentality.</p></div>
+ <div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Local ice-cream shop management: small-team staffing, customer flow, inventory awareness, closing routines, and ownership mentality.</p></div>
 </div>
 
 ## What I’d do next

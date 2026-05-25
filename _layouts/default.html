@@ -11,7 +11,7 @@
  {% assign og_title = page.title | append: " | Nathan Anderson" %}
  {% endif %}
  <meta property="og:title" content="{{ og_title }}">
- <meta property="og:description" content="Process development workflows for printed electronics, wet processing, and manufacturing-scale decision-making.">
+ <meta property="og:description" content="Build logs in wet processing, biotech fabrication, automation, operations, and process-development work.">
  <meta property="og:image" content="https://nanderson92.github.io/assets/images/og-preview.png">
  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  <meta property="og:type" content="website">
@@ -38,7 +38,7 @@
  <a href="{{ '/contact/' | relative_url }}">Contact</a>
  </nav>
 
- <a class="topbar-resume" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
+ <a class="topbar-resume nav-text-resume" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
  </header>
 
  <div class="drawer-overlay" data-close-drawer></div>
@@ -62,7 +62,7 @@
 
  <div class="drawer-system">
  <p class="system-label small">TECHNICAL FOCUS</p>
- <p>Process development · wet processing · scale-up</p>
+ <p>Process development · wet processing · automation</p>
  </div>
 
  <div class="social-links" aria-label="Social links">
@@ -79,7 +79,7 @@
  <footer class="site-footer">
  <div class="footer-inner footer-enhanced">
  <div>
-  <p class="footer-tagline">Making the future manufacturable.</p>
+  <p class="footer-tagline">Making future technologies buildable.</p>
   <p>© 2026 Nathan Anderson · Chemical Engineering · Georgia Tech · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
  </div>
  <nav aria-label="Footer navigation">
@@ -142,7 +142,6 @@
  '.result-visual',
  '.proof-artifact-card',
  '.case-summary-box',
- '.featured-artifact-panel',
  '.background-timeline article',
  '.taste-panel',
  '.additional-evidence-strip > *',
@@ -151,7 +150,6 @@
  '.flagship-page-visual',
  '.micro-stats-hero',
  '.hardware-interface-card',
- '.thin-film-visual-card',
  '.dna-flex-visual-card',
  '.operations-translation-grid > *',
  '.human-context-card',
