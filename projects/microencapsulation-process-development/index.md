@@ -7,6 +7,7 @@ subtitle: I tuned a flow-focused core-shell capsule process until throughput and
 ---
 
 <div class="micro-stats-hero big-stat-strip" aria-label="Selected outcomes"><article><strong>20×</strong><span>throughput increase</span></article><article><strong>~50%</strong><span>encapsulation-yield improvement</span></article><article><strong>Lower</strong><span>coalescence through flow/crosslinking changes</span></article><article><strong>QC</strong><span>microscopy-supported screening workflow</span></article></div>
+<figure class="project-photo-proof"><img src="{{ '/assets/images/nathan-anderson-poster-context.jpg' | relative_url }}" alt="Nathan Anderson presenting the alginate-core microcapsule poster at Mayo Clinic." loading="eager"><figcaption>Poster-session context for the capsule work: alginate-core microcapsules, flow-focused process development, microscopy QC, and ARPE-19 culture workflow.</figcaption></figure>
 
 I worked on a flow-focused microfluidic encapsulation process for core-shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 

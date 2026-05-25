@@ -8,7 +8,7 @@ subtitle: Client-facing consulting through Consult Your Community, focused on re
 
 ## Summary
 
-This compact build log captures client-facing consulting work through Consult Your Community. It belongs on the portfolio as evidence of communication, structured problem solving, stakeholder awareness, and implementation-minded recommendations.
+I used Consult Your Community to practice client-facing problem solving: constraints first, recommendation second, implementation last.
 
 <div class="selected-outcomes compact-selected-outcomes">
  <p class="system-label small">SELECTED OUTCOME</p>
@@ -37,7 +37,7 @@ This compact build log captures client-facing consulting work through Consult Yo
 
 ## What I learned
 
-This project adds a different kind of evidence: I can translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, vendors, and cross-functional teams.
+I learned how to translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, vendors, and cross-functional teams.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">See all projects</a>

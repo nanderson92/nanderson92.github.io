@@ -19,22 +19,21 @@ subtitle: For co-ops, contract work, research conversations, and hard-tech build
  </div>
  </section>
 
- <section class="contact-form-panel soft-form-panel" aria-label="Contact form">
+ <section class="contact-direct-panel soft-form-panel" aria-label="Direct email contact">
  <div class="contact-panel-header">
- <p class="system-label small">DIRECT MESSAGE</p>
- <h2>Short notes are best.</h2>
- <p>This form is wired to my email through Formspree. Direct email is still fastest for roles, projects, and founder conversations.</p>
+ <p class="system-label small">DIRECT EMAIL</p>
+ <h2>Email beats forms.</h2>
+ <p>If you are building a physical process, debugging a wet-processing line, or hiring someone who can own messy lab-to-manufacturing work, send me a direct note.</p>
  </div>
- <form class="contact-form" action="https://formspree.io/f/xkoeblkb" method="POST">
- <input type="hidden" name="_subject" value="Portfolio contact form message">
- <div class="form-grid">
- <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
- <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
+ <div class="direct-email-card">
+  <span>Best address</span>
+  <strong>{{ site.email }}</strong>
+  <a class="button primary" href="mailto:{{ site.email }}?subject=Portfolio%20conversation%20-%20process%20development">Start an email <span aria-hidden="true">→</span></a>
  </div>
- <label class="field"><span>Message</span><textarea name="message" rows="7" placeholder="A short note about the role, project, or technical problem." required></textarea></label>
- <button class="button secondary contact-submit" type="submit">Send message <span aria-hidden="true">→</span></button>
- <p class="form-note">Prefer less friction? Email me directly at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
- </form>
+ <div class="email-prompts" aria-label="Useful email prompts">
+  <p><strong>Useful context:</strong> role type, technical problem, timeline, location/remote expectations, and the process or material system you are trying to make repeatable.</p>
+  <p><strong>Fastest fit:</strong> printed electronics, wet processing, microfluidics, embedded thermal control, process troubleshooting, or early-stage hard-tech buildout.</p>
+ </div>
  </section>
 </div>
 

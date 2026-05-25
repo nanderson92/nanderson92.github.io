@@ -7,7 +7,7 @@ subtitle: Discovery shows what is possible. Delivery proves what can be repeated
 
 <div class="background-editorial refined-background-editorial builder-background-intro">
  <div class="portrait-panel">
- <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson presenting microencapsulation research at a Mayo Clinic poster session.">
+ <img src="{{ '/assets/images/nathan-anderson-working-portrait.jpg' | relative_url }}" alt="Nathan Anderson presenting microencapsulation research at a Mayo Clinic poster session.">
  </div>
  <article class="background-copy">
  <p class="system-label small">INCHEON → MINNESOTA → ATLANTA</p>
@@ -20,7 +20,7 @@ subtitle: Discovery shows what is possible. Delivery proves what can be repeated
  <p class="system-label small">TECHNICAL TASTE</p>
  <h2>The stories that shaped my engineering direction</h2>
  <p><strong>Ghost in the Shell · The Matrix · Final Fantasy VII</strong></p>
- <p>Technology was never just “gadgets” to me. It was the physical stack people eventually live inside: materials, energy, interfaces, control layers, and production systems.</p>
+ <p>Technology was never just “gadgets” to me. It was the physical stack people live inside: materials, energy, interfaces, controls, and production systems.</p>
 </section>
 
 <div class="background-timeline" aria-label="Background timeline">

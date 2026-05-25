@@ -25,7 +25,7 @@ Early on, I tried to solve rushes by working faster myself. That failed because 
 
 ## Roles represented
 
-<div class="matrix role-grid"><div class="matrix-card"><h3>McDonald’s Manager</h3><p>Drive-through throughput, shift control, crew coordination, QC routines, and customer-facing recovery.</p></div><div class="matrix-card"><h3>Chick-fil-A Lead / Crew Trainer</h3><p>Training, standard execution, service rhythm, and consistency under high-volume conditions.</p></div><div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Small-team operations, maintenance awareness, and daily execution with limited slack.</p></div></div>
+<div class="matrix role-grid"><div class="matrix-card"><h3>McDonald’s Manager</h3><p>I learned that speed was not heroic effort; it was station layout, handoff timing, and resetting the line before the bottleneck moved.</p></div><div class="matrix-card"><h3>Chick-fil-A Lead / Crew Trainer</h3><p>I trained for repeatability: the same standard had to survive different people, rush periods, and constant interruptions.</p></div><div class="matrix-card"><h3>Flapdoodles Manager</h3><p>I learned how small teams keep equipment, inventory, and service moving when there is almost no slack in the system.</p></div></div>
 
 ## What I’d do next
 

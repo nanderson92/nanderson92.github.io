@@ -5,7 +5,7 @@ category: Service / Mentorship
 subtitle: Tutoring, mentorship, volunteering, and communication work connected to access and technical learning.
 ---
 
-I care about whether technical work reaches people. This page is a small home for tutoring, mentorship, outreach, volunteering, and the communication habits that make engineering useful outside a lab or classroom.
+I care about whether technical work reaches people. I use this page for tutoring, mentorship, outreach, volunteering, and the communication habits that make engineering useful outside a lab or classroom.
 
 <div class="matrix">
   <div class="matrix-card"><h3>Tutoring / mentoring</h3><p>I support students learning technical material, study habits, and early career navigation.</p></div>

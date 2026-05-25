@@ -5991,3 +5991,111 @@ h1, .hero h1, .page-hero h1, .projects-index-hero h1 {
     width: min(var(--max), calc(100% - 80px));
   }
 }
+
+
+/* === Founder/builder polish pass ===
+   Warmer physical-material visual system, direct-contact layout, and editorial project rhythm. */
+:root {
+  --max: 1320px;
+  --accent: #C47D2B;
+  --accent-deep: #7C4318;
+  --accent-hot: #D85C3A;
+  --accent-soft: rgba(196,125,43,.105);
+  --bg: #fbf7f0;
+  --bg-2: #f5eee4;
+  --paper-soft: rgba(255,253,249,.86);
+  --line: rgba(88, 58, 28, 0.13);
+  --line-strong: rgba(88, 58, 28, 0.22);
+  --motion-soft: cubic-bezier(.2,.8,.2,1);
+}
+body { background: radial-gradient(circle at 15% -8%, rgba(196,125,43,.12), transparent 34%), radial-gradient(circle at 92% 4%, rgba(216,92,58,.08), transparent 32%), linear-gradient(180deg,#fffdf9 0%, var(--bg) 52%, #f5eee4 100%) !important; }
+.hero::before,
+.home-page .hero::before {
+  background-image:
+    linear-gradient(90deg, rgba(255,253,249,.985) 0%, rgba(255,253,249,.94) 32%, rgba(255,253,249,.66) 58%, rgba(255,253,249,.38) 100%),
+    linear-gradient(180deg, rgba(255,253,249,.05), rgba(251,247,240,.80)),
+    url('../images/material-macro-hero.jpg') !important;
+  background-position: center right !important;
+  background-size: cover !important;
+  filter: saturate(.94) contrast(1.05) brightness(.99) !important;
+}
+.home-page .hero h1,
+.page-hero h1,
+.projects-index-hero h1 {
+  font-family: "Space Grotesk", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  letter-spacing: -0.02em !important;
+}
+.home-page .hero h1 { font-size: clamp(48px, 7vw, 96px) !important; line-height: 1.09 !important; }
+.page-hero h1 { font-size: clamp(3.1rem, 5.3vw, 5.2rem) !important; line-height: 1.09 !important; }
+.content-shell > h2 { font-size: clamp(1.65rem, 2.55vw, 2.7rem) !important; }
+.content-shell { width: min(1040px, 100%) !important; }
+.content-shell > .wide-figure,
+.content-shell .wide-figure,
+.content-shell > .project-photo-proof {
+  width: min(var(--max), calc(100vw - 56px));
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.wide-figure img,
+.project-photo-proof img { display: block; width: 100%; border-radius: 28px; }
+.project-photo-proof { margin: 22px auto 34px; border: 1px solid var(--line); border-radius: 30px; overflow: hidden; background: rgba(255,253,249,.84); box-shadow: var(--shadow-card); }
+.project-photo-proof img { max-height: 600px; object-fit: cover; object-position: center; filter: saturate(.92) contrast(1.03); }
+.project-photo-proof figcaption,
+.wide-figure figcaption { color: var(--muted); font-size: .92rem; padding: 12px 14px 2px; }
+.case-summary-box.clean-metadata-layout,
+.role-block {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.role-block {
+  border: 0 !important;
+  border-left: 3px solid var(--accent) !important;
+  border-radius: 0 !important;
+  padding: 4px 0 4px 22px !important;
+  margin: 26px 0 !important;
+}
+.hard-problem-notes { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 24px 0; }
+.process-map { background: rgba(255,253,249,.66) !important; border-color: var(--line) !important; }
+.process-map-stage { min-width: 0; }
+.process-map-stage p { color: var(--accent-deep) !important; }
+.process-map-stage span { display: block; margin-top: 4px; }
+.button.primary,
+.contact-submit.button.secondary { background: linear-gradient(135deg, var(--accent), var(--accent-hot)) !important; }
+a:hover { color: var(--accent-deep); }
+.proof-section.stripped-proof-section { margin-top: 50px !important; }
+.proof-group h3 { color: var(--ink); }
+.supporting-home-cases .portfolio-card { background: rgba(255,253,249,.68) !important; }
+.human-context-photo img,
+.portrait-panel img { filter: saturate(.90) contrast(1.04) brightness(1.01); object-fit: cover; object-position: center; }
+.human-context-photo { min-height: 320px; }
+.human-context-photo img { height: 100%; }
+.portrait-panel img { max-height: 720px; }
+.contact-direct-panel { padding: 30px; border: 1px solid var(--line); border-radius: 32px; background: linear-gradient(145deg, rgba(255,253,249,.90), rgba(255,245,233,.72)); box-shadow: var(--shadow-card); }
+.direct-email-card { display: grid; gap: 10px; margin: 22px 0; padding: 24px; border: 1px solid var(--line-strong); border-radius: 26px; background: rgba(255,253,249,.80); }
+.direct-email-card span { font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-deep); font-weight: 800; }
+.direct-email-card strong { font-size: clamp(1.35rem, 2.3vw, 2.25rem); letter-spacing: -.045em; overflow-wrap: anywhere; }
+.email-prompts { display: grid; gap: 10px; color: var(--muted); }
+.email-prompts p { margin: 0; }
+.contact-methods article { background: rgba(255,253,249,.68); }
+.project-tile { transition: transform 160ms var(--motion-soft), box-shadow 160ms var(--motion-soft), border-color 160ms var(--motion-soft); }
+.project-tile:hover { transform: translateY(-4px); border-color: rgba(196,125,43,.26); box-shadow: var(--shadow-card); }
+.skip-link:focus { position: fixed; left: 18px; top: 18px; z-index: 1000; padding: 10px 14px; border-radius: 999px; background: #fffdf9; color: var(--ink); box-shadow: var(--shadow-card); }
+@media (max-width: 1024px) {
+  .content-shell > .wide-figure,
+  .content-shell .wide-figure,
+  .content-shell > .project-photo-proof { width: min(100%, calc(100vw - 32px)); }
+}
+@media (max-width: 768px) {
+  .home-page .hero h1 { font-size: clamp(3rem, 14vw, 4.7rem) !important; }
+  .hero::before, .home-page .hero::before { background-position: 56% center !important; }
+  .project-photo-proof img { max-height: 420px; }
+  .direct-email-card { padding: 20px; }
+}
+@media (max-width: 480px) {
+  .projects-index-hero, .projects-equal-grid, .project-index-cta { width: min(100% - 24px, var(--max)) !important; }
+  .content-shell > .wide-figure,
+  .content-shell .wide-figure,
+  .content-shell > .project-photo-proof { width: calc(100vw - 24px); }
+  .contact-direct-panel { padding: 22px; border-radius: 26px; }
+}

@@ -6,7 +6,7 @@ tags: Semiconductors · Thin Films · MBE
 subtitle: MBE deposition and characterization of Se/In thin films for band-gap and device-relevant semiconductor research.
 ---
 
-This work gave me semiconductor-materials exposure from the process side: deposition conditions only matter if they connect to measurable structure and device-relevant material quality.
+I got semiconductor-materials exposure from the process side: deposition conditions only matter if they connect to measurable structure and device-relevant material quality.
 
 <figure class="thin-film-visual-card"><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Representative thin-film characterization schematic connecting MBE growth to SEM, XRD, XPS, and Raman readouts." loading="lazy"><figcaption>Representative characterization map: growth condition → film structure → characterization response.</figcaption></figure>
 
