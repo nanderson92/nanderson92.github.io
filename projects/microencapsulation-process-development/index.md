@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Scalable Stem-Cell Microencapsulation
+title: Stem-Cell Microencapsulation
 category: Supporting Case File
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
@@ -31,6 +31,15 @@ Developed and tuned a flow-focused microfluidic encapsulation process for core�
 
 Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The process challenge is balancing capsule complexity, throughput, uniformity, and cell compatibility.
 
+
+## Why this is hard
+
+<div class="matrix hard-problem-grid micro-hard-grid">
+ <div class="matrix-card"><h3>Coupled flow fields</h3><p>Core, shell, and continuous phases must converge cleanly; small flow changes can shift size, shell formation, and stability.</p></div>
+ <div class="matrix-card"><h3>Crosslinking timing</h3><p>The shell must form fast enough to stabilize the capsule without creating handling or clogging problems.</p></div>
+ <div class="matrix-card"><h3>Biological constraints</h3><p>Useful throughput only matters if capsule handling remains compatible with downstream cell-culture requirements.</p></div>
+</div>
+
 ## Process schematic
 
 <figure class="microfluidic-visual-card">
@@ -38,13 +47,14 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
  <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
 </figure>
 
-## Why this is hard
+## Variables studied
 
-<div class="matrix hard-problem-grid microencap-hard-grid">
- <div class="matrix-card"><h3>Coupled flow fields</h3><p>Changing one stream changes shear, droplet breakup, shell formation, and throughput at the same time.</p></div>
- <div class="matrix-card"><h3>Capsule stability</h3><p>Crosslinking must stabilize the shell without creating aggregation, coalescence, or handling defects.</p></div>
- <div class="matrix-card"><h3>Biological usefulness</h3><p>A capsule is only useful if the process preserves cell-compatible handling and microscopy-visible quality.</p></div>
-</div>
+| Variable | Why it matters | Output watched |
+|---|---|---|
+| Continuous/dispersed flow ratio | Sets droplet breakup, shear, and capsule size. | Throughput, size consistency, coalescence. |
+| Crosslink dwell time | Controls shell formation and handling stability. | Yield, stability, aggregation. |
+| Collection condition | Sets the post-formation environment. | Coalescence and handling losses. |
+| Microscopy QC criteria | Converts visible capsule quality into a process decision. | Usable yield and defect classification. |
 
 ## Process knobs
 

@@ -8,14 +8,14 @@ body_class: home-page
  <div class="hero-inner">
  <div class="hero-copy">
  <div class="hero-identity hero-identity-single" aria-label="Portfolio identity">
- <span><strong>Process Development Portfolio</strong></span>
+ <span><strong>Process Development Portfolio</strong> · Chemical &amp; Biomolecular Engineering · Georgia Tech</span>
  </div>
  <h1><span class="hero-title-line">Making the future</span><span class="hero-title-line">manufacturable.</span></h1>
  <p class="hero-lede">
  Printed electronics, stem-cell biotech, embedded controls — I build the processes that turn breakthroughs into product.
  </p>
  <div class="cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">See the work</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">See the Work</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a>
  </div>
  </div>
@@ -44,7 +44,15 @@ body_class: home-page
  <figure class="signature-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
  </figure>
-
+ <aside class="featured-artifact-panel" aria-label="Visible proof artifact preview">
+  <p class="system-label small">PUBLIC ARTIFACT PREVIEW</p>
+  <div class="artifact-preview-grid">
+   <div class="mini-trace" aria-label="Representative droplet radius trace"><span></span><b>r(t)/r₀ trace</b></div>
+   <div class="mini-density-map" aria-label="Representative edge center deposition map"><i></i><b>edge/center map</b></div>
+   <div class="mini-decision-chain" aria-label="Process decision chain"><span>video</span><em></em><span>metric</span><em></em><span>decision</span></div>
+  </div>
+  <p class="artifact-caption">Public-safe metric preview: normalized radius behavior, edge/center accumulation, and video-to-decision workflow.</p>
+ </aside>
  </div>
 </section>
 
@@ -60,6 +68,7 @@ body_class: home-page
  <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Process Development</a>
  <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Wet Processing</a>
  <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Reliability</a>
+ <a class="proof-tag" href="{{ '/projects/operations-quality-systems/' | relative_url }}">Operations Systems</a>
  </div>
  </div>
  <div class="proof-group">
@@ -103,27 +112,26 @@ body_class: home-page
  <div class="section-heading">
  <p class="system-label">SUPPORTING ENGINEERING CASE FILES</p>
  <h2>More case files.</h2>
- <p>Three additional technical stories show the same measurement-to-decision pattern across reliability, microfluidics, and automation.</p>
+ <p>Three supporting projects show the same measurement-to-decision pattern across reliability, microfluidics, and automation.</p>
  </div>
 
  <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid">
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · Process Control</span></div>
+ <div class="card-topline"><span>Reliability · Process Control</span><span>Electrical drift</span></div>
  <h2>Printed Interconnect &amp; FET Reliability</h2>
  <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to process-control feedback.</p>
  <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Microfluidics · Process Development</span></div>
- <h2>Stem-Cell Microencapsulation</h2>
- <p class="home-card-stat"><strong>20×</strong><span>throughput increase</span></p>
+ <div class="card-topline"><span>Microfluidics · Process Development</span><span class="metric-pill-strong">20× throughput</span></div>
+ <h2>Scalable Stem-Cell Microencapsulation</h2>
  <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to improve capsule throughput and usable yield.</p>
  <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Automation · Diagnostics</span></div>
+ <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal control</span></div>
  <h2>Thermocycler Process Automation</h2>
  <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
  <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
@@ -139,8 +147,7 @@ body_class: home-page
  <article>
  <p class="system-label">HUMAN CONTEXT</p>
  <h2>Technical work should reach people.</h2>
- <blockquote>“The future often appears first as a fragile lab result. The harder question is what it takes to make that result reliable enough to leave the lab.”</blockquote>
- <p class="quote-attribution">— Nathan Anderson, Background</p>
+ <blockquote>“The future often appears first as a fragile lab result. The harder question is what it takes to make that result reliable enough to leave the lab.”<cite>— Nathan Anderson, Background</cite></blockquote>
  <p>
  Background explains the personal thread behind my interest in accessible, scalable technology and why process engineering became the path from discovery to delivery.
  </p>
@@ -152,13 +159,13 @@ body_class: home-page
 
 <section class="cta-band recruiter-cta" aria-label="Recruiting call to action">
  <div>
- <p class="system-label small">FALL 2026 WORK</p>
- <h2>Open to roles in process development, automation, and wet processing.</h2>
- <p>Available for full-time, co-op, internship, or part-time research roles where experimental systems need to become controllable, measurable, and manufacturable.</p>
+ <p class="system-label small">FALL 2026 OPPORTUNITIES</p>
+ <h2>Open to Fall 2026 technical roles</h2>
+ <p>Open to Fall 2026 roles in process development, automation, wet processing, and research-to-engineering workflows — full-time, co-op, or part-time research in advanced manufacturing, semiconductor, energy, and biotech environments.</p>
  </div>
  <div class="cta-row compact-cta">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View Case Files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Email Nathan</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
  </div>
 </section>

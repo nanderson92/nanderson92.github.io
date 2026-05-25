@@ -97,11 +97,11 @@ Printed interconnects can look acceptable initially but fail later through resis
 
 ## Engineering interpretation
 
-The value of this project is not just plotting resistance. It is building a feedback loop: measure the electrical output, classify the failure mode, identify likely process causes, then tighten the process window.
+The value is the feedback loop: measure electrical output, classify the failure mode, identify likely process causes, then tighten the process step that produced the drift or open circuit.
 
 ## Manufacturing relevance
 
-Two CTQs make the reliability loop actionable: initial resistance must pass the first screen, and resistance drift must stay below the chosen failure threshold after stress. Those two outputs turn electrical testing into a process-control signal rather than a one-time pass/fail check.
+The manufacturing-relevant CTQs are concrete: initial resistance must fall inside an acceptance band, and resistance drift must remain below a defined stress-response threshold. Those two signals make yield visible before a circuit is scaled or routed into a larger build.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>

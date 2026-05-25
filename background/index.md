@@ -26,14 +26,14 @@ subtitle: Chemical engineering as the science of delivery.
  <p class="system-label small">TECHNICAL TASTE</p>
  <h2>The stories that shaped my engineering direction</h2>
  <p><strong>Ghost in the Shell · The Matrix · Final Fantasy VII</strong></p>
- <p>Technology was never just “gadgets” to me. It was materials, energy, interfaces, control layers, and the systems people eventually live inside.</p>
+ <p>Technology was never just “gadgets” to me. It was the physical stack people eventually live inside: materials, energy, interfaces, control layers, and production systems.</p>
 </section>
 
 <div class="background-timeline" aria-label="Background timeline">
- <article><span>01</span><h3>Incheon → Minnesota</h3><p>I learned to notice who systems include, who they leave out, and what technology must become before it reaches people.</p></article>
- <article><span>02</span><h3>Georgia Tech ChemE</h3><p>I learned the language of transport, thermodynamics, controls, and manufacturing logic.</p></article>
- <article><span>03</span><h3>Micromodular Electronics Research</h3><p>I learned to turn deposition videos, reliability data, and substrate comparisons into engineering decision rules.</p></article>
- <article><span>04</span><h3>Future direction</h3><p>I want to work where advanced manufacturing and clean technology become deployable industrial systems.</p></article>
+ <article><span>01</span><h3>Incheon → Minnesota</h3><p>I learned to notice who systems include, who they miss, and what access actually feels like.</p></article>
+ <article><span>02</span><h3>Georgia Tech ChemE</h3><p>I learned the technical language of transport, thermodynamics, controls, and manufacturing logic.</p></article>
+ <article><span>03</span><h3>Micromodular Electronics Research</h3><p>I learned to turn droplet behavior, deposition metrics, and reliability data into process decisions.</p></article>
+ <article><span>04</span><h3>Future direction</h3><p>I want to build in advanced manufacturing and clean technology, where process decisions become infrastructure.</p></article>
 </div>
 
 <section class="background-depth refined-background-depth">
@@ -52,7 +52,7 @@ subtitle: Chemical engineering as the science of delivery.
     <p>The case files on this site show that bridge in practice: extracting normalized radius traces from droplet videos, comparing substrate/backing conditions, tracking resistance drift under stress, tuning flow ratio and crosslink dwell time, and measuring ramp rate, overshoot, and hold stability.</p>
     <div class="background-cta-row">
       <a class="button primary" href="{{ '/projects/' | relative_url }}">View my case files <span aria-hidden="true">→</span></a>
-      <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF)</a>
+      <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
       <a class="button tertiary" href="{{ '/contact/' | relative_url }}">Contact me</a>
     </div>
   </article>

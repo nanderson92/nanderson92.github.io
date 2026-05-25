@@ -3,10 +3,10 @@ layout: page
 title: Micromodular Electronics Deposition
 category: Flagship Case File
 tags: Semiconductors · Process Development · Interfacial Transport · Automation & Data
-subtitle: Substrate-controlled process windows for stochastic microdevice placement in micromodular printed electronics.
+subtitle: Boundary-condition control for placing suspended microdevices into useful printed-electronics layouts.
 ---
 
-<p class="case-thesis">Deposition quality is defined by whether devices remain useful for downstream interconnect routing.</p>
+<p class="case-thesis">The central engineering question is how substrate and backing conditions turn droplet transport into usable device placement.</p>
 
 <figure class="flagship-page-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
@@ -100,14 +100,14 @@ The practical question is:
 
 ## Variables studied
 
-| Variable | Why it matters | What I varied / tracked |
+| Variable | Why it matters | What I varied / observed |
 |---|---|---|
-| Substrate porosity / permeability | Controls liquid uptake and vertical drain rate. | AAO-like porous surfaces versus less-draining supports. |
-| Backing condition | Changes whether the porous substrate behaves like a drain, membrane, or supported surface. | Glass, air gap, wipe/paper, and support-condition comparisons. |
-| Contact angle / wetting | Sets footprint size, spreading dynamics, and transport length scale. | Apparent wetting behavior from top/side-view video. |
-| Contact-line pinning | Influences coffee-ring-like accumulation and edge crowding. | Pinned, depinned, and receding contact-line behavior. |
-| Evaporation vs. imbibition | Determines whether flow is dominated by drying or liquid uptake. | Glass-like evaporation baseline versus porous liquid removal. |
-| Device loading | Affects crowding, raft interactions, and useful areal density. | Final density, edge/center ratio, and accessible device regions. |
+| Substrate porosity / permeability | Controls liquid uptake and vertical drain rate. | Compared porous AAO-like behavior against less-draining surfaces. |
+| Backing condition | Changes whether the porous substrate behaves like a drain, membrane, or supported surface. | Tested supported, open, and absorbent backing conditions. |
+| Contact angle / wetting | Sets footprint size, spreading dynamics, and transport length scale. | Tracked footprint evolution and side-view wetting behavior. |
+| Contact-line pinning | Influences coffee-ring-like accumulation and edge crowding. | Compared pinned, receding, and draining regimes through video. |
+| Evaporation vs. imbibition | Determines whether flow is dominated by drying or liquid uptake. | Separated glass-like evaporation from porous liquid-removal behavior. |
+| Device loading | Affects crowding, raft interactions, and useful areal density. | Interpreted final density and edge/center distribution against process conditions. |
 
 ## Methods and tools
 
