@@ -144,7 +144,7 @@ a:hover { color: var(--blue); }
   background-image:
     linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.90) 33%, rgba(255,255,255,.52) 58%, rgba(255,255,255,.15) 100%),
     linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(255,255,255,.04) 58%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center top;
   z-index: -2;
@@ -303,7 +303,7 @@ h1 { margin: 0; color: var(--ink); font-size: clamp(3.15rem, 7vw, 6.8rem); line-
   .topbar-brand em { display: none; }
   .topbar-resume { display: none; }
   h1 { font-size: clamp(2.65rem, 15vw, 4.3rem); letter-spacing: -.075em; }
-  .hero::before { background-image: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.86) 68%, rgba(255,255,255,.45) 100%), linear-gradient(180deg, rgba(255,255,255,.50), var(--bg)), url('../images/homepage-background.jpg'); background-position: center top; }
+  .hero::before { background-image: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.86) 68%, rgba(255,255,255,.45) 100%), linear-gradient(180deg, rgba(255,255,255,.50), var(--bg)), url('../images/material-macro-hero.jpg'); background-position: center top; }
   .proof-section, .framework, .project-strip, .system-section, .cta-band { width: min(100% - 28px, var(--max)); }
   .page-content, .page-hero { padding-left: 14px; padding-right: 14px; }
 }
@@ -357,7 +357,7 @@ body {
   background-image:
     linear-gradient(90deg, rgba(255,255,255,.975) 0%, rgba(255,255,255,.92) 32%, rgba(255,255,255,.62) 56%, rgba(255,255,255,.20) 100%),
     linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.02) 64%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center 34%;
   image-rendering: auto;
@@ -572,7 +572,7 @@ body {
   background-image:
     linear-gradient(90deg, rgba(255,255,255,.985) 0%, rgba(255,255,255,.91) 34%, rgba(255,255,255,.50) 62%, rgba(255,255,255,.10) 100%),
     linear-gradient(180deg, rgba(255,255,255,.05) 0%, rgba(255,255,255,.02) 62%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center 34%;
 }
@@ -655,7 +655,7 @@ body {
   background-image:
     linear-gradient(90deg, rgba(255,255,255,.965) 0%, rgba(255,255,255,.86) 34%, rgba(255,255,255,.42) 62%, rgba(255,255,255,.08) 100%),
     linear-gradient(180deg, rgba(255,255,255,.03) 0%, rgba(255,255,255,.01) 62%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center 30%;
   image-rendering: auto;
@@ -761,7 +761,7 @@ body {
   background-image:
     linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.80) 28%, rgba(255,255,255,.34) 58%, rgba(255,255,255,.04) 100%),
     linear-gradient(180deg, rgba(255,255,255,.03) 0%, rgba(255,255,255,.00) 68%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center 28%;
 }
@@ -832,7 +832,7 @@ body {
     background-image:
       linear-gradient(180deg, rgba(255,255,255,.90) 0%, rgba(255,255,255,.72) 34%, rgba(255,255,255,.32) 76%, rgba(255,255,255,.06) 100%),
       linear-gradient(180deg, rgba(255,255,255,.04) 0%, rgba(255,255,255,.00) 70%, var(--bg) 100%),
-      url('../images/homepage-background.jpg');
+      url('../images/material-macro-hero.jpg');
     background-position: center 24%;
   }
 
@@ -867,7 +867,7 @@ body {
       rgba(248, 251, 252, 0.35) 100%
     ),
     linear-gradient(180deg, rgba(248,251,251,.00) 0%, rgba(248,251,251,.08) 46%, rgba(248,251,251,.36) 72%, var(--bg) 100%),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center 28%;
   filter: saturate(0.75) contrast(1.05) brightness(0.92);
@@ -908,7 +908,7 @@ body {
     background-image:
       linear-gradient(180deg, rgba(248,251,252,.94) 0%, rgba(248,251,252,.78) 34%, rgba(248,251,252,.54) 72%, rgba(248,251,252,.32) 100%),
       linear-gradient(180deg, rgba(248,251,251,.00) 0%, rgba(248,251,251,.14) 48%, rgba(248,251,251,.52) 77%, var(--bg) 100%),
-      url('../images/homepage-background.jpg');
+      url('../images/material-macro-hero.jpg');
     background-position: center 24%;
     filter: saturate(0.75) contrast(1.05) brightness(0.92);
   }
@@ -1680,7 +1680,7 @@ body.home-page {
       rgba(255, 255, 255, 0.78) 126vh,
       #ffffff 188vh
     ),
-    url('../images/homepage-background.jpg');
+    url('../images/material-macro-hero.jpg');
   background-size: 100% 220vh, cover;
   background-position: top center, center top;
   background-repeat: no-repeat, no-repeat;
@@ -1794,7 +1794,7 @@ body.home-page::before {
   body.home-page {
     background-image:
       linear-gradient(180deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.42) 48%, #ffffff 100%),
-      url('../images/homepage-background.jpg');
+      url('../images/material-macro-hero.jpg');
   }
   .home-page .hero {
     min-height: 590px;
@@ -1845,7 +1845,7 @@ body.home-page::before {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background-image: url('../images/homepage-background.jpg');
+  background-image: url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -1999,7 +1999,7 @@ body.home-page {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background-image: url('../images/homepage-background-optimized.jpg');
+  background-image: url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2138,7 +2138,7 @@ body.home-page::before {
   inset: 0;
   z-index: -3;
   pointer-events: none;
-  background-image: url('../images/homepage-background-fast.jpg');
+  background-image: url('../images/material-macro-hero.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2409,7 +2409,7 @@ body.home-page .site-footer::after,
    Keep the fixed-city scroll fade, but make the initial hero image feel
    slightly sharper and less washed-out before the user scrolls. */
 .home-page #content::before {
-  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  background-image: url('../images/material-macro-hero.jpg') !important;
   filter: none !important;
 }
 
@@ -2892,7 +2892,7 @@ body.home-page .site-footer::after,
 }
 
 .home-page #content::before {
-  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  background-image: url('../images/material-macro-hero.jpg') !important;
   opacity: 0.48 !important;
   filter: saturate(0.72) contrast(0.86) brightness(1.08) !important;
 }
@@ -3080,7 +3080,7 @@ body.home-page .site-footer::after,
    Keeps the fixed-city / scrolling-white transition, but prevents the hero
    overlay animation from washing the image completely to white after load. */
 .home-page #content::before {
-  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  background-image: url('../images/material-macro-hero.jpg') !important;
   opacity: 0.62 !important;
   filter: saturate(0.72) contrast(0.88) brightness(1.08) !important;
 }
@@ -3554,7 +3554,7 @@ body.home-page::before {
   inset: 0 !important;
   z-index: 0 !important;
   pointer-events: none !important;
-  background-image: url('../images/homepage-background-optimized.jpg') !important;
+  background-image: url('../images/material-macro-hero.jpg') !important;
   background-size: cover !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;

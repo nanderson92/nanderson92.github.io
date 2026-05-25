@@ -3,7 +3,7 @@ layout: page
 title: Contact
 body_class: contact-page
 category: Contact
-subtitle: For co-ops, contract work, research conversations, and hard-tech buildout.
+subtitle: For full-time, co-op, contract work, research conversations, and hard-tech buildout.
 ---
 
 <div class="contact-system-grid contact-reveal builder-contact-grid">
@@ -39,7 +39,7 @@ subtitle: For co-ops, contract work, research conversations, and hard-tech build
 
 <section class="contact-methods contact-reveal" aria-label="Contact methods">
  <article><span>Email</span><strong>{{ site.email }}</strong><a href="mailto:{{ site.email }}">Start an email →</a></article>
- <article><span>Resume</span><strong>PDF download</strong><a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download resume →</a></article>
+ <article><span>Resume</span><strong>PDF download</strong><a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page) →</a></article>
  <article><span>Projects</span><strong>Build logs</strong><a href="{{ '/projects/' | relative_url }}">View work →</a></article>
 </section>
 
