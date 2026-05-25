@@ -6,19 +6,19 @@ tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
 ---
 
+<div class="selected-outcomes stat-hero-strip microencap-stats">
+ <p class="system-label small">SELECTED OUTCOMES</p>
+ <div class="metric-strip metric-hero-grid">
+  <span class="major-stat"><strong>20×</strong><em>throughput increase</em></span>
+  <span class="major-stat"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
+  <span><strong>Lower coalescence</strong><em>via flow/crosslinking adjustment</em></span>
+  <span><strong>QC workflow</strong><em>supported by microscopy inspection</em></span>
+ </div>
+</div>
+
 ## Summary
 
 Developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
-
-<div class="selected-outcomes">
- <p class="system-label small">SELECTED OUTCOMES</p>
- <div class="metric-strip">
-  <span><strong>20×</strong> throughput increase</span>
-  <span><strong>~50%</strong> encapsulation-yield improvement</span>
-  <span><strong>Lower coalescence</strong> through flow/crosslinking adjustment</span>
-  <span><strong>QC workflow</strong> supported by microscopy inspection</span>
- </div>
-</div>
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
@@ -34,10 +34,21 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 ## Process schematic
 
 <div class="microfluidic-artifact proof-artifact-card" aria-label="Flow-focused microencapsulation process schematic">
- <div class="microfluidic-flow">
-  <span>Core stream</span><i></i><span>Shell stream</span><i></i><span>Continuous phase</span><b></b><span>Flow-focusing junction</span><i></i><span>Crosslink dwell region</span><i></i><span>Collection</span><i></i><span>Microscopy QC</span><i></i><span>Yield / coalescence decision</span>
+ <div>
+  <p class="system-label small">PROCESS SCHEMATIC</p>
+  <h3>Stream convergence → capsule QC</h3>
+  <p>Representative public schematic of the process logic: streams converge at a flow-focusing junction, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</p>
  </div>
- <p>Representative public schematic of the process logic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</p>
+ <div class="microfluidic-schematic" aria-hidden="true">
+  <div class="micro-input core">Core stream</div>
+  <div class="micro-input shell">Shell stream</div>
+  <div class="micro-input phase">Continuous phase</div>
+  <div class="junction-node">Flow-focusing<br>junction</div>
+  <div class="capsule-train"><i></i><i></i><i></i><i></i></div>
+  <div class="dwell-channel">Crosslink dwell region</div>
+  <div class="collection-cup">Collection</div>
+  <div class="qc-card">Microscopy QC<br><strong>yield / coalescence decision</strong></div>
+ </div>
 </div>
 
 ## Process knobs
@@ -49,13 +60,6 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 | Collection condition | Post-formation environment | Aggregation, coalescence |
 | Cell suspension handling | Biological compatibility | Viability/usefulness |
 
-## Engineering framing
-
-<div class="matrix">
- <div class="matrix-card"><h3>Inputs</h3><p>Core stream, shell precursor, continuous phase, crosslinker chemistry, cell suspension, and flow conditions.</p></div>
- <div class="matrix-card"><h3>Process knobs</h3><p>Continuous/dispersed flow ratio, nozzle behavior, shear, crosslink dwell time, and collection conditions.</p></div>
- <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</p></div>
-</div>
 
 ## Methods and tools
 
@@ -73,5 +77,5 @@ This project is process development in a biomedical context: identify the critic
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>

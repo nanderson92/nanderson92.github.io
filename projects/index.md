@@ -6,6 +6,12 @@ subtitle: Case files in wet processing, micromodular electronics, micro/nano man
 body_class: projects-page
 ---
 
+<section class="projects-index-hero" aria-label="Projects index introduction">
+ <p class="system-label small">CASE FILES</p>
+ <h1>Process Development Case Files</h1>
+ <p>Engineering projects organized by strength of evidence: flagship wet-processing research, supporting technical case files, then compact supplemental proof.</p>
+</section>
+
 <section class="flagship-project-section" aria-label="Flagship engineering case file">
  <p class="system-label small">FLAGSHIP ENGINEERING CASE FILE</p>
  <article class="portfolio-card evidence-card flagship-project-card">
@@ -19,11 +25,11 @@ body_class: projects-page
  </p>
  <div class="evidence-table flagship-evidence-table">
  <span><strong>Measured outputs</strong> r(t)/r₀, contact-line behavior, radial density, edge/center ratio, useful areal density, and repeatability.</span>
- <span><strong>Best-fit roles</strong> Process engineering · wet processing · semiconductor-adjacent manufacturing · printed electronics · R&amp;D engineering · manufacturing analytics.</span>
+ <span><strong>Best-fit roles</strong> Process engineering · wet processing · printed electronics · manufacturing analytics.</span>
  <span class="output-row"><strong>Decision logic</strong> Identify boundary conditions that reduce edge crowding and preserve interconnect access.</span>
  <span><strong>Tools</strong> Keyence · Rame-Hart · Python · ImageJ/Fiji · JMP · optical microscopy.</span>
  </div>
- <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case file →</a></p>
+ <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
  </div>
  <figure class="flagship-project-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
@@ -82,13 +88,12 @@ body_class: projects-page
 <section class="additional-work-section compact-additional-section" aria-label="Additional technical work and operations proof">
  <div class="supporting-proof-header section-header-tight">
  <strong>Additional evidence</strong>
- <span>Compact proof points that add materials, assay, operations, and strategy context without competing with the four major projects.</span>
+ <span>Compact proof points that add materials, assay, and operations context without competing with the major technical case files.</span>
  </div>
 
  <div class="additional-evidence-strip">
  <a class="evidence-strip-item" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}"><strong>Thin-film semiconductor growth</strong><span>MBE · SEM/XRD/XPS/Raman characterization matrix</span></a>
  <a class="evidence-strip-item" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}"><strong>DNA/PCR assay development</strong><span>Assay workflow · controls · troubleshooting loop</span></a>
  <a class="evidence-strip-item" href="{{ '/projects/operations-quality-systems/' | relative_url }}"><strong>Operations &amp; quality systems</strong><span>Throughput · QC logs · standard work · downtime reduction</span></a>
- <a class="evidence-strip-item" href="{{ '/projects/consult-your-community/' | relative_url }}"><strong>Nonprofit growth strategy</strong><span>Client problem · constraints · roadmap · engagement result</span></a>
  </div>
 </section>

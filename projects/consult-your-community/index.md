@@ -1,5 +1,6 @@
 ---
 layout: page
+published: false
 title: Nonprofit Growth Strategy
 category: Strategy / Communication
 subtitle: Client-facing consulting through Consult Your Community, focused on realistic growth recommendations and implementation-ready communication.
@@ -41,5 +42,5 @@ This project adds a different kind of evidence: I can translate analysis into st
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>

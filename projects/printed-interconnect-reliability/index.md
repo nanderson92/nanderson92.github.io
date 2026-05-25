@@ -106,5 +106,5 @@ This is the language of process engineering inside semiconductor-adjacent R&amp;
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>

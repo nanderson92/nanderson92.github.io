@@ -10,6 +10,11 @@ subtitle: Substrate-controlled process windows for stochastic microdevice placem
 
 The manufacturing goal is not simply to deposit devices. The goal is to create repeatable, spatially useful placement so that downstream interconnect printing can become more reliable.
 
+<figure class="case-hero-visual flagship-page-visual">
+ <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
+ <figcaption>The deposition subsystem is where stochastic device placement becomes a process-control problem.</figcaption>
+</figure>
+
 <div class="case-summary-box">
  <p class="system-label small">CASE SUMMARY</p>
  <div class="case-summary-grid">
@@ -44,7 +49,7 @@ The practical question is:
 
 <div class="thesis-box">
  <p class="system-label small">ENGINEERING THESIS</p>
- <h2>If the substrate controls how liquid leaves the droplet, then the substrate also helps control device transport, crowding, edge accumulation, and final placement fidelity.</h2>
+ <h2>If the substrate controls how liquid leaves the droplet, it controls where devices end up.</h2>
  <p>The engineering task is to identify which boundary conditions create a repeatable deposition window.</p>
 </div>
 
@@ -80,7 +85,7 @@ The practical question is:
  <div class="process-map-arrow" aria-hidden="true">→</div>
  <div class="process-map-stage decision-stage">
  <p>MANUFACTURING DECISION</p>
- <span>Accept / reject / redesign substrate boundary condition.</span>
+ <span>Accept / reject / redesign boundary condition.</span>
  </div>
 </div>
 
@@ -139,7 +144,7 @@ The practical question is:
  </div>
  <figure class="result-figure">
  <img src="{{ '/assets/images/preliminary-radius-plot.svg' | relative_url }}" alt="Representative normalized droplet radius plot." loading="lazy">
- <figcaption>Representative metric format for communicating the radius-trace workflow.</figcaption>
+ <figcaption>Representative target curves: glass-like control vs. porous boundary condition, with repeatability band.</figcaption>
  </figure>
  </article>
 
@@ -169,6 +174,9 @@ The practical question is:
  <span class="axis-label x-label">liquid uptake / evaporation behavior</span>
  <span class="axis-label y-label">edge/center ratio</span>
  <i class="region"></i>
+ <i class="scatter-dot baseline-dot"></i>
+ <i class="scatter-dot porous-dot"></i>
+ <i class="scatter-dot target-dot"></i>
  <b class="point baseline">Glass-like baseline</b>
  <b class="point porous">AAO-like boundary</b>
  <b class="point target">Engineered skin</b>
@@ -190,16 +198,21 @@ For micromodular electronics, deposition quality affects whether devices land in
 
 ## Skills demonstrated
 
-<div class="skill-proof-grid">
- <div class="matrix-card"><h3>Process development</h3><p>Designed controlled substrate/backing comparisons and translated visual deposition behavior into process criteria.</p></div>
- <div class="matrix-card"><h3>Transport phenomena</h3><p>Connected spreading, evaporation, imbibition, pinning, and particle/device transport to final manufacturing output.</p></div>
- <div class="matrix-card"><h3>Data analysis</h3><p>Used microscopy, Python, ImageJ/Fiji, and statistical comparison to extract process descriptors from videos and images.</p></div>
- <div class="matrix-card"><h3>Manufacturing thinking</h3><p>Defined output metrics such as edge/center ratio, useful areal density, repeatability, and downstream interconnect feasibility.</p></div>
- <div class="matrix-card"><h3>Technical communication</h3><p>Built schematics and process maps to explain public-safe lab work without exposing sensitive details.</p></div>
+<div class="skill-chip-cloud">
+ <span>Process development</span>
+ <span>Transport phenomena</span>
+ <span>Droplet video analysis</span>
+ <span>Contact-line metrics</span>
+ <span>Radial density maps</span>
+ <span>Python</span>
+ <span>ImageJ/Fiji</span>
+ <span>JMP</span>
+ <span>Manufacturing decision rules</span>
+ <span>Technical communication</span>
 </div>
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Related reliability case file →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>

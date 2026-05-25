@@ -6,6 +6,8 @@ tags: Molecular Biology · PCR · Experimental Design
 subtitle: Earlier research developing experiments to measure DNA flexibility at extremely short base-pair lengths.
 ---
 
+<p class="credential-line">Maher Lab, Mayo Clinic · early research experience</p>
+
 ## Summary
 
 This compact case file captures earlier molecular-biology research experience from the Maher Lab at Mayo Clinic. It is included as evidence of long-term experimental training, assay development, and comfort with precise biological workflows.
@@ -13,6 +15,22 @@ This compact case file captures earlier molecular-biology research experience fr
 ## Problem / motivation
 
 DNA mechanics at very short lengths are difficult to probe because small length scales demand careful assay design, clean controls, and precise molecular-biology execution.
+
+## Representative assay concept
+
+<div class="dna-artifact proof-artifact-card" aria-label="DNA flexibility assay concept visual">
+ <div>
+  <p class="system-label small">ASSAY CONCEPT</p>
+  <h3>Short-length DNA mechanics as a controlled workflow</h3>
+  <p>Public-safe visual shorthand for the project logic: design a short DNA construct, run controlled PCR workflows, compare conditions, and troubleshoot the readout loop.</p>
+ </div>
+ <div class="dna-mini-visual" aria-hidden="true">
+  <span class="dna-strand dna-a"></span>
+  <span class="dna-strand dna-b"></span>
+  <span class="dna-chart"></span>
+  <em>flexibility vs. length</em>
+ </div>
+</div>
 
 ## Assay workflow
 
@@ -42,5 +60,5 @@ This earlier work shows where my process-development habits started: careful exp
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>

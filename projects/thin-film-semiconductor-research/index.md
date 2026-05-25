@@ -14,6 +14,23 @@ This compact case file captures semiconductor materials work focused on thin-fil
 
 Thin-film semiconductor properties depend strongly on deposition conditions, crystallinity, composition, and microstructure. The engineering task is to connect growth parameters to measurable material quality and device-relevant behavior.
 
+## Representative characterization artifact
+
+<div class="semiconductor-artifact proof-artifact-card" aria-label="Representative thin-film characterization artifact">
+ <div>
+  <p class="system-label small">CHARACTERIZATION VIEW</p>
+  <h3>Growth condition → film response</h3>
+  <p>A compact public artifact format for showing how deposition conditions connect to morphology, crystallinity, composition, and device-relevant material quality.</p>
+ </div>
+ <div class="semiconductor-mini-visual" aria-hidden="true">
+  <div class="sem-wafer"></div>
+  <div class="sem-trace"></div>
+  <span class="sem-label sem-label-a">SEM morphology</span>
+  <span class="sem-label sem-label-b">XRD phase</span>
+  <span class="sem-label sem-label-c">XPS composition</span>
+ </div>
+</div>
+
 ## Deposition-to-characterization flow
 
 <div class="process-map compact-flow-map" aria-label="Thin film semiconductor process flow">
@@ -42,5 +59,5 @@ The value of this project is materials-process thinking: changing deposition con
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+ <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
 </div>
