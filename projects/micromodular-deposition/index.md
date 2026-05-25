@@ -8,12 +8,12 @@ subtitle: Substrate-controlled process windows for stochastic microdevice placem
 
 <p class="case-thesis">Micromodular deposition is not only a particle-placement problem. It is a boundary-condition problem.</p>
 
-The manufacturing goal is not simply to deposit devices. The goal is to create repeatable, spatially useful placement so that downstream interconnect printing can become more reliable.
-
-<figure class="case-hero-visual flagship-page-visual">
- <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
- <figcaption>The deposition subsystem is where stochastic device placement becomes a process-control problem.</figcaption>
+<figure class="flagship-page-visual">
+ <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
+ <figcaption>Flagship system view: deposition is the boundary-condition-controlled subsystem between fabricated components and printable circuit assembly.</figcaption>
 </figure>
+
+The manufacturing goal is not simply to deposit devices. The goal is to create repeatable, spatially useful placement so that downstream interconnect printing can become more reliable.
 
 <div class="case-summary-box">
  <p class="system-label small">CASE SUMMARY</p>
@@ -85,7 +85,7 @@ The practical question is:
  <div class="process-map-arrow" aria-hidden="true">→</div>
  <div class="process-map-stage decision-stage">
  <p>MANUFACTURING DECISION</p>
- <span>Accept / reject / redesign boundary condition.</span>
+ <span>Accept / reject / redesign substrate boundary condition.</span>
  </div>
 </div>
 
@@ -144,7 +144,7 @@ The practical question is:
  </div>
  <figure class="result-figure">
  <img src="{{ '/assets/images/preliminary-radius-plot.svg' | relative_url }}" alt="Representative normalized droplet radius plot." loading="lazy">
- <figcaption>Representative target curves: glass-like control vs. porous boundary condition, with repeatability band.</figcaption>
+ <figcaption>Representative target curves: glass-like baseline versus porous substrate behavior, with a repeatability band.</figcaption>
  </figure>
  </article>
 
@@ -170,16 +170,13 @@ The practical question is:
  <p><strong>Candidate axes:</strong> liquid removal behavior, contact-line behavior, deposition output, and repeatability.</p>
  <p><strong>Engineering decision:</strong> a substrate condition is promising if it improves useful areal density, limits edge crowding, and produces repeatable behavior across trials.</p>
  </div>
- <div class="process-window-mini" aria-label="Qualitative process window diagram">
+ <div class="process-window-mini scatter-window" aria-label="Qualitative process window scatter diagram">
  <span class="axis-label x-label">liquid uptake / evaporation behavior</span>
  <span class="axis-label y-label">edge/center ratio</span>
  <i class="region"></i>
- <i class="scatter-dot baseline-dot"></i>
- <i class="scatter-dot porous-dot"></i>
- <i class="scatter-dot target-dot"></i>
- <b class="point baseline">Glass-like baseline</b>
- <b class="point porous">AAO-like boundary</b>
- <b class="point target">Engineered skin</b>
+ <b class="point baseline"><em></em>Glass-like baseline</b>
+ <b class="point porous"><em></em>AAO-like boundary</b>
+ <b class="point target"><em></em>Engineered skin</b>
  </div>
  </article>
 </div>
@@ -201,18 +198,16 @@ For micromodular electronics, deposition quality affects whether devices land in
 <div class="skill-chip-cloud">
  <span>Process development</span>
  <span>Transport phenomena</span>
- <span>Droplet video analysis</span>
- <span>Contact-line metrics</span>
- <span>Radial density maps</span>
- <span>Python</span>
- <span>ImageJ/Fiji</span>
- <span>JMP</span>
- <span>Manufacturing decision rules</span>
- <span>Technical communication</span>
+ <span>Substrate/backing comparisons</span>
+ <span>Optical microscopy</span>
+ <span>Python + ImageJ/Fiji analysis</span>
+ <span>Edge/center metrics</span>
+ <span>Useful areal density</span>
+ <span>Manufacturing decision logic</span>
 </div>
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Related reliability case file →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+<title id="title">Thin film characterization response schematic</title>
+<desc id="desc">A deposited thin film stack is connected to representative SEM, XRD, XPS, and Raman readouts.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#eefafa"/></linearGradient>
+ <style>.small{font:800 13px ui-monospace,Menlo,monospace;fill:#08708b;letter-spacing:.09em}.label{font:750 19px Inter,Arial,sans-serif;fill:#0f2d31;letter-spacing:-.02em}.body{font:600 14px Inter,Arial,sans-serif;fill:#5f7679}.card{fill:#fff;stroke:#08708b;stroke-opacity:.15}.axis{stroke:#0f2d31;stroke-opacity:.22;stroke-width:2}.curve{fill:none;stroke:#08708b;stroke-width:5;stroke-linecap:round}.green{stroke:#4c936c}.film{fill:#2fb6ce;opacity:.65}.sub{fill:#dce9e8}.particle{fill:#08708b;opacity:.26}</style>
+</defs>
+<rect width="920" height="420" rx="34" fill="url(#bg)"/>
+<g transform="translate(52 86)">
+ <rect x="0" y="110" width="260" height="40" rx="10" class="sub"/>
+ <rect x="18" y="70" width="224" height="44" rx="9" class="film"/>
+ <g opacity=".8"><circle cx="44" cy="50" r="6" class="particle"/><circle cx="86" cy="38" r="4" class="particle"/><circle cx="132" cy="54" r="5" class="particle"/><circle cx="178" cy="36" r="4" class="particle"/><circle cx="218" cy="52" r="6" class="particle"/></g>
+ <text x="0" y="204" class="label">MBE thin-film growth</text>
+ <text x="0" y="228" class="body">Deposition conditions → film structure</text>
+</g>
+<g transform="translate(366 58)">
+ <rect width="220" height="124" rx="24" class="card"/><text x="22" y="34" class="small">SEM</text><text x="22" y="62" class="body">surface morphology</text><path d="M32 92 C62 72 92 112 122 88 S170 78 190 100" class="curve" opacity=".55"/>
+</g>
+<g transform="translate(638 58)">
+ <rect width="220" height="124" rx="24" class="card"/><text x="22" y="34" class="small">XRD</text><text x="22" y="62" class="body">phase / crystallinity</text><path d="M30 102 L54 102 L65 54 L76 102 L118 102 L128 72 L138 102 L188 102" class="curve green"/>
+</g>
+<g transform="translate(366 228)">
+ <rect width="220" height="124" rx="24" class="card"/><text x="22" y="34" class="small">XPS</text><text x="22" y="62" class="body">surface chemistry</text><path d="M30 96 C58 94 72 62 92 62 S116 98 144 86 S164 56 190 70" class="curve"/>
+</g>
+<g transform="translate(638 228)">
+ <rect width="220" height="124" rx="24" class="card"/><text x="22" y="34" class="small">RAMAN</text><text x="22" y="62" class="body">structural signatures</text><path d="M30 100 C54 100 58 58 76 58 S94 100 116 100 C138 100 140 72 156 72 S174 100 194 100" class="curve green" opacity=".82"/>
+</g>
+<path d="M314 202 C340 202 342 120 366 120" fill="none" stroke="#08708b" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
+<path d="M314 202 C340 202 342 290 366 290" fill="none" stroke="#08708b" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
+</svg>

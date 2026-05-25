@@ -7,17 +7,16 @@ body_class: projects-page
 ---
 
 <section class="projects-index-hero" aria-label="Projects index introduction">
- <p class="system-label small">CASE FILES</p>
+ <p class="system-label small">ENGINEERING CASE FILES</p>
  <h1>Process Development Case Files</h1>
- <p>Engineering projects organized by strength of evidence: flagship wet-processing research, supporting technical case files, then compact supplemental proof.</p>
+ <p>Technical proof-of-work across wet processing, micromodular electronics, reliability, microfluidics, automation, and operations systems.</p>
 </section>
 
 <section class="flagship-project-section" aria-label="Flagship engineering case file">
- <p class="system-label small">FLAGSHIP ENGINEERING CASE FILE</p>
+ <p class="system-label small">FLAGSHIP CASE FILE</p>
  <article class="portfolio-card evidence-card flagship-project-card">
  <div class="flagship-project-copy">
- <div class="project-thumbnail thumbnail-wet"><span>WET PROCESSING</span></div>
- <div class="card-topline"><span>Semiconductors · Wet Processing · Interfacial Transport · Image-Derived Metrics</span><span>2025–present</span></div>
+  <div class="card-topline"><span>Semiconductors · Wet Processing · Interfacial Transport · Image-Derived Metrics</span><span>2025–present</span></div>
  <h2>Micromodular Electronics Deposition</h2>
  <p class="problem-line">Substrate-controlled process windows for stochastic microdevice placement.</p>
  <p>
@@ -25,11 +24,11 @@ body_class: projects-page
  </p>
  <div class="evidence-table flagship-evidence-table">
  <span><strong>Measured outputs</strong> r(t)/r₀, contact-line behavior, radial density, edge/center ratio, useful areal density, and repeatability.</span>
- <span><strong>Best-fit roles</strong> Process engineering · wet processing · printed electronics · manufacturing analytics.</span>
+ <span><strong>Best-fit roles</strong> Process engineering · wet processing · semiconductor-adjacent R&amp;D.</span>
  <span class="output-row"><strong>Decision logic</strong> Identify boundary conditions that reduce edge crowding and preserve interconnect access.</span>
  <span><strong>Tools</strong> Keyence · Rame-Hart · Python · ImageJ/Fiji · JMP · optical microscopy.</span>
  </div>
- <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
+ <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case file →</a></p>
  </div>
  <figure class="flagship-project-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
@@ -45,8 +44,7 @@ body_class: projects-page
 
  <div class="portfolio-grid projects-library supporting-card-grid">
  <article class="portfolio-card evidence-card">
- <div class="project-thumbnail thumbnail-reliability"><span>RELIABILITY</span></div>
- <div class="card-topline"><span>Reliability · Process Control</span><span>Active research</span></div>
+  <div class="card-topline"><span>Reliability · Process Control</span><span>Active research</span></div>
  <h2>Printed Interconnect &amp; FET Reliability</h2>
  <p class="problem-line">Turning electrical drift and pass/fail behavior into process-control feedback for printed micromodular circuits.</p>
  <div class="evidence-table compact-evidence-table">
@@ -58,8 +56,7 @@ body_class: projects-page
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="project-thumbnail thumbnail-microfluidics"><span>MICROFLUIDICS</span></div>
- <div class="card-topline"><span>Microfluidics · Process Development</span><span>20× throughput</span></div>
+  <div class="card-topline"><span>Microfluidics · Process Development</span><span>20× throughput</span></div>
  <h2>Scalable Stem-Cell Microencapsulation</h2>
  <p class="problem-line">Flow-focused core–shell capsule process development for regenerative-medicine workflows.</p>
  <div class="evidence-table compact-evidence-table">
@@ -71,8 +68,7 @@ body_class: projects-page
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="project-thumbnail thumbnail-automation"><span>AUTOMATION</span></div>
- <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal cycling</span></div>
+  <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal cycling</span></div>
  <h2>Thermocycler Process Automation</h2>
  <p class="problem-line">PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.</p>
  <div class="evidence-table compact-evidence-table">
@@ -88,7 +84,7 @@ body_class: projects-page
 <section class="additional-work-section compact-additional-section" aria-label="Additional technical work and operations proof">
  <div class="supporting-proof-header section-header-tight">
  <strong>Additional evidence</strong>
- <span>Compact proof points that add materials, assay, and operations context without competing with the major technical case files.</span>
+ <span>Compact proof points that add materials, assay, and operations context without competing with the four major projects.</span>
  </div>
 
  <div class="additional-evidence-strip">

@@ -6,13 +6,13 @@ tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
 ---
 
-<div class="selected-outcomes stat-hero-strip microencap-stats">
+<div class="selected-outcomes micro-stats-hero">
  <p class="system-label small">SELECTED OUTCOMES</p>
- <div class="metric-strip metric-hero-grid">
-  <span class="major-stat"><strong>20×</strong><em>throughput increase</em></span>
-  <span class="major-stat"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
-  <span><strong>Lower coalescence</strong><em>via flow/crosslinking adjustment</em></span>
-  <span><strong>QC workflow</strong><em>supported by microscopy inspection</em></span>
+ <div class="metric-strip stat-strip">
+  <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
+  <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
+  <span><strong>Lower coalescence</strong><em>from flow/crosslinking adjustment</em></span>
+  <span><strong>QC workflow</strong><em>microscopy-supported inspection</em></span>
  </div>
 </div>
 
@@ -33,23 +33,10 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 ## Process schematic
 
-<div class="microfluidic-artifact proof-artifact-card" aria-label="Flow-focused microencapsulation process schematic">
- <div>
-  <p class="system-label small">PROCESS SCHEMATIC</p>
-  <h3>Stream convergence → capsule QC</h3>
-  <p>Representative public schematic of the process logic: streams converge at a flow-focusing junction, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</p>
- </div>
- <div class="microfluidic-schematic" aria-hidden="true">
-  <div class="micro-input core">Core stream</div>
-  <div class="micro-input shell">Shell stream</div>
-  <div class="micro-input phase">Continuous phase</div>
-  <div class="junction-node">Flow-focusing<br>junction</div>
-  <div class="capsule-train"><i></i><i></i><i></i><i></i></div>
-  <div class="dwell-channel">Crosslink dwell region</div>
-  <div class="collection-cup">Collection</div>
-  <div class="qc-card">Microscopy QC<br><strong>yield / coalescence decision</strong></div>
- </div>
-</div>
+<figure class="microfluidic-visual-card">
+ <img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Representative flow-focused microencapsulation schematic with three input streams, junction, dwell region, collection, and microscopy QC." loading="lazy">
+ <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
+</figure>
 
 ## Process knobs
 
@@ -77,5 +64,5 @@ This project is process development in a biomedical context: identify the critic
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

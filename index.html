@@ -7,7 +7,9 @@ body_class: home-page
 <section class="hero">
  <div class="hero-inner">
  <div class="hero-copy">
- <p class="hero-kicker-line">Process Development Portfolio · Chemical &amp; Biomolecular Engineering · Georgia Tech</p>
+ <div class="hero-identity hero-identity-single" aria-label="Portfolio identity">
+ <span><strong>Process Development Portfolio</strong> · Chemical &amp; Biomolecular Engineering · Georgia Tech</span>
+ </div>
  <h1><span class="hero-title-line">Making the future</span><span class="hero-title-line">manufacturable.</span></h1>
  <p class="hero-lede">
  From printed electronics to stem-cell biotech, I build the processes that turn breakthroughs into products.
@@ -30,11 +32,12 @@ body_class: home-page
  <p class="system-label small">FEATURED CASE FILE</p>
  <h2>Micromodular Printed Electronics</h2>
  <p class="signature-subtitle">Substrate-controlled deposition windows for printed-electronics assembly.</p>
+ <div class="case-meta-row"><span>Featured</span><span>5 min read</span></div>
  <div class="signature-proof-grid" aria-label="Flagship proof points">
  <span><strong>Problem</strong> Suspended microdevices crowd, raft, pin, and accumulate during droplet spreading, drying, and imbibition.</span>
  <span><strong>Method</strong> Microscopy + image analysis to compare substrate/backing conditions and extract contact-line dynamics.</span>
  <span class="signature-output"><strong>Output</strong> Process-window logic for selecting deposition conditions in scalable printed-electronics assembly.</span>
- <span class="featured-tool-list"><strong>Tools</strong><em>Optical microscopy</em><em>ImageJ/Fiji</em><em>Python</em><em>Substrate screening</em><em>JMP</em></span>
+ <span class="tools-row"><strong>Tools</strong> <em>Optical microscopy</em><em>ImageJ/Fiji</em><em>Python</em><em>Substrate screening</em><em>JMP</em></span>
  </div>
  <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file <span aria-hidden="true">→</span></a>
  </div>
@@ -48,7 +51,7 @@ body_class: home-page
    <div class="mini-density-map" aria-label="Representative edge center deposition map"><i></i><b>edge/center map</b></div>
    <div class="mini-decision-chain" aria-label="Process decision chain"><span>video</span><em></em><span>metric</span><em></em><span>decision</span></div>
   </div>
-  <p class="artifact-caption">Representative public artifact formats: normalized radius trace, edge/center deposition map, and video-to-decision pipeline.</p>
+  <p class="artifact-caption">Representative metric formats for communicating deposition behavior without exposing unpublished lab images.</p>
  </aside>
  </div>
 </section>
@@ -65,9 +68,6 @@ body_class: home-page
  <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Process Development</a>
  <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Wet Processing</a>
  <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Reliability</a>
- <a class="proof-tag supporting-tag" href="{{ '/projects/process-simulation-design/' | relative_url }}">Aspen</a>
- <a class="proof-tag supporting-tag" href="{{ '/projects/process-simulation-design/' | relative_url }}">PFDs</a>
- <a class="proof-tag supporting-tag" href="{{ '/projects/process-simulation-design/' | relative_url }}">Balances</a>
  <a class="proof-tag" href="{{ '/projects/operations-quality-systems/' | relative_url }}">Quality Systems</a>
  </div>
  </div>
@@ -112,25 +112,25 @@ body_class: home-page
  <div class="section-heading">
  <p class="system-label">SUPPORTING ENGINEERING CASE FILES</p>
  <h2>Other proof-of-work, same process discipline.</h2>
- <p>The flagship deposition project is the anchor. These supporting case files show the same measurement-to-decision pattern across reliability, microfluidics, and automation.</p>
+ <p>The flagship deposition project anchors the portfolio; these supporting case files show the same measurement-to-decision pattern across reliability, microfluidics, and automation.</p>
  </div>
 
  <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid">
- <article class="portfolio-card evidence-card home-no-thumb-card">
+ <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Reliability · Process Control</span><span>Electrical drift</span></div>
  <h2>Printed Interconnect &amp; FET Reliability</h2>
  <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to process-control feedback.</p>
  <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
  </article>
 
- <article class="portfolio-card evidence-card home-no-thumb-card">
- <div class="card-topline"><span>Microfluidics · Process Development</span><span>20× throughput</span></div>
+ <article class="portfolio-card evidence-card">
+ <div class="card-topline"><span>Microfluidics · Process Development</span><span class="metric-pill-strong">20× throughput</span></div>
  <h2>Scalable Stem-Cell Microencapsulation</h2>
  <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to improve capsule throughput and usable yield.</p>
  <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
- <article class="portfolio-card evidence-card home-no-thumb-card">
+ <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal control</span></div>
  <h2>Thermocycler Process Automation</h2>
  <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
@@ -140,21 +140,21 @@ body_class: home-page
  </div>
 </section>
 
-<section class="human-service-band home-human-context" aria-label="Background">
- <article class="home-human-copy">
+<section class="human-service-band human-context-card" aria-label="Background">
+ <figure class="human-context-photo">
+ <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Portrait of Nathan Anderson" loading="lazy">
+ </figure>
+ <article>
  <p class="system-label">HUMAN CONTEXT</p>
- <h2>Built for technical work that reaches people.</h2>
- <p class="human-quote">“The future often appears first as a fragile lab result. The harder question is what it takes to make that result reliable enough to leave the lab.”</p>
+ <h2>Technical work should reach people.</h2>
+ <blockquote>“The future often appears first as a fragile lab result. The harder question is what it takes to make that result reliable enough to leave the lab.”</blockquote>
  <p>
  Background explains the personal thread behind my interest in accessible, scalable technology and why process engineering became the path from discovery to delivery.
  </p>
  <div class="inline-links">
- <a class="button secondary" href="{{ '/background/' | relative_url }}">Read background <span aria-hidden="true">→</span></a>
+ <a class="button tertiary" href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
  </div>
  </article>
- <figure class="home-human-portrait">
- <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Portrait of Nathan Anderson" loading="lazy">
- </figure>
 </section>
 
 <section class="cta-band recruiter-cta" aria-label="Recruiting call to action">
@@ -166,6 +166,6 @@ body_class: home-page
  <div class="cta-row compact-cta">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View Case Files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Email Me</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
  </div>
 </section>

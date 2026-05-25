@@ -50,6 +50,9 @@ subtitle: Chemical engineering as the science of delivery.
   <article>
     <h2>Bridge to technical work</h2>
     <p>The case files on this site show that bridge in practice: extracting normalized radius traces from droplet videos, comparing substrate/backing conditions, tracking resistance drift under stress, tuning flow ratio and crosslink dwell time, and measuring ramp rate, overshoot, and hold stability.</p>
-    <div class="background-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">View my case files <span aria-hidden="true">→</span></a><a class="button secondary" href="{{ '/contact/' | relative_url }}">Contact me</a></div>
+    <div class="background-cta-row">
+      <a class="button primary" href="{{ '/projects/' | relative_url }}">View my case files <span aria-hidden="true">→</span></a>
+      <a class="button secondary" href="{{ '/contact/' | relative_url }}">Contact me</a>
+    </div>
   </article>
 </section>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Representative flow-focused microencapsulation schematic</title>
+  <desc id="desc">Core, shell, and continuous phase streams converge at a flow-focusing junction, form capsules, pass through a crosslink dwell region, and proceed to collection and microscopy QC.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#eefafa"/></linearGradient>
+    <linearGradient id="teal" x1="0" x2="1"><stop stop-color="#08708b"/><stop offset="1" stop-color="#2fb6ce"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#08708b" opacity=".72"/></marker>
+    <style>
+      .label{font:700 18px Inter,Arial,sans-serif;fill:#0f2d31;letter-spacing:-.02em}.small{font:700 12px ui-monospace,Menlo,monospace;fill:#5f7679;letter-spacing:.08em;text-transform:uppercase}.line{fill:none;stroke:#08708b;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.soft{fill:#e7f7fb;stroke:#08708b;stroke-opacity:.18}.drop{fill:url(#teal);opacity:.84}.shell{fill:none;stroke:#08708b;stroke-width:7;opacity:.85}.dim{fill:none;stroke:#4c936c;stroke-width:5;stroke-dasharray:8 8;opacity:.55}
+    </style>
+  </defs>
+  <rect width="920" height="420" rx="34" fill="url(#bg)"/>
+  <path d="M80 110 H300 C342 110 352 168 392 186" class="line"/>
+  <path d="M80 210 H306 C340 210 356 206 392 206" class="line"/>
+  <path d="M80 310 H300 C342 310 352 248 392 226" class="line"/>
+  <text x="82" y="78" class="small">CORE STREAM</text>
+  <text x="82" y="202" class="small">SHELL STREAM</text>
+  <text x="82" y="348" class="small">CONTINUOUS PHASE</text>
+  <rect x="384" y="156" width="92" height="92" rx="28" class="soft"/>
+  <path d="M404 202 H456 M430 176 V228" stroke="#08708b" stroke-width="6" stroke-linecap="round" opacity=".64"/>
+  <text x="365" y="278" class="label">flow-focusing junction</text>
+  <path d="M476 202 C530 202 542 202 594 202" class="line"/>
+  <circle cx="535" cy="202" r="22" class="drop"/><circle cx="535" cy="202" r="34" class="shell"/>
+  <circle cx="585" cy="202" r="16" class="drop" opacity=".65"/><circle cx="585" cy="202" r="25" class="shell" opacity=".65"/>
+  <rect x="620" y="148" width="124" height="108" rx="24" fill="#fff" stroke="#08708b" stroke-opacity=".18"/>
+  <path d="M638 188 C658 154 694 154 724 188 C696 216 662 216 638 188Z" class="dim"/>
+  <text x="628" y="284" class="label">crosslink dwell</text>
+  <path d="M744 202 C780 202 794 202 830 202" class="line"/>
+  <rect x="818" y="152" width="72" height="100" rx="22" fill="#fff" stroke="#08708b" stroke-opacity=".18"/>
+  <path d="M835 170 V238 M856 170 V238 M878 170 V238" stroke="#08708b" stroke-width="3" opacity=".22"/>
+  <circle cx="854" cy="212" r="11" class="drop" opacity=".55"/><circle cx="854" cy="212" r="18" class="shell" opacity=".55"/>
+  <text x="807" y="284" class="label">collection + QC</text>
+</svg>

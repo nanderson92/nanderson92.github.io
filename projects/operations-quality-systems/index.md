@@ -9,12 +9,12 @@ subtitle: "Translating high-volume operations leadership into manufacturing-rele
 
 This page is not a lab project. It is a transferable systems case: high-volume food-service operations taught me to operate real systems under pressure — bottlenecks, quality logs, standard work, preventive maintenance, training, and real-time corrective action.
 
-<div class="selected-outcomes compact-selected-outcomes stat-hero-strip ops-stats">
+<div class="selected-outcomes operations-stats-hero">
  <p class="system-label small">SELECTED OUTCOMES</p>
- <div class="metric-strip metric-hero-grid ops-metric-grid">
-  <span class="major-stat"><strong>+20%</strong><em>cars/hour</em></span>
-  <span class="major-stat"><strong>-15%</strong><em>order-to-handoff time</em></span>
-  <span class="major-stat"><strong>~30%</strong><em>downtime reduction</em></span>
+ <div class="metric-strip stat-strip ops-stat-strip">
+  <span class="stat-primary"><strong>+20%</strong><em>cars/hour</em></span>
+  <span class="stat-primary"><strong>-15%</strong><em>order-to-handoff time</em></span>
+  <span class="stat-primary"><strong>~30%</strong><em>downtime reduction</em></span>
  </div>
 </div>
 
@@ -24,11 +24,11 @@ Manufacturing environments care about throughput, uptime, quality checks, people
 
 ## Operations translated into manufacturing instincts
 
-<div class="ops-translation-grid">
- <article><span>Clock</span><strong>Peak rush line balancing</strong><p>Bottleneck recognition and throughput management</p></article>
- <article><span>Check</span><strong>Food safety / CCP logs</strong><p>QC discipline and documentation</p></article>
- <article><span>Wrench</span><strong>Preventive maintenance routines</strong><p>Uptime and reliability mindset</p></article>
- <article><span>Team</span><strong>Crew training</strong><p>Standard work and execution consistency</p></article>
+<div class="operations-translation-grid">
+ <div><span>01</span><strong>Peak rush line balancing</strong><p>Bottleneck recognition and throughput management.</p></div>
+ <div><span>02</span><strong>Food safety / CCP logs</strong><p>QC discipline and documentation.</p></div>
+ <div><span>03</span><strong>Preventive maintenance routines</strong><p>Uptime and reliability mindset.</p></div>
+ <div><span>04</span><strong>Crew training</strong><p>Standard work and execution consistency.</p></div>
 </div>
 
 ## Roles represented
@@ -46,5 +46,5 @@ This section sits below the technical case files. It tells a recruiter: I have n
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

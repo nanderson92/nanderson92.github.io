@@ -8,28 +8,16 @@ subtitle: MBE deposition and characterization of Se/In thin films for band-gap a
 
 ## Summary
 
-This compact case file captures semiconductor materials work focused on thin-film growth and characterization. It supports the broader portfolio by showing cleanroom-adjacent materials experience, high-vacuum deposition exposure, and characterization literacy.
+This compact case file captures semiconductor materials work focused on thin-film growth and characterization. It supports the broader portfolio by showing cleanroom-adjacent materials experience, high-vacuum deposition exposure, and characterization literacy: how growth conditions show up as morphology, phase, composition, and structural signatures.
 
 ## Problem / motivation
 
 Thin-film semiconductor properties depend strongly on deposition conditions, crystallinity, composition, and microstructure. The engineering task is to connect growth parameters to measurable material quality and device-relevant behavior.
 
-## Representative characterization artifact
-
-<div class="semiconductor-artifact proof-artifact-card" aria-label="Representative thin-film characterization artifact">
- <div>
-  <p class="system-label small">CHARACTERIZATION VIEW</p>
-  <h3>Growth condition → film response</h3>
-  <p>A compact public artifact format for showing how deposition conditions connect to morphology, crystallinity, composition, and device-relevant material quality.</p>
- </div>
- <div class="semiconductor-mini-visual" aria-hidden="true">
-  <div class="sem-wafer"></div>
-  <div class="sem-trace"></div>
-  <span class="sem-label sem-label-a">SEM morphology</span>
-  <span class="sem-label sem-label-b">XRD phase</span>
-  <span class="sem-label sem-label-c">XPS composition</span>
- </div>
-</div>
+<figure class="thin-film-visual-card">
+ <img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Representative thin-film characterization schematic connecting MBE growth to SEM, XRD, XPS, and Raman readouts." loading="lazy">
+ <figcaption>Representative characterization map: deposition conditions only become useful when they can be connected to film structure and device-relevant material quality.</figcaption>
+</figure>
 
 ## Deposition-to-characterization flow
 
@@ -59,5 +47,5 @@ The value of this project is materials-process thinking: changing deposition con
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

@@ -9,9 +9,9 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
- <h2>Let’s connect around process engineering and future manufacturing.</h2>
+ <h2>Let’s connect around process engineering and advanced manufacturing.</h2>
  <p>
- I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, and clean-technology deployment.
+ I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.
  </p>
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
  <span>Process development internships / co-ops</span>
@@ -19,7 +19,7 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  <span>Research-to-engineering conversations</span>
  </div>
  <div class="resume-actions contact-action-row">
- <a class="button primary" href="mailto:nanderson92@gatech.edu">Start an Email</a>
+ <a class="button primary" href="mailto:{{ site.email }}">Start an Email</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="{{ site.linkedin }}">LinkedIn</a>
  <a class="button tertiary" href="{{ site.github }}">GitHub</a>
@@ -57,8 +57,8 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
 <section class="contact-methods contact-reveal" aria-label="Contact methods">
  <article>
  <span>Email</span>
- <strong>nanderson92@gatech.edu</strong>
- <a href="mailto:nanderson92@gatech.edu">Start an email →</a>
+ <strong>{{ site.email }}</strong>
+ <a href="mailto:{{ site.email }}">Start an email →</a>
  </article>
  <article>
  <span>Resume</span>

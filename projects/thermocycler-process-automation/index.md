@@ -40,6 +40,17 @@ PCR thermal cycling depends on repeatable heating and cooling between temperatur
  </div>
 </div>
 
+<div class="hardware-interface-card proof-artifact-card" aria-label="Representative thermocycler hardware interface map">
+ <div>
+  <p class="system-label small">HARDWARE INTERFACE VIEW</p>
+  <h3>Controller → actuator → thermal mass → sensor</h3>
+  <p>A representative hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p>
+ </div>
+ <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram">
+  <span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span>
+ </div>
+</div>
+
 ## Control-loop schematic
 
 <div class="process-map control-loop-map" aria-label="Representative PID thermal control schematic">
@@ -79,5 +90,5 @@ This project shows automation as process engineering: define the required state 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:nanderson92@gatech.edu">Contact</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>
