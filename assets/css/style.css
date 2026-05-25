@@ -5967,3 +5967,27 @@ h1, .hero h1, .page-hero h1, .projects-index-hero h1 {
   .project-tile { padding: 20px; }
   .big-stat-strip strong { font-size: 3.5rem; }
 }
+
+/* Final builder pass: keep workflow diagrams prominent and ensure generated image/portrait assets are the dominant visuals. */
+.builder-wide-workflow,
+.wide-figure,
+.microfluidic-schematic-figure,
+.thermocycler-profile-figure,
+.reliability-plot-figure {
+  max-width: min(var(--max), 100%) !important;
+}
+.human-context-photo img { object-position: center center; }
+@media (min-width: 1280px) {
+  .content-shell,
+  .page-hero-inner,
+  .hero-inner,
+  .signature-case-section,
+  .proof-section,
+  .human-service-band,
+  .cta-band,
+  .contact-system-grid,
+  .contact-methods,
+  .contact-fit-panel {
+    width: min(var(--max), calc(100% - 80px));
+  }
+}
