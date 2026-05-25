@@ -3,20 +3,20 @@ layout: page
 title: Contact
 body_class: contact-page
 category: Opportunities
-subtitle: For internships, co-ops, research conversations, and process-engineering opportunities.
+subtitle: For process-development work, research conversations, hard-tech startups, and engineering roles.
 ---
 
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
- <h2>Let’s connect around process engineering and advanced manufacturing.</h2>
+ <h2>Process engineering, R&amp;D, manufacturing, and clean technology.</h2>
  <p>
  I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.
  </p>
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
- <span>Process development internships / co-ops</span>
- <span>Advanced manufacturing and semiconductor roles</span>
- <span>Research-to-engineering conversations</span>
+ <span>Process-development roles, co-ops, or contract work</span>
+ <span>Advanced manufacturing and semiconductor-adjacent R&amp;D</span>
+ <span>Early-stage hard-tech teams that need a ChemE/process perspective</span>
  </div>
  <div class="resume-actions contact-action-row">
  <a class="button primary" href="mailto:{{ site.email }}">Start an Email</a>
@@ -30,7 +30,7 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  <div class="contact-panel-header">
  <p class="system-label small">DIRECT MESSAGE</p>
  <h2>Send a concise note.</h2>
- <p>Use this form for recruiting, project conversations, or technical collaboration. It routes directly to my email.</p>
+ <p>Use this form for recruiting, project conversations, or technical collaboration. It routes directly to nanderson92@gatech.edu.</p>
  </div>
  <form class="contact-form" action="https://formspree.io/f/xkoeblkb" method="POST">
  <input type="hidden" name="_subject" value="Portfolio contact form message">
@@ -67,7 +67,7 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
  </article>
  <article>
  <span>Projects</span>
- <strong>Engineering case files</strong>
+ <strong>Build logs</strong>
  <a href="{{ '/projects/' | relative_url }}">View work →</a>
  </article>
 </section>
@@ -75,9 +75,9 @@ subtitle: For internships, co-ops, research conversations, and process-engineeri
 <section class="contact-fit-panel contact-reveal" aria-label="Best-fit conversations">
  <p class="system-label small">BEST-FIT CONVERSATIONS</p>
  <div class="matrix contact-fit-grid">
- <div class="matrix-card"><h3>Process engineering internships / co-ops</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
+ <div class="matrix-card"><h3>Process-development work</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
  <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
- <div class="matrix-card"><h3>Biotech process development</h3><p>Microfluidics, stem-cell encapsulation, microscopy QC, and scale-up-aware biological workflows.</p></div>
+ <div class="matrix-card"><h3>Early-stage hard-tech</h3><p>Comfortable being the ChemE/process person in the room and figuring out the first version of a wet-processing line.</p></div>
  <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>
  </div>
 </section>

@@ -1,23 +1,28 @@
 ---
 layout: page
 title: Droplet and Image Analysis Workflows
-category: Computation / Experimental Measurement
+category: Video → metric pipeline
 subtitle: Image segmentation, calibration, droplet tracking, and time-series extraction for process metrics.
 ---
 
 ## Summary
 
-This case file covers workflows for converting microscopy videos and droplet images into quantitative measurements that support process engineering decisions.
+Raw microscopy videos are not engineering metrics by themselves. I built workflows that turn video into comparable variables: droplet radius, contact-line motion, contact angle, volume proxy, and deposition distribution.
 
 ## Problem / motivation
 
-Raw microscopy videos are not engineering metrics by themselves. To compare substrates, droplets, and process conditions, the images must be segmented, calibrated, checked, and converted into time-series outputs such as droplet radius, contact angle, volume, or deposition distribution.
+To compare substrates, droplets, and process conditions, images have to be segmented, calibrated, checked, and converted into time-series outputs. The hard part was making the workflow repeatable enough that the metric reflected the experiment rather than a thresholding artifact.
 
 ## System schematic
 
-<div class="project-schematic schematic-compute" aria-label="Representative image analysis workflow schematic">
-  <div class="compute-flow"><span>VIDEO</span><i></i><span>SEGMENT</span><i></i><span>CALIBRATE</span><i></i><span>METRICS</span></div>
-  <p>Representative public workflow for converting raw video into comparable process variables.</p>
+<div class="process-map compact-flow-map" aria-label="Representative image analysis workflow schematic">
+ <div class="process-map-stage"><p>VIDEO</p><span>raw frames</span><span>scale bar</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>SEGMENT</p><span>edge detection</span><span>threshold checks</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>CALIBRATE</p><span>pixels to length</span><span>time base</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage decision-stage"><p>METRICS</p><span>r(t), θ(t), V(t), edge/center ratio</span></div>
 </div>
 
 ## My role
@@ -25,10 +30,6 @@ Raw microscopy videos are not engineering metrics by themselves. To compare subs
 <div class="role-block">
   <p>Built and troubleshot image-analysis workflows, calibrated videos, extracted droplet boundaries and time-series variables, and connected raw visual observations to process metrics.</p>
 </div>
-
-## Technical challenge
-
-The core challenge is repeatability. Edge detection, contrast, scale calibration, thresholding, and frame handling can change the extracted metric. A useful workflow must be consistent enough to compare conditions and transparent enough to audit.
 
 ## Variables extracted
 
@@ -57,12 +58,12 @@ The core challenge is repeatability. Edge detection, contrast, scale calibration
 
 <div class="badge-row"><span class="badge">Python</span><span class="badge">ImageJ/Fiji</span><span class="badge">MATLAB</span><span class="badge">Segmentation</span><span class="badge">Time Series</span></div>
 
-## Engineering interpretation
+## What I’d do next
 
-The value of this project is measurement discipline. A better image workflow makes experimental comparisons stronger because it turns visual behavior into traceable variables that can be linked to substrate and process conditions.
+The next version would turn the workflow into a small reproducible tool: load video, confirm calibration, extract contact line, export a standard plot, and save every processing choice. That audit trail matters because small segmentation choices can change the process conclusion.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

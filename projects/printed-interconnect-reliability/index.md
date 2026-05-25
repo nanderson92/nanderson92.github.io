@@ -1,25 +1,25 @@
 ---
 layout: page
 title: Printed Interconnect & FET Reliability
-category: Supporting Case File
+category: Resistance drift → go/no-go logic
 tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: Turning electrical drift and pass/fail behavior into process-control feedback for printed micromodular circuits.
+subtitle: "Electrical measurements only matter when they change a process decision: pass, monitor, fail, or trace the failure back to surface prep, deposition, cure, or handling."
 ---
 
 ## Summary
 
-This case file focuses on reliability and process control for printed interconnects and device test structures in a micromodular electronics workflow. The project turns electrical measurements into manufacturing decisions: what is stable, what is drifting, what fails, and which process step likely caused it.
+Printed interconnects can look fine at first and still fail later through drift, intermittent opens, weak contacts, or stress-induced degradation. I treated those electrical symptoms as process feedback instead of isolated test results.
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
- <p>Built and used electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, correlated failures to surface-prep/deposition/cure steps, and framed the results as CTQs, acceptance limits, and process-window feedback.</p>
+ <p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p>
 </div>
 
-<div class="connection-note"><strong>Connection to flagship:</strong> The deposition project asks where devices land. This reliability project asks whether the printed interconnects and device interfaces remain electrically usable after assembly.</div>
+<div class="connection-note"><strong>Connection:</strong> Deposition asks where devices land. Reliability asks whether the printed interconnects and device interfaces stay electrically usable after assembly.</div>
 
 ## Problem / motivation
 
-Printed interconnects can look acceptable initially but fail later through resistance drift, intermittent opens, weak contacts, surface-prep defects, or stress-induced degradation. A useful manufacturing process needs more than a one-time “works / does not work” check; it needs a measurement loop that makes yield and failure modes visible.
+A one-time “works / does not work” check is too late and too coarse for manufacturing. The hard part was converting electrical behavior into a repeatable screen: initial resistance below limit, drift above threshold, open circuit, or intermittent contact behavior.
 
 ## Where this project fits in the workflow
 
@@ -68,6 +68,10 @@ Printed interconnects can look acceptable initially but fail later through resis
  <div class="process-map-stage decision-stage"><p>ADJUST</p><span>surface prep / deposition / cure / handling</span></div>
 </div>
 
+## What did not work at first
+
+The easy mistake was treating a failed trace as just “bad data.” The more useful move was to preserve the failure class: drift, open, intermittent, or high initial resistance. Those categories point to different process causes, so collapsing them into one fail bucket would erase the information a manufacturing process needs.
+
 ## Variables studied
 
 | Variable | Why it matters |
@@ -92,19 +96,15 @@ Printed interconnects can look acceptable initially but fail later through resis
  <span class="badge">JMP</span>
  <span class="badge">Excel</span>
  <span class="badge">Reliability</span>
- <span class="badge">CTQs</span>
+ <span class="badge">Threshold Logic</span>
 </div>
 
-## Engineering interpretation
+## What I’d do next
 
-The value of this project is not just plotting resistance. It is building a feedback loop: measure the electrical output, classify the failure mode, identify likely process causes, then tighten the process window.
-
-## Manufacturing relevance
-
-This is the language of process engineering inside semiconductor-adjacent R&amp;D: CTQs, screening, yield visibility, reliability, acceptance limits, failure mechanisms, and standardization.
+If I were building this into a production screen, I would standardize one resistance-normalization workflow and require each test to return both a number and a failure class. The next useful artifact is not a prettier plot; it is a short decision table that tells an operator what to change when a trace drifts, opens, or behaves intermittently.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>
+ <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition build →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

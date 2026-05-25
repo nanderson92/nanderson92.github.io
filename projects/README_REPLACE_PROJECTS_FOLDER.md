@@ -7,4 +7,4 @@ This edited version intentionally removes the old standalone pages for:
 - `droplet-image-analysis/`
 - `process-simulation-design/`
 
-The image-analysis workflow is now folded into the flagship `micromodular-deposition/` case file, and process simulation is omitted until it has a concrete artifact.
+The image-analysis workflow is now folded into the flagship `micromodular-deposition/` project, and process simulation is omitted until it has a concrete artifact.

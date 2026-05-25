@@ -1,16 +1,16 @@
 ---
 layout: page
 title: DNA/PCR Flexibility Assay Development
-category: Additional Technical Work
+category: Maher Lab, Mayo Clinic
 tags: Molecular Biology · PCR · Experimental Design
 subtitle: Earlier research developing experiments to measure DNA flexibility at extremely short base-pair lengths.
 ---
 
-<p class="credential-line"><strong>Maher Lab, Mayo Clinic</strong> · DNA/PCR assay development</p>
+<p class="credential-line"><strong>Earliest research: Maher Lab, Mayo Clinic</strong> · DNA/PCR assay development</p>
 
 ## Summary
 
-This compact case file captures earlier molecular-biology research experience from the Maher Lab at Mayo Clinic. It is included as evidence of long-term experimental training, assay development, controls, troubleshooting, and comfort with precise biological workflows.
+This earlier work shows where my experimental habits started: careful protocol execution, controls, troubleshooting, and small-signal measurement discipline.
 
 ## Problem / motivation
 
@@ -42,12 +42,12 @@ DNA mechanics at very short lengths are difficult to probe because small length 
 
 <div class="badge-row"><span class="badge">PCR</span><span class="badge">DNA</span><span class="badge">Assay Development</span><span class="badge">Experimental Design</span><span class="badge">Mayo Clinic</span></div>
 
-## Engineering interpretation
+## What I’d do next
 
-This earlier work shows where my process-development habits started: careful experimental design, controlled workflows, documentation, and troubleshooting under small-signal measurement constraints.
+If I were expanding this page, I would add a public-safe schematic of the assay design and the control logic rather than more prose. The useful signal here is experimental discipline: how to keep a fragile molecular workflow auditable enough to trust the readout.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

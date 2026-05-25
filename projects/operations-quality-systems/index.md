@@ -1,13 +1,9 @@
 ---
 layout: page
 title: Operations & Quality Systems
-category: Systems / Quality / Operations
-subtitle: "Translating high-volume operations leadership into manufacturing-relevant instincts: throughput, quality, standard work, and corrective action."
+category: 110 cars/hr peak operations
+subtitle: "I managed a McDonald’s drive-through that served 110 cars per hour at peak. Here is what that taught me about bottlenecks, quality loops, and keeping a system running when everything is breaking."
 ---
-
-## Summary
-
-This page is not a lab project. It is a transferable systems case: high-volume food-service operations taught me to operate real systems under pressure — bottlenecks, quality logs, standard work, preventive maintenance, training, and real-time corrective action.
 
 <div class="selected-outcomes operations-stats-hero">
  <p class="system-label small">SELECTED OUTCOMES</p>
@@ -18,9 +14,9 @@ This page is not a lab project. It is a transferable systems case: high-volume f
  </div>
 </div>
 
-## Why it belongs on the portfolio
+## Summary
 
-Manufacturing environments care about throughput, uptime, quality checks, people systems, repeatability, and execution under pressure. Operations leadership is one of the clearest non-lab ways I developed those instincts.
+High-volume food-service operations taught me to operate live systems under pressure: bottlenecks, staffing, handoff timing, QC logs, preventive maintenance, training, and real-time corrective action all matter at once.
 
 ## Operations translated into manufacturing instincts
 
@@ -31,6 +27,10 @@ Manufacturing environments care about throughput, uptime, quality checks, people
  <div><span>04</span><strong>Crew training</strong><p>Standard work and execution consistency.</p></div>
 </div>
 
+## What changed how I think
+
+At McDonald’s, peak drive-through performance improved when I stopped treating the line as a set of individual workers and started treating it as a coupled flow system. Prep, order staging, payment, handoff, staffing, and equipment uptime all determined the outcome before the customer ever reached the window.
+
 ## Roles represented
 
 <div class="matrix">
@@ -39,12 +39,12 @@ Manufacturing environments care about throughput, uptime, quality checks, people
  <div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Small-business operations, staffing, customer flow, inventory awareness, and ownership mentality.</p></div>
 </div>
 
-## Portfolio interpretation
+## What I’d do next
 
-This section sits below the technical case files. It tells a recruiter: I have not only run experiments; I have managed live systems where quality, speed, and people execution mattered every shift.
+If I were applying this to a hardware startup, I would build the first version of a simple operating dashboard: bottleneck station, downtime reason, defect/rework note, and corrective action. The point would not be bureaucracy; it would be making the repeated failure modes visible early enough to change the system.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

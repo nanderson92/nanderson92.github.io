@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Scalable Stem-Cell Microencapsulation
-category: Supporting Case File
+title: Stem-Cell Microencapsulation
+category: 20× throughput increase
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
 ---
@@ -16,6 +16,11 @@ subtitle: Flow-focused core–shell capsule process development for regenerative
  </div>
 </div>
 
+<figure class="poster-proof-card project-photo-card">
+ <img src="{{ '/assets/images/nathan-anderson-poster.jpg' | relative_url }}" alt="Nathan Anderson presenting alginate-core microcapsule research at Mayo Clinic." loading="eager">
+ <figcaption>Public research artifact: Mayo Clinic poster presentation on alginate-core microcapsules for encapsulation and 3D culture of ARPE-19 cells.</figcaption>
+</figure>
+
 ## Summary
 
 Developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
@@ -25,11 +30,9 @@ Developed and tuned a flow-focused microfluidic encapsulation process for core�
  <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
-<div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as an operating-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
-
 ## Problem / motivation
 
-Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The process challenge is balancing capsule complexity, throughput, uniformity, and cell compatibility.
+Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The hard part was balancing capsule complexity, throughput, uniformity, and cell compatibility without turning the process into a fragile one-off demonstration.
 
 ## Process schematic
 
@@ -37,6 +40,10 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
  <img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Representative flow-focused microencapsulation schematic with three input streams, junction, dwell region, collection, and microscopy QC." loading="lazy">
  <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
 </figure>
+
+## What did not work at first
+
+Higher throughput was not automatically better. When flow and crosslinking conditions were not matched, faster production increased coalescence and reduced the fraction of usable capsules. That pivot made the project less about “make more capsules” and more about finding the operating window where throughput and capsule quality improved together.
 
 ## Process knobs
 
@@ -47,7 +54,6 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 | Collection condition | Post-formation environment | Aggregation, coalescence |
 | Cell suspension handling | Biological compatibility | Viability/usefulness |
 
-
 ## Methods and tools
 
 <div class="two-col">
@@ -57,12 +63,12 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 <div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
 
-## Engineering interpretation
+## What I’d do next
 
-This project is process development in a biomedical context: identify the critical process variables, connect them to capsule quality, and tune the operating window to improve yield and stability.
+If I were building the next version, I would separate the process into two controls: one loop for capsule formation at the nozzle and one loop for post-formation stabilization. The current workflow treats collection and crosslinking as downstream handling steps, but at scale they become part of the process window.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

@@ -1,21 +1,19 @@
 ---
 layout: page
 title: Thermocycler Process Automation
-category: Supporting Case File
+category: PID thermal control
 tags: Automation · Controls · Diagnostics · Hardware
-subtitle: PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.
+subtitle: "A biological protocol only works in hardware if the temperature-time trajectory is repeatable: ramp rate, overshoot, settling time, and hold stability are the real product requirements."
 ---
 
 ## Summary
 
-This case file presents a thermocycler automation project focused on building repeatable thermal control for RT-qPCR-style workflows. The engineering challenge is turning a biological protocol into a controllable temperature-time process.
+This thermocycler build turned an RT-qPCR-style biological protocol into a controlled temperature-time process. The hard part was not writing PID code; it was making the measured temperature represent what the sample actually experiences.
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
  <p>Prototyped an embedded-controller thermocycler, integrated heating/cooling and sensor feedback, tuned PID behavior, and evaluated ramp rate, overshoot, settling time, and steady-state temperature stability.</p>
 </div>
-
-<div class="connection-note"><strong>Connection to flagship:</strong> This project extends the same measurement-to-control mindset into automation: define the controlled variable, measure dynamic response, tune the system, and quantify repeatability.</div>
 
 ## Problem / motivation
 
@@ -63,6 +61,10 @@ PCR thermal cycling depends on repeatable heating and cooling between temperatur
  <div class="process-map-stage decision-stage"><p>FEEDBACK</p><span>sensor signal vs. sample temperature estimate</span></div>
 </div>
 
+## What did not work at first
+
+The first control problem looked like a software problem, but the limiting issue was physical: sensor placement, thermal lag, and heat transfer through the block. Better tuning helped only after the hardware response was treated as part of the process.
+
 ## Variables studied
 
 | Variable | Why it matters |
@@ -83,12 +85,12 @@ PCR thermal cycling depends on repeatable heating and cooling between temperatur
 
 <div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
 
-## Engineering interpretation
+## What I’d do next
 
-This project shows automation as process engineering: define the required state trajectory, build the feedback loop, measure performance, and tune the system until the physical process follows the protocol.
+The next version would measure closer to the actual sample, not just the thermal block. I would also design the controller around the slowest physical response in the system instead of only chasing faster setpoint tracking, because overshoot that looks acceptable on the block can still be bad for the assay.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

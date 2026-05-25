@@ -6,7 +6,7 @@ subtitle: Wet processing, interfacial transport, printed electronics, image-deri
 ---
 
 <div class="section-note">
-  <strong>Research vs. Projects:</strong> Research is the academic and technical framing: questions, mechanisms, methods, and manufacturing relevance. Projects are proof-of-work case files with methods, outputs, tools, status, and artifacts.
+  <strong>Research vs. Projects:</strong> Research is the academic and technical framing: questions, mechanisms, methods, and manufacturing relevance. Projects are proof-of-work projects with methods, outputs, tools, status, and artifacts.
 </div>
 
 ## Research direction

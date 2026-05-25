@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Process Simulation and Design
-category: Process Engineering Case File
-subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions.
+category: PFDs → decisions
+subtitle: "Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions."
 ---
 
 ## Summary
 
-This case file collects process-engineering work where a chemical process is converted from a description into a defensible flowsheet, balance structure, and operating decision.
+This build log collects process-engineering work where a chemical process is converted from a description into a defensible flowsheet, balance structure, and operating decision.
 
 ## Problem / motivation
 
@@ -15,9 +15,14 @@ Process design work can look abstract until the assumptions are visible. A credi
 
 ## System schematic
 
-<div class="project-schematic schematic-pfd" aria-label="Representative process flow diagram schematic">
-  <div class="pfd-row"><span>FEED</span><i></i><span>MIX</span><i></i><span>SEPARATE</span><i></i><span>PRODUCT</span></div>
-  <p>Representative PFD logic for making assumptions, streams, unit operations, and design decisions visible.</p>
+<div class="process-map compact-flow-map" aria-label="Representative process flow diagram schematic">
+ <div class="process-map-stage"><p>FEED</p><span>composition</span><span>basis</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>MIX / REACT</p><span>assumptions</span><span>extent</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>SEPARATE</p><span>VLE</span><span>recovery</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage decision-stage"><p>PRODUCT</p><span>purity, yield, duty, feasibility</span></div>
 </div>
 
 ## My role
@@ -57,12 +62,12 @@ The core challenge is converting a process objective into quantitative design lo
 
 <div class="badge-row"><span class="badge">Aspen</span><span class="badge">PFDs</span><span class="badge">Balances</span><span class="badge">MATLAB</span><span class="badge">Excel</span></div>
 
-## Engineering interpretation
+## What I’d do next
 
-The value of this project is the ability to make process assumptions visible and turn calculations into clear decisions. That is the core skill behind scale-up, process development, and manufacturing support.
+The next version would make assumptions more visible: a front-page basis table, one sensitivity plot, and one decision statement. Process simulation becomes useful when someone can see what would change the answer.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>
