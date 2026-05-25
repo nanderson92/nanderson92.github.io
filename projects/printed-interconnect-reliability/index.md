@@ -3,14 +3,12 @@ layout: page
 title: Printed Interconnect & FET Reliability
 category: Supporting Case File
 tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.
+subtitle: Turning electrical drift and pass/fail behavior into process-control feedback for printed micromodular circuits.
 ---
 
 ## Summary
 
 This case file focuses on reliability and process control for printed interconnects and device test structures in a micromodular electronics workflow. The project turns electrical measurements into manufacturing decisions: what is stable, what is drifting, what fails, and which process step likely caused it.
-
-<div class="buildout-note">artifact buildout — plots, simplified device schematics, and threshold logic will be added as artifacts.</div>
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
@@ -27,15 +25,47 @@ Printed interconnects can look acceptable initially but fail later through resis
 
 <figure class="wide-figure">
  <img src="{{ '/assets/images/micromodular-workflow-interconnect-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the interconnect subsystem highlighted across analyzing components, planning wiring, and printing wires." loading="lazy">
- <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the interconnect subsystem: analyzing printed component layouts, planning the wiring path, and printing the interconnects that turn placed components into a working circuit.</figcaption>
+ <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the interconnect subsystem: analyzing printed component layouts, planning wiring paths, and printing the interconnects that turn placed components into working circuits.</figcaption>
 </figure>
 
-## Engineering framing
+## Representative reliability artifact
 
-<div class="matrix">
- <div class="matrix-card"><h3>Process variables</h3><p>Surface preparation, primer/film chemistry, deposition conditions, curing history, geometry, and handling.</p></div>
- <div class="matrix-card"><h3>Measured signals</h3><p>Initial resistance, drift, intermittent opens, pass/fail yield, stress response, and device-to-device variation.</p></div>
- <div class="matrix-card"><h3>Control response</h3><p>Acceptance thresholds, rework rules, failure-mode notes, and process-window adjustments.</p></div>
+<div class="reliability-artifact proof-artifact-card" aria-label="Representative resistance drift and go/no-go threshold artifact">
+ <div>
+  <p class="system-label small">PUBLIC ARTIFACT FORMAT</p>
+  <h3>Resistance drift → threshold decision</h3>
+  <p>A sanitized resistance-trace format communicates how raw electrical measurements become process-control feedback.</p>
+  <ul>
+   <li><strong>Initial R below limit:</strong> pass screen.</li>
+   <li><strong>Drift above threshold:</strong> monitor or fail.</li>
+   <li><strong>Open circuit:</strong> fail.</li>
+   <li><strong>Intermittent behavior:</strong> handling/contact failure candidate.</li>
+  </ul>
+ </div>
+ <div class="resistance-plot" aria-label="Representative resistance versus time plot with thresholds">
+  <span class="plot-axis y">R/R₀</span>
+  <span class="plot-axis x">stress interval</span>
+  <i class="threshold fail"></i>
+  <i class="threshold warn"></i>
+  <b class="trace stable"></b>
+  <b class="trace drift"></b>
+  <b class="trace failtrace"></b>
+  <em class="label pass">pass</em>
+  <em class="label drift-label">drift</em>
+  <em class="label fail-label">fail</em>
+ </div>
+</div>
+
+## Process-control loop
+
+<div class="process-map reliability-loop" aria-label="Printed interconnect reliability process-control loop">
+ <div class="process-map-stage"><p>FABRICATE</p><span>surface prep</span><span>print</span><span>cure</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>MEASURE</p><span>initial R</span><span>stress interval</span><span>R drift</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>CLASSIFY</p><span>pass</span><span>drift</span><span>open</span><span>intermittent</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage decision-stage"><p>ADJUST</p><span>surface prep / deposition / cure / handling</span></div>
 </div>
 
 ## Variables studied
@@ -65,14 +95,6 @@ Printed interconnects can look acceptable initially but fail later through resis
  <span class="badge">CTQs</span>
 </div>
 
-## Outputs to add
-
-<div class="matrix">
- <div class="matrix-card"><h3>Resistance vs. time</h3><p>plot showing drift, stabilization, or failure behavior.</p></div>
- <div class="matrix-card"><h3>Go/no-go screen</h3><p>Threshold logic for turning raw readings into pass/fail and rework decisions.</p></div>
- <div class="matrix-card"><h3>Process-control loop</h3><p>Diagram linking electrical signatures back to surface prep, deposition, cure, and handling steps.</p></div>
-</div>
-
 ## Engineering interpretation
 
 The value of this project is not just plotting resistance. It is building a feedback loop: measure the electrical output, classify the failure mode, identify likely process causes, then tighten the process window.
@@ -81,12 +103,8 @@ The value of this project is not just plotting resistance. It is building a feed
 
 This is the language of process engineering inside semiconductor-adjacent R&amp;D: CTQs, screening, yield visibility, reliability, acceptance limits, failure mechanisms, and standardization.
 
-## Ongoing development
-
-Add a resistance drift plot, define failure/drift thresholds, and include one simplified process-control diagram that shows how test data feeds back into process changes.
-
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
+ <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

@@ -8,16 +8,24 @@ subtitle: Flow-focused core–shell capsule process development for regenerative
 
 ## Summary
 
-This case file presents microfluidic process-development work for producing core–shell hydrogel microcapsules. The technical goal is to make capsules that are structurally useful, biologically compatible, and scalable enough to support stem-cell workflows.
+Developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 
-<div class="buildout-note">artifact buildout — add capsule schematics, process-variable tables, and QC visuals as available.</div>
+<div class="selected-outcomes">
+ <p class="system-label small">SELECTED OUTCOMES</p>
+ <div class="metric-strip">
+  <span><strong>20×</strong> throughput increase</span>
+  <span><strong>~50%</strong> encapsulation-yield improvement</span>
+  <span><strong>Lower coalescence</strong> through flow/crosslinking adjustment</span>
+  <span><strong>QC workflow</strong> supported by microscopy inspection</span>
+ </div>
+</div>
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
  <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
-<div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as a process-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
+<div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as an operating-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
 
 ## Problem / motivation
 
@@ -25,10 +33,21 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 ## Process schematic
 
-<div class="project-schematic schematic-pfd" aria-label="Representative microencapsulation process schematic">
- <div class="pfd-row"><span>CORE</span><i></i><span>SHELL</span><i></i><span>NOZZLE</span><i></i><span>CAPSULE QC</span></div>
- <p>Representative flow-focused encapsulation logic · recreated schematic, not raw lab imagery.</p>
+<div class="microfluidic-artifact proof-artifact-card" aria-label="Flow-focused microencapsulation process schematic">
+ <div class="microfluidic-flow">
+  <span>Core stream</span><i></i><span>Shell stream</span><i></i><span>Continuous phase</span><b></b><span>Flow-focusing junction</span><i></i><span>Crosslink dwell region</span><i></i><span>Collection</span><i></i><span>Microscopy QC</span><i></i><span>Yield / coalescence decision</span>
+ </div>
+ <p>Representative public schematic of the process logic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</p>
 </div>
+
+## Process knobs
+
+| Knob | Mechanism | Output affected |
+|---|---|---|
+| Continuous/dispersed flow ratio | Shear and droplet breakup | Capsule size, throughput, coalescence |
+| Crosslink dwell time | Shell formation | Stability, handling, yield |
+| Collection condition | Post-formation environment | Aggregation, coalescence |
+| Cell suspension handling | Biological compatibility | Viability/usefulness |
 
 ## Engineering framing
 
@@ -37,17 +56,6 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
  <div class="matrix-card"><h3>Process knobs</h3><p>Continuous/dispersed flow ratio, nozzle behavior, shear, crosslink dwell time, and collection conditions.</p></div>
  <div class="matrix-card"><h3>Outputs</h3><p>Capsule generation rate, coalescence, encapsulation yield, capsule uniformity, and biological compatibility.</p></div>
 </div>
-
-## Variables studied
-
-| Variable | Why it matters |
-|---|---|
-| Continuous flow ratio | Controls shear, droplet breakup, capsule size, and coalescence risk. |
-| Crosslink dwell time | Affects shell formation, mechanical stability, and downstream handling. |
-| Polymer / hydrogel chemistry | Determines shell properties, permeability, and biological compatibility. |
-| Capsule throughput | Determines whether the process can plausibly scale. |
-| Coalescence rate | Directly affects yield and usable capsule quality. |
-| Microscopy QC | Converts visual capsule behavior into process feedback. |
 
 ## Methods and tools
 
@@ -58,21 +66,9 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 <div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
 
-## Portfolio artifacts to add
-
-<div class="matrix">
- <div class="matrix-card"><h3>Capsule schematic</h3><p>drawing of core–shell capsule structure and process streams.</p></div>
- <div class="matrix-card"><h3>Process window</h3><p>Flow ratio vs. capsule quality table or plot.</p></div>
- <div class="matrix-card"><h3>QC summary</h3><p>Coalescence, yield, throughput, and representative acceptance criteria.</p></div>
-</div>
-
 ## Engineering interpretation
 
 This project is process development in a biomedical context: identify the critical process variables, connect them to capsule quality, and tune the operating window to improve yield and stability.
-
-## Ongoing development
-
-Add a recreated microfluidic-device schematic, one capsule-quality figure, and a short process table showing how flow and crosslinking conditions affected yield/coalescence.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

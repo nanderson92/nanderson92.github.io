@@ -3,7 +3,7 @@ layout: page
 title: Contact
 body_class: contact-page
 category: Opportunities
-subtitle: Recruiter-friendly contact page for technical internships, co-ops, research, and engineering conversations.
+subtitle: For internships, co-ops, research conversations, and process-engineering opportunities.
 ---
 
 <div class="contact-system-grid contact-reveal">
@@ -19,14 +19,14 @@ subtitle: Recruiter-friendly contact page for technical internships, co-ops, res
  <span>Research-to-engineering conversations</span>
  </div>
  <div class="resume-actions contact-action-row">
- <a class="button primary" href="mailto:{{ site.email }}">Email Me</a>
+ <a class="button primary" href="mailto:{{ site.email }}">Start an Email</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="{{ site.linkedin }}">LinkedIn</a>
  <a class="button tertiary" href="{{ site.github }}">GitHub</a>
  </div>
  </section>
 
- <section class="contact-form-panel" aria-label="Contact form">
+ <section class="contact-form-panel soft-form-panel" aria-label="Contact form">
  <div class="contact-panel-header">
  <p class="system-label small">DIRECT MESSAGE</p>
  <h2>Send a concise note.</h2>
@@ -72,12 +72,12 @@ subtitle: Recruiter-friendly contact page for technical internships, co-ops, res
  </article>
 </section>
 
-## Best-fit conversations
-
-<p class="section-intro contact-reveal">I’m most excited about conversations involving these areas, though I’m always open to technical discussions beyond them.</p>
-
-<div class="matrix contact-fit-grid contact-reveal">
- <div class="matrix-card"><h3>Process engineering opportunities</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
+<section class="contact-fit-panel contact-reveal" aria-label="Best-fit conversations">
+ <p class="system-label small">BEST-FIT CONVERSATIONS</p>
+ <div class="matrix contact-fit-grid">
+ <div class="matrix-card"><h3>Process engineering internships / co-ops</h3><p>Wet processing, process development, PFDs, balances, simulation, and plant/manufacturing environments.</p></div>
  <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
+ <div class="matrix-card"><h3>Biotech process development</h3><p>Microfluidics, stem-cell encapsulation, microscopy QC, and scale-up-aware biological workflows.</p></div>
  <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>
-</div>
+ </div>
+</section>

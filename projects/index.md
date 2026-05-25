@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Process Development Case Files
 category: Engineering Proof-of-Work
-subtitle: Process development, micromodular electronics, micro/nano manufacturing, reliability, automation, and operations systems.
+subtitle: Case files in wet processing, micromodular electronics, micro/nano manufacturing, reliability, automation, and operations systems.
 body_class: projects-page
 ---
 
@@ -11,16 +11,16 @@ body_class: projects-page
  <article class="portfolio-card evidence-card flagship-project-card">
  <div class="flagship-project-copy">
  <div class="project-thumbnail thumbnail-wet"><span>WET PROCESSING</span></div>
- <div class="card-topline"><span>Semiconductors · Wet Processing · Interfacial Transport · Image-Derived Metrics</span><span>Status: Active flagship</span></div>
+ <div class="card-topline"><span>Semiconductors · Wet Processing · Interfacial Transport · Image-Derived Metrics</span><span>2025–present</span></div>
  <h2>Micromodular Electronics Deposition</h2>
  <p class="problem-line">Substrate-controlled process windows for stochastic microdevice placement.</p>
  <p>
- This is my strongest process-development case study. It connects wet processing, porous substrates, contact-line dynamics, microscopy, Python/ImageJ analysis, and manufacturing decision-making into one project.
+ Converted droplet-deposition videos into process variables, contact-line metrics, and substrate-selection criteria for micromodular printed-electronics assembly.
  </p>
  <div class="evidence-table flagship-evidence-table">
- <span><strong>Core proof</strong> I can take a visually messy experimental system and turn it into process inputs, measurable outputs, and substrate-selection criteria.</span>
+ <span><strong>Measured outputs</strong> r(t)/r₀, contact-line behavior, radial density, edge/center ratio, useful areal density, and repeatability.</span>
  <span><strong>Best-fit roles</strong> Process engineering · wet processing · semiconductor-adjacent manufacturing · printed electronics · R&amp;D engineering · manufacturing analytics.</span>
- <span class="output-row"><strong>Output</strong> Process-window framework connecting droplet transport, substrate design, edge/center deposition logic, and downstream interconnect feasibility.</span>
+ <span class="output-row"><strong>Decision logic</strong> Identify boundary conditions that reduce edge crowding and preserve interconnect access.</span>
  <span><strong>Tools</strong> Keyence · Rame-Hart · Python · ImageJ/Fiji · JMP · optical microscopy.</span>
  </div>
  <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open flagship case file →</a></p>
@@ -33,20 +33,19 @@ body_class: projects-page
 
 <section class="supporting-project-section" aria-label="Supporting engineering case files">
  <div class="supporting-proof-header section-header-tight">
- <strong>Supporting engineering case files</strong>
+ <strong>Supporting technical case files</strong>
  <span>Three additional technical stories that support the same process-development profile.</span>
  </div>
 
  <div class="portfolio-grid projects-library supporting-card-grid">
  <article class="portfolio-card evidence-card">
  <div class="project-thumbnail thumbnail-reliability"><span>RELIABILITY</span></div>
- <div class="card-topline"><span>Reliability · Process Control</span><span>Status: Active buildout</span></div>
+ <div class="card-topline"><span>Reliability · Process Control</span><span>Active research</span></div>
  <h2>Printed Interconnect &amp; FET Reliability</h2>
- <p class="problem-line">Electrical test, resistance drift, yield visibility, and process-control loops for micromodular electronics.</p>
- <div class="evidence-table">
- <span><strong>Problem</strong> Printed interconnects and device interfaces can fail through resistance drift, intermittent opens, and process-step variability.</span>
- <span><strong>Method</strong> Keithley go/no-go screening, threshold limits, stress comparisons, failure-mode interpretation, JMP analysis, and process-step correlation.</span>
- <span class="output-row"><strong>Output</strong> Reliability plots, CTQ logic, screening pipeline notes, and process-window recommendations for tighter yield control.</span>
+ <p class="problem-line">Turning electrical drift and pass/fail behavior into process-control feedback for printed micromodular circuits.</p>
+ <div class="evidence-table compact-evidence-table">
+ <span><strong>Signal</strong> Initial resistance, drift, intermittent opens, and stress response.</span>
+ <span><strong>Output</strong> Resistance-trace format, go/no-go threshold logic, and process-control loop.</span>
  <span><strong>Tools</strong> Keithley · Python · JMP · Excel · optical microscopy.</span>
  </div>
  <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
@@ -54,71 +53,42 @@ body_class: projects-page
 
  <article class="portfolio-card evidence-card">
  <div class="project-thumbnail thumbnail-microfluidics"><span>MICROFLUIDICS</span></div>
- <div class="card-topline"><span>Microfluidics · Process Development</span><span>Status: New case file</span></div>
+ <div class="card-topline"><span>Microfluidics · Process Development</span><span>20× throughput</span></div>
  <h2>Scalable Stem-Cell Microencapsulation</h2>
  <p class="problem-line">Flow-focused core–shell capsule process development for regenerative-medicine workflows.</p>
- <div class="evidence-table">
- <span><strong>Problem</strong> Complex hydrogel microcapsules need throughput, low coalescence, and repeatable capsule quality without compromising biological utility.</span>
- <span><strong>Method</strong> Flow-ratio tuning, crosslink dwell-time optimization, PEG/alginate core–shell capsule fabrication, and microscopy-based QC.</span>
- <span class="output-row"><strong>Output</strong> Improved encapsulation yield, reduced coalescence, stable capsule-production conditions, and process-development notes.</span>
- <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control · image-based inspection.</span>
+ <div class="evidence-table compact-evidence-table">
+ <span><strong>Measured outcomes</strong> 20× throughput increase and ~50% encapsulation-yield improvement.</span>
+ <span><strong>Method</strong> Flow-ratio tuning, crosslink dwell time, and microscopy-supported QC.</span>
+ <span><strong>Tools</strong> Microfluidics · microscopy · cell culture · flow control.</span>
  </div>
  <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="project-thumbnail thumbnail-automation"><span>AUTOMATION</span></div>
- <div class="card-topline"><span>Automation · Diagnostics</span><span>Status: New case file</span></div>
+ <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal cycling</span></div>
  <h2>Thermocycler Process Automation</h2>
  <p class="problem-line">PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.</p>
- <div class="evidence-table">
- <span><strong>Problem</strong> RT-qPCR workflows require fast ramping, stable temperature holds, and repeatable automated thermal control.</span>
- <span><strong>Method</strong> Embedded controller prototyping, heater/cooling integration, sensor feedback, PID tuning, calibration, and repeatability checks.</span>
- <span class="output-row"><strong>Output</strong> Functional thermocycler prototype with quantified ramp rate and steady-state temperature stability.</span>
- <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · Python/microcontroller code · RT-qPCR workflow logic.</span>
+ <div class="evidence-table compact-evidence-table">
+ <span><strong>Controlled outputs</strong> Ramp rate, overshoot, settling time, hold stability, and steady-state error.</span>
+ <span><strong>Method</strong> Embedded controller prototyping, sensor feedback, PID tuning, and repeatability checks.</span>
+ <span><strong>Tools</strong> ESP32/Arduino · PID control · sensors · RT-qPCR workflow logic.</span>
  </div>
  <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
  </article>
  </div>
 </section>
 
-<section class="additional-work-section" aria-label="Additional technical work and operations proof">
+<section class="additional-work-section compact-additional-section" aria-label="Additional technical work and operations proof">
  <div class="supporting-proof-header section-header-tight">
- <strong>Additional Technical Work</strong>
- <span>Smaller case files that add context around materials research, assay development, operations, and strategy.</span>
+ <strong>Additional evidence</strong>
+ <span>Compact proof points that add materials, assay, operations, and strategy context without competing with the four major projects.</span>
  </div>
 
- <div class="additional-card-grid">
- <article class="portfolio-card evidence-card additional-card">
- <div class="project-thumbnail thumbnail-semiconductors"><span>SEMICONDUCTORS</span></div>
- <h2>Thin Film Semiconductor Growth</h2>
- <p class="problem-line">MBE growth and characterization exposure for device-relevant semiconductor materials.</p>
- <div class="tag-row"><span class="badge">MBE</span><span class="badge">SEM/XRD/XPS</span><span class="badge">Band-gap materials</span></div>
- <p><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p>
- </article>
-
- <article class="portfolio-card evidence-card additional-card">
- <div class="project-thumbnail thumbnail-assay"><span>ASSAY DEVELOPMENT</span></div>
- <h2>DNA/PCR Assay Development</h2>
- <p class="problem-line">Experimental design and troubleshooting for short-length DNA flexibility measurements.</p>
- <div class="tag-row"><span class="badge">PCR</span><span class="badge">Experimental design</span><span class="badge">Troubleshooting</span></div>
- <p><a href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">Open case file →</a></p>
- </article>
-
- <article class="portfolio-card evidence-card additional-card">
- <div class="project-thumbnail thumbnail-operations"><span>OPERATIONS</span></div>
- <h2>Operations &amp; Quality Systems</h2>
- <p class="problem-line">High-volume operational leadership translated into throughput, QC, and corrective-action instincts.</p>
- <div class="tag-row"><span class="badge">Throughput</span><span class="badge">QC logs</span><span class="badge">Corrective actions</span></div>
- <p><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open case file →</a></p>
- </article>
-
- <article class="portfolio-card evidence-card additional-card">
- <div class="project-thumbnail thumbnail-strategy"><span>STRATEGY</span></div>
- <h2>Nonprofit Growth Strategy</h2>
- <p class="problem-line">Client-facing discovery and execution planning for a local Atlanta nonprofit.</p>
- <div class="tag-row"><span class="badge">Discovery</span><span class="badge">Communication</span><span class="badge">Execution planning</span></div>
- <p><a href="{{ '/projects/consult-your-community/' | relative_url }}">Open case file →</a></p>
- </article>
+ <div class="additional-evidence-strip">
+ <a class="evidence-strip-item" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}"><strong>Thin-film semiconductor growth</strong><span>MBE · SEM/XRD/XPS/Raman characterization matrix</span></a>
+ <a class="evidence-strip-item" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}"><strong>DNA/PCR assay development</strong><span>Assay workflow · controls · troubleshooting loop</span></a>
+ <a class="evidence-strip-item" href="{{ '/projects/operations-quality-systems/' | relative_url }}"><strong>Operations &amp; quality systems</strong><span>Throughput · QC logs · standard work · downtime reduction</span></a>
+ <a class="evidence-strip-item" href="{{ '/projects/consult-your-community/' | relative_url }}"><strong>Nonprofit growth strategy</strong><span>Client problem · constraints · roadmap · engagement result</span></a>
  </div>
 </section>

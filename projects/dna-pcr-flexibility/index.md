@@ -10,32 +10,34 @@ subtitle: Earlier research developing experiments to measure DNA flexibility at 
 
 This compact case file captures earlier molecular-biology research experience from the Maher Lab at Mayo Clinic. It is included as evidence of long-term experimental training, assay development, and comfort with precise biological workflows.
 
-<div class="buildout-note">Compact earlier-research case — keep concise and focus on experimental design, troubleshooting, and measurement discipline.</div>
-
 ## Problem / motivation
 
 DNA mechanics at very short lengths are difficult to probe because small length scales demand careful assay design, clean controls, and precise molecular-biology execution.
 
+## Assay workflow
+
+<div class="process-map assay-flow-map" aria-label="DNA PCR assay workflow schematic">
+ <div class="process-map-stage"><p>SAMPLE / DESIGN</p><span>construct logic</span><span>length scale</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>PCR WORKFLOW</p><span>prep</span><span>amplify</span><span>check</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>CONTROL CONDITION</p><span>positive</span><span>negative</span><span>comparison</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage decision-stage"><p>READOUT / LOOP</p><span>measurement and troubleshooting</span></div>
+</div>
+
 ## Methods and tools
 
 <div class="two-col">
- <div class="matrix-card"><h3>Experimental work</h3><p>Assisted with DNA/PCR-based experimental workflows, sample preparation, and troubleshooting.</p></div>
+ <div class="matrix-card"><h3>Experimental work</h3><p>Assisted with DNA/PCR-based experimental workflows, sample preparation, controls, and troubleshooting.</p></div>
  <div class="matrix-card"><h3>Measurement logic</h3><p>Helped develop experiments aimed at measuring DNA flexibility at very short base-pair lengths.</p></div>
 </div>
 
 <div class="badge-row"><span class="badge">PCR</span><span class="badge">DNA</span><span class="badge">Assay Development</span><span class="badge">Experimental Design</span><span class="badge">Mayo Clinic</span></div>
 
-## Portfolio artifacts to add
-
-<div class="matrix">
- <div class="matrix-card"><h3>Assay schematic</h3><p>conceptual drawing of the experimental workflow.</p></div>
- <div class="matrix-card"><h3>Controls</h3><p>Short explanation of what controls were needed and why.</p></div>
- <div class="matrix-card"><h3>Skills transferred</h3><p>Precision, documentation, contamination awareness, and careful troubleshooting.</p></div>
-</div>
-
 ## Engineering interpretation
 
-Although this is earlier work, it adds useful context: my process-development interests started with experimental systems where measurement quality and workflow control mattered.
+This earlier work shows where my process-development habits started: careful experimental design, controlled workflows, documentation, and troubleshooting under small-signal measurement constraints.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

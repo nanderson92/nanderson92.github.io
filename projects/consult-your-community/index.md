@@ -1,19 +1,29 @@
 ---
 layout: page
-title: Consult Your Community: Nonprofit Growth Strategy
+title: Nonprofit Growth Strategy
 category: Strategy / Communication
-subtitle: Pro-bono consulting for a local Atlanta nonprofit, focused on actionable growth recommendations and client-ready communication.
+subtitle: Client-facing consulting through Consult Your Community, focused on realistic growth recommendations and implementation-ready communication.
 ---
 
 ## Summary
 
 This compact case file captures client-facing consulting work through Consult Your Community. It belongs on the portfolio as evidence of communication, structured problem solving, stakeholder awareness, and implementation-minded recommendations.
 
-<div class="buildout-note">Compact strategy case — keep shorter than the technical projects and link to résumé for details.</div>
+<div class="selected-outcomes compact-selected-outcomes">
+ <p class="system-label small">SELECTED OUTCOME</p>
+ <div class="metric-strip">
+  <span><strong>+400%</strong> social media engagement</span>
+ </div>
+</div>
 
-## Problem / motivation
+## Mini case
 
-Small nonprofits often need strategy that is realistic, actionable, and aligned with limited organizational bandwidth. The work is less about making a polished slide deck and more about finding recommendations the client can actually implement.
+<div class="mini-client-case">
+ <div><strong>Client problem</strong><span>Local nonprofit needed practical growth and communication strategy.</span></div>
+ <div><strong>Constraints</strong><span>Limited bandwidth, local audience, volunteer/staff capacity, and implementation feasibility.</span></div>
+ <div><strong>Deliverable</strong><span>Prioritized social media/content plan, implementation roadmap, and client-ready presentation.</span></div>
+ <div><strong>Result</strong><span>Engagement-focused recommendation package with measurable social-media lift.</span></div>
+</div>
 
 ## Methods and tools
 
@@ -26,7 +36,7 @@ Small nonprofits often need strategy that is realistic, actionable, and aligned 
 
 ## Portfolio interpretation
 
-This project adds a different kind of evidence: I can translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, and cross-functional teams.
+This project adds a different kind of evidence: I can translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, vendors, and cross-functional teams.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

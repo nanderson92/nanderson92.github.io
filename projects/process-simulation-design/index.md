@@ -4,11 +4,10 @@ title: Process Simulation and Design
 category: Process Engineering Case File
 subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions.
 ---
+
 ## Summary
 
-This case study collects process-engineering work where a chemical process must be converted from a description into a defensible flowsheet, balance structure, and operating decision.
-
-<div class="buildout-note">Case study buildout in progress — current focus: method, metrics, and representative figures.</div>
+This case file collects process-engineering work where a chemical process is converted from a description into a defensible flowsheet, balance structure, and operating decision.
 
 ## Problem / motivation
 
@@ -18,7 +17,7 @@ Process design work can look abstract until the assumptions are visible. A credi
 
 <div class="project-schematic schematic-pfd" aria-label="Representative process flow diagram schematic">
   <div class="pfd-row"><span>FEED</span><i></i><span>MIX</span><i></i><span>SEPARATE</span><i></i><span>PRODUCT</span></div>
-  <p>Representative PFD logic · replace with project-specific flowsheet when ready.</p>
+  <p>Representative PFD logic for making assumptions, streams, unit operations, and design decisions visible.</p>
 </div>
 
 ## My role
@@ -41,6 +40,14 @@ The core challenge is converting a process objective into quantitative design lo
 | Recycle or purge logic | Controls yield, accumulation, and steady-state feasibility. |
 | Thermodynamic model | Determines whether VLE/separation predictions are physically reasonable. |
 
+## Public artifact set
+
+<div class="matrix">
+  <div class="matrix-card"><h3>Process flow diagram</h3><p>Clean PFD with numbered streams and unit-operation logic.</p></div>
+  <div class="matrix-card"><h3>Balance table</h3><p>Feed/product/recycle streams with units, assumptions, and closure checks.</p></div>
+  <div class="matrix-card"><h3>Design tradeoff summary</h3><p>Short explanation of how operating conditions affect feasibility and performance.</p></div>
+</div>
+
 ## Methods and tools
 
 <div class="two-col">
@@ -50,21 +57,9 @@ The core challenge is converting a process objective into quantitative design lo
 
 <div class="badge-row"><span class="badge">Aspen</span><span class="badge">PFDs</span><span class="badge">Balances</span><span class="badge">MATLAB</span><span class="badge">Excel</span></div>
 
-## Outputs to add
-
-<div class="matrix">
-  <div class="matrix-card"><h3>Process flow diagram</h3><p>Clean PFD with numbered streams and unit-operation logic.</p></div>
-  <div class="matrix-card"><h3>Balance table</h3><p>Feed/product/recycle streams with units, assumptions, and closure checks.</p></div>
-  <div class="matrix-card"><h3>Design tradeoff summary</h3><p>Short explanation of how operating conditions affect feasibility and performance.</p></div>
-</div>
-
 ## Engineering interpretation
 
 The value of this project is the ability to make process assumptions visible and turn calculations into clear decisions. That is the core skill behind scale-up, process development, and manufacturing support.
-
-## Next steps
-
-Replace the representative schematic with a real class or independent process model, add stream tables, and include one sensitivity plot or operating-condition comparison.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>

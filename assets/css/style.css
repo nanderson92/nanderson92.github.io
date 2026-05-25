@@ -3213,9 +3213,9 @@ body.home-page .site-footer::after,
   }
 }
 
-/* === Homepage hero motion + below-fold case study spacing ===
+/* === Homepage hero motion + below-fold case file spacing ===
    Keeps the existing fixed-city/scroll-to-white system while making the hero
-   entrance animation consistent and pushing the featured case study below the fold. */
+   entrance animation consistent and pushing the featured case file below the fold. */
 .home-page .hero {
   min-height: 100svh !important;
   min-height: 100vh !important;
@@ -3379,7 +3379,7 @@ body.home-page .site-footer::after,
 }
 
 /* === Final hero featured-case cue positioning + unified entrance motion ===
-   Places the featured case study cue in the true center of the viewport near the
+   Places the featured case file cue in the true center of the viewport near the
    lower edge of the hero, keeps it below the CTA row, and gives the cue text +
    arrow one shared animation and one shared hover behavior. */
 .home-page .hero {
@@ -4565,4 +4565,526 @@ body.home-page::before {
   .field textarea {
     min-height: 160px;
   }
+}
+
+/* === Contact page animation tune: soften the form entrance ===
+   The left email card and right form card now enter as separate, slower panels
+   instead of the whole contact grid popping in at once. */
+@media (prefers-reduced-motion: no-preference) {
+  .contact-system-grid.contact-reveal {
+    opacity: 1;
+    animation: none;
+  }
+
+  .contact-system-grid.contact-reveal .contact-intro-panel,
+  .contact-system-grid.contact-reveal .contact-form-panel {
+    opacity: 0;
+    animation: appleFadeUp 1080ms var(--motion-soft) both;
+    will-change: transform, opacity, filter;
+  }
+
+  .contact-system-grid.contact-reveal .contact-intro-panel {
+    animation-delay: 420ms;
+  }
+
+  .contact-system-grid.contact-reveal .contact-form-panel {
+    animation-delay: 520ms;
+  }
+}
+
+/* === Feedback incorporation pass: proof artifacts, cleaner hierarchy, mobile robustness === */
+:root {
+  --accent: #08708b;
+  --accent-soft: #e9f7f8;
+  --accent-line: rgba(8,112,139,.22);
+  --artifact-bg: linear-gradient(180deg, rgba(255,255,255,.88), rgba(244,251,250,.78));
+}
+
+/* Unify CTA language so the site no longer has several unrelated button systems. */
+.button.primary,
+.contact-submit {
+  color: #fff;
+  background: linear-gradient(135deg, #08708b 0%, #0d8eb1 100%);
+  border: 1px solid rgba(8,112,139,.12);
+  box-shadow: 0 14px 30px rgba(8,112,139,.16);
+}
+.button.primary:hover,
+.button.primary:focus-visible,
+.contact-submit:hover,
+.contact-submit:focus-visible {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(8,112,139,.20);
+}
+.button.secondary,
+.button.tertiary,
+.topbar-resume {
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(8,112,139,.18);
+  color: #17383d;
+}
+.button.tertiary { box-shadow: none; }
+.button.secondary:hover,
+.button.tertiary:hover,
+.button.secondary:focus-visible,
+.button.tertiary:focus-visible,
+.topbar-resume:hover,
+.topbar-resume:focus-visible {
+  color: var(--accent);
+  background: rgba(233,247,248,.82);
+  border-color: rgba(8,112,139,.32);
+  transform: translateY(-2px);
+}
+
+.system-label::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: rgba(8,112,139,.52);
+  box-shadow: 0 0 0 4px rgba(8,112,139,.08);
+  vertical-align: 1px;
+}
+.card-topline span:last-child {
+  color: var(--accent);
+  border: 1px solid rgba(8,112,139,.14);
+  background: rgba(233,247,248,.72);
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+
+/* Homepage visible proof object. */
+.enhanced-signature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .82fr);
+  gap: clamp(22px, 4vw, 44px);
+  align-items: center;
+}
+.enhanced-signature-card .signature-visual {
+  margin: 0;
+  min-width: 0;
+}
+.featured-artifact-panel {
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: clamp(18px, 2.6vw, 26px);
+  border: 1px solid rgba(8,112,139,.13);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,.84), rgba(238,249,249,.68));
+  box-shadow: 0 16px 38px rgba(28,84,91,.075);
+}
+.artifact-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+.mini-trace,
+.mini-density-map,
+.mini-decision-chain {
+  min-height: 126px;
+  padding: 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(9,51,56,.10);
+  background: rgba(255,255,255,.76);
+  position: relative;
+  overflow: hidden;
+}
+.mini-trace::before,
+.mini-density-map::before,
+.resistance-plot::before,
+.thermal-plot::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  background:
+    linear-gradient(rgba(9,51,56,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(9,51,56,.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+  border-radius: 14px;
+}
+.mini-trace span,
+.mini-trace span::after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-radius: 999px;
+}
+.mini-trace span {
+  left: 28px;
+  right: 28px;
+  bottom: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(8,112,139,.78), rgba(76,147,108,.62));
+  transform: rotate(-8deg);
+  transform-origin: left center;
+}
+.mini-trace span::after {
+  width: 9px;
+  height: 9px;
+  right: 12px;
+  top: -3px;
+  background: var(--accent);
+}
+.mini-trace b,
+.mini-density-map b {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #365b60;
+}
+.mini-density-map i {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  inset: 24px auto auto 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(255,255,255,.92) 0 26%, rgba(76,147,108,.25) 27% 44%, rgba(8,112,139,.22) 45% 64%, rgba(8,112,139,.08) 65% 100%);
+  border: 1px solid rgba(8,112,139,.20);
+}
+.mini-decision-chain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mini-decision-chain span {
+  padding: 7px 9px;
+  border-radius: 999px;
+  background: rgba(233,247,248,.94);
+  border: 1px solid rgba(8,112,139,.15);
+  font-family: var(--mono);
+  font-size: .64rem;
+  font-weight: 760;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: #25494e;
+}
+.mini-decision-chain em {
+  width: 18px;
+  height: 1px;
+  background: rgba(8,112,139,.38);
+}
+.artifact-caption { margin: 14px 0 0; color: var(--muted); font-size: .92rem; }
+
+/* Project overview compact additional evidence strip. */
+.compact-evidence-table { grid-template-columns: 1fr; }
+.compact-additional-section .additional-card-grid { display: none; }
+.additional-evidence-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+.evidence-strip-item {
+  min-height: 132px;
+  padding: 18px;
+  border: 1px solid rgba(9,51,56,.10);
+  border-radius: 22px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 10px 24px rgba(28,84,91,.055);
+  color: var(--graphite);
+}
+.evidence-strip-item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  letter-spacing: -.02em;
+}
+.evidence-strip-item span { display: block; color: var(--muted); font-size: .9rem; line-height: 1.45; }
+.evidence-strip-item:hover { transform: translateY(-2px); border-color: var(--accent-line); color: var(--accent); }
+.concise-supporting-grid .problem-line { display: none; }
+.concise-supporting-grid .portfolio-card { min-height: 0; }
+
+/* Shared proof artifact panels. */
+.case-summary-box,
+.selected-outcomes,
+.proof-artifact-card,
+.taste-panel,
+.contact-fit-panel {
+  margin: 28px 0;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid rgba(8,112,139,.13);
+  border-radius: 28px;
+  background: var(--artifact-bg);
+  box-shadow: 0 16px 38px rgba(28,84,91,.065);
+}
+.case-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.case-summary-grid span,
+.metric-strip span {
+  display: block;
+  padding: 13px 14px;
+  border: 1px solid rgba(9,51,56,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.68);
+  color: var(--body);
+}
+.case-summary-grid span:last-child { grid-column: 1 / -1; }
+.case-summary-grid strong,
+.metric-strip strong { color: var(--ink); }
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.compact-selected-outcomes .metric-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.proof-artifact-card {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(280px, 1.08fr);
+  gap: clamp(20px, 4vw, 36px);
+  align-items: center;
+}
+.proof-artifact-card ul { margin: 14px 0 0; padding-left: 18px; color: var(--body); }
+.proof-artifact-card li + li { margin-top: 6px; }
+.resistance-plot,
+.thermal-plot {
+  min-height: 270px;
+  border-radius: 24px;
+  border: 1px solid rgba(9,51,56,.10);
+  background: rgba(255,255,255,.70);
+  position: relative;
+  overflow: hidden;
+}
+.plot-axis {
+  position: absolute;
+  z-index: 3;
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+.plot-axis.y { top: 16px; left: 18px; }
+.plot-axis.x { right: 18px; bottom: 16px; }
+.threshold {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  z-index: 2;
+  background: rgba(212,167,44,.50);
+}
+.threshold.warn { top: 42%; }
+.threshold.fail { top: 27%; background: rgba(143,73,73,.46); }
+.trace {
+  position: absolute;
+  left: 38px;
+  width: calc(100% - 76px);
+  height: 3px;
+  border-radius: 999px;
+  z-index: 3;
+  transform-origin: left center;
+}
+.trace.stable { bottom: 34%; background: rgba(76,147,108,.78); transform: rotate(-2deg); }
+.trace.drift { bottom: 45%; background: rgba(212,167,44,.76); transform: rotate(-10deg); }
+.trace.failtrace { bottom: 20%; background: rgba(8,112,139,.58); transform: rotate(-26deg); }
+.label {
+  position: absolute;
+  z-index: 4;
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(9,51,56,.09);
+  font-family: var(--mono);
+  font-size: .6rem;
+  font-style: normal;
+  font-weight: 760;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.label.pass { left: 42px; bottom: 27%; color: #3e7559; }
+.label.drift-label { left: 45%; top: 38%; color: #9c7b24; }
+.label.fail-label { right: 40px; top: 20%; color: #8f4949; }
+
+.thermal-plot .setpoint-line,
+.thermal-plot .measured-line {
+  position: absolute;
+  z-index: 3;
+  left: 34px;
+  right: 34px;
+  height: 118px;
+  top: 70px;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  clip-path: polygon(0 76%, 16% 76%, 25% 16%, 44% 16%, 54% 56%, 72% 56%, 82% 30%, 100% 30%, 100% 35%, 84% 35%, 74% 61%, 52% 61%, 42% 21%, 27% 21%, 18% 81%, 0 81%);
+}
+.thermal-plot .setpoint-line { background: rgba(8,112,139,.26); }
+.thermal-plot .measured-line {
+  top: 82px;
+  background: rgba(76,147,108,.35);
+  clip-path: polygon(0 80%, 18% 78%, 28% 24%, 43% 20%, 55% 60%, 72% 58%, 82% 36%, 100% 34%, 100% 41%, 84% 42%, 74% 65%, 52% 66%, 40% 27%, 29% 32%, 20% 84%, 0 86%);
+}
+.thermal-plot .annot { position: absolute; z-index: 4; font-family: var(--mono); font-size: .6rem; font-style: normal; text-transform: uppercase; letter-spacing: .07em; color: #365b60; background: rgba(255,255,255,.86); border: 1px solid rgba(9,51,56,.08); border-radius: 999px; padding: 4px 7px; }
+.thermal-plot .ramp { left: 22%; top: 36%; }
+.thermal-plot .overshoot { left: 40%; top: 21%; }
+.thermal-plot .hold { right: 9%; top: 46%; }
+
+.microfluidic-artifact { grid-template-columns: 1fr; }
+.microfluidic-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  align-items: center;
+}
+.microfluidic-flow span {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgba(8,112,139,.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,.74);
+  font-family: var(--mono);
+  font-size: .64rem;
+  font-weight: 760;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #25494e;
+}
+.microfluidic-flow i,
+.microfluidic-flow b { display: none; }
+
+/* Background page: more intentional timeline instead of a long repeated essay. */
+.background-lede {
+  margin: 0 0 28px;
+  max-width: 840px;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.4vw, 2.15rem);
+  line-height: 1.18;
+  letter-spacing: -.045em;
+  font-weight: 800;
+}
+.taste-panel h2 { margin: 0 0 10px; }
+.taste-panel p { max-width: 900px; }
+.background-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 34px 0;
+}
+.background-timeline article {
+  padding: 20px;
+  border: 1px solid rgba(9,51,56,.10);
+  border-radius: 24px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 10px 24px rgba(28,84,91,.055);
+}
+.background-timeline span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(233,247,248,.9);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 820;
+}
+.background-timeline h3 { margin: 0 0 8px; line-height: 1.1; }
+.background-timeline p { margin: 0; color: var(--body); font-size: .93rem; line-height: 1.5; }
+
+/* Contact page refinements from feedback. */
+.contact-fit-panel { margin-top: 30px; }
+.soft-form-panel { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.soft-form-panel:hover { transform: translateY(-2px); border-color: rgba(8,112,139,.18); box-shadow: 0 20px 46px rgba(28,84,91,.095); }
+@media (prefers-reduced-motion: no-preference) {
+  .contact-system-grid.contact-reveal .contact-intro-panel,
+  .contact-system-grid.contact-reveal .contact-form-panel {
+    animation-duration: 920ms;
+    animation-timing-function: cubic-bezier(.2,.8,.2,1);
+  }
+  .contact-system-grid.contact-reveal .contact-form-panel { animation-delay: 620ms; }
+}
+
+/* Mobile fixes: stack card media and stop diagrams from crashing into text. */
+@media (max-width: 900px) {
+  .enhanced-signature-card,
+  .flagship-project-card,
+  .proof-artifact-card {
+    grid-template-columns: 1fr !important;
+  }
+  .signature-case-card .signature-visual,
+  .flagship-project-visual {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .artifact-preview-grid,
+  .additional-evidence-strip,
+  .background-timeline,
+  .metric-strip,
+  .compact-selected-outcomes .metric-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .microfluidic-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .process-map,
+  .central-process-map,
+  .reliability-loop,
+  .control-loop-map,
+  .compact-flow-map,
+  .assay-flow-map {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .process-map-arrow {
+    transform: rotate(90deg);
+    justify-self: center;
+    min-height: 26px;
+  }
+  .signature-proof-grid,
+  .evidence-table,
+  .case-summary-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .case-summary-grid span:last-child { grid-column: auto; }
+  .drawer {
+    width: min(340px, calc(100vw - 18px));
+    right: auto;
+  }
+  .drawer-close { flex: 0 0 auto; }
+}
+@media (max-width: 560px) {
+  .artifact-preview-grid,
+  .additional-evidence-strip,
+  .background-timeline,
+  .metric-strip,
+  .compact-selected-outcomes .metric-strip,
+  .microfluidic-flow {
+    grid-template-columns: 1fr;
+  }
+  .featured-artifact-panel,
+  .case-summary-box,
+  .selected-outcomes,
+  .proof-artifact-card,
+  .taste-panel,
+  .contact-fit-panel {
+    border-radius: 22px;
+    padding: 18px;
+  }
+  .resistance-plot,
+  .thermal-plot { min-height: 230px; }
+  .mini-trace,
+  .mini-density-map,
+  .mini-decision-chain { min-height: 112px; }
 }
