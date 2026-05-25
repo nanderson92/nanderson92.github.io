@@ -8,7 +8,7 @@ subtitle: Client-facing consulting through Consult Your Community, focused on re
 
 ## Summary
 
-This compact case file captures client-facing consulting work through Consult Your Community. It belongs on the portfolio as evidence of communication, structured problem solving, stakeholder awareness, and implementation-minded recommendations.
+This compact build log captures client-facing consulting work through Consult Your Community. It belongs on the portfolio as evidence of communication, structured problem solving, stakeholder awareness, and implementation-minded recommendations.
 
 <div class="selected-outcomes compact-selected-outcomes">
  <p class="system-label small">SELECTED OUTCOME</p>
@@ -35,12 +35,12 @@ This compact case file captures client-facing consulting work through Consult Yo
 
 <div class="badge-row"><span class="badge">Consulting</span><span class="badge">Client Communication</span><span class="badge">Strategy</span><span class="badge">PowerPoint</span><span class="badge">Implementation</span></div>
 
-## Portfolio interpretation
+## What I learned
 
 This project adds a different kind of evidence: I can translate analysis into stakeholder-ready recommendations. For process engineering and technical roles, that matters because technical work still has to be communicated to managers, operators, clients, vendors, and cross-functional teams.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">See all projects</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

@@ -1,94 +1,29 @@
 ---
 layout: page
 title: Thermocycler Process Automation
-category: Supporting Case File
-tags: Automation · Controls · Diagnostics · Hardware
-subtitle: PID-controlled thermal cycling hardware for rapid molecular-diagnostics workflows.
+category: Embedded thermal control
+tags: PID Control · ESP32 / Arduino · Diagnostics
+subtitle: I built thermal cycling hardware around ramp rate, overshoot, settling time, and hold stability.
 ---
 
-## Summary
+A thermocycler is not just a box that gets hot and cold. It is a temperature-time process: the biology only works if the sample sees the right profile repeatedly enough to trust the readout.
 
-This case file presents a thermocycler automation project focused on building repeatable thermal control for RT-qPCR-style workflows. The engineering challenge is turning a biological protocol into a controllable temperature-time process.
+<figure class="wide-figure thermocycler-profile-figure"><img src="{{ '/assets/images/thermocycler-profile.svg' | relative_url }}" alt="Representative thermocycler temperature profile showing setpoint and measured temperature." loading="eager"><figcaption>Representative control artifact: setpoint profile versus measured temperature, with ramp rate, overshoot, and hold stability called out.</figcaption></figure>
 
-<div class="role-block">
- <p class="system-label small">MY ROLE</p>
- <p>Prototyped an embedded-controller thermocycler, integrated heating/cooling and sensor feedback, tuned PID behavior, and evaluated ramp rate, overshoot, settling time, and steady-state temperature stability.</p>
-</div>
+## The hard part
 
-<div class="connection-note"><strong>Connection to flagship:</strong> This project extends the same measurement-to-control mindset into automation: define the controlled variable, measure dynamic response, tune the system, and quantify repeatability.</div>
+The hard part was sensor truth. A controller can report that it hit a setpoint while the sample region is still lagging. Early tuning made the actuator look responsive but created overshoot that would be unacceptable in a biological protocol, so I shifted the metric from “reaches temperature” to “settles predictably and holds.”
 
-## Problem / motivation
+## My role
 
-PCR thermal cycling depends on repeatable heating and cooling between temperature setpoints. Poor thermal control creates inconsistent amplification conditions, slower workflows, and unreliable diagnostic performance.
+<div class="role-block"><p>I built and tuned the control workflow around embedded hardware, sensor feedback, PID logic, and repeatable thermal cycling. I focused on the behavior that matters for a protocol: ramp rate, overshoot, settling time, and steady-state error.</p></div>
 
-## Representative control artifact
+## Control loop
 
-<div class="thermal-artifact proof-artifact-card" aria-label="Temperature versus time profile for thermocycler control">
- <div>
-  <p class="system-label small">CONTROL PERFORMANCE VIEW</p>
-  <h3>Setpoint tracking and thermal lag</h3>
-  <p>The representative setpoint-vs-time plot emphasizes the engineering constraints that separate a prototype from a controlled thermal process: sensor placement, ramp-rate limits, overshoot/undershoot, settling time, hold stability, and repeatability across cycles.</p>
- </div>
- <div class="thermal-plot" aria-label="Representative thermal profile with setpoint and measured temperature">
-  <span class="plot-axis y">temperature</span>
-  <span class="plot-axis x">time</span>
-  <b class="setpoint-line"></b>
-  <b class="measured-line"></b>
-  <em class="annot ramp">ramp rate</em>
-  <em class="annot overshoot">overshoot</em>
-  <em class="annot hold">hold stability</em>
- </div>
-</div>
+<div class="process-map compact-flow-map" aria-label="Thermocycler control loop"><div class="process-map-stage"><p>SETPOINT</p><span>denaturation</span><span>annealing</span><span>extension</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>PID</p><span>error</span><span>gain</span><span>update</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>ACTUATION</p><span>heater</span><span>thermal mass</span></div><div class="process-map-arrow">→</div><div class="process-map-stage decision-stage"><p>FEEDBACK</p><span>sensor and sample-lag check</span></div></div>
 
-<div class="hardware-interface-card proof-artifact-card" aria-label="Representative thermocycler hardware interface map">
- <div>
-  <p class="system-label small">HARDWARE INTERFACE VIEW</p>
-  <h3>Controller → actuator → thermal mass → sensor</h3>
-  <p>A representative hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p>
- </div>
- <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram">
-  <span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span>
- </div>
-</div>
+## What I’d do next
 
-## Control-loop schematic
+If I built the next version, I would validate sample-temperature lag directly instead of trusting only the control sensor. I would also log every cycle automatically so drift, overshoot, and hold stability are visible before the biology gets blamed for a hardware problem.
 
-<div class="process-map control-loop-map" aria-label="Representative PID thermal control schematic">
- <div class="process-map-stage"><p>SETPOINT</p><span>denaturation</span><span>annealing</span><span>extension</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>PID</p><span>error</span><span>gain tuning</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>ACTUATION</p><span>heater</span><span>cooling fan</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>FEEDBACK</p><span>sensor signal vs. sample temperature estimate</span></div>
-</div>
-
-## Variables studied
-
-| Variable | Why it matters |
-|---|---|
-| Ramp rate | Determines total cycle time and diagnostic speed. |
-| Steady-state error | Determines whether the sample experiences the intended temperature. |
-| Overshoot / undershoot | Can damage assay performance or reduce repeatability. |
-| Sensor placement | Affects whether measured temperature represents sample temperature. |
-| Controller gains | Determine stability, responsiveness, and oscillation behavior. |
-| Heating/cooling balance | Sets whether the device can transition quickly without excessive lag. |
-
-## Methods and tools
-
-<div class="two-col">
- <div class="matrix-card"><h3>Hardware / control</h3><p>Embedded controller, temperature sensor feedback, heater/fan actuation, PID tuning, and thermal cycling scripts.</p></div>
- <div class="matrix-card"><h3>Validation</h3><p>Thermal profile logging, ramp-rate calculation, hold stability checks, repeatability checks, and protocol comparison.</p></div>
-</div>
-
-<div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
-
-## Engineering interpretation
-
-This project shows automation as process engineering: define the required state trajectory, build the feedback loop, measure performance, and tune the system until the physical process follows the protocol.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">See all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>

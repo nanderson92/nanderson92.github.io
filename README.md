@@ -17,7 +17,7 @@ GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergra
 - Projects
 - Resume
 - Contact
-- Project case file: Micromodular Printed Electronics Deposition
+- Project build log: Micromodular Printed Electronics Deposition
 
 
 ## Cleanup note

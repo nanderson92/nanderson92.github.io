@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Representative resistance drift plot">
+<rect width="720" height="420" rx="34" fill="#fffaf4"/>
+<g stroke="#ead8c3" stroke-width="1"><path d="M90 70V330M210 70V330M330 70V330M450 70V330M570 70V330"/><path d="M72 110H630M72 170H630M72 230H630M72 290H630"/></g>
+<path d="M72 330H640" stroke="#2b2b2b" stroke-width="2"/><path d="M72 70V330" stroke="#2b2b2b" stroke-width="2"/>
+<path d="M76 180H638" stroke="#C47D2B" stroke-width="3" stroke-dasharray="10 10" opacity=".58"/><text x="495" y="170" font-family="ui-monospace,Menlo,monospace" font-size="18" fill="#8C4E18">drift threshold</text>
+<path d="M80 245 C155 243 225 246 290 241 S430 244 610 238" fill="none" stroke="#1f3b46" stroke-width="6" stroke-linecap="round"/>
+<path d="M80 258 C160 252 225 235 300 210 S455 154 610 126" fill="none" stroke="#C47D2B" stroke-width="6" stroke-linecap="round"/>
+<path d="M80 265 C145 262 210 267 265 260 S360 268 410 255 S485 260 515 130 S560 110 610 105" fill="none" stroke="#d85c3a" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 12"/>
+<text x="70" y="40" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#071d24">R/R₀ under stress</text>
+<text x="70" y="382" font-family="ui-monospace,Menlo,monospace" font-size="18" fill="#6b5440">stable · drift · intermittent open</text></svg>

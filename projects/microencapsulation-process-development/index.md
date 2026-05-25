@@ -1,86 +1,36 @@
 ---
 layout: page
 title: Stem-Cell Microencapsulation
-category: Supporting Case File
-tags: Microfluidics · Process Development · Biomedical Manufacturing
-subtitle: Flow-focused core–shell capsule process development for regenerative-medicine workflows.
+category: 20× throughput increase
+tags: Microfluidics · Stem-Cell Biotech · Process Development
+subtitle: I tuned a flow-focused core-shell capsule process until throughput and usable yield moved together.
 ---
 
-<div class="selected-outcomes micro-stats-hero">
- <p class="system-label small">SELECTED OUTCOMES</p>
- <div class="metric-strip stat-strip">
-  <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
-  <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
-  <span><strong>Lower coalescence</strong><em>from flow/crosslinking adjustment</em></span>
-  <span><strong>QC workflow</strong><em>microscopy-supported inspection</em></span>
- </div>
-</div>
+<div class="micro-stats-hero big-stat-strip" aria-label="Selected outcomes"><article><strong>20×</strong><span>throughput increase</span></article><article><strong>~50%</strong><span>encapsulation-yield improvement</span></article><article><strong>Lower</strong><span>coalescence through flow/crosslinking changes</span></article><article><strong>QC</strong><span>microscopy-supported screening workflow</span></article></div>
 
-## Summary
+I worked on a flow-focused microfluidic encapsulation process for core-shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 
-Developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
+## The hard part
 
-<div class="role-block">
- <p class="system-label small">MY ROLE</p>
- <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
-</div>
+The hard part was that throughput and capsule quality wanted to fight each other. Turning the flow rate up made the process faster, but it also exposed weak points in shell formation, collection, and coalescence. One early condition produced more capsules but worse usable output; that forced me to treat yield, not raw droplet count, as the actual metric.
 
-<div class="connection-note"><strong>Connection to flagship:</strong> Like the deposition project, this work treats soft-material fabrication as an operating-window problem: tune flow, dwell time, and collection conditions until the output becomes repeatable.</div>
+<figure class="wide-figure microfluidic-schematic-figure"><img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Microfluidic process schematic showing core stream, shell stream, flow focusing, crosslinking dwell region, collection, and microscopy QC." loading="eager"><figcaption>Process logic: streams converge, capsules form, crosslinking stabilizes the shell, collection preserves the product, and microscopy decides whether the condition is useful.</figcaption></figure>
 
-## Problem / motivation
-
-Microencapsulation is valuable because hydrogel capsules can provide a controlled microenvironment while allowing transport of nutrients and metabolites. The process challenge is balancing capsule complexity, throughput, uniformity, and cell compatibility.
-
-
-## Why this is hard
-
-<div class="matrix hard-problem-grid micro-hard-grid">
- <div class="matrix-card"><h3>Coupled flow fields</h3><p>Core, shell, and continuous phases must converge cleanly; small flow changes can shift size, shell formation, and stability.</p></div>
- <div class="matrix-card"><h3>Crosslinking timing</h3><p>The shell must form fast enough to stabilize the capsule without creating handling or clogging problems.</p></div>
- <div class="matrix-card"><h3>Biological constraints</h3><p>Useful throughput only matters if capsule handling remains compatible with downstream cell-culture requirements.</p></div>
-</div>
-
-## Process schematic
-
-<figure class="microfluidic-visual-card">
- <img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Representative flow-focused microencapsulation schematic with three input streams, junction, dwell region, collection, and microscopy QC." loading="lazy">
- <figcaption>Representative public schematic: streams converge, capsules form, crosslinking stabilizes the shell, and microscopy closes the QC loop.</figcaption>
-</figure>
-
-## Variables studied
-
-| Variable | Why it matters | Output watched |
-|---|---|---|
-| Continuous/dispersed flow ratio | Sets droplet breakup, shear, and capsule size. | Throughput, size consistency, coalescence. |
-| Crosslink dwell time | Controls shell formation and handling stability. | Yield, stability, aggregation. |
-| Collection condition | Sets the post-formation environment. | Coalescence and handling losses. |
-| Microscopy QC criteria | Converts visible capsule quality into a process decision. | Usable yield and defect classification. |
-
-## Process knobs
+## Knobs I tuned
 
 | Knob | Mechanism | Output affected |
 |---|---|---|
 | Continuous/dispersed flow ratio | Shear and droplet breakup | Capsule size, throughput, coalescence |
-| Crosslink dwell time | Shell formation | Stability, handling, yield |
-| Collection condition | Post-formation environment | Aggregation, coalescence |
-| Cell suspension handling | Biological compatibility | Viability/usefulness |
+| Crosslink dwell time | Shell formation and stabilization | Handling stability and usable yield |
+| Collection condition | Post-formation environment | Aggregation and coalescence |
+| Cell suspension handling | Biological compatibility | Viability and usefulness |
 
+## My role
 
-## Methods and tools
+<div class="role-block"><p>I tuned flow conditions, adjusted crosslinking logic, used microscopy to separate good capsules from coalesced or unstable output, and helped translate observations into a better operating window.</p></div>
 
-<div class="two-col">
- <div class="matrix-card"><h3>Process methods</h3><p>Flow-focused microfluidics, capsule generation, crosslinking control, flow-ratio tuning, and yield/coalescence observation.</p></div>
- <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
-</div>
+## What I’d do next
 
-<div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
+If I built this again for a small biotech team, I would add a faster QC loop: size distribution, coalescence count, and shell-integrity scoring immediately after collection. The scale-up risk is not making more capsules; it is preserving a narrow enough distribution that downstream cell-culture conditions still mean what you think they mean.
 
-## Engineering interpretation
-
-This project is process development in a biomedical context: identify the critical process variables, connect them to capsule quality, and tune the operating window to improve yield and stability.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">See all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>

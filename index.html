@@ -4,62 +4,49 @@ title: Home
 body_class: home-page
 ---
 
-<section class="hero">
+<section class="hero builder-hero">
  <div class="hero-inner">
  <div class="hero-copy">
- <div class="hero-identity hero-identity-single" aria-label="Portfolio identity">
- <span><strong>Process Development Portfolio</strong> · Chemical &amp; Biomolecular Engineering · Georgia Tech</span>
- </div>
  <h1><span class="hero-title-line">Making the future</span><span class="hero-title-line">manufacturable.</span></h1>
  <p class="hero-lede">
- Printed electronics, stem-cell biotech, embedded controls — I build the processes that turn breakthroughs into product.
+ Printed electronics, stem-cell biotech, embedded thermal control — I figure out how to manufacture things that mostly only work in labs.
  </p>
  <div class="cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">See the Work</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">See the work</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a>
  </div>
  </div>
  </div>
- <a class="scroll-cue featured-case-cue" href="#featured-case" aria-label="Scroll to featured case file">
- <span>Featured case file</span>
+ <a class="scroll-cue featured-case-cue" href="#featured-project" aria-label="Scroll to selected project">
+ <span>Selected project</span>
  <strong aria-hidden="true">↓</strong>
  </a>
 </section>
 
-<section id="featured-case" class="signature-case-section" aria-label="Featured engineering case file">
- <div class="signature-case-card enhanced-signature-card">
+<section id="featured-project" class="signature-case-section" aria-label="Selected project">
+ <div class="signature-case-card enhanced-signature-card builder-featured-project">
  <div class="signature-copy">
- <p class="system-label small">FEATURED CASE FILE</p>
+ <p class="system-label small">ACTIVE RESEARCH · 2025–PRESENT</p>
  <h2>Micromodular Printed Electronics</h2>
- <p class="signature-subtitle">Substrate-controlled deposition windows for printed-electronics assembly.</p>
- <div class="case-meta-row"><span>Featured</span><span>5 min read</span></div>
- <div class="signature-proof-grid" aria-label="Flagship proof points">
- <span><strong>Problem</strong> Suspended microdevices crowd, raft, pin, and accumulate during droplet spreading, drying, and imbibition.</span>
- <span><strong>Method</strong> Microscopy + image analysis to compare substrate/backing conditions and extract contact-line dynamics.</span>
- <span class="signature-output"><strong>Output</strong> Process-window logic for selecting deposition conditions in scalable printed-electronics assembly.</span>
+ <p class="signature-subtitle">I use droplet videos, substrate tests, and image-derived metrics to turn stochastic microdevice deposition into a screenable manufacturing step.</p>
+ <div class="case-meta-row"><span>Wet processing</span><span>5 min read</span></div>
+ <div class="signature-proof-grid" aria-label="Project proof points">
+ <span><strong>Problem</strong> Suspended microdevices crowd at the edges and land in patterns that are hard to wire.</span>
+ <span><strong>Build</strong> I compare substrates/backings and extract contact-line behavior from top-view and side-view microscopy.</span>
+ <span class="signature-output"><strong>Output</strong> A decision framework the lab uses to screen new substrate boundary conditions.</span>
  <span class="tools-row"><strong>Tools</strong> <em>Optical microscopy</em><em>ImageJ/Fiji</em><em>Python</em><em>Substrate screening</em><em>JMP</em></span>
  </div>
- <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file <span aria-hidden="true">→</span></a>
+ <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Read the build log <span aria-hidden="true">→</span></a>
  </div>
  <figure class="signature-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
  </figure>
- <aside class="featured-artifact-panel" aria-label="Visible proof artifact preview">
-  <p class="system-label small">PUBLIC ARTIFACT PREVIEW</p>
-  <div class="artifact-preview-grid">
-   <div class="mini-trace" aria-label="Representative droplet radius trace"><span></span><b>r(t)/r₀ trace</b></div>
-   <div class="mini-density-map" aria-label="Representative edge center deposition map"><i></i><b>edge/center map</b></div>
-   <div class="mini-decision-chain" aria-label="Process decision chain"><span>video</span><em></em><span>metric</span><em></em><span>decision</span></div>
-  </div>
-  <p class="artifact-caption">Public-safe metric preview: normalized radius behavior, edge/center accumulation, and video-to-decision workflow.</p>
- </aside>
  </div>
 </section>
 
-<section class="proof-section" aria-label="Technical proof bar">
+<section class="proof-section stripped-proof-section" aria-label="Technical proof">
  <div class="proof-heading">
  <p class="system-label small">TECHNICAL PROOF</p>
- 
  </div>
  <div class="proof-groups">
  <div class="proof-group">
@@ -75,11 +62,9 @@ body_class: home-page
  <h3>Research &amp; Materials</h3>
  <div class="proof-bar">
  <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Printed Electronics</a>
- <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Interfacial Transport</a>
- <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Substrate Screening</a>
  <a class="proof-tag" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">MBE</a>
  <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Microfluidics</a>
- <a class="proof-tag" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Cell Culture</a>
+ <a class="proof-tag" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">PCR / Assay Development</a>
  </div>
  </div>
  <div class="proof-group">
@@ -88,8 +73,6 @@ body_class: home-page
  <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Python</a>
  <a class="proof-tag" href="{{ '/projects/process-simulation-design/' | relative_url }}">MATLAB</a>
  <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">JMP</a>
- <a class="proof-tag" href="{{ '/projects/micromodular-deposition/' | relative_url }}">ImageJ/Fiji</a>
- <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Excel</a>
  <a class="proof-tag" href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Image Analysis</a>
  </div>
  </div>
@@ -100,41 +83,39 @@ body_class: home-page
  <a class="proof-tag" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Keithley</a>
  <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">PID Control</a>
  <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">ESP32 / Arduino</a>
- <a class="proof-tag" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Sensors</a>
- <a class="proof-tag" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">PCR / RT-qPCR</a>
  </div>
  </div>
  </div>
 </section>
 
-<section class="home-library project-strip supporting-home-cases" aria-label="Supporting engineering work">
+<section class="home-library project-strip supporting-home-cases" aria-label="More projects">
  <div class="content-shell home-content-shell">
  <div class="section-heading">
- <p class="system-label">SUPPORTING ENGINEERING CASE FILES</p>
- <h2>More case files.</h2>
- <p>Three supporting projects show the same measurement-to-decision pattern across reliability, microfluidics, and automation.</p>
+ <p class="system-label">PROJECTS</p>
+ <h2>Other builds.</h2>
+ <p>Different systems, same habit: measure the thing that breaks, make the decision rule visible, then tighten the process.</p>
  </div>
 
  <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid">
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Reliability · Process Control</span><span>Electrical drift</span></div>
  <h2>Printed Interconnect &amp; FET Reliability</h2>
- <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to process-control feedback.</p>
- <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
+ <p class="compact-card-summary">I track resistance drift and intermittent opens so assembly failures point back to a process step instead of becoming mystery defects.</p>
+ <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Read the build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Microfluidics · Process Development</span><span class="metric-pill-strong">20× throughput</span></div>
- <h2>Scalable Stem-Cell Microencapsulation</h2>
- <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to improve capsule throughput and usable yield.</p>
- <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
+ <h2>Stem-Cell Microencapsulation</h2>
+ <p class="compact-card-summary">I tuned flow ratio, crosslinking, and microscopy QC to make core-shell capsules faster and more consistent.</p>
+ <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Read the build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Automation · Diagnostics</span><span>Thermal control</span></div>
  <h2>Thermocycler Process Automation</h2>
- <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
- <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
+ <p class="compact-card-summary">I built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
+ <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Read the build log →</a></p>
  </article>
  </div>
  </div>
@@ -142,30 +123,28 @@ body_class: home-page
 
 <section class="human-service-band human-context-card" aria-label="Background">
  <figure class="human-context-photo">
- <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Portrait of Nathan Anderson" loading="lazy">
+ <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson presenting microencapsulation research at a Mayo Clinic poster session." loading="lazy">
  </figure>
  <article>
  <p class="system-label">HUMAN CONTEXT</p>
- <h2>Technical work should reach people.</h2>
+ <h2>I care about technology after it leaves the lab.</h2>
  <blockquote>“The future often appears first as a fragile lab result. The harder question is what it takes to make that result reliable enough to leave the lab.”<cite>— Nathan Anderson, Background</cite></blockquote>
- <p>
- Background explains the personal thread behind my interest in accessible, scalable technology and why process engineering became the path from discovery to delivery.
- </p>
+ <p>My background explains why I keep coming back to manufacturing, access, and the physical infrastructure that makes advanced technology real for people outside the research bubble.</p>
  <div class="inline-links">
  <a class="button tertiary" href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
  </div>
  </article>
 </section>
 
-<section class="cta-band recruiter-cta" aria-label="Recruiting call to action">
+<section class="cta-band recruiter-cta" aria-label="Work availability">
  <div>
- <p class="system-label small">FALL 2026 OPPORTUNITIES</p>
- <h2>Open to Fall 2026 technical roles</h2>
- <p>Open to Fall 2026 roles in process development, automation, wet processing, and research-to-engineering workflows — full-time, co-op, or part-time research in advanced manufacturing, semiconductor, energy, and biotech environments.</p>
+ <p class="system-label small">FALL 2026</p>
+ <h2>Looking for process development, automation, or wet-processing work.</h2>
+ <p>Open to full-time, co-op, or contract work with hard-tech teams building in advanced manufacturing, printed electronics, semiconductors, biotech tools, clean energy, or materials.</p>
  </div>
  <div class="cta-row compact-cta">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View Case Files</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">See the work</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Email me</a>
  </div>
 </section>

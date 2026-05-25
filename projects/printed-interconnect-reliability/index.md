@@ -1,110 +1,34 @@
 ---
 layout: page
 title: Printed Interconnect & FET Reliability
-category: Supporting Case File
-tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: Turning electrical drift and pass/fail behavior into process-control feedback for printed micromodular circuits.
+category: Reliability · Process Control
+tags: Electrical Testing · Printed Interconnects · Reliability
+subtitle: I use electrical drift and pass/fail behavior to identify process-control problems in printed micromodular circuits.
 ---
 
-## Summary
+I think of this as the second half of the deposition problem. After the devices land, the question becomes simple: do the printed interconnects stay electrically usable, and can the failure point tell me which process step moved?
 
-This case file focuses on reliability and process control for printed interconnects and device test structures in a micromodular electronics workflow. The project turns electrical measurements into manufacturing decisions: what is stable, what is drifting, what fails, and which process step likely caused it.
-
-<div class="role-block">
- <p class="system-label small">MY ROLE</p>
- <p>Built and used electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, correlated failures to surface-prep/deposition/cure steps, and framed the results as CTQs, acceptance limits, and process-window feedback.</p>
+<div class="case-summary-box clean-metadata-layout">
+ <p class="system-label small">QUICK READ</p>
+ <div class="case-summary-grid"><span><strong>Signal</strong> Initial resistance, normalized drift, intermittent opens, and stress response.</span><span><strong>Decision</strong> Pass, monitor, fail, or trace the failure back to handling, contact, deposition, or cure.</span><span><strong>Tools</strong> Keithley measurements, Python/JMP analysis, Excel screening, optical inspection.</span></div>
 </div>
 
-<div class="connection-note"><strong>Connection to flagship:</strong> The deposition project asks where devices land. This reliability project asks whether the printed interconnects and device interfaces remain electrically usable after assembly.</div>
+<figure class="wide-figure reliability-plot-figure"><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Representative resistance drift plot with stable, drifting, and intermittent-open traces." loading="eager"><figcaption>Representative format for classifying stable traces, drifting traces, and intermittent opens under stress.</figcaption></figure>
 
-## Problem / motivation
+## The hard part
 
-Printed interconnects can look acceptable initially but fail later through resistance drift, intermittent opens, weak contacts, surface-prep defects, or stress-induced degradation. A useful manufacturing process needs more than a one-time “works / does not work” check; it needs a measurement loop that makes yield and failure modes visible.
+Resistance is easy to measure once. Reliability is harder because a trace that passes initially can drift, jump, or fail only after handling or stress. The first analysis pass treated every high-resistance result the same; that was wrong. I learned to separate stable drift from intermittent contact behavior because those imply different process fixes.
 
-## Where this project fits in the workflow
+## My role
 
-<figure class="wide-figure">
- <img src="{{ '/assets/images/micromodular-workflow-interconnect-focus.png' | relative_url }}" alt="High-level micromodular electronics workflow with the interconnect subsystem highlighted across analyzing components, planning wiring, and printing wires." loading="lazy">
- <figcaption><strong>Micromodular electronics workflow.</strong> The rounded rectangle highlights the interconnect subsystem: analyzing printed component layouts, planning wiring paths, and printing the interconnects that turn placed components into working circuits.</figcaption>
-</figure>
+<div class="role-block"><p>I organize electrical measurements into a process-control loop: measure initial R, stress the device or interconnect, measure drift, classify the failure mode, then connect that classification back to surface prep, deposition, contact, or cure conditions.</p></div>
 
-## Representative reliability artifact
+## Go/no-go logic
 
-<div class="reliability-artifact proof-artifact-card" aria-label="Representative resistance drift and go/no-go threshold artifact">
- <div>
-  <p class="system-label small">PUBLIC ARTIFACT FORMAT</p>
-  <h3>Resistance drift → threshold decision</h3>
-  <p>A sanitized resistance-trace format communicates how raw electrical measurements become process-control feedback.</p>
-  <ul>
-   <li><strong>Initial R below limit:</strong> pass screen.</li>
-   <li><strong>Drift above threshold:</strong> monitor or fail.</li>
-   <li><strong>Open circuit:</strong> fail.</li>
-   <li><strong>Intermittent behavior:</strong> handling/contact failure candidate.</li>
-  </ul>
- </div>
- <div class="resistance-plot" aria-label="Representative resistance versus time plot with thresholds">
-  <span class="plot-axis y">R/R₀</span>
-  <span class="plot-axis x">stress interval</span>
-  <i class="threshold fail"></i>
-  <i class="threshold warn"></i>
-  <b class="trace stable"></b>
-  <b class="trace drift"></b>
-  <b class="trace failtrace"></b>
-  <em class="label pass">pass</em>
-  <em class="label drift-label">drift</em>
-  <em class="label fail-label">fail</em>
- </div>
-</div>
+<div class="process-map compact-flow-map" aria-label="Reliability control loop"><div class="process-map-stage"><p>MEASURE</p><span>initial R</span><span>continuity</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>STRESS</p><span>humidity</span><span>handling</span><span>time</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>CLASSIFY</p><span>stable</span><span>drift</span><span>open</span></div><div class="process-map-arrow">→</div><div class="process-map-stage decision-stage"><p>FIX</p><span>surface prep, contact, deposition, or cure</span></div></div>
 
-## Process-control loop
+## What I’d do next
 
-<div class="process-map reliability-loop" aria-label="Printed interconnect reliability process-control loop">
- <div class="process-map-stage"><p>FABRICATE</p><span>surface prep</span><span>print</span><span>cure</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>MEASURE</p><span>initial R</span><span>stress interval</span><span>R drift</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>CLASSIFY</p><span>pass</span><span>drift</span><span>open</span><span>intermittent</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>ADJUST</p><span>surface prep / deposition / cure / handling</span></div>
-</div>
+For production, I would stop treating resistance as a single pass/fail number. I would define one drift threshold, one intermittent-open rule, and one sampling plan tied to the specific process step most likely to move. The assumption that breaks at scale is that failures are independent; in a real line, correlated drift across a batch is the signal.
 
-## Variables studied
-
-| Variable | Why it matters |
-|---|---|
-| Initial resistance | Baseline for drift, failure, and coupon-to-coupon variation. |
-| Resistance drift | Indicates degradation, unstable interfaces, or weak process control. |
-| Intermittent opens | Suggests contact, cracking, adhesion, or handling-related failure. |
-| Temperature / humidity stress | Accelerates reliability issues and reveals process weaknesses. |
-| Surface-prep and cure history | Often determines contact quality and conductivity stability. |
-| Threshold / compliance limits | Converts measurement into a go/no-go manufacturing decision. |
-
-## Methods and tools
-
-<div class="two-col">
- <div class="matrix-card"><h3>Experimental methods</h3><p>Electrical probing, resistance tracking, stress-condition comparison, pass/fail screening, and failure interval framing.</p></div>
- <div class="matrix-card"><h3>Data methods</h3><p>Automated logging, summary statistics, JMP comparisons, drift plots, threshold logic, and process-step correlation.</p></div>
-</div>
-
-<div class="badge-row">
- <span class="badge">Keithley</span>
- <span class="badge">Python</span>
- <span class="badge">JMP</span>
- <span class="badge">Excel</span>
- <span class="badge">Reliability</span>
- <span class="badge">CTQs</span>
-</div>
-
-## Engineering interpretation
-
-The value is the feedback loop: measure electrical output, classify the failure mode, identify likely process causes, then tighten the process step that produced the drift or open circuit.
-
-## Manufacturing relevance
-
-The manufacturing-relevant CTQs are concrete: initial resistance must fall inside an acceptance band, and resistance drift must remain below a defined stress-response threshold. Those two signals make yield visible before a circuit is scaled or routed into a larger build.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case file →</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition build log →</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>

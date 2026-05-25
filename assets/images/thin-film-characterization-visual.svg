@@ -3,7 +3,7 @@
 <desc id="desc">A deposited thin film stack is connected to representative SEM, XRD, XPS, and Raman readouts.</desc>
 <defs>
  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#eefafa"/></linearGradient>
- <style>.small{font:800 13px ui-monospace,Menlo,monospace;fill:#08708b;letter-spacing:.09em}.label{font:750 19px Inter,Arial,sans-serif;fill:#0f2d31;letter-spacing:-.02em}.body{font:600 14px Inter,Arial,sans-serif;fill:#5f7679}.card{fill:#fff;stroke:#08708b;stroke-opacity:.15}.axis{stroke:#0f2d31;stroke-opacity:.22;stroke-width:2}.curve{fill:none;stroke:#08708b;stroke-width:5;stroke-linecap:round}.green{stroke:#4c936c}.film{fill:#2fb6ce;opacity:.65}.sub{fill:#dce9e8}.particle{fill:#08708b;opacity:.26}</style>
+ <style>.small{font:800 13px ui-monospace,Menlo,monospace;fill:#8C4E18;letter-spacing:.09em}.label{font:750 19px Inter,Arial,sans-serif;fill:#0f2d31;letter-spacing:-.02em}.body{font:600 14px Inter,Arial,sans-serif;fill:#5f7679}.card{fill:#fff;stroke:#8C4E18;stroke-opacity:.15}.axis{stroke:#0f2d31;stroke-opacity:.22;stroke-width:2}.curve{fill:none;stroke:#8C4E18;stroke-width:5;stroke-linecap:round}.green{stroke:#A35E2A}.film{fill:#D85C3A;opacity:.65}.sub{fill:#dce9e8}.particle{fill:#8C4E18;opacity:.26}</style>
 </defs>
 <rect width="920" height="420" rx="34" fill="url(#bg)"/>
 <g transform="translate(52 86)">
@@ -25,6 +25,6 @@
 <g transform="translate(638 228)">
  <rect width="220" height="124" rx="24" class="card"/><text x="22" y="34" class="small">RAMAN</text><text x="22" y="62" class="body">structural signatures</text><path d="M30 100 C54 100 58 58 76 58 S94 100 116 100 C138 100 140 72 156 72 S174 100 194 100" class="curve green" opacity=".82"/>
 </g>
-<path d="M314 202 C340 202 342 120 366 120" fill="none" stroke="#08708b" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
-<path d="M314 202 C340 202 342 290 366 290" fill="none" stroke="#08708b" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
+<path d="M314 202 C340 202 342 120 366 120" fill="none" stroke="#8C4E18" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
+<path d="M314 202 C340 202 342 290 366 290" fill="none" stroke="#8C4E18" stroke-width="3" stroke-dasharray="7 8" opacity=".45"/>
 </svg>

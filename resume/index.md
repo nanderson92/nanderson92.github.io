@@ -15,7 +15,7 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
  Target areas: process engineering · manufacturing · advanced materials · semiconductors · clean technology.
  </p>
  <div class="resume-actions">
- <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume PDF</a>
+ <a class="button primary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page) PDF</a>
  <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
  <a class="button secondary" href="{{ site.github }}">GitHub</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Email Me</a>

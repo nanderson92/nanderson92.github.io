@@ -1,68 +1,32 @@
 ---
 layout: page
-title: Process Simulation and Design
-category: Process Engineering Case File
-subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions.
+title: Process Simulation & Design
+category: PFDs · Balances · Simulation
+tags: Aspen · MATLAB · Process Design
+subtitle: I turn process descriptions into flowsheets, balance structures, assumptions, and tradeoff decisions.
 ---
 
-## Summary
+Simulation is only useful when the assumptions are visible. I use PFDs, material balances, and operating-condition logic to make a process model explainable instead of black-box.
 
-This case file collects process-engineering work where a chemical process is converted from a description into a defensible flowsheet, balance structure, and operating decision.
+## Workflow
 
-## Problem / motivation
+<div class="process-map compact-flow-map" aria-label="Process simulation workflow"><div class="process-map-stage"><p>FEED</p><span>basis</span><span>composition</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>MIX</p><span>streams</span><span>recycle</span></div><div class="process-map-arrow">→</div><div class="process-map-stage"><p>SEPARATE</p><span>VLE</span><span>recovery</span></div><div class="process-map-arrow">→</div><div class="process-map-stage decision-stage"><p>PRODUCT</p><span>purity, yield, duty</span></div></div>
 
-Process design work can look abstract until the assumptions are visible. A credible design needs a process flow diagram, stated thermodynamic reasoning, material and energy balances, and a clear explanation of tradeoffs such as recovery, purity, energy demand, and equipment constraints.
+## The hard part
 
-## System schematic
+The hard part is not drawing boxes. It is deciding which assumptions are strong enough to support a design decision and which ones only make the model look precise. I learned to treat convergence as a starting point, not proof that the process makes sense.
 
-<div class="project-schematic schematic-pfd" aria-label="Representative process flow diagram schematic">
-  <div class="pfd-row"><span>FEED</span><i></i><span>MIX</span><i></i><span>SEPARATE</span><i></i><span>PRODUCT</span></div>
-  <p>Representative PFD logic for making assumptions, streams, unit operations, and design decisions visible.</p>
-</div>
-
-## My role
-
-<div class="role-block">
-  <p>Built balance logic, selected appropriate modeling assumptions, organized process inputs/outputs, and translated calculations into design tradeoff summaries.</p>
-</div>
-
-## Technical challenge
-
-The core challenge is converting a process objective into quantitative design logic without overclaiming model precision. The project emphasizes balance closure, transparent assumptions, and simulation results that support engineering decisions rather than black-box outputs.
-
-## Variables studied
+## Variables I watch
 
 | Variable | Why it matters |
 |---|---|
-| Feed composition | Sets material balance basis and separation difficulty. |
+| Feed composition | Sets material-balance basis and separation difficulty. |
 | Operating temperature / pressure | Affects phase behavior, energy duty, and equipment feasibility. |
-| Recovery / purity targets | Define whether a process alternative is technically acceptable. |
-| Recycle or purge logic | Controls yield, accumulation, and steady-state feasibility. |
+| Recovery / purity targets | Define whether an alternative is technically acceptable. |
 | Thermodynamic model | Determines whether VLE/separation predictions are physically reasonable. |
 
-## Public artifact set
+## What I’d do next
 
-<div class="matrix">
-  <div class="matrix-card"><h3>Process flow diagram</h3><p>Clean PFD with numbered streams and unit-operation logic.</p></div>
-  <div class="matrix-card"><h3>Balance table</h3><p>Feed/product/recycle streams with units, assumptions, and closure checks.</p></div>
-  <div class="matrix-card"><h3>Design tradeoff summary</h3><p>Short explanation of how operating conditions affect feasibility and performance.</p></div>
-</div>
+For a startup process model, I would keep the first version brutally simple: one defensible PFD, one balance table, one sensitivity plot, and one clear decision. The failure mode is over-modeling before anyone knows which knob matters.
 
-## Methods and tools
-
-<div class="two-col">
-  <div class="matrix-card"><h3>Engineering methods</h3><p>PFD construction, material balances, energy balances, thermodynamic reasoning, sensitivity comparisons, and process tradeoff tables.</p></div>
-  <div class="matrix-card"><h3>Software / computation</h3><p>Aspen simulations, MATLAB calculations, Excel screening tables, and communication-ready engineering plots.</p></div>
-</div>
-
-<div class="badge-row"><span class="badge">Aspen</span><span class="badge">PFDs</span><span class="badge">Balances</span><span class="badge">MATLAB</span><span class="badge">Excel</span></div>
-
-## Engineering interpretation
-
-The value of this project is the ability to make process assumptions visible and turn calculations into clear decisions. That is the core skill behind scale-up, process development, and manufacturing support.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all case files</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">See all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume (PDF, 1 page)</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>
