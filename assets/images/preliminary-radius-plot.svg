@@ -4,7 +4,7 @@
  <defs>
  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef8f7"/></linearGradient>
  <style>
- .axis{stroke:#35565c;stroke-width:2}.grid{stroke:#dbe8ea;stroke-width:1}.label{font:700 13px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;fill:#35565c}.body{font:500 15px Inter,Arial,sans-serif;fill:#61787c}.series1{fill:none;stroke:#C47D2B;stroke-width:4;stroke-linecap:round}.series2{fill:none;stroke:#A35E2A;stroke-width:4;stroke-linecap:round}.series3{fill:none;stroke:#a8b5bb;stroke-width:4;stroke-linecap:round;stroke-dasharray:10 10}.legend{font:600 14px Inter,Arial,sans-serif;fill:#35565c}
+ .axis{stroke:#35565c;stroke-width:2}.grid{stroke:#dbe8ea;stroke-width:1}.label{font:700 13px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;fill:#35565c}.body{font:500 15px Inter,Arial,sans-serif;fill:#61787c}.series1{fill:none;stroke:#0d8eb1;stroke-width:4;stroke-linecap:round}.series2{fill:none;stroke:#4c936c;stroke-width:4;stroke-linecap:round}.series3{fill:none;stroke:#a8b5bb;stroke-width:4;stroke-linecap:round;stroke-dasharray:10 10}.legend{font:600 14px Inter,Arial,sans-serif;fill:#35565c}
  </style>
  </defs>
  <rect width="920" height="420" rx="28" fill="url(#bg)"/>

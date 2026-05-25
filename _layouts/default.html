@@ -5,14 +5,16 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
  <meta name="description" content="{{ site.description }}">
- <meta property="og:title" content="Nathan Anderson | Chemical Engineering · Georgia Tech">
- <meta property="og:description" content="Build logs in printed electronics, wet processing, biotech process development, automation, and hard-tech manufacturing.">
+ {% assign default_og_title = "Nathan Anderson | Chemical Engineering · Georgia Tech" %}
+ {% assign og_title = default_og_title %}
+ {% if page.url contains '/projects/' and page.url != '/projects/' and page.title %}
+ {% assign og_title = page.title | append: " | Nathan Anderson" %}
+ {% endif %}
+ <meta property="og:title" content="{{ og_title }}">
+ <meta property="og:description" content="Process development workflows for printed electronics, wet processing, and manufacturing-scale decision-making.">
  <meta property="og:image" content="https://nanderson92.github.io/assets/images/og-preview.png">
  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  <meta property="og:type" content="website">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
@@ -42,7 +44,7 @@
  <div class="drawer-header">
  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
  <span class="brand-name">Nathan Anderson</span>
- <span class="brand-subtitle">Chemical Engineering · Hard-Tech Buildout · Georgia Tech</span>
+ <span class="brand-subtitle">Chemical Engineering · Process Development · Clean Technology</span>
  </a>
  <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>×</button>
  </div>
@@ -57,7 +59,7 @@
 
  <div class="drawer-system">
  <p class="system-label small">TECHNICAL FOCUS</p>
- <p>Process development · wet processing · hard-tech buildout</p>
+ <p>Process development · wet processing · scale-up</p>
  </div>
 
  <div class="social-links" aria-label="Social links">
@@ -93,40 +95,94 @@
  const drawer = document.querySelector('#site-drawer');
  const closeTargets = document.querySelectorAll('[data-close-drawer]');
  const navLinks = document.querySelectorAll('.topbar-nav a, .nav-links a, .footer-inner a');
- function normalizePath(path) { return path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/') || '/'; }
+
+ function normalizePath(path) {
+ return path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/') || '/';
+ }
+
  function setActiveNav() {
  const current = normalizePath(window.location.pathname);
  navLinks.forEach((link) => {
  const linkPath = normalizePath(new URL(link.href).pathname);
  const isActive = current === linkPath;
  link.classList.toggle('is-active', isActive);
- if (isActive) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+ if (isActive) link.setAttribute('aria-current', 'page');
+ else link.removeAttribute('aria-current');
  });
  }
+
  function setDrawer(open) {
  body.classList.toggle('drawer-open', open);
  toggle.setAttribute('aria-expanded', String(open));
  drawer.setAttribute('aria-hidden', String(!open));
- if (open) drawer.querySelector('a').focus({ preventScroll: true }); else toggle.focus({ preventScroll: true });
+ if (open) drawer.querySelector('a').focus({ preventScroll: true });
+ else toggle.focus({ preventScroll: true });
  }
+
  setActiveNav();
+
  document.documentElement.classList.add('js');
  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  const revealTargets = document.querySelectorAll([
- '.proof-section','.proof-group','.project-card','.portfolio-card','.matrix-card','.human-service-band','.cta-band','.page-hero-inner','.background-editorial','.two-col > *','.metric-card','.result-panel','.result-visual','.proof-artifact-card','.featured-artifact-panel','.background-timeline article','.taste-panel','.project-tile','.project-rail','.micro-stats-hero','.contact-fit-grid .matrix-card','.wide-figure','.artifact-card'
+ '.proof-section',
+ '.proof-group',
+ '.project-card',
+ '.portfolio-card',
+ '.matrix-card',
+ '.human-service-band',
+ '.cta-band',
+ '.page-hero-inner',
+ '.background-editorial',
+ '.two-col > *',
+ '.metric-card',
+ '.result-panel',
+ '.result-visual',
+ '.proof-artifact-card',
+ '.case-summary-box',
+ '.featured-artifact-panel',
+ '.background-timeline article',
+ '.taste-panel',
+ '.additional-evidence-strip > *',
+ '.mini-client-case > *',
+ '.projects-index-hero',
+ '.flagship-page-visual',
+ '.micro-stats-hero',
+ '.hardware-interface-card',
+ '.thin-film-visual-card',
+ '.dna-flex-visual-card',
+ '.operations-translation-grid > *',
+ '.human-context-card',
+ '.contact-fit-grid .matrix-card'
  ].join(','));
- revealTargets.forEach((target, index) => { target.classList.add('reveal'); target.style.setProperty('--reveal-delay', `${Math.min((index % 3) * 60, 180)}ms`); });
+
+ revealTargets.forEach((target, index) => {
+ target.classList.add('reveal');
+ target.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 70, 210)}ms`);
+ });
+
  if ('IntersectionObserver' in window && !prefersReducedMotion) {
  const observer = new IntersectionObserver((entries, activeObserver) => {
- entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); activeObserver.unobserve(entry.target); } });
- }, { threshold: 0.10, rootMargin: '0px 0px -4% 0px' });
+ entries.forEach((entry) => {
+ if (entry.isIntersecting) {
+ entry.target.classList.add('in-view');
+ activeObserver.unobserve(entry.target);
+ }
+ });
+ }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
  revealTargets.forEach((target) => observer.observe(target));
- setTimeout(() => { revealTargets.forEach((target) => target.classList.add('in-view')); }, 1000);
- } else { revealTargets.forEach((target) => target.classList.add('in-view')); }
+ setTimeout(() => {
+ revealTargets.forEach((target) => target.classList.add('in-view'));
+ }, 1400);
+ } else {
+ revealTargets.forEach((target) => target.classList.add('in-view'));
+ }
+
  toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
  closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
  document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
- document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false); });
+ document.addEventListener('keydown', (event) => {
+ if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false);
+ });
  </script>
 </body>
 </html>
