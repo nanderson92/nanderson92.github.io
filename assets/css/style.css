@@ -7338,3 +7338,85 @@ body, .content-shell p, .content-shell li, .portfolio-card p, .project-card p { 
   .large-email { font-size: clamp(1.65rem, 8vw, 2.5rem); }
   .resume-pdf-viewer { min-height: 640px; }
 }
+
+
+/* === Deployment hotfix: visible styled homepage on GitHub Pages ===
+   The site is served at nanderson92.github.io with baseurl "". Keep hero layers deterministic. */
+body.home-page,
+body.home-page #content {
+  background: #fff !important;
+}
+.home-page .hero {
+  position: relative !important;
+  isolation: isolate !important;
+  min-height: min(860px, 92vh) !important;
+  overflow: hidden !important;
+  background: #f8fbfc !important;
+}
+.home-page .hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  background-image:
+    linear-gradient(90deg, rgba(248,251,252,.97) 0%, rgba(248,251,252,.90) 38%, rgba(248,251,252,.56) 68%, rgba(248,251,252,.20) 100%),
+    linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.16) 70%, #fff 100%),
+    url('../images/nathan-anderson-poster-wide.jpg') !important;
+  background-size: 100% 100%, 100% 100%, cover !important;
+  background-position: center, center, center right !important;
+  background-repeat: no-repeat !important;
+  transform: none !important;
+  pointer-events: none !important;
+}
+.home-page .hero::after,
+.home-page #content::before,
+body.home-page::before {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+.home-page .hero-inner,
+.home-page .hero-copy,
+.home-page .hero h1,
+.home-page .hero .hero-eyebrow,
+.home-page .hero .hero-lede,
+.home-page .hero .hero-proof-pills,
+.home-page .hero .worked-with-strip,
+.home-page .hero .hero-actions {
+  position: relative !important;
+  z-index: 2 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+.home-page .hero + section,
+.home-page .home-library {
+  position: relative !important;
+  z-index: 3 !important;
+  margin-top: 0 !important;
+  background: #fff !important;
+}
+.home-page .hero-eyebrow {
+  display: inline-flex !important;
+  width: fit-content !important;
+  max-width: calc(100vw - 48px) !important;
+  padding: .45rem .7rem !important;
+  border: 1px solid rgba(15, 23, 42, .12) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, .74) !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+@media (max-width: 768px) {
+  .home-page .hero { min-height: auto !important; }
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(248,251,252,.96) 0%, rgba(248,251,252,.88) 48%, #fff 100%),
+      url('../images/nathan-anderson-poster-wide.jpg') !important;
+    background-size: 100% 100%, cover !important;
+    background-position: center, center top !important;
+  }
+}
