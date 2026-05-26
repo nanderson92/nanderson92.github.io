@@ -9,7 +9,7 @@ subtitle: Chemical engineering as the science of delivery.
 
 <div class="background-editorial refined-background-editorial">
  <div class="portrait-panel work-photo-panel">
- <img src="{{ '/assets/images/nathan-anderson-poster.jpg' | relative_url }}" alt="Nathan Anderson presenting alginate-core microcapsule research at Mayo Clinic">
+ <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson headshot">
  </div>
  <article class="background-copy">
  <p class="system-label small">INCHEON → MINNESOTA → ATLANTA</p>
