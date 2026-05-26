@@ -1,68 +1,87 @@
 ---
 layout: page
 title: Printed Interconnect Reliability
+category: Resistance drift → failure logic
 date_range: 2025–present
-category: Resistance drift → go/no-go logic
-tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: "Printed conductive lines look fine on day one and fail in week three through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
+affiliation: Filler Lab, Georgia Institute of Technology
+tags: Printed Electronics · Reliability · Electrical Testing · Process Feedback
+subtitle: "A public-safe reliability screen for turning printed-interconnect resistance behavior into pass, monitor, fail, or artifact decisions."
 ---
 
-## Failure classes
-
-<div class="text-output-grid failure-taxonomy-grid">
- <article><h3>High initial R</h3><p>The line starts outside the acceptable range, pointing to deposition, geometry, or cure issues before stress testing begins.</p></article>
- <article><h3>Resistance drift</h3><p>The line passes at first but changes enough under stress to become a monitor/fail condition.</p></article>
- <article><h3>Open circuit</h3><p>The electrical path breaks. That failure is not “bad data”; it is a process event that needs a candidate cause.</p></article>
- <article><h3>Intermittent behavior</h3><p>Contact or handling effects create unstable readings that should be classified separately from smooth drift.</p></article>
+<div class="thesis-box promoted-thesis-box">
+ <h2>Time-zero function and process robustness are not the same thing.</h2>
+ <p>A printed interconnect can pass an initial check and still carry vulnerability from geometry, cure, material aging, humidity sensitivity, probe artifact, or handling damage.</p>
 </div>
 
-<div class="role-block">
- <p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p>
+<section class="artifact-panel public-safe-snapshot" aria-label="Reliability screen skeleton">
+ <h2>Reliability screen skeleton</h2>
+ <ol class="snapshot-list ordered-snapshot">
+  <li>Measure initial resistance after print/cure.</li>
+  <li>Normalize resistance to baseline.</li>
+  <li>Apply stress interval.</li>
+  <li>Re-measure at defined time points.</li>
+  <li>Classify trace as pass / monitor / fail / artifact.</li>
+  <li>Map failure class to candidate upstream process cause.</li>
+ </ol>
+</section>
+
+## Measurement context
+
+The reliability work connects electrical outputs to process history. The measurement stack includes four-point probe resistance checks, Keithley SMU Id–Vg / Id–Vd sweeps for printed microdevice performance validation, microscopy inspection, stress intervals, and resistance-drift / failure-timing interpretation.
+
+## Failure-decision table
+
+<div class="artifact-table-wrap">
+<table class="artifact-table failure-table">
+<thead><tr><th>Failure class</th><th>What it suggests</th><th>Upstream process check</th></tr></thead>
+<tbody>
+<tr><td>High initial resistance</td><td>Poor print continuity, geometry, or cure.</td><td>Inspect line shape, cure, deposition continuity, and probe placement.</td></tr>
+<tr><td>Smooth upward drift</td><td>Material aging or environmental sensitivity.</td><td>Check humidity exposure, sintering/cure condition, and material stability.</td></tr>
+<tr><td>Sudden open circuit</td><td>Cracking, delamination, or handling damage.</td><td>Inspect physical damage, substrate handling, and probe history.</td></tr>
+<tr><td>Intermittent readings</td><td>Contact artifact or true instability.</td><td>Separate probe/contact artifact from line failure through retest logic.</td></tr>
+</tbody>
+</table>
 </div>
 
-<div class="connection-note"><strong>Connection:</strong> deposition asks where devices land. Reliability asks whether the printed interconnects and device interfaces stay electrically usable after assembly.</div>
+## Threshold logic
 
-## Process loop
-
-<div class="process-map reliability-loop" aria-label="Printed interconnect reliability process-control loop">
- <div class="process-map-stage"><p>FABRICATE</p><span>surface prep</span><span>print interconnect</span><span>cure / handle</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>MEASURE</p><span>initial R</span><span>continuity</span><span>repeat readings</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>STRESS</p><span>humidity / temperature</span><span>time interval</span><span>re-measure</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>DECIDE</p><span>pass / monitor / fail / trace back to process step</span></div>
+<div class="decision-grid reliability-threshold-grid">
+ <article class="decision-card pass-card"><h3>Pass</h3><p>Initial resistance and drift stay inside the accepted screen window for the intended use case.</p></article>
+ <article class="decision-card"><h3>Monitor</h3><p>Resistance remains functional but drift or variability suggests process-built vulnerability.</p></article>
+ <article class="decision-card fail-card"><h3>Fail</h3><p>Trace crosses the defined resistance/failure state or shows nonrecoverable open-circuit behavior.</p></article>
+ <article class="decision-card"><h3>Artifact / retest</h3><p>Signal changes are plausibly caused by probe contact, handling, or measurement setup rather than the printed line.</p></article>
 </div>
 
-## What did not work at first
+## Process-feedback loop
 
-The easy mistake was treating a failed trace as just “bad data.” The more useful move was to ask what kind of failure it was. A smooth drift, a sudden open, and a noisy intermittent contact are different process clues.
-
-## Process knobs
-
-| Knob | Why it matters |
-|---|---|
-| Initial resistance | Separates geometry/deposition/cure issues from later reliability drift. |
-| Normalized drift | Shows whether the line changes enough under stress to become a process concern. |
-| Open-circuit behavior | Flags complete loss of electrical continuity rather than gradual degradation. |
-| Intermittency | Separates contact/handling artifacts from material or interconnect aging. |
-| Stress interval | Determines whether the screen is sensitive enough to catch early failure modes. |
+<div class="process-map compact-flow-map" aria-label="Reliability feedback loop">
+ <div class="process-map-stage"><p>MEASURE</p><span>4-point probe</span><span>Keithley sweeps</span><span>microscopy</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage"><p>CLASSIFY</p><span>initial resistance</span><span>drift</span><span>failure timing</span></div>
+ <div class="process-map-arrow" aria-hidden="true">→</div>
+ <div class="process-map-stage decision-stage"><p>CHECK UPSTREAM</p><span>print continuity, cure, geometry, material stability</span></div>
+</div>
 
 ## Methods and tools
 
 <div class="two-col">
- <div class="matrix-card"><h3>Electrical testing</h3><p>Resistance measurements, continuity checks, stress/re-measure intervals, and failure classification.</p></div>
- <div class="matrix-card"><h3>Process feedback</h3><p>Threshold logic that links electrical symptoms to candidate changes in surface prep, printing, cure, or handling.</p></div>
+ <div class="matrix-card"><h3>Electrical testing</h3><p>Four-point probe measurements, Keithley SMU Id–Vg / Id–Vd sweeps, baseline normalization, stress intervals, and resistance-drift interpretation.</p></div>
+ <div class="matrix-card"><h3>Process linkage</h3><p>Connect failure timing to possible upstream contributors: print geometry, cure/sintering condition, environmental exposure, handling, and measurement artifact.</p></div>
 </div>
 
-<div class="badge-row"><span class="badge">Keithley</span><span class="badge">Four-point probe</span><span class="badge">Python</span><span class="badge">JMP</span><span class="badge">Excel</span><span class="badge">Reliability</span></div>
+<div class="badge-row"><span class="badge">Four-point probe</span><span class="badge">Keithley SMU</span><span class="badge">Resistance drift</span><span class="badge">Stress intervals</span><span class="badge">Failure timing</span><span class="badge">Microscopy</span></div>
+
+<div class="what-changed-block">
+ <h2>What changed because of this</h2>
+ <p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p>
+</div>
 
 ## What I’d do next
 
-If I were building this into a production screen, I would standardize one resistance-normalization workflow and require each test to return both a number and a failure class. The next useful artifact is a short decision table that tells an operator what to change when a trace drifts, opens, or behaves intermittently.
+I would turn the public-safe failure classes into a formal control-plan draft: sampling frequency, stress interval, retest rule, and upstream corrective-action owner. The decision would be whether a line is stable enough for routing validation, needs monitoring, or should trigger a print/cure process check before more devices are consumed.
 
 <div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition build →</a>
+ <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Related deposition case →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
 </div>

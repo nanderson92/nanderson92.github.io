@@ -15,3 +15,16 @@ github: "https://github.com/nanderson92"
 exclude:
   - research
   - research/**
+
+  - portfolio
+  - portfolio/**
+  - giving-back
+  - giving-back/**
+  - projects/consult-your-community
+  - projects/consult-your-community/**
+  - projects/droplet-image-analysis-workflows
+  - projects/droplet-image-analysis-workflows/**
+  - projects/process-simulation-design
+  - projects/process-simulation-design/**
+  - projects/thin-film-semiconductor-research
+  - projects/thin-film-semiconductor-research/**

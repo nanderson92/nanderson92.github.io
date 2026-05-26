@@ -3,19 +3,20 @@ layout: page
 title: Contact
 body_class: contact-page
 category: Contact
-subtitle: "Available for Fall 2026 work in process development, automation, and wet processing."
+subtitle: "Fall 2026 conversations: process development, wet processing, automation, advanced materials, and hard-tech project work."
 ---
 
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
- <h2>Let’s talk about physical systems that need to become repeatable.</h2>
- <p>I’m looking for Fall 2026 process-development, automation, and wet-processing work: co-op, internship, full-time, or contract. I’m especially interested in wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.</p>
- <div class="contact-signal-list" aria-label="Best-fit contact reasons">
- <span>Process-development roles, co-ops, or contract work</span>
- <span>Advanced manufacturing and semiconductor-adjacent R&amp;D</span>
- <span>Early-stage hard-tech teams that need a ChemE/process perspective</span>
- </div>
+ <h2>Best-fit Fall 2026 conversations.</h2>
+ <ul class="contact-priority-list">
+  <li>Process development co-op or internship</li>
+  <li>Wet-processing / advanced-materials R&amp;D support</li>
+  <li>Hard-tech startup project work where a ChemE/process perspective is useful</li>
+  <li>Part-time research or technical-build work during school terms</li>
+ </ul>
+ <p>I’m strongest where physical systems need to become measurable: wet processing, printed electronics, microfluidics, reliability screens, process automation, and early manufacturing decision-making.</p>
  <div class="resume-actions contact-action-row">
  <a class="button primary" href="mailto:{{ site.email }}">Email Nathan →</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
@@ -34,9 +35,14 @@ subtitle: "Available for Fall 2026 work in process development, automation, and 
   <strong>{{ site.email }}</strong>
   <a class="button primary contact-submit" href="mailto:{{ site.email }}?subject=Portfolio%20conversation">Email Nathan →</a>
  </div>
- <div class="message-starter">
-  <strong>Useful context to include:</strong>
-  <p>Role or project, timeline, location/remote expectations, and which build log made you reach out.</p>
+ <div class="message-starter fast-intro-block">
+  <strong>Fast intro: send me</strong>
+  <ol>
+   <li>role or project</li>
+   <li>timeline</li>
+   <li>location/remote expectations</li>
+   <li>which case file is most relevant</li>
+  </ol>
  </div>
  </section>
 </div>
@@ -45,7 +51,7 @@ subtitle: "Available for Fall 2026 work in process development, automation, and 
  <p class="system-label small">BEST-FIT CONVERSATIONS</p>
  <div class="matrix contact-fit-grid">
  <div class="matrix-card"><h3>Early-stage hard-tech</h3><p>Seed/Series A hard-tech where I'd be the first ChemE or process hire, figuring out the first wet-processing line.</p></div>
- <div class="matrix-card"><h3>Process-development work</h3><p>Process development from first principles: defining variables, building the measurement loop, and finding the operating window.</p></div>
+ <div class="matrix-card"><h3>Process-development work</h3><p>Defining variables, extracting CTQs, designing screens, and turning messy observations into next-step process decisions.</p></div>
  <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
  <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>
  </div>

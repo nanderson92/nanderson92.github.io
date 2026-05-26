@@ -8,72 +8,119 @@ body_class: home-page
  <div class="hero-inner hero-asymmetric">
  <div class="hero-copy">
  <div class="hero-identity hero-identity-single" aria-label="Portfolio focus">
- <span><strong>Process development</strong> · wet processing · automation</span>
+ <span><strong>ChemE process development for hard-tech manufacturing</strong></span>
  </div>
  <h1><span class="hero-title-line">Making the future</span> <span class="hero-title-line">manufacturable.</span></h1>
  <p class="hero-lede">
- Printed electronics, microfluidic biotech, embedded process control. I build the systems that move lab results out of the lab.
+ I build measurement loops for wet processing, microfluidics, printed electronics, and thermal automation — the messy middle between lab result and repeatable process.
  </p>
  <div class="cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">See the build logs</a>
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">Engineering case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf" title="1-page PDF">Resume</a>
  </div>
  </div>
  </div>
 </section>
 
-<section class="home-library project-strip supporting-home-cases" aria-label="Build logs">
+<section class="proof-strip-section" aria-label="Technical proof points">
+ <div class="proof-strip-card">
+  <span>20× microfluidic throughput increase</span>
+  <span>~50% usable encapsulation-yield improvement</span>
+  <span>image-derived droplet CTQs</span>
+  <span>printed-interconnect failure classes</span>
+  <span>110 cars/hr live operations</span>
+ </div>
+</section>
+
+<section class="home-library project-strip supporting-home-cases" aria-label="Engineering case files">
  <div class="content-shell home-content-shell">
  <div class="section-heading">
- <p class="system-label">BUILD LOGS</p>
- <h2>Build logs</h2>
- <p>Same instinct applied across operations, biotech, reliability, and controls.</p>
+ <p class="system-label">ENGINEERING CASE FILES</p>
+ <h2>Measured, tuned, automated, or run under pressure.</h2>
+ <p>Build logs from real systems where I had to translate messy behavior into variables, metrics, failure modes, and next-step decisions.</p>
  </div>
 
- <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid startup-home-grid build-log-home-grid">
- <article class="portfolio-card evidence-card">
+ <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid startup-home-grid casefile-home-grid">
+ <article class="portfolio-card evidence-card flagship-home-card">
  <div class="card-topline"><span>Wet processing · printed electronics</span><span>2025–present</span><span class="outcome-badge">Screening framework</span></div>
  <h2>Micromodular Electronics Deposition</h2>
  <p class="institution-line">Filler Lab, Georgia Tech</p>
- <p class="compact-card-summary">Microdevices printed from droplets crowd at the edges. I built the measurement workflow for identifying substrate conditions that produce useful placement.</p>
- <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open build log →</a></p>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> suspended microdevices crowd at droplet edges before interconnect printing.</p>
+  <p><strong>Skill:</strong> substrate/backing screening, droplet imaging, placement metrics.</p>
+  <p><strong>Proof:</strong> extracted contact-line and edge/center placement metrics from top-view and side-view videos.</p>
+  <p><strong>Why it matters:</strong> turns device placement from visual inspection into a process-development variable.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
  </article>
 
- <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Operations · quality loops</span><span>2021–2022</span><span class="outcome-badge">+20% throughput</span></div>
- <h2>Operations &amp; Quality Systems</h2>
- <p class="compact-card-summary">Managed a McDonald’s drive-through at 110 cars/hour peak and learned how bottlenecks, QC, downtime, and staffing behave under pressure.</p>
- <p class="compact-card-link"><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open build log →</a></p>
- </article>
-
- <article class="portfolio-card evidence-card">
+ <article class="portfolio-card evidence-card flagship-home-card">
  <div class="card-topline"><span>Microfluidics · Mayo Clinic</span><span>Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
  <h2>Stem-Cell Microencapsulation</h2>
- <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to reach a 20× throughput increase and ~50% encapsulation-yield improvement.</p>
- <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open build log →</a></p>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> faster capsule generation only matters if capsules remain usable.</p>
+  <p><strong>Skill:</strong> flow-ratio tuning, tooling redesign, crosslink timing, microscopy QC.</p>
+  <p><strong>Proof:</strong> 20× throughput increase and ~50% microscopy-counted usable-yield improvement.</p>
+  <p><strong>Why it matters:</strong> speed became an operating-window question instead of a raw flow-rate target.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · process control</span><span>2025–present</span><span class="outcome-badge">Failure logic</span></div>
+ <div class="card-topline"><span>Reliability · process feedback</span><span>2025–present</span><span class="outcome-badge">Failure logic</span></div>
  <h2>Printed Interconnect Reliability</h2>
- <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to upstream process decisions.</p>
- <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open build log →</a></p>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> printed lines can pass time-zero checks and still carry process-built vulnerability.</p>
+  <p><strong>Skill:</strong> four-point probe, Keithley SMU validation, resistance-drift classification.</p>
+  <p><strong>Proof:</strong> pass/monitor/fail/artifact logic that maps failure behavior back to upstream checks.</p>
+  <p><strong>Why it matters:</strong> reliability data becomes process feedback, not just post-build inspection.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Automation · diagnostics · Mayo Clinic</span><span>Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
  <h2>Thermocycler Process Automation</h2>
- <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
- <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open build log →</a></p>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> a setpoint is not evidence that the sample saw the intended thermal history.</p>
+  <p><strong>Skill:</strong> embedded control, logged temperature profiles, overshoot and stability checks.</p>
+  <p><strong>Proof:</strong> validation logic around ramp rate, overshoot, hold stability, and cycle repeatability.</p>
+  <p><strong>Why it matters:</strong> controller performance is judged by assay-relevant thermal exposure.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
+ </article>
+
+ <article class="portfolio-card evidence-card supporting-home-card">
+ <div class="card-topline"><span>Operations · quality systems</span><span>2021–2022</span><span class="outcome-badge">+20% throughput</span></div>
+ <h2>Operations &amp; Quality Systems</h2>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> live service delays expose bottlenecks immediately.</p>
+  <p><strong>Skill:</strong> upstream prep changes, staffing, QC lists, downtime tracking.</p>
+  <p><strong>Proof:</strong> 110 cars/hr peak operations, +20% cars/hr, −15% order-to-handoff time.</p>
+  <p><strong>Why it matters:</strong> operator instincts transfer to manufacturing constraints, queues, uptime, and standard work.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open case file →</a></p>
+ </article>
+
+ <article class="portfolio-card evidence-card supporting-home-card">
+ <div class="card-topline"><span>PCR · assay controls</span><span>Earlier research</span><span class="outcome-badge">Control discipline</span></div>
+ <h2>DNA Flexibility Assay Development</h2>
+ <div class="case-card-detail">
+  <p><strong>Problem:</strong> short-length DNA mechanics require clean controls and auditable assay execution.</p>
+  <p><strong>Skill:</strong> PCR workflow, sample prep, control-condition troubleshooting.</p>
+  <p><strong>Proof:</strong> early assay-development exposure in Maher Lab molecular-biology workflows.</p>
+  <p><strong>Why it matters:</strong> reinforces experimental discipline without overstating project ownership.</p>
+ </div>
+ <p class="compact-card-link"><a href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">Open case file →</a></p>
  </article>
  </div>
  </div>
 </section>
 
-<section class="technical-proof">
+<section class="technical-proof casefile-proof-prose">
  <p class="system-label">TECHNICAL PROOF</p>
  <p>
- Wet processing, soft-material fabrication, controls, image analysis, and operations under pressure. The build logs above are the proof — each one forced me to define boundary conditions, build a measurement loop, and make a process decision under real constraints.
+ The strongest pages are structured like engineering case files: system, variables, measured outputs, failure modes, and the decision the data supports. Across the portfolio, the artifacts are the evidence — CTQ tables, screening logic, failure matrices, throughput notes, and validation snapshots.
  </p>
 </section>
 
@@ -94,11 +141,11 @@ body_class: home-page
 <section class="cta-band recruiter-cta startup-work-cta" aria-label="Work call to action">
  <div>
  <p class="system-label small">FALL 2026 WORK</p>
- <h2>Looking for process-development, automation, or wet-processing work.</h2>
- <p>Open to co-op, internship, contract, part-time research, or full-time conversations with hard-tech teams building real systems.</p>
- <p class="inline-secondary-links"><a href="{{ '/projects/' | relative_url }}">Projects</a> · <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a></p>
+ <h2>Looking for process-development, automation, wet-processing, or advanced-materials work.</h2>
+ <p>Open to Fall 2026 co-op, internship, project work, part-time research, or technical conversations with hard-tech teams building physical systems.</p>
+ <p class="inline-secondary-links"><a href="{{ '/projects/' | relative_url }}">Case files</a> · <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a></p>
  </div>
  <div class="cta-row compact-cta">
- <a class="button primary" href="mailto:{{ site.email }}">Email me</a>
+ <a class="button primary" href="mailto:{{ site.email }}">Email Nathan →</a>
  </div>
 </section>
