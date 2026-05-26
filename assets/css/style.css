@@ -6391,3 +6391,305 @@ body.home-page .site-footer::after,
     height: 260px !important;
   }
 }
+
+/* === FINAL HARD FIX: visible homepage hero text + seamless white handoff ===
+   This block intentionally sits last in the cascade. It restores the original
+   city/fixed-background feel, keeps the scroll-to-white transition, removes the
+   gray handoff band, and guarantees the hero copy paints above every overlay. */
+html,
+body.home-page {
+  background: #ffffff !important;
+  min-height: 100% !important;
+}
+
+body.home-page {
+  background-image: none !important;
+  background-attachment: scroll !important;
+  overflow-x: hidden !important;
+  overscroll-behavior-y: none !important;
+}
+
+body.home-page::before,
+body.home-page::after {
+  content: none !important;
+  display: none !important;
+}
+
+.home-page #content {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background: transparent !important;
+}
+
+.home-page #content::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  display: block !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+  background-image: url('../images/homepage-background-fast.jpg') !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+  transform: translateZ(0) !important;
+  backface-visibility: hidden !important;
+}
+
+.home-page #content::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: block !important;
+  pointer-events: none !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.00) 0vh,
+    rgba(255,255,255,0.03) 18vh,
+    rgba(255,255,255,0.12) 34vh,
+    rgba(255,255,255,0.34) 50vh,
+    rgba(255,255,255,0.70) 64vh,
+    rgba(255,255,255,0.94) 76vh,
+    #ffffff 86vh,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page #content > * {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.home-page .hero {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: visible !important;
+  min-height: clamp(620px, 78vh, 760px) !important;
+  margin: 0 !important;
+  padding-top: clamp(112px, 13vh, 146px) !important;
+  padding-bottom: clamp(70px, 9vh, 96px) !important;
+  background: transparent !important;
+}
+
+.home-page .hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 0 -160px 0 !important;
+  z-index: 1 !important;
+  display: block !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  animation: none !important;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(248,251,252,0.96) 0%,
+      rgba(248,251,252,0.88) 34%,
+      rgba(248,251,252,0.52) 62%,
+      rgba(248,251,252,0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.00) 0%,
+      rgba(255,255,255,0.06) 46%,
+      rgba(255,255,255,0.72) 82%,
+      #ffffff 100%
+    ) !important;
+  background-size: 100% 100%, 100% 100% !important;
+  background-position: center, center !important;
+  background-repeat: no-repeat !important;
+}
+
+.home-page .hero::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -150px !important;
+  height: 260px !important;
+  z-index: 2 !important;
+  display: block !important;
+  pointer-events: none !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.42) 28%,
+    rgba(255,255,255,.88) 62%,
+    #ffffff 86%,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page .hero-inner,
+.home-page .hero-copy,
+.home-page .hero .hero-identity,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row,
+.home-page .hero .cta-row .button,
+.home-page .hero-title-line {
+  position: relative !important;
+  z-index: 10 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+  animation: none !important;
+}
+
+.home-page .hero .hero-identity,
+.home-page .hero .hero-identity span,
+.home-page .hero .hero-identity strong {
+  color: rgba(15, 23, 42, 0.86) !important;
+}
+
+.home-page .hero h1 {
+  display: block !important;
+  max-width: 760px !important;
+  margin: 0 0 0 -0.055em !important;
+  color: rgba(15, 23, 42, 0.98) !important;
+  text-shadow: none !important;
+}
+
+.home-page .hero-title-line {
+  display: block !important;
+}
+
+.home-page .hero-lede {
+  max-width: 700px !important;
+  color: rgba(15, 23, 42, 0.78) !important;
+}
+
+.home-page .home-library {
+  position: relative !important;
+  z-index: 4 !important;
+  margin-top: 0 !important;
+  padding-top: clamp(74px, 8vw, 112px) !important;
+  background: #ffffff !important;
+}
+
+.home-page .home-library::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: -220px !important;
+  width: 100vw !important;
+  height: 300px !important;
+  transform: translateX(-50%) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.70) 34%,
+    #ffffff 72%,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page .home-library > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.home-page .technical-proof,
+.home-page .human-service-band,
+.home-page .recruiter-cta,
+.home-page .site-footer {
+  position: relative !important;
+  z-index: 4 !important;
+  background-color: #ffffff !important;
+}
+
+body.home-page .site-footer,
+.home-page .site-footer {
+  background: #ffffff !important;
+  box-shadow: 0 -12px 40px rgba(255,255,255,.92), 0 -1px 0 rgba(9,51,56,.055) !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-page .hero .hero-identity,
+  .home-page .hero h1,
+  .home-page .hero .hero-lede,
+  .home-page .hero .cta-row,
+  .home-page .hero .cta-row .button,
+  .home-page .hero-title-line {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-page #content::before {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: auto !important;
+    height: 960px !important;
+    background-position: center top !important;
+  }
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.06) 0vh,
+      rgba(255,255,255,.24) 30vh,
+      rgba(255,255,255,.64) 54vh,
+      rgba(255,255,255,.94) 72vh,
+      #ffffff 84vh,
+      #ffffff 100%
+    ) !important;
+  }
+
+  .home-page .hero::before {
+    background-image:
+      linear-gradient(180deg, rgba(248,251,252,.88) 0%, rgba(248,251,252,.70) 44%, rgba(248,251,252,.32) 70%, #ffffff 100%) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page #content::before {
+    height: 780px !important;
+    background-position: center top !important;
+  }
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.12) 0vh,
+      rgba(255,255,255,.42) 26vh,
+      rgba(255,255,255,.82) 48vh,
+      #ffffff 62vh,
+      #ffffff 100%
+    ) !important;
+  }
+
+  .home-page .hero {
+    min-height: auto !important;
+    padding-bottom: 64px !important;
+  }
+
+  .home-page .hero h1 {
+    margin-left: -0.025em !important;
+  }
+
+  .home-page .hero::before {
+    inset: 0 0 -120px 0 !important;
+  }
+
+  .home-page .hero::after {
+    bottom: -105px !important;
+    height: 210px !important;
+  }
+
+  .home-page .home-library {
+    padding-top: 72px !important;
+  }
+}
