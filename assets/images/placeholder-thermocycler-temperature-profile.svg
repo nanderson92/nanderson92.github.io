@@ -14,7 +14,7 @@
 
 <rect width="900" height="430" rx="28" class="card"/>
 <text x="36" y="42" class="label ink">TEMPERATURE–TIME TRACE SLOT</text>
-<text x="36" y="66" class="small muted">Temperature trace frame: setpoint, measured temperature, overshoot, ramp rate, and hold band.</text>
+<text x="36" y="66" class="small muted">Thermocycler trace: setpoint, measured temperature, overshoot, ramp rate, and hold band.</text>
 <g transform="translate(90 105)">
   <line x1="0" y1="245" x2="720" y2="245" stroke="#27484c" stroke-width="2"/>
   <line x1="0" y1="245" x2="0" y2="25" stroke="#27484c" stroke-width="2"/>

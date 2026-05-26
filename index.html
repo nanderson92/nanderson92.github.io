@@ -8,11 +8,11 @@ body_class: home-page
  <div class="hero-inner hero-asymmetric">
  <div class="hero-copy">
  <div class="hero-identity hero-identity-single" aria-label="Portfolio focus">
- <span><strong>Process development</strong> · wet processing · automation</span>
+ <span><strong>Georgia Tech ChemE</strong> · process development · wet processing · automation</span>
  </div>
- <h1><span class="hero-title-line">Making the future </span><span class="hero-title-line">manufacturable.</span></h1>
+ <h1 aria-label="Making the future manufacturable."><span class="hero-title-line" aria-hidden="true">Making the future</span><br aria-hidden="true"><span class="hero-title-line" aria-hidden="true">manufacturable.</span></h1>
  <p class="hero-lede">
- Printed electronics, microfluidic biotech, and embedded process control. I build systems that move lab results out of the lab.
+ Printed electronics, microfluidic biotech, embedded process control. I build systems that move lab results out of the lab.
  </p>
  <div class="cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">See the build logs</a>
@@ -22,77 +22,60 @@ body_class: home-page
  </div>
 </section>
 
-<section id="lead-build" class="signature-case-section build-preview-section" aria-label="Flagship build preview">
- <div class="signature-case-card enhanced-signature-card compact-build-preview-card">
- <div class="signature-copy">
- <p class="system-label small">FILLER LAB · GEORGIA TECH · EDGE CROWDING → USEFUL PLACEMENT</p>
- <h2>Micromodular Electronics Deposition</h2>
- <p class="signature-subtitle">When microdevices are printed from a droplet, they tend to crowd at the edge. I built the measurement workflow for identifying substrate conditions that produce useful placement.</p>
- <div class="case-meta-row"><span>Wet processing</span><span>Image-derived metrics</span><span>Substrate screening</span></div>
- <div class="signature-proof-grid" aria-label="Micromodular deposition proof points">
- <span><strong>Hard part</strong> The final stain pattern hides the drying, draining, and contact-line history that created it.</span>
- <span><strong>Method</strong> Top/side-view microscopy plus Python/ImageJ analysis to compare substrate/backing conditions.</span>
- <span class="signature-output"><strong>Output</strong> A substrate-screening decision framework for reducing edge crowding and preserving interconnect access.</span>
- <span class="tools-row"><strong>Tools</strong> <em>Optical microscopy</em><em>ImageJ/Fiji</em><em>Python</em><em>Substrate screening</em><em>JMP</em></span>
- </div>
- <a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open build log <span aria-hidden="true">→</span></a>
- </div>
- <figure class="signature-visual">
- <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="lazy">
- </figure>
- </div>
-</section>
-
-<section class="proof-section prose-proof-section" aria-label="Technical center of gravity">
- <div class="proof-heading">
- <p class="system-label small">TECHNICAL CENTER</p>
- <h2>Process judgment, not a skills cloud.</h2>
- <p>I use experiments, measurements, and operating windows to decide what should change in a physical system.</p>
- </div>
- <div class="proof-prose-grid">
- <article><h3>Process development</h3><p>Define the bottleneck, choose controllable variables, measure outputs that matter, and convert results into a decision rule.</p></article>
- <article><h3>Physical measurement</h3><p>Use microscopy, electrical testing, thermal logs, and QC observations to make fragile results auditable.</p></article>
- <article><h3>Manufacturing translation</h3><p>Ask what must become repeatable before a promising lab result can survive real tooling, operators, and throughput pressure.</p></article>
- </div>
-</section>
-
-<section class="home-library project-strip supporting-home-cases" aria-label="More engineering work">
+<section class="home-library selected-build-logs-section" aria-label="Selected build logs">
  <div class="content-shell home-content-shell">
  <div class="section-heading">
- <p class="system-label">MORE BUILDS</p>
- <h2>Same instinct, different systems.</h2>
- <p>Operations, biotech, reliability, and controls: each started with a real bottleneck and ended with a sharper measurement loop.</p>
+ <p class="system-label">SELECTED BUILD LOGS</p>
+ <h2>Work organized around bottlenecks, variables, and next decisions.</h2>
+ <p>Each page shows the mechanism I was trying to control, what I measured, and how I would make the process more repeatable in the next version.</p>
  </div>
 
- <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid startup-home-grid">
+ <div class="portfolio-grid projects-library selected-build-grid">
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Ops · quality loops</span><span>Operating dashboard</span></div>
- <h2>Operations &amp; Quality Systems</h2>
- <p class="compact-card-summary">Managed a McDonald’s drive-through at 110 cars/hour peak and learned how bottlenecks, QC, downtime, and staffing behave under pressure.</p>
- <p class="compact-card-link"><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open build log →</a></p>
+ <div class="card-topline"><span>Filler Lab · printed electronics</span><span>Screening framework</span></div>
+ <h2>Droplet Deposition Screening</h2>
+ <p class="compact-card-summary">Microdevices printed from droplets crowd at the edges. I built the measurement workflow for identifying substrate conditions that preserve useful placement.</p>
+ <div class="mini-proof-row"><span><strong>Hard part</strong> final stain patterns hide transport history</span><span><strong>Output</strong> substrate/backing decision logic</span></div>
+ <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Mayo Clinic · microfluidics</span><span>20× throughput</span></div>
+ <div class="card-topline"><span>Mayo Clinic · microfluidics</span><span>Throughput 20×</span></div>
  <h2>Stem-Cell Microencapsulation</h2>
- <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to reach a 20× throughput increase and roughly 50% encapsulation-yield improvement.</p>
+ <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to move a fragile capsule demo toward a faster, more stable process window.</p>
+ <div class="mini-proof-row"><span><strong>Measured as</strong> throughput and usable-yield change</span><span><strong>Constraint</strong> coalescence and capsule quality</span></div>
  <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · process</span><span>Failure logic</span></div>
+ <div class="card-topline"><span>Reliability · process control</span><span>Failure logic</span></div>
  <h2>Printed Interconnect Reliability</h2>
- <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to upstream process decisions.</p>
+ <p class="compact-card-summary">Printed conductive lines can pass initially and fail later. I turned resistance drift, opens, and intermittent behavior into failure classes.</p>
+ <div class="mini-proof-row"><span><strong>Hard part</strong> early pass ≠ robust process</span><span><strong>Output</strong> go/no-go classification</span></div>
  <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Automation · diagnostics</span><span>Control prototype</span></div>
  <h2>Thermocycler Control</h2>
- <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
+ <p class="compact-card-summary">Built a PID thermal-cycling prototype around ramp rate, overshoot, settling time, hold stability, and thermal lag.</p>
+ <div class="mini-proof-row"><span><strong>Control loop</strong> controller → actuator → thermal mass → sensor</span><span><strong>Output</strong> repeatable temperature-time logic</span></div>
  <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open build log →</a></p>
  </article>
  </div>
+ </div>
+</section>
+
+<section class="proof-section proof-prose-section" aria-label="Technical center of gravity">
+ <div class="proof-heading">
+ <p class="system-label small">TECHNICAL CENTER OF GRAVITY</p>
+ <h2>Process-development judgment, not a skills cloud.</h2>
+ <p>I’m strongest where a physical system has a messy bottleneck: wetting and transport in printed electronics, flow and stabilization in microfluidics, resistance drift in reliability screens, or thermal lag in embedded controls.</p>
+ </div>
+ <div class="proof-prose-grid">
+  <p><strong>Define the output.</strong> Decide what “good” means before the experiment: useful placement, usable yield, stable resistance, or repeatable temperature history.</p>
+  <p><strong>Instrument the loop.</strong> Turn observation into a measurement workflow using microscopy, electrical testing, image analysis, logs, or controller traces.</p>
+  <p><strong>Make the next decision visible.</strong> Convert results into accept/reject/redesign logic instead of stopping at a pretty plot.</p>
  </div>
 </section>
 
@@ -103,7 +86,7 @@ body_class: home-page
  <article>
  <p class="system-label">BACKGROUND</p>
  <h2>Discovery shows what is possible. Delivery proves what can be repeated.</h2>
- <p>Background explains the personal thread behind my interest in accessible, scalable technology and why process engineering became the path from discovery to delivery.</p>
+ <p>My background page explains the personal thread behind my interest in accessible, scalable technology and why process engineering became my path from lab result to deployable system.</p>
  <div class="inline-links">
  <a class="button tertiary" href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
  </div>
@@ -118,6 +101,6 @@ body_class: home-page
  <p class="inline-secondary-links"><a href="{{ '/projects/' | relative_url }}">Projects</a> · <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a></p>
  </div>
  <div class="cta-row compact-cta">
- <a class="button primary" href="mailto:{{ site.email }}">Email me</a>
+ <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
  </div>
 </section>

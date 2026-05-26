@@ -23,6 +23,6 @@
   <path class="line" d="M0 82 C80 82 160 84 238 88 S370 120 580 220" opacity=".9"/>
   <text x="215" y="286" class="small muted">normalized time</text>
   <text x="-58" y="20" class="small muted" transform="rotate(-90 -58 20)">r(t)/r₀</text>
-  <text x="365" y="70" class="mono muted">condition traces + replicate bands</text>
+  <text x="365" y="70" class="mono muted">condition traces</text>
 </g>
 </svg>

@@ -1,22 +1,21 @@
 ---
 layout: page
-title: Operations & Quality Systems
-category: 110 cars/hr peak operations
-subtitle: I managed a McDonald’s drive-through that served 110 cars per hour at peak. Here is what that taught me about bottlenecks, quality loops, and keeping a system running when everything is breaking.
+title: Drive-Through Operations
+category: Constraint-based throughput
+subtitle: "I managed a McDonald’s drive-through at peak flow and learned how bottlenecks, quality loops, and uptime behave when the system is live and every delay is visible."
 ---
 
 <div class="selected-outcomes operations-stats-hero">
  <div class="metric-strip stat-strip ops-stat-strip">
-  <span class="stat-primary"><strong>+20%</strong><em>cars/hour</em></span>
-  <span class="stat-primary"><strong>−15%</strong><em>order-to-handoff time</em></span>
-  <span class="stat-primary"><strong>~30%</strong><em>downtime reduction</em></span>
+  <span class="stat-primary"><strong>~20%</strong><em>documented cars/hour gain after prep-staging changes</em></span>
+  <span class="stat-primary"><strong>~15%</strong><em>shorter order-to-handoff time from shift timing samples</em></span>
+  <span class="stat-primary"><strong>~30%</strong><em>downtime reduction after preventive-maintenance focus</em></span>
  </div>
- <p class="metric-method-note">Metric basis: recurring peak-shift observations from live restaurant operations. These are operational estimates tied to staffing, prep, handoff timing, and maintenance changes, not a controlled academic study.</p>
 </div>
 
 <figure class="data-placeholder-figure wide-placeholder ops-throughput-figure">
- <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Operations throughput evidence slot for before-after visualization or bottleneck map." loading="lazy">
- <figcaption>Evidence slot: before/after throughput visual, shift-log summary, or bottleneck map for the peak-rush process changes.</figcaption>
+ <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Operations throughput before-after visualization or bottleneck map placeholder." loading="lazy">
+ <figcaption>Throughput visualization slot: before/after peak-shift flow, bottleneck station, downtime reason, and corrective-action notes.</figcaption>
 </figure>
 
 ## What changed how I think
@@ -36,16 +35,12 @@ Manufacturing lines, fast-food drive-throughs, and microfluidic systems share mo
  <div><span>04</span><strong>Crew training → standard work</strong><p>The process is only repeatable if people can execute the same handoffs under pressure.</p></div>
 </div>
 
-## Roles represented
+## Scope represented
 
-<p class="role-synthesis">Across high-volume drive-through operations at McDonald’s, QSR training at Chick-fil-A, and small-team retail operations at a local ice-cream shop, I learned to read service lines as coupled flow systems: bottlenecks, handoffs, inventory, uptime, and standard work.</p>
+Across high-volume drive-through management at McDonald’s, QSR training work at Chick-fil-A, and small-team retail operations, I learned to read service lines as coupled flow systems: bottleneck station, handoff timing, rework, downtime, staffing, and corrective action.
 
 ## What I’d do next
 
-At a hardware startup, the first version is a single dashboard: bottleneck station, downtime reason, defect/rework count, corrective action, and owner. Not bureaucracy — instrumentation. The point is making repeated failure modes visible early enough to change the system.
+At a hardware startup, the first version is a single dashboard: bottleneck station, downtime reason, defect/rework count, and corrective action. Not bureaucracy — instrumentation. The goal is to make repeated failure modes visible early enough to change the process before they become the normal way the line runs.
 
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>

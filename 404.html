@@ -4,15 +4,11 @@ title: Page not found
 permalink: /404.html
 ---
 
-<section class="page-hero error-page-hero">
+<section class="page-hero compact-404-hero">
  <div class="page-hero-inner">
   <p class="system-label">404</p>
   <h1>Page not found.</h1>
-  <p class="page-subtitle">This link does not point to a live build log or page anymore. Start from the homepage or projects index.</p>
-  <div class="cta-row">
-   <a class="button primary" href="{{ '/' | relative_url }}">Home</a>
-   <a class="button secondary" href="{{ '/projects/' | relative_url }}">Build logs</a>
-   <a class="button tertiary" href="{{ '/contact/' | relative_url }}">Contact</a>
-  </div>
+  <p class="page-subtitle">This link does not match a current build log or page. Start from the homepage, project index, or contact page.</p>
+  <div class="cta-row"><a class="button primary" href="{{ '/' | relative_url }}">Home</a><a class="button secondary" href="{{ '/projects/' | relative_url }}">Build logs</a><a class="button tertiary" href="{{ '/contact/' | relative_url }}">Contact</a></div>
  </div>
 </section>

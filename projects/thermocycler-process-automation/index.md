@@ -1,19 +1,14 @@
 ---
 layout: page
 title: Thermocycler Control
-category: PID thermal control · embedded diagnostics
+category: PID thermal control
 tags: Automation · Controls · Diagnostics · Hardware
 subtitle: "A biological protocol only works in hardware if the temperature-time trajectory is repeatable: ramp rate, overshoot, settling time, and hold stability are the real product requirements."
 ---
 
 <div class="hardware-interface-card proof-artifact-card" aria-label="Thermocycler hardware interface map">
- <div>
-  <h3>Controller → actuator → thermal mass → sensor</h3>
-  <p>The hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p>
- </div>
- <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram">
-  <span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span>
- </div>
+ <div><h3>Controller → actuator → thermal mass → sensor</h3><p>The hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p></div>
+ <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram"><span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span></div>
 </div>
 
 ## What had to be controlled
@@ -28,63 +23,37 @@ subtitle: "A biological protocol only works in hardware if the temperature-time 
 ## Control-loop schematic
 
 <div class="process-map control-loop-map" aria-label="PID thermal control schematic">
- <div class="process-map-stage"><p>SETPOINT</p><span>denaturation</span><span>annealing</span><span>extension</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>PID</p><span>error</span><span>gain tuning</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>ACTUATION</p><span>heater</span><span>cooling fan</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>FEEDBACK</p><span>sensor signal vs. sample temperature estimate</span></div>
+ <div class="process-map-stage"><p>SETPOINT</p><span>denaturation</span><span>annealing</span><span>extension</span></div><div class="process-map-arrow" aria-hidden="true">→</div><div class="process-map-stage"><p>PID</p><span>error</span><span>gain tuning</span></div><div class="process-map-arrow" aria-hidden="true">→</div><div class="process-map-stage"><p>ACTUATION</p><span>heater</span><span>cooling fan</span></div><div class="process-map-arrow" aria-hidden="true">→</div><div class="process-map-stage decision-stage"><p>FEEDBACK</p><span>sensor signal vs. sample temperature estimate</span></div>
 </div>
 
 ## What did not work at first
 
 The first control problem looked like a software problem, but the limiting issue was physical: sensor placement, thermal lag, and heat transfer through the block. Better tuning helped only after the hardware response was treated as part of the process.
 
-## Process knobs
+## Decision framework
 
-| Knob | Why it matters |
-|---|---|
-| Ramp rate | Determines total cycle time and diagnostic speed. |
-| Steady-state error | Determines whether the sample experiences the intended temperature. |
-| Overshoot / undershoot | Can damage assay performance or reduce repeatability. |
-| Sensor placement | Affects whether measured temperature represents sample temperature. |
-| Controller gains | Determine stability, responsiveness, and oscillation behavior. |
-| Heating/cooling balance | Sets whether the device can transition quickly without excessive lag. |
+| Variable controlled | Measurement | Decision rule |
+|---|---|---|
+| Ramp rate | °C/s or °C/min between setpoints | Fast enough for cycle time, slow enough to avoid protocol-breaking lag. |
+| Overshoot / undershoot | Maximum excursion past target | Reject tuning that looks fast but crosses outside the acceptable thermal band. |
+| Hold stability | Temperature band during holds | Keep conditions that settle reliably during denaturation, annealing, and extension. |
+| Sensor placement | Difference between block reading and sample-relevant temperature | Move measurement closer to the sample before over-tuning the controller. |
 
 ## Methods and tools
 
-<div class="two-col">
- <div class="matrix-card"><h3>Hardware / control</h3><p>Embedded controller, temperature sensor feedback, heater/fan actuation, PID tuning, and thermal cycling scripts.</p></div>
- <div class="matrix-card"><h3>Validation</h3><p>Thermal profile logging, ramp-rate calculation, hold stability checks, repeatability checks, and protocol comparison.</p></div>
-</div>
+<div class="two-col"><div class="matrix-card"><h3>Hardware / control</h3><p>Embedded controller, temperature sensor feedback, heater/fan actuation, PID tuning, and thermal cycling scripts.</p></div><div class="matrix-card"><h3>Validation</h3><p>Thermal profile logging, ramp-rate calculation, hold stability checks, repeatability checks, and protocol comparison.</p></div></div>
 
 <div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
 
-## Measured performance fields
+## Measured performance slot
 
 <div class="measured-performance-grid">
- <figure class="data-placeholder-figure wide-placeholder">
-  <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Placeholder for thermocycler temperature versus time profile." loading="lazy">
-  <figcaption>Temperature-time trace slot for setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
- </figure>
- <div class="performance-fields">
-  <h3>Numbers to fill from prototype logs</h3>
-  <ul>
-   <li><strong>Ramp rate:</strong> measured °C/s or °C/min between setpoints.</li>
-   <li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li>
-   <li><strong>Hold stability:</strong> temperature band during denaturation, annealing, and extension holds.</li>
-   <li><strong>Repeatability:</strong> cycle-to-cycle variation across repeated thermal cycles.</li>
-  </ul>
- </div>
+ <figure class="data-placeholder-figure wide-placeholder"><img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Thermocycler temperature versus time profile placeholder." loading="lazy"><figcaption>Temperature-time trace slot: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption></figure>
+ <div class="performance-fields"><h3>Prototype-log metrics</h3><ul><li><strong>Ramp rate:</strong> measured °C/s or °C/min between setpoints.</li><li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li><li><strong>Hold stability:</strong> temperature band during denaturation, annealing, and extension holds.</li><li><strong>Repeatability:</strong> cycle-to-cycle variation across repeated thermal cycles.</li></ul></div>
 </div>
 
 ## What I’d do next
 
 The next version would measure closer to the actual sample, not just the thermal block. I would also design the controller around the slowest physical response in the system instead of only chasing faster setpoint tracking, because overshoot that looks acceptable on the block can still be bad for the assay.
 
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>
