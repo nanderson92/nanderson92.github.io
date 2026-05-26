@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Thermocycler Control
+title: Thermocycler Process Automation
 category: PID thermal control
+date_range: Summer 2025
+affiliation: Mayo Clinic · Rochester, MN
 tags: Automation · Controls · Diagnostics · Hardware
 subtitle: "A biological protocol only works in hardware if the temperature-time trajectory is repeatable: ramp rate, overshoot, settling time, and hold stability are the real product requirements."
 ---
@@ -61,15 +63,15 @@ The first control problem looked like a software problem, but the limiting issue
 
 <div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
 
-## Measured performance slot
+## Prototype performance metrics
 
 <div class="measured-performance-grid">
  <figure class="data-placeholder-figure wide-placeholder">
-  <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Placeholder for thermocycler temperature versus time profile." loading="lazy">
-  <figcaption>Replace this with the measured temperature-time trace: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
+  <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Planned thermocycler temperature versus time profile." loading="lazy">
+  <figcaption>Temperature-time trace with setpoint, measured temperature, overshoot, ramp rate, and hold-stability band (data forthcoming).</figcaption>
  </figure>
  <div class="performance-fields">
-  <h3>Numbers to fill from prototype logs</h3>
+  <h3>Metrics to report from prototype logs</h3>
   <ul>
    <li><strong>Ramp rate:</strong> measured °C/s or °C/min between setpoints.</li>
    <li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li>

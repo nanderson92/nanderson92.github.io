@@ -9,7 +9,7 @@ subtitle: Process engineering, manufacturing engineering, R&D, semiconductor pro
  <p class="system-label small">RESUME / TECHNICAL PROFILE</p>
  <h2>Chemical engineering student focused on process-development workflows.</h2>
  <p>
- Georgia Tech Chemical & Biomolecular Engineering undergraduate building experience across Filler Lab printed electronics research, Mayo Clinic microencapsulation, wet processing, image-derived metrics, reliability analysis, process simulation, and clean-technology systems.
+ Georgia Tech Chemical & Biomolecular Engineering undergraduate building experience across printed electronics, wet processing, image-derived metrics, reliability analysis, process simulation, and clean-technology systems.
  </p>
  <p class="target-line">
  Target areas: process engineering · manufacturing · advanced materials · semiconductors · clean technology.

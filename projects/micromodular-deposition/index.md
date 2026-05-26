@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Droplet Deposition Screening
-category: Filler Lab · Georgia Tech · edge crowding → useful placement
+title: Micromodular Electronics Deposition
+category: Edge crowding → useful placement
+date_range: 2025–present
+affiliation: Filler Lab, Georgia Institute of Technology
 tags: Semiconductors · Process Development · Interfacial Transport · Automation & Data
-subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I built the measurement workflow for identifying which substrate conditions actually fix that."
+subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I spent a year figuring out which substrate conditions actually fix that."
 ---
 
 <figure class="flagship-page-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
- <figcaption>Filler Lab system view: deposition sits between fabricated components and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
+ <figcaption>System view: deposition sits between fabricated components and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
 </figure>
 
 <div class="thesis-box promoted-thesis-box">
@@ -16,9 +18,9 @@ subtitle: "When you print microdevices from a droplet, they crowd at the edges a
  <p>The hard part was separating surface wetting, porous drainage, evaporation, and contact-line pinning instead of treating the final stain pattern as the whole story.</p>
 </div>
 
+<blockquote class="ownership-callout">I designed the experiments from scratch: chose the substrates, set up both top-view and side-view video capture, wrote the Python and ImageJ pipelines to extract contact-line metrics, and used those metrics to figure out which boundary conditions actually produce useful placement.</blockquote>
+
 <div class="role-block flagship-role-block">
- <p>I designed the experiments from scratch: chose the substrates, set up both top-view and side-view video capture, wrote the Python and ImageJ pipelines to extract contact-line metrics, and used those metrics to figure out which boundary conditions actually produce useful placement.</p>
- <p><strong>Affiliation:</strong> Filler Lab, Georgia Tech.</p>
  <p><strong>Core output:</strong> a substrate-screening decision framework the lab can use to evaluate new deposition surfaces before committing to downstream interconnect printing.</p>
 </div>
 
@@ -134,16 +136,16 @@ Some early conditions looked promising because they moved liquid quickly, but th
 
 <div class="placeholder-figure-grid deposition-output-grid">
  <figure class="data-placeholder-figure wide-placeholder">
-  <img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Placeholder for side-by-side deposition microscopy images across substrate conditions." loading="lazy">
-  <figcaption><strong>Highest-priority replacement:</strong> add same-magnification optical microscopy images for glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption>
+  <img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Planned side-by-side deposition microscopy comparison across substrate conditions." loading="lazy">
+  <figcaption>Microscopy comparison across substrate/backing conditions (data forthcoming).</figcaption>
  </figure>
  <figure class="data-placeholder-figure">
-  <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy">
-  <figcaption>Contact-line trace slot for r(t)/r₀ versus normalized drying/imbibition time.</figcaption>
+  <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Planned r(t)/r0 normalized contact-line trace." loading="lazy">
+  <figcaption>Contact-line dynamics across substrate/backing conditions (data forthcoming).</figcaption>
  </figure>
  <figure class="data-placeholder-figure">
-  <img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Placeholder for edge to center deposition ratio chart." loading="lazy">
-  <figcaption>Decision-metric slot for edge/center ratio across substrate/backing conditions.</figcaption>
+  <img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Planned edge-to-center deposition ratio chart." loading="lazy">
+  <figcaption>Edge/center ratio comparison across substrate/backing conditions (data forthcoming).</figcaption>
  </figure>
 </div>
 

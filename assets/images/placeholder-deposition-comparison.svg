@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 430" role="img" aria-labelledby="title desc">
-<title id="title">Placeholder for deposition-pattern comparison</title>
-<desc id="desc">Three-panel placeholder for future microscopy comparison across substrate conditions.</desc>
+<title id="title">Planned deposition-pattern comparison</title>
+<desc id="desc">Three-panel frame for microscopy comparison across substrate conditions.</desc>
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -13,13 +13,13 @@
 </defs>
 
 <rect width="1080" height="430" rx="28" class="card"/>
-<text x="36" y="42" class="label ink">PUBLIC-SAFE MICROSCOPY COMPARISON SLOT</text>
-<text x="36" y="67" class="small muted">Suggested panels: glass control · porous membrane/air gap · porous membrane/absorbent backing</text>
+<text x="36" y="42" class="label ink">Microscopy comparison</text>
+<text x="36" y="67" class="small muted">Panels: glass control · porous membrane/air gap · porous membrane/absorbent backing</text>
 <g transform="translate(50 105)">
-  <g><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">GLASS / CONTROL</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><circle cx="145" cy="132" r="60" fill="none" stroke="#d6b65b" stroke-width="18" opacity=".45"/><g fill="#08708b" opacity=".70"><circle cx="86" cy="132" r="4"/><circle cx="195" cy="129" r="4"/><circle cx="155" cy="77" r="3"/><circle cx="151" cy="190" r="3"/></g><text x="22" y="216" class="small muted">edge-heavy pattern slot</text></g>
-  <g transform="translate(345 0)"><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">POROUS + AIR GAP</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><g fill="#08708b" opacity=".66"><circle cx="120" cy="110" r="5"/><circle cx="150" cy="130" r="5"/><circle cx="171" cy="96" r="4"/><circle cx="126" cy="166" r="4"/><circle cx="194" cy="154" r="5"/><circle cx="101" cy="142" r="3"/></g><text x="22" y="216" class="small muted">mixed deposition slot</text></g>
-  <g transform="translate(690 0)"><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">POROUS + ABSORBENT</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><g fill="#08708b" opacity=".74"><circle cx="145" cy="132" r="5"/><circle cx="120" cy="120" r="5"/><circle cx="166" cy="118" r="4"/><circle cx="133" cy="154" r="4"/><circle cx="174" cy="151" r="5"/><circle cx="104" cy="151" r="3"/><circle cx="188" cy="101" r="3"/><circle cx="111" cy="91" r="3"/></g><text x="22" y="216" class="small muted">candidate useful-placement slot</text></g>
+  <g><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">GLASS / CONTROL</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><circle cx="145" cy="132" r="60" fill="none" stroke="#d6b65b" stroke-width="18" opacity=".45"/><g fill="#08708b" opacity=".70"><circle cx="86" cy="132" r="4"/><circle cx="195" cy="129" r="4"/><circle cx="155" cy="77" r="3"/><circle cx="151" cy="190" r="3"/></g><text x="22" y="216" class="small muted">edge-heavy pattern</text></g>
+  <g transform="translate(345 0)"><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">POROUS + AIR GAP</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><g fill="#08708b" opacity=".66"><circle cx="120" cy="110" r="5"/><circle cx="150" cy="130" r="5"/><circle cx="171" cy="96" r="4"/><circle cx="126" cy="166" r="4"/><circle cx="194" cy="154" r="5"/><circle cx="101" cy="142" r="3"/></g><text x="22" y="216" class="small muted">mixed deposition</text></g>
+  <g transform="translate(690 0)"><rect width="290" height="240" rx="20" fill="#fff" stroke="#d4e6e8"/><text x="22" y="32" class="mono muted">POROUS + ABSORBENT</text><circle cx="145" cy="132" r="74" fill="#f8fbfb" stroke="#cfdfe1" stroke-width="2"/><g fill="#08708b" opacity=".74"><circle cx="145" cy="132" r="5"/><circle cx="120" cy="120" r="5"/><circle cx="166" cy="118" r="4"/><circle cx="133" cy="154" r="4"/><circle cx="174" cy="151" r="5"/><circle cx="104" cy="151" r="3"/><circle cx="188" cy="101" r="3"/><circle cx="111" cy="91" r="3"/></g><text x="22" y="216" class="small muted">candidate useful placement</text></g>
 </g>
 <rect x="36" y="370" width="1008" height="34" rx="17" fill="#ffffff" opacity=".86" stroke="#d4e6e8"/>
-<text x="58" y="392" class="small muted">Manual replacement target: same magnification, same crop size, condition labels, and note whether the image is representative or a replicate average.</text>
+<text x="58" y="392" class="small muted">Same magnification and crop size support condition-to-condition comparison.</text>
 </svg>
