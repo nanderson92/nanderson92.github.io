@@ -3,17 +3,15 @@ layout: page
 title: Stem-Cell Microencapsulation
 category: Mayo Clinic · 20× throughput increase
 tags: Microfluidics · Process Development · Biomedical Manufacturing
-subtitle: "At Mayo Clinic, I built and tuned a microfluidic process for core-shell hydrogel capsules: flow ratio, crosslinking, microscopy QC, throughput, coalescence, and usable yield."
+subtitle: "I built a microfluidic system for making core-shell hydrogel capsules that hold stem cells, and tuned it from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
 ---
 
-<p class="credential-line"><strong>Mayo Clinic Engineering Internship</strong> · alginate-core microcapsules · ARPE-19 cell encapsulation and 3D culture</p>
-
 <div class="selected-outcomes micro-stats-hero">
- <div class="metric-strip stat-strip balanced-stat-strip">
-  <span class="stat-primary"><strong>20×</strong><em>higher throughput within the tested workflow</em></span>
-  <span class="stat-primary"><strong>~50%</strong><em>usable encapsulation-yield improvement</em></span>
-  <span class="stat-primary"><strong>↓</strong><em>coalescence after flow/crosslinking adjustment</em></span>
-  <span class="stat-primary"><strong>QC</strong><em>microscopy-supported inspection loop</em></span>
+ <div class="metric-strip stat-strip">
+  <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
+  <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
+  <span><strong>Lower coalescence</strong><em>flow/crosslinking window</em></span>
+  <span><strong>QC loop</strong><em>microscopy-supported counts</em></span>
  </div>
 </div>
 
@@ -24,11 +22,11 @@ subtitle: "At Mayo Clinic, I built and tuned a microfluidic process for core-she
 
 ## Summary
 
-Developed and tuned a flow-focused microfluidic encapsulation process for core-shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
+At Mayo Clinic, developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 
 <div class="role-block">
- <p class="system-label small">MY ROLE</p>
- <p>Fabricated PEG/alginate core-shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
+ <p class="system-label small">MAYO CLINIC · MY ROLE</p>
+ <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
 ## Problem / motivation
@@ -46,14 +44,14 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 Higher throughput was not automatically better. When flow and crosslinking conditions were not matched, faster production increased coalescence and reduced the fraction of usable capsules. That pivot made the project less about “make more capsules” and more about finding the operating window where throughput and capsule quality improved together.
 
-## Decision framework
+## Process knobs
 
-| Variable controlled | Mechanism | Measurement / output |
+| Knob | Mechanism | Output affected |
 |---|---|---|
 | Continuous/dispersed flow ratio | Shear and droplet breakup | Capsule size, throughput, coalescence |
-| Crosslink dwell time | Shell formation | Stability, handling, usable yield |
-| Collection condition | Post-formation environment | Aggregation, coalescence, recovery |
-| Cell suspension handling | Biological compatibility | Viability/usefulness of the capsule workflow |
+| Crosslink dwell time | Shell formation | Stability, handling, yield |
+| Collection condition | Post-formation environment | Aggregation, coalescence |
+| Cell suspension handling | Biological compatibility | Viability/usefulness |
 
 ## Methods and tools
 
@@ -62,10 +60,14 @@ Higher throughput was not automatically better. When flow and crosslinking condi
  <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
 </div>
 
-<div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span><span class="badge">Mayo Clinic</span></div>
+<div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
 
 ## What I’d do next
 
 If I were building the next version, I would separate the process into two controls: one loop for capsule formation at the nozzle and one loop for post-formation stabilization. The current workflow treats collection and crosslinking as downstream handling steps, but at scale they become part of the process window.
 
-<div class="case-cta-row"><a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

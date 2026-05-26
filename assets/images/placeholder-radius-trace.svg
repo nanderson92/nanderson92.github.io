@@ -14,7 +14,7 @@
 
 <rect width="760" height="430" rx="28" class="card"/>
 <text x="34" y="42" class="label ink">CONTACT-LINE DYNAMICS SLOT</text>
-<text x="34" y="66" class="small muted">r(t)/r₀ versus normalized time for substrate/backing conditions.</text>
+<text x="34" y="66" class="small muted">r(t)/r₀ versus normalized time for substrate/backing conditions can be added here.</text>
 <g transform="translate(90 100)">
   <line x1="0" y1="250" x2="580" y2="250" stroke="#27484c" stroke-width="2"/>
   <line x1="0" y1="250" x2="0" y2="20" stroke="#27484c" stroke-width="2"/>

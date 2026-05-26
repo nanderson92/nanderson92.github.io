@@ -4,103 +4,109 @@ title: Home
 body_class: home-page
 ---
 
-<section class="hero">
- <div class="hero-inner hero-asymmetric">
- <div class="hero-copy">
- <div class="hero-identity hero-identity-single" aria-label="Portfolio focus">
- <span><strong>Georgia Tech ChemE</strong> · process development · wet processing · automation</span>
- </div>
- <h1 aria-label="Making the future manufacturable."><span class="hero-title-line" aria-hidden="true">Making the future</span><br aria-hidden="true"><span class="hero-title-line" aria-hidden="true">manufacturable.</span></h1>
- <p class="hero-lede">
- Printed electronics, microfluidic biotech, embedded process control. I build systems that move lab results out of the lab.
- </p>
- <div class="cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">See the build logs</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
- </div>
- </div>
- </div>
+<section class="home-hero-direct" aria-label="Portfolio introduction">
+  <div class="home-hero-grid">
+    <article class="home-hero-panel">
+      <p class="hero-kicker">Georgia Tech Chemical Engineering · Process Development</p>
+      <h1><span>Making the</span> <span>future</span> <span>manufacturable.</span></h1>
+      <p class="hero-lede">Printed electronics, Mayo Clinic microfluidic biotech, and embedded process control. I build the measurement loops that move lab results out of the lab.</p>
+      <div class="cta-row">
+        <a class="button primary" href="{{ '/projects/' | relative_url }}">See the build logs</a>
+        <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
+      </div>
+      <div class="hero-cred-row" aria-label="Credential anchors">
+        <span>Filler Lab</span>
+        <span>Mayo Clinic</span>
+        <span>Wet processing</span>
+      </div>
+    </article>
+
+    <figure class="home-hero-photo">
+      <img src="{{ '/assets/images/nathan-anderson-poster-wide.jpg' | relative_url }}" alt="Nathan Anderson presenting Mayo Clinic alginate-core microcapsule research poster." loading="eager">
+      <figcaption>Mayo Clinic poster presentation · alginate-core microcapsules for cell encapsulation</figcaption>
+    </figure>
+  </div>
 </section>
 
-<section class="home-library selected-build-logs-section" aria-label="Selected build logs">
- <div class="content-shell home-content-shell">
- <div class="section-heading">
- <p class="system-label">SELECTED BUILD LOGS</p>
- <h2>Work organized around bottlenecks, variables, and next decisions.</h2>
- <p>Each page shows the mechanism I was trying to control, what I measured, and how I would make the process more repeatable in the next version.</p>
- </div>
+<section class="home-section selected-builds" aria-label="Selected build logs">
+  <div class="section-heading">
+    <p class="system-label">SELECTED BUILD LOGS</p>
+    <h2>Real systems, measured as engineering problems.</h2>
+    <p>Each case is organized around the bottleneck, variables, outputs, and the next decision I would make.</p>
+  </div>
 
- <div class="portfolio-grid projects-library selected-build-grid">
- <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Filler Lab · printed electronics</span><span>Screening framework</span></div>
- <h2>Droplet Deposition Screening</h2>
- <p class="compact-card-summary">Microdevices printed from droplets crowd at the edges. I built the measurement workflow for identifying substrate conditions that preserve useful placement.</p>
- <div class="mini-proof-row"><span><strong>Hard part</strong> final stain patterns hide transport history</span><span><strong>Output</strong> substrate/backing decision logic</span></div>
- <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open build log →</a></p>
- </article>
+  <div class="home-build-grid">
+    <article class="build-card feature-build-card">
+      <div class="card-topline"><span>Filler Lab · Georgia Tech</span><span>Substrate screening</span></div>
+      <h3>Droplet Deposition Screening</h3>
+      <p>Microdevices printed from droplets crowd at the edges. I built the imaging and metric workflow for identifying substrate boundary conditions that produce useful placement.</p>
+      <dl class="mini-evidence">
+        <div><dt>Hard part</dt><dd>Final stain patterns hide the contact-line, drainage, and drying history that created them.</dd></div>
+        <div><dt>Output</dt><dd>Decision framework using r(t), contact angle, edge/center ratio, density, and repeatability.</dd></div>
+      </dl>
+      <a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open build log →</a>
+    </article>
 
- <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Mayo Clinic · microfluidics</span><span>Throughput 20×</span></div>
- <h2>Stem-Cell Microencapsulation</h2>
- <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to move a fragile capsule demo toward a faster, more stable process window.</p>
- <div class="mini-proof-row"><span><strong>Measured as</strong> throughput and usable-yield change</span><span><strong>Constraint</strong> coalescence and capsule quality</span></div>
- <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open build log →</a></p>
- </article>
+    <article class="build-card">
+      <div class="card-topline"><span>Mayo Clinic</span><span>20× throughput</span></div>
+      <h3>Stem-Cell Microencapsulation</h3>
+      <p>Tuned flow ratio, crosslinking, and microscopy QC so a fragile core-shell capsule process became faster and more stable.</p>
+      <a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open build log →</a>
+    </article>
 
- <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · process control</span><span>Failure logic</span></div>
- <h2>Printed Interconnect Reliability</h2>
- <p class="compact-card-summary">Printed conductive lines can pass initially and fail later. I turned resistance drift, opens, and intermittent behavior into failure classes.</p>
- <div class="mini-proof-row"><span><strong>Hard part</strong> early pass ≠ robust process</span><span><strong>Output</strong> go/no-go classification</span></div>
- <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open build log →</a></p>
- </article>
+    <article class="build-card">
+      <div class="card-topline"><span>Filler Lab · reliability</span><span>Failure logic</span></div>
+      <h3>Printed Interconnect Reliability</h3>
+      <p>Turned resistance drift, opens, and intermittent behavior into failure classes that point back to upstream process candidates.</p>
+      <a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open build log →</a>
+    </article>
 
- <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Automation · diagnostics</span><span>Control prototype</span></div>
- <h2>Thermocycler Control</h2>
- <p class="compact-card-summary">Built a PID thermal-cycling prototype around ramp rate, overshoot, settling time, hold stability, and thermal lag.</p>
- <div class="mini-proof-row"><span><strong>Control loop</strong> controller → actuator → thermal mass → sensor</span><span><strong>Output</strong> repeatable temperature-time logic</span></div>
- <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open build log →</a></p>
- </article>
- </div>
- </div>
+    <article class="build-card">
+      <div class="card-topline"><span>Embedded controls</span><span>Thermal cycling</span></div>
+      <h3>Thermocycler Control</h3>
+      <p>Built a temperature-time control prototype around ramp rate, overshoot, settling time, hold stability, and repeatability.</p>
+      <a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open build log →</a>
+    </article>
+  </div>
+
+  <aside class="ops-proof-strip" aria-label="Operations proof point">
+    <p><strong>Operator proof:</strong> before the lab, I managed high-volume drive-through systems at peak demand. That work taught me to read queues, staffing, uptime, and handoffs as coupled flow problems.</p>
+    <a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Drive-through operations log →</a>
+  </aside>
 </section>
 
-<section class="proof-section proof-prose-section" aria-label="Technical center of gravity">
- <div class="proof-heading">
- <p class="system-label small">TECHNICAL CENTER OF GRAVITY</p>
- <h2>Process-development judgment, not a skills cloud.</h2>
- <p>I’m strongest where a physical system has a messy bottleneck: wetting and transport in printed electronics, flow and stabilization in microfluidics, resistance drift in reliability screens, or thermal lag in embedded controls.</p>
- </div>
- <div class="proof-prose-grid">
-  <p><strong>Define the output.</strong> Decide what “good” means before the experiment: useful placement, usable yield, stable resistance, or repeatable temperature history.</p>
-  <p><strong>Instrument the loop.</strong> Turn observation into a measurement workflow using microscopy, electrical testing, image analysis, logs, or controller traces.</p>
-  <p><strong>Make the next decision visible.</strong> Convert results into accept/reject/redesign logic instead of stopping at a pretty plot.</p>
- </div>
+<section class="home-section technical-center" aria-label="Technical center of gravity">
+  <div class="section-heading compact-heading">
+    <p class="system-label">TECHNICAL CENTER</p>
+    <h2>Where my work clusters.</h2>
+  </div>
+  <div class="three-col technical-center-grid">
+    <article class="matrix-card"><h3>Process windows</h3><p>Define variables, measure outputs, and translate ambiguous lab behavior into accept/reject/redesign decisions.</p></article>
+    <article class="matrix-card"><h3>Wet processing</h3><p>Droplets, porous substrates, microfluidics, crosslinking, microscopy, and fabrication workflows where interfaces decide the outcome.</p></article>
+    <article class="matrix-card"><h3>Data from physical systems</h3><p>Image-derived metrics, reliability traces, thermal profiles, and dashboards that convert observations into operating rules.</p></article>
+  </div>
 </section>
 
-<section class="human-service-band human-context-card" aria-label="Background">
- <figure class="human-context-photo">
- <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson headshot" loading="lazy">
- </figure>
- <article>
- <p class="system-label">BACKGROUND</p>
- <h2>Discovery shows what is possible. Delivery proves what can be repeated.</h2>
- <p>My background page explains the personal thread behind my interest in accessible, scalable technology and why process engineering became my path from lab result to deployable system.</p>
- <div class="inline-links">
- <a class="button tertiary" href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
- </div>
- </article>
+<section class="home-section background-teaser" aria-label="Background teaser">
+  <figure>
+    <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson headshot" loading="lazy">
+  </figure>
+  <article>
+    <p class="system-label">BACKGROUND</p>
+    <h2>Discovery shows what is possible. Delivery proves what can be repeated.</h2>
+    <p>My background explains why I care about making advanced technology tangible, useful, and accessible beyond the lab.</p>
+    <a class="button tertiary" href="{{ '/background/' | relative_url }}">Read background →</a>
+  </article>
 </section>
 
-<section class="cta-band recruiter-cta startup-work-cta" aria-label="Work call to action">
- <div>
- <p class="system-label small">FALL 2026 WORK</p>
- <h2>Looking for process-development, automation, or wet-processing work.</h2>
- <p>Open to co-op, internship, contract, part-time research, or full-time conversations with hard-tech teams building real systems.</p>
- <p class="inline-secondary-links"><a href="{{ '/projects/' | relative_url }}">Projects</a> · <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a></p>
- </div>
- <div class="cta-row compact-cta">
- <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
- </div>
+<section class="cta-band recruiter-cta" aria-label="Work call to action">
+  <div>
+    <p class="system-label small">FALL 2026 WORK</p>
+    <h2>Looking for process-development, automation, wet-processing, or hard-tech manufacturing work.</h2>
+    <p>Open to co-op, internship, contract, part-time research, or full-time conversations with teams building physical systems.</p>
+  </div>
+  <div class="cta-row compact-cta">
+    <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
+    <a class="button secondary" href="{{ '/projects/' | relative_url }}">Projects</a>
+  </div>
 </section>

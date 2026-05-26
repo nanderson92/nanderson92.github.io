@@ -1,16 +1,14 @@
 ---
 layout: page
 title: Droplet Deposition Screening
-category: Filler Lab · Edge crowding → useful placement
+category: Filler Lab · Georgia Tech · edge crowding → useful placement
 tags: Semiconductors · Process Development · Interfacial Transport · Automation & Data
-subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I built the measurement workflow for identifying substrate boundary conditions that improve placement."
+subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I built the measurement workflow for identifying which substrate conditions actually fix that."
 ---
-
-<p class="credential-line"><strong>Georgia Tech Filler Lab</strong> · micromodular printed electronics · substrate/backing screening</p>
 
 <figure class="flagship-page-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
- <figcaption>System view: deposition sits between fabricated components and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
+ <figcaption>Filler Lab system view: deposition sits between fabricated components and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
 </figure>
 
 <div class="thesis-box promoted-thesis-box">
@@ -18,8 +16,9 @@ subtitle: "When you print microdevices from a droplet, they crowd at the edges a
  <p>The hard part was separating surface wetting, porous drainage, evaporation, and contact-line pinning instead of treating the final stain pattern as the whole story.</p>
 </div>
 
-<div class="role-block flagship-role-block emphasized-role-block">
+<div class="role-block flagship-role-block">
  <p>I designed the experiments from scratch: chose the substrates, set up both top-view and side-view video capture, wrote the Python and ImageJ pipelines to extract contact-line metrics, and used those metrics to figure out which boundary conditions actually produce useful placement.</p>
+ <p><strong>Affiliation:</strong> Filler Lab, Georgia Tech.</p>
  <p><strong>Core output:</strong> a substrate-screening decision framework the lab can use to evaluate new deposition surfaces before committing to downstream interconnect printing.</p>
 </div>
 
@@ -34,23 +33,38 @@ The working answer is that porous AAO-like surfaces with controlled drainage/bac
 ## Process map
 
 <div class="process-map central-process-map" aria-label="Process input to engineering decision map">
- <div class="process-map-stage"><p>INPUTS</p><span>Droplet volume</span><span>Solvent</span><span>Device loading</span><span>Substrate</span><span>Backing layer</span></div>
+ <div class="process-map-stage">
+ <p>INPUTS</p>
+ <span>Droplet volume</span>
+ <span>Solvent</span>
+ <span>Device loading</span>
+ <span>Substrate</span>
+ <span>Backing layer</span>
+ </div>
  <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>TRANSPORT</p><span>Spreading</span><span>Imbibition</span><span>Evaporation</span><span>Pinning</span><span>Rafting/crowding</span></div>
+ <div class="process-map-stage">
+ <p>TRANSPORT</p>
+ <span>Spreading</span>
+ <span>Imbibition</span>
+ <span>Evaporation</span>
+ <span>Pinning</span>
+ <span>Rafting/crowding</span>
+ </div>
  <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>METRICS</p><span>r(t)/r₀</span><span>θ(t)</span><span>Edge/center ratio</span><span>Density map</span><span>Repeatability</span></div>
+ <div class="process-map-stage">
+ <p>METRICS</p>
+ <span>r(t)/r₀</span>
+ <span>θ(t)</span>
+ <span>Edge/center ratio</span>
+ <span>Density map</span>
+ <span>Repeatability</span>
+ </div>
  <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>DECISION</p><span>Accept / reject / redesign substrate boundary condition.</span></div>
+ <div class="process-map-stage decision-stage">
+ <p>DECISION</p>
+ <span>Accept / reject / redesign substrate boundary condition.</span>
+ </div>
 </div>
-
-## Decision framework
-
-| Variable controlled | Measurement | Decision rule |
-|---|---|---|
-| Substrate porosity / permeability | Liquid uptake behavior and final density map | Prefer conditions that reduce edge-heavy deposition without losing useful density. |
-| Backing condition | Contact-line trace, wet-region lifetime, and deposit footprint | Compare whether the backing makes the membrane behave like a drain, support, or sink. |
-| Contact-line behavior | r(t)/r₀ and pinned/receding regimes | Reject conditions that create late-stage edge sweep even if the final image looks dense. |
-| Device distribution | Edge/center ratio and repeatability | Keep conditions that preserve interconnect-accessible placement. |
 
 ## Why this is hard
 
@@ -60,6 +74,21 @@ The working answer is that porous AAO-like surfaces with controlled drainage/bac
  <p><strong>Device crowding.</strong> Dense deposits are not automatically useful if devices become inaccessible to interconnect routing.</p>
  <p><strong>Manufacturing constraint.</strong> The best pattern preserves interconnect access, not merely the highest local device density.</p>
 </div>
+
+## What did not work at first
+
+Some early conditions looked promising because they moved liquid quickly, but the deposit still ended up edge-heavy or spatially useless. That pushed the work away from “which surface looks best?” and toward a harder question: which substrate/backing boundary condition gives a repeatable transport history and a pattern that can still be wired later?
+
+## Process knobs
+
+| Knob | Why it matters | What I varied / compared |
+|---|---|---|
+| Substrate porosity / permeability | Controls liquid uptake and vertical drain rate. | Porous membranes versus low-uptake controls. |
+| Backing condition | Changes whether the porous substrate behaves like a drain, membrane, or supported surface. | Glass, air gap, absorbent backing, and support conditions. |
+| Contact angle / wetting | Sets footprint size, spreading dynamics, and transport length scale. | Contact-line behavior across substrate/backing states. |
+| Contact-line pinning | Influences coffee-ring-like accumulation and edge crowding. | Pinned, receding, and mixed regimes from video. |
+| Evaporation vs. imbibition | Determines whether flow is dominated by drying or liquid uptake. | Glass-like evaporation baseline versus porous uptake behavior. |
+| Device loading | Affects crowding, raft interactions, and useful areal density. | Qualitative loading/crowding state during deposition. |
 
 ## Measurement pipeline
 
@@ -76,11 +105,24 @@ The working answer is that porous AAO-like surfaces with controlled drainage/bac
 ## Methods and tools
 
 <div class="two-col">
- <div class="matrix-card"><h3>Experimental methods</h3><p>Sessile droplet deposition, AAO/substrate comparisons, backing-layer studies, optical microscopy, top-view videos, side-view videos, and process observation.</p></div>
- <div class="matrix-card"><h3>Analysis methods</h3><p>Droplet-radius extraction, contact-line tracking, deposition-pattern quantification, radial density maps, edge/center ratio, and statistical comparison.</p></div>
+ <div class="matrix-card">
+ <h3>Experimental methods</h3>
+ <p>Sessile droplet deposition, AAO/substrate comparisons, backing-layer studies, optical microscopy, top-view videos, side-view videos, and process observation.</p>
+ </div>
+ <div class="matrix-card">
+ <h3>Analysis methods</h3>
+ <p>Droplet-radius extraction, contact-line tracking, deposition-pattern quantification, radial density maps, edge/center ratio, and statistical comparison.</p>
+ </div>
 </div>
 
-<div class="badge-row"><span class="badge">Keyence</span><span class="badge">Rame-Hart</span><span class="badge">Python</span><span class="badge">ImageJ/Fiji</span><span class="badge">JMP</span><span class="badge">Optical Microscopy</span></div>
+<div class="badge-row">
+ <span class="badge">Keyence</span>
+ <span class="badge">Rame-Hart</span>
+ <span class="badge">Python</span>
+ <span class="badge">ImageJ/Fiji</span>
+ <span class="badge">JMP</span>
+ <span class="badge">Optical Microscopy</span>
+</div>
 
 ## What I can show
 
@@ -91,13 +133,26 @@ The working answer is that porous AAO-like surfaces with controlled drainage/bac
 </div>
 
 <div class="placeholder-figure-grid deposition-output-grid">
- <figure class="data-placeholder-figure wide-placeholder"><img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Placeholder for side-by-side deposition microscopy images across substrate conditions." loading="lazy"><figcaption>Same-magnification deposition comparison slot: glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption></figure>
- <figure class="data-placeholder-figure"><img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy"><figcaption>Contact-line trace slot: r(t)/r₀ versus normalized drying/imbibition time.</figcaption></figure>
- <figure class="data-placeholder-figure"><img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Placeholder for edge to center deposition ratio chart." loading="lazy"><figcaption>Decision-metric slot: edge/center ratio across substrate/backing conditions.</figcaption></figure>
+ <figure class="data-placeholder-figure wide-placeholder">
+  <img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Placeholder for side-by-side deposition microscopy images across substrate conditions." loading="lazy">
+  <figcaption><strong>Highest-priority replacement:</strong> add same-magnification optical microscopy images for glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption>
+ </figure>
+ <figure class="data-placeholder-figure">
+  <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy">
+  <figcaption>Contact-line trace slot for r(t)/r₀ versus normalized drying/imbibition time.</figcaption>
+ </figure>
+ <figure class="data-placeholder-figure">
+  <img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Placeholder for edge to center deposition ratio chart." loading="lazy">
+  <figcaption>Decision-metric slot for edge/center ratio across substrate/backing conditions.</figcaption>
+ </figure>
 </div>
 
 ## What I’d do next
 
 If I were moving this toward a production screen, I would automate the video-to-metric pipeline first. The bottleneck is not only the droplet experiment; it is making the same measurement fast enough that substrate candidates can be compared before the process drifts.
 
-<div class="case-cta-row"><a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Related reliability build →</a><a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a><a class="button tertiary" href="mailto:{{ site.email }}">Contact</a></div>
+<div class="case-cta-row">
+ <a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Related reliability build →</a>
+ <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
+ <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
+</div>

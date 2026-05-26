@@ -2,10 +2,9 @@
   "name": "Nathan Anderson Portfolio",
   "short_name": "Nathan Anderson",
   "icons": [
-    { "src": "/assets/images/favicon-32.png", "sizes": "32x32", "type": "image/png" },
-    { "src": "/assets/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+    {"src": "/assets/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
   ],
   "theme_color": "#08708b",
-  "background_color": "#fdffff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
