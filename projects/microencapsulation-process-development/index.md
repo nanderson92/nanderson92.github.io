@@ -1,18 +1,21 @@
 ---
 layout: page
 title: Stem-Cell Microencapsulation
-category: 20× throughput increase
+category: Mayo Clinic · microfluidic process development
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: "I built a microfluidic system for making core-shell hydrogel capsules that hold stem cells, and tuned it from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
 ---
 
+<p class="credential-line"><strong>Affiliation:</strong> Mayo Clinic Engineering Intern · alginate-core microcapsules for encapsulation and 3D culture of ARPE-19 cells</p>
+
 <div class="selected-outcomes micro-stats-hero">
  <div class="metric-strip stat-strip">
   <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
-  <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
-  <span><strong>Lower coalescence</strong><em>from flow/crosslinking adjustment</em></span>
-  <span><strong>QC workflow</strong><em>microscopy-supported inspection</em></span>
+  <span class="stat-primary"><strong>~50%</strong><em>yield improvement</em></span>
+  <span class="stat-primary"><strong>Lower</strong><em>coalescence frequency</em></span>
+  <span class="stat-primary"><strong>QC</strong><em>microscopy workflow</em></span>
  </div>
+ <p class="metric-method-note">Measurement note: throughput and yield improvements compare the tuned process to the initial low-throughput workflow after changes to flow ratios, tooling/crosslinking automation, and microscopy-supported QC.</p>
 </div>
 
 <figure class="poster-proof-card project-photo-card">
@@ -60,7 +63,7 @@ Higher throughput was not automatically better. When flow and crosslinking condi
  <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
 </div>
 
-<div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
+<div class="badge-row"><span class="badge">Mayo Clinic</span><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
 
 ## What I’d do next
 

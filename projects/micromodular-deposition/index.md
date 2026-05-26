@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Micromodular Electronics Deposition
-category: Edge crowding → useful placement
+category: Filler Lab · Georgia Tech · edge crowding → useful placement
 tags: Semiconductors · Process Development · Interfacial Transport · Automation & Data
 subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I spent a year figuring out which substrate conditions actually fix that."
 ---
+
+<p class="credential-line"><strong>Affiliation:</strong> Filler Lab, Georgia Tech · Micromodular printed electronics</p>
 
 <figure class="flagship-page-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
@@ -16,7 +18,7 @@ subtitle: "When you print microdevices from a droplet, they crowd at the edges a
  <p>The hard part was separating surface wetting, porous drainage, evaporation, and contact-line pinning instead of treating the final stain pattern as the whole story.</p>
 </div>
 
-<div class="role-block flagship-role-block">
+<div class="role-block flagship-role-block emphasis-role-block">
  <p>I designed the experiments from scratch: chose the substrates, set up both top-view and side-view video capture, wrote the Python and ImageJ pipelines to extract contact-line metrics, and used those metrics to figure out which boundary conditions actually produce useful placement.</p>
  <p><strong>Core output:</strong> a substrate-screening decision framework the lab can use to evaluate new deposition surfaces before committing to downstream interconnect printing.</p>
 </div>
@@ -69,14 +71,10 @@ The working answer is that porous AAO-like surfaces with controlled drainage/bac
 
 <div class="editorial-hard-list text-only-hard-list">
  <p><strong>Coupled liquid removal.</strong> Evaporation and imbibition compete, so the final deposit does not reveal the full transport history.</p>
- <p><strong>Contact-line memory.</strong> Different droplet behaviors during drying can leave behind nearly identical final patterns, so you cannot reverse-engineer the cause from the photo alone.</p>
- <p><strong>Device crowding.</strong> Dense deposits are not automatically useful if devices become inaccessible to interconnect routing.</p>
- <p><strong>Manufacturing constraint.</strong> The best pattern preserves interconnect access, not merely the highest local device density.</p>
+ <p><strong>Contact-line memory.</strong> A pinned, receding, or mixed contact line can write different device distributions even with similar final footprints.</p>
+ <p><strong>Device interactions.</strong> Microdevices raft, rotate, crowd, and block each other near the edge, which makes particle-like intuition incomplete.</p>
+ <p><strong>Measurement burden.</strong> The useful output is not one pretty image. It is a repeatable metric set that compares substrate/backing conditions.</p>
 </div>
-
-## What did not work at first
-
-Some early conditions looked promising because they moved liquid quickly, but the deposit still ended up edge-heavy or spatially useless. That pushed the work away from “which surface looks best?” and toward a harder question: which substrate/backing boundary condition gives a repeatable transport history and a pattern that can still be wired later?
 
 ## Process knobs
 
@@ -134,7 +132,7 @@ Some early conditions looked promising because they moved liquid quickly, but th
 <div class="placeholder-figure-grid deposition-output-grid">
  <figure class="data-placeholder-figure wide-placeholder">
   <img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Placeholder for side-by-side deposition microscopy images across substrate conditions." loading="lazy">
-  <figcaption><strong>Highest-priority replacement:</strong> add same-magnification optical microscopy images for glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption>
+  <figcaption>Evidence slot: same-magnification optical microscopy images for glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption>
  </figure>
  <figure class="data-placeholder-figure">
   <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy">

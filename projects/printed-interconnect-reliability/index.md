@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Printed Interconnect & FET Reliability
+title: Printed Interconnect Reliability
 category: Resistance drift → go/no-go logic
 tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: "Printed conductive lines look fine on day one and fail in week three through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
+subtitle: "Printed conductive lines look fine on day one and fail later through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
 ---
+
+<p class="credential-line"><strong>Context:</strong> micromodular printed electronics reliability · FET and interconnect screening</p>
 
 ## Failure classes
 

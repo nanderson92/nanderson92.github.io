@@ -14,7 +14,7 @@
 
 <rect width="900" height="420" rx="28" class="card"/>
 <text x="36" y="42" class="label ink">OPERATIONS EVIDENCE SLOT</text>
-<text x="36" y="66" class="small muted">Replace with a real shift log, before/after throughput bar, or bottleneck map.</text>
+<text x="36" y="66" class="small muted">Evidence slot for shift log, throughput summary, or bottleneck map.</text>
 <g transform="translate(70 105)">
   <rect x="0" y="0" width="330" height="240" rx="22" fill="#fff" stroke="#d4e6e8"/>
   <text x="24" y="34" class="mono muted">BEFORE / AFTER</text>

@@ -16,7 +16,7 @@ body_class: projects-page
 <section class="project-equal-grid-section" aria-label="Main projects">
  <div class="portfolio-grid startup-project-grid equal-project-grid">
  <article class="portfolio-card evidence-card build-log-card primary-build">
-  <div class="card-topline"><span>Wet processing · printed electronics</span><span>2025–present</span></div>
+  <div class="card-topline"><span>Filler Lab · Georgia Tech</span><span>Screening framework</span></div>
   <h2>Micromodular Electronics Deposition</h2>
   <p class="problem-line">Microdevices printed from droplets crowd at the edges. I built the measurement workflow for identifying substrate conditions that produce useful placement.</p>
   <div class="evidence-table compact-evidence-table">
@@ -31,15 +31,15 @@ body_class: projects-page
   <h2>Operations &amp; Quality Systems</h2>
   <p class="problem-line">I managed live high-throughput systems where bottlenecks, staffing, QC, and downtime showed up immediately.</p>
   <div class="evidence-table compact-evidence-table">
-   <span><strong>Result</strong> +20% cars/hour, -15% order-to-handoff time, and ~30% downtime reduction.</span>
+   <span><strong>Result</strong> Documented throughput, handoff-time, and downtime improvements across peak-shift operating changes.</span>
    <span><strong>Tools</strong> Line balancing · shift control · QC logs · training · preventive maintenance.</span>
   </div>
   <p><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card build-log-card">
-  <div class="card-topline"><span>Microfluidics · biotech process dev</span><span class="metric-pill-strong">20× throughput</span></div>
-  <h2>Stem-Cell Microcapsules</h2>
+  <div class="card-topline"><span>Mayo Clinic · microfluidics</span><span class="metric-pill-strong">20× throughput</span></div>
+  <h2>Stem-Cell Microencapsulation</h2>
   <p class="problem-line">A flow-focused core-shell process tuned around flow ratio, crosslink dwell time, coalescence, and microscopy QC.</p>
   <div class="evidence-table compact-evidence-table">
    <span><strong>Result</strong> 20× throughput increase and ~50% encapsulation-yield improvement.</span>
@@ -49,7 +49,7 @@ body_class: projects-page
  </article>
 
  <article class="portfolio-card evidence-card build-log-card">
-  <div class="card-topline"><span>Reliability · process control</span><span>Drift / open / intermittent</span></div>
+  <div class="card-topline"><span>Reliability · process control</span><span>Failure classes</span></div>
   <h2>Printed Interconnect Reliability</h2>
   <p class="problem-line">Printed conductive lines can look fine on day one and fail later. I turned those failures into threshold logic.</p>
   <div class="evidence-table compact-evidence-table">
@@ -60,8 +60,8 @@ body_class: projects-page
  </article>
 
  <article class="portfolio-card evidence-card build-log-card">
-  <div class="card-topline"><span>Automation · diagnostics</span><span>Setpoint tracking</span></div>
-  <h2>Thermocycler Automation</h2>
+  <div class="card-topline"><span>Automation · diagnostics</span><span>Control prototype</span></div>
+  <h2>Thermocycler Control</h2>
   <p class="problem-line">A biological protocol became a controlled temperature-time process with ramp rate, overshoot, hold stability, and thermal lag as the constraints.</p>
   <div class="evidence-table compact-evidence-table">
    <span><strong>Result</strong> A control prototype organized around ramp rate, settling time, overshoot, steady-state error, and repeatability.</span>
@@ -75,11 +75,12 @@ body_class: projects-page
 <section class="additional-work-section compact-additional-section" aria-label="Additional technical work">
  <div class="supporting-proof-header section-header-tight">
  <strong>Additional technical work</strong>
- <span>Shorter proof points that add assay and materials context without pretending every experience is a full project.</span>
+ <span>Shorter proof points that add assay, materials, and delivery context without pretending every experience is a full project.</span>
  </div>
  <div class="additional-evidence-strip five-evidence-strip">
- <a class="evidence-strip-item" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}"><strong>DNA Flexibility — Assay Development</strong><span>Maher Lab, Mayo Clinic · assay workflow and controls</span></a>
+ <a class="evidence-strip-item" href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}"><strong>DNA Flexibility Assay</strong><span>Maher Lab, Mayo Clinic · assay workflow and controls</span></a>
  <span class="evidence-strip-item"><strong>Semiconductor materials exposure</strong><span>Working knowledge of MBE deposition and SEM/XRD/XPS/Raman characterization.</span></span>
+ <span class="evidence-strip-item"><strong>Nanotechnology Club founder</strong><span>Founded a multidisciplinary Georgia Tech club to make nanoscale concepts more accessible through mini-DOE projects.</span></span>
  </div>
 </section>
 

@@ -5,17 +5,22 @@ category: 110 cars/hr peak operations
 subtitle: "I managed a McDonald’s drive-through that served 110 cars per hour at peak. Here is what that taught me about bottlenecks, quality loops, and keeping a system running when everything is breaking."
 ---
 
+<div class="role-block ops-lead-block">
+ <p><strong>Peak drive-through performance improved when I stopped treating the line as a set of individual workers and started treating it as a coupled flow system.</strong> Prep, order staging, payment, handoff, staffing, and equipment uptime all determined the outcome before the customer ever reached the window.</p>
+</div>
+
 <div class="selected-outcomes operations-stats-hero">
  <div class="metric-strip stat-strip ops-stat-strip">
   <span class="stat-primary"><strong>+20%</strong><em>cars/hour</em></span>
   <span class="stat-primary"><strong>-15%</strong><em>order-to-handoff time</em></span>
   <span class="stat-primary"><strong>~30%</strong><em>downtime reduction</em></span>
  </div>
+ <p class="metric-method-note">Measurement note: these were shift-level operating metrics tracked around peak-rush changes to prep staging, handoff timing, staffing, and maintenance routines. The numbers are best read as documented operational improvements, not isolated single-variable experiments.</p>
 </div>
 
 <figure class="data-placeholder-figure wide-placeholder ops-throughput-figure">
- <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Placeholder for operations throughput before-after visualization or bottleneck map." loading="lazy">
- <figcaption>Replacement target: add a real before/after throughput visual, shift-log summary, or bottleneck map that supports the +20% cars/hour claim.</figcaption>
+ <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Evidence slot for operations throughput before-after visualization or bottleneck map." loading="lazy">
+ <figcaption>Evidence slot: before/after throughput summary, shift-log excerpt, or bottleneck map for peak-rush operating changes.</figcaption>
 </figure>
 
 ## Why this belongs in a ChemE portfolio
@@ -31,21 +36,13 @@ Manufacturing lines, fast-food drive-throughs, and microfluidic systems share mo
  <div><span>04</span><strong>Crew training → standard work</strong><p>The process is only repeatable if people can execute the same handoffs under pressure.</p></div>
 </div>
 
-## What changed how I think
-
-At McDonald’s, peak drive-through performance improved when I stopped treating the line as a set of individual workers and started treating it as a coupled flow system. Prep, order staging, payment, handoff, staffing, and equipment uptime all determined the outcome before the customer ever reached the window.
-
 ## Roles represented
 
-<div class="matrix">
- <div class="matrix-card"><h3>McDonald’s Manager</h3><p>High-volume throughput, shift control, food-safety logs, maintenance discipline, and corrective action.</p></div>
- <div class="matrix-card"><h3>Chick-fil-A Lead / Crew Trainer</h3><p>Training, standard work, service consistency, and team execution.</p></div>
- <div class="matrix-card"><h3>Flapdoodles Manager</h3><p>Local ice-cream shop management: small-team staffing, customer flow, inventory awareness, closing routines, and ownership mentality.</p></div>
-</div>
+<p class="ops-role-sentence">Across high-volume drive-through operations at McDonald’s, QSR training at Chick-fil-A, and small-team retail management, I learned to read service lines as coupled flow systems: labor, inventory, equipment uptime, handoff timing, and QC all moving together.</p>
 
 ## What I’d do next
 
-If I were applying this to a hardware startup, I would build the first version of a simple operating dashboard: bottleneck station, downtime reason, defect/rework note, and corrective action. The point would not be bureaucracy; it would be making the repeated failure modes visible early enough to change the system.
+At a hardware startup, the first version is a single dashboard: bottleneck station, downtime reason, defect/rework count, corrective action, and owner. Not bureaucracy — instrumentation. The goal is to make repeated failure modes visible early enough to change the system.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
