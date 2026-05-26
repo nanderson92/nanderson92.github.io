@@ -6693,3 +6693,59 @@ body.home-page .site-footer,
     padding-top: 72px !important;
   }
 }
+
+/* === Final homepage hero eyebrow polish ===
+   The portfolio-focus line above the H1 should read as an integrated label,
+   not as a full-width white block over the background image. */
+.home-page .hero .hero-identity.hero-identity-single {
+  display: block !important;
+  width: fit-content !important;
+  max-width: calc(100vw - 48px) !important;
+  margin: 0 0 clamp(20px, 3vw, 28px) !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.home-page .hero .hero-identity.hero-identity-single span {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  padding: 0.46rem 0.72rem 0.48rem !important;
+  border: 1px solid rgba(15, 23, 42, 0.10) !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.56) !important;
+  box-shadow:
+    0 12px 28px rgba(15, 23, 42, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.72) !important;
+  color: rgba(15, 23, 42, 0.78) !important;
+  font-size: var(--text-sm) !important;
+  font-weight: 680 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.018em !important;
+  text-wrap: pretty !important;
+  white-space: normal !important;
+  backdrop-filter: blur(10px) saturate(1.08) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.08) !important;
+}
+
+.home-page .hero .hero-identity.hero-identity-single strong {
+  display: inline !important;
+  background: transparent !important;
+  color: rgba(15, 23, 42, 0.94) !important;
+  font-weight: 820 !important;
+}
+
+@media (max-width: 640px) {
+  .home-page .hero .hero-identity.hero-identity-single {
+    max-width: calc(100vw - 32px) !important;
+  }
+
+  .home-page .hero .hero-identity.hero-identity-single span {
+    padding: 0.42rem 0.62rem 0.44rem !important;
+    font-size: var(--text-xs) !important;
+    line-height: 1.22 !important;
+  }
+}
