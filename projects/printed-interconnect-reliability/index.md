@@ -15,7 +15,9 @@ subtitle: "Printed conductive lines look fine on day one and fail in week three 
  <article><h3>Intermittent behavior</h3><p>Contact or handling effects create unstable readings that should be classified separately from smooth drift.</p></article>
 </div>
 
-<div class="role-block"><p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p></div>
+<div class="role-block">
+ <p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p>
+</div>
 
 <div class="connection-note"><strong>Connection:</strong> deposition asks where devices land. Reliability asks whether the printed interconnects and device interfaces stay electrically usable after assembly.</div>
 
@@ -35,9 +37,9 @@ subtitle: "Printed conductive lines look fine on day one and fail in week three 
 
 The easy mistake was treating a failed trace as just “bad data.” The more useful move was to ask what kind of failure it was. A smooth drift, a sudden open, and a noisy intermittent contact are different process clues.
 
-## Variables table
+## Process knobs
 
-| Variable | Why it matters |
+| Knob | Why it matters |
 |---|---|
 | Initial resistance | Separates geometry/deposition/cure issues from later reliability drift. |
 | Normalized drift | Shows whether the line changes enough under stress to become a process concern. |

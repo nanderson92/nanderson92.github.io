@@ -1,17 +1,17 @@
 ---
 layout: default
 title: Page not found
-permalink: /404.html
+body_class: not-found-page
 ---
 
-<section class="not-found-page">
- <div class="content-shell">
+<section class="page-hero not-found-hero">
+ <div class="page-hero-inner">
   <p class="system-label small">404</p>
   <h1>Page not found.</h1>
-  <p>The build log may have moved. Start from the current project index or email me if a link broke.</p>
+  <p class="page-subtitle">This build log or route does not exist. Use the links below to get back to the portfolio.</p>
   <div class="cta-row">
    <a class="button primary" href="{{ '/' | relative_url }}">Home</a>
-   <a class="button secondary" href="{{ '/projects/' | relative_url }}">Projects</a>
+   <a class="button secondary" href="{{ '/projects/' | relative_url }}">Build logs</a>
    <a class="button tertiary" href="{{ '/contact/' | relative_url }}">Contact</a>
   </div>
  </div>

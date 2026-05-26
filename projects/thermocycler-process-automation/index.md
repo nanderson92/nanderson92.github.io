@@ -7,8 +7,13 @@ subtitle: "A biological protocol only works in hardware if the temperature-time 
 ---
 
 <div class="hardware-interface-card proof-artifact-card" aria-label="Thermocycler hardware interface map">
- <div><h3>Controller → actuator → thermal mass → sensor</h3><p>The hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p></div>
- <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram"><span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span></div>
+ <div>
+  <h3>Controller → actuator → thermal mass → sensor</h3>
+  <p>The hardware map makes the control problem concrete: the controller changes actuator output, the thermal block responds with lag, and the sensor closes the loop with imperfect knowledge of actual sample temperature.</p>
+ </div>
+ <div class="hardware-map" aria-label="Embedded controller thermocycler interface diagram">
+  <span>ESP32 / Arduino</span><i></i><span>heater + fan</span><i></i><span>thermal block</span><i></i><span>temperature sensor</span>
+ </div>
 </div>
 
 ## What had to be controlled
@@ -36,9 +41,9 @@ subtitle: "A biological protocol only works in hardware if the temperature-time 
 
 The first control problem looked like a software problem, but the limiting issue was physical: sensor placement, thermal lag, and heat transfer through the block. Better tuning helped only after the hardware response was treated as part of the process.
 
-## Variables table
+## Process knobs
 
-| Variable | Why it matters |
+| Knob | Why it matters |
 |---|---|
 | Ramp rate | Determines total cycle time and diagnostic speed. |
 | Steady-state error | Determines whether the sample experiences the intended temperature. |
@@ -59,8 +64,19 @@ The first control problem looked like a software problem, but the limiting issue
 ## Measured performance slot
 
 <div class="measured-performance-grid">
- <figure class="data-placeholder-figure wide-placeholder"><img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Planned thermocycler temperature versus time profile." loading="lazy"><figcaption>Planned measured trace: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption></figure>
- <div class="performance-fields"><h3>Numbers to fill from prototype logs</h3><ul><li><strong>Ramp rate:</strong> measured degrees C/s or degrees C/min between setpoints.</li><li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li><li><strong>Hold stability:</strong> temperature band during denaturation, annealing, and extension holds.</li><li><strong>Repeatability:</strong> cycle-to-cycle variation across repeated thermal cycles.</li></ul></div>
+ <figure class="data-placeholder-figure wide-placeholder">
+  <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Placeholder for thermocycler temperature versus time profile." loading="lazy">
+  <figcaption>Temperature-profile evidence slot: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
+ </figure>
+ <div class="performance-fields">
+  <h3>Numbers to fill from prototype logs</h3>
+  <ul>
+   <li><strong>Ramp rate:</strong> measured °C/s or °C/min between setpoints.</li>
+   <li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li>
+   <li><strong>Hold stability:</strong> temperature band during denaturation, annealing, and extension holds.</li>
+   <li><strong>Repeatability:</strong> cycle-to-cycle variation across repeated thermal cycles.</li>
+  </ul>
+ </div>
 </div>
 
 ## What I’d do next

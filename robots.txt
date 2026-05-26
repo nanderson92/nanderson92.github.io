@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://nanderson92.github.io/sitemap.xml

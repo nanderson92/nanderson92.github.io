@@ -3,17 +3,17 @@ layout: page
 title: Stem-Cell Microencapsulation
 category: Mayo Clinic · 20× throughput increase
 tags: Microfluidics · Process Development · Biomedical Manufacturing
-subtitle: "I built a microfluidic system for making core-shell hydrogel capsules that hold stem cells, and tuned it from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
+subtitle: "Mayo Clinic microfluidic process development: core-shell hydrogel capsules tuned from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
 ---
 
-<p class="credential-line"><strong>Affiliation:</strong> Mayo Clinic Engineering Intern · microfluidic encapsulation process development</p>
+<p class="credential-line"><strong>Mayo Clinic Engineering Intern</strong> · alginate-core microcapsules for encapsulation and 3D culture of ARPE-19 cells</p>
 
 <div class="selected-outcomes micro-stats-hero">
- <div class="metric-strip stat-strip equal-metric-strip">
+ <div class="metric-strip stat-strip">
   <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
   <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
-  <span class="stat-primary"><strong>Lower</strong><em>coalescence after flow/crosslinking adjustment</em></span>
-  <span class="stat-primary"><strong>Defined</strong><em>microscopy-supported QC workflow</em></span>
+  <span><strong>Reduced</strong><em>coalescence screen</em></span>
+  <span><strong>Built</strong><em>microscopy QC loop</em></span>
  </div>
 </div>
 
@@ -24,11 +24,11 @@ subtitle: "I built a microfluidic system for making core-shell hydrogel capsules
 
 ## Summary
 
-Developed and tuned a flow-focused microfluidic encapsulation process for core-shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
+At Mayo Clinic, developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 
 <div class="role-block">
- <p class="system-label small">MY ROLE</p>
- <p>Fabricated PEG/alginate core-shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
+ <p class="system-label small">MY ROLE · MAYO CLINIC</p>
+ <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
 ## Problem / motivation
@@ -46,9 +46,9 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 Higher throughput was not automatically better. When flow and crosslinking conditions were not matched, faster production increased coalescence and reduced the fraction of usable capsules. That pivot made the project less about “make more capsules” and more about finding the operating window where throughput and capsule quality improved together.
 
-## Variables table
+## Process knobs
 
-| Variable | Mechanism | Output affected |
+| Knob | Mechanism | Output affected |
 |---|---|---|
 | Continuous/dispersed flow ratio | Shear and droplet breakup | Capsule size, throughput, coalescence |
 | Crosslink dwell time | Shell formation | Stability, handling, yield |
@@ -62,7 +62,7 @@ Higher throughput was not automatically better. When flow and crosslinking condi
  <div class="matrix-card"><h3>Measurement methods</h3><p>Microscopy inspection, capsule counting, defect classification, and process-condition comparison.</p></div>
 </div>
 
-<div class="badge-row"><span class="badge">Mayo Clinic</span><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
+<div class="badge-row"><span class="badge">Microfluidics</span><span class="badge">PEG/Alginate</span><span class="badge">Cell Culture</span><span class="badge">Microscopy</span><span class="badge">Process Development</span></div>
 
 ## What I’d do next
 

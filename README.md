@@ -1,6 +1,6 @@
 # Nathan Anderson Portfolio
 
-GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergraduate focused on process development, advanced manufacturing, and clean technology.
+GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergraduate focused on process development, advanced manufacturing, process development, advanced manufacturing, and clean technology.
 
 ## Publish
 
