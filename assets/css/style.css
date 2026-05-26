@@ -5571,7 +5571,7 @@ h1,
   font-size: clamp(3.1rem, 6.5vw, 5.8rem) !important;
 }
 
-/* Real research/poster photo hero. */
+/* Replace abstract eco-city hero image with the user's real research/poster photo. */
 .home-page #content::before {
   background-image: url('../images/nathan-anderson-poster-wide.jpg') !important;
   background-position: center center !important;
@@ -6171,164 +6171,103 @@ h1,
 }
 
 
-/* === AUDIT IMPLEMENTATION OVERRIDES — May 2026 ===
-   This layer intentionally wins over older accumulated rules without rewriting the whole legacy stylesheet. */
+/* === Final portfolio audit implementation pass (May 2026) === */
 :root {
-  --max: 1180px;
-  --display: "Space Grotesk", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --step-0: 0.875rem;
   --step-1: 1rem;
   --step-2: 1.125rem;
   --step-3: 1.5rem;
   --step-4: 2rem;
   --step-5: 3rem;
-  --step-6: 4.75rem;
+  --step-6: 4.5rem;
 }
-
-body { color: var(--ink); }
-p, li { color: var(--body); }
-.system-label, .system-label.small, .card-topline, .badge, .proof-tag { color: #315f50 !important; }
-
-/* Hero: no stock city, visible research photo, single asymmetric text scrim. */
-.home-page #content::before {
-  content: "" !important;
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: 0 !important;
-  pointer-events: none !important;
-  background-image: url('../images/nathan-anderson-poster-wide.jpg') !important;
-  background-size: cover !important;
-  background-position: 62% center !important;
-  background-repeat: no-repeat !important;
-  opacity: .9 !important;
-  filter: saturate(.98) contrast(1.03) brightness(.98) !important;
+body { color: #09272b; }
+body.home-page {
+  background: #ffffff !important;
+  background-image: none !important;
 }
-.home-page #content::after {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
-  background: linear-gradient(180deg,
-    rgba(255,255,255,.00) 0vh,
-    rgba(255,255,255,.10) 40vh,
-    rgba(255,255,255,.62) 88vh,
-    #fff 124vh,
-    #fff 100%) !important;
+.home-page #content,
+.home-page #content::after { background: transparent !important; }
+.home-page .hero {
+  min-height: 700px !important;
+  padding-top: 132px !important;
+  background: #fbfefe !important;
+  isolation: isolate;
 }
-.home-page #content > * { position: relative !important; z-index: 2 !important; }
-.home-page .hero { min-height: min(760px, 95vh) !important; padding-top: 126px !important; background: transparent !important; overflow: visible !important; }
 .home-page .hero::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  z-index: 0 !important;
-  pointer-events: none !important;
-  background-image: linear-gradient(90deg,
-    rgba(255,255,255,.96) 0%,
-    rgba(255,255,255,.91) 28%,
-    rgba(255,255,255,.62) 48%,
-    rgba(255,255,255,.18) 66%,
-    rgba(255,255,255,0) 100%) !important;
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat !important;
-}
-.home-page .hero::after { display: none !important; }
-.hero-copy { position: relative !important; z-index: 2 !important; max-width: 720px !important; }
-.hero h1 {
-  font-size: clamp(3.35rem, 6.5vw, var(--step-6)) !important;
-  line-height: .98 !important;
-  letter-spacing: -.068em !important;
-  max-width: 760px !important;
-  text-wrap: balance;
-}
-.hero-title-line { display: block; }
-.hero-lede { max-width: 620px !important; font-size: clamp(1.05rem, 1.7vw, 1.28rem) !important; color: #25484d !important; }
-.home-page .signature-case-section { margin-top: -34px !important; }
-
-/* Page headers should not look half-loaded. */
-.page-hero-inner, .page-hero-inner *, .contact-page .page-hero-inner > * {
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.90) 34%, rgba(255,255,255,.48) 55%, rgba(255,255,255,0) 76%),
+    url('../images/nathan-anderson-poster-wide.jpg') !important;
+  background-size: cover !important;
+  background-position: center 36% !important;
   opacity: 1 !important;
-  transform: none !important;
-  filter: none !important;
-  animation: none !important;
+  filter: saturate(1.02) contrast(1.03) !important;
 }
-.js .page-hero-inner.reveal { opacity: 1 !important; transform: none !important; }
-.page-hero { padding-top: 108px !important; padding-bottom: 42px !important; }
-.page-hero h1, .projects-index-hero h1 { font-size: clamp(3rem, 6vw, 4.75rem) !important; line-height: 1.02 !important; }
-
-/* Tighter technical-positioning section. */
-.technical-center-section {
-  width: min(var(--max), calc(100% - 40px));
-  margin: 70px auto 0;
-  padding: clamp(26px, 4vw, 44px);
-  border: 1px solid rgba(8,112,139,.13);
-  border-radius: 34px;
-  background: linear-gradient(135deg, rgba(255,255,255,.92), rgba(235,248,248,.72));
-  box-shadow: 0 18px 48px rgba(28,84,91,.08);
+.home-page .hero::after {
+  height: 210px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0), #ffffff 88%) !important;
 }
-.technical-center-section .proof-heading { max-width: 760px; }
-.technical-center-section h2 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.06em; line-height: 1.02; }
-.technical-proof-prose { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin-top: 24px; }
-.technical-proof-prose article { padding: 18px; border: 1px solid rgba(8,112,139,.12); border-radius: 22px; background: rgba(255,255,255,.74); }
-.technical-proof-prose h3 { margin: 0 0 8px; font-size: 1rem; letter-spacing: -.02em; }
-.technical-proof-prose p { margin: 0; font-size: .94rem; color: var(--muted); }
-
-/* Canonical card grid and evidence strips. */
-.startup-home-grid, .startup-project-grid, .equal-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-.additional-evidence-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)) !important; gap: 14px !important; }
-.additional-evidence-strip .evidence-strip-item { min-height: 135px; }
-.card-topline span:last-child { white-space: normal; text-align: right; }
-
-/* Credibility callouts and metric scaffolding. */
-.credential-line, .metric-method-note, .ops-role-sentence, .promoted-line {
-  border: 1px solid rgba(8,112,139,.14);
-  border-radius: 22px;
-  background: rgba(255,255,255,.78);
-  box-shadow: 0 12px 28px rgba(28,84,91,.055);
-}
-.credential-line { padding: 14px 16px; margin: 0 0 22px; color: var(--body); }
-.metric-method-note { padding: 14px 16px; margin: 14px 0 0; color: var(--muted); font-size: .94rem; line-height: 1.55; }
-.ops-role-sentence { padding: 18px; }
-.emphasis-role-block p:first-child { font-size: clamp(1.06rem, 1.8vw, 1.24rem); line-height: 1.58; color: #173b40; }
-.background-technical-summary { margin-bottom: 30px; }
-.background-technical-summary h2, .gt-callout-card h2 { margin-top: 0; }
-.promoted-line { display: block; padding: 20px; font-size: clamp(1.12rem, 2vw, 1.42rem); line-height: 1.45; color: #102f34 !important; font-weight: 700; }
-.background-timeline { grid-template-columns: repeat(5, minmax(0,1fr)) !important; }
-.compact-taste-panel { margin-top: 34px !important; }
-.single-close { margin-top: 34px !important; }
-
-/* Contact cleanup: direct email, no nested-card clutter. */
+.hero-inner { grid-template-columns: minmax(0, .78fr) minmax(280px, .82fr) !important; }
+h1, .hero h1 { font-size: clamp(3.4rem, 8vw, 4.9rem) !important; line-height: .95 !important; letter-spacing: -.07em !important; }
+.page-hero h1, .projects-index-hero h1 { font-size: clamp(3rem, 7vw, 4.5rem) !important; }
+.hero-lede { max-width: 640px !important; font-size: clamp(1.08rem, 1.8vw, 1.28rem) !important; color: #224b50 !important; }
+.hero-identity { color: #173f44 !important; background: rgba(255,255,255,.72); border: 1px solid rgba(9,51,56,.12); border-radius: 999px; padding: 8px 13px; width: fit-content; backdrop-filter: blur(12px); }
+.page-hero-inner, .projects-index-hero { opacity: 1 !important; transform: none !important; transition: none !important; }
+.reveal.page-hero-inner, .reveal.projects-index-hero { opacity: 1 !important; transform: none !important; }
+.selected-builds-section { margin-top: 0 !important; }
+.selected-build-grid,
+.build-log-index-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; gap: 22px !important; }
+.build-log-index-grid .portfolio-card:last-child { grid-column: 1 / -1; min-height: auto; }
+.selected-build-grid .portfolio-card { min-height: 330px !important; }
+.mini-proof-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 18px 0 8px; }
+.mini-proof-row span { padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.66); color: var(--body); font-size: .9rem; line-height: 1.45; }
+.mini-proof-row strong { display: block; color: var(--ink); }
+.technical-center-section { width: min(var(--max), calc(100% - 40px)); margin: 76px auto 0; }
+.technical-center-card { padding: clamp(26px, 4vw, 42px); border: 1px solid rgba(9,51,56,.12); border-radius: 32px; background: linear-gradient(135deg, rgba(255,255,255,.94), rgba(236,248,248,.76)); box-shadow: var(--shadow-soft); }
+.technical-center-card h2 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.02; letter-spacing: -.06em; max-width: 920px; }
+.technical-center-card p:last-child { max-width: 880px; margin-bottom: 0; color: var(--body); font-size: 1.06rem; }
+.system-label, .card-topline span { color: #315f50 !important; }
+.card-topline span { font-size: .72rem !important; }
+.proof-section { display: none !important; }
+.signature-case-section { display: none !important; }
+.footer-tagline { color: #09272b !important; }
 .contact-methods { display: none !important; }
-.contact-system-grid { align-items: stretch; }
-.flattened-email-card { border: 0 !important; box-shadow: none !important; padding: 0 !important; background: transparent !important; }
-.contact-page .page-content { padding-top: 34px !important; }
-
-/* Placeholders should read as neutral evidence slots, not public TODOs. */
-.data-placeholder-figure figcaption { color: #536d71; }
-.data-placeholder-figure figcaption strong { color: #173b40; }
-
-/* Infrastructure pages. */
-.not-found-shell { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 142px 0 90px; }
-.not-found-shell h1 { font-size: clamp(3rem, 7vw, 5rem); line-height: 1; margin: 0 0 16px; }
-.not-found-shell p { font-size: 1.08rem; color: var(--muted); }
-.not-found-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-
+.refined-contact-grid { align-items: stretch; }
+.flat-email-card { box-shadow: none !important; border-radius: 22px !important; }
+.contact-page .page-content { padding-top: 22px !important; }
+.technical-credibility-strip { margin-bottom: 36px; padding: clamp(24px, 4vw, 42px); border: 1px solid rgba(9,51,56,.12); border-radius: 32px; background: rgba(255,255,255,.82); box-shadow: var(--shadow-soft); }
+.technical-credibility-strip h2 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.02; letter-spacing: -.06em; }
+.technical-credibility-strip p { max-width: 920px; }
+.compact-taste-panel { margin-top: 36px !important; }
+.background-timeline { grid-template-columns: repeat(5, minmax(0,1fr)) !important; }
+.big-callout-line { margin: 12px 0 16px !important; padding: 18px; border: 1px solid rgba(13,142,177,.16); border-radius: 22px; background: rgba(231,247,251,.58); color: #082325 !important; font-size: clamp(1.15rem, 2.2vw, 1.45rem) !important; line-height: 1.45 !important; font-weight: 720; letter-spacing: -.025em; }
+.credential-line { margin: -8px 0 24px; padding: 12px 14px; border: 1px solid rgba(13,142,177,.16); border-radius: 16px; background: rgba(231,247,251,.52); color: var(--body); }
+.credential-line strong { color: var(--ink); }
+.ownership-callout p:first-child { font-size: clamp(1.08rem, 2.1vw, 1.36rem); line-height: 1.5; color: #0f3438; font-weight: 680; }
+.metric-method-note { margin: 14px 0 0; color: var(--body); font-size: .96rem; max-width: 880px; }
+.single-role-sentence { padding: 18px 20px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.78); color: var(--body); }
+.equal-metric-strip span { text-align: left; }
+.centered-additional-strip { justify-content: center; }
+.not-found-page { min-height: 70vh; padding: 150px 0 90px; display: grid; align-items: center; }
+.not-found-page h1 { max-width: 720px; }
+body:not(.home-page) .page-hero { min-height: auto !important; padding-top: 124px !important; padding-bottom: 42px !important; }
+body:not(.home-page) .page-content { padding-top: 22px !important; }
+/* Remove stock-city remnants from non-hero decorative sections. */
+[class*="cyber"], .cyber-card { background-image: none !important; }
 @media (max-width: 1024px) {
-  .home-page #content::before { background-position: 66% center !important; opacity: .82 !important; }
-  .technical-proof-prose, .background-timeline, .additional-evidence-strip { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .background-timeline { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+  .selected-build-grid,
+  .build-log-index-grid { grid-template-columns: 1fr !important; }
+  .build-log-index-grid .portfolio-card:last-child { grid-column: auto; }
 }
 @media (max-width: 768px) {
-  .hero h1 { font-size: clamp(3rem, 13vw, 4.4rem) !important; }
-  .home-page .hero::before { background-image: linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.86) 44%, rgba(255,255,255,.48) 100%) !important; }
-  .home-page #content::before { background-position: 64% top !important; opacity: .55 !important; }
-  .startup-home-grid, .startup-project-grid, .equal-project-grid, .technical-proof-prose, .background-timeline, .additional-evidence-strip { grid-template-columns: 1fr !important; }
-  .card-topline { align-items: flex-start !important; }
-  .card-topline span:last-child { text-align: left; }
+  .home-page .hero { min-height: 640px !important; padding-top: 112px !important; }
+  .home-page .hero::before { background-image: linear-gradient(180deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.80) 44%, rgba(255,255,255,.38) 100%), url('../images/nathan-anderson-poster-wide.jpg') !important; background-position: 62% center !important; }
+  .hero-inner { grid-template-columns: 1fr !important; }
+  h1, .hero h1 { font-size: clamp(3rem, 14vw, 4.2rem) !important; }
+  .mini-proof-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .home-page .hero { min-height: 680px !important; padding-top: 108px !important; }
-  .page-hero { padding-top: 92px !important; }
-  .hero-copy { max-width: 100% !important; }
-  .button { width: auto; }
+  .background-timeline { grid-template-columns: 1fr !important; }
+  .cta-band { align-items: flex-start !important; flex-direction: column !important; }
 }

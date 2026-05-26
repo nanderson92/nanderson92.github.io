@@ -3,10 +3,8 @@ layout: page
 title: Printed Interconnect Reliability
 category: Resistance drift → go/no-go logic
 tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: "Printed conductive lines look fine on day one and fail later through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
+subtitle: "Printed conductive lines look fine on day one and fail in week three through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
 ---
-
-<p class="credential-line"><strong>Context:</strong> micromodular printed electronics reliability · FET and interconnect screening</p>
 
 ## Failure classes
 
@@ -17,9 +15,7 @@ subtitle: "Printed conductive lines look fine on day one and fail later through 
  <article><h3>Intermittent behavior</h3><p>Contact or handling effects create unstable readings that should be classified separately from smooth drift.</p></article>
 </div>
 
-<div class="role-block">
- <p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p>
-</div>
+<div class="role-block"><p>I built electrical screening workflows, organized resistance/failure data, interpreted stress-response behavior, and turned drift patterns into threshold logic that points back to likely process causes.</p></div>
 
 <div class="connection-note"><strong>Connection:</strong> deposition asks where devices land. Reliability asks whether the printed interconnects and device interfaces stay electrically usable after assembly.</div>
 
@@ -39,9 +35,9 @@ subtitle: "Printed conductive lines look fine on day one and fail later through 
 
 The easy mistake was treating a failed trace as just “bad data.” The more useful move was to ask what kind of failure it was. A smooth drift, a sudden open, and a noisy intermittent contact are different process clues.
 
-## Process knobs
+## Variables table
 
-| Knob | Why it matters |
+| Variable | Why it matters |
 |---|---|
 | Initial resistance | Separates geometry/deposition/cure issues from later reliability drift. |
 | Normalized drift | Shows whether the line changes enough under stress to become a process concern. |

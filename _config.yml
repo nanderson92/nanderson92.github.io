@@ -1,5 +1,5 @@
 title: "Nathan Anderson"
-description: "Chemical Engineering · Process Development · Wet Processing · Advanced Manufacturing · Clean Technology"
+description: "Chemical Engineering · Process Development · Advanced Manufacturing · Clean Technology"
 url: "https://nanderson92.github.io"
 baseurl: ""
 
@@ -15,3 +15,5 @@ github: "https://github.com/nanderson92"
 exclude:
   - research
   - research/**
+
+twitter: "@fivemoc"

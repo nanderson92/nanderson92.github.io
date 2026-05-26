@@ -1,14 +1,9 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nanderson92.github.io/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/micromodular-deposition/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/microencapsulation-process-development/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/printed-interconnect-reliability/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/thermocycler-process-automation/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/operations-quality-systems/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/dna-pcr-flexibility/</loc></url>
-  <url><loc>https://nanderson92.github.io/background/</loc></url>
-  <url><loc>https://nanderson92.github.io/contact/</loc></url>
-  <url><loc>https://nanderson92.github.io/resume/</loc></url>
+{% for page in site.pages %}{% unless page.url contains '404' or page.url contains '.xml' or page.url contains '.txt' or page.url contains '.json' %}
+ <url><loc>{{ site.url }}{{ page.url | replace:'index.html','' }}</loc></url>
+{% endunless %}{% endfor %}
 </urlset>

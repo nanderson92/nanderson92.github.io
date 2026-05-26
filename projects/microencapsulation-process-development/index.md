@@ -1,21 +1,20 @@
 ---
 layout: page
 title: Stem-Cell Microencapsulation
-category: Mayo Clinic · microfluidic process development
+category: Mayo Clinic · 20× throughput increase
 tags: Microfluidics · Process Development · Biomedical Manufacturing
 subtitle: "I built a microfluidic system for making core-shell hydrogel capsules that hold stem cells, and tuned it from a fragile demo into a process that runs 20× faster with roughly half the failure rate."
 ---
 
-<p class="credential-line"><strong>Affiliation:</strong> Mayo Clinic Engineering Intern · alginate-core microcapsules for encapsulation and 3D culture of ARPE-19 cells</p>
+<p class="credential-line"><strong>Affiliation:</strong> Mayo Clinic Engineering Intern · microfluidic encapsulation process development</p>
 
 <div class="selected-outcomes micro-stats-hero">
- <div class="metric-strip stat-strip">
+ <div class="metric-strip stat-strip equal-metric-strip">
   <span class="stat-primary"><strong>20×</strong><em>throughput increase</em></span>
-  <span class="stat-primary"><strong>~50%</strong><em>yield improvement</em></span>
-  <span class="stat-primary"><strong>Lower</strong><em>coalescence frequency</em></span>
-  <span class="stat-primary"><strong>QC</strong><em>microscopy workflow</em></span>
+  <span class="stat-primary"><strong>~50%</strong><em>encapsulation-yield improvement</em></span>
+  <span class="stat-primary"><strong>Lower</strong><em>coalescence after flow/crosslinking adjustment</em></span>
+  <span class="stat-primary"><strong>Defined</strong><em>microscopy-supported QC workflow</em></span>
  </div>
- <p class="metric-method-note">Measurement note: throughput and yield improvements compare the tuned process to the initial low-throughput workflow after changes to flow ratios, tooling/crosslinking automation, and microscopy-supported QC.</p>
 </div>
 
 <figure class="poster-proof-card project-photo-card">
@@ -25,11 +24,11 @@ subtitle: "I built a microfluidic system for making core-shell hydrogel capsules
 
 ## Summary
 
-Developed and tuned a flow-focused microfluidic encapsulation process for core–shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
+Developed and tuned a flow-focused microfluidic encapsulation process for core-shell hydrogel capsules, connecting flow ratio, crosslinking dwell time, and microscopy QC to capsule throughput, coalescence, and usable yield.
 
 <div class="role-block">
  <p class="system-label small">MY ROLE</p>
- <p>Fabricated PEG/alginate core–shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
+ <p>Fabricated PEG/alginate core-shell microcapsules, tuned flow and crosslinking conditions, reduced coalescence, and connected microscopy observations to encapsulation yield and process stability.</p>
 </div>
 
 ## Problem / motivation
@@ -47,9 +46,9 @@ Microencapsulation is valuable because hydrogel capsules can provide a controlle
 
 Higher throughput was not automatically better. When flow and crosslinking conditions were not matched, faster production increased coalescence and reduced the fraction of usable capsules. That pivot made the project less about “make more capsules” and more about finding the operating window where throughput and capsule quality improved together.
 
-## Process knobs
+## Variables table
 
-| Knob | Mechanism | Output affected |
+| Variable | Mechanism | Output affected |
 |---|---|---|
 | Continuous/dispersed flow ratio | Shear and droplet breakup | Capsule size, throughput, coalescence |
 | Crosslink dwell time | Shell formation | Stability, handling, yield |

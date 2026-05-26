@@ -3,9 +3,9 @@
   "short_name": "Nathan Anderson",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#f7fbfb",
   "theme_color": "#08708b",
   "icons": [
-    {"src": "/assets/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}
+    { "src": "/assets/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
   ]
 }
