@@ -14,10 +14,10 @@ subtitle: "Available for Fall 2026 work in process development, automation, and 
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
  <span>Process-development roles, co-ops, or contract work</span>
  <span>Advanced manufacturing and semiconductor-adjacent R&amp;D</span>
- <span>Early-stage hard-tech teams that need a ChemE/process perspective</span>
+ <span>Seed/Series A hard-tech teams where I could bring a ChemE/process perspective early</span>
  </div>
  <div class="resume-actions contact-action-row">
- <a class="button primary" href="mailto:{{ site.email }}">Email Nathan →</a>
+ <a class="button primary" href="mailto:{{ site.email }}">Email Nathan</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
  <a class="button tertiary" href="{{ site.linkedin }}">LinkedIn</a>
  <a class="button tertiary" href="{{ site.github }}">GitHub</a>
@@ -27,7 +27,8 @@ subtitle: "Available for Fall 2026 work in process development, automation, and 
  <section class="contact-form-panel soft-form-panel email-first-panel" aria-label="Direct email panel">
  <div class="contact-panel-header">
  <p class="system-label small">DIRECT EMAIL</p>
- <h2>Email is the fastest route.</h2>
+ <h2>Direct email is the fastest route.</h2>
+ <p>Send a note with the role, project, timeline, location or remote expectations, and which build log made you reach out.</p>
  </div>
  <div class="email-large-card">
   <span>Email</span>
@@ -44,7 +45,7 @@ subtitle: "Available for Fall 2026 work in process development, automation, and 
 <section class="contact-fit-panel contact-reveal" aria-label="Best-fit conversations">
  <p class="system-label small">BEST-FIT CONVERSATIONS</p>
  <div class="matrix contact-fit-grid">
- <div class="matrix-card"><h3>Early-stage hard-tech</h3><p>Seed/Series A hard-tech where I'd be the first ChemE or process hire, figuring out the first wet-processing line.</p></div>
+ <div class="matrix-card"><h3>Seed/Series A hard-tech</h3><p>Comfortable being the ChemE/process person in the room and figuring out the first version of a wet-processing line.</p></div>
  <div class="matrix-card"><h3>Process-development work</h3><p>Process development from first principles: defining variables, building the measurement loop, and finding the operating window.</p></div>
  <div class="matrix-card"><h3>Advanced manufacturing roles</h3><p>Semiconductors, printed electronics, process control, reliability, and manufacturing decision rules.</p></div>
  <div class="matrix-card"><h3>Clean technology and scale-up</h3><p>Industrial decarbonization, sustainable materials, clean infrastructure, and research-to-deployment pathways.</p></div>

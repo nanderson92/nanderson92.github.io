@@ -1,11 +1,12 @@
 ---
 layout: page
 title: Printed Interconnect Reliability
-date_range: 2025–present
-category: Resistance drift → go/no-go logic
+category: Filler Lab · resistance drift → go/no-go logic
 tags: Semiconductors · Reliability · Process Control · Manufacturing
-subtitle: "Printed conductive lines look fine on day one and fail in week three through invisible drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
+subtitle: "Printed conductive lines can look fine on day one and fail later through drift, intermittent opens, or stress damage. I built the measurement protocol that catches those failure classes early enough to fix the process upstream."
 ---
+
+<p class="credential-line"><strong>Affiliation:</strong> Filler Lab, Georgia Tech · printed interconnect and device reliability workflow.</p>
 
 ## Failure classes
 

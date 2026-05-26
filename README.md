@@ -1,25 +1,27 @@
 # Nathan Anderson Portfolio
 
-GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergraduate focused on process development, advanced manufacturing, process development, advanced manufacturing, and clean technology.
+GitHub Pages/Jekyll portfolio for a Georgia Tech Chemical & Biomolecular Engineering undergraduate focused on process development, advanced manufacturing, wet processing, automation, and clean technology.
 
 ## Publish
 
 1. Copy these files into the root of `nanderson92.github.io`.
-2. Remove any old `/research/` folder from your repository if it still exists.
-3. Replace `assets/files/Nathan_Anderson_Resume.pdf` with the current resume PDF.
-4. Commit and push to `main`.
-5. Wait for GitHub Pages to redeploy, then hard-refresh the browser.
+2. Commit and push to `main`.
+3. Wait for GitHub Pages to redeploy, then hard-refresh the browser.
+4. Paste the deployed URL into LinkedIn Post Inspector or a social preview tool to refresh the new OG image.
 
 ## Pages
 
 - Home
 - Background
-- Projects
+- Projects / Build Logs
 - Resume
 - Contact
-- Project: Micromodular Electronics Deposition
+- Project: Droplet Deposition Screening
+- Project: Stem-Cell Microencapsulation
+- Project: Printed Interconnect Reliability
+- Project: Drive-Through Operations & Quality Systems
+- Project: Thermocycler Control
 
+## Notes
 
-## Cleanup note
-
-This version removes the Research page from the site navigation and excludes any leftover `/research/` folder from the Jekyll build. If you previously committed a `research/` directory to GitHub, delete that folder from the repository as well so GitHub Pages cannot serve the old page from a stale file.
+This version includes a custom 404 page, favicon, web manifest, sitemap, robots.txt, updated OG image, and resume PDF metadata title.

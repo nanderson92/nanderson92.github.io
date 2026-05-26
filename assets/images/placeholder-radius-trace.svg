@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
-<title id="title">Planned normalized contact-line radius trace</title>
-<desc id="desc">Graph frame for r(t)/r0 versus normalized time.</desc>
+<title id="title">Placeholder for normalized contact-line radius trace</title>
+<desc id="desc">Placeholder graph frame for r(t)/r0 versus normalized time.</desc>
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -13,8 +13,8 @@
 </defs>
 
 <rect width="760" height="430" rx="28" class="card"/>
-<text x="34" y="42" class="label ink">Contact-line dynamics</text>
-<text x="34" y="66" class="small muted">r(t)/r₀ vs. normalized time across substrate/backing conditions.</text>
+<text x="34" y="42" class="label ink">CONTACT-LINE DYNAMICS SLOT</text>
+<text x="34" y="66" class="small muted">r(t)/r₀ versus normalized time for substrate/backing conditions can be added here.</text>
 <g transform="translate(90 100)">
   <line x1="0" y1="250" x2="580" y2="250" stroke="#27484c" stroke-width="2"/>
   <line x1="0" y1="250" x2="0" y2="20" stroke="#27484c" stroke-width="2"/>

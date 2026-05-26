@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
-<title id="title">Operations throughput visualization frame</title>
+<title id="title">Placeholder for operations throughput visualization</title>
 <desc id="desc">Placeholder before-after chart and bottleneck map for operations throughput.</desc>
 
 <defs>
@@ -13,8 +13,8 @@
 </defs>
 
 <rect width="900" height="420" rx="28" class="card"/>
-<text x="36" y="42" class="label ink">Operations evidence</text>
-<text x="36" y="66" class="small muted">Before/after throughput and bottleneck-map structure.</text>
+<text x="36" y="42" class="label ink">OPERATIONS EVIDENCE SLOT</text>
+<text x="36" y="66" class="small muted">Shift-log, before/after throughput, or bottleneck map can be added here.</text>
 <g transform="translate(70 105)">
   <rect x="0" y="0" width="330" height="240" rx="22" fill="#fff" stroke="#d4e6e8"/>
   <text x="24" y="34" class="mono muted">BEFORE / AFTER</text>
@@ -25,6 +25,6 @@
   <text x="238" y="76" class="mono teal">+20%</text>
   <rect x="380" y="0" width="410" height="240" rx="22" fill="#fff" stroke="#d4e6e8"/>
   <text x="404" y="34" class="mono muted">DRIVE-THROUGH BOTTLENECK MAP</text>
-  <g class="small muted" font-family="Inter,Arial,sans-serif"><rect x="418" y="78" width="92" height="54" rx="14" fill="#f3fbfb" stroke="#cce1e3"/><text x="439" y="110">order</text><rect x="548" y="78" width="92" height="54" rx="14" fill="#fff8e5" stroke="#e7d99d"/><text x="574" y="110">pay</text><rect x="678" y="78" width="92" height="54" rx="14" fill="#f3fbfb" stroke="#cce1e3"/><text x="701" y="110">handoff</text><path d="M510 105 L548 105 M640 105 L678 105" stroke="#8bbdc7" stroke-width="3"/><text x="535" y="166" class="mono muted">constraint + corrective action</text></g>
+  <g class="small muted" font-family="Inter,Arial,sans-serif"><rect x="418" y="78" width="92" height="54" rx="14" fill="#f3fbfb" stroke="#cce1e3"/><text x="439" y="110">order</text><rect x="548" y="78" width="92" height="54" rx="14" fill="#fff8e5" stroke="#e7d99d"/><text x="574" y="110">pay</text><rect x="678" y="78" width="92" height="54" rx="14" fill="#f3fbfb" stroke="#cce1e3"/><text x="701" y="110">handoff</text><path d="M510 105 L548 105 M640 105 L678 105" stroke="#8bbdc7" stroke-width="3"/><text x="535" y="166" class="mono muted">highlight constraint + corrective action</text></g>
 </g>
 </svg>

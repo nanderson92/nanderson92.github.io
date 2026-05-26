@@ -1,14 +1,12 @@
 ---
 layout: page
-title: DNA Flexibility Assay Development
-category: Molecular biology assay development
-date_range: Earlier research
-affiliation: Maher Lab, Mayo Clinic
+title: DNA Flexibility Assay
+category: Maher Lab · Mayo Clinic
 tags: Molecular Biology · PCR · Experimental Design
 subtitle: Earlier research developing experiments to measure DNA flexibility at extremely short base-pair lengths.
 ---
 
-<p class="credential-line"><strong>Earliest research</strong> · DNA/PCR assay development</p>
+<p class="credential-line"><strong>Earliest research: Maher Lab · Mayo Clinic</strong> · DNA/PCR assay development</p>
 
 This earlier work shows where my experimental habits started: careful protocol execution, controls, troubleshooting, and small-signal measurement discipline.
 

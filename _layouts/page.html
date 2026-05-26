@@ -4,11 +4,8 @@ layout: default
 
 <section class="page-hero {{ page.hero_class }}">
  <div class="page-hero-inner">
- {% if page.category or page.date_range %}
- <p class="system-label page-meta-label">{% if page.category %}<span>{{ page.category }}</span>{% endif %}{% if page.date_range %}<span>{{ page.date_range }}</span>{% endif %}</p>
- {% endif %}
+ {% if page.category %}<p class="system-label">{{ page.category }}</p>{% endif %}
  <h1>{{ page.title }}</h1>
- {% if page.affiliation %}<p class="affiliation-line">{{ page.affiliation }}</p>{% endif %}
  {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
  </div>
 </section>
