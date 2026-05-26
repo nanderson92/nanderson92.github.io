@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thermocycler Control
-category: PID thermal control
+category: PID thermal control · embedded diagnostics
 tags: Automation · Controls · Diagnostics · Hardware
 subtitle: "A biological protocol only works in hardware if the temperature-time trajectory is repeatable: ramp rate, overshoot, settling time, and hold stability are the real product requirements."
 ---
@@ -61,12 +61,12 @@ The first control problem looked like a software problem, but the limiting issue
 
 <div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
 
-## Measured performance slot
+## Measured performance fields
 
 <div class="measured-performance-grid">
  <figure class="data-placeholder-figure wide-placeholder">
   <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Placeholder for thermocycler temperature versus time profile." loading="lazy">
-  <figcaption>Temperature-profile evidence slot: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
+  <figcaption>Temperature-time trace slot for setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
  </figure>
  <div class="performance-fields">
   <h3>Numbers to fill from prototype logs</h3>

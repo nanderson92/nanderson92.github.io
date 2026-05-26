@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Drive-Through Operations
+title: Operations & Quality Systems
 category: 110 cars/hr peak operations
-subtitle: "I managed a McDonald’s drive-through that served roughly 110 cars per hour at peak. Here is what that taught me about bottlenecks, quality loops, and keeping a system running when everything is breaking."
+subtitle: I managed a McDonald’s drive-through that served 110 cars per hour at peak. Here is what that taught me about bottlenecks, quality loops, and keeping a system running when everything is breaking.
 ---
 
 <div class="selected-outcomes operations-stats-hero">
@@ -11,17 +11,17 @@ subtitle: "I managed a McDonald’s drive-through that served roughly 110 cars p
   <span class="stat-primary"><strong>−15%</strong><em>order-to-handoff time</em></span>
   <span class="stat-primary"><strong>~30%</strong><em>downtime reduction</em></span>
  </div>
- <p class="metric-method-note">Measured from shift-level operating records and peak-period observations after prep-staging, staffing, uptime, and handoff changes. The numbers describe observed operating improvements, not a controlled single-variable experiment.</p>
+ <p class="metric-method-note">Metric basis: recurring peak-shift observations from live restaurant operations. These are operational estimates tied to staffing, prep, handoff timing, and maintenance changes, not a controlled academic study.</p>
 </div>
 
 <figure class="data-placeholder-figure wide-placeholder ops-throughput-figure">
- <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Operations throughput before-after visualization or bottleneck map slot." loading="lazy">
- <figcaption>Throughput evidence slot: before/after cars per hour, shift-log summary, or bottleneck map.</figcaption>
+ <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Operations throughput evidence slot for before-after visualization or bottleneck map." loading="lazy">
+ <figcaption>Evidence slot: before/after throughput visual, shift-log summary, or bottleneck map for the peak-rush process changes.</figcaption>
 </figure>
 
 ## What changed how I think
 
-Peak drive-through performance improved when I stopped treating the line as a set of individual workers and started treating it as a coupled flow system. Prep, order staging, payment, handoff, staffing, and equipment uptime all determined the outcome before the customer ever reached the window.
+At McDonald’s, peak drive-through performance improved when I stopped treating the line as a set of individual workers and started treating it as a coupled flow system. Prep, order staging, payment, handoff, staffing, and equipment uptime all determined the outcome before the customer ever reached the window.
 
 ## Why this belongs in a ChemE portfolio
 
@@ -38,13 +38,11 @@ Manufacturing lines, fast-food drive-throughs, and microfluidic systems share mo
 
 ## Roles represented
 
-<div class="role-block compact-roles-summary">
- <p>Across high-volume drive-through operations at McDonald’s, QSR training at Chick-fil-A, and small-team retail management, I learned to read service lines as coupled flow systems rather than collections of isolated tasks.</p>
-</div>
+<p class="role-synthesis">Across high-volume drive-through operations at McDonald’s, QSR training at Chick-fil-A, and small-team retail operations at a local ice-cream shop, I learned to read service lines as coupled flow systems: bottlenecks, handoffs, inventory, uptime, and standard work.</p>
 
 ## What I’d do next
 
-At a hardware startup, the first version is a single dashboard: bottleneck station, downtime reason, defect/rework count, and corrective action. Not bureaucracy — instrumentation. The point is making repeated failure modes visible early enough to change the system.
+At a hardware startup, the first version is a single dashboard: bottleneck station, downtime reason, defect/rework count, corrective action, and owner. Not bureaucracy — instrumentation. The point is making repeated failure modes visible early enough to change the system.
 
 <div class="case-cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>

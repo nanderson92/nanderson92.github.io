@@ -12,7 +12,7 @@ body_class: home-page
  </div>
  <h1><span class="hero-title-line">Making the future </span><span class="hero-title-line">manufacturable.</span></h1>
  <p class="hero-lede">
- Printed electronics, microfluidic biotech, embedded process control. I build the systems that move lab results out of the lab.
+ Printed electronics, microfluidic biotech, and embedded process control. I build systems that move lab results out of the lab.
  </p>
  <div class="cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">See the build logs</a>
@@ -22,14 +22,14 @@ body_class: home-page
  </div>
 </section>
 
-<section id="lead-build" class="signature-case-section build-preview-section" aria-label="Featured build log">
+<section id="lead-build" class="signature-case-section build-preview-section" aria-label="Flagship build preview">
  <div class="signature-case-card enhanced-signature-card compact-build-preview-card">
  <div class="signature-copy">
  <p class="system-label small">FILLER LAB · GEORGIA TECH · EDGE CROWDING → USEFUL PLACEMENT</p>
- <h2>Droplet Deposition Screening</h2>
- <p class="signature-subtitle">When microdevices are printed from a droplet, they tend to crowd at the edge. I built the measurement workflow for figuring out which substrate conditions produce useful placement.</p>
- <div class="case-meta-row"><span>Wet processing</span><span>Image-derived metrics</span><span>Process decision</span></div>
- <div class="signature-proof-grid" aria-label="Droplet deposition screening proof points">
+ <h2>Micromodular Electronics Deposition</h2>
+ <p class="signature-subtitle">When microdevices are printed from a droplet, they tend to crowd at the edge. I built the measurement workflow for identifying substrate conditions that produce useful placement.</p>
+ <div class="case-meta-row"><span>Wet processing</span><span>Image-derived metrics</span><span>Substrate screening</span></div>
+ <div class="signature-proof-grid" aria-label="Micromodular deposition proof points">
  <span><strong>Hard part</strong> The final stain pattern hides the drying, draining, and contact-line history that created it.</span>
  <span><strong>Method</strong> Top/side-view microscopy plus Python/ImageJ analysis to compare substrate/backing conditions.</span>
  <span class="signature-output"><strong>Output</strong> A substrate-screening decision framework for reducing edge crowding and preserving interconnect access.</span>
@@ -43,50 +43,51 @@ body_class: home-page
  </div>
 </section>
 
-<section class="technical-center-section proof-section" aria-label="Technical center of gravity">
+<section class="proof-section prose-proof-section" aria-label="Technical center of gravity">
  <div class="proof-heading">
  <p class="system-label small">TECHNICAL CENTER</p>
- <h2>Process windows, measurement loops, and manufacturing judgment.</h2>
- <p>I work best where a physical system is almost promising but not yet repeatable: a droplet pattern that needs quantification, a microfluidic process that needs throughput without defects, a resistance trace that needs failure logic, or a control loop that needs real thermal behavior instead of ideal setpoints.</p>
+ <h2>Process judgment, not a skills cloud.</h2>
+ <p>I use experiments, measurements, and operating windows to decide what should change in a physical system.</p>
  </div>
- <div class="technical-proof-prose">
- <p><strong>Core habits:</strong> define the bottleneck, choose measurable outputs, separate mechanism from symptom, and turn the next experiment into a decision rule.</p>
- <p><strong>Tooling:</strong> microscopy, image analysis, Python, ImageJ/Fiji, JMP, embedded controls, process simulation, and shop-floor operating discipline.</p>
+ <div class="proof-prose-grid">
+ <article><h3>Process development</h3><p>Define the bottleneck, choose controllable variables, measure outputs that matter, and convert results into a decision rule.</p></article>
+ <article><h3>Physical measurement</h3><p>Use microscopy, electrical testing, thermal logs, and QC observations to make fragile results auditable.</p></article>
+ <article><h3>Manufacturing translation</h3><p>Ask what must become repeatable before a promising lab result can survive real tooling, operators, and throughput pressure.</p></article>
  </div>
 </section>
 
 <section class="home-library project-strip supporting-home-cases" aria-label="More engineering work">
  <div class="content-shell home-content-shell">
  <div class="section-heading">
- <p class="system-label">SELECTED BUILD LOGS</p>
+ <p class="system-label">MORE BUILDS</p>
  <h2>Same instinct, different systems.</h2>
- <p>Operations, biotech, reliability, and controls, each framed around the constraint that had to be measured before it could be improved.</p>
+ <p>Operations, biotech, reliability, and controls: each started with a real bottleneck and ended with a sharper measurement loop.</p>
  </div>
 
  <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid startup-home-grid">
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Operations · quality loops</span><span>Flow constraint</span></div>
- <h2>Drive-Through Operations</h2>
- <p class="compact-card-summary">Managed a McDonald’s drive-through at ~110 cars/hour peak and learned how bottlenecks, QC, downtime, and staffing behave under pressure.</p>
+ <div class="card-topline"><span>Ops · quality loops</span><span>Operating dashboard</span></div>
+ <h2>Operations &amp; Quality Systems</h2>
+ <p class="compact-card-summary">Managed a McDonald’s drive-through at 110 cars/hour peak and learned how bottlenecks, QC, downtime, and staffing behave under pressure.</p>
  <p class="compact-card-link"><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
  <div class="card-topline"><span>Mayo Clinic · microfluidics</span><span>20× throughput</span></div>
  <h2>Stem-Cell Microencapsulation</h2>
- <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to reach a 20× throughput increase and ~50% encapsulation-yield improvement.</p>
+ <p class="compact-card-summary">Tuned flow ratio, crosslinking, and microscopy QC to reach a 20× throughput increase and roughly 50% encapsulation-yield improvement.</p>
  <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · process control</span><span>Failure logic</span></div>
+ <div class="card-topline"><span>Reliability · process</span><span>Failure logic</span></div>
  <h2>Printed Interconnect Reliability</h2>
  <p class="compact-card-summary">Tracked resistance behavior and pass/fail thresholds to connect interconnect drift to upstream process decisions.</p>
  <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open build log →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Automation · diagnostics</span><span>Thermal control</span></div>
+ <div class="card-topline"><span>Automation · diagnostics</span><span>Control prototype</span></div>
  <h2>Thermocycler Control</h2>
  <p class="compact-card-summary">Built a PID-controlled thermal cycling prototype around ramp rate, overshoot, settling time, and hold stability.</p>
  <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open build log →</a></p>

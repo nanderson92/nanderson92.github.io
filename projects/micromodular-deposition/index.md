@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Droplet Deposition Screening
+title: Micromodular Electronics Deposition
 category: Filler Lab · Georgia Tech · edge crowding → useful placement
 tags: Semiconductors · Process Development · Interfacial Transport · Automation & Data
 subtitle: "When you print microdevices from a droplet, they crowd at the edges and land in useless patterns. I spent a year figuring out which substrate conditions actually fix that."
 ---
 
+<p class="credential-line"><strong>Filler Lab · Georgia Tech</strong> · micromodular printed-electronics deposition and substrate-screening workflow</p>
+
 <figure class="flagship-page-visual">
  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="Micromodular electronics workflow with the deposition subsystem highlighted." loading="eager">
- <figcaption>Filler Lab, Georgia Tech: deposition sits between fabricated micromodules and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
+ <figcaption>System view: deposition sits between fabricated components and printable circuit assembly. If placement is useless, the downstream wiring problem gets harder.</figcaption>
 </figure>
 
 <div class="thesis-box promoted-thesis-box">
@@ -17,7 +19,6 @@ subtitle: "When you print microdevices from a droplet, they crowd at the edges a
 </div>
 
 <div class="role-block flagship-role-block">
- <p class="system-label small">MY ROLE · FILLER LAB</p>
  <p>I designed the experiments from scratch: chose the substrates, set up both top-view and side-view video capture, wrote the Python and ImageJ pipelines to extract contact-line metrics, and used those metrics to figure out which boundary conditions actually produce useful placement.</p>
  <p><strong>Core output:</strong> a substrate-screening decision framework the lab can use to evaluate new deposition surfaces before committing to downstream interconnect printing.</p>
 </div>
@@ -139,11 +140,11 @@ Some early conditions looked promising because they moved liquid quickly, but th
  </figure>
  <figure class="data-placeholder-figure">
   <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy">
-  <figcaption>Contact-line trace slot for r(t)/r₀ versus normalized drying/imbibition time.</figcaption>
+  <figcaption>Contact-line trace slot for r(t)/r₀ versus normalized drying/imbibition time, with condition labels and replicate markers.</figcaption>
  </figure>
  <figure class="data-placeholder-figure">
   <img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Placeholder for edge to center deposition ratio chart." loading="lazy">
-  <figcaption>Decision-metric slot for edge/center ratio across substrate/backing conditions.</figcaption>
+  <figcaption>Decision-metric slot for edge/center ratio across substrate/backing conditions, including replicate spread.</figcaption>
  </figure>
 </div>
 

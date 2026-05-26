@@ -14,7 +14,7 @@
 
 <rect width="760" height="430" rx="28" class="card"/>
 <text x="34" y="42" class="label ink">CONTACT-LINE DYNAMICS SLOT</text>
-<text x="34" y="66" class="small muted">r(t)/r₀ vs. normalized time for substrate/backing conditions.</text>
+<text x="34" y="66" class="small muted">r(t)/r₀ versus normalized time for substrate/backing conditions.</text>
 <g transform="translate(90 100)">
   <line x1="0" y1="250" x2="580" y2="250" stroke="#27484c" stroke-width="2"/>
   <line x1="0" y1="250" x2="0" y2="20" stroke="#27484c" stroke-width="2"/>
@@ -23,6 +23,6 @@
   <path class="line" d="M0 82 C80 82 160 84 238 88 S370 120 580 220" opacity=".9"/>
   <text x="215" y="286" class="small muted">normalized time</text>
   <text x="-58" y="20" class="small muted" transform="rotate(-90 -58 20)">r(t)/r₀</text>
-  <text x="365" y="70" class="mono muted">condition traces</text>
+  <text x="365" y="70" class="mono muted">condition traces + replicate bands</text>
 </g>
 </svg>

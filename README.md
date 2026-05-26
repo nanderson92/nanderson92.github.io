@@ -17,7 +17,7 @@ GitHub Pages/Jekyll portfolio for a Chemical & Biomolecular Engineering undergra
 - Projects
 - Resume
 - Contact
-- Project: Droplet Deposition Screening
+- Project: Micromodular Printed Electronics Deposition
 
 
 ## Cleanup note

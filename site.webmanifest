@@ -1,7 +1,6 @@
 {
   "name": "Nathan Anderson Portfolio",
   "short_name": "Nathan Anderson",
-  "description": "Chemical engineering portfolio focused on process development, wet processing, automation, and manufacturing judgment.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f7fbfb",
