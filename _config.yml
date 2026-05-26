@@ -1,7 +1,7 @@
 title: "Nathan Anderson"
-description: "Chemical Engineering process-development student building measurement loops for hard-tech manufacturing: wet processing, printed electronics, microfluidics, reliability, and automation."
+description: "Chemical Engineering · Process Development · Advanced Manufacturing · Clean Technology"
 url: "https://nathananderson.engineering"
-baseurl: ""
+baseurl: "https://nathananderson.engineering"
 
 markdown: kramdown
 permalink: pretty
@@ -11,9 +11,11 @@ email: nanderson92@gatech.edu
 linkedin: "https://www.linkedin.com/in/nanderson92/"
 github: "https://github.com/nanderson92"
 
+# Prevent any stale local research folder from being published if it remains in the GitHub repo.
 exclude:
   - research
   - research/**
+
   - portfolio
   - portfolio/**
   - giving-back

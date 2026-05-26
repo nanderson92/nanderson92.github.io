@@ -1,12 +1,18 @@
 ---
-layout: page
-title: Page moved
-noindex: true
+layout: null
+permalink: /projects/operations-quality-systems/
 sitemap: false
 ---
-
-<div class="gone-panel">
- <h2>This case file moved to Background.</h2>
- <p>The operations work is now summarized as earlier operator discipline instead of presented as a standalone case file.</p>
- <a class="button primary" href="{{ '/background/' | relative_url }}">Go to Background →</a>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0; url=/background/#earlier-work">
+<title>Operations & Quality Systems moved | Nathan Anderson</title>
+<link rel="canonical" href="/background/#earlier-work">
+</head>
+<body>
+<p>Operations & Quality Systems has moved to the Background page. <a href="/background/#earlier-work">Go to Background</a>.</p>
+</body>
+</html>

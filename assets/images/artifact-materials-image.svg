@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-<title>Device or microscopy image slot</title><desc>Use for microscopy stills, device frames, capsule images, or printed-line photos.</desc>
+<title>Materials image slot</title><desc>Use for film, substrate, morphology, or characterization imagery.</desc>
 <rect width="1200" height="760" fill="#f8fbfc"/>
 <rect x="46" y="46" width="1108" height="668" rx="32" fill="#fff" stroke="#d8e2e7" stroke-width="2"/>
-<text x="76" y="108" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">Device or microscopy image slot</text>
-<text x="76" y="150" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="20">Use for microscopy stills, device frames, capsule images, or printed-line photos.</text>
+<text x="76" y="108" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">Materials image slot</text>
+<text x="76" y="150" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="20">Use for film, substrate, morphology, or characterization imagery.</text>
 <g transform="translate(120,210)">
 <rect x="0" y="0" width="440" height="360" rx="24" fill="#e9f2f5" stroke="#d8e2e7"/>
 <circle cx="220" cy="180" r="96" fill="#fff" stroke="#08708b" stroke-width="6" opacity="0.7"/>

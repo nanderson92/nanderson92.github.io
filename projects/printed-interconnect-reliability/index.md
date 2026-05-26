@@ -1,70 +1,83 @@
 ---
 layout: page
 title: Printed Interconnect Reliability
-category: Reliability · process feedback · 2025–present
+category: Reliability · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
-tags: Reliability · Printed Electronics · Electrical Test · Failure Analysis
-subtitle: "Turning printed-interconnect resistance behavior into pass, monitor, fail, and artifact decisions tied to upstream process checks."
+metric_chips: '<span>Failure logic</span><span>Resistance drift screen</span>'
+subtitle: Printed-line testing reframed as a reliability screen that maps resistance behavior back to upstream process checks.
 ---
 
-<div class="metric-chip-row"><span class="metric-chip"><strong>Failure</strong> logic</span><span class="metric-chip"><strong>R(t)</strong> screen</span></div>
-
-<section class="artifact-gallery" aria-label="Project artifact panels">
- <figure class="casefile-artifact"><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Reliability drift plot"><figcaption>Measurement plot panel: resistance drift and threshold logic.</figcaption></figure>
- <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="printed interconnect image"><figcaption>Device/image panel: printed interconnect, probe contact, or line-shape image.</figcaption></figure>
- <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="reliability screen schematic"><figcaption>Flow schematic panel: measure, classify, and check upstream.</figcaption></figure>
+<section class="artifact-panel public-safe-snapshot">
+ <h2>Reliability screen objective</h2>
+ <p>Time-zero continuity is not enough. The screen classifies resistance drift, sudden failure, intermittent readings, and artifact states so printed interconnect data can feed back into printing, curing, handling, and environmental-stress decisions.</p>
 </section>
 
-<div class="thesis-box"><h2>Time-zero function and process robustness are not the same thing.</h2><p>Printed lines need a reliability screen that distinguishes good continuity from process-built vulnerability.</p></div>
+<section class="visual-artifact-grid" aria-label="Visual artifact slots">
+ <figure><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Resistance drift plot area" loading="lazy"><figcaption>Measurement plot area for normalized resistance drift and failure timing.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Printed interconnect image area" loading="lazy"><figcaption>Image area for printed lines, probe layout, or device photo.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Reliability workflow schematic area" loading="lazy"><figcaption>Schematic area for stress interval, re-measurement, and classification workflow.</figcaption></figure>
+</section>
 
 ## Reliability screen skeleton
 
-<svg class="flow-svg six-node-flow" viewBox="0 0 980 180" role="img" aria-label="Six-node reliability screen flow">
- <defs><marker id="arrow-rel" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
- <g class="node"><rect x="10" y="52" width="140" height="70" rx="16"/><text x="80" y="84">Measure</text><text x="80" y="106">initial R</text></g>
- <path d="M155 87 H180" marker-end="url(#arrow-rel)"/>
- <g class="node"><rect x="185" y="52" width="140" height="70" rx="16"/><text x="255" y="84">Normalize</text><text x="255" y="106">to baseline</text></g>
- <path d="M330 87 H355" marker-end="url(#arrow-rel)"/>
- <g class="node"><rect x="360" y="52" width="140" height="70" rx="16"/><text x="430" y="84">Stress</text><text x="430" y="106">interval</text></g>
- <path d="M505 87 H530" marker-end="url(#arrow-rel)"/>
- <g class="node"><rect x="535" y="52" width="140" height="70" rx="16"/><text x="605" y="84">Re-measure</text><text x="605" y="106">time points</text></g>
- <path d="M680 87 H705" marker-end="url(#arrow-rel)"/>
- <g class="node"><rect x="710" y="52" width="120" height="70" rx="16"/><text x="770" y="84">Classify</text><text x="770" y="106">trace</text></g>
- <path d="M835 87 H860" marker-end="url(#arrow-rel)"/>
- <g class="node"><rect x="865" y="52" width="105" height="70" rx="16"/><text x="918" y="84">Check</text><text x="918" y="106">upstream</text></g>
+<svg class="flow-svg six-node-flow" viewBox="0 0 1200 260" role="img" aria-label="Six-node reliability screen flow diagram">
+ <defs><marker id="arrow-rel" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker></defs>
+ <g font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#0f172a">
+  <rect x="20" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="100" y="112" text-anchor="middle">Measure</text><text x="100" y="138" text-anchor="middle" font-size="13" fill="#64748b">initial R</text>
+  <rect x="220" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="300" y="112" text-anchor="middle">Normalize</text><text x="300" y="138" text-anchor="middle" font-size="13" fill="#64748b">to baseline</text>
+  <rect x="420" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="500" y="112" text-anchor="middle">Stress</text><text x="500" y="138" text-anchor="middle" font-size="13" fill="#64748b">interval</text>
+  <rect x="620" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="700" y="112" text-anchor="middle">Re-measure</text><text x="700" y="138" text-anchor="middle" font-size="13" fill="#64748b">time points</text>
+  <rect x="820" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="900" y="112" text-anchor="middle">Classify</text><text x="900" y="138" text-anchor="middle" font-size="13" fill="#64748b">state</text>
+  <rect x="1020" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="1100" y="112" text-anchor="middle">Check</text><text x="1100" y="138" text-anchor="middle" font-size="13" fill="#64748b">upstream</text>
+ </g>
+ <g stroke="#08708b" stroke-width="4" marker-end="url(#arrow-rel)">
+  <line x1="180" y1="118" x2="212" y2="118"/><line x1="380" y1="118" x2="412" y2="118"/><line x1="580" y1="118" x2="612" y2="118"/><line x1="780" y1="118" x2="812" y2="118"/><line x1="980" y1="118" x2="1012" y2="118"/>
+ </g>
 </svg>
 
 ## Threshold logic
 
-<svg class="matrix-svg" viewBox="0 0 620 300" role="img" aria-label="Pass fail monitor artifact matrix">
- <rect x="20" y="20" width="270" height="115" rx="18" class="pass"/><text x="155" y="70">PASS</text><text x="155" y="100">Stable R(t), no action</text>
- <rect x="330" y="20" width="270" height="115" rx="18" class="monitor"/><text x="465" y="70">MONITOR</text><text x="465" y="100">Smooth upward drift</text>
- <rect x="20" y="165" width="270" height="115" rx="18" class="fail"/><text x="155" y="215">FAIL</text><text x="155" y="245">Open or large jump</text>
- <rect x="330" y="165" width="270" height="115" rx="18" class="artifact"/><text x="465" y="215">ARTIFACT</text><text x="465" y="245">Retest contact issue</text>
+<svg class="matrix-svg" viewBox="0 0 900 520" role="img" aria-label="Pass monitor fail artifact matrix">
+ <rect width="900" height="520" rx="28" fill="#f8fbfc"/>
+ <g font-family="Inter, Arial, sans-serif">
+  <rect x="70" y="70" width="350" height="160" rx="22" fill="#eef8f1" stroke="#8fc9a0"/><text x="245" y="130" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">PASS</text><text x="245" y="170" text-anchor="middle" fill="#334155" font-size="18">stable after stress</text>
+  <rect x="480" y="70" width="350" height="160" rx="22" fill="#fff7df" stroke="#d4a72c"/><text x="655" y="130" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">MONITOR</text><text x="655" y="170" text-anchor="middle" fill="#334155" font-size="18">drift before threshold</text>
+  <rect x="70" y="290" width="350" height="160" rx="22" fill="#fff4f0" stroke="#d48171"/><text x="245" y="350" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">FAIL</text><text x="245" y="390" text-anchor="middle" fill="#334155" font-size="18">open, crack, or high R</text>
+  <rect x="480" y="290" width="350" height="160" rx="22" fill="#eef2f7" stroke="#94a3b8"/><text x="655" y="350" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">ARTIFACT</text><text x="655" y="390" text-anchor="middle" fill="#334155" font-size="18">retest probe/contact</text>
+ </g>
 </svg>
 
 ## Failure-decision table
 
-| Failure class | What it suggests | Upstream process check |
-|---|---|---|
-| High initial resistance | Poor print continuity, geometry, or cure | Inspect line shape, cure, and deposition continuity |
-| Smooth upward drift | Material aging or environmental sensitivity | Check humidity, sintering/cure, and material stability |
-| Sudden open circuit | Cracking, delamination, or handling damage | Inspect physical damage and probe history |
-| Intermittent readings | Contact artifact or true instability | Separate probe/contact artifact from line failure |
+<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Failure class</th><th>What it suggests</th><th>Upstream process check</th></tr></thead><tbody>
+<tr><td>High initial resistance</td><td>Poor print continuity, geometry, or cure.</td><td>Inspect line shape, cure condition, deposition continuity, and probe contact.</td></tr>
+<tr><td>Smooth upward drift</td><td>Material aging or environmental sensitivity.</td><td>Check humidity exposure, sintering/cure history, and material stability.</td></tr>
+<tr><td>Sudden open circuit</td><td>Cracking, delamination, or handling damage.</td><td>Inspect physical damage, probe history, and handling steps.</td></tr>
+<tr><td>Intermittent readings</td><td>Contact artifact or true instability.</td><td>Separate probe/contact artifact from line failure by retesting and imaging.</td></tr>
+</tbody></table></div>
 
 ## Measure, classify, check upstream
 
-<svg class="flow-svg labeled-flow" viewBox="0 0 780 170" role="img" aria-label="Measure classify check upstream flow">
- <defs><marker id="arrow-mcu" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
- <rect x="30" y="42" width="180" height="82" rx="18"/><text x="120" y="80">Measure</text><text x="120" y="104">R0 and R(t)</text>
- <path d="M220 83 H285" marker-end="url(#arrow-mcu)"/>
- <rect x="295" y="42" width="180" height="82" rx="18"/><text x="385" y="80">Classify</text><text x="385" y="104">pass/monitor/fail</text>
- <path d="M485 83 H550" marker-end="url(#arrow-mcu)"/>
- <rect x="560" y="42" width="190" height="82" rx="18"/><text x="655" y="80">Check upstream</text><text x="655" y="104">print/cure/probe</text>
+<svg class="flow-svg labeled-flow" viewBox="0 0 1000 260" role="img" aria-label="Measure classify check upstream flow">
+ <defs><marker id="arrow-measure" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker></defs>
+ <g font-family="Inter, Arial, sans-serif">
+  <rect x="60" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="180" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Measure</text><text x="180" y="150" text-anchor="middle" font-size="16" fill="#64748b">R, drift, timing</text>
+  <rect x="380" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="500" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Classify</text><text x="500" y="150" text-anchor="middle" font-size="16" fill="#64748b">pass / monitor / fail / artifact</text>
+  <rect x="700" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="820" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Check upstream</text><text x="820" y="150" text-anchor="middle" font-size="16" fill="#64748b">print, cure, stress, contact</text>
+  <line x1="300" y1="127" x2="370" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/><line x1="620" y1="127" x2="690" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/>
+ </g>
 </svg>
 
-<div class="changed-panel"><h2>What changed because of this</h2><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></div>
+## What changed because of this
 
-<div class="next-panel"><h2>Open questions / next iteration</h2><p>The next iteration is a full control-plan draft: define public-safe thresholds for pass, monitor, fail, and artifact, then validate the classes across three substrate/interconnect conditions.</p></div>
+<div class="what-changed-block changed-panel"><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></div>
 
-<div class="cta-row bottom-case-cta"><a class="button primary" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Next case file →</a><a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a></div>
+## Open questions / next iteration
+
+<div class="next-iteration-callout"><p>The next iteration should set public-safe pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The engineering decision is whether failure class can reliably point to a process correction instead of only describing a dead line.</p></div>
+
+
+<div class="case-cta-row two-button-cta">
+ <a class="button primary" href="{{ '/projects/' | relative_url }}">Next case file →</a>
+ <a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a>
+</div>

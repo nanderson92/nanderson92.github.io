@@ -5,7 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
  <meta name="description" content="{{ site.description }}">
- {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+ {% if page.noindex %}<meta name="robots" content="noindex,follow">{% endif %}
  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  {% assign default_og_title = "Nathan Anderson | Chemical Engineering · Georgia Tech" %}
  {% assign og_title = default_og_title %}
@@ -13,14 +13,14 @@
  {% assign og_title = page.title | append: " | Nathan Anderson" %}
  {% endif %}
  <meta property="og:title" content="{{ og_title }}">
- <meta property="og:description" content="Engineering case files in wet processing, printed electronics, biotech fabrication, reliability, automation, and process-development work.">
+ <meta property="og:description" content="Case files in wet processing, printed electronics, microfluidics, reliability, automation, materials, and process-development work.">
  <meta property="og:image" content="{{ site.url }}/assets/images/og-preview.png">
  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  <meta property="og:type" content="website">
  <meta name="twitter:card" content="summary_large_image">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;520;650;750;850&family=Space+Grotesk:wght@650;750;800&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
@@ -69,7 +69,7 @@
 
  <div class="drawer-system">
  <p class="system-label small">Technical focus</p>
- <p>Wet processing · microfluidics · hard-tech manufacturing</p>
+ <p>Wet processing · printed electronics · microfluidics · reliability</p>
  </div>
 
  <div class="social-links" aria-label="Social links">
@@ -86,16 +86,17 @@
  <footer class="site-footer">
  <div class="footer-inner footer-enhanced">
  <div>
-  <a class="footer-wordmark wordmark" href="{{ '/' | relative_url }}">Nathan Anderson</a>
+  <a class="footer-wordmark wordmark" href="{{ '/' | relative_url }}"><span>Nathan Anderson</span></a>
   <p class="footer-tagline">Making the future manufacturable.</p>
-  <p>© 2026 Nathan Anderson · Last updated May 2026 · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p>© 2026 Nathan Anderson · Chemical Engineering · Georgia Tech · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p class="last-updated">Last updated May 2026</p>
  </div>
  <nav aria-label="Footer navigation">
  <a href="{{ '/projects/' | relative_url }}">Case Files</a>
  <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
  <a href="{{ '/contact/' | relative_url }}">Contact</a>
- <a class="icon-link" href="{{ site.linkedin }}" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 8.8H3.8V20h2.7V8.8ZM5.2 4a1.6 1.6 0 1 0 0 3.2A1.6 1.6 0 0 0 5.2 4Zm6.2 4.8H8.8V20h2.7v-5.8c0-1.5.7-2.7 2.2-2.7 1.3 0 1.8.9 1.8 2.5v6h2.7v-6.6c0-3-1.6-4.8-4.2-4.8-1.5 0-2.3.8-2.7 1.4V8.8Z"/></svg><span>LinkedIn</span></a>
- <a class="icon-link" href="{{ site.github }}" aria-label="GitHub"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 0 0-2.7 16.6c.4.1.6-.2.6-.5v-1.8c-2.2.5-2.7-.9-2.7-.9-.4-.9-.9-1.1-.9-1.1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.8 2.3.6.1-.5.3-.8.5-1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.2-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.6 7.6 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.2 0 3-1.8 3.7-3.6 3.9.3.2.6.7.6 1.5v2.4c0 .3.2.6.6.5A8.5 8.5 0 0 0 12 3.5Z"/></svg><span>GitHub</span></a>
+ <a class="icon-link" href="{{ site.linkedin }}" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9.5h4v11H3zM9.2 9.5h3.8v1.6h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05v5.4h-4v-4.78c0-1.14-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.86h-4z"/></svg><span>LinkedIn</span></a>
+ <a class="icon-link" href="{{ site.github }}" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9A11.1 11.1 0 0 0 .9 12.16c0 4.98 3.2 9.2 7.65 10.7.56.1.76-.25.76-.54v-1.9c-3.11.69-3.77-1.52-3.77-1.52-.51-1.32-1.25-1.67-1.25-1.67-1.02-.71.08-.7.08-.7 1.13.08 1.72 1.19 1.72 1.19 1 .1 2.28-.74 2.84-1.2.1-.74.39-1.25.7-1.54-2.48-.29-5.1-1.27-5.1-5.62 0-1.24.43-2.25 1.15-3.05-.12-.29-.5-1.45.11-3.01 0 0 .95-.31 3.08 1.16a10.4 10.4 0 0 1 5.6 0c2.13-1.47 3.07-1.16 3.07-1.16.62 1.56.24 2.72.12 3.01.72.8 1.15 1.81 1.15 3.05 0 4.36-2.62 5.32-5.12 5.6.4.36.76 1.05.76 2.12v3.14c0 .3.2.65.77.54a11.25 11.25 0 0 0 7.65-10.7A11.1 11.1 0 0 0 12 .9z"/></svg><span>GitHub</span></a>
  </nav>
  </div>
  </footer>
@@ -108,36 +109,48 @@
  const navLinks = document.querySelectorAll('.topbar-nav a, .nav-links a, .footer-inner a');
  function normalizePath(path) { return path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/') || '/'; }
  function setActiveNav() {
- const current = normalizePath(window.location.pathname);
- navLinks.forEach((link) => {
- const linkPath = normalizePath(new URL(link.href).pathname);
- const isActive = current === linkPath;
- link.classList.toggle('is-active', isActive);
- if (isActive) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
- });
+   const current = normalizePath(window.location.pathname);
+   navLinks.forEach((link) => {
+     const linkPath = normalizePath(new URL(link.href).pathname);
+     const isActive = current === linkPath;
+     link.classList.toggle('is-active', isActive);
+     if (isActive) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+   });
  }
  function setDrawer(open) {
- body.classList.toggle('drawer-open', open);
- toggle.setAttribute('aria-expanded', String(open));
- drawer.setAttribute('aria-hidden', String(!open));
- if (open) drawer.querySelector('a').focus({ preventScroll: true }); else toggle.focus({ preventScroll: true });
+   body.classList.toggle('drawer-open', open);
+   toggle.setAttribute('aria-expanded', String(open));
+   drawer.setAttribute('aria-hidden', String(!open));
+   if (open) drawer.querySelector('a').focus({ preventScroll: true }); else toggle.focus({ preventScroll: true });
  }
  setActiveNav();
  document.documentElement.classList.add('js');
  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const revealTargets = document.querySelectorAll('.project-card, .portfolio-card, .human-service-band, .cta-band, .metric-card, .case-summary-box, .artifact-card, .contact-card, .casefile-artifact, .background-panel');
- revealTargets.forEach((target) => target.classList.add('reveal'));
+ const revealTargets = document.querySelectorAll(['.proof-section','.project-card','.portfolio-card','.matrix-card','.human-service-band','.cta-band','.background-editorial','.metric-card','.result-panel','.proof-artifact-card','.case-summary-box','.artifact-panel','.visual-artifact-grid figure','.contact-card','.resume-panel'].join(','));
+ revealTargets.forEach((target, index) => { target.classList.add('reveal'); target.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 45, 135)}ms`); });
  if ('IntersectionObserver' in window && !prefersReducedMotion) {
- const observer = new IntersectionObserver((entries, activeObserver) => {
- entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); activeObserver.unobserve(entry.target); } });
- }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
- revealTargets.forEach((target) => observer.observe(target));
- setTimeout(() => revealTargets.forEach((target) => target.classList.add('in-view')), 900);
- } else revealTargets.forEach((target) => target.classList.add('in-view'));
+   const observer = new IntersectionObserver((entries, activeObserver) => {
+     entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); activeObserver.unobserve(entry.target); } });
+   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+   revealTargets.forEach((target) => observer.observe(target));
+   setTimeout(() => { revealTargets.forEach((target) => target.classList.add('in-view')); }, 900);
+ } else { revealTargets.forEach((target) => target.classList.add('in-view')); }
  toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
  closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
  document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false); });
+
+ // Case-file filters.
+ document.querySelectorAll('[data-filter]').forEach((button) => {
+   button.addEventListener('click', () => {
+     const value = button.dataset.filter;
+     document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('is-active', b === button));
+     document.querySelectorAll('[data-tags]').forEach((card) => {
+       const tags = card.dataset.tags.split(' ');
+       card.hidden = value !== 'all' && !tags.includes(value);
+     });
+   });
+ });
  </script>
 </body>
 </html>
