@@ -5841,3 +5841,188 @@ h1,
   .text-only-hard-list { grid-template-columns: 1fr; }
   .compact-build-preview-card { grid-template-columns: 1fr; }
 }
+
+/* === Meticulous visual/content pass from latest feedback === */
+/* Tighten the hero-to-first-project gap and keep the image from fighting the text. */
+.home-page .hero {
+  min-height: clamp(620px, 78vh, 760px) !important;
+  padding-top: clamp(112px, 13vh, 146px) !important;
+  padding-bottom: clamp(42px, 7vh, 68px) !important;
+}
+.home-page .hero-inner {
+  align-items: center !important;
+}
+.home-page .signature-case-section {
+  margin-top: clamp(20px, 3.5vw, 44px) !important;
+}
+.home-page #content::before {
+  background-position: 68% 42% !important;
+  background-size: cover !important;
+  opacity: .56 !important;
+  filter: saturate(.82) contrast(1.08) brightness(.92) !important;
+}
+.home-page .hero::before {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(248, 251, 252, 0.99) 0%,
+      rgba(248, 251, 252, 0.97) 38%,
+      rgba(248, 251, 252, 0.78) 60%,
+      rgba(248, 251, 252, 0.46) 100%
+    ),
+    linear-gradient(180deg, rgba(255,255,255,.02) 0%, rgba(255,255,255,.08) 52%, rgba(255,255,255,.66) 82%, #ffffff 100%) !important;
+}
+.home-page .hero::after {
+  bottom: -210px !important;
+  height: 380px !important;
+}
+.home-page .build-preview-section {
+  scroll-margin-top: 90px;
+}
+.home-page .home-library {
+  margin-top: clamp(58px, 7vw, 92px) !important;
+}
+.home-page .human-service-band {
+  background: linear-gradient(135deg, rgba(255,255,255,.92), rgba(239,248,247,.78)) !important;
+}
+
+/* Projects index definition and unified card schema. */
+.build-log-definition {
+  max-width: 860px;
+  margin: 18px 0 0 !important;
+  color: rgba(49,83,87,.86) !important;
+  font-size: 1.03rem !important;
+  line-height: 1.68 !important;
+}
+.startup-project-grid .compact-evidence-table span strong {
+  color: var(--ink);
+  min-width: 54px;
+  display: inline-block;
+}
+.startup-project-grid .portfolio-card {
+  display: flex;
+  flex-direction: column;
+}
+.startup-project-grid .portfolio-card > p:last-child {
+  margin-top: auto;
+}
+
+/* Placeholder figures are honest replacement slots, not synthetic evidence. */
+.placeholder-figure-grid,
+.measured-performance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 26px 0 38px;
+}
+.placeholder-figure-grid .wide-placeholder,
+.measured-performance-grid .wide-placeholder,
+.ops-throughput-figure {
+  grid-column: 1 / -1;
+}
+.data-placeholder-figure {
+  margin: 0;
+  padding: clamp(12px, 2vw, 16px);
+  border: 1px solid rgba(8,112,139,.13);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(238,250,250,.74));
+  box-shadow: 0 16px 38px rgba(28,84,91,.075);
+}
+.data-placeholder-figure img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid rgba(8,112,139,.08);
+  background: white;
+}
+.data-placeholder-figure figcaption {
+  margin: 10px 4px 2px;
+  color: rgba(49,83,87,.84);
+  font-size: .92rem;
+  line-height: 1.48;
+}
+.performance-fields {
+  padding: 22px;
+  border: 1px solid rgba(8,112,139,.13);
+  border-radius: 24px;
+  background: rgba(255,255,255,.78);
+  box-shadow: 0 16px 36px rgba(28,84,91,.07);
+}
+.performance-fields h3 {
+  margin: 0 0 12px;
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  letter-spacing: -.045em;
+  line-height: 1.05;
+}
+.performance-fields ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.performance-fields li {
+  margin-bottom: 8px;
+}
+.ops-throughput-figure {
+  margin: 14px 0 34px !important;
+}
+.explicit-ops-grid strong {
+  line-height: 1.22;
+}
+
+/* Calm contact page hierarchy and remove duplicate hero feel. */
+.contact-page .page-content {
+  padding-top: 34px !important;
+}
+.contact-page .contact-system-grid {
+  margin-top: 0 !important;
+}
+.contact-methods article {
+  background: rgba(255,255,255,.78) !important;
+  background-image: none !important;
+}
+.contact-methods article:first-child,
+.contact-methods article:nth-child(2),
+.contact-methods article:nth-child(3) {
+  background: rgba(255,255,255,.78) !important;
+}
+.email-first-panel .email-large-card {
+  background: rgba(255,255,255,.82) !important;
+}
+
+/* Tag pills should read quieter than CTAs. */
+.badge,
+.proof-tag,
+.status-pill {
+  letter-spacing: .035em !important;
+  text-transform: none !important;
+  font-size: .72rem !important;
+}
+.system-label,
+.card-topline span {
+  letter-spacing: .12em;
+}
+
+/* Give sections more rhythm on the otherwise white site. */
+.page-content .content-shell > h2:nth-of-type(even) {
+  position: relative;
+}
+.project-equal-grid-section,
+.additional-work-section,
+.contact-fit-panel,
+.background-depth {
+  padding-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .placeholder-figure-grid,
+  .measured-performance-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-page .hero {
+    min-height: auto !important;
+    padding-bottom: 54px !important;
+  }
+  .home-page .signature-case-section {
+    margin-top: 24px !important;
+  }
+}

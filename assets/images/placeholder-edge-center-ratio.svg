@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+<title id="title">Placeholder for edge-to-center deposition metric</title>
+<desc id="desc">Placeholder bar chart frame for edge center ratio across substrate conditions.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#eaf8f8"/>
+  </linearGradient>
+  <style>
+    .card{fill:url(#bg);stroke:#c9dedf;stroke-width:1.4}.ink{fill:#082325}.muted{fill:#59777b}.teal{fill:#08708b}.line{stroke:#08708b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.grid{stroke:#d9e9ea;stroke-width:1}.dash{stroke:#8bbdc7;stroke-width:2;stroke-dasharray:6 6;fill:none}.label{font-family:Inter,Arial,sans-serif;font-weight:800;font-size:15px;letter-spacing:.04em}.small{font-family:Inter,Arial,sans-serif;font-weight:650;font-size:12px}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:760;font-size:11px;letter-spacing:.08em}
+  </style>
+</defs>
+
+<rect width="760" height="430" rx="28" class="card"/>
+<text x="34" y="42" class="label ink">EDGE / CENTER RATIO SLOT</text>
+<text x="34" y="66" class="small muted">Replace with bar or dot plot comparing substrate/backing conditions.</text>
+<g transform="translate(90 102)">
+  <line x1="0" y1="245" x2="580" y2="245" stroke="#27484c" stroke-width="2"/>
+  <line x1="0" y1="245" x2="0" y2="25" stroke="#27484c" stroke-width="2"/>
+  <line x1="0" y1="110" x2="580" y2="110" stroke="#d4a72c" stroke-width="3" stroke-dasharray="8 8"/>
+  <text x="390" y="99" class="mono muted">candidate threshold</text>
+  <g fill="#08708b" opacity=".74"><rect x="55" y="95" width="58" height="150" rx="8"/><rect x="167" y="135" width="58" height="110" rx="8"/><rect x="279" y="164" width="58" height="81" rx="8"/><rect x="391" y="185" width="58" height="60" rx="8"/><rect x="503" y="150" width="58" height="95" rx="8"/></g>
+  <text x="34" y="280" class="small muted">glass</text><text x="142" y="280" class="small muted">air</text><text x="238" y="280" class="small muted">backing A</text><text x="358" y="280" class="small muted">backing B</text><text x="472" y="280" class="small muted">coating</text>
+  <text x="210" y="320" class="small muted">condition labels and replicate markers go here</text>
+</g>
+</svg>

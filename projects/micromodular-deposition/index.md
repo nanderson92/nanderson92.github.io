@@ -27,6 +27,8 @@ Suspended microdevices can raft, crowd, pin near the contact line, and accumulat
 
 The practical question is simple: **which boundary condition leaves devices in places that can still be wired later?**
 
+The working answer is that porous AAO-like surfaces with controlled drainage/backing behavior are more promising than glass-like low-uptake controls. They shorten the late-stage edge-sweep problem and give the lab a surface condition worth screening before interconnect printing. The exact substrate/coating decision still depends on replicate images and edge/center metrics, which is why the measurement pipeline matters.
+
 ## Process map
 
 <div class="process-map central-process-map" aria-label="Process input to engineering decision map">
@@ -121,12 +123,27 @@ Some early conditions looked promising because they moved liquid quickly, but th
  <span class="badge">Optical Microscopy</span>
 </div>
 
-## Public-safe outputs
+## What I can show
 
 <div class="text-output-grid">
- <article><h3>Contact-line dynamics</h3><p><strong>Metric:</strong> normalized radius, r(t)/r₀. <strong>Use:</strong> separates spreading, pinning, recession, and substrate drainage behavior without showing unpublished images.</p></article>
+ <article><h3>Contact-line dynamics</h3><p><strong>Metric:</strong> normalized radius, r(t)/r₀. <strong>Use:</strong> separates spreading, pinning, recession, and substrate drainage behavior.</p></article>
  <article><h3>Deposition uniformity</h3><p><strong>Metric:</strong> edge/center ratio. <strong>Use:</strong> compares edge crowding against useful central-device placement.</p></article>
  <article><h3>Substrate decision</h3><p><strong>Metric set:</strong> liquid removal behavior, contact-line behavior, deposition output, and repeatability. <strong>Use:</strong> screen new substrate/backing combinations before printing interconnects.</p></article>
+</div>
+
+<div class="placeholder-figure-grid deposition-output-grid">
+ <figure class="data-placeholder-figure wide-placeholder">
+  <img src="{{ '/assets/images/placeholder-deposition-comparison.svg' | relative_url }}" alt="Placeholder for side-by-side deposition microscopy images across substrate conditions." loading="lazy">
+  <figcaption><strong>Highest-priority replacement:</strong> add same-magnification optical microscopy images for glass/control, porous membrane/air gap, and porous membrane/absorbent backing.</figcaption>
+ </figure>
+ <figure class="data-placeholder-figure">
+  <img src="{{ '/assets/images/placeholder-radius-trace.svg' | relative_url }}" alt="Placeholder for r(t)/r0 normalized contact-line trace." loading="lazy">
+  <figcaption>Contact-line trace slot for r(t)/r₀ versus normalized drying/imbibition time.</figcaption>
+ </figure>
+ <figure class="data-placeholder-figure">
+  <img src="{{ '/assets/images/placeholder-edge-center-ratio.svg' | relative_url }}" alt="Placeholder for edge to center deposition ratio chart." loading="lazy">
+  <figcaption>Decision-metric slot for edge/center ratio across substrate/backing conditions.</figcaption>
+ </figure>
 </div>
 
 ## What I’d do next

@@ -13,17 +13,22 @@ subtitle: "I managed a McDonald’s drive-through that served 110 cars per hour 
  </div>
 </div>
 
+<figure class="data-placeholder-figure wide-placeholder ops-throughput-figure">
+ <img src="{{ '/assets/images/placeholder-operations-throughput.svg' | relative_url }}" alt="Placeholder for operations throughput before-after visualization or bottleneck map." loading="lazy">
+ <figcaption>Replacement target: add a real before/after throughput visual, shift-log summary, or bottleneck map that supports the +20% cars/hour claim.</figcaption>
+</figure>
+
 ## Why this belongs in a ChemE portfolio
 
 Manufacturing lines, fast-food drive-throughs, and microfluidic systems share more than they do not: a serial process, a bottleneck, a quality loop, and a person responsible when something breaks. High-volume food-service operations taught me to operate live systems under pressure: bottlenecks, staffing, handoff timing, QC logs, preventive maintenance, training, and real-time corrective action all matter at once.
 
 ## Operations translated into manufacturing instincts
 
-<div class="operations-translation-grid">
- <div><span>01</span><strong>Peak rush line balancing</strong><p>Bottleneck recognition and throughput management.</p></div>
- <div><span>02</span><strong>Food safety / CCP logs</strong><p>QC discipline and documentation.</p></div>
- <div><span>03</span><strong>Preventive maintenance routines</strong><p>Uptime and reliability mindset.</p></div>
- <div><span>04</span><strong>Crew training</strong><p>Standard work and execution consistency.</p></div>
+<div class="operations-translation-grid explicit-ops-grid">
+ <div><span>01</span><strong>Peak rush line balancing → constraint-based throughput</strong><p>Find the station limiting flow, move labor or prep upstream, and watch whether cars/hour changes.</p></div>
+ <div><span>02</span><strong>Food safety / CCP logs → critical-parameter monitoring</strong><p>Treat documentation as the control loop: record, verify, correct, and make the next shift easier to run.</p></div>
+ <div><span>03</span><strong>Preventive maintenance → uptime discipline</strong><p>Small failures become system failures during peak demand, so maintenance is a throughput variable.</p></div>
+ <div><span>04</span><strong>Crew training → standard work</strong><p>The process is only repeatable if people can execute the same handoffs under pressure.</p></div>
 </div>
 
 ## What changed how I think

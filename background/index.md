@@ -50,7 +50,7 @@ subtitle: Chemical engineering as the science of delivery.
 
   <article>
     <h2>Bridge to technical work</h2>
-    <p>The projects on this site are that bridge in practice. Each one took a fragile lab result — droplet behavior, resistance traces, capsule yield, thermal stability — and asked what it would take to repeat it reliably outside the lab.</p>
+    <p>The projects on this site are that bridge in practice. Each one took a fragile lab result — droplet behavior, resistance traces, capsule yield, thermal stability — and asked what it would take to repeat it reliably outside the lab. If you want to see how that thinking shows up in real work, the build logs are the best place to start.</p>
     <div class="background-cta-row">
       <a class="button primary" href="{{ '/projects/' | relative_url }}">View projects <span aria-hidden="true">→</span></a>
       <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>

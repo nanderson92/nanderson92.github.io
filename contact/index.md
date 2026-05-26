@@ -3,20 +3,14 @@ layout: page
 title: Contact
 body_class: contact-page
 category: Contact
-subtitle: "I’m looking for Fall 2026 process-development, automation, and wet-processing work. Co-op, internship, full-time, or contract."
+subtitle: "Available for Fall 2026 work in process development, automation, and wet processing."
 ---
-
-<section class="contact-hero contact-reveal" aria-label="Contact introduction">
- <p class="system-label small">CONTACT</p>
- <h1>Get in touch</h1>
- <p>I’m looking for Fall 2026 process-development, automation, and wet-processing work. Co-op, internship, full-time, or contract.</p>
-</section>
 
 <div class="contact-system-grid contact-reveal">
  <section class="contact-card recruiter-contact contact-intro-panel" aria-label="Contact priorities">
  <p class="system-label small">LET'S CONNECT</p>
- <h2>Process engineering, R&amp;D, manufacturing, and clean technology.</h2>
- <p>I’m interested in technical conversations involving wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.</p>
+ <h2>Let’s talk about physical systems that need to become repeatable.</h2>
+ <p>I’m looking for Fall 2026 process-development, automation, and wet-processing work: co-op, internship, full-time, or contract. I’m especially interested in wet processing, advanced materials, semiconductor process development, scale-up, reliability, biotech process development, and clean-technology deployment.</p>
  <div class="contact-signal-list" aria-label="Best-fit contact reasons">
  <span>Process-development roles, co-ops, or contract work</span>
  <span>Advanced manufacturing and semiconductor-adjacent R&amp;D</span>

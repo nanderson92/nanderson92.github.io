@@ -61,6 +61,24 @@ The first control problem looked like a software problem, but the limiting issue
 
 <div class="badge-row"><span class="badge">ESP32</span><span class="badge">Arduino</span><span class="badge">PID Control</span><span class="badge">Sensors</span><span class="badge">RT-qPCR</span><span class="badge">Automation</span></div>
 
+## Measured performance slot
+
+<div class="measured-performance-grid">
+ <figure class="data-placeholder-figure wide-placeholder">
+  <img src="{{ '/assets/images/placeholder-thermocycler-temperature-profile.svg' | relative_url }}" alt="Placeholder for thermocycler temperature versus time profile." loading="lazy">
+  <figcaption>Replace this with the measured temperature-time trace: setpoint, measured temperature, overshoot, ramp rate, and hold-stability band.</figcaption>
+ </figure>
+ <div class="performance-fields">
+  <h3>Numbers to fill from prototype logs</h3>
+  <ul>
+   <li><strong>Ramp rate:</strong> measured °C/s or °C/min between setpoints.</li>
+   <li><strong>Overshoot:</strong> maximum excursion above each hold temperature.</li>
+   <li><strong>Hold stability:</strong> temperature band during denaturation, annealing, and extension holds.</li>
+   <li><strong>Repeatability:</strong> cycle-to-cycle variation across repeated thermal cycles.</li>
+  </ul>
+ </div>
+</div>
+
 ## What I’d do next
 
 The next version would measure closer to the actual sample, not just the thermal block. I would also design the controller around the slowest physical response in the system instead of only chasing faster setpoint tracking, because overshoot that looks acceptable on the block can still be bad for the assay.
