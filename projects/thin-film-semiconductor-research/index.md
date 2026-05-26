@@ -1,51 +1,32 @@
 ---
 layout: page
-title: Thin Film Semiconductor Growth & Characterization
-category: MBE + characterization matrix
-tags: Semiconductors · Thin Films · Materials Characterization
-subtitle: Thin-film work connecting deposition conditions to morphology, phase, composition, and structural readouts.
+title: Semiconductor Materials Exposure
+category: Materials · characterization · Georgia Tech
+tags: Materials · Characterization · Semiconductor Process · Analysis
+subtitle: "Materials-process context from undergraduate semiconductor and characterization exposure."
 ---
 
-## Summary
+<div class="metric-chip-row"><span class="metric-chip"><strong>Materials</strong> context</span><span class="metric-chip"><strong>Process-to-response</strong> reasoning</span></div>
 
-This compact build log captures semiconductor materials work focused on thin-film growth and characterization. The useful lesson was not “I know the acronyms”; it was learning how a growth condition becomes a measurable film response.
+<section class="artifact-gallery" aria-label="Project artifact panels">
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="materials characterization plot"><figcaption>Measurement plot panel: XRD, Raman, roughness, or response comparison.</figcaption></figure>
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual"><figcaption>Device/image panel: characterization and thin-film context.</figcaption></figure>
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="materials workflow schematic"><figcaption>Flow schematic panel: deposition condition, characterization, response.</figcaption></figure>
+</section>
 
-## Problem / motivation
+<div class="thesis-box"><h2>Materials data matters when it changes the next process condition.</h2><p>Deposition and characterization exposure trained the connection between processing inputs and measurable material response.</p></div>
 
-Thin-film semiconductor properties depend strongly on deposition conditions, crystallinity, composition, and microstructure. The hard part is connecting growth parameters to measurable material quality and device-relevant behavior without overclaiming what one characterization technique can prove.
+## Case-file snapshot
 
-<figure class="thin-film-visual-card">
- <img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Representative thin-film characterization schematic connecting MBE growth to SEM, XRD, XPS, and Raman readouts." loading="lazy">
- <figcaption>Representative characterization map: deposition conditions only become useful when they can be connected to film structure and device-relevant material quality.</figcaption>
-</figure>
-
-## Deposition-to-characterization flow
-
-<div class="process-map compact-flow-map" aria-label="Thin film semiconductor process flow">
- <div class="process-map-stage"><p>DEPOSITION CONDITIONS</p><span>source material</span><span>vacuum</span><span>substrate</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>FILM STRUCTURE</p><span>composition</span><span>morphology</span><span>crystallinity</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>CHARACTERIZATION RESPONSE</p><span>device-relevant material quality</span></div>
-</div>
-
-## Characterization matrix
-
-| Technique | What it tells you |
+| Area | Technical relevance |
 |---|---|
-| SEM | Morphology / surface structure |
-| XRD | Crystallinity / phase |
-| XPS | Surface composition / chemical state |
-| Raman | Vibrational and structural signatures |
+| MBE deposition | Vacuum-process context, growth-condition sensitivity, and thin-film vocabulary. |
+| SEM/XRD/XPS/Raman | Material response, structure/composition checks, and characterization limits. |
+| Surface roughness | Process-output variable that affects later film and device behavior. |
+| Aspen/MATLAB/JMP | Calculation, data reduction, and comparison workflow for engineering decisions. |
 
-<div class="badge-row"><span class="badge">MBE</span><span class="badge">SEM</span><span class="badge">XRD</span><span class="badge">XPS</span><span class="badge">Raman</span><span class="badge">Thin Films</span></div>
+<div class="changed-panel"><h2>What changed because of this</h2><p>The exposure gave me a stronger vocabulary for asking which measured material property actually constrains the next manufacturing step.</p></div>
 
-## What I’d do next
+<div class="next-panel"><h2>Open questions / next iteration</h2><p>The next iteration is to build a compact process-condition-to-material-response matrix and use it as a screening template for future thin-film or printed-electronics experiments.</p></div>
 
-To make this page a stronger standalone story, I would add one concrete experiment: deposition condition, characterization response, and the interpretation that followed. Right now the strongest honest use of this work is as a materials-characterization proof point rather than a full process-development case.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="cta-row bottom-case-cta"><a class="button primary" href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Next case file →</a><a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a></div>

@@ -1,73 +1,32 @@
 ---
 layout: page
-title: Process Simulation and Design
-category: PFDs → decisions
-subtitle: "Flowsheets, balances, thermodynamic reasoning, and simulation-based design decisions."
+title: Process Simulation & Design
+category: Simulation · design tools · Georgia Tech
+tags: Aspen · MATLAB · JMP · Engineering Analysis
+subtitle: "Calculation and modeling workflows for thermodynamics, screening tables, statistical comparison, and communication-ready engineering summaries."
 ---
 
-## Summary
+<div class="metric-chip-row"><span class="metric-chip"><strong>Modeling</strong> discipline</span><span class="metric-chip"><strong>Decision</strong> support</span></div>
 
-This build log collects process-engineering work where a chemical process is converted from a description into a defensible flowsheet, balance structure, and operating decision.
+<section class="artifact-gallery" aria-label="Project artifact panels">
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="simulation output plot"><figcaption>Measurement plot panel: calculated trend, sensitivity, or validation curve.</figcaption></figure>
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="modeling screenshot"><figcaption>Tool/output panel: Aspen, MATLAB, JMP, or spreadsheet summary.</figcaption></figure>
+ <figure class="casefile-artifact"><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="modeling workflow schematic"><figcaption>Flow schematic panel: inputs, model, sanity check, engineering conclusion.</figcaption></figure>
+</section>
 
-## Problem / motivation
+<div class="thesis-box"><h2>A calculation is useful when it changes the decision.</h2><p>Simulation and design tools support process reasoning when assumptions, outputs, and sensitivity checks are visible.</p></div>
 
-Process design work can look abstract until the assumptions are visible. A credible design needs a process flow diagram, stated thermodynamic reasoning, material and energy balances, and a clear explanation of tradeoffs such as recovery, purity, energy demand, and equipment constraints.
+## Tool-to-decision matrix
 
-## System schematic
+| Tool | Use | Decision support |
+|---|---|---|
+| Aspen | VLE, thermodynamics, separations, flowsheet logic | Compare feasible process options and operating conditions. |
+| MATLAB | Numerical methods, ODEs, engineering computation | Build reproducible calculations and sanity checks. |
+| JMP | ANOVA, reliability/statistical analysis, comparison | Decide whether observed differences are likely meaningful. |
+| Excel | Screening tables, plots, summaries | Communicate assumptions and make calculations inspectable. |
 
-<div class="process-map compact-flow-map" aria-label="Representative process flow diagram schematic">
- <div class="process-map-stage"><p>FEED</p><span>composition</span><span>basis</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>MIX / REACT</p><span>assumptions</span><span>extent</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage"><p>SEPARATE</p><span>VLE</span><span>recovery</span></div>
- <div class="process-map-arrow" aria-hidden="true">→</div>
- <div class="process-map-stage decision-stage"><p>PRODUCT</p><span>purity, yield, duty, feasibility</span></div>
-</div>
+<div class="changed-panel"><h2>What changed because of this</h2><p>Course and project calculations became more useful when framed as decision support: state assumptions, compute the output, check magnitude, then explain what the number changes.</p></div>
 
-## My role
+<div class="next-panel"><h2>Open questions / next iteration</h2><p>The next iteration is to convert selected analysis work into public notebooks with input tables, assumptions, and a short engineering conclusion for each model.</p></div>
 
-<div class="role-block">
-  <p>Built balance logic, selected appropriate modeling assumptions, organized process inputs/outputs, and translated calculations into design tradeoff summaries.</p>
-</div>
-
-## Technical challenge
-
-The core challenge is converting a process objective into quantitative design logic without overclaiming model precision. The project emphasizes balance closure, transparent assumptions, and simulation results that support engineering decisions rather than black-box outputs.
-
-## Variables studied
-
-| Variable | Why it matters |
-|---|---|
-| Feed composition | Sets material balance basis and separation difficulty. |
-| Operating temperature / pressure | Affects phase behavior, energy duty, and equipment feasibility. |
-| Recovery / purity targets | Define whether a process alternative is technically acceptable. |
-| Recycle or purge logic | Controls yield, accumulation, and steady-state feasibility. |
-| Thermodynamic model | Determines whether VLE/separation predictions are physically reasonable. |
-
-## Public artifact set
-
-<div class="matrix">
-  <div class="matrix-card"><h3>Process flow diagram</h3><p>Clean PFD with numbered streams and unit-operation logic.</p></div>
-  <div class="matrix-card"><h3>Balance table</h3><p>Feed/product/recycle streams with units, assumptions, and closure checks.</p></div>
-  <div class="matrix-card"><h3>Design tradeoff summary</h3><p>Short explanation of how operating conditions affect feasibility and performance.</p></div>
-</div>
-
-## Methods and tools
-
-<div class="two-col">
-  <div class="matrix-card"><h3>Engineering methods</h3><p>PFD construction, material balances, energy balances, thermodynamic reasoning, sensitivity comparisons, and process tradeoff tables.</p></div>
-  <div class="matrix-card"><h3>Software / computation</h3><p>Aspen simulations, MATLAB calculations, Excel screening tables, and communication-ready engineering plots.</p></div>
-</div>
-
-<div class="badge-row"><span class="badge">Aspen</span><span class="badge">PFDs</span><span class="badge">Balances</span><span class="badge">MATLAB</span><span class="badge">Excel</span></div>
-
-## What I’d do next
-
-The next version would make assumptions more visible: a front-page basis table, one sensitivity plot, and one decision statement. Process simulation becomes useful when someone can see what would change the answer.
-
-<div class="case-cta-row">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">View all projects</a>
- <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Download Resume</a>
- <a class="button tertiary" href="mailto:{{ site.email }}">Contact</a>
-</div>
+<div class="cta-row bottom-case-cta"><a class="button primary" href="{{ '/projects/micromodular-deposition/' | relative_url }}">Next case file →</a><a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a></div>

@@ -4,16 +4,26 @@ title: Home
 body_class: home-page
 ---
 
-<section class="hero">
+<section class="hero poster-hero">
  <div class="hero-inner hero-asymmetric">
  <div class="hero-copy">
  <div class="hero-identity hero-identity-single" aria-label="Portfolio focus">
- <span><strong>ChemE process development for hard-tech manufacturing</strong></span>
+ <span>Process development for hard-tech manufacturing</span>
  </div>
  <h1><span class="hero-title-line">Making the future</span> <span class="hero-title-line">manufacturable.</span></h1>
- <p class="hero-lede">
- I build measurement loops for wet processing, microfluidics, printed electronics, and thermal automation — the messy middle between lab result and repeatable process.
- </p>
+ <p class="hero-lede">Lab to line. Measurement loops, screening logic, and control plans for wet processing, microfluidics, printed electronics, and thermal automation.</p>
+ <div class="hero-metric-pills" aria-label="Highlighted proof points">
+  <a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">20× microfluidic throughput increase</a>
+  <a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">~50% usable encapsulation-yield improvement</a>
+  <a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Image-derived droplet CTQs</a>
+  <a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Printed-interconnect failure classes</a>
+ </div>
+ <div class="worked-with-strip" aria-label="Worked with">
+  <span>Worked with</span>
+  <img src="{{ '/assets/images/logo-mayo.svg' | relative_url }}" alt="Mayo Clinic mark">
+  <img src="{{ '/assets/images/logo-filler.svg' | relative_url }}" alt="Filler Lab mark">
+  <img src="{{ '/assets/images/logo-gt.svg' | relative_url }}" alt="Georgia Tech mark">
+ </div>
  <div class="cta-row">
  <a class="button primary" href="{{ '/projects/' | relative_url }}">Engineering case files</a>
  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf" title="1-page PDF">Resume</a>
@@ -22,116 +32,85 @@ body_class: home-page
  </div>
 </section>
 
-<section class="proof-strip-section" aria-label="Technical proof points">
- <div class="proof-strip-card">
-  <span>20× microfluidic throughput increase</span>
-  <span>~50% usable encapsulation-yield improvement</span>
-  <span>image-derived droplet CTQs</span>
-  <span>printed-interconnect failure classes</span>
-  <span>110 cars/hr live operations</span>
- </div>
-</section>
-
 <section class="home-library project-strip supporting-home-cases" aria-label="Engineering case files">
  <div class="content-shell home-content-shell">
  <div class="section-heading">
- <p class="system-label">ENGINEERING CASE FILES</p>
- <h2>Measured, tuned, automated, or run under pressure.</h2>
- <p>Build logs from real systems where I had to translate messy behavior into variables, metrics, failure modes, and next-step decisions.</p>
+ <p class="system-label">Engineering Case Files</p>
+ <h2>Build logs from systems I measured, tuned, automated, or ran under pressure.</h2>
+ <p>Each card opens a public-safe case file with the system, CTQs, measured outputs, failure modes, and next iteration.</p>
  </div>
 
- <div class="portfolio-grid projects-library supporting-card-grid concise-supporting-grid startup-home-grid casefile-home-grid">
+ <div class="portfolio-grid projects-library casefile-home-grid six-card-grid">
  <article class="portfolio-card evidence-card flagship-home-card">
- <div class="card-topline"><span>Wet processing · printed electronics</span><span>2025–present</span><span class="outcome-badge">Screening framework</span></div>
+ <img class="card-chip" src="{{ '/assets/images/chip-droplet.svg' | relative_url }}" alt="Droplet metric icon">
+ <div class="card-topline"><span>Wet processing · printed electronics · 2025–present</span><span class="outcome-badge">Screening framework</span></div>
  <h2>Micromodular Electronics Deposition</h2>
- <p class="institution-line">Filler Lab, Georgia Tech</p>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> suspended microdevices crowd at droplet edges before interconnect printing.</p>
-  <p><strong>Skill:</strong> substrate/backing screening, droplet imaging, placement metrics.</p>
-  <p><strong>Proof:</strong> extracted contact-line and edge/center placement metrics from top-view and side-view videos.</p>
-  <p><strong>Why it matters:</strong> turns device placement from visual inspection into a process-development variable.</p>
- </div>
+ <p>Suspended microdevices crowd at droplet edges before interconnect printing.</p>
+ <p><strong>Outcome:</strong> video-derived contact-line and edge/center metrics for substrate/backing screens.</p>
  <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card flagship-home-card">
- <div class="card-topline"><span>Microfluidics · Mayo Clinic</span><span>Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
+ <img class="card-chip" src="{{ '/assets/images/chip-capsule.svg' | relative_url }}" alt="Capsule throughput icon">
+ <div class="card-topline"><span>Microfluidics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
  <h2>Stem-Cell Microencapsulation</h2>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> faster capsule generation only matters if capsules remain usable.</p>
-  <p><strong>Skill:</strong> flow-ratio tuning, tooling redesign, crosslink timing, microscopy QC.</p>
-  <p><strong>Proof:</strong> 20× throughput increase and ~50% microscopy-counted usable-yield improvement.</p>
-  <p><strong>Why it matters:</strong> speed became an operating-window question instead of a raw flow-rate target.</p>
- </div>
+ <p>Faster capsule generation only matters when capsules remain usable.</p>
+ <p><strong>Outcome:</strong> 20× throughput increase with ~50% microscopy-counted usable-yield improvement.</p>
  <p class="compact-card-link"><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Reliability · process feedback</span><span>2025–present</span><span class="outcome-badge">Failure logic</span></div>
+ <img class="card-chip" src="{{ '/assets/images/chip-reliability.svg' | relative_url }}" alt="Reliability trace icon">
+ <div class="card-topline"><span>Reliability · process feedback · 2025–present</span><span class="outcome-badge">Failure logic</span></div>
  <h2>Printed Interconnect Reliability</h2>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> printed lines can pass time-zero checks and still carry process-built vulnerability.</p>
-  <p><strong>Skill:</strong> four-point probe, Keithley SMU validation, resistance-drift classification.</p>
-  <p><strong>Proof:</strong> pass/monitor/fail/artifact logic that maps failure behavior back to upstream checks.</p>
-  <p><strong>Why it matters:</strong> reliability data becomes process feedback, not just post-build inspection.</p>
- </div>
+ <p>Printed lines can pass time-zero checks and still carry process-built vulnerability.</p>
+ <p><strong>Outcome:</strong> pass, monitor, fail, and artifact logic tied to upstream print/cure checks.</p>
  <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
  </article>
 
  <article class="portfolio-card evidence-card">
- <div class="card-topline"><span>Automation · diagnostics · Mayo Clinic</span><span>Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
+ <img class="card-chip" src="{{ '/assets/images/chip-thermal.svg' | relative_url }}" alt="Thermal profile icon">
+ <div class="card-topline"><span>Automation · diagnostics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
  <h2>Thermocycler Process Automation</h2>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> a setpoint is not evidence that the sample saw the intended thermal history.</p>
-  <p><strong>Skill:</strong> embedded control, logged temperature profiles, overshoot and stability checks.</p>
-  <p><strong>Proof:</strong> validation logic around ramp rate, overshoot, hold stability, and cycle repeatability.</p>
-  <p><strong>Why it matters:</strong> controller performance is judged by assay-relevant thermal exposure.</p>
- </div>
+ <p>A setpoint is not proof that the sample saw the intended thermal history.</p>
+ <p><strong>Outcome:</strong> validation logic for ramp rate, overshoot, hold stability, and cycle repeatability.</p>
  <p class="compact-card-link"><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
  </article>
 
- <article class="portfolio-card evidence-card supporting-home-card">
- <div class="card-topline"><span>Operations · quality systems</span><span>2021–2022</span><span class="outcome-badge">+20% throughput</span></div>
- <h2>Operations &amp; Quality Systems</h2>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> live service delays expose bottlenecks immediately.</p>
-  <p><strong>Skill:</strong> upstream prep changes, staffing, QC lists, downtime tracking.</p>
-  <p><strong>Proof:</strong> 110 cars/hr peak operations, +20% cars/hr, −15% order-to-handoff time.</p>
-  <p><strong>Why it matters:</strong> operator instincts transfer to manufacturing constraints, queues, uptime, and standard work.</p>
- </div>
- <p class="compact-card-link"><a href="{{ '/projects/operations-quality-systems/' | relative_url }}">Open case file →</a></p>
+ <article class="portfolio-card evidence-card">
+ <img class="card-chip" src="{{ '/assets/images/chip-materials.svg' | relative_url }}" alt="Materials characterization icon">
+ <div class="card-topline"><span>Materials · characterization · Georgia Tech</span><span class="outcome-badge">Materials context</span></div>
+ <h2>Semiconductor Materials Exposure</h2>
+ <p>Deposition and characterization context sharpen how I connect process conditions to material response.</p>
+ <p><strong>Outcome:</strong> MBE, SEM/XRD/XPS/Raman, surface roughness, and process-simulation vocabulary.</p>
+ <p class="compact-card-link"><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p>
  </article>
 
- <article class="portfolio-card evidence-card supporting-home-card">
- <div class="card-topline"><span>PCR · assay controls</span><span>Earlier research</span><span class="outcome-badge">Control discipline</span></div>
- <h2>DNA Flexibility Assay Development</h2>
- <div class="case-card-detail">
-  <p><strong>Problem:</strong> short-length DNA mechanics require clean controls and auditable assay execution.</p>
-  <p><strong>Skill:</strong> PCR workflow, sample prep, control-condition troubleshooting.</p>
-  <p><strong>Proof:</strong> early assay-development exposure in Maher Lab molecular-biology workflows.</p>
-  <p><strong>Why it matters:</strong> reinforces experimental discipline without overstating project ownership.</p>
- </div>
- <p class="compact-card-link"><a href="{{ '/projects/dna-pcr-flexibility/' | relative_url }}">Open case file →</a></p>
+ <article class="portfolio-card evidence-card">
+ <img class="card-chip" src="{{ '/assets/images/chip-image-analysis.svg' | relative_url }}" alt="Image analysis icon">
+ <div class="card-topline"><span>Image analysis · droplet CTQs · 2025–present</span><span class="outcome-badge">Metric extraction</span></div>
+ <h2>Droplet Image Analysis Workflows</h2>
+ <p>Droplet videos become useful only when geometry, timing, and motion are extracted consistently.</p>
+ <p><strong>Outcome:</strong> analysis plan for radius traces, drift, velocity, acceleration, and deposition bias.</p>
+ <p class="compact-card-link"><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case file →</a></p>
  </article>
  </div>
  </div>
 </section>
 
 <section class="technical-proof casefile-proof-prose">
- <p class="system-label">TECHNICAL PROOF</p>
- <p>
- The strongest pages are structured like engineering case files: system, variables, measured outputs, failure modes, and the decision the data supports. Across the portfolio, the artifacts are the evidence — CTQ tables, screening logic, failure matrices, throughput notes, and validation snapshots.
- </p>
+ <p class="system-label">Technical proof</p>
+ <p>The case files show the same operating discipline: define CTQs, measure drift or yield loss, classify failure behavior, and convert observations into a screen or control plan.</p>
 </section>
 
 <section class="human-service-band human-context-card" aria-label="Background">
- <figure class="human-context-photo">
- <img src="{{ '/assets/images/nathan-anderson-headshot.jpg' | relative_url }}" alt="Nathan Anderson headshot" loading="lazy">
+ <figure class="human-context-photo small-headshot">
+ <img src="{{ '/assets/images/nathan-anderson-headshot-corrected.jpg' | relative_url }}" alt="Nathan Anderson headshot" loading="lazy">
  </figure>
  <article>
- <p class="system-label">BACKGROUND</p>
+ <p class="system-label">Background</p>
  <h2>About me</h2>
- <p>Background explains why process engineering became the path from discovery to delivery.</p>
+ <p>Why I went from discovery to delivery, and which systems I want to make manufacturable next.</p>
  <div class="inline-links">
  <a class="button tertiary" href="{{ '/background/' | relative_url }}">Background <span aria-hidden="true">→</span></a>
  </div>
@@ -140,12 +119,12 @@ body_class: home-page
 
 <section class="cta-band recruiter-cta startup-work-cta" aria-label="Work call to action">
  <div>
- <p class="system-label small">FALL 2026 WORK</p>
+ <p class="system-label small">Fall 2026 work</p>
  <h2>Looking for process-development, automation, wet-processing, or advanced-materials work.</h2>
  <p>Open to Fall 2026 co-op, internship, project work, part-time research, or technical conversations with hard-tech teams building physical systems.</p>
  <p class="inline-secondary-links"><a href="{{ '/projects/' | relative_url }}">Case files</a> · <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a></p>
  </div>
  <div class="cta-row compact-cta">
- <a class="button primary" href="mailto:{{ site.email }}">Email Nathan →</a>
+ <a class="button primary email-button" href="mailto:{{ site.email }}">Email Nathan →</a>
  </div>
 </section>

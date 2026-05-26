@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nanderson92.github.io/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/</loc></url>
-  <url><loc>https://nanderson92.github.io/background/</loc></url>
-  <url><loc>https://nanderson92.github.io/contact/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/micromodular-deposition/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/microencapsulation-process-development/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/printed-interconnect-reliability/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/thermocycler-process-automation/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/operations-quality-systems/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/dna-pcr-flexibility/</loc></url>
-  <url><loc>https://nanderson92.github.io/resume/</loc></url>
+  <url><loc>https://nathananderson.engineering/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/</loc></url>
+  <url><loc>https://nathananderson.engineering/background/</loc></url>
+  <url><loc>https://nathananderson.engineering/contact/</loc></url>
+  <url><loc>https://nathananderson.engineering/resume/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/micromodular-deposition/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/microencapsulation-process-development/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/printed-interconnect-reliability/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/thermocycler-process-automation/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/thin-film-semiconductor-research/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/droplet-image-analysis-workflows/</loc></url>
+  <url><loc>https://nathananderson.engineering/projects/process-simulation-design/</loc></url>
 </urlset>
