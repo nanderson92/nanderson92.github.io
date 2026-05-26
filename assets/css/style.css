@@ -6110,3 +6110,62 @@ h1,
     height: calc(100% + 200px);
   }
 }
+
+/* === Homepage hero image visibility restore ===
+   Keeps the repaired white transition into the micromodular card while allowing
+   the poster background to read more clearly in the upper hero. */
+.home-page #content::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.00) 0vh,
+    rgba(255,255,255,0.03) 18vh,
+    rgba(255,255,255,0.10) 34vh,
+    rgba(255,255,255,0.30) 48vh,
+    rgba(255,255,255,0.68) 60vh,
+    rgba(255,255,255,0.94) 70vh,
+    #ffffff 80vh,
+    #ffffff 100%
+  ) !important;
+}
+
+.home-page .hero::before {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(248,251,252,0.94) 0%,
+      rgba(248,251,252,0.86) 38%,
+      rgba(248,251,252,0.58) 64%,
+      rgba(248,251,252,0.26) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.00) 0%,
+      rgba(255,255,255,0.06) 44%,
+      rgba(255,255,255,0.54) 76%,
+      #ffffff 100%
+    ) !important;
+}
+
+.home-page .signature-case-section::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.68) 22%,
+    rgba(255,255,255,0.97) 40%,
+    #ffffff 60%,
+    #ffffff 100%
+  );
+}
+
+@media (max-width: 900px) {
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.02) 0vh,
+      rgba(255,255,255,0.16) 28vh,
+      rgba(255,255,255,0.62) 48vh,
+      #ffffff 66vh,
+      #ffffff 100%
+    ) !important;
+  }
+}
