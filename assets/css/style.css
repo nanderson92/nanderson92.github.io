@@ -6154,15 +6154,20 @@ figcaption, .method-note, .method-note-strip small { font-size: var(--text-xs) !
   .technical-proof, .technical-summary { width: min(100% - 28px, var(--max)); padding: 20px; }
 }
 
-/* === Targeted rollback: restore the pre-revision homepage hero visual system ===
-   Keeps the updated content/site structure, but brings back the fixed poster layer,
-   scroll-to-white veil, hero overlay, and entrance motion that were present before
-   the latest revision checklist changed the hero background. */
+/* === Requested homepage hero restore: original background + fixed-scroll white transition ===
+   Keeps the updated site content while restoring the pre-poster homepage image system.
+   The fixed image lives on #content::before, the white fade lives on #content::after,
+   and all hero text is pinned above both layers so it cannot disappear. */
+html,
 body.home-page {
   background: #ffffff !important;
+  min-height: 100% !important;
+}
+
+body.home-page {
   background-image: none !important;
   background-attachment: scroll !important;
-  overscroll-behavior-y: none;
+  overscroll-behavior-y: none !important;
 }
 
 body.home-page::before {
@@ -6174,7 +6179,7 @@ body.home-page::before {
   position: relative !important;
   isolation: isolate !important;
   overflow: hidden !important;
-  background: #ffffff !important;
+  background: transparent !important;
 }
 
 .home-page #content::before {
@@ -6183,14 +6188,12 @@ body.home-page::before {
   inset: 0 !important;
   z-index: 0 !important;
   pointer-events: none !important;
-  background-image: url('../images/nathan-anderson-poster-wide.jpg') !important;
+  background-image: url('../images/homepage-background-fast.jpg') !important;
   background-size: cover !important;
-  background-position: 68% 42% !important;
+  background-position: center top !important;
   background-repeat: no-repeat !important;
-  opacity: .56 !important;
-  filter: saturate(.82) contrast(1.08) brightness(.92) !important;
-  transform: translateZ(0);
-  backface-visibility: hidden;
+  transform: translateZ(0) !important;
+  backface-visibility: hidden !important;
 }
 
 .home-page #content::after {
@@ -6202,12 +6205,12 @@ body.home-page::before {
   background: linear-gradient(
     180deg,
     rgba(255,255,255,0.00) 0vh,
-    rgba(255,255,255,0.03) 18vh,
-    rgba(255,255,255,0.10) 34vh,
-    rgba(255,255,255,0.30) 48vh,
-    rgba(255,255,255,0.68) 60vh,
-    rgba(255,255,255,0.94) 70vh,
-    #ffffff 80vh,
+    rgba(255,255,255,0.06) 18vh,
+    rgba(255,255,255,0.18) 38vh,
+    rgba(255,255,255,0.42) 60vh,
+    rgba(255,255,255,0.72) 82vh,
+    rgba(255,255,255,0.94) 104vh,
+    #ffffff 126vh,
     #ffffff 100%
   ) !important;
 }
@@ -6222,33 +6225,22 @@ body.home-page::before {
   isolation: isolate !important;
   overflow: visible !important;
   background: transparent !important;
-  min-height: 100svh !important;
-  min-height: 100vh !important;
+  min-height: clamp(620px, 78vh, 760px) !important;
+  padding-top: clamp(112px, 13vh, 146px) !important;
+  padding-bottom: clamp(42px, 7vh, 68px) !important;
 }
 
 .home-page .hero::before {
   content: "" !important;
   position: absolute !important;
-  inset: 0 0 -280px 0 !important;
+  inset: 0 0 -260px 0 !important;
   z-index: 0 !important;
   pointer-events: none !important;
   opacity: 1 !important;
   animation: none !important;
   background-image:
-    linear-gradient(
-      90deg,
-      rgba(248,251,252,0.94) 0%,
-      rgba(248,251,252,0.86) 38%,
-      rgba(248,251,252,0.58) 64%,
-      rgba(248,251,252,0.26) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255,255,255,0.00) 0%,
-      rgba(255,255,255,0.06) 44%,
-      rgba(255,255,255,0.54) 76%,
-      #ffffff 100%
-    ) !important;
+    linear-gradient(90deg, rgba(255,255,255,.95) 0%, rgba(255,255,255,.84) 34%, rgba(255,255,255,.54) 64%, rgba(255,255,255,.12) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,.14) 48%, rgba(255,255,255,.72) 82%, #ffffff 100%) !important;
   background-size: 100% 100%, 100% 100% !important;
   background-position: center, center !important;
   background-repeat: no-repeat !important;
@@ -6259,8 +6251,8 @@ body.home-page::before {
   position: absolute !important;
   left: 0 !important;
   right: 0 !important;
-  bottom: -210px !important;
-  height: 380px !important;
+  bottom: -260px !important;
+  height: 440px !important;
   z-index: 1 !important;
   display: block !important;
   pointer-events: none !important;
@@ -6268,7 +6260,7 @@ body.home-page::before {
     180deg,
     rgba(255,255,255,0) 0%,
     rgba(255,255,255,.28) 24%,
-    rgba(255,255,255,.72) 58%,
+    rgba(255,255,255,.76) 58%,
     #ffffff 86%,
     #ffffff 100%
   ) !important;
@@ -6276,74 +6268,126 @@ body.home-page::before {
 
 .home-page .hero-inner,
 .home-page .hero-copy,
-.home-page .featured-case-cue {
+.home-page .hero .hero-identity,
+.home-page .hero h1,
+.home-page .hero .hero-lede,
+.home-page .hero .cta-row {
   position: relative !important;
-  z-index: 2 !important;
+  z-index: 3 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+  animation: none !important;
 }
 
-.home-page .signature-case-section::before,
-.home-page .home-library::before {
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0) 0%,
-    rgba(255,255,255,0.68) 22%,
-    rgba(255,255,255,0.97) 40%,
-    #ffffff 60%,
-    #ffffff 100%
-  );
+.home-page .hero h1 {
+  color: rgba(15,23,42,.98) !important;
+  max-width: 760px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .home-page .hero .hero-identity,
-  .home-page .hero h1,
-  .home-page .hero .hero-lede,
-  .home-page .hero .cta-row .button {
-    opacity: 0 !important;
-    transform: translate3d(0, 26px, 0) scale(.985) !important;
-    filter: blur(14px) !important;
-    animation: heroMaterialize 900ms cubic-bezier(.16, 1, .3, 1) both !important;
-    will-change: opacity, transform, filter;
-  }
-
-  .home-page .hero .hero-identity { animation-delay: 260ms !important; }
-  .home-page .hero h1 { animation-delay: 420ms !important; }
-  .home-page .hero .hero-lede { animation-delay: 590ms !important; }
-  .home-page .hero .cta-row .button { animation-delay: 760ms !important; }
+.home-page .hero-lede {
+  color: rgba(15,23,42,.78) !important;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-page .hero .hero-identity,
-  .home-page .hero h1,
-  .home-page .hero .hero-lede,
-  .home-page .hero .cta-row .button {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    animation: none !important;
-  }
+/* Remove the former poster-card white veil that created a horizontal gray/white handoff
+   after the featured section was removed from the homepage. */
+.home-page .signature-case-section::before {
+  content: none !important;
+  display: none !important;
+}
+
+.home-page .home-library {
+  position: relative !important;
+  z-index: 3 !important;
+  margin-top: clamp(58px, 7vw, 92px) !important;
+  background: transparent !important;
+}
+
+.home-page .technical-proof,
+.home-page .human-service-band,
+.home-page .recruiter-cta {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+body.home-page .site-footer,
+.home-page .site-footer {
+  position: relative !important;
+  z-index: 5 !important;
+  background: #ffffff !important;
+  box-shadow: 0 -14px 42px rgba(255,255,255,.90), 0 -1px 0 rgba(9,51,56,.055) !important;
+}
+
+body.home-page .site-footer::before,
+body.home-page .site-footer::after,
+.home-page .site-footer::before,
+.home-page .site-footer::after {
+  content: none !important;
+  display: none !important;
 }
 
 @media (max-width: 1024px) {
+  .home-page #content::before {
+    position: absolute !important;
+    top: 0 !important;
+    bottom: auto !important;
+    height: 1040px !important;
+    background-position: center top !important;
+  }
+
   .home-page #content::after {
     background: linear-gradient(
       180deg,
-      rgba(255,255,255,0.02) 0vh,
-      rgba(255,255,255,0.16) 28vh,
-      rgba(255,255,255,0.62) 48vh,
-      #ffffff 66vh,
+      rgba(255,255,255,.08) 0vh,
+      rgba(255,255,255,.30) 34vh,
+      rgba(255,255,255,.68) 64vh,
+      rgba(255,255,255,.95) 92vh,
+      #ffffff 112vh,
       #ffffff 100%
     ) !important;
   }
+
+  .home-page .hero::before {
+    inset: 0 0 -210px 0 !important;
+    background-image:
+      linear-gradient(180deg, rgba(255,255,255,.76) 0%, rgba(255,255,255,.60) 48%, rgba(255,255,255,.22) 72%, #ffffff 100%) !important;
+  }
+
+  .home-page .hero::after {
+    bottom: -220px !important;
+    height: 360px !important;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  .home-page #content::before {
+    height: 820px !important;
+    background-position: center top !important;
+  }
+
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,.16) 0vh,
+      rgba(255,255,255,.44) 30vh,
+      rgba(255,255,255,.84) 58vh,
+      #ffffff 82vh,
+      #ffffff 100%
+    ) !important;
+  }
+
   .home-page .hero {
     min-height: auto !important;
-    padding-top: 118px;
     padding-bottom: 54px !important;
   }
 
-  .home-page #content::before {
-    background-position: 62% center !important;
+  .home-page .hero::before {
+    inset: 0 0 -150px 0 !important;
+  }
+
+  .home-page .hero::after {
+    bottom: -150px !important;
+    height: 260px !important;
   }
 }
