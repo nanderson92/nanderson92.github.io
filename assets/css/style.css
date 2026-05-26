@@ -6027,57 +6027,86 @@ h1,
   }
 }
 
-/* === Smooth homepage hero-to-build transition ===
-   The poster background contains a real gray wall band that was bleeding through
-   the white fade beside the Micromodular build card. This final veil keeps the
-   hero photo intact above the fold while making the transition into the first
-   card resolve to a continuous white gradient. */
+/* === Homepage hero gradient band repair ===
+   The poster background contains a horizontal gray panel that was showing through
+   behind the micromodular card. Fade the fixed background fully to white before
+   the build preview and add a local white veil behind the card so the transition
+   reads as one continuous white gradient instead of a gray stripe. */
 .home-page #content::after {
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0.22) 0vh,
-    rgba(255,255,255,0.38) 22vh,
-    rgba(255,255,255,0.66) 42vh,
-    rgba(255,255,255,0.90) 56vh,
-    #ffffff 68vh,
+    rgba(255,255,255,0.00) 0vh,
+    rgba(255,255,255,0.10) 22vh,
+    rgba(255,255,255,0.38) 38vh,
+    rgba(255,255,255,0.74) 50vh,
+    rgba(255,255,255,0.96) 58vh,
+    #ffffff 66vh,
     #ffffff 100%
   ) !important;
 }
 
+.home-page .hero::before {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(248,251,252,0.99) 0%,
+      rgba(248,251,252,0.97) 38%,
+      rgba(248,251,252,0.80) 60%,
+      rgba(248,251,252,0.48) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.02) 0%,
+      rgba(255,255,255,0.14) 48%,
+      rgba(255,255,255,0.82) 76%,
+      #ffffff 100%
+    ) !important;
+}
+
 .home-page .signature-case-section {
-  position: relative !important;
-  isolation: isolate !important;
+  position: relative;
+  isolation: isolate;
 }
 
 .home-page .signature-case-section::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: clamp(-260px, -24vh, -176px);
+  top: -150px;
   width: 100vw;
-  height: clamp(500px, 58vh, 700px);
+  height: calc(100% + 260px);
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(255,255,255,0.00) 0%,
-    rgba(255,255,255,0.76) 16%,
-    rgba(255,255,255,0.96) 32%,
-    #ffffff 48%,
-    #ffffff 78%,
-    rgba(255,255,255,0.00) 100%
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.72) 24%,
+    rgba(255,255,255,0.96) 42%,
+    #ffffff 62%,
+    #ffffff 100%
   );
 }
 
 .home-page .signature-case-card {
-  position: relative !important;
-  z-index: 1 !important;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 900px) {
+  .home-page #content::after {
+    background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.04) 0vh,
+      rgba(255,255,255,0.30) 28vh,
+      rgba(255,255,255,0.82) 48vh,
+      #ffffff 62vh,
+      #ffffff 100%
+    ) !important;
+  }
+
   .home-page .signature-case-section::before {
-    top: -180px;
-    height: 460px;
+    top: -110px;
+    height: calc(100% + 200px);
   }
 }
