@@ -1,5 +1,5 @@
 title: "Nathan Anderson"
-description: "Chemical Engineering · Process Development · Advanced Manufacturing · Clean Technology"
+description: "Process development engineering portfolio for wet processing, microfluidics, printed electronics, reliability, automation, and advanced materials."
 url: "https://nanderson92.github.io"
 baseurl: ""
 
@@ -11,11 +11,9 @@ email: nanderson92@gatech.edu
 linkedin: "https://www.linkedin.com/in/nanderson92/"
 github: "https://github.com/nanderson92"
 
-# Prevent any stale local research folder from being published if it remains in the GitHub repo.
 exclude:
   - research
   - research/**
-
   - portfolio
   - portfolio/**
   - giving-back

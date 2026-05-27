@@ -3,93 +3,34 @@ layout: page
 title: Micromodular Electronics Deposition
 category: Wet processing · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
-metric_chips: '<span>Screening framework</span><span>Image-derived droplet CTQs</span>'
+metric_chips: '<span>Screening framework</span><span>Image-derived droplet <abbr title="Critical-to-Quality">CTQs</abbr></span>'
 subtitle: Substrate/backing screens for IPA droplet deposition of suspended microdevices before printed interconnect routing.
+meta_description: Case file on micromodular electronics deposition, droplet imaging, contact-line metrics, substrate/backing screens, and placement CTQs.
 ---
 
-<section class="artifact-panel public-safe-snapshot">
- <h2>Public-safe experiment snapshot</h2>
- <ul class="snapshot-list">
-  <li><strong>System:</strong> IPA droplet deposition of suspended microdevices on substrate/backing candidates.</li>
-  <li><strong>Inputs varied:</strong> substrate, backing condition, droplet volume, and particle/device loading state.</li>
-  <li><strong>Metrics extracted:</strong> r(t)/r0, contact-line regime, edge/center device ratio, qualitative repeatability, and final deposition pattern.</li>
-  <li><strong>Current decision:</strong> prioritize porous AAO-like drainage conditions over glass-like evaporation controls.</li>
-  <li><strong>Next threshold needed:</strong> replicate-backed edge/center ratio plus density uniformity target before interconnect printing.</li>
- </ul>
+<section class="artifact-panel setup-panel"><h2>The setup</h2><ul class="snapshot-list"><li><strong>System:</strong> IPA droplet deposition of suspended microdevices on substrate/backing candidates.</li><li><strong>Inputs varied:</strong> substrate, backing condition, droplet volume, and particle/device loading state.</li><li><strong>Outputs extracted:</strong> normalized <abbr title="droplet radius as a function of time">r(t)</abbr>, contact-line regime, edge/center device ratio, repeatability, and final deposition pattern.</li><li><strong>Current screen:</strong> prioritize porous <abbr title="Anodic aluminum oxide">AAO</abbr>-like drainage behavior over glass-like evaporation controls.</li></ul></section>
+
+<section class="insight-block dark-section"><p>Boundary conditions controlled deposition outcomes before the final stain made the failure obvious.</p></section>
+
+<section class="next-iteration-callout early-next"><h2>What I’d do next</h2><p>Set a replicate-backed edge/center ratio and density-uniformity threshold, then compare AAO-like skins against cheaper and less brittle porous supports. The decision is whether the substrate preserves placement while staying compatible with interconnect routing.</p></section>
+
+<section class="standard-card-section"><h2>What good looks like</h2><ul class="snapshot-list"><li>uniform areal density across the usable field</li><li>low edge bias and reduced rim crowding</li><li>usable placement for downstream interconnect routing</li><li>repeatable droplet behavior across replicate runs</li><li>substrate/backing compatibility with scale-up beyond brittle AAO coupons</li></ul></section>
+
+<section class="visual-artifact-grid" aria-label="Artifact placeholders">
+ <figure><img src="{{ '/assets/images/preliminary-radius-plot.svg' | relative_url }}" alt="Chart artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with the real chart, graph, trace, or distribution.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/deposition-pattern-schematic.svg' | relative_url }}" alt="Lab or microscopy artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with the real lab photo, microscopy still, device image, or run image.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Code, analysis, or process-flow artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with code snippet, analysis workflow, control plan, or schematic.</figcaption></figure>
 </section>
 
+<section class="ownership-callout ownership-callout-large pull-quote-block"><p>I built the screening workflow for identifying substrate/backing conditions that reduce edge crowding while preserving interconnect-accessible placement.</p></section>
 
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure>
-  <img src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Measurement plot artifact area" loading="lazy">
-  <figcaption>Measurement plot area for the real experimental trace, histogram, or validation curve.</figcaption>
- </figure>
- <figure>
-  <img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Device or microscopy image artifact area" loading="lazy">
-  <figcaption>Image area for microscopy, device, capsule, printed-line, or run photo.</figcaption>
- </figure>
- <figure>
-  <img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Flow or schematic artifact area" loading="lazy">
-  <figcaption>Schematic area for the screen, workflow, or control logic.</figcaption>
- </figure>
-</section>
+<section class="flow-diagram-card"><h2>Screen flow</h2><svg class="flow-svg" viewBox="0 0 1000 240" role="img" aria-label="Micromodular deposition screen flow"><defs><marker id="arrow-dep" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#0d8eb1"/></marker></defs><g font-family="Inter, Arial"><rect x="45" y="60" width="180" height="100" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="135" y="116" text-anchor="middle" font-size="22" font-weight="800" fill="#0f172a">Deposit</text><rect x="285" y="60" width="180" height="100" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="375" y="104" text-anchor="middle" font-size="22" font-weight="800" fill="#0f172a">Image</text><text x="375" y="132" text-anchor="middle" font-size="15" fill="#64748b">top + side</text><rect x="525" y="60" width="180" height="100" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="615" y="104" text-anchor="middle" font-size="22" font-weight="800" fill="#0f172a">Extract</text><text x="615" y="132" text-anchor="middle" font-size="15" fill="#64748b">r(t), bias</text><rect x="765" y="60" width="190" height="100" rx="20" fill="#fff8ea" stroke="#f59e0b"/><text x="860" y="104" text-anchor="middle" font-size="22" font-weight="800" fill="#0f172a">Decide</text><text x="860" y="132" text-anchor="middle" font-size="15" fill="#64748b">pass / fail</text><line x1="225" y1="110" x2="275" y2="110" stroke="#0d8eb1" stroke-width="5" marker-end="url(#arrow-dep)"/><line x1="465" y1="110" x2="515" y2="110" stroke="#0d8eb1" stroke-width="5" marker-end="url(#arrow-dep)"/><line x1="705" y1="110" x2="755" y2="110" stroke="#0d8eb1" stroke-width="5" marker-end="url(#arrow-dep)"/></g></svg></section>
 
+<section class="decision-grid"><div class="decision-card pass-card"><h2>Pass / fail criteria: candidate passes if</h2><ol><li>Contact-line history can be classified from video.</li><li>Edge/center device ratio improves relative to a glass-like evaporation control.</li><li>Device density remains high enough for interconnect routing.</li><li>Pattern is repeatable across replicate droplets.</li><li>Substrate/backing condition is physically scalable beyond brittle AAO.</li></ol></div><div class="decision-card fail-card"><h2>Candidate fails if</h2><ol><li>Fast liquid removal still creates edge-heavy crowding.</li><li>Droplet footprint becomes too small or irregular for routing.</li><li>Device rafts or pins unpredictably.</li><li>Metric extraction cannot distinguish mechanism from artifact.</li></ol></div></section>
 
-<section class="ownership-callout ownership-callout-large">
- <p>I designed the experiments from scratch: substrate/backing comparisons, top-view and side-view video capture, Python/ImageJ analysis, and placement metrics tied to downstream interconnect feasibility.</p>
-</section>
+<h2>What I owned</h2>
+<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Area</th><th>Contribution</th></tr></thead><tbody><tr><td>Experimental design</td><td>Substrate/backing comparisons, droplet setup, run-to-run comparison, and early screen logic.</td></tr><tr><td>Imaging</td><td>Top-view and side-view capture for footprint, contact-line, and final placement behavior.</td></tr><tr><td>Analysis</td><td>Python/ImageJ extraction of normalized contact-line traces and deposition metrics.</td></tr><tr><td>Decision output</td><td>Screening logic for substrate candidates before downstream interconnect printing.</td></tr></tbody></table></div>
 
-## Useful placement definition
+<section class="what-changed-block changed-panel"><h2>What this shifted</h2><p>The work shifted the project from judging substrates by final visual stains to screening them by video-derived contact-line behavior, drainage/evaporation signatures, and placement metrics tied to interconnect feasibility.</p></section>
 
-Useful placement means lower edge crowding, better center/field distribution, enough local density for downstream interconnect routing, repeatable final pattern, and a substrate/backing condition that can scale beyond brittle AAO coupons.
-
-## Decision framework
-
-<div class="decision-grid">
- <div class="decision-card pass-card">
-  <h3>Candidate passes early screen if</h3>
-  <ol>
-   <li>Contact-line history can be classified from video.</li>
-   <li>Edge/center device ratio improves relative to a glass-like evaporation control.</li>
-   <li>Device density remains high enough for interconnect routing.</li>
-   <li>Pattern is repeatable across replicate droplets.</li>
-   <li>Substrate/backing condition is physically scalable beyond brittle AAO.</li>
-  </ol>
- </div>
- <div class="decision-card fail-card">
-  <h3>Candidate fails if</h3>
-  <ul>
-   <li>Fast liquid removal still creates edge-heavy crowding.</li>
-   <li>Droplet footprint becomes too small or irregular for routing.</li>
-   <li>Device rafts or pins unpredictably.</li>
-   <li>Metric extraction cannot distinguish mechanism from artifact.</li>
-  </ul>
- </div>
-</div>
-
-## My role
-
-<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Area</th><th>Contribution</th></tr></thead><tbody>
-<tr><td>Experimental design</td><td>Substrate/backing comparisons, droplet setup, run-to-run comparison, and early screen logic.</td></tr>
-<tr><td>Imaging</td><td>Top-view and side-view capture for footprint, contact-line, and final placement behavior.</td></tr>
-<tr><td>Analysis</td><td>Python/ImageJ extraction of normalized contact-line traces and deposition metrics.</td></tr>
-<tr><td>Decision output</td><td>Screening logic for substrate candidates before downstream interconnect printing.</td></tr>
-</tbody></table></div>
-
-## What changed because of this
-
-<div class="what-changed-block changed-panel">
- <p>This work shifted the project from judging substrates by final visual stains to screening them by video-derived contact-line behavior, drainage/evaporation signatures, and placement metrics tied to interconnect feasibility.</p>
-</div>
-
-## Open questions / next iteration
-
-<div class="next-iteration-callout">
- <p>The next iteration should set a replicate-backed edge/center ratio and density-uniformity threshold, then compare AAO-like skins against cheaper and less brittle porous supports. The engineering decision is whether the substrate can preserve placement while remaining compatible with downstream interconnect routing.</p>
-</div>
-
-
-<div class="case-cta-row two-button-cta">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">Next case file →</a>
- <a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a>
-</div>
+<div class="case-cta-row two-button-cta"><a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Next: Printed Interconnect Reliability →</a><a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a></div>

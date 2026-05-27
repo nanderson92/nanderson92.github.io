@@ -4,9 +4,13 @@ layout: default
 
 <section class="page-hero {{ page.hero_class }}">
  <div class="page-hero-inner">
- {% if page.category or page.date_range %}
- <p class="system-label page-meta-label">{% if page.category %}<span>{{ page.category }}</span>{% endif %}{% if page.date_range %}<span>{{ page.date_range }}</span>{% endif %}</p>
+ {% if page.url contains '/projects/' and page.url != '/projects/' %}
+ <div class="project-kicker-row">
+  <a class="breadcrumb-link" href="{{ '/projects/' | relative_url }}">← All case files</a>
+  <span>Last updated: May 2026 · Project active: {% if page.date_range %}{{ page.date_range }}{% else %}[add date range]{% endif %}</span>
+ </div>
  {% endif %}
+ {% if page.category or page.date_range %}<p class="system-label page-meta-label">{% if page.category %}<span>{{ page.category }}</span>{% endif %}</p>{% endif %}
  <h1>{{ page.title }}</h1>
  {% if page.affiliation %}<p class="affiliation-line">{{ page.affiliation }}</p>{% endif %}
  {% if page.metric_chips %}<div class="metric-chip-row">{{ page.metric_chips }}</div>{% endif %}

@@ -5,79 +5,31 @@ category: Reliability · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Failure logic</span><span>Resistance drift screen</span>'
 subtitle: Printed-line testing reframed as a reliability screen that maps resistance behavior back to upstream process checks.
+meta_description: Case file on printed interconnect reliability, resistance drift, four-point probe logic, failure classes, and process feedback screens.
 ---
 
-<section class="artifact-panel public-safe-snapshot">
- <h2>Reliability screen objective</h2>
- <p>Time-zero continuity is not enough. The screen classifies resistance drift, sudden failure, intermittent readings, and artifact states so printed interconnect data can feed back into printing, curing, handling, and environmental-stress decisions.</p>
+<section class="artifact-panel setup-panel"><h2>The setup</h2><p>Time-zero continuity is not enough. The screen classifies resistance drift, sudden failure, intermittent readings, and artifact states so printed interconnect data can feed back into printing, curing, handling, and stress conditions.</p></section>
+
+<section class="insight-block dark-section"><p>Continuity is a starting condition, not a reliability result.</p></section>
+
+<section class="next-iteration-callout early-next"><h2>What I’d do next</h2><p>Set shareable pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The decision is whether failure class can point to a process correction instead of only describing a dead line.</p></section>
+
+<section class="visual-artifact-grid" aria-label="Artifact placeholders">
+ <figure><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Chart artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with the real chart, graph, trace, or distribution.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Lab or microscopy artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with the real lab photo, microscopy still, device image, or run image.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Code, analysis, or process-flow artifact placeholder" loading="lazy"><figcaption><strong>Artifact placeholder:</strong> replace with code snippet, analysis workflow, control plan, or schematic.</figcaption></figure>
 </section>
 
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Resistance drift plot area" loading="lazy"><figcaption>Measurement plot area for normalized resistance drift and failure timing.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Printed interconnect image area" loading="lazy"><figcaption>Image area for printed lines, probe layout, or device photo.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Reliability workflow schematic area" loading="lazy"><figcaption>Schematic area for stress interval, re-measurement, and classification workflow.</figcaption></figure>
-</section>
+<section class="flow-diagram-card"><h2>Reliability screen skeleton</h2><svg class="flow-svg" viewBox="0 0 1200 260" role="img" aria-label="Reliability screen skeleton"><defs><marker id="arrow-rel" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#0d8eb1"/></marker></defs><g font-family="Inter, Arial"><g fill="#fff" stroke="#d8e2e7" stroke-width="2"><rect x="25" y="78" width="160" height="96" rx="20"/><rect x="225" y="78" width="160" height="96" rx="20"/><rect x="425" y="78" width="160" height="96" rx="20"/><rect x="625" y="78" width="160" height="96" rx="20"/><rect x="825" y="78" width="160" height="96" rx="20"/><rect x="1025" y="78" width="150" height="96" rx="20" fill="#fff8ea" stroke="#f59e0b"/></g><g fill="#0f172a" font-size="18" font-weight="800" text-anchor="middle"><text x="105" y="120">Initial R</text><text x="305" y="120">Normalize</text><text x="505" y="120">Stress</text><text x="705" y="120">Re-measure</text><text x="905" y="120">Classify</text><text x="1100" y="120">Check cause</text></g><g fill="#64748b" font-size="13" text-anchor="middle"><text x="105" y="145">print/cure</text><text x="305" y="145">to baseline</text><text x="505" y="145">interval</text><text x="705" y="145">defined times</text><text x="905" y="145">pass/monitor/fail</text><text x="1100" y="145">upstream</text></g><g stroke="#0d8eb1" stroke-width="5" marker-end="url(#arrow-rel)"><line x1="185" y1="126" x2="215" y2="126"/><line x1="385" y1="126" x2="415" y2="126"/><line x1="585" y1="126" x2="615" y2="126"/><line x1="785" y1="126" x2="815" y2="126"/><line x1="985" y1="126" x2="1015" y2="126"/></g></g></svg></section>
 
-## Reliability screen skeleton
+<h2>Pass / monitor / fail matrix</h2>
+<svg class="matrix-svg" viewBox="0 0 900 520" role="img" aria-label="Pass fail monitor artifact matrix"><g font-family="Inter, Arial, sans-serif"><rect x="55" y="55" width="360" height="175" rx="24" fill="#ecfdf5" stroke="#16a34a"/><text x="235" y="130" text-anchor="middle" fill="#0f172a" font-size="32" font-weight="800">PASS</text><text x="235" y="170" text-anchor="middle" fill="#334155" font-size="18">stable normalized R</text><rect x="485" y="55" width="360" height="175" rx="24" fill="#fff8ea" stroke="#f59e0b"/><text x="665" y="130" text-anchor="middle" fill="#0f172a" font-size="32" font-weight="800">MONITOR</text><text x="665" y="170" text-anchor="middle" fill="#334155" font-size="18">drift but usable</text><rect x="55" y="290" width="360" height="175" rx="24" fill="#fef2f2" stroke="#dc2626"/><text x="235" y="365" text-anchor="middle" fill="#0f172a" font-size="32" font-weight="800">FAIL</text><text x="235" y="405" text-anchor="middle" fill="#334155" font-size="18">open / rapid drift</text><rect x="485" y="290" width="360" height="175" rx="24" fill="#eef2f7" stroke="#94a3b8"/><text x="665" y="365" text-anchor="middle" fill="#0f172a" font-size="32" font-weight="800">ARTIFACT</text><text x="665" y="405" text-anchor="middle" fill="#334155" font-size="18">retest contact</text></g></svg>
 
-<svg class="flow-svg six-node-flow" viewBox="0 0 1200 260" role="img" aria-label="Six-node reliability screen flow diagram">
- <defs><marker id="arrow-rel" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker></defs>
- <g font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#0f172a">
-  <rect x="20" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="100" y="112" text-anchor="middle">Measure</text><text x="100" y="138" text-anchor="middle" font-size="13" fill="#64748b">initial R</text>
-  <rect x="220" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="300" y="112" text-anchor="middle">Normalize</text><text x="300" y="138" text-anchor="middle" font-size="13" fill="#64748b">to baseline</text>
-  <rect x="420" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="500" y="112" text-anchor="middle">Stress</text><text x="500" y="138" text-anchor="middle" font-size="13" fill="#64748b">interval</text>
-  <rect x="620" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="700" y="112" text-anchor="middle">Re-measure</text><text x="700" y="138" text-anchor="middle" font-size="13" fill="#64748b">time points</text>
-  <rect x="820" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="900" y="112" text-anchor="middle">Classify</text><text x="900" y="138" text-anchor="middle" font-size="13" fill="#64748b">state</text>
-  <rect x="1020" y="70" width="160" height="96" rx="20" fill="#fff" stroke="#d8e2e7"/><text x="1100" y="112" text-anchor="middle">Check</text><text x="1100" y="138" text-anchor="middle" font-size="13" fill="#64748b">upstream</text>
- </g>
- <g stroke="#08708b" stroke-width="4" marker-end="url(#arrow-rel)">
-  <line x1="180" y1="118" x2="212" y2="118"/><line x1="380" y1="118" x2="412" y2="118"/><line x1="580" y1="118" x2="612" y2="118"/><line x1="780" y1="118" x2="812" y2="118"/><line x1="980" y1="118" x2="1012" y2="118"/>
- </g>
-</svg>
+<h2>Failure-decision table</h2>
+<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Failure class</th><th>What it suggests</th><th>Upstream check</th></tr></thead><tbody><tr><td>High initial resistance</td><td>Poor print continuity, geometry, or cure.</td><td>Inspect line shape, cure condition, deposition continuity, and probe contact.</td></tr><tr><td>Smooth upward drift</td><td>Material aging or environmental sensitivity.</td><td>Check humidity exposure, sintering/cure history, and material stability.</td></tr><tr><td>Sudden open circuit</td><td>Cracking, delamination, or handling damage.</td><td>Inspect physical damage, probe history, and handling steps.</td></tr><tr><td>Intermittent readings</td><td>Contact artifact or true instability.</td><td>Separate probe/contact artifact from line failure by retesting and imaging.</td></tr></tbody></table></div>
 
-## Threshold logic
+<section class="flow-diagram-card"><h2>Measure, classify, check upstream</h2><svg class="flow-svg labeled-flow" viewBox="0 0 1000 260" role="img" aria-label="Measure classify check upstream flow"><defs><marker id="arrow-measure" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker></defs><g font-family="Inter, Arial"><rect x="60" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="180" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Measure</text><text x="180" y="150" text-anchor="middle" font-size="16" fill="#64748b">R, drift, timing</text><rect x="380" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="500" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Classify</text><text x="500" y="150" text-anchor="middle" font-size="16" fill="#64748b">pass / monitor / fail / artifact</text><rect x="700" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="820" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Check upstream</text><text x="820" y="150" text-anchor="middle" font-size="16" fill="#64748b">print, cure, stress, contact</text><line x1="300" y1="127" x2="370" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/><line x1="620" y1="127" x2="690" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/></g></svg></section>
 
-<svg class="matrix-svg" viewBox="0 0 900 520" role="img" aria-label="Pass monitor fail artifact matrix">
- <rect width="900" height="520" rx="28" fill="#f8fbfc"/>
- <g font-family="Inter, Arial, sans-serif">
-  <rect x="70" y="70" width="350" height="160" rx="22" fill="#eef8f1" stroke="#8fc9a0"/><text x="245" y="130" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">PASS</text><text x="245" y="170" text-anchor="middle" fill="#334155" font-size="18">stable after stress</text>
-  <rect x="480" y="70" width="350" height="160" rx="22" fill="#fff7df" stroke="#d4a72c"/><text x="655" y="130" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">MONITOR</text><text x="655" y="170" text-anchor="middle" fill="#334155" font-size="18">drift before threshold</text>
-  <rect x="70" y="290" width="350" height="160" rx="22" fill="#fff4f0" stroke="#d48171"/><text x="245" y="350" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">FAIL</text><text x="245" y="390" text-anchor="middle" fill="#334155" font-size="18">open, crack, or high R</text>
-  <rect x="480" y="290" width="350" height="160" rx="22" fill="#eef2f7" stroke="#94a3b8"/><text x="655" y="350" text-anchor="middle" fill="#0f172a" font-size="30" font-weight="800">ARTIFACT</text><text x="655" y="390" text-anchor="middle" fill="#334155" font-size="18">retest probe/contact</text>
- </g>
-</svg>
+<section class="what-changed-block changed-panel"><h2>What this shifted</h2><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></section>
 
-## Failure-decision table
-
-<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Failure class</th><th>What it suggests</th><th>Upstream process check</th></tr></thead><tbody>
-<tr><td>High initial resistance</td><td>Poor print continuity, geometry, or cure.</td><td>Inspect line shape, cure condition, deposition continuity, and probe contact.</td></tr>
-<tr><td>Smooth upward drift</td><td>Material aging or environmental sensitivity.</td><td>Check humidity exposure, sintering/cure history, and material stability.</td></tr>
-<tr><td>Sudden open circuit</td><td>Cracking, delamination, or handling damage.</td><td>Inspect physical damage, probe history, and handling steps.</td></tr>
-<tr><td>Intermittent readings</td><td>Contact artifact or true instability.</td><td>Separate probe/contact artifact from line failure by retesting and imaging.</td></tr>
-</tbody></table></div>
-
-## Measure, classify, check upstream
-
-<svg class="flow-svg labeled-flow" viewBox="0 0 1000 260" role="img" aria-label="Measure classify check upstream flow">
- <defs><marker id="arrow-measure" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker></defs>
- <g font-family="Inter, Arial, sans-serif">
-  <rect x="60" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="180" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Measure</text><text x="180" y="150" text-anchor="middle" font-size="16" fill="#64748b">R, drift, timing</text>
-  <rect x="380" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="500" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Classify</text><text x="500" y="150" text-anchor="middle" font-size="16" fill="#64748b">pass / monitor / fail / artifact</text>
-  <rect x="700" y="62" width="240" height="130" rx="26" fill="#fff" stroke="#d8e2e7"/><text x="820" y="116" text-anchor="middle" font-size="28" font-weight="800" fill="#0f172a">Check upstream</text><text x="820" y="150" text-anchor="middle" font-size="16" fill="#64748b">print, cure, stress, contact</text>
-  <line x1="300" y1="127" x2="370" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/><line x1="620" y1="127" x2="690" y2="127" stroke="#08708b" stroke-width="5" marker-end="url(#arrow-measure)"/>
- </g>
-</svg>
-
-## What changed because of this
-
-<div class="what-changed-block changed-panel"><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></div>
-
-## Open questions / next iteration
-
-<div class="next-iteration-callout"><p>The next iteration should set public-safe pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The engineering decision is whether failure class can reliably point to a process correction instead of only describing a dead line.</p></div>
-
-
-<div class="case-cta-row two-button-cta">
- <a class="button primary" href="{{ '/projects/' | relative_url }}">Next case file →</a>
- <a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a>
-</div>
+<div class="case-cta-row two-button-cta"><a class="button primary" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Next: Thermocycler Process Automation →</a><a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a></div>

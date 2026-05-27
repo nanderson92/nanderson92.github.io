@@ -4,115 +4,38 @@ title: Engineering Case Files
 category: Engineering Case Files
 subtitle: Build logs from real systems I measured, tuned, automated, or ran under pressure.
 body_class: projects-page
+meta_description: Engineering case files in process development, wet processing, microfluidics, printed electronics reliability, automation, and materials.
 ---
 
-<section class="projects-index-hero startup-projects-hero" aria-label="Projects introduction">
- <p>Each case file follows the same proof logic: system, variables, CTQs, screen, result, and next iteration.</p>
- <div class="case-filter-bar" aria-label="Filter case files">
-  <button type="button" class="filter-chip is-active" data-filter="all">All</button>
-  <button type="button" class="filter-chip" data-filter="wet">Wet processing</button>
-  <button type="button" class="filter-chip" data-filter="microfluidics">Microfluidics</button>
-  <button type="button" class="filter-chip" data-filter="reliability">Reliability</button>
-  <button type="button" class="filter-chip" data-filter="automation">Automation</button>
-  <button type="button" class="filter-chip" data-filter="materials">Materials</button>
- </div>
+<section class="projects-index-hero startup-projects-hero plain-prose" aria-label="Projects introduction">
+ <p>Each case file follows the same proof logic: system, variables, <abbr title="Critical-to-Quality">CTQs</abbr>, screen, result, and next run.</p>
+ <div class="case-filter-bar" aria-label="Filter case files"><button type="button" class="filter-chip is-active" data-filter="all">All</button><button type="button" class="filter-chip" data-filter="wet">Wet processing</button><button type="button" class="filter-chip" data-filter="microfluidics">Microfluidics</button><button type="button" class="filter-chip" data-filter="reliability">Reliability</button><button type="button" class="filter-chip" data-filter="automation">Automation</button><button type="button" class="filter-chip" data-filter="materials">Materials</button></div>
 </section>
 
-<section class="case-group flagship-group" aria-label="Flagship process development">
- <div class="case-heading"><h2>Flagship process development</h2></div>
+<section class="case-group flagship-group" aria-label="Process development">
+ <div class="case-heading"><h2>Featured case files</h2></div>
  <div class="portfolio-grid startup-project-grid equal-project-grid casefile-project-grid">
-  <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="wet materials">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy">
-   <div class="card-topline"><span>Wet processing · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Screening framework</span></div>
-   <h2>Micromodular Electronics Deposition</h2>
-   <p class="problem-line"><strong>System:</strong> IPA droplet deposition of suspended microdevices on substrate/backing candidates.</p>
-   <p class="problem-line"><strong>Measured:</strong> contact-line traces, device placement bias, repeatability, and interconnect-accessible density.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> substrate-screening and image-derived CTQs.</p>
-   <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
-  </article>
-
-  <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="microfluidics">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy">
-   <div class="card-topline"><span>Microfluidics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
-   <h2>Stem-Cell Microencapsulation</h2>
-   <p class="problem-line"><strong>System:</strong> flow-focusing microfluidic core-shell capsule generation with crosslinking and microscopy QC.</p>
-   <p class="problem-line"><strong>Measured:</strong> usable capsule yield, generation rate, coalescence, capsule size, and run-to-run variability.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> throughput/yield operating-window development.</p>
-   <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
-  </article>
+  <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="wet materials"><img class="case-thumb" src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy"><div class="card-topline"><span>Wet processing · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Screening framework</span></div><h2>Micromodular Electronics Deposition</h2><p class="large-metric">Video → placement CTQs</p><p>What this proved: substrate/backing conditions can be screened by contact-line behavior and final placement bias before interconnect routing.</p><p class="transferable-line"><strong>Skill carried forward:</strong> substrate-screening and image-derived CTQs.</p><p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p></article>
+  <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="microfluidics"><img class="case-thumb" src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy"><div class="card-topline"><span>Microfluidics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge warm">20× throughput</span></div><h2>Stem-Cell Microencapsulation</h2><p class="large-metric">20× throughput · ~50% yield gain</p><p>What this proved: faster capsule generation only mattered when flow ratio, tooling, crosslinking, and QC stayed inside the usable window.</p><p class="transferable-line"><strong>Skill carried forward:</strong> throughput/yield operating-window development.</p><p><a href="{{ '/projects/stem-cell-microencapsulation/' | relative_url }}">Open case file →</a></p></article>
  </div>
 </section>
 
 <section class="case-group" aria-label="Reliability and control">
  <div class="case-heading"><h2>Reliability &amp; control</h2></div>
  <div class="portfolio-grid startup-project-grid equal-project-grid casefile-project-grid">
-  <article class="portfolio-card evidence-card build-log-card" data-tags="reliability wet">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Reliability plot thumbnail" loading="lazy">
-   <div class="card-topline"><span>Reliability · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Failure logic</span></div>
-   <h2>Printed Interconnect Reliability</h2>
-   <p class="problem-line">Resistance drift and failure timing turned time-zero continuity checks into a reliability screen.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> failure classification and process-feedback logic.</p>
-   <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
-  </article>
-
-  <article class="portfolio-card evidence-card build-log-card" data-tags="automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Thermal control thumbnail" loading="lazy">
-   <div class="card-topline"><span>Automation · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
-   <h2>Thermocycler Process Automation</h2>
-   <p class="problem-line">Thermal setpoints became CTQs: ramp rate, overshoot, settling time, hold stability, and repeatability.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> thermal-control validation.</p>
-   <p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p>
-  </article>
+  <article class="portfolio-card evidence-card build-log-card" data-tags="reliability wet"><img class="case-thumb" src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Reliability plot thumbnail" loading="lazy"><div class="card-topline"><span>Reliability · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Failure logic</span></div><h2>Printed Interconnect Reliability</h2><p class="large-metric">PASS / MONITOR / FAIL / ARTIFACT</p><p>What this proved: resistance drift and failure timing can become a screen instead of a time-zero continuity check.</p><p class="transferable-line"><strong>Skill carried forward:</strong> failure classification and process-feedback logic.</p><p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p></article>
+  <article class="portfolio-card evidence-card build-log-card" data-tags="automation"><img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Thermal control thumbnail" loading="lazy"><div class="card-topline"><span>Automation · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div><h2>Thermocycler Process Automation</h2><p class="large-metric">Ramp · overshoot · hold · repeat</p><p>What this proved: thermal automation needs validation around sample-region history, not only controller setpoints.</p><p class="transferable-line"><strong>Skill carried forward:</strong> thermal-control validation.</p><p><a href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Open case file →</a></p></article>
  </div>
 </section>
 
-<section class="case-group supporting-group" aria-label="Operations and earlier research">
- <div class="case-heading"><h2>Operations &amp; earlier research</h2></div>
- <div class="portfolio-grid startup-project-grid equal-project-grid casefile-project-grid support-case-grid">
-  <article class="portfolio-card evidence-card build-log-card" data-tags="materials">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-materials-image.svg' | relative_url }}" alt="Materials characterization thumbnail" loading="lazy">
-   <div class="card-topline"><span>Materials · semiconductors · Georgia Tech · 2025–present</span><span class="outcome-badge">Process response</span></div>
-   <h2>Semiconductor Materials Exposure</h2>
-   <p class="problem-line">Growth and characterization work tied deposition conditions to morphology, composition, and structure.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> linking process conditions to material response.</p>
-   <p><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p>
-  </article>
-
-  <article class="portfolio-card evidence-card build-log-card" data-tags="wet automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Image workflow thumbnail" loading="lazy">
-   <div class="card-topline"><span>Image analysis · droplet metrics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Video → CTQ</span></div>
-   <h2>Droplet Image Analysis Workflows</h2>
-   <p class="problem-line">Microscopy videos were segmented, calibrated, and converted into comparable variables.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> video-to-metric workflow design.</p>
-   <p><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case file →</a></p>
-  </article>
-
-  <article class="portfolio-card evidence-card build-log-card" data-tags="materials automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Simulation schematic thumbnail" loading="lazy">
-   <div class="card-topline"><span>Simulation · balances · Georgia Tech · 2025–present</span><span class="outcome-badge">Flowsheet logic</span></div>
-   <h2>Process Simulation and Design</h2>
-   <p class="problem-line">Flowsheets and balances made assumptions, recovery targets, and tradeoffs visible.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> simulation-backed decision framing.</p>
-   <p><a href="{{ '/projects/process-simulation-design/' | relative_url }}">Open case file →</a></p>
-  </article>
-
-  <article class="portfolio-card evidence-card build-log-card currently-working-card" data-tags="all">
-   <div class="card-topline"><span>Currently working on</span><span class="outcome-badge">Next notes</span></div>
-   <h2>New control-plan draft</h2>
-   <p class="problem-line">The next public update will connect printed-interconnect failure classes to a compact control-plan draft.</p>
-   <p class="transferable-line"><strong>Skill carried forward:</strong> reliability logic into manufacturing documentation.</p>
-   <p><a href="{{ site.linkedin }}">Follow updates →</a></p>
-  </article>
+<section class="case-group" aria-label="Materials and measurement workflows">
+ <div class="case-heading"><h2>Materials &amp; measurement workflows</h2></div>
+ <div class="portfolio-grid startup-project-grid equal-project-grid casefile-project-grid">
+  <article class="portfolio-card evidence-card build-log-card" data-tags="materials"><img class="case-thumb" src="{{ '/assets/images/artifact-materials-image.svg' | relative_url }}" alt="Materials characterization thumbnail" loading="lazy"><div class="card-topline"><span>Materials · semiconductors · Georgia Tech · 2025–present</span><span class="outcome-badge">Process response</span></div><h2>Semiconductor Materials Exposure</h2><p class="large-metric">Condition → response</p><p>What this proved: characterization readouts become actionable when each is tied to a process variable and a limitation.</p><p class="transferable-line"><strong>Skill carried forward:</strong> characterization control-plan thinking.</p><p><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p></article>
+  <article class="portfolio-card evidence-card build-log-card" data-tags="wet"><img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Droplet workflow thumbnail" loading="lazy"><div class="card-topline"><span>Image analysis · droplet metrics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Video → CTQ</span></div><h2>Droplet Image Analysis Workflows</h2><p class="large-metric">Frame → trace → decision</p><p>What this proved: microscope videos can become auditable traces with calibration, segmentation, and export discipline.</p><p class="transferable-line"><strong>Skill carried forward:</strong> image-derived measurement systems.</p><p><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case file →</a></p></article>
+  <article class="portfolio-card evidence-card build-log-card" data-tags="materials"><img class="case-thumb" src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Simulation flow thumbnail" loading="lazy"><div class="card-topline"><span>Simulation · balances · Georgia Tech · 2025–present</span><span class="outcome-badge">Flowsheet logic</span></div><h2>Process Simulation and Design</h2><p class="large-metric">Basis · model · sensitivity</p><p>What this proved: simulation outputs need an explicit basis, model choice, and decision statement before they are useful.</p><p class="transferable-line"><strong>Skill carried forward:</strong> assumption tracking and process tradeoff communication.</p><p><a href="{{ '/projects/process-simulation-design/' | relative_url }}">Open case file →</a></p></article>
+  <article class="portfolio-card evidence-card build-log-card currently-card" data-tags="all"><img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Currently working placeholder" loading="lazy"><div class="card-topline"><span>Currently working on · May 2026</span><span class="outcome-badge warm">Open thread</span></div><h2>New control-plan draft</h2><p class="large-metric">Follow updates</p><p>Placeholder slot for the next public case file. Use this for the printed-interconnect control-plan draft or a new wet-processing run note.</p><p><a href="{{ '/notes/' | relative_url }}">Read notes →</a></p></article>
  </div>
 </section>
 
-<section class="cta-band project-page-contact-cta" aria-label="Project contact call to action">
- <div>
-  <h2>Want to talk through one of these case files?</h2>
-  <p>Happy to walk through the experiments, tooling, and what I'd change next.</p>
- </div>
- <div class="cta-row compact-cta">
-  <a class="button primary email-button" href="mailto:{{ site.email }}">Email Nathan →</a>
-  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume →</a>
- </div>
-</section>
+<section class="cta-band recruiter-cta warm-cta"><div><p class="system-label small">Talk through a case file with me</p><h2>Happy to walk through the experiments, tooling, and what I’d change next.</h2><p>Useful for internships, project work, startup conversations, or technical discussions where the decision is not obvious yet.</p></div><div class="cta-row compact-cta"><a class="button primary email-button" href="mailto:{{ site.email }}">Email Nathan →</a><a class="button secondary" href="{{ '/contact/' | relative_url }}">Contact page</a></div></section>
