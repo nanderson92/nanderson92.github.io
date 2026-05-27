@@ -7658,3 +7658,52 @@ a { color: #075f73; }
   .large-email { font-size: 1.35rem !important; }
   .single-screen-contact { padding: 16px; }
 }
+
+/* === Homepage readability patch: darken text on white/light backgrounds === */
+.home-page {
+  color: #0f172a !important;
+}
+.home-page :where(
+  .section-heading p,
+  .plain-heading p,
+  .hero-lede,
+  .portfolio-card p,
+  .evidence-card p,
+  .card-outcome,
+  .artifact-preview-card span,
+  .human-service-band p,
+  .human-context-card p,
+  .technical-proof p,
+  .supporting-home-cases p,
+  .compact-card-link a
+) {
+  color: #0f172a !important;
+}
+.home-page :where(
+  .system-label,
+  .main-label,
+  .card-topline,
+  .card-topline span,
+  .logo-strip > span,
+  .artifact-preview-card small,
+  .figure-note
+) {
+  color: #334155 !important;
+}
+.home-page .portfolio-card :where(strong, h2, h3),
+.home-page .artifact-preview-card strong,
+.home-page .human-service-band h2,
+.home-page .technical-proof h2 {
+  color: #0f172a !important;
+}
+.home-page .card-topline .outcome-badge,
+.home-page .outcome-badge {
+  color: #7c2d12 !important;
+}
+.home-page .tone-dark,
+.home-page .tone-dark :where(p, li, span, strong, h1, h2, h3, a, .system-label) {
+  color: #ffffff !important;
+}
+.home-page .tone-dark li span {
+  color: #e2e8f0 !important;
+}
