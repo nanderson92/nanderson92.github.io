@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" role="img" aria-labelledby="title desc">
+<title id="title">Four-point resistance testing method</title>
+<desc id="desc">Current is sourced through the outer probes while voltage is sensed across inner probes to reduce contact resistance artifacts.</desc>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker>
+  <linearGradient id="trace" x1="0" x2="1"><stop offset="0" stop-color="#dceef4"/><stop offset="1" stop-color="#f7fafc"/></linearGradient>
+</defs>
+<rect width="940" height="520" rx="34" fill="#f8fbfc"/>
+<rect x="90" y="308" width="760" height="54" rx="24" fill="url(#trace)" stroke="#b9d2dc" stroke-width="3"/>
+<text x="470" y="394" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#0f172a">Printed interconnect under test</text>
+<g stroke="#24383e" stroke-width="4" fill="#ffffff">
+  <path d="M185 84 L218 84 L207 307 L196 307 Z"/><path d="M350 84 L383 84 L372 307 L361 307 Z"/>
+  <path d="M557 84 L590 84 L579 307 L568 307 Z"/><path d="M722 84 L755 84 L744 307 L733 307 Z"/>
+</g>
+<g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+  <text x="201" y="66" font-size="24" font-weight="850" fill="#0f172a">I+</text><text x="366" y="66" font-size="24" font-weight="850" fill="#08708b">V+</text>
+  <text x="574" y="66" font-size="24" font-weight="850" fill="#08708b">V−</text><text x="738" y="66" font-size="24" font-weight="850" fill="#0f172a">I−</text>
+  <text x="470" y="452" font-size="19" font-weight="650" fill="#475569">Outer probes source current; inner probes sense voltage across the line.</text>
+</g>
+<g stroke="#08708b" stroke-width="4" marker-end="url(#arrow)">
+  <path d="M201 112 C130 132 104 220 127 300" fill="none"/>
+  <path d="M738 112 C810 132 837 220 813 300" fill="none"/>
+</g>
+<g stroke="#d4a72c" stroke-width="4">
+  <line x1="366" y1="126" x2="574" y2="126"/><circle cx="366" cy="126" r="9" fill="#fff"/><circle cx="574" cy="126" r="9" fill="#fff"/>
+</g>
+<text x="470" y="115" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#7c2d12">Voltage sensed across inner spacing</text>
+</svg>

@@ -21,39 +21,60 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
-<section class="pipeline-card" aria-label="Image analysis pipeline">
- <h2>Raw video → calibration → object detection → track linking → radial/tangential decomposition → dashboard export</h2>
- <div class="mini-flow pipeline-flow"><span>Raw video</span><b>→</b><span>Calibration</span><b>→</b><span>Object detection</span><b>→</b><span>Track linking</span><b>→</b><span>Vector decomposition</span><b>→</b><span>Dashboard</span></div>
-</section>
 
-<section class="artifact-grid two-col-artifacts" aria-label="Droplet image-analysis artifacts">
- <article class="artifact-card">
-  <span class="artifact-label">Dashboard</span>
-  <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard exported from microdevice tracking" loading="lazy"></div>
-  <p class="artifact-caption"><strong>Group motion dashboard.</strong> Trajectory-linked detections are summarized as population speed, radial velocity, angular velocity tendency, and tracking coverage. This supports fast comparison of whether a run produces outward sweep, immobilization, or late-stage crowding.</p>
- </article>
- <article class="artifact-card">
-  <span class="artifact-label">Velocity decomposition</span>
-  <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity plots from tracked microdevices" loading="lazy"></div>
-  <p class="artifact-caption"><strong>Radial and tangential velocity decomposition.</strong> Tracks are resolved relative to the droplet center so motion direction becomes a measurable process output, not just a visual impression.</p>
- </article>
- <article class="artifact-card code-artifact">
-  <span class="artifact-label">Code / analysis excerpt</span>
-  <div class="artifact-image-wrap code-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-code-pid-crop.png' | relative_url }}" alt="Control-analysis code excerpt" loading="lazy"></div>
-  <p class="artifact-caption"><strong>Control-analysis code excerpt.</strong> Experimental video or sensor data becomes structured process metrics through explicit state logic, filtering, and export behavior. Code screenshots stay secondary to plots and physical artifacts.</p>
- </article>
- <article class="artifact-card setup-artifact">
-  <span class="artifact-label">Measurement setup</span>
-  <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/rame-hart-goniometer-cropped.jpg' | relative_url }}" alt="Rame-Hart goniometer setup for droplet characterization" loading="lazy"></div>
-  <p class="artifact-caption"><strong>Rame-Hart goniometer setup used for droplet shape, contact angle, and volume/time characterization.</strong> Use only as a setup image, not a flagship artifact.</p>
- </article>
-</section>
 
 <section class="artifact-panel setup-snapshot"><h2>What good looks like</h2><p>Raw microscopy videos are not metrics. The workflow turns frames into calibrated variables: droplet radius, contact-line motion, contact angle proxy, volume proxy, and deposition distribution.</p></section>
 
+
+
+
 <section class="insight-block tone-dark"><p>A droplet video becomes an engineering artifact only after calibration, segmentation choices, and trace outputs are documented well enough to audit.</p></section>
 
-<section class="quality-checklist-card">
+<section class="mini-flow-card"><h2>Analysis flow</h2><div class="mini-flow"><span>Raw video</span><b>→</b><span>Calibration</span><b>→</b><span>Object detection</span><b>→</b><span>Track linking</span><b>→</b><span>Dashboard export</span></div></section>
+
+## What I'd do next
+
+<div class="next-iteration-callout"><p>The next iteration should package the workflow into a reproducible tool: load video, confirm calibration, extract contact line, export standard plots, and save each processing choice. The engineering decision is whether a trace is trustworthy enough to compare across substrates.</p></div>
+
+
+<section class="analysis-pipeline-card">
+ <p class="artifact-label">METHOD PIPELINE</p>
+ <h2>Raw video → calibration → object detection → track linking → radial/tangential decomposition → dashboard export</h2>
+ <p>The workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
+</section>
+
+<section class="artifact-grid artifact-grid-two" aria-label="Droplet image analysis artifacts">
+ <article class="artifact-card artifact-card-wide">
+  <p class="artifact-label">DASHBOARD EXPORT</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard exported from tracked microdevice trajectories" loading="lazy"></div>
+   <figcaption><strong>Figure 1. Group motion dashboard from tracked microdevice trajectories.</strong> Population speed, radial velocity, angular-velocity tendency, and tracking coverage are plotted against time. This supports condition-to-condition comparison and flags intervals where tracking coverage may bias the metric.</figcaption>
+  </figure>
+ </article>
+ <article class="artifact-card artifact-card-wide">
+  <p class="artifact-label">VELOCITY DECOMPOSITION</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-plot"><img src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity decomposition from droplet video" loading="lazy"></div>
+   <figcaption><strong>Figure 2. Radial and tangential velocity decomposition.</strong> Tracks are resolved relative to the droplet center so outward transport and circumferential drift can be separated. This supports substrate/backing screens where final placement alone hides the transport path.</figcaption>
+  </figure>
+ </article>
+ <article class="artifact-card code-artifact-card">
+  <p class="artifact-label">CODE EXCERPT</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-code"><img src="{{ '/assets/images/artifact-thermocycler-pid-code.png' | relative_url }}" alt="Control-analysis code excerpt" loading="lazy"></div>
+   <figcaption><strong>Figure 3. Control-analysis code excerpt.</strong> Experimental video or sensor data is reduced into structured process metrics. Code screenshots stay secondary to exported plots and physical artifacts.</figcaption>
+  </figure>
+ </article>
+ <article class="artifact-card setup-artifact-card">
+  <p class="artifact-label">MEASUREMENT SETUP</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-photo"><img src="{{ '/assets/images/artifact-rame-hart-goniometer-cropped.jpg' | relative_url }}" alt="Cropped Rame-Hart goniometer setup" loading="lazy"></div>
+   <figcaption><strong>Figure 4. Rame-Hart goniometer setup.</strong> Setup image for droplet shape, contact angle, and volume/time characterization. This supports the measurement chain, not the flagship result.</figcaption>
+  </figure>
+ </article>
+</section>
+
+<section class="artifact-panel qc-checklist-panel">
  <h2>Quality-control checklist</h2>
  <ul class="checklist-grid">
   <li>pixel-to-micron calibration</li>
@@ -66,9 +87,6 @@ body_class: case-file-page
  </ul>
 </section>
 
-## What I'd do next
-
-<div class="next-iteration-callout"><p>The next iteration should package the workflow into a reproducible tool: load video, confirm calibration, extract contact line, export standard plots, and save each processing choice. The engineering decision is whether a trace is trustworthy enough to compare across substrates.</p></div>
 
 ## Video-to-metric workflow
 
@@ -82,6 +100,7 @@ body_class: case-file-page
 ## What this shifted
 
 <div class="what-changed-block changed-panel"><p>The workflow made droplet comparison auditable. Conditions could be compared by extracted traces and deposition regions, not only by visually inspecting the final stain.</p></div>
+
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/process-simulation-design/' | relative_url }}">Next: Process Simulation and Design →</a>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 420" role="img" aria-labelledby="title desc">
+<title id="title">Alginate core hardening schematic</title>
+<desc id="desc">Calcium crosslinking changes a liquid alginate core into a hardened hydrogel core inside a PEG shell.</desc>
+<rect width="1040" height="420" rx="34" fill="#f8fbfc"/>
+<defs><marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M0 0 L14 7 L0 14 Z" fill="#08708b"/></marker></defs>
+<g transform="translate(120 80)">
+ <circle cx="120" cy="130" r="110" fill="#dff3ff" stroke="#407ab5" stroke-width="4"/>
+ <circle cx="120" cy="130" r="73" fill="#c4d2d9" stroke="#788d96" stroke-width="3" opacity=".86"/>
+ <g fill="#ffd2aa" stroke="#eaa777" stroke-width="3">
+  <circle cx="110" cy="120" r="24"/><circle cx="143" cy="130" r="23"/><circle cx="90" cy="147" r="22"/><circle cx="120" cy="160" r="24"/><circle cx="136" cy="101" r="22"/><circle cx="108" cy="95" r="20"/><circle cx="122" cy="133" r="26"/>
+ </g>
+ <text x="120" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850" fill="#0f172a">Liquid alginate core</text>
+</g>
+<path d="M420 200 H620" stroke="#08708b" stroke-width="8" marker-end="url(#arrow)"/>
+<text x="520" y="168" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="850" fill="#475569">Ca²⁺ crosslinking</text>
+<g transform="translate(700 80)">
+ <circle cx="120" cy="130" r="110" fill="#dff3ff" stroke="#407ab5" stroke-width="4"/>
+ <circle cx="120" cy="130" r="73" fill="#e4edf1" stroke="#9bb0b8" stroke-width="3" opacity=".96"/>
+ <g fill="#ffd2aa" stroke="#eaa777" stroke-width="3">
+  <circle cx="110" cy="120" r="24"/><circle cx="143" cy="130" r="23"/><circle cx="90" cy="147" r="22"/><circle cx="120" cy="160" r="24"/><circle cx="136" cy="101" r="22"/><circle cx="108" cy="95" r="20"/><circle cx="122" cy="133" r="26"/>
+ </g>
+ <text x="120" y="300" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="850" fill="#0f172a">Hard alginate core</text>
+</g>
+</svg>

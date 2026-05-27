@@ -45,40 +45,10 @@ body_class: home-page
  <div class="content-shell recent-strip-inner">
   <p class="system-label">Recently shipped</p>
   <ul>
-   <li><strong>Trajectory extraction artifact</strong><span>Pathlines and motion metrics now sit directly inside the deposition case file.</span></li>
-   <li><strong>Microencapsulation microscopy</strong><span>Capsule images and shell-thickness data now support the Mayo Clinic case file.</span></li>
-   <li><strong>Thermal-control prototype proof</strong><span>Hardware and control-code artifacts now support the thermocycler case file.</span></li>
+   <li><strong>Image-analysis workflow update</strong><span>Trajectory extraction and group-motion dashboard added to the case files.</span></li>
+   <li><strong>Printed-line control-plan draft</strong><span>Four-point measurement logic and missing-artifact slots separated cleanly.</span></li>
+   <li><strong>Portfolio case-file refresh</strong><span>Real microscopy, hardware, plot, and code artifacts now sit beside the claims they support.</span></li>
   </ul>
- </div>
-</section>
-
-<section class="evidence-wall-section" aria-label="Evidence artifact wall">
- <div class="content-shell">
-  <div class="section-heading plain-heading">
-   <p class="system-label main-label">Evidence layer</p>
-   <h2>Evidence, not just project summaries.</h2>
-   <p>Three representative artifacts show how I turn lab systems into measurements, dashboards, and hardware decisions.</p>
-  </div>
-  <div class="artifact-wall three-card-wall">
-   <article class="artifact-card compact-artifact">
-    <span class="artifact-label">Video analysis</span>
-    <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/microdevice-trajectory-overlay.png' | relative_url }}" alt="Video-derived microdevice trajectory overlay" loading="lazy"></div>
-    <h3>Microdevice trajectory extraction</h3>
-    <p class="artifact-caption">Video-derived pathlines of suspended microdevices relative to the droplet center. Used to compare radial transport, circumferential drift, and late-stage crowding behavior across substrate/backing conditions.</p>
-   </article>
-   <article class="artifact-card compact-artifact">
-    <span class="artifact-label">Microscopy</span>
-    <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/microcapsule-microscopy.jpg' | relative_url }}" alt="Representative hydrogel microcapsule microscopy image" loading="lazy"></div>
-    <h3>Microencapsulation microscopy</h3>
-    <p class="artifact-caption">Representative microscopy image of hydrogel microcapsules from the microfluidic encapsulation workflow. Use as visual proof of capsule morphology, size distribution, and process-output quality.</p>
-   </article>
-   <article class="artifact-card compact-artifact">
-    <span class="artifact-label">Control hardware</span>
-    <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-prototype-front.png' | relative_url }}" alt="Prototype thermocycler automation hardware" loading="lazy"></div>
-    <h3>Thermocycler automation prototype</h3>
-    <p class="artifact-caption">Prototype hardware for thermal cycling automation, integrating enclosure design, fan cooling, electronics, and control logic into a testable bench system.</p>
-   </article>
-  </div>
  </div>
 </section>
 
@@ -92,7 +62,7 @@ body_class: home-page
 
   <div class="portfolio-grid projects-library supporting-card-grid startup-home-grid casefile-home-grid six-card-grid equal-card-grid">
    <article class="portfolio-card evidence-card flagship-home-card">
-    <img class="case-thumb" src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy">
+    <img class="case-thumb" src="{{ '/assets/images/artifact-microdevice-trajectory-overlay.png' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy">
     <div class="card-topline"><span>Wet processing · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Screening framework</span></div>
     <h2>Micromodular Electronics Deposition</h2>
     <p>Suspended microdevices crowd at droplet edges before interconnect printing.</p>
@@ -100,7 +70,7 @@ body_class: home-page
     <p class="compact-card-link"><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
    </article>
    <article class="portfolio-card evidence-card flagship-home-card">
-    <img class="case-thumb" src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy">
+    <img class="case-thumb" src="{{ '/assets/images/artifact-microcapsule-microscopy.jpg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy">
     <div class="card-topline"><span>Microfluidics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
     <h2>Stem-Cell Microencapsulation</h2>
     <p>Faster capsule generation only mattered if capsules stayed usable.</p>
@@ -116,7 +86,7 @@ body_class: home-page
     <p class="compact-card-link"><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
    </article>
    <article class="portfolio-card evidence-card">
-    <img class="case-thumb" src="{{ '/assets/images/thermocycler-profile.svg' | relative_url }}" alt="Thermal control thumbnail" loading="lazy">
+    <img class="case-thumb" src="{{ '/assets/images/artifact-thermocycler-front.png' | relative_url }}" alt="Thermal control thumbnail" loading="lazy">
     <div class="card-topline"><span>Automation · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
     <h2>Thermocycler Process Automation</h2>
     <p>A setpoint was not evidence that the sample saw the intended thermal history.</p>
@@ -132,13 +102,41 @@ body_class: home-page
     <p class="compact-card-link"><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p>
    </article>
    <article class="portfolio-card evidence-card">
-    <img class="case-thumb" src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Image workflow thumbnail" loading="lazy">
+    <img class="case-thumb" src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Image workflow thumbnail" loading="lazy">
     <div class="card-topline"><span>Image analysis · droplet metrics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Video → CTQ</span></div>
     <h2>Droplet Image Analysis Workflows</h2>
     <p>Raw videos needed to become comparable variables instead of visual anecdotes.</p>
     <p class="card-outcome"><strong>Outcome:</strong> segmentation, calibration, and trace extraction workflow for droplet CTQs.</p>
     <p class="compact-card-link"><a href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Open case file →</a></p>
    </article>
+  </div>
+ </div>
+</section>
+
+<section class="technical-proof artifact-preview-section evidence-artifact-wall-section">
+ <div class="content-shell">
+  <p class="system-label main-label">Technical proof</p>
+  <h2>Evidence, not just project summaries.</h2>
+  <p class="section-intro">The strongest case files show the physical output, the measurement artifact, and the decision logic in the same place.</p>
+  <div class="artifact-wall">
+   <a class="artifact-card artifact-wall-card" href="{{ '/projects/micromodular-deposition/' | relative_url }}">
+    <p class="artifact-label">VIDEO ANALYSIS</p>
+    <div class="artifact-image-frame wall-frame"><img src="{{ '/assets/images/artifact-microdevice-trajectory-overlay.png' | relative_url }}" alt="Video-derived microdevice pathlines relative to droplet center" loading="lazy"></div>
+    <strong>Microdevice trajectory extraction</strong>
+    <span>Video-derived pathlines of suspended microdevices relative to the droplet center. Used to compare radial transport, circumferential drift, and late-stage crowding behavior across substrate/backing conditions.</span>
+   </a>
+   <a class="artifact-card artifact-wall-card" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">
+    <p class="artifact-label">MICROSCOPY</p>
+    <div class="artifact-image-frame wall-frame"><img src="{{ '/assets/images/artifact-microcapsule-microscopy.jpg' | relative_url }}" alt="Hydrogel microcapsules under microscopy" loading="lazy"></div>
+    <strong>Microencapsulation microscopy</strong>
+    <span>Representative microscopy image of hydrogel microcapsules from the microfluidic encapsulation workflow. Use as visual proof of capsule morphology, size distribution, and process-output quality.</span>
+   </a>
+   <a class="artifact-card artifact-wall-card" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">
+    <p class="artifact-label">CONTROL HARDWARE</p>
+    <div class="artifact-image-frame wall-frame"><img src="{{ '/assets/images/artifact-thermocycler-front.png' | relative_url }}" alt="Thermocycler automation prototype hardware" loading="lazy"></div>
+    <strong>Thermocycler automation prototype</strong>
+    <span>Prototype hardware for thermal cycling automation, integrating enclosure design, fan cooling, electronics, and control logic into a testable bench system.</span>
+   </a>
   </div>
  </div>
 </section>

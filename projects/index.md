@@ -23,7 +23,7 @@ body_class: projects-page
  <div class="case-heading"><h2>Featured case files</h2></div>
  <div class="portfolio-grid startup-project-grid equal-project-grid casefile-project-grid">
   <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="wet materials">
-   <img class="case-thumb" src="{{ '/assets/images/artifacts/microdevice-trajectory-overlay.png' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/artifact-microdevice-trajectory-overlay.png' | relative_url }}" alt="Droplet metric thumbnail" loading="lazy">
    <div class="card-topline"><span>Wet processing · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Screening framework</span></div>
    <h2>Micromodular Electronics Deposition</h2>
    <p class="metric-callout">What this proved: final stains were not enough. Video-derived contact-line traces gave the screen a real control variable.</p>
@@ -31,7 +31,7 @@ body_class: projects-page
    <p><a href="{{ '/projects/micromodular-deposition/' | relative_url }}">Open case file →</a></p>
   </article>
   <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="microfluidics">
-   <img class="case-thumb" src="{{ '/assets/images/artifacts/microcapsule-microscopy.jpg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/artifact-microcapsule-microscopy.jpg' | relative_url }}" alt="Capsule image thumbnail" loading="lazy">
    <div class="card-topline"><span>Microfluidics · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">20× throughput</span></div>
    <h2>Stem-Cell Microencapsulation</h2>
    <p class="metric-callout">What this proved: throughput only counted when flow ratio, tooling, and crosslink timing kept capsules usable.</p>
@@ -53,7 +53,7 @@ body_class: projects-page
    <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
   </article>
   <article class="portfolio-card evidence-card build-log-card" data-tags="automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifacts/thermocycler-prototype-front.png' | relative_url }}" alt="Thermal control thumbnail" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/artifact-thermocycler-front.png' | relative_url }}" alt="Thermal control thumbnail" loading="lazy">
    <div class="card-topline"><span>Automation · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
    <h2>Thermocycler Process Automation</h2>
    <p class="metric-callout">What this proved: a setpoint is not validation unless the sample region sees the intended thermal history.</p>
@@ -75,7 +75,7 @@ body_class: projects-page
    <p><a href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Open case file →</a></p>
   </article>
   <article class="portfolio-card evidence-card build-log-card" data-tags="wet automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifacts/group-motion-dashboard.png' | relative_url }}" alt="Image workflow thumbnail" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Image workflow thumbnail" loading="lazy">
    <div class="card-topline"><span>Image analysis · droplet metrics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Video → CTQ</span></div>
    <h2>Droplet Image Analysis Workflows</h2>
    <p class="metric-callout">What this proved: raw microscopy videos become useful only after calibration, segmentation, and trace QC.</p>
@@ -94,7 +94,7 @@ body_class: projects-page
    <div class="card-topline"><span>Currently working on</span><span class="outcome-badge">Next notes</span></div>
    <h2>Printed-Line Control-Plan Draft</h2>
    <p class="metric-callout">This is a working update slot for converting interconnect failure classes into a compact control-plan outline.</p>
-   <p class="transferable-line"><strong>Follow-up:</strong> future notes will document the control-plan structure once data examples are locked.</p>
+   <p class="transferable-line"><strong>Follow-up:</strong> email me for the current draft or check future notes.</p>
    <p><a href="{{ '/notes/' | relative_url }}">See thinking notes →</a></p>
   </article>
  </div>

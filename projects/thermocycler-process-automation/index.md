@@ -22,44 +22,34 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
-<section class="artifact-stack" aria-label="Thermocycler artifacts">
- <article class="artifact-card artifact-card-hero">
-  <span class="artifact-label">Control hardware</span>
-  <div class="artifact-image-wrap hardware-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-prototype-front.png' | relative_url }}" alt="Prototype thermocycler automation hardware" loading="lazy"></div>
-  <h2>Thermal-control prototype</h2>
-  <p class="artifact-caption"><strong>Prototype thermocycler hardware.</strong> This artifact integrates enclosure geometry, fan cooling, electronics, and thermal-control logic into a bench-scale automation system.</p>
+<section class="artifact-stack thermocycler-artifacts" aria-label="Thermocycler automation artifacts">
+ <article class="artifact-card artifact-card-wide hero-artifact">
+  <p class="artifact-label">CONTROL HARDWARE</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-hardware"><img src="{{ '/assets/images/artifact-thermocycler-front.png' | relative_url }}" alt="Prototype thermocycler hardware with enclosure and electronics" loading="lazy"></div>
+   <figcaption><strong>Thermal-control prototype.</strong> Prototype thermocycler hardware integrating enclosure geometry, fan cooling, electronics, and thermal-control logic into a bench-scale automation system.</figcaption>
+  </figure>
  </article>
- <div class="artifact-grid two-col-artifacts">
-  <article class="artifact-card">
-   <span class="artifact-label">Annotated component image</span>
-   <div class="artifact-image-wrap hardware-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-prototype-annotated.png' | relative_url }}" alt="Annotated thermocycler prototype hardware" loading="lazy"></div>
-   <p class="artifact-caption"><strong>Annotated hardware view.</strong> Numbered labels document the physical subsystem layout and should be verified against the final hardware bill of materials before publication.</p>
-  </article>
-  <article class="artifact-card">
-   <span class="artifact-label">Component legend</span>
-   <div class="artifact-table-wrap compact-table-wrap"><table class="artifact-table"><thead><tr><th>Visible label</th><th>Component</th></tr></thead><tbody>
-    <tr><td>1</td><td>Printed housing / structural base</td></tr>
-    <tr><td>2</td><td>Cooling duct or airflow guide</td></tr>
-    <tr><td>3</td><td>Rear housing / fan path shroud</td></tr>
-    <tr><td>4</td><td>Control board and wiring region</td></tr>
-    <tr><td>5</td><td>Thermal input or sample-region component label to verify</td></tr>
-    <tr><td>6</td><td>Fan</td></tr>
-   </tbody></table></div>
-  </article>
- </div>
- <div class="artifact-grid two-col-artifacts">
-  <article class="artifact-card code-artifact">
-   <span class="artifact-label">Control code</span>
-   <div class="artifact-image-wrap code-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-code-pid-crop.png' | relative_url }}" alt="PID control code excerpt" loading="lazy"></div>
-   <p class="artifact-caption"><strong>Control-code excerpt.</strong> PID logic, thermal-state transitions, and profile execution support the claim that the project involved control implementation, not just CAD or assembly.</p>
-  </article>
-  <article class="artifact-card code-artifact">
-   <span class="artifact-label">Display / feedback code</span>
-   <div class="artifact-image-wrap code-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-code-display-crop.png' | relative_url }}" alt="Display and feedback control code excerpt" loading="lazy"></div>
-   <p class="artifact-caption"><strong>Display/feedback code excerpt.</strong> The interface code makes state, setpoint, measured temperature, and timing visible during bench operation.</p>
-  </article>
- </div>
- <article class="artifact-placeholder-slot full-width-placeholder"><span class="artifact-label">Add setpoint vs. measured-temperature trace</span><p>Final validation figure should show ramp rate, overshoot, settling time, hold stability, and cycle repeatability.</p></article>
+ <article class="artifact-card artifact-card-wide">
+  <p class="artifact-label">COMPONENT VIEW</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-hardware"><img src="{{ '/assets/images/artifact-thermocycler-fan-electronics.png' | relative_url }}" alt="Annotated thermocycler prototype component view" loading="lazy"></div>
+   <figcaption><strong>Annotated component image.</strong> Hardware view showing the fan path, electronics, and enclosure geometry that made the controller physically testable.</figcaption>
+  </figure>
+  <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Label</th><th>Component</th><th>Confidence</th></tr></thead><tbody>
+   <tr><td>1</td><td>Printed housing/base</td><td>visually supported</td></tr>
+   <tr><td>2</td><td>Side shroud / enclosure</td><td>visually supported</td></tr>
+   <tr><td>3</td><td>Cooling duct / airflow channel</td><td>visually supported</td></tr>
+   <tr><td>4</td><td>Control board / electronics</td><td>visually supported</td></tr>
+   <tr><td>5</td><td>Thermal block or sample-region platform</td><td>component label to verify</td></tr>
+   <tr><td>6</td><td>Fan / cooling path</td><td>visually supported</td></tr>
+  </tbody></table></div>
+ </article>
+ <section class="artifact-grid artifact-grid-two code-artifact-grid">
+  <article class="artifact-card code-artifact-card"><p class="artifact-label">CONTROL CODE</p><figure class="artifact-figure"><div class="artifact-image-frame frame-code"><img src="{{ '/assets/images/artifact-thermocycler-pid-code.png' | relative_url }}" alt="PID logic and thermal-state code excerpt" loading="lazy"></div><figcaption><strong>PID and state-transition code excerpt.</strong> Control-code excerpt showing PID logic and thermal-state transitions, supporting the claim that the project involved control implementation.</figcaption></figure></article>
+  <article class="artifact-card code-artifact-card"><p class="artifact-label">DISPLAY / FEEDBACK</p><figure class="artifact-figure"><div class="artifact-image-frame frame-code"><img src="{{ '/assets/images/artifact-thermocycler-display-code.png' | relative_url }}" alt="Thermocycler display and feedback code excerpt" loading="lazy"></div><figcaption><strong>Display and feedback code excerpt.</strong> Interface/output logic for thermal-state feedback; useful as secondary support, not a substitute for validation data.</figcaption></figure></article>
+ </section>
+ <div class="artifact-slot validation-slot"><span>VALIDATION FIGURE</span><strong>Add setpoint vs. measured-temperature trace</strong><p>Final validation figure should show ramp rate, overshoot, settling time, hold stability, and cycle repeatability.</p></div>
 </section>
 
 <section class="insight-block tone-dark"><p>Sensor placement and thermal lag dominated apparent controller performance.</p></section>
@@ -69,6 +59,9 @@ body_class: case-file-page
 ## What I'd do next
 
 <div class="next-iteration-callout"><p>The next iteration should measure closer to the actual sample, not just the thermal block. The engineering decision is whether the controller should be tuned around block temperature or sample-region thermal history, especially when overshoot and settling time disagree.</p></div>
+
+
+
 
 ## Process levers
 
@@ -82,6 +75,7 @@ body_class: case-file-page
 ## What this shifted
 
 <div class="what-changed-block changed-panel"><p>The project taught me to treat temperature control as a validation problem, not just a code/hardware problem. A setpoint is meaningless unless the sample region actually experiences the intended thermal history.</p></div>
+
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Next: Semiconductor Materials Exposure →</a>
