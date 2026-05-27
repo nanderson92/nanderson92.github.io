@@ -14,6 +14,20 @@ subtitle: Substrate/backing screens for <abbr title="isopropyl alcohol">IPA</abb
 body_class: case-file-page
 ---
 
+
+<section class="artifact-panel micromodular-roadmap-overview" aria-label="Micromodular electronics roadmap">
+ <div class="roadmap-overview-copy">
+  <p class="artifact-label">SYSTEM ROADMAP</p>
+  <h2>Where the deposition screen fits</h2>
+  <p>The larger process is to fabricate discrete micromodular components, suspend them in an ink, print them into circuit locations, then analyze placement and route printed interconnects.</p>
+  <p>This case file focuses on the deposition step: choosing substrate/backing conditions that place suspended components in a pattern downstream wiring can actually use.</p>
+ </div>
+ <figure class="roadmap-overview-figure">
+  <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="High-level micromodular electronics roadmap from component fabrication to circuit manufacturing, with deposition step highlighted" loading="lazy">
+  <figcaption><strong>High-level roadmap for micromodular electronics.</strong> The highlighted band marks the deposition step between component fabrication and circuit manufacturing. It frames why the substrate screen is judged by placement, crowding, and interconnect-accessible density rather than by final stain appearance alone.</figcaption>
+ </figure>
+</section>
+
 <section class="artifact-stack flagship-artifacts" aria-label="Micromodular deposition artifacts">
  <article class="artifact-card artifact-card-wide hero-artifact">
   <p class="artifact-label">VIDEO ANALYSIS</p>

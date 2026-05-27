@@ -744,3 +744,67 @@ abbr[title]{text-decoration-thickness:1px;text-underline-offset:.16em;cursor:hel
   .footer-wordmark.wordmark.brand-mark .brand-monogram{width:28px!important;height:28px!important;flex-basis:28px!important;font-size:.7rem!important;}
   .footer-wordmark.wordmark.brand-mark>span:not(.brand-monogram){max-width:155px!important;font-size:.9rem!important;}
 }
+
+
+/* --- Micromodular electronics roadmap insert --- */
+.micromodular-roadmap-overview{
+  display:grid;
+  grid-template-columns:minmax(0, .72fr) minmax(300px, .88fr);
+  gap:clamp(20px, 3vw, 34px);
+  align-items:center;
+  margin-top:0;
+  margin-bottom:clamp(28px, 4vw, 42px);
+  padding:clamp(20px, 3vw, 30px);
+  overflow:visible;
+}
+.micromodular-roadmap-overview .roadmap-overview-copy{
+  display:grid;
+  gap:12px;
+  align-content:center;
+}
+.micromodular-roadmap-overview .roadmap-overview-copy h2{
+  margin:0;
+  font-size:clamp(1.55rem, 2.4vw, 2.35rem);
+  line-height:1.02;
+  letter-spacing:-.055em;
+  color:#0f172a;
+}
+.micromodular-roadmap-overview .roadmap-overview-copy p:not(.artifact-label){
+  margin:0;
+  color:#334155;
+  font-size:clamp(.98rem, 1.2vw, 1.06rem);
+  line-height:1.62;
+}
+.roadmap-overview-figure{
+  margin:0;
+  display:grid;
+  gap:10px;
+  justify-items:center;
+}
+.roadmap-overview-figure img{
+  display:block;
+  width:auto!important;
+  max-width:min(100%, 520px)!important;
+  max-height:620px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  border-radius:18px;
+  border:1px solid rgba(15,23,42,.10);
+  background:#fff;
+  box-shadow:0 14px 34px rgba(15,23,42,.07);
+}
+.roadmap-overview-figure figcaption{
+  max-width:620px;
+  margin:0;
+  color:#334155;
+  font-size:.9rem;
+  line-height:1.58;
+}
+@media (max-width:900px){
+  .micromodular-roadmap-overview{grid-template-columns:1fr;}
+  .roadmap-overview-figure img{max-width:min(100%, 560px)!important;max-height:640px!important;}
+}
+@media (max-width:640px){
+  .micromodular-roadmap-overview{padding:18px;border-radius:22px;}
+  .roadmap-overview-figure img{max-height:none!important;width:100%!important;}
+}
