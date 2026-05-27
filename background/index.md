@@ -11,11 +11,11 @@ last_updated: May 2026
  <article>
   <h2>Why process engineering</h2>
   <p>I study process development for advanced manufacturing. At Filler Lab · Georgia Tech, micromodular printed-electronics work forced me to define inputs, <abbr title="Critical-to-Quality">CTQs</abbr>, screens, and failure modes instead of only describing what I observed.</p>
-  <p>Earlier work at Mayo Clinic · Rochester, MN focused on microfluidic encapsulation throughput and thermocycler automation for biological protocols.</p>
+  <p>At Mayo Clinic · Rochester, MN, microfluidic encapsulation and thermocycler automation taught the same lesson in a biological workflow: a result matters only when the process around it can reproduce it.</p>
  </article>
  <article>
   <h2>Why systems work</h2>
-  <p>The useful question is not only whether a result worked once. It is whether the variables, tools, and people around it can make the result happen again when volume, timing, handoffs, and noise change.</p>
+  <p>The useful question is not only whether a result worked once. It is whether the variables, tools, materials, and people around it can make the result happen again under pressure.</p>
  </article>
  <article>
   <h2>Why future infrastructure</h2>
@@ -40,26 +40,26 @@ last_updated: May 2026
  </div>
 </section>
 
-<section id="qsr-mini-case" class="earlier-work-block artifact-panel standard-card-section">
- <h2>Operator-to-process-engineer arc</h2>
+<section id="earlier-work" class="earlier-work-block artifact-panel standard-card-section">
+ <h2>Before process engineering</h2>
  <div class="two-column-evidence">
-  <article><h3>Quick-Service Restaurant (QSR) operations</h3><p>Peak-hour service taught bottleneck thinking before I had the vocabulary for process flow. One improvement cycle produced a +20% cars/hr increase during peak shifts, based on shift-level throughput tracking, by changing upstream prep, staffing, and bottleneck response.</p><span class="outcome-badge">+20% cars/hr</span></article>
-  <article><h3>Earlier research</h3><p>DNA/PCR assay work gave early exposure to controls, repeatability, protocol discipline, and troubleshooting loops. That experience now sits behind how I treat assays and wet-lab outputs: one clean run is not the same as a controlled process.</p><span class="outcome-badge">PCR controls</span></article>
+  <article id="qsr-mini-case"><h3>Quick-Service Restaurant (<abbr title="Quick-Service Restaurant">QSR</abbr>) operations</h3><p>Peak-hour service taught bottleneck thinking, line balancing, changeover discipline, preventive maintenance, and shipping under pressure. One improvement cycle produced a +20% cars/hr increase during peak shifts, based on shift-level throughput tracking.</p><span class="outcome-badge">+20% cars/hr</span></article>
+  <article><h3>Early assay research</h3><p>DNA/PCR assay work gave early exposure to protocol controls, repeatability, contamination risk, and troubleshooting loops. It stays in the background because the transferable lesson is discipline: control what changes, document what failed, and rerun only after the failure mode is named.</p><span class="outcome-badge">PCR controls</span></article>
  </div>
 </section>
 
 <section class="mcdonalds-mini-case pull-quote-block">
- <p class="system-label">QSR operations mini-case</p>
- <p>Prep, sequencing, staffing, equipment uptime, and handoff timing behaved like a live control problem. That operator instinct now shows up in how I read wet-lab workflows and early manufacturing screens.</p>
+ <p class="system-label">Operator-to-process-engineer arc</p>
+ <p>Visible failure is usually late evidence. Prep, sequencing, staffing, equipment uptime, and handoff timing often decide the outcome before the miss appears. That operator instinct now shows up in how I read wet-lab workflows and early manufacturing screens.</p>
 </section>
 
 <section class="background-tool-sidebar tools-section">
  <div>
   <h2>Tools and how I use them</h2>
-  <p class="tool-rule">How I pick a tool: simplest tool that captures the variable. Python when it needs automation. JMP when it needs explanation.</p>
+  <p class="tool-rule">I pick the simplest tool that captures the variable. Python when the workflow needs automation. JMP when the comparison needs explanation. Aspen when the assumptions have to be visible.</p>
  </div>
  <div class="skill-use-grid logo-tool-grid">
-  <div class="skill-use priority-tool"><span class="tool-logo">Py</span><h3>Python</h3><p>Image analysis, droplet tracking, data processing, plotting, and workflow automation.</p></div>
+  <div class="skill-use"><span class="tool-logo">Py</span><h3>Python</h3><p>Image analysis, droplet tracking, data processing, plotting, and workflow automation.</p></div>
   <div class="skill-use"><span class="tool-logo">M</span><h3>MATLAB</h3><p>Numerical methods, engineering computation, ODE workflows, and course-based modeling.</p></div>
   <div class="skill-use"><span class="tool-logo">J</span><h3>JMP</h3><p><abbr title="Analysis of Variance">ANOVA</abbr>, reliability/statistical analysis, comparisons, and experimental interpretation.</p></div>
   <div class="skill-use"><span class="tool-logo">A</span><h3>Aspen</h3><p>Process simulation, thermodynamics, separations, vapor-liquid equilibrium reasoning, and flowsheet calculations.</p></div>

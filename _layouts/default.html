@@ -71,21 +71,21 @@
    <div>
     <a class="footer-wordmark wordmark brand-mark" href="{{ '/' | relative_url }}"><span class="brand-monogram">NA</span><span>Nathan Anderson</span></a>
     <h2>Building a process, wet-lab, automation, or manufacturing team for 2026?</h2>
-    <p>I’m open to internships, contract work, paid trial projects, and founding-engineer conversations.</p>
+    <p>I’m open to internships, contract sprints, paid trial projects, and founding-engineer conversations.</p>
     <p class="last-updated">Atlanta, GA · open to relocation · last updated May 2026</p>
    </div>
    <nav aria-label="Footer navigation" class="footer-actions">
     <a class="button primary email-button" href="mailto:{{ site.email }}">Email Nathan →</a>
     <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a>
-    <a class="button secondary" href="{{ '/projects/' | relative_url }}">Case Files</a>
-    <a class="button secondary" href="{{ '/background/' | relative_url }}">Background</a>
     <a class="button secondary icon-link" href="{{ site.linkedin }}" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9.5h4v11H3zM9.2 9.5h3.8v1.6h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05v5.4h-4v-4.78c0-1.14-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.86h-4z"/></svg><span>LinkedIn</span></a>
     <a class="button secondary icon-link" href="{{ site.github }}" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9A11.1 11.1 0 0 0 .9 12.16c0 4.98 3.2 9.2 7.65 10.7.56.1.76-.25.76-.54v-1.9c-3.11.69-3.77-1.52-3.77-1.52-.51-1.32-1.25-1.67-1.25-1.67-1.02-.71.08-.7.08-.7 1.13.08 1.72 1.19 1.72 1.19 1 .1 2.28-.74 2.84-1.2.1-.74.39-1.25.7-1.54-2.48-.29-5.1-1.27-5.1-5.62 0-1.24.43-2.25 1.15-3.05-.12-.29-.5-1.45.11-3.01 0 0 .95-.31 3.08 1.16a10.4 10.4 0 0 1 5.6 0c2.13-1.47 3.07-1.16 3.07-1.16.62 1.56.24 2.72.12 3.01.72.8 1.15 1.81 1.15 3.05 0 4.36-2.62 5.32-5.12 5.6.4.36.76 1.05.76 2.12v3.14c0 .3.2.65.77.54a11.25 11.25 0 0 0 7.65-10.7A11.1 11.1 0 0 0 12 .9z"/></svg><span>GitHub</span></a>
+    <a class="button secondary footer-nav-pill" href="{{ '/projects/' | relative_url }}">Case Files</a>
+    <a class="button secondary footer-nav-pill" href="{{ '/background/' | relative_url }}">Background</a>
    </nav>
   </div>
  </footer>
+ <div class="copy-toast" data-copy-toast role="status" aria-live="polite">Email copied</div>
 
- <div id="copy-toast" class="copy-toast" role="status" aria-live="polite" aria-atomic="true">Email copied</div>
  <script>
  const body = document.body;
  const toggle = document.querySelector('.menu-toggle');
@@ -106,7 +106,7 @@
  document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false); });
  document.querySelectorAll('[data-filter]').forEach((button) => { button.addEventListener('click', () => { const value = button.dataset.filter; document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('is-active', b === button)); document.querySelectorAll('[data-tags]').forEach((card) => { const tags = card.dataset.tags.split(' '); card.hidden = value !== 'all' && !tags.includes(value); }); }); });
- document.querySelectorAll('[data-copy]').forEach((button) => { button.addEventListener('click', async () => { const toast = document.querySelector('#copy-toast'); try { await navigator.clipboard.writeText(button.dataset.copy); button.textContent = 'Copied'; if (toast) { toast.textContent = 'Email copied'; toast.classList.add('is-visible'); setTimeout(() => toast.classList.remove('is-visible'), 1600); } setTimeout(() => button.textContent = 'Copy email', 1400); } catch (e) { button.textContent = 'Copy failed'; if (toast) { toast.textContent = 'Copy failed'; toast.classList.add('is-visible'); setTimeout(() => toast.classList.remove('is-visible'), 1600); } } }); });
+ document.querySelectorAll('[data-copy]').forEach((button) => { button.addEventListener('click', async () => { const toast = document.querySelector('[data-copy-toast]'); try { await navigator.clipboard.writeText(button.dataset.copy); button.textContent = 'Copied'; if (toast) { toast.classList.add('is-visible'); setTimeout(() => toast.classList.remove('is-visible'), 1700); } setTimeout(() => button.textContent = 'Copy email', 1400); } catch (e) { button.textContent = 'Copy failed'; } }); });
  </script>
 </body>
 </html>
