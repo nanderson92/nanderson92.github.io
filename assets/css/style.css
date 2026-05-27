@@ -7780,3 +7780,123 @@ html body.home-page footer.site-footer.conversion-footer .button.primary,
 html body.home-page section.cta-band.recruiter-cta.tone-dark .button.primary {
   color: #ffffff !important;
 }
+
+/* === Clean top-left home button ===
+   Keeps the brand clearly clickable without the bulky badge / whiteout look. */
+.topbar-brand.wordmark.brand-mark {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: 38px !important;
+  padding: 4px 9px 4px 4px !important;
+  margin-left: -4px !important;
+  border-radius: 999px !important;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #0f172a !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  transform: none !important;
+  transition: background 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease !important;
+}
+
+.topbar-brand.wordmark.brand-mark::before,
+.topbar-brand.wordmark.brand-mark > span::before,
+.topbar-brand.wordmark.brand-mark > span::after {
+  content: none !important;
+  display: none !important;
+}
+
+.topbar-brand.wordmark.brand-mark .brand-monogram {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 9px !important;
+  flex: 0 0 30px !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(8, 112, 139, 0.34) !important;
+  box-shadow: inset 0 -3px 0 rgba(8, 112, 139, 0.92) !important;
+  font-family: "Space Grotesk", Inter, sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.topbar-brand.wordmark.brand-mark > span:not(.brand-monogram) {
+  max-width: 190px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  color: #0f172a !important;
+  font-family: "Space Grotesk", Inter, sans-serif !important;
+  font-size: 0.96rem !important;
+  font-weight: 780 !important;
+  letter-spacing: -0.035em !important;
+}
+
+.topbar-brand.wordmark.brand-mark::after {
+  content: "Home" !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: 2px !important;
+  padding: 3px 7px !important;
+  border-radius: 999px !important;
+  background: rgba(8, 112, 139, 0.08) !important;
+  border: 1px solid rgba(8, 112, 139, 0.14) !important;
+  color: #08708b !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.62rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+}
+
+.topbar-brand.wordmark.brand-mark:hover,
+.topbar-brand.wordmark.brand-mark:focus-visible {
+  background: rgba(248, 251, 252, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.10) !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07) !important;
+  transform: translateY(-1px) !important;
+}
+
+.topbar-brand.wordmark.brand-mark:hover .brand-monogram,
+.topbar-brand.wordmark.brand-mark:focus-visible .brand-monogram {
+  border-color: rgba(8, 112, 139, 0.55) !important;
+  box-shadow: inset 0 -3px 0 rgba(8, 112, 139, 1), 0 0 0 3px rgba(8, 112, 139, 0.08) !important;
+}
+
+.topbar-brand.wordmark.brand-mark:focus-visible {
+  outline: 3px solid rgba(8, 112, 139, 0.18) !important;
+  outline-offset: 3px !important;
+}
+
+@media (max-width: 1024px) {
+  .topbar-brand.wordmark.brand-mark::after { display: none !important; }
+  .topbar-brand.wordmark.brand-mark > span:not(.brand-monogram) { max-width: 170px !important; }
+}
+
+@media (max-width: 640px) {
+  .topbar-brand.wordmark.brand-mark {
+    margin-left: 0 !important;
+    padding: 4px 8px 4px 4px !important;
+    max-width: min(62vw, 220px) !important;
+  }
+  .topbar-brand.wordmark.brand-mark .brand-monogram {
+    width: 28px !important;
+    height: 28px !important;
+    flex-basis: 28px !important;
+    font-size: 0.7rem !important;
+  }
+  .topbar-brand.wordmark.brand-mark > span:not(.brand-monogram) {
+    max-width: 142px !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* === CTQ spacing safeguard ===
+.hero-proof-pills a, .proof-tag, .badge, .metric-chip-row span { word-spacing: 0.03em; }
+.hero-proof-pills abbr, .metric-chip-row abbr, .card-outcome abbr { margin-left: 0.18em; }
