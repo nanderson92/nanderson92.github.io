@@ -808,3 +808,101 @@ abbr[title]{text-decoration-thickness:1px;text-underline-offset:.16em;cursor:hel
   .micromodular-roadmap-overview{padding:18px;border-radius:22px;}
   .roadmap-overview-figure img{max-height:none!important;width:100%!important;}
 }
+
+/* --- Homepage recent progress readability fix --- */
+.home-page .recent-strip.recent-strip-light{
+  margin:0!important;
+  padding:clamp(42px, 5vw, 68px) 20px!important;
+  background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)!important;
+  border-block:1px solid rgba(15,23,42,.08)!important;
+  color:#0f172a!important;
+}
+.home-page .recent-strip.recent-strip-light .recent-strip-inner{
+  width:min(100% - 40px, 1120px)!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:minmax(180px,.34fr) minmax(0,1fr)!important;
+  gap:clamp(22px,3vw,36px)!important;
+  align-items:start!important;
+  background:transparent!important;
+}
+.home-page .recent-strip.recent-strip-light .system-label{
+  margin:8px 0 0!important;
+  color:#334155!important;
+  font-size:.72rem!important;
+  line-height:1.45!important;
+  letter-spacing:.14em!important;
+  max-width:210px!important;
+}
+.home-page .recent-strip.recent-strip-light ul{
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  list-style:none!important;
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:16px!important;
+}
+.home-page .recent-strip.recent-strip-light li{
+  display:block!important;
+  min-height:132px!important;
+  padding:20px 22px!important;
+  border:1px solid rgba(15,23,42,.13)!important;
+  border-radius:20px!important;
+  background:#ffffff!important;
+  box-shadow:0 12px 28px rgba(15,23,42,.055)!important;
+}
+.home-page .recent-strip.recent-strip-light li strong{
+  display:block!important;
+  margin:0 0 8px!important;
+  color:#0f172a!important;
+  font-size:1.02rem!important;
+  line-height:1.28!important;
+  letter-spacing:-.018em!important;
+  font-weight:850!important;
+}
+.home-page .recent-strip.recent-strip-light li strong::before{
+  content:""!important;
+  display:inline-block!important;
+  width:.58em!important;
+  height:.58em!important;
+  border-radius:999px!important;
+  background:#d97706!important;
+  margin-right:.58em!important;
+  vertical-align:.06em!important;
+}
+.home-page .recent-strip.recent-strip-light li span{
+  display:block!important;
+  color:#334155!important;
+  opacity:1!important;
+  visibility:visible!important;
+  font-size:.94rem!important;
+  line-height:1.58!important;
+  font-weight:520!important;
+  text-shadow:none!important;
+}
+@media (max-width:900px){
+  .home-page .recent-strip.recent-strip-light .recent-strip-inner{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+  .home-page .recent-strip.recent-strip-light .system-label{
+    margin:0!important;
+    max-width:none!important;
+  }
+}
+@media (max-width:640px){
+  .home-page .recent-strip.recent-strip-light{
+    padding:34px 16px!important;
+  }
+  .home-page .recent-strip.recent-strip-light .recent-strip-inner{
+    width:100%!important;
+  }
+  .home-page .recent-strip.recent-strip-light ul{
+    grid-template-columns:1fr!important;
+  }
+  .home-page .recent-strip.recent-strip-light li{
+    min-height:0!important;
+    padding:18px!important;
+  }
+}
