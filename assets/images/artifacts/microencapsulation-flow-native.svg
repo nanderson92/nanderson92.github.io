@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Site-native microencapsulation process schematic</title>
+<desc id="desc">A simplified flow-focusing microfluidic device shows alginate/cell core flow, PEG shell flow, oil focusing flow, crosslinker addition, and stabilized capsules.</desc>
+<rect width="1200" height="520" rx="38" fill="#f8fbfc"/>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#08708b"/></marker>
+  <radialGradient id="cap" cx="45%" cy="35%"><stop offset="0" stop-color="#fff"/><stop offset="0.42" stop-color="#dceff4"/><stop offset="1" stop-color="#8fc7d4"/></radialGradient>
+</defs>
+<g font-family="Inter, Arial, sans-serif">
+  <text x="70" y="66" font-size="26" font-weight="900" fill="#0f172a">Flow-focusing encapsulation logic</text>
+  <text x="70" y="98" font-size="18" fill="#475569">Streams are shown as process inputs, not a literal device drawing.</text>
+</g>
+<path d="M80 240 H360 C430 240 450 260 500 260 H760" stroke="#42b883" stroke-width="54" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 170 L360 238" stroke="#42b883" stroke-width="38" fill="none" stroke-linecap="round"/>
+<path d="M120 350 L360 282" stroke="#42b883" stroke-width="38" fill="none" stroke-linecap="round"/>
+<path d="M80 260 H760" stroke="#f5c7d8" stroke-width="28" fill="none" stroke-linecap="round"/>
+<path d="M100 260 H362" stroke="#f7e2c9" stroke-width="12" fill="none" stroke-linecap="round"/>
+<g font-family="Inter, Arial, sans-serif" font-size="18" fill="#0f172a" font-weight="800">
+  <text x="86" y="142">PEG shell stream</text>
+  <text x="86" y="388">Oil focusing stream</text>
+  <text x="120" y="235">Alginate + cells core</text>
+</g>
+<g stroke="#08708b" stroke-width="4" marker-end="url(#arrow)" fill="none">
+  <path d="M190 152 l82 54"/>
+  <path d="M190 364 l82 -54"/>
+  <path d="M250 236 h110"/>
+</g>
+<rect x="760" y="178" width="92" height="164" rx="12" fill="#e2e8f0"/>
+<rect x="910" y="178" width="92" height="164" rx="12" fill="#e2e8f0"/>
+<path d="M806 142 V218" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M956 142 V218" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="806" y="122" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#0f172a">Oil</text>
+<text x="956" y="122" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#0f172a">DTT / crosslinker</text>
+<g transform="translate(808 260)">
+  <circle r="38" fill="url(#cap)" stroke="#08708b" stroke-width="3"/>
+  <circle cx="-12" cy="-6" r="8" fill="#f7bd93"/><circle cx="6" cy="-12" r="8" fill="#f7bd93"/><circle cx="11" cy="8" r="8" fill="#f7bd93"/><circle cx="-7" cy="12" r="8" fill="#f7bd93"/>
+</g>
+<g transform="translate(956 260)">
+  <circle r="38" fill="url(#cap)" stroke="#08708b" stroke-width="3"/>
+  <circle cx="-12" cy="-6" r="8" fill="#f7bd93"/><circle cx="6" cy="-12" r="8" fill="#f7bd93"/><circle cx="11" cy="8" r="8" fill="#f7bd93"/><circle cx="-7" cy="12" r="8" fill="#f7bd93"/>
+</g>
+<g transform="translate(1090 260)">
+  <circle r="48" fill="url(#cap)" stroke="#08708b" stroke-width="3"/>
+  <circle cx="-15" cy="-7" r="9" fill="#f7bd93"/><circle cx="6" cy="-16" r="9" fill="#f7bd93"/><circle cx="18" cy="8" r="9" fill="#f7bd93"/><circle cx="-7" cy="17" r="9" fill="#f7bd93"/>
+</g>
+<path d="M1004 260 H1036" stroke="#08708b" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="1048" y="360" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#0f172a">Stabilized capsule</text>
+</svg>

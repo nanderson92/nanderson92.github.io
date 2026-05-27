@@ -36,14 +36,14 @@ body_class: case-file-page
 <div class="next-iteration-callout"><p>The next iteration should define a small characterization control plan for each deposition change: one morphology check, one structure/composition check, and one pass/fail criterion. The engineering decision is which film response justifies changing the growth condition.</p></div>
 
 <section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Materials characterization plot area" loading="lazy"><figcaption>Artifact placeholder — replace with a real characterization trend, roughness, composition, or response comparison.</figcaption></figure>
- <figure><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual" loading="lazy"><figcaption>Artifact placeholder — replace with a real film, substrate, SEM/optical, or characterization image.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Materials workflow schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real deposition-condition → film-response → characterization workflow.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Materials characterization plot area" loading="lazy"><figcaption>Add characterization trend, roughness, composition, or response comparison once data are cleared for display.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual" loading="lazy"><figcaption>Add film, substrate, SEM/optical, or characterization image once available.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Materials workflow schematic area" loading="lazy"><figcaption>Add deposition-condition → film-response → characterization workflow once the final analysis path is ready.</figcaption></figure>
 </section>
 
 <section class="artifact-link-slot">
  <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+ <span>Add poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
 </section>
 
 

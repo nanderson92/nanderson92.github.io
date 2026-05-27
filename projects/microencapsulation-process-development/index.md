@@ -22,8 +22,31 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
-
-
+<section class="artifact-stack" aria-label="Microencapsulation artifacts">
+ <article class="artifact-card artifact-card-hero">
+  <span class="artifact-label">Microscopy · Figure 1</span>
+  <div class="artifact-image-wrap microscopy-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/microcapsule-microscopy.jpg' | relative_url }}" alt="Representative hydrogel microcapsules from microfluidic encapsulation workflow" loading="lazy"></div>
+  <p class="artifact-caption"><strong>Figure 1. Representative hydrogel microcapsules from the microfluidic encapsulation workflow.</strong> This image shows real capsule morphology, visual process output, and the type of microscopy evidence used for yield/quality assessment.</p>
+  <p class="artifact-limitation"><strong>Publication cleanup:</strong> Add final scale bar, condition, flow rate, CaCl₂ concentration, and run ID before public publication if not already embedded.</p>
+ </article>
+ <div class="artifact-grid two-col-artifacts">
+  <article class="artifact-card">
+   <span class="artifact-label">Quantitative artifact · Figure 2</span>
+   <div class="artifact-image-wrap chart-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/peg-shell-thickness-flowrate.png' | relative_url }}" alt="PEG shell thickness versus shell flow rate chart" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> Use this chart as quantitative evidence that process inputs shift capsule structure, but revise the final version with n, error-bar definition, p-value threshold, and clear legend labels.</p>
+  </article>
+  <article class="artifact-card">
+   <span class="artifact-label">Mechanism schematic · Figure 3</span>
+   <div class="artifact-image-wrap schematic-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/alginate-hardening-concept.png' | relative_url }}" alt="Alginate core hardening concept schematic" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Figure 3. Alginate-core hardening concept.</strong> Calcium-mediated crosslinking converts a liquid alginate core into a mechanically stabilized hydrogel core.</p>
+  </article>
+ </div>
+ <article class="artifact-card">
+  <span class="artifact-label">Site-native process schematic</span>
+  <div class="artifact-image-wrap schematic-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/microencapsulation-flow-native.svg' | relative_url }}" alt="Site-native schematic of microfluidic encapsulation streams" loading="lazy"></div>
+  <p class="artifact-caption"><strong>Microfluidic encapsulation flow logic.</strong> Recreated as a site-native schematic instead of embedding an ownership-unclear reference image. It shows core, shell, oil, and crosslinker inputs as process levers for capsule formation.</p>
+ </article>
+</section>
 
 <section class="insight-block tone-dark"><p>Faster capsule generation was only useful when flow ratio, droplet formation, crosslink timing, and collection stayed inside a usable operating window.</p></section>
 
@@ -35,17 +58,14 @@ body_class: case-file-page
  <p>The next iteration should convert yield categories into a simple control plan: acceptable capsule morphology, coalescence limit, collection timing, and microscopy sampling cadence. The engineering decision is whether a faster run stays inside the usable-yield window without hiding new defect classes.</p>
 </div>
 
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Microencapsulation measurement plot area" loading="lazy"><figcaption>Artifact placeholder — replace with a real throughput, yield, flow-ratio, or shell-thickness chart.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Capsule microscopy image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real capsule microscopy, device, run, or QC image.</figcaption></figure>
- <figure><img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Microfluidic flow schematic" loading="lazy"><figcaption>Flow schematic area for device geometry, streams, and crosslinking steps.</figcaption></figure>
-</section>
+## Before / after metric table
 
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
-</section>
-
+<div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Metric</th><th>Baseline</th><th>Improved</th><th>Decision use</th></tr></thead><tbody>
+<tr><td>Capsule generation rate</td><td>to be filled</td><td>20× baseline</td><td>Shows whether tooling and flow changes made the workflow meaningfully faster.</td></tr>
+<tr><td>Usable yield</td><td>to be filled</td><td>~50% relative improvement</td><td>Checks that speed did not hide unacceptable morphology or handling failures.</td></tr>
+<tr><td>Main process levers</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>Defines which inputs belong in the next control plan.</td></tr>
+<tr><td>Defect classes</td><td>coalesced, unstable, malformed, handling-damaged</td><td>coalesced, unstable, malformed, handling-damaged</td><td>Keeps the throughput claim tied to usable capsules instead of total capsules.</td></tr>
+</tbody></table></div>
 
 ## Process levers
 
@@ -66,7 +86,6 @@ Faster throughput was not automatically better. Speed only mattered when flow ra
 <div class="what-changed-block changed-panel">
  <p>The project moved from trying to make capsules faster to defining which flow and crosslinking conditions made faster capsule generation usable.</p>
 </div>
-
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Next: Printed Interconnect Reliability →</a>

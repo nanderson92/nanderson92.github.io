@@ -22,8 +22,45 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
-
-
+<section class="artifact-stack" aria-label="Thermocycler artifacts">
+ <article class="artifact-card artifact-card-hero">
+  <span class="artifact-label">Control hardware</span>
+  <div class="artifact-image-wrap hardware-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-prototype-front.png' | relative_url }}" alt="Prototype thermocycler automation hardware" loading="lazy"></div>
+  <h2>Thermal-control prototype</h2>
+  <p class="artifact-caption"><strong>Prototype thermocycler hardware.</strong> This artifact integrates enclosure geometry, fan cooling, electronics, and thermal-control logic into a bench-scale automation system.</p>
+ </article>
+ <div class="artifact-grid two-col-artifacts">
+  <article class="artifact-card">
+   <span class="artifact-label">Annotated component image</span>
+   <div class="artifact-image-wrap hardware-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-prototype-annotated.png' | relative_url }}" alt="Annotated thermocycler prototype hardware" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Annotated hardware view.</strong> Numbered labels document the physical subsystem layout and should be verified against the final hardware bill of materials before publication.</p>
+  </article>
+  <article class="artifact-card">
+   <span class="artifact-label">Component legend</span>
+   <div class="artifact-table-wrap compact-table-wrap"><table class="artifact-table"><thead><tr><th>Visible label</th><th>Component</th></tr></thead><tbody>
+    <tr><td>1</td><td>Printed housing / structural base</td></tr>
+    <tr><td>2</td><td>Cooling duct or airflow guide</td></tr>
+    <tr><td>3</td><td>Rear housing / fan path shroud</td></tr>
+    <tr><td>4</td><td>Control board and wiring region</td></tr>
+    <tr><td>5</td><td>Thermal input or sample-region component label to verify</td></tr>
+    <tr><td>6</td><td>Fan</td></tr>
+   </tbody></table></div>
+  </article>
+ </div>
+ <div class="artifact-grid two-col-artifacts">
+  <article class="artifact-card code-artifact">
+   <span class="artifact-label">Control code</span>
+   <div class="artifact-image-wrap code-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-code-pid-crop.png' | relative_url }}" alt="PID control code excerpt" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Control-code excerpt.</strong> PID logic, thermal-state transitions, and profile execution support the claim that the project involved control implementation, not just CAD or assembly.</p>
+  </article>
+  <article class="artifact-card code-artifact">
+   <span class="artifact-label">Display / feedback code</span>
+   <div class="artifact-image-wrap code-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/thermocycler-code-display-crop.png' | relative_url }}" alt="Display and feedback control code excerpt" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Display/feedback code excerpt.</strong> The interface code makes state, setpoint, measured temperature, and timing visible during bench operation.</p>
+  </article>
+ </div>
+ <article class="artifact-placeholder-slot full-width-placeholder"><span class="artifact-label">Add setpoint vs. measured-temperature trace</span><p>Final validation figure should show ramp rate, overshoot, settling time, hold stability, and cycle repeatability.</p></article>
+</section>
 
 <section class="insight-block tone-dark"><p>Sensor placement and thermal lag dominated apparent controller performance.</p></section>
 
@@ -32,18 +69,6 @@ body_class: case-file-page
 ## What I'd do next
 
 <div class="next-iteration-callout"><p>The next iteration should measure closer to the actual sample, not just the thermal block. The engineering decision is whether the controller should be tuned around block temperature or sample-region thermal history, especially when overshoot and settling time disagree.</p></div>
-
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/thermocycler-profile.svg' | relative_url }}" alt="Thermocycler temperature profile area" loading="lazy"><figcaption>Artifact placeholder — replace with a real temperature-vs-time graph showing setpoint, measured temperature, overshoot, ramp rate, and hold band.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Thermocycler prototype image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real prototype hardware, thermal-block, sensor-placement, or wiring photo.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Thermal control schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real controller, heater/cooler, sensor, and sample-region thermal-path schematic.</figcaption></figure>
-</section>
-
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
-</section>
-
 
 ## Process levers
 
@@ -57,7 +82,6 @@ body_class: case-file-page
 ## What this shifted
 
 <div class="what-changed-block changed-panel"><p>The project taught me to treat temperature control as a validation problem, not just a code/hardware problem. A setpoint is meaningless unless the sample region actually experiences the intended thermal history.</p></div>
-
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Next: Semiconductor Materials Exposure →</a>

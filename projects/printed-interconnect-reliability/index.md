@@ -21,32 +21,29 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
+<section class="artifact-card artifact-card-hero" aria-label="Four-point resistance testing method">
+ <span class="artifact-label">Method · four-point resistance testing</span>
+ <div class="artifact-image-wrap schematic-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/four-point-probe-method.svg' | relative_url }}" alt="Four-point probe method diagram" loading="lazy"></div>
+ <p class="artifact-caption"><strong>Measurement method: four-point resistance testing.</strong> Four-point probe logic separates current sourcing from voltage sensing, reducing contact-resistance artifacts when evaluating printed-line resistance and drift.</p>
+</section>
 
+<section class="artifact-placeholder-grid" aria-label="Missing printed interconnect artifacts">
+ <article class="artifact-placeholder-slot"><span class="artifact-label">Add resistance drift plot</span><p>Final figure should show normalized resistance versus stress interval, with pass/monitor/fail thresholds and artifact flags.</p></article>
+ <article class="artifact-placeholder-slot"><span class="artifact-label">Add microscope image of printed line</span><p>Use a real printed-line or probe-contact image to connect resistance behavior back to geometry, continuity, and handling state.</p></article>
+ <article class="artifact-placeholder-slot"><span class="artifact-label">Add stress protocol table</span><p>Record temperature, humidity, dwell time, measurement cadence, and number of lines per condition.</p></article>
+ <article class="artifact-placeholder-slot"><span class="artifact-label">Add pass/monitor/fail example</span><p>Include one representative trace for each classification once the data set is locked.</p></article>
+</section>
 
 <section class="artifact-panel setup-snapshot">
  <h2>What good looks like</h2>
  <p>Time-zero continuity is not enough. The screen classifies resistance drift, sudden failure, intermittent readings, and artifact states so printed interconnect data can feed back into printing, curing, handling, and environmental-stress decisions.</p>
 </section>
 
-
-
 <section class="insight-block tone-dark"><p>Time-zero continuity is not enough. Reliability data has to classify drift, failure, and artifacts before it can point back to printing or cure decisions.</p></section>
 
 ## What I'd do next
 
 <div class="next-iteration-callout"><p>The next iteration should set candidate pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The engineering decision is whether failure class can reliably point to a process correction instead of only describing a dead line.</p></div>
-
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Resistance drift plot area" loading="lazy"><figcaption>Artifact placeholder — replace with a real normalized resistance-drift and failure-timing plot.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Printed interconnect image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real printed-line, probe-layout, or device photo.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Reliability workflow schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real stress interval, re-measurement, and classification workflow diagram.</figcaption></figure>
-</section>
-
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
-</section>
-
 
 ## Screen flow
 
@@ -101,7 +98,6 @@ body_class: case-file-page
 ## What this shifted
 
 <div class="what-changed-block changed-panel"><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></div>
-
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Next: Thermocycler Process Automation →</a>

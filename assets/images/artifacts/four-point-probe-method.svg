@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Four-point probe measurement method</title>
+  <desc id="desc">Current is sourced through the outer probes while voltage is sensed through the inner probes to reduce contact-resistance artifacts.</desc>
+  <rect width="960" height="520" rx="34" fill="#f8fbfc"/>
+  <rect x="96" y="372" width="768" height="44" rx="16" fill="#d7ecf4" stroke="#08708b" stroke-width="4"/>
+  <path d="M130 416 C180 455 235 455 286 416" fill="none" stroke="#08708b" stroke-width="3" opacity="0.55"/>
+  <path d="M674 416 C725 455 780 455 830 416" fill="none" stroke="#08708b" stroke-width="3" opacity="0.55"/>
+  <g fill="#fff" stroke="#0f172a" stroke-width="4">
+    <path d="M170 92 h64 l-20 280 h-24z"/>
+    <path d="M356 92 h64 l-20 280 h-24z"/>
+    <path d="M540 92 h64 l-20 280 h-24z"/>
+    <path d="M726 92 h64 l-20 280 h-24z"/>
+  </g>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">
+    <text x="202" y="78" text-anchor="middle">I+</text>
+    <text x="388" y="78" text-anchor="middle">V+</text>
+    <text x="572" y="78" text-anchor="middle">V−</text>
+    <text x="758" y="78" text-anchor="middle">I−</text>
+  </g>
+  <g stroke="#08708b" stroke-width="5" fill="none">
+    <path d="M202 92 C202 38 758 38 758 92"/>
+    <path d="M388 92 C388 138 572 138 572 92"/>
+  </g>
+  <circle cx="480" cy="38" r="26" fill="#fff" stroke="#08708b" stroke-width="4"/>
+  <text x="480" y="47" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#08708b">I</text>
+  <circle cx="480" cy="138" r="26" fill="#fff" stroke="#08708b" stroke-width="4"/>
+  <text x="480" y="147" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#08708b">V</text>
+  <g font-family="Inter, Arial, sans-serif" fill="#334155" font-size="20" font-weight="700">
+    <line x1="240" y1="340" x2="344" y2="340" stroke="#64748b" stroke-width="3"/>
+    <line x1="432" y1="340" x2="528" y2="340" stroke="#64748b" stroke-width="3"/>
+    <line x1="616" y1="340" x2="720" y2="340" stroke="#64748b" stroke-width="3"/>
+    <text x="292" y="328" text-anchor="middle">spacing</text>
+    <text x="480" y="328" text-anchor="middle">sense gap</text>
+    <text x="668" y="328" text-anchor="middle">spacing</text>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="96" y="468" font-size="22" font-weight="900" fill="#0f172a">Printed conductive line / film</text>
+    <text x="96" y="496" font-size="18" fill="#475569">Outer probes source current; inner probes measure voltage across the active section.</text>
+  </g>
+</svg>

@@ -23,9 +23,34 @@ body_class: case-file-page
  <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
-
-
-
+<section class="artifact-stack flagship-artifacts" aria-label="Micromodular deposition artifacts">
+ <article class="artifact-card artifact-card-hero">
+  <span class="artifact-label">Video analysis · Figure 1</span>
+  <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/microdevice-trajectory-overlay.png' | relative_url }}" alt="Microdevice trajectory overlay on microscope frame" loading="lazy"></div>
+  <p class="artifact-caption"><strong>Figure 1. Video-derived microdevice trajectories overlaid on a microscope frame.</strong> The droplet center is marked, allowing device motion to be decomposed into radial and tangential components. This converts a qualitative drying/deposition video into a substrate-screening artifact.</p>
+  <dl class="artifact-meta">
+   <div><dt>Solvent</dt><dd>IPA</dd></div>
+   <div><dt>Droplet volume</dt><dd>to be filled</dd></div>
+   <div><dt>Substrate/backing</dt><dd>to be filled</dd></div>
+   <div><dt>Frame rate</dt><dd>to be filled</dd></div>
+   <div><dt>Calibration</dt><dd>to be filled</dd></div>
+   <div><dt>Output metrics</dt><dd>radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</dd></div>
+  </dl>
+ </article>
+ <div class="artifact-grid two-col-artifacts">
+  <article class="artifact-card">
+   <span class="artifact-label">Dashboard · Figure 2</span>
+   <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard from tracked microdevice trajectories" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Figure 2. Group motion dashboard extracted from tracked microdevice trajectories.</strong> The dashboard summarizes population speed, radial velocity, angular velocity tendency, and tracking coverage over time, allowing deposition behavior to be compared across process conditions.</p>
+  </article>
+  <article class="artifact-card">
+   <span class="artifact-label">Velocity decomposition · Figure 3</span>
+   <div class="artifact-image-wrap"><img class="artifact-image" src="{{ '/assets/images/artifacts/radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity decomposition" loading="lazy"></div>
+   <p class="artifact-caption"><strong>Figure 3. Radial and tangential velocity decomposition.</strong> Positive radial velocity indicates outward transport from the droplet center; tangential velocity captures circumferential motion. Convert px/s to µm/s later if calibration is available.</p>
+  </article>
+ </div>
+ <p class="artifact-limitation"><strong>Limitation:</strong> These plots currently represent a preliminary run-level analysis. The next step is replicate-backed comparison across substrate/backing conditions using fixed droplet volume, device loading, frame rate, and calibration.</p>
+</section>
 
 <section class="insight-block tone-dark"><p>Boundary conditions controlled the outcome more than the final stain suggested. The deposition problem became a screen for contact-line history, drainage signature, and interconnect-accessible placement.</p></section>
 
@@ -36,28 +61,6 @@ body_class: case-file-page
 <div class="next-iteration-callout">
  <p>The next iteration should set a replicate-backed edge/center ratio and density-uniformity threshold, then compare AAO-like skins against cheaper and less brittle porous supports. The engineering decision is whether the substrate can preserve placement while remaining compatible with downstream interconnect routing.</p>
 </div>
-
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure>
-  <img src="{{ '/assets/images/artifact-measurement-plot.svg' | relative_url }}" alt="Measurement plot artifact area" loading="lazy">
-  <figcaption>Artifact placeholder — replace with a real measurement plot, trace, histogram, or validation curve.</figcaption>
- </figure>
- <figure>
-  <img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Device or microscopy image artifact area" loading="lazy">
-  <figcaption>Artifact placeholder — replace with a real lab, microscope, device, capsule, printed-line, or run photo.</figcaption>
- </figure>
- <figure>
-  <img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Flow or schematic artifact area" loading="lazy">
-  <figcaption>Artifact placeholder — replace with a real screen, workflow, setup schematic, or control-logic diagram.</figcaption>
- </figure>
-</section>
-
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
-</section>
-
-
 
 <section class="ownership-callout ownership-callout-large">
  <p>I designed the experiments from scratch: substrate/backing comparisons, top-view and side-view video capture, Python/ImageJ analysis, and placement metrics tied to downstream interconnect feasibility.</p>
@@ -105,7 +108,6 @@ Good deposition means uniform areal density, low edge bias, usable placement for
 <div class="what-changed-block changed-panel">
  <p>This work shifted the project from judging substrates by final visual stains to screening them by video-derived contact-line behavior, drainage/evaporation signatures, and placement metrics tied to interconnect feasibility.</p>
 </div>
-
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Next: Stem-Cell Microencapsulation →</a>

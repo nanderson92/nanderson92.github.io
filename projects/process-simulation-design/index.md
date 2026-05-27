@@ -36,14 +36,14 @@ body_class: case-file-page
 <div class="next-iteration-callout"><p>The next iteration should make each model assumption testable with one sensitivity plot and one decision statement. The engineering decision is which input would change the recommended flowsheet.</p></div>
 
 <section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Simulation sensitivity plot area" loading="lazy"><figcaption>Artifact placeholder — replace with a real sensitivity, recovery, purity, duty, or operating-condition comparison.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Process equipment or data image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real process-equipment image, Aspen screenshot crop, or design artifact.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Process simulation schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real PFD, balance structure, or unit-operation chain.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Simulation sensitivity plot area" loading="lazy"><figcaption>Add sensitivity, recovery, purity, duty, or operating-condition comparison once the simulation basis is locked.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Process equipment or data image area" loading="lazy"><figcaption>Add process-equipment image, Aspen screenshot crop, or design artifact once available.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Process simulation schematic area" loading="lazy"><figcaption>Add PFD, balance structure, or unit-operation chain once the final flowsheet is ready.</figcaption></figure>
 </section>
 
 <section class="artifact-link-slot">
  <strong>External artifact slot</strong>
- <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+ <span>Add poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
 </section>
 
 
