@@ -5,14 +5,27 @@ layout: default
 <section class="page-hero {{ page.hero_class }}">
  <div class="page-hero-inner">
  {% if page.url contains '/projects/' and page.url != '/projects/' %}
+  {% assign prev_title = nil %}{% assign prev_url = nil %}{% assign next_title = nil %}{% assign next_url = nil %}
+  {% case page.url %}
+   {% when '/projects/microencapsulation-process-development/' %}{% assign prev_title = 'Process Simulation and Design' %}{% assign prev_url = '/projects/process-simulation-design/' %}{% assign next_title = 'Micromodular Electronics Deposition' %}{% assign next_url = '/projects/micromodular-deposition/' %}
+   {% when '/projects/micromodular-deposition/' %}{% assign prev_title = 'Stem-Cell Microencapsulation' %}{% assign prev_url = '/projects/microencapsulation-process-development/' %}{% assign next_title = 'Printed Interconnect Reliability' %}{% assign next_url = '/projects/printed-interconnect-reliability/' %}
+   {% when '/projects/printed-interconnect-reliability/' %}{% assign prev_title = 'Micromodular Electronics Deposition' %}{% assign prev_url = '/projects/micromodular-deposition/' %}{% assign next_title = 'Thermocycler Process Automation' %}{% assign next_url = '/projects/thermocycler-process-automation/' %}
+   {% when '/projects/thermocycler-process-automation/' %}{% assign prev_title = 'Printed Interconnect Reliability' %}{% assign prev_url = '/projects/printed-interconnect-reliability/' %}{% assign next_title = 'Thin-Film Semiconductor Research' %}{% assign next_url = '/projects/thin-film-semiconductor-research/' %}
+   {% when '/projects/thin-film-semiconductor-research/' %}{% assign prev_title = 'Thermocycler Process Automation' %}{% assign prev_url = '/projects/thermocycler-process-automation/' %}{% assign next_title = 'Droplet Image Analysis Workflows' %}{% assign next_url = '/projects/droplet-image-analysis-workflows/' %}
+   {% when '/projects/droplet-image-analysis-workflows/' %}{% assign prev_title = 'Thin-Film Semiconductor Research' %}{% assign prev_url = '/projects/thin-film-semiconductor-research/' %}{% assign next_title = 'Process Simulation and Design' %}{% assign next_url = '/projects/process-simulation-design/' %}
+   {% when '/projects/process-simulation-design/' %}{% assign prev_title = 'Droplet Image Analysis Workflows' %}{% assign prev_url = '/projects/droplet-image-analysis-workflows/' %}{% assign next_title = 'Stem-Cell Microencapsulation' %}{% assign next_url = '/projects/microencapsulation-process-development/' %}
+  {% endcase %}
+ <nav class="case-file-topnav" aria-label="Case file navigation">
+  {% if prev_url %}<a href="{{ prev_url | relative_url }}">← Previous: {{ prev_title }}</a>{% endif %}
+  <a href="{{ '/projects/' | relative_url }}">All case files</a>
+  {% if next_url %}<a href="{{ next_url | relative_url }}">Next: {{ next_title }} →</a>{% endif %}
+ </nav>
  <div class="case-file-meta-row">
- <div class="case-top-nav" aria-label="Case file navigation">
- {% if page.previous_case_url %}<a class="breadcrumb-link" href="{{ page.previous_case_url | relative_url }}">← Previous: {{ page.previous_case_title }}</a>{% endif %}
- <a class="breadcrumb-link" href="{{ '/projects/' | relative_url }}">All case files</a>
- {% if page.next_case_url %}<a class="breadcrumb-link" href="{{ page.next_case_url | relative_url }}">Next: {{ page.next_case_title }} →</a>{% endif %}
+  <a class="breadcrumb-link" href="{{ '/projects/' | relative_url }}">← All case files</a>
+  <span>Last updated: {{ page.last_updated | default: 'May 2026' }}{% if page.date_range %} · Project active: {{ page.date_range }}{% endif %}</span>
  </div>
- <span>Last updated: {{ page.last_updated | default: 'May 2026' }} · Project active: {{ page.date_range | default: 'active' }}</span>
- </div>
+ {% elsif page.last_updated %}
+ <p class="page-date-stamp">Last updated: {{ page.last_updated }}</p>
  {% endif %}
  {% if page.category or page.date_range %}
  <p class="system-label page-meta-label">{% if page.category %}<span>{{ page.category }}</span>{% endif %}{% if page.date_range %}<span>{{ page.date_range }}</span>{% endif %}</p>

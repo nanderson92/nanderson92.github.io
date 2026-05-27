@@ -13,7 +13,7 @@ This compact project captures client-facing consulting work through Consult Your
 <div class="selected-outcomes compact-selected-outcomes">
  <p class="system-label small">SELECTED OUTCOME</p>
  <div class="metric-strip">
- <span><strong>+400%</strong> social media engagement</span>
+  <span><strong>+400%</strong> social media engagement</span>
  </div>
 </div>
 
