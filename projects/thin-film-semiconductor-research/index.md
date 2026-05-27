@@ -4,14 +4,30 @@ title: Semiconductor Materials Exposure
 category: Materials · semiconductors · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Process response</span><span>Characterization matrix</span>'
+description: Semiconductor materials case file connecting deposition variables to characterization readouts and film-response decisions.
 subtitle: Materials work connecting deposition conditions to morphology, phase, composition, and structural readouts.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot"><h2>What good looks like</h2><p>Growth conditions become useful only when they can be connected to measurable film response. The case file frames deposition variables against characterization readouts without overclaiming what one tool can prove.</p></section>
+<section class="artifact-panel setup-snapshot">
+ <h2>The setup</h2>
+ <ul class="snapshot-list">
+  <li><strong>System:</strong> thin-film and semiconductor-materials work where deposition conditions are tied to characterization readouts.</li>
+  <li><strong>Inputs handled:</strong> growth condition, substrate state, film morphology, phase/composition signals, and process comparison.</li>
+  <li><strong>Outputs:</strong> a characterization matrix that separates what each tool can show from what it cannot prove alone.</li>
+ </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
 
 
 
-<section class="insight-block"><p>Characterization is useful when each readout answers a process question: morphology, composition, structure, or whether the growth condition should change.</p></section>
+<section class="artifact-panel setup-snapshot"><h2>What good looks like</h2><p>Growth conditions become useful only when they can be connected to measurable film response. The case file frames deposition variables against characterization readouts without overclaiming what one tool can prove.</p></section>
+
+
+
+<section class="insight-block tone-dark"><p>Characterization is useful when each readout answers a process question: morphology, composition, structure, or whether the growth condition should change.</p></section>
 
 <section class="mini-flow-card"><h2>Materials screen flow</h2><div class="mini-flow"><span>Growth condition</span><b>→</b><span>Film response</span><b>→</b><span>Characterization</span><b>→</b><span>Pass/fail readout</span><b>→</b><span>Next run</span></div></section>
 
@@ -24,6 +40,12 @@ subtitle: Materials work connecting deposition conditions to morphology, phase, 
  <figure><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual" loading="lazy"><figcaption>Artifact placeholder — replace with a real film, substrate, SEM/optical, or characterization image.</figcaption></figure>
  <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Materials workflow schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real deposition-condition → film-response → characterization workflow.</figcaption></figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 ## Characterization matrix
 

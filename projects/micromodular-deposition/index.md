@@ -4,24 +4,30 @@ title: Micromodular Electronics Deposition
 category: Wet processing · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Screening framework</span><span>Image-derived droplet CTQs</span>'
-subtitle: Substrate/backing screens for IPA droplet deposition of suspended microdevices before printed interconnect routing.
+description: Substrate and backing screens for IPA droplet deposition of suspended microdevices, using video-derived droplet CTQs and placement metrics.
+subtitle: Substrate/backing screens for <abbr title="isopropyl alcohol">IPA</abbr> droplet deposition of suspended microdevices before printed interconnect routing.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot">
+<section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> IPA droplet deposition of suspended microdevices on substrate/backing candidates.</li>
+  <li><strong>System:</strong> <abbr title="isopropyl alcohol">IPA</abbr> droplet deposition of suspended microdevices on substrate/backing candidates.</li>
   <li><strong>Inputs varied:</strong> substrate, backing condition, droplet volume, and particle/device loading state.</li>
-  <li><strong>Metrics extracted:</strong> r(t)/r0, contact-line regime, edge/center device ratio, qualitative repeatability, and final deposition pattern.</li>
-  <li><strong>Current decision:</strong> prioritize porous AAO-like drainage conditions over glass-like evaporation controls.</li>
+  <li><strong>Metrics extracted:</strong> <abbr title="droplet radius as a function of time, normalized by initial radius">r(t)/r0</abbr>, contact-line regime, edge/center device ratio, qualitative repeatability, and final deposition pattern.</li>
+  <li><strong>Current decision:</strong> prioritize porous <abbr title="anodic aluminum oxide">AAO</abbr>-like drainage conditions over glass-like evaporation controls.</li>
   <li><strong>Next threshold needed:</strong> replicate-backed edge/center ratio plus density uniformity target before interconnect printing.</li>
  </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
 
 
 
-<section class="insight-block"><p>Boundary conditions controlled the outcome more than the final stain suggested. The deposition problem became a screen for contact-line history, drainage signature, and interconnect-accessible placement.</p></section>
+
+<section class="insight-block tone-dark"><p>Boundary conditions controlled the outcome more than the final stain suggested. The deposition problem became a screen for contact-line history, drainage signature, and interconnect-accessible placement.</p></section>
 
 <section class="mini-flow-card"><h2>Screen flow</h2><div class="mini-flow"><span>Prepare substrate/backing</span><b>→</b><span>Deposit droplet</span><b>→</b><span>Extract r(t)</span><b>→</b><span>Score placement</span><b>→</b><span>Pick next condition</span></div></section>
 
@@ -45,6 +51,12 @@ subtitle: Substrate/backing screens for IPA droplet deposition of suspended micr
   <figcaption>Artifact placeholder — replace with a real screen, workflow, setup schematic, or control-logic diagram.</figcaption>
  </figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 
 <section class="ownership-callout ownership-callout-large">

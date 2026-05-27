@@ -4,14 +4,30 @@ title: Process Simulation and Design
 category: Simulation · balances · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Flowsheet logic</span><span>Assumption tracking</span>'
+description: Process simulation case file using balances, thermodynamic assumptions, sensitivity checks, and flowsheet decision logic.
 subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-backed design decisions.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot"><h2>What good looks like</h2><p>Process design work becomes useful when assumptions are visible: basis, feed composition, thermodynamic model, recovery target, purity target, energy duty, and the decision a simulation supports.</p></section>
+<section class="artifact-panel setup-snapshot">
+ <h2>The setup</h2>
+ <ul class="snapshot-list">
+  <li><strong>System:</strong> course and side-project flowsheets where balances, thermodynamics, and assumptions determine the recommendation.</li>
+  <li><strong>Inputs handled:</strong> basis, feed composition, target purity/recovery, operating temperature/pressure, and model choice.</li>
+  <li><strong>Outputs:</strong> decision-ready tables, sensitivity checks, and flowsheet logic that makes assumptions visible.</li>
+ </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
 
 
 
-<section class="insight-block"><p>A flowsheet is not a final answer. It is a decision aid whose value depends on basis, assumptions, sensitivity, and the design choice it supports.</p></section>
+<section class="artifact-panel setup-snapshot"><h2>What good looks like</h2><p>Process design work becomes useful when assumptions are visible: basis, feed composition, thermodynamic model, recovery target, purity target, energy duty, and the decision a simulation supports.</p></section>
+
+
+
+<section class="insight-block tone-dark"><p>A flowsheet is not a final answer. It is a decision aid whose value depends on basis, assumptions, sensitivity, and the design choice it supports.</p></section>
 
 <section class="mini-flow-card"><h2>Decision flow</h2><div class="mini-flow"><span>Basis</span><b>→</b><span>Assumptions</span><b>→</b><span>Model</span><b>→</b><span>Sensitivity</span><b>→</b><span>Design choice</span></div></section>
 
@@ -24,6 +40,12 @@ subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-backed d
  <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Process equipment or data image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real process-equipment image, Aspen screenshot crop, or design artifact.</figcaption></figure>
  <figure><img src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Process simulation schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real PFD, balance structure, or unit-operation chain.</figcaption></figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 ## Decision variables
 

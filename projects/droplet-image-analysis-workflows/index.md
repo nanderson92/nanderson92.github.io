@@ -4,15 +4,31 @@ title: Droplet Image Analysis Workflows
 category: Image analysis · droplet metrics · Filler Lab · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Video → CTQ</span><span>Segmentation workflow</span>'
+description: Image-analysis case file turning microscopy videos into calibrated droplet traces, CTQs, and QC-ready measurement outputs.
 subtitle: Microscopy-video workflows for converting droplet behavior into calibrated time-series outputs.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot"><h2>What good looks like</h2><p>Raw microscopy videos are not metrics. The workflow turns frames into calibrated variables: droplet radius, contact-line motion, contact angle proxy, volume proxy, and deposition distribution.</p></section>
+<section class="artifact-panel setup-snapshot">
+ <h2>The setup</h2>
+ <ul class="snapshot-list">
+  <li><strong>System:</strong> microscopy videos of droplets used to compare wetting, contact-line motion, and deposition behavior.</li>
+  <li><strong>Inputs handled:</strong> frame rate, pixel calibration, crop region, segmentation settings, and trace export format.</li>
+  <li><strong>Outputs:</strong> normalized radius traces, contact-line classifications, QC notes, and export-ready tables for comparing runs.</li>
+ </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
+
+
+
+<section class="artifact-panel setup-snapshot"><h2>What good looks like</h2><p>Raw microscopy videos are not metrics. The workflow turns frames into calibrated variables: droplet radius, contact-line motion, contact angle proxy, volume proxy, and deposition distribution.</p></section>
 
 
 
 
-<section class="insight-block"><p>A droplet video becomes an engineering artifact only after calibration, segmentation choices, and trace outputs are documented well enough to audit.</p></section>
+<section class="insight-block tone-dark"><p>A droplet video becomes an engineering artifact only after calibration, segmentation choices, and trace outputs are documented well enough to audit.</p></section>
 
 <section class="mini-flow-card"><h2>Analysis flow</h2><div class="mini-flow"><span>Video</span><b>→</b><span>Calibration</span><b>→</b><span>Segmentation</span><b>→</b><span>Trace extraction</span><b>→</b><span>QC export</span></div></section>
 
@@ -35,6 +51,10 @@ subtitle: Microscopy-video workflows for converting droplet behavior into calibr
  </figure>
 </section>
 
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
 
 ## Video-to-metric workflow
 

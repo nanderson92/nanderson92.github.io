@@ -4,10 +4,12 @@ title: Thermocycler Process Automation
 category: Automation · Mayo Clinic · Rochester, MN
 date_range: Summer 2025
 metric_chips: '<span>Control prototype</span><span>Thermal validation CTQs</span>'
+description: Thermocycler automation case file focused on thermal-control validation, ramp rate, overshoot, settling time, and hold stability.
 subtitle: Embedded thermal-control work framed as validation logic for biological protocols.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot">
+<section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
   <li><strong>Controlled variables:</strong> denaturation, annealing, and extension setpoints.</li>
@@ -16,6 +18,10 @@ subtitle: Embedded thermal-control work framed as validation logic for biologica
   <li><strong>Main lesson:</strong> sensor placement and thermal lag dominated apparent controller performance.</li>
  </ul>
 </section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
+
 
 
 
@@ -32,6 +38,12 @@ subtitle: Embedded thermal-control work framed as validation logic for biologica
  <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Thermocycler prototype image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real prototype hardware, thermal-block, sensor-placement, or wiring photo.</figcaption></figure>
  <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Thermal control schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real controller, heater/cooler, sensor, and sample-region thermal-path schematic.</figcaption></figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 ## Process levers
 

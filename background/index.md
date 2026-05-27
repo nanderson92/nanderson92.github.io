@@ -49,6 +49,7 @@ description: Background on Nathan Anderson’s path from operator work to Georgi
 </section>
 
 <section class="mcdonalds-mini-case pull-quote-block">
+ <p class="system-label">QSR operations mini-case</p>
  <p>Peak-hour operations made bottlenecks visible in minutes. Prep, sequencing, staffing, equipment uptime, and handoff timing behaved like a live control problem. That operator instinct now shows up in how I read wet-lab workflows and early manufacturing screens.</p>
 </section>
 

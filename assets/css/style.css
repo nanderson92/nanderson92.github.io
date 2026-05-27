@@ -7627,3 +7627,34 @@ a { color: #075f73; }
   visibility: visible !important;
   transform: none !important;
 }
+
+
+/* === Continuation polish: implementation detail, readable placeholders, safer slugs === */
+.setup-snapshot { padding: clamp(22px, 3vw, 32px); }
+.setup-snapshot h2 { margin-top: 0; }
+.acronym-legend { margin: 18px 0 28px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: #f8fbfc; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; font-size: .92rem; }
+.acronym-legend strong { color: #0f172a; }
+.acronym-legend span { color: #334155; }
+.artifact-link-slot { margin: -8px 0 30px; padding: 16px 18px; border: 1px dashed rgba(15,23,42,.28); border-radius: 18px; background: #fff; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.artifact-link-slot strong { color: #0f172a; }
+.artifact-link-slot span { color: #475569; }
+.case-file-page .content-shell > h2 { scroll-margin-top: 110px; }
+.case-file-page .artifact-panel:first-of-type { border-top: 4px solid var(--accent-warm); }
+.case-file-page .insight-block.tone-dark { border-left-color: var(--accent-warm); box-shadow: 0 22px 50px rgba(15,23,42,.12); }
+.home-page .artifact-preview-section h2 { max-width: 850px; }
+.home-page .recent-strip li strong::before { content: ''; display: inline-block; width: .55em; height: .55em; border-radius: 999px; background: var(--accent-warm); margin-right: .55em; vertical-align: .08em; }
+.copy-button { min-width: 94px; }
+.large-email { max-width: 100%; }
+.footer-wordmark { color: #fff !important; text-decoration: none; }
+.footer-wordmark .brand-monogram { background: #fff; color: #0f172a; }
+.not-found-page .button.secondary { background: transparent !important; color: #fff !important; border-color: rgba(255,255,255,.72) !important; }
+@media (max-width: 390px) {
+  .topbar { padding-inline: 10px; }
+  .topbar-resume { display: none; }
+  .home-page .hero h1 { font-size: clamp(2.45rem, 15vw, 3.8rem) !important; }
+  .hero-photo-card { aspect-ratio: 1 / .9; }
+  .portfolio-card, .project-card { padding: 20px !important; border-radius: 22px !important; }
+  .portfolio-card h2, .project-card h3 { font-size: clamp(1.18rem, 7vw, 1.42rem) !important; }
+  .large-email { font-size: 1.35rem !important; }
+  .single-screen-contact { padding: 16px; }
+}

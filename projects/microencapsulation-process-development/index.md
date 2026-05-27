@@ -4,10 +4,12 @@ title: Stem-Cell Microencapsulation
 category: Microfluidics · Mayo Clinic · Rochester, MN
 date_range: Summer 2025
 metric_chips: '<span><strong>20×</strong> throughput increase</span><span><strong>~50%</strong> usable-yield improvement</span>'
+description: Microfluidic stem-cell microencapsulation case file showing 20× throughput and ~50% usable-yield improvement through flow and tooling changes.
 subtitle: Microfluidic capsule-generation work that made throughput useful by keeping yield and handling stability inside the operating window.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot">
+<section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
   <li><strong>System:</strong> flow-focusing microfluidic alginate-core / PEG-shell capsule generation for ARPE-19 cell culture.</li>
@@ -16,6 +18,10 @@ subtitle: Microfluidic capsule-generation work that made throughput useful by ke
   <li><strong>Result:</strong> increased capsule-generation throughput by 20× and improved microscopy-counted usable encapsulation yield by ~50% after flow-ratio, tooling, and crosslinking adjustments.</li>
  </ul>
 </section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
+
 
 
 
@@ -34,6 +40,12 @@ subtitle: Microfluidic capsule-generation work that made throughput useful by ke
  <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Capsule microscopy image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real capsule microscopy, device, run, or QC image.</figcaption></figure>
  <figure><img src="{{ '/assets/images/microfluidic-flow-schematic.svg' | relative_url }}" alt="Microfluidic flow schematic" loading="lazy"><figcaption>Flow schematic area for device geometry, streams, and crosslinking steps.</figcaption></figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 ## Process levers
 

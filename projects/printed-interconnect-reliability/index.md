@@ -4,27 +4,49 @@ title: Printed Interconnect Reliability
 category: Reliability · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Failure logic</span><span>Resistance drift screen</span>'
+description: Printed interconnect reliability case file using resistance drift, stress intervals, and failure classes to guide upstream process checks.
 subtitle: Printed-line testing reframed as a reliability screen that maps resistance behavior back to upstream process checks.
+body_class: case-file-page
 ---
 
-<section class="artifact-panel public-safe-snapshot">
+<section class="artifact-panel setup-snapshot">
+ <h2>The setup</h2>
+ <ul class="snapshot-list">
+  <li><strong>System:</strong> printed interconnect lines measured before and after stress intervals.</li>
+  <li><strong>Inputs handled:</strong> initial resistance, normalized drift, stress timing, probe/contact state, and physical inspection notes.</li>
+  <li><strong>Outputs:</strong> pass, monitor, fail, and artifact classes that point to upstream print, cure, handling, or measurement checks.</li>
+ </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
+
+
+
+<section class="artifact-panel setup-snapshot">
  <h2>What good looks like</h2>
  <p>Time-zero continuity is not enough. The screen classifies resistance drift, sudden failure, intermittent readings, and artifact states so printed interconnect data can feed back into printing, curing, handling, and environmental-stress decisions.</p>
 </section>
 
 
 
-<section class="insight-block"><p>Time-zero continuity is not enough. Reliability data has to classify drift, failure, and artifacts before it can point back to printing or cure decisions.</p></section>
+<section class="insight-block tone-dark"><p>Time-zero continuity is not enough. Reliability data has to classify drift, failure, and artifacts before it can point back to printing or cure decisions.</p></section>
 
 ## What I'd do next
 
-<div class="next-iteration-callout"><p>The next iteration should set public-safe pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The engineering decision is whether failure class can reliably point to a process correction instead of only describing a dead line.</p></div>
+<div class="next-iteration-callout"><p>The next iteration should set candidate pass, monitor, fail, and artifact thresholds, then validate the classification logic across three substrates. The engineering decision is whether failure class can reliably point to a process correction instead of only describing a dead line.</p></div>
 
 <section class="visual-artifact-grid" aria-label="Visual artifact slots">
  <figure><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Resistance drift plot area" loading="lazy"><figcaption>Artifact placeholder — replace with a real normalized resistance-drift and failure-timing plot.</figcaption></figure>
  <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Printed interconnect image area" loading="lazy"><figcaption>Artifact placeholder — replace with a real printed-line, probe-layout, or device photo.</figcaption></figure>
  <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Reliability workflow schematic area" loading="lazy"><figcaption>Artifact placeholder — replace with a real stress interval, re-measurement, and classification workflow diagram.</figcaption></figure>
 </section>
+
+<section class="artifact-link-slot">
+ <strong>External artifact slot</strong>
+ <span>Artifact placeholder — add a real poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+</section>
+
 
 ## Screen flow
 

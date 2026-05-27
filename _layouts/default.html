@@ -107,7 +107,7 @@
  document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false); });
  document.querySelectorAll('[data-filter]').forEach((button) => { button.addEventListener('click', () => { const value = button.dataset.filter; document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('is-active', b === button)); document.querySelectorAll('[data-tags]').forEach((card) => { const tags = card.dataset.tags.split(' '); card.hidden = value !== 'all' && !tags.includes(value); }); }); });
- document.querySelectorAll('[data-copy]').forEach((button) => { button.addEventListener('click', async () => { try { await navigator.clipboard.writeText(button.dataset.copy); button.textContent = 'Copied'; setTimeout(() => button.textContent = 'Copy', 1400); } catch (e) { button.textContent = 'Copy failed'; } }); });
+ document.querySelectorAll('[data-copy]').forEach((button) => { button.addEventListener('click', async () => { try { await navigator.clipboard.writeText(button.dataset.copy); button.textContent = 'Copied'; setTimeout(() => button.textContent = 'Copy email', 1400); } catch (e) { button.textContent = 'Copy failed'; } }); });
  </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body_class: contact-page
  <p class="location-line">Atlanta, GA · open to relocation</p>
  <div class="contact-email-row">
   <a class="large-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-  <button class="copy-button" type="button" data-copy="{{ site.email }}">Copy</button>
+  <button class="copy-button" type="button" data-copy="{{ site.email }}" aria-live="polite">Copy email</button>
  </div>
  <div class="contact-button-row prominent-contact-buttons">
   <a class="button primary email-button" href="mailto:{{ site.email }}?subject=Portfolio%20conversation">Email Nathan →</a>
