@@ -7707,3 +7707,76 @@ a { color: #075f73; }
 .home-page .tone-dark li span {
   color: #e2e8f0 !important;
 }
+
+/* === Final homepage contrast repair ===
+   Ensures homepage text never falls to light-gray/white on white backgrounds. */
+html body.home-page section.recent-strip.tone-dark,
+html body.home-page section.cta-band.recruiter-cta.tone-dark,
+html body.home-page footer.site-footer.conversion-footer {
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+  color: #ffffff !important;
+}
+html body.home-page section.recent-strip.tone-dark .content-shell,
+html body.home-page section.cta-band.recruiter-cta.tone-dark > *,
+html body.home-page footer.site-footer.conversion-footer .footer-inner {
+  background: transparent !important;
+}
+html body.home-page section.recent-strip.tone-dark :where(p, li, span, strong, a, h1, h2, h3, .system-label),
+html body.home-page section.cta-band.recruiter-cta.tone-dark :where(p, li, span, strong, a, h1, h2, h3, .system-label),
+html body.home-page footer.site-footer.conversion-footer :where(p, li, span, strong, a, h1, h2, h3, .system-label, .last-updated) {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+}
+html body.home-page section.recent-strip.tone-dark li span,
+html body.home-page footer.site-footer.conversion-footer p,
+html body.home-page footer.site-footer.conversion-footer .last-updated {
+  color: #e2e8f0 !important;
+}
+html body.home-page section.recent-strip.tone-dark li {
+  background: rgba(255,255,255,.075) !important;
+  border-color: rgba(255,255,255,.20) !important;
+}
+html body.home-page section.recent-strip.tone-dark .system-label {
+  color: #f8fafc !important;
+}
+html body.home-page .artifact-preview-section,
+html body.home-page .home-library,
+html body.home-page .human-service-band {
+  background-color: #ffffff !important;
+}
+html body.home-page .artifact-preview-section :where(h2, h3, p, span, strong, a),
+html body.home-page .home-library :where(h2, h3, p, span, strong, a),
+html body.home-page .human-service-band :where(h2, h3, p, span, strong, a),
+html body.home-page .portfolio-card :where(h2, h3, p, span, strong, a),
+html body.home-page .artifact-preview-card :where(h2, h3, p, span, strong, a) {
+  color: #0f172a !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+html body.home-page .home-library :where(.system-label, .main-label, .card-topline, .card-topline span),
+html body.home-page .artifact-preview-section :where(.system-label, .main-label) {
+  color: #1e293b !important;
+  opacity: 1 !important;
+}
+html body.home-page .artifact-preview-card span,
+html body.home-page .portfolio-card .card-topline span,
+html body.home-page .human-service-band p {
+  color: #334155 !important;
+}
+html body.home-page .portfolio-card .outcome-badge,
+html body.home-page .home-library .outcome-badge {
+  color: #7c2d12 !important;
+}
+html body.home-page footer.site-footer.conversion-footer .button.secondary,
+html body.home-page section.cta-band.recruiter-cta.tone-dark .button.secondary {
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,.72) !important;
+  background: transparent !important;
+}
+html body.home-page footer.site-footer.conversion-footer .button.primary,
+html body.home-page section.cta-band.recruiter-cta.tone-dark .button.primary {
+  color: #ffffff !important;
+}
