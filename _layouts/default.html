@@ -3,22 +3,30 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- {% assign computed_title = page.title | append: ' | ' | append: site.title %}
- {% if page.url == '/' %}{% assign computed_title = 'Nathan Anderson - Process Development Engineer' %}{% endif %}
- {% if page.url contains '/projects/' and page.url != '/projects/' and page.title %}{% assign computed_title = page.title | append: ' - Nathan Anderson Case File' %}{% endif %}
+ {% assign computed_title = site.title %}
+ {% if page.meta_title %}
+  {% assign computed_title = page.meta_title %}
+ {% elsif page.url == '/' %}
+  {% assign computed_title = 'Nathan Anderson — Process Development Engineer' %}
+ {% elsif page.url contains '/projects/' and page.url != '/projects/' and page.title %}
+  {% assign computed_title = page.title | append: ' — Nathan Anderson Case File' %}
+ {% elsif page.title %}
+  {% assign computed_title = page.title | append: ' — Nathan Anderson' %}
+ {% endif %}
  <title>{{ computed_title }}</title>
- <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
+ {% assign computed_description = page.description | default: site.description %}
+ <meta name="description" content="{{ computed_description }}">
  {% if page.noindex %}<meta name="robots" content="noindex,follow">{% endif %}
  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  <meta property="og:title" content="{{ computed_title }}">
- <meta property="og:description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
+ <meta property="og:description" content="{{ computed_description }}">
  <meta property="og:image" content="{{ site.url }}/assets/images/og-preview.png">
  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
  <meta property="og:type" content="website">
  <meta name="twitter:card" content="summary_large_image">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@450;550;650;750;850&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
@@ -30,7 +38,7 @@
 
  <header class="topbar" aria-label="Site header">
   <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="site-drawer" aria-expanded="false"><span></span><span></span><span></span></button>
-  <a class="topbar-brand wordmark" href="{{ '/' | relative_url }}" aria-label="Home"><span class="monogram" aria-hidden="true">N</span><span>Nathan Anderson</span></a>
+  <a class="topbar-brand wordmark brand-mark" href="{{ '/' | relative_url }}" aria-label="Home"><span class="brand-monogram">NA</span><span>Nathan Anderson</span></a>
   <nav class="topbar-nav" aria-label="Primary navigation">
    <a href="{{ '/projects/' | relative_url }}">Case Files</a>
    <a href="{{ '/background/' | relative_url }}">Background</a>
@@ -43,7 +51,7 @@
  <div class="drawer-overlay" data-close-drawer></div>
  <aside id="site-drawer" class="drawer" aria-label="Primary navigation" aria-hidden="true">
   <div class="drawer-header">
-   <a class="brand wordmark" href="{{ '/' | relative_url }}" aria-label="Home"><span class="monogram" aria-hidden="true">N</span><span class="brand-name">Nathan Anderson</span><span class="brand-subtitle">Process Development · Wet Processing · Advanced Materials</span></a>
+   <a class="brand wordmark brand-mark" href="{{ '/' | relative_url }}" aria-label="Home"><span class="brand-monogram">NA</span><span class="brand-name">Nathan Anderson</span><span class="brand-subtitle">Process development · wet processing · manufacturing systems</span></a>
    <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>×</button>
   </div>
   <nav class="nav-links">
@@ -54,25 +62,27 @@
    <a href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
    <a href="{{ '/contact/' | relative_url }}">Contact</a>
   </nav>
-  <div class="drawer-system"><p class="system-label small">Technical focus</p><p>Wet processing · printed electronics · microfluidics · reliability</p></div>
+  <div class="drawer-system"><p class="system-label small">Technical focus</p><p>Wet processing · microfluidics · printed electronics · reliability</p></div>
   <div class="social-links" aria-label="Social links"><a href="{{ site.linkedin }}">LinkedIn</a><a href="{{ site.github }}">GitHub</a><a href="mailto:{{ site.email }}">Email</a></div>
  </aside>
 
  <main id="content">{{ content }}</main>
 
- <footer class="site-footer footer-cta" aria-label="Site footer">
-  <div class="footer-inner footer-enhanced">
-   <div class="footer-pitch">
-    <a class="footer-wordmark wordmark" href="{{ '/' | relative_url }}"><span class="monogram" aria-hidden="true">N</span><span>Nathan Anderson</span></a>
+ <footer class="site-footer conversion-footer">
+  <div class="footer-inner footer-enhanced footer-cta-grid">
+   <div>
+    <a class="footer-wordmark wordmark brand-mark" href="{{ '/' | relative_url }}"><span class="brand-monogram">NA</span><span>Nathan Anderson</span></a>
     <h2>Building a process, wet-lab, automation, or manufacturing team for 2026?</h2>
     <p>I’m open to internships, contract work, paid trial projects, and founding-engineer conversations.</p>
-    <p class="footer-location">Atlanta, GA · open to relocation · last updated May 2026</p>
+    <p class="last-updated">Atlanta, GA · open to relocation · last updated May 2026</p>
    </div>
-   <nav class="footer-actions" aria-label="Footer navigation">
+   <nav aria-label="Footer navigation" class="footer-actions">
     <a class="button primary email-button" href="mailto:{{ site.email }}">Email Nathan →</a>
     <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume PDF</a>
-    <a class="button secondary icon-button" href="{{ site.linkedin }}" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9.5h4v11H3zM9.2 9.5h3.8v1.6h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05v5.4h-4v-4.78c0-1.14-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.86h-4z"/></svg><span>LinkedIn</span></a>
-    <a class="button secondary icon-button" href="{{ site.github }}" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9A11.1 11.1 0 0 0 .9 12.16c0 4.98 3.2 9.2 7.65 10.7.56.1.76-.25.76-.54v-1.9c-3.11.69-3.77-1.52-3.77-1.52-.51-1.32-1.25-1.67-1.25-1.67-1.02-.71.08-.7.08-.7 1.13.08 1.72 1.19 1.72 1.19 1 .1 2.28-.74 2.84-1.2.1-.74.39-1.25.7-1.54-2.48-.29-5.1-1.27-5.1-5.62 0-1.24.43-2.25 1.15-3.05-.12-.29-.5-1.45.11-3.01 0 0 .95-.31 3.08 1.16a10.4 10.4 0 0 1 5.6 0c2.13-1.47 3.07-1.16 3.07-1.16.62 1.56.24 2.72.12 3.01.72.8 1.15 1.81 1.15 3.05 0 4.36-2.62 5.32-5.12 5.6.4.36.76 1.05.76 2.12v3.14c0 .3.2.65.77.54a11.25 11.25 0 0 0 7.65-10.7A11.1 11.1 0 0 0 12 .9z"/></svg><span>GitHub</span></a>
+    <a class="button secondary icon-link" href="{{ site.linkedin }}" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9.5h4v11H3zM9.2 9.5h3.8v1.6h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.75 2.63 4.75 6.05v5.4h-4v-4.78c0-1.14-.02-2.6-1.58-2.6-1.59 0-1.83 1.24-1.83 2.52v4.86h-4z"/></svg><span>LinkedIn</span></a>
+    <a class="button secondary icon-link" href="{{ site.github }}" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9A11.1 11.1 0 0 0 .9 12.16c0 4.98 3.2 9.2 7.65 10.7.56.1.76-.25.76-.54v-1.9c-3.11.69-3.77-1.52-3.77-1.52-.51-1.32-1.25-1.67-1.25-1.67-1.02-.71.08-.7.08-.7 1.13.08 1.72 1.19 1.72 1.19 1 .1 2.28-.74 2.84-1.2.1-.74.39-1.25.7-1.54-2.48-.29-5.1-1.27-5.1-5.62 0-1.24.43-2.25 1.15-3.05-.12-.29-.5-1.45.11-3.01 0 0 .95-.31 3.08 1.16a10.4 10.4 0 0 1 5.6 0c2.13-1.47 3.07-1.16 3.07-1.16.62 1.56.24 2.72.12 3.01.72.8 1.15 1.81 1.15 3.05 0 4.36-2.62 5.32-5.12 5.6.4.36.76 1.05.76 2.12v3.14c0 .3.2.65.77.54a11.25 11.25 0 0 0 7.65-10.7A11.1 11.1 0 0 0 12 .9z"/></svg><span>GitHub</span></a>
+    <a href="{{ '/projects/' | relative_url }}">Case Files</a>
+    <a href="{{ '/background/' | relative_url }}">Background</a>
    </nav>
   </div>
  </footer>
@@ -84,46 +94,20 @@
  const closeTargets = document.querySelectorAll('[data-close-drawer]');
  const navLinks = document.querySelectorAll('.topbar-nav a, .nav-links a, .footer-inner a');
  function normalizePath(path) { return path.replace(/\/index\.html$/, '/').replace(/\/+$/, '/') || '/'; }
- function setActiveNav() {
-   const current = normalizePath(window.location.pathname);
-   navLinks.forEach((link) => {
-     const linkPath = normalizePath(new URL(link.href).pathname);
-     const isActive = current === linkPath || (linkPath !== '/' && current.startsWith(linkPath) && linkPath !== '/assets/files/Nathan_Anderson_Resume.pdf');
-     link.classList.toggle('is-active', isActive);
-     if (isActive) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
-   });
- }
- function setDrawer(open) {
-   body.classList.toggle('drawer-open', open);
-   toggle.setAttribute('aria-expanded', String(open));
-   drawer.setAttribute('aria-hidden', String(!open));
- }
+ function setActiveNav() { const current = normalizePath(window.location.pathname); navLinks.forEach((link) => { const linkPath = normalizePath(new URL(link.href).pathname); const isActive = current === linkPath || (current.startsWith('/projects/') && linkPath === '/projects/'); link.classList.toggle('is-active', isActive); if (isActive) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current'); }); }
+ function setDrawer(open) { body.classList.toggle('drawer-open', open); if (!toggle || !drawer) return; toggle.setAttribute('aria-expanded', String(open)); drawer.setAttribute('aria-hidden', String(!open)); if (open) drawer.querySelector('a')?.focus({ preventScroll: true }); else toggle.focus({ preventScroll: true }); }
  setActiveNav();
  document.documentElement.classList.add('js');
  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const revealTargets = document.querySelectorAll(['.proof-section','.project-card','.portfolio-card','.matrix-card','.human-service-band','.cta-band','.background-editorial','.metric-card','.result-panel','.proof-artifact-card','.case-summary-box','.artifact-panel','.visual-artifact-grid figure','.contact-card','.resume-panel','.insight-block','.dark-section','.plain-prose'].join(','));
- revealTargets.forEach((target, index) => { target.classList.add('reveal'); target.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 35, 105)}ms`); });
- if ('IntersectionObserver' in window && !prefersReducedMotion) {
-   const observer = new IntersectionObserver((entries, activeObserver) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); activeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
-   revealTargets.forEach((target) => observer.observe(target));
-   setTimeout(() => { revealTargets.forEach((target) => target.classList.add('in-view')); }, 750);
- } else { revealTargets.forEach((target) => target.classList.add('in-view')); }
+ const revealTargets = document.querySelectorAll(['.proof-section','.project-card','.portfolio-card','.matrix-card','.human-service-band','.cta-band','.background-editorial','.metric-card','.result-panel','.proof-artifact-card','.case-summary-box','.artifact-panel','.visual-artifact-grid figure','.contact-card','.resume-panel','.tone-dark','.insight-block','.recent-strip','.artifact-preview-card'].join(','));
+ revealTargets.forEach((target, index) => { target.classList.add('reveal'); target.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 45, 135)}ms`); });
+ if ('IntersectionObserver' in window && !prefersReducedMotion) { const observer = new IntersectionObserver((entries, activeObserver) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); activeObserver.unobserve(entry.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }); revealTargets.forEach((target) => observer.observe(target)); setTimeout(() => { revealTargets.forEach((target) => target.classList.add('in-view')); }, 900); } else { revealTargets.forEach((target) => target.classList.add('in-view')); }
  if (toggle) toggle.addEventListener('click', () => setDrawer(!body.classList.contains('drawer-open')));
  closeTargets.forEach((target) => target.addEventListener('click', () => setDrawer(false)));
  document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', () => setDrawer(false)));
  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && body.classList.contains('drawer-open')) setDrawer(false); });
- document.querySelectorAll('[data-filter]').forEach((button) => {
-   button.addEventListener('click', () => {
-     const value = button.dataset.filter;
-     document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('is-active', b === button));
-     document.querySelectorAll('[data-tags]').forEach((card) => { const tags = (card.dataset.tags || '').split(' '); card.hidden = value !== 'all' && !tags.includes(value); });
-   });
- });
- document.querySelectorAll('[data-copy-email]').forEach((button) => {
-   button.addEventListener('click', async () => {
-     try { await navigator.clipboard.writeText('{{ site.email }}'); button.textContent = 'Copied'; setTimeout(() => button.textContent = 'Copy', 1400); } catch (e) { button.textContent = 'Copy email'; }
-   });
- });
+ document.querySelectorAll('[data-filter]').forEach((button) => { button.addEventListener('click', () => { const value = button.dataset.filter; document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('is-active', b === button)); document.querySelectorAll('[data-tags]').forEach((card) => { const tags = card.dataset.tags.split(' '); card.hidden = value !== 'all' && !tags.includes(value); }); }); });
+ document.querySelectorAll('[data-copy]').forEach((button) => { button.addEventListener('click', async () => { try { await navigator.clipboard.writeText(button.dataset.copy); button.textContent = 'Copied'; setTimeout(() => button.textContent = 'Copy', 1400); } catch (e) { button.textContent = 'Copy failed'; } }); });
  </script>
 </body>
 </html>

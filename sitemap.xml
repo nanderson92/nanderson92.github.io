@@ -1,16 +1,19 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nanderson92.github.io/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/micromodular-deposition/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/stem-cell-microencapsulation/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/printed-interconnect-reliability/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/thermocycler-process-automation/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/thin-film-semiconductor-research/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/droplet-image-analysis-workflows/</loc></url>
-  <url><loc>https://nanderson92.github.io/projects/process-simulation-design/</loc></url>
-  <url><loc>https://nanderson92.github.io/background/</loc></url>
-  <url><loc>https://nanderson92.github.io/notes/</loc></url>
-  <url><loc>https://nanderson92.github.io/resume/</loc></url>
-  <url><loc>https://nanderson92.github.io/contact/</loc></url>
+ <url><loc>{{ site.url }}/</loc></url>
+ <url><loc>{{ site.url }}/projects/</loc></url>
+ <url><loc>{{ site.url }}/projects/micromodular-deposition/</loc></url>
+ <url><loc>{{ site.url }}/projects/microencapsulation-process-development/</loc></url>
+ <url><loc>{{ site.url }}/projects/printed-interconnect-reliability/</loc></url>
+ <url><loc>{{ site.url }}/projects/thermocycler-process-automation/</loc></url>
+ <url><loc>{{ site.url }}/projects/thin-film-semiconductor-research/</loc></url>
+ <url><loc>{{ site.url }}/projects/droplet-image-analysis-workflows/</loc></url>
+ <url><loc>{{ site.url }}/projects/process-simulation-design/</loc></url>
+ <url><loc>{{ site.url }}/background/</loc></url>
+ <url><loc>{{ site.url }}/notes/</loc></url>
+ <url><loc>{{ site.url }}/resume/</loc></url>
+ <url><loc>{{ site.url }}/contact/</loc></url>
 </urlset>

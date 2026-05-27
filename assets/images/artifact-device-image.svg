@@ -13,7 +13,7 @@
 <g transform="translate(650,230)">
 <text x="0" y="0" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Image area</text>
 <text x="0" y="42" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="19">Microscopy still, device photo,</text>
-<text x="0" y="72" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="19">or shareable experimental frame.</text>
+<text x="0" y="72" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="19">or public-safe experimental frame.</text>
 <rect x="0" y="110" width="360" height="120" rx="16" fill="#f8fbfc" stroke="#d8e2e7"/>
 <text x="22" y="158" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">CTQ / region of interest</text>
 <text x="22" y="192" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="16">Annotate with scale, ROI, and label.</text>
