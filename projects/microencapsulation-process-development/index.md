@@ -7,15 +7,20 @@ metric_chips: '<span><strong>20×</strong> throughput increase</span><span><stro
 description: Microfluidic stem-cell microencapsulation case file showing 20× throughput and ~50% usable-yield improvement through flow and tooling changes.
 subtitle: Microfluidic capsule-generation work that made throughput useful by keeping yield and handling stability inside the operating window.
 body_class: case-file-page
+last_updated: May 2026
+previous_case_title: Process Simulation and Design
+previous_case_url: /projects/process-simulation-design/
+next_case_title: Micromodular Electronics Deposition
+next_case_url: /projects/micromodular-deposition/
 ---
 
 <section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> flow-focusing microfluidic alginate-core / PEG-shell capsule generation for ARPE-19 cell culture.</li>
-  <li><strong>Inputs adjusted:</strong> flow ratio, tooling geometry, shielding/crosslinking conditions, and collection workflow.</li>
-  <li><strong>Measured outputs:</strong> capsule-generation rate, microscopy-counted usable yield, coalescence, shell integrity, and handling stability.</li>
-  <li><strong>Result:</strong> increased capsule-generation throughput by 20× and improved microscopy-counted usable encapsulation yield by ~50% after flow-ratio, tooling, and crosslinking adjustments.</li>
+ <li><strong>System:</strong> flow-focusing microfluidic alginate-core / PEG-shell capsule generation for ARPE-19 cell culture.</li>
+ <li><strong>Inputs adjusted:</strong> flow ratio, tooling geometry, shielding/crosslinking conditions, and collection workflow.</li>
+ <li><strong>Measured outputs:</strong> capsule-generation rate, microscopy-counted usable yield, coalescence, shell integrity, and handling stability.</li>
+ <li><strong>Result:</strong> increased capsule-generation throughput by 20× and improved microscopy-counted usable encapsulation yield by ~50% after flow-ratio, tooling, and crosslinking adjustments.</li>
  </ul>
 </section>
 <section class="acronym-legend">
@@ -24,36 +29,35 @@ body_class: case-file-page
 
 <section class="artifact-stack microencap-artifacts" aria-label="Stem-cell microencapsulation artifacts">
  <article class="artifact-card artifact-card-wide hero-artifact">
-  <p class="artifact-label">MICROSCOPY</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-microscopy"><img src="{{ '/assets/images/artifact-microcapsule-microscopy.jpg' | relative_url }}" alt="Representative hydrogel microcapsules under microscopy" loading="lazy"></div>
-   <figcaption><strong>Figure 1. Representative hydrogel microcapsules from the microfluidic encapsulation workflow.</strong> This image shows real capsule morphology, visual process output, and the type of microscopy evidence used for yield and quality assessment.</figcaption>
-  </figure>
-  <p class="method-note compact-note">Add final scale bar, condition, flow rate, CaCl₂ concentration, and run ID before public publication if not already embedded.</p>
+ <p class="artifact-label">MICROSCOPY</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-microscopy"><img src="{{ '/assets/images/artifact-microcapsule-microscopy.jpg' | relative_url }}" alt="Representative hydrogel microcapsules under microscopy" loading="lazy"></div>
+ <figcaption><strong>Figure 1. Representative hydrogel microcapsules from the microfluidic encapsulation workflow.</strong> This image shows real capsule morphology, visual process output, and the type of microscopy evidence used for yield and quality assessment.</figcaption>
+ </figure>
  </article>
  <article class="artifact-card artifact-card-wide">
-  <p class="artifact-label">QUANTITATIVE OUTPUT</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-chart"><img src="{{ '/assets/images/artifact-peg-shell-thickness.png' | relative_url }}" alt="PEG shell thickness versus shell flow rate chart" loading="lazy"></div>
-   <figcaption><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> Use this chart as quantitative evidence that process inputs shift capsule structure, but revise the final version with n, error-bar definition, p-value threshold, and clear legend labels.</figcaption>
-  </figure>
+ <p class="artifact-label">QUANTITATIVE OUTPUT</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-chart"><img src="{{ '/assets/images/artifact-peg-shell-thickness.png' | relative_url }}" alt="PEG shell thickness versus shell flow rate chart" loading="lazy"></div>
+ <figcaption><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> The chart shows a process-response relationship between shell-flow condition and PEG shell thickness. Public interpretation should stay tied to the confirmed axis units, error bars, and statistical definitions shown in the underlying analysis file.</figcaption>
+ </figure>
  </article>
  <article class="artifact-card artifact-card-wide">
-  <p class="artifact-label">MECHANISM SCHEMATIC</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-schematic"><img src="{{ '/assets/images/artifact-alginate-hardening.png' | relative_url }}" alt="Alginate core hardening concept schematic" loading="lazy"></div>
-   <figcaption><strong>Figure 3. Alginate-core hardening concept.</strong> Calcium-mediated crosslinking converts a liquid alginate core into a mechanically stabilized hydrogel core.</figcaption>
-  </figure>
+ <p class="artifact-label">MECHANISM SCHEMATIC</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-schematic"><img src="{{ '/assets/images/artifact-alginate-hardening.png' | relative_url }}" alt="Alginate core hardening concept schematic" loading="lazy"></div>
+ <figcaption><strong>Figure 3. Alginate-core hardening concept.</strong> Calcium-mediated crosslinking converts a liquid alginate core into a mechanically stabilized hydrogel core.</figcaption>
+ </figure>
  </article>
 </section>
 
 <section class="artifact-panel metric-before-after">
- <h2>Before / after metrics to finalize</h2>
+ <h2>Before / after metric summary</h2>
  <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Metric</th><th>Baseline</th><th>Improved</th><th>Current evidence status</th></tr></thead><tbody>
-  <tr><td>Capsule generation rate</td><td>to be filled</td><td>20×</td><td>Verify against run log.</td></tr>
-  <tr><td>Usable yield</td><td>to be filled</td><td>~50% relative improvement</td><td>Define microscopy-counting rule and sample size.</td></tr>
-  <tr><td>Main process levers</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>Keep tied to defect classes.</td></tr>
-  <tr><td>Defect classes</td><td>coalesced, unstable, malformed, handling-damaged</td><td>coalesced, unstable, malformed, handling-damaged</td><td>Use same definitions before/after.</td></tr>
+ <tr><td>Capsule generation rate</td><td>Earlier lower-throughput workflow</td><td>20× increase</td><td>Reported as process-development outcome from the Mayo Clinic workflow.</td></tr>
+ <tr><td>Usable yield</td><td>Earlier lower-yield workflow</td><td>~50% relative improvement</td><td>Based on microscopy-counted usable capsule fraction; exact run metadata stays with lab records.</td></tr>
+ <tr><td>Main process levers</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>flow ratio, tooling, crosslinking, handling/QC</td><td>Keep tied to defect classes.</td></tr>
+ <tr><td>Defect classes</td><td>coalesced, unstable, malformed, handling-damaged</td><td>coalesced, unstable, malformed, handling-damaged</td><td>Use same definitions before/after.</td></tr>
  </tbody></table></div>
 </section>
 
@@ -70,7 +74,7 @@ body_class: case-file-page
 
 
 
-## Process levers
+<h2 id="process-levers">Process levers</h2>
 
 <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Process change</th><th>Failure mode addressed</th><th>Metric affected</th><th>Result</th></tr></thead><tbody>
 <tr><td>Flow-ratio tuning</td><td>Unstable capsule formation / coalescence</td><td>Usable yield</td><td>~50% improvement</td></tr>

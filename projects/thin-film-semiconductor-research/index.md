@@ -1,20 +1,25 @@
 ---
 layout: page
-title: Semiconductor Materials Exposure
+title: Thin-Film Semiconductor Research
 category: Materials · semiconductors · Georgia Tech
 date_range: 2025–present
 metric_chips: '<span>Process response</span><span>Characterization matrix</span>'
-description: Semiconductor materials case file connecting deposition variables to characterization readouts and film-response decisions.
+description: Thin-film semiconductor research case file connecting deposition variables to characterization readouts and film-response decisions.
 subtitle: Materials work connecting deposition conditions to morphology, phase, composition, and structural readouts.
 body_class: case-file-page
+last_updated: May 2026
+previous_case_title: Thermocycler Process Automation
+previous_case_url: /projects/thermocycler-process-automation/
+next_case_title: Droplet Image Analysis Workflows
+next_case_url: /projects/droplet-image-analysis-workflows/
 ---
 
 <section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> thin-film and semiconductor-materials work where deposition conditions are tied to characterization readouts.</li>
-  <li><strong>Inputs handled:</strong> growth condition, substrate state, film morphology, phase/composition signals, and process comparison.</li>
-  <li><strong>Outputs:</strong> a characterization matrix that separates what each tool can show from what it cannot prove alone.</li>
+ <li><strong>System:</strong> thin-film and semiconductor-materials work where deposition conditions are tied to characterization readouts.</li>
+ <li><strong>Inputs handled:</strong> growth condition, substrate state, film morphology, phase/composition signals, and process comparison.</li>
+ <li><strong>Outputs:</strong> a characterization matrix that separates what each tool can show from what it cannot prove alone.</li>
  </ul>
 </section>
 <section class="acronym-legend">
@@ -35,15 +40,9 @@ body_class: case-file-page
 
 <div class="next-iteration-callout"><p>The next iteration should define a small characterization control plan for each deposition change: one morphology check, one structure/composition check, and one pass/fail criterion. The engineering decision is which film response justifies changing the growth condition.</p></div>
 
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Materials characterization plot area" loading="lazy"><figcaption>Planned evidence slot — add characterization trend, roughness, composition, or response comparison.</figcaption></figure>
- <figure><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual" loading="lazy"><figcaption>Planned evidence slot — add film, substrate, SEM/optical, or characterization image.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Materials workflow schematic area" loading="lazy"><figcaption>Planned evidence slot — add deposition-condition → film-response → characterization workflow.</figcaption></figure>
-</section>
-
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Planned evidence slot — add poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+<section class="visual-artifact-grid" aria-label="Materials characterization framing">
+ <figure><img src="{{ '/assets/images/thin-film-characterization-visual.svg' | relative_url }}" alt="Thin-film characterization visual" loading="lazy"><figcaption>Characterization framing: pair each growth condition with the readout needed to decide whether the condition should change.</figcaption></figure>
+ <figure><img src="{{ '/assets/images/artifact-flow-schematic.svg' | relative_url }}" alt="Materials workflow schematic" loading="lazy"><figcaption>Workflow logic: deposition condition → film response → characterization readout → next-run decision.</figcaption></figure>
 </section>
 
 

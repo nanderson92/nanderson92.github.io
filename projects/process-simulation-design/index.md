@@ -7,14 +7,19 @@ metric_chips: '<span>Flowsheet logic</span><span>Assumption tracking</span>'
 description: Process simulation case file using balances, thermodynamic assumptions, sensitivity checks, and flowsheet decision logic.
 subtitle: Flowsheets, balances, thermodynamic reasoning, and simulation-backed design decisions.
 body_class: case-file-page
+last_updated: May 2026
+previous_case_title: Droplet Image Analysis Workflows
+previous_case_url: /projects/droplet-image-analysis-workflows/
+next_case_title: Stem-Cell Microencapsulation
+next_case_url: /projects/microencapsulation-process-development/
 ---
 
 <section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> course and side-project flowsheets where balances, thermodynamics, and assumptions determine the recommendation.</li>
-  <li><strong>Inputs handled:</strong> basis, feed composition, target purity/recovery, operating temperature/pressure, and model choice.</li>
-  <li><strong>Outputs:</strong> decision-ready tables, sensitivity checks, and flowsheet logic that makes assumptions visible.</li>
+ <li><strong>System:</strong> course and side-project flowsheets where balances, thermodynamics, and assumptions determine the recommendation.</li>
+ <li><strong>Inputs handled:</strong> basis, feed composition, target purity/recovery, operating temperature/pressure, and model choice.</li>
+ <li><strong>Outputs:</strong> decision-ready tables, sensitivity checks, and flowsheet logic that makes assumptions visible.</li>
  </ul>
 </section>
 <section class="acronym-legend">
@@ -35,15 +40,8 @@ body_class: case-file-page
 
 <div class="next-iteration-callout"><p>The next iteration should make each model assumption testable with one sensitivity plot and one decision statement. The engineering decision is which input would change the recommended flowsheet.</p></div>
 
-<section class="visual-artifact-grid" aria-label="Visual artifact slots">
- <figure><img src="{{ '/assets/images/artifact-materials-plot.svg' | relative_url }}" alt="Simulation sensitivity plot area" loading="lazy"><figcaption>Planned evidence slot — add sensitivity, recovery, purity, duty, or operating-condition comparison.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-device-image.svg' | relative_url }}" alt="Process equipment or data image area" loading="lazy"><figcaption>Planned evidence slot — add process-equipment image, Aspen screenshot crop, or design artifact.</figcaption></figure>
- <figure><img src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Process simulation schematic area" loading="lazy"><figcaption>Planned evidence slot — add PFD, balance structure, or unit-operation chain.</figcaption></figure>
-</section>
-
-<section class="artifact-link-slot">
- <strong>External artifact slot</strong>
- <span>Planned evidence slot — add poster, GitHub notebook, PDF memo, slide, or shareable writeup link when available.</span>
+<section class="visual-artifact-grid" aria-label="Process simulation framing">
+ <figure><img src="{{ '/assets/images/artifact-simulation-flow.svg' | relative_url }}" alt="Process simulation schematic" loading="lazy"><figcaption>Flowsheet logic: make basis, assumptions, sensitivity, and decision use explicit before treating a model output as evidence.</figcaption></figure>
 </section>
 
 

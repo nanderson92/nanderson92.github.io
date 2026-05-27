@@ -3,20 +3,25 @@ layout: page
 title: Micromodular Electronics Deposition
 category: Wet processing · printed electronics · Filler Lab · Georgia Tech
 date_range: 2025–present
-metric_chips: '<span>Screening framework</span><span>Image-derived droplet CTQs</span>'
-description: Substrate and backing screens for IPA droplet deposition of suspended microdevices, using video-derived droplet CTQs and placement metrics.
+metric_chips: '<span>Screening framework</span><span>Image-derived droplet quality metrics</span>'
+description: Substrate and backing screens for IPA droplet deposition of suspended microdevices, using video-derived droplet quality metrics and placement metrics.
 subtitle: Substrate/backing screens for <abbr title="isopropyl alcohol">IPA</abbr> droplet deposition of suspended microdevices before printed interconnect routing.
 body_class: case-file-page
+last_updated: May 2026
+previous_case_title: Stem-Cell Microencapsulation
+previous_case_url: /projects/microencapsulation-process-development/
+next_case_title: Printed Interconnect Reliability
+next_case_url: /projects/printed-interconnect-reliability/
 ---
 
 <section class="artifact-panel setup-snapshot">
  <h2>The setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> <abbr title="isopropyl alcohol">IPA</abbr> droplet deposition of suspended microdevices on substrate/backing candidates.</li>
-  <li><strong>Inputs varied:</strong> substrate, backing condition, droplet volume, and particle/device loading state.</li>
-  <li><strong>Metrics extracted:</strong> <abbr title="droplet radius as a function of time, normalized by initial radius">r(t)/r0</abbr>, contact-line regime, edge/center device ratio, qualitative repeatability, and final deposition pattern.</li>
-  <li><strong>Current decision:</strong> prioritize porous <abbr title="anodic aluminum oxide">AAO</abbr>-like drainage conditions over glass-like evaporation controls.</li>
-  <li><strong>Next threshold needed:</strong> replicate-backed edge/center ratio plus density uniformity target before interconnect printing.</li>
+ <li><strong>System:</strong> <abbr title="isopropyl alcohol">IPA</abbr> droplet deposition of suspended microdevices on substrate/backing candidates.</li>
+ <li><strong>Inputs varied:</strong> substrate, backing condition, droplet volume, and particle/device loading state.</li>
+ <li><strong>Metrics extracted:</strong> <abbr title="droplet radius as a function of time, normalized by initial radius">r(t)/r0</abbr>, contact-line regime, edge/center device ratio, qualitative repeatability, and final deposition pattern.</li>
+ <li><strong>Current decision:</strong> prioritize porous <abbr title="anodic aluminum oxide">AAO</abbr>-like drainage conditions over glass-like evaporation controls.</li>
+ <li><strong>Next threshold needed:</strong> replicate-backed edge/center ratio plus density uniformity target before interconnect printing.</li>
  </ul>
 </section>
 <section class="acronym-legend">
@@ -25,28 +30,28 @@ body_class: case-file-page
 
 <section class="artifact-stack flagship-artifacts" aria-label="Micromodular deposition artifacts">
  <article class="artifact-card artifact-card-wide hero-artifact">
-  <p class="artifact-label">VIDEO ANALYSIS</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/artifact-microdevice-trajectory-overlay.png' | relative_url }}" alt="Microdevice trajectory overlay relative to the marked droplet center" loading="lazy"></div>
-   <figcaption><strong>Figure 1. Video-derived microdevice trajectories overlaid on a microscope frame.</strong> The droplet center is marked, allowing device motion to be decomposed into radial and tangential components. This converts a qualitative drying/deposition video into a substrate-screening artifact.</figcaption>
-  </figure>
-  <div class="artifact-meta table-like-meta" aria-label="Run metadata to complete"><span><strong>Solvent</strong> IPA</span><span><strong>Droplet volume</strong> to be filled</span><span><strong>Substrate/backing</strong> to be filled</span><span><strong>Frame rate</strong> to be filled</span><span><strong>Calibration</strong> to be filled</span><span><strong>Output metrics</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span></div>
+ <p class="artifact-label">VIDEO ANALYSIS</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/artifact-microdevice-trajectory-overlay.png' | relative_url }}" alt="Microdevice trajectory overlay relative to the marked droplet center" loading="lazy"></div>
+ <figcaption><strong>Figure 1. Video-derived microdevice trajectories overlaid on a microscope frame.</strong> The droplet center is marked, allowing device motion to be decomposed into radial and tangential components. This converts a qualitative drying/deposition video into a substrate-screening artifact.</figcaption>
+ </figure>
+ <div class="artifact-meta table-like-meta" aria-label="Run metadata"><span><strong>Solvent</strong> <abbr title="isopropyl alcohol">IPA</abbr></span><span><strong>Droplet volume</strong> held constant within each comparison set</span><span><strong>Substrate/backing</strong> recorded by run condition</span><span><strong>Frame rate</strong> recorded from source video</span><span><strong>Calibration</strong> pixel scale checked before quantitative comparison</span><span><strong>Output metrics</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span></div>
  </article>
  <article class="artifact-card artifact-card-wide">
-  <p class="artifact-label">RUN DASHBOARD</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard with speed, radial velocity, angular velocity, and tracking coverage" loading="lazy"></div>
-   <figcaption><strong>Figure 2. Group motion dashboard extracted from tracked microdevice trajectories.</strong> The dashboard summarizes population speed, radial velocity, angular velocity tendency, and tracking coverage over time, allowing deposition behavior to be compared across process conditions.</figcaption>
-  </figure>
+ <p class="artifact-label">RUN DASHBOARD</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard with speed, radial velocity, angular velocity, and tracking coverage" loading="lazy"></div>
+ <figcaption><strong>Figure 2. Group motion dashboard extracted from tracked microdevice trajectories.</strong> The dashboard summarizes population speed, radial velocity, angular velocity tendency, and tracking coverage over time, allowing deposition behavior to be compared across process conditions.</figcaption>
+ </figure>
  </article>
  <article class="artifact-card artifact-card-wide compact-artifact">
-  <p class="artifact-label">VELOCITY DECOMPOSITION</p>
-  <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-plot"><img src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity decomposition plot" loading="lazy"></div>
-   <figcaption><strong>Figure 3. Radial and tangential velocity decomposition.</strong> Positive radial velocity indicates outward transport from the droplet center; tangential velocity captures circumferential motion. Convert px/s to µm/s later if calibration is available.</figcaption>
-  </figure>
+ <p class="artifact-label">VELOCITY DECOMPOSITION</p>
+ <figure class="artifact-figure">
+ <div class="artifact-image-frame frame-plot"><img src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity decomposition plot" loading="lazy"></div>
+ <figcaption><strong>Figure 3. Radial and tangential velocity decomposition.</strong> Positive radial velocity indicates outward transport from the droplet center; tangential velocity captures circumferential motion. The current public figure is a run-level motion artifact, not a calibrated final process window.</figcaption>
+ </figure>
  </article>
- <aside class="artifact-limitation-note"><strong>Limitation:</strong> These plots currently represent a preliminary run-level analysis. The next step is replicate-backed comparison across substrate/backing conditions using fixed droplet volume, device loading, frame rate, and calibration.</aside>
+ <aside class="artifact-limitation-note"><strong>Current scope:</strong> These plots represent run-level analysis. The next engineering step is replicate-backed comparison across substrate/backing conditions using fixed droplet volume, device loading, frame rate, and calibration.</aside>
 </section>
 
 <section class="insight-block tone-dark"><p>Boundary conditions controlled the outcome more than the final stain suggested. The deposition problem became a screen for contact-line history, drainage signature, and interconnect-accessible placement.</p></section>
@@ -75,23 +80,23 @@ Good deposition means uniform areal density, low edge bias, usable placement for
 
 <div class="decision-grid">
  <div class="decision-card pass-card">
-  <h3>Candidate passes early screen if</h3>
-  <ol>
-   <li>Contact-line history can be classified from video.</li>
-   <li>Edge/center device ratio improves relative to a glass-like evaporation control.</li>
-   <li>Device density remains high enough for interconnect routing.</li>
-   <li>Pattern is repeatable across replicate droplets.</li>
-   <li>Substrate/backing condition is physically scalable beyond brittle AAO.</li>
-  </ol>
+ <h3>Candidate passes early screen if</h3>
+ <ol>
+ <li>Contact-line history can be classified from video.</li>
+ <li>Edge/center device ratio improves relative to a glass-like evaporation control.</li>
+ <li>Device density remains high enough for interconnect routing.</li>
+ <li>Pattern is repeatable across replicate droplets.</li>
+ <li>Substrate/backing condition is physically scalable beyond brittle AAO.</li>
+ </ol>
  </div>
  <div class="decision-card fail-card">
-  <h3>Candidate fails if</h3>
-  <ol>
-   <li>Fast liquid removal still creates edge-heavy crowding.</li>
-   <li>Droplet footprint becomes too small or irregular for routing.</li>
-   <li>Device rafts or pins unpredictably.</li>
-   <li>Metric extraction cannot distinguish mechanism from artifact.</li>
-  </ol>
+ <h3>Candidate fails if</h3>
+ <ol>
+ <li>Fast liquid removal still creates edge-heavy crowding.</li>
+ <li>Droplet footprint becomes too small or irregular for routing.</li>
+ <li>Device rafts or pins unpredictably.</li>
+ <li>Metric extraction cannot distinguish mechanism from artifact.</li>
+ </ol>
  </div>
 </div>
 

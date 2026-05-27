@@ -6,8 +6,12 @@ layout: default
  <div class="page-hero-inner">
  {% if page.url contains '/projects/' and page.url != '/projects/' %}
  <div class="case-file-meta-row">
-  <a class="breadcrumb-link" href="{{ '/projects/' | relative_url }}">← All case files</a>
-  <span>Last updated: {{ page.last_updated | default: 'May 2026' }} · Project active: {{ page.date_range | default: '[add date range]' }}</span>
+ <div class="case-top-nav" aria-label="Case file navigation">
+ {% if page.previous_case_url %}<a class="breadcrumb-link" href="{{ page.previous_case_url | relative_url }}">← Previous: {{ page.previous_case_title }}</a>{% endif %}
+ <a class="breadcrumb-link" href="{{ '/projects/' | relative_url }}">All case files</a>
+ {% if page.next_case_url %}<a class="breadcrumb-link" href="{{ page.next_case_url | relative_url }}">Next: {{ page.next_case_title }} →</a>{% endif %}
+ </div>
+ <span>Last updated: {{ page.last_updated | default: 'May 2026' }} · Project active: {{ page.date_range | default: 'active' }}</span>
  </div>
  {% endif %}
  {% if page.category or page.date_range %}
