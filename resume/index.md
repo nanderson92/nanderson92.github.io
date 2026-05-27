@@ -17,8 +17,7 @@ body_class: resume-page
   <figcaption>Clean preview of page 1. Use the buttons above to download or open the current PDF.</figcaption>
  </figure>
  <div class="resume-update-note artifact-panel">
-  <h2>Resume content focus</h2>
-  <p>Next resume-content pass: lead Filler Lab bullets with outcome/process impact before methodology, keep Mayo Clinic bullets outcome-oriented, frame QSR operations as line balancing and bottleneck control, and group skills by process development, lab tools, and software.</p>
+  <h2>What the resume emphasizes</h2>
+  <p>Process development, wet-lab execution, image-analysis workflows, automation prototypes, and operator experience with real throughput pressure.</p>
  </div>
-<p class="method-note">If the editable resume source is added to the repo, the next pass should update the resume content directly instead of only documenting this checklist.</p>
 </section>

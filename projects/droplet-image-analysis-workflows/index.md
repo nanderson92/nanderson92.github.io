@@ -4,35 +4,21 @@ title: Droplet Image Analysis Workflows
 category: Image analysis · droplet metrics · Filler Lab · Georgia Tech
 date_range: 2025–present
 last_updated: May 2026
+prev_title: Thin-Film Semiconductor Research
+prev_url: /projects/thin-film-semiconductor-research/
+next_title: Stem-Cell Microencapsulation
+next_url: /projects/microencapsulation-process-development/
 metric_chips: '<span>Video → metric</span><span>Segmentation workflow</span>'
 description: Image-analysis case file turning microscopy videos into calibrated droplet traces, CTQs, and QC-ready measurement outputs.
 subtitle: Microscopy-video workflows for converting droplet behavior into calibrated time-series outputs.
 body_class: case-file-page
 ---
 
-<section class="artifact-panel setup-snapshot">
- <h2>Setup</h2>
- <ul class="snapshot-list">
-  <li><strong>System:</strong> microscopy videos of droplets used to compare wetting, contact-line motion, and deposition behavior.</li>
-  <li><strong>Inputs handled:</strong> frame rate, pixel calibration, crop region, segmentation settings, and trace export format.</li>
-  <li><strong>Outputs:</strong> normalized radius traces, contact-line classifications, QC notes, and export-ready tables for comparing runs.</li>
- </ul>
-</section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
-</section>
-
-<section class="analysis-pipeline-card">
- <p class="artifact-label">METHOD PIPELINE</p>
- <h2>Raw video → calibration → object detection → track linking → radial/tangential decomposition → dashboard export</h2>
- <p>The workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
-</section>
-
 <section class="artifact-grid artifact-grid-two" aria-label="Droplet image analysis artifacts">
  <article class="artifact-card artifact-card-wide">
   <p class="artifact-label">DASHBOARD EXPORT</p>
   <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard.png' | relative_url }}" alt="Group motion dashboard exported from tracked microdevice trajectories" loading="lazy"></div>
+   <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard-1400.webp' | relative_url }}" alt="Group motion dashboard exported from tracked microdevice trajectories" loading="lazy"></div>
    <figcaption><strong>Figure 1. Group motion dashboard from tracked microdevice trajectories.</strong> Population speed, radial velocity, angular-velocity tendency, and tracking coverage are plotted against time. This supports condition-to-condition comparison and flags intervals where tracking coverage may bias the metric.</figcaption>
   </figure>
  </article>
@@ -46,10 +32,30 @@ body_class: case-file-page
  <article class="artifact-card setup-artifact-card">
   <p class="artifact-label">MEASUREMENT SETUP</p>
   <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-photo"><img src="{{ '/assets/images/artifact-rame-hart-goniometer-cropped.jpg' | relative_url }}" alt="Cropped Rame-Hart goniometer setup" loading="lazy"></div>
+   <div class="artifact-image-frame frame-photo"><img src="{{ '/assets/images/artifact-rame-hart-goniometer-cropped.webp' | relative_url }}" alt="Cropped Rame-Hart goniometer setup" loading="lazy"></div>
    <figcaption><strong>Figure 3. Rame-Hart goniometer setup.</strong> Setup image for droplet shape, contact angle, and volume/time characterization. This supports the measurement chain, not the flagship result.</figcaption>
   </figure>
  </article>
+</section>
+
+<section class="artifact-panel setup-snapshot">
+ <h2>Setup</h2>
+ <ul class="snapshot-list">
+  <li><strong>System:</strong> microscopy videos of droplets used to compare wetting, contact-line motion, and deposition behavior.</li>
+  <li><strong>Inputs handled:</strong> frame rate, pixel calibration, crop region, segmentation settings, and trace export format.</li>
+  <li><strong>Outputs:</strong> normalized radius traces, contact-line classifications, QC notes, and export-ready tables for comparing runs.</li>
+ </ul>
+</section>
+<section class="acronym-legend">
+ <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
+</section>
+
+<section class="insight-block tone-dark"><p>A droplet video becomes an engineering artifact only after calibration, segmentation choices, and trace outputs are documented well enough to audit.</p></section>
+
+<section class="analysis-pipeline-card">
+ <p class="artifact-label">METHOD PIPELINE</p>
+ <h2>Raw video → calibration → object detection → track linking → radial/tangential decomposition → dashboard export</h2>
+ <p>The workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
 </section>
 
 <section class="artifact-panel qc-checklist-panel">
@@ -65,15 +71,13 @@ body_class: case-file-page
  </ul>
 </section>
 
-<section class="insight-block tone-dark"><p>A droplet video becomes an engineering artifact only after calibration, segmentation choices, and trace outputs are documented well enough to audit.</p></section>
-
 ## Video-to-metric workflow
 
 <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Step</th><th>Output</th><th>Failure mode checked</th></tr></thead><tbody>
 <tr><td>Frame extraction</td><td>Standard time base</td><td>Dropped frames or inconsistent sampling.</td></tr>
 <tr><td>Calibration</td><td>Pixels to length</td><td>Wrong scale bar or cropped reference.</td></tr>
-<tr><td>Segmentation</td><td>Droplet edge and region of interest</td><td>Threshold artifact or poor contrast.</td></tr>
-<tr><td>Trace extraction</td><td>r(t), normalized r(t), edge/center ratio</td><td>Metric dominated by image noise instead of physics.</td></tr>
+<tr><td>Segmentation</td><td>Droplet edge and ROI</td><td>Threshold artifact or poor contrast.</td></tr>
+<tr><td>Trace extraction</td><td>radius trace, normalized radius trace, edge/center ratio</td><td>Metric dominated by image noise instead of physics.</td></tr>
 </tbody></table></div>
 
 ## Next run
@@ -85,6 +89,6 @@ body_class: case-file-page
 <div class="what-changed-block changed-panel"><p>The workflow made droplet comparison auditable. Conditions could be compared by extracted traces and deposition regions, not only by visually inspecting the final stain.</p></div>
 
 <div class="case-cta-row two-button-cta">
- <a class="button primary" href="{{ '/projects/process-simulation-design/' | relative_url }}">Next: Process Simulation and Design →</a>
- <a class="button secondary email-button" href="mailto:{{ site.email }}">Email Nathan</a>
+ <a class="button primary" href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Next: Stem-Cell Microencapsulation →</a>
+ <a class="button secondary email-button" href="mailto:{{ site.email }}?subject=Droplet%20analysis%20case%20file">Email Nathan</a>
 </div>
