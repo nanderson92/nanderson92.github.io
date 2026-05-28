@@ -21,12 +21,17 @@ affiliation: Filler Lab · Georgia Tech
  <p>The workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
 </section>
 
+<section class="ownership-callout ownership-callout-large lead-ownership-callout">
+ <p><strong>What I owned:</strong> the raw-video-to-metric workflow, frame calibration logic, track-linking checks, radial/tangential decomposition, and dashboard export structure.</p>
+ <p class="ownership-metric"><strong>Quantified context:</strong> the exported dashboard carries four time-series views from a representative droplet run: population speed, radial velocity, angular-velocity tendency, and tracking coverage.</p>
+</section>
+
 <section class="artifact-grid artifact-grid-two" aria-label="Droplet image analysis artifacts">
  <article class="artifact-card artifact-card-wide full-span-artifact">
   <p class="artifact-label">RAW → PROCESSED</p>
   <figure class="artifact-figure">
    <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/droplet-raw-to-processed-pair.webp' | relative_url }}" alt="Raw microscope frame paired with processed trajectory overlay" loading="lazy"></div>
-   <figcaption><strong>Figure 1. Raw frame to processed trajectory artifact.</strong> A raw microscope frame is paired with the extracted pathlines so object detection, track linking, and transport metrics can be checked instead of treated as a black box.</figcaption>
+   <figcaption><strong>Figure 1. Raw frame to processed trajectory artifact.</strong> The raw panel is contrast-stretched and includes a zoomed region so the tracked features are visible at web scale. The processed panel pairs the same region with extracted pathlines so object detection, track linking, and transport metrics can be checked instead of treated as a black box.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide">

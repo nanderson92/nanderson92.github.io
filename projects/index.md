@@ -32,7 +32,7 @@ last_updated: May 2026
    <p><a href="{{ '/projects/microencapsulation-process-development/' | relative_url }}">Open case file →</a></p>
   </article>
   <article class="portfolio-card evidence-card build-log-card primary-build" data-tags="wet materials">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-microdevice-trajectory-overlay-1400.webp' | relative_url }}" alt="Microdevice trajectory overlay" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/micromodular-aao-device-comparison.webp' | relative_url }}" alt="AAO substrate baseline, deposited microdevices, and individual micromodular device" loading="lazy">
    <div class="card-topline"><span>Wet processing · printed electronics · Filler Lab · Georgia Tech · 2025–present</span><span class="outcome-badge">Screening framework</span></div>
    <h2>Micromodular Electronics Deposition</h2>
    <p class="metric-callout">Built video-derived trajectory artifacts for comparing substrate/backing deposition behavior.</p>
@@ -54,7 +54,7 @@ last_updated: May 2026
    <p><a href="{{ '/projects/printed-interconnect-reliability/' | relative_url }}">Open case file →</a></p>
   </article>
   <article class="portfolio-card evidence-card build-log-card" data-tags="automation">
-   <img class="case-thumb" src="{{ '/assets/images/artifact-thermocycler-front.png' | relative_url }}" alt="Thermal-control prototype hardware" loading="lazy">
+   <img class="case-thumb" src="{{ '/assets/images/artifact-thermocycler-front-clean.webp' | relative_url }}" alt="Thermal-control prototype hardware" loading="lazy">
    <div class="card-topline"><span>Automation · Mayo Clinic · Rochester, MN · Summer 2025</span><span class="outcome-badge">Control prototype</span></div>
    <h2>Thermocycler Process Automation</h2>
    <p class="metric-callout">Treated PCR thermal cycling as a sample-region history problem with ramp, overshoot, and hold criteria.</p>

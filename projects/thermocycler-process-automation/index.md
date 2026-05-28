@@ -40,6 +40,11 @@ affiliation: Mayo Clinic · Rochester, MN
  </article>
 </section>
 
+<section class="ownership-callout ownership-callout-large lead-ownership-callout">
+ <p><strong>What I owned:</strong> control-logic implementation, thermal-state sequencing, hardware integration support, and validation criteria for ramp rate, overshoot, hold stability, and cycle repeatability.</p>
+ <p class="ownership-metric"><strong>Quantified context:</strong> the controller structure organizes three polymerase chain reaction (PCR) temperature stages and four validation targets before final sample-region temperature verification.</p>
+</section>
+
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <p>This thermocycler work supported biological PCR: denaturation, annealing, and extension temperature setpoints repeated across cycles, where actual sample-region temperature determines whether the protocol works.</p>

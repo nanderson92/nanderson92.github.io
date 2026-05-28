@@ -25,6 +25,10 @@ affiliation: Georgia Tech materials / semiconductor process framing
  </article>
 </section>
 
+<section class="ownership-callout ownership-callout-large lead-ownership-callout">
+ <p><strong>What I owned:</strong> the characterization-to-process framing, the readout limitation matrix, and the next-run control-plan logic for deciding when a film-growth condition should change.</p>
+</section>
+
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <ul class="snapshot-list">

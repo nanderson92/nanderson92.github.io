@@ -36,23 +36,23 @@ affiliation: Filler Lab · Georgia Tech
    <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/artifact-microdevice-trajectory-overlay-1400.webp' | relative_url }}" alt="Microdevice trajectory overlay relative to the marked droplet center" loading="lazy"></div>
    <figcaption><strong>Figure 1. Video-derived microdevice trajectories overlaid on a microscope frame.</strong> The droplet center is marked, allowing device motion to be decomposed into radial and tangential components. This converts a qualitative drying/deposition video into a substrate-screening artifact.</figcaption>
   </figure>
-  <div class="artifact-meta table-like-meta" aria-label="Public run metadata"><span><strong>Solvent</strong> isopropyl alcohol (IPA)</span><span><strong>Public metric set</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span><span><strong>Analysis status</strong> representative run-level artifact; replicate-backed condition comparison is the next screen</span></div>
+  <div class="artifact-meta table-like-meta" aria-label="Public run metadata"><span><strong>Solvent</strong> isopropyl alcohol (IPA)</span><span><strong>Public metric set</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span><span><strong>Quantified context</strong> video-derived trajectory analysis plus AAO/device placement images support the substrate screen</span><span><strong>Analysis status</strong> representative run-level artifact; replicate-backed condition comparison is the next screen</span></div>
  </article>
- <article class="artifact-card artifact-card-wide">
-  <p class="artifact-label">RUN DASHBOARD</p>
+ <article class="artifact-card artifact-card-wide substrate-artifact">
+  <p class="artifact-label">SUBSTRATE SCREEN</p>
   <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-dashboard"><img src="{{ '/assets/images/artifact-group-motion-dashboard-1400.webp' | relative_url }}" alt="Group motion dashboard with speed, radial velocity, angular velocity, and tracking coverage" loading="lazy"></div>
-   <figcaption><strong>Figure 2. Group motion dashboard extracted from tracked microdevice trajectories.</strong> Population speed, radial velocity, angular-velocity tendency, and tracking coverage are plotted against time, allowing deposition behavior to be compared across process conditions.</figcaption>
+   <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/micromodular-aao-device-comparison.webp' | relative_url }}" alt="AAO substrate baseline, AAO with deposited microdevices, and single micromodular device" loading="lazy"></div>
+   <figcaption><strong>Figure 2. AAO substrate and microdevice placement context.</strong> The comparison shows the porous anodic aluminum oxide (AAO) surface, a deposited-device field, and the individual micromodular device form factor. This makes the deposition screen specific to placement on AAO-like supports rather than reusing the workflow dashboard from the image-analysis case file.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide compact-artifact">
-  <p class="artifact-label">VELOCITY DECOMPOSITION</p>
+  <p class="artifact-label">DEVICE SCALE</p>
   <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-plot"><img src="{{ '/assets/images/artifact-radial-tangential-velocity.png' | relative_url }}" alt="Radial and tangential velocity decomposition plot" loading="lazy"></div>
-   <figcaption><strong>Figure 3. Radial and tangential velocity decomposition.</strong> Positive radial velocity indicates outward transport from the droplet center, while tangential velocity captures circumferential motion. Calibration-specific unit conversion belongs in the run log, so this exported figure is used for transport direction and relative timing.</figcaption>
+   <div class="artifact-image-frame frame-microscopy"><img src="{{ '/assets/images/artifact-single-micromodular-device.webp' | relative_url }}" alt="Representative individual micromodular device" loading="lazy"></div>
+   <figcaption><strong>Figure 3. Representative micromodular device.</strong> The suspended component is the object that must remain findable, placeable, and accessible to downstream interconnect routing after droplet deposition.</figcaption>
   </figure>
  </article>
- <aside class="artifact-limitation-note"><strong>Scope:</strong> These plots represent a preliminary run-level analysis. The engineering next step is replicate-backed comparison across substrate/backing conditions using fixed droplet volume, device loading, frame rate, and calibration.</aside>
+ <aside class="artifact-limitation-note"><strong>Scope:</strong> This page now emphasizes the substrate/device screen. The full trajectory dashboard remains on the Droplet Image Analysis Workflows page, where the measurement pipeline is the central artifact.</aside>
 </section>
 
 <section class="ownership-callout ownership-callout-large lead-ownership-callout">

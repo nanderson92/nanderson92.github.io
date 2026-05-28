@@ -37,6 +37,10 @@ affiliation: Filler Lab · Georgia Tech
  </article>
 </section>
 
+<section class="ownership-callout ownership-callout-large lead-ownership-callout">
+ <p><strong>What I owned:</strong> the reliability-screen logic, normalized resistance-ratio framing, and the pass / monitor / fail / artifact decision table that maps electrical behavior back to print, cure, stress, and measurement checks.</p>
+</section>
+
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <ul class="snapshot-list">

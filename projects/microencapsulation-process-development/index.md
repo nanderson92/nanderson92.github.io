@@ -39,6 +39,10 @@ affiliation: Mayo Clinic · Rochester, MN
  </article>
 </section>
 
+<section class="ownership-callout ownership-callout-large lead-ownership-callout">
+ <p><strong>What I owned:</strong> flow-ratio and tooling iteration, microscopy quality counting, defect-class interpretation, and the process-window logic that tied speed to usable capsule output.</p>
+</section>
+
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <ul class="snapshot-list">
