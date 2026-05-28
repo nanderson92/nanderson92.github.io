@@ -1182,3 +1182,130 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
   .case-file-nav-row{gap:8px!important;}
   .case-file-nav-row a,.case-file-nav-row span{font-size:.78rem!important;}
 }
+
+
+/* Homepage hero: use the microencapsulation microscopy image as the immersive background, not a boxed mosaic. */
+.home-page .startup-hero-rebuilt.cell-microscopy-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  display:flex!important;
+  align-items:center!important;
+  min-height:clamp(640px,82vh,820px)!important;
+  padding-top:clamp(116px,10vw,160px)!important;
+  padding-bottom:clamp(90px,8vw,132px)!important;
+  background:#fff!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-2!important;
+  background-image:url('../images/homepage-hero-microcapsules-bg.jpg')!important;
+  background-image:image-set(url('../images/homepage-hero-microcapsules-bg.webp') type('image/webp'), url('../images/homepage-hero-microcapsules-bg.jpg') type('image/jpeg'))!important;
+  background-size:cover!important;
+  background-position:center 44%!important;
+  background-repeat:no-repeat!important;
+  transform:scale(1.015)!important;
+  opacity:.86!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.48) 42%, #fff 96%),
+    linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.94) 38%, rgba(255,255,255,.62) 66%, rgba(255,255,255,.88) 100%),
+    radial-gradient(circle at 78% 32%, rgba(255,255,255,.08) 0%, rgba(255,255,255,.22) 34%, rgba(255,255,255,.72) 74%, #fff 100%)!important;
+}
+.home-page .cell-microscopy-hero .hero-inner{
+  position:relative!important;
+  z-index:1!important;
+  display:block!important;
+  grid-template-columns:none!important;
+  max-width:1280px!important;
+  width:100%!important;
+  margin:0 auto!important;
+  padding:0 clamp(22px,4vw,64px)!important;
+  min-height:auto!important;
+}
+.home-page .cell-microscopy-hero .hero-copy{
+  max-width:min(790px, 100%)!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.home-page .cell-microscopy-hero .hero-copy h1,
+.home-page .cell-microscopy-hero .hero-lede,
+.home-page .cell-microscopy-hero .hero-eyebrow{
+  text-shadow:0 1px 0 rgba(255,255,255,.54)!important;
+}
+.home-page .cell-microscopy-hero .hero-lede{
+  max-width:680px!important;
+}
+.home-page .cell-microscopy-hero .credential-bar{
+  max-width:920px!important;
+  background:rgba(255,255,255,.36)!important;
+  backdrop-filter:blur(4px)!important;
+  -webkit-backdrop-filter:blur(4px)!important;
+}
+.home-page .cell-microscopy-hero .hero-artifact-mosaic,
+.home-page .cell-microscopy-hero .mosaic-grid{
+  display:none!important;
+}
+@media (max-width:960px){
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero{
+    min-height:auto!important;
+    padding-top:96px!important;
+    padding-bottom:82px!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+    background-position:center top!important;
+    opacity:.74!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.88) 0%, rgba(255,255,255,.76) 46%, #fff 100%),
+      linear-gradient(90deg, rgba(255,255,255,.98), rgba(255,255,255,.86))!important;
+  }
+  .home-page .cell-microscopy-hero .hero-inner{
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+  .home-page .cell-microscopy-hero .credential-bar{
+    background:rgba(255,255,255,.48)!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+}
+@media (max-width:420px){
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{opacity:.62!important;}
+}
+
+/* --- Projects index card centering fix: May 2026 --- */
+.projects-page .grouped-case-section .casefile-project-grid{
+  grid-template-columns:repeat(2, minmax(320px, 500px))!important;
+  justify-content:center!important;
+  justify-items:stretch!important;
+  align-items:stretch!important;
+  max-width:1080px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.projects-page .grouped-case-section .casefile-project-grid .portfolio-card{
+  width:100%!important;
+}
+@media (max-width:900px){
+  .projects-page .grouped-case-section .casefile-project-grid{
+    grid-template-columns:minmax(0, 640px)!important;
+    max-width:680px!important;
+  }
+}
+@media (max-width:700px){
+  .projects-page .grouped-case-section .casefile-project-grid{
+    grid-template-columns:1fr!important;
+    max-width:100%!important;
+  }
+}
