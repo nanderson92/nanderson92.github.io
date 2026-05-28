@@ -19,9 +19,6 @@ body_class: case-file-page
   <li><strong>Outputs:</strong> decision-ready tables, sensitivity checks, and flowsheet logic that makes assumptions visible.</li>
  </ul>
 </section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="vapor-liquid equilibrium">VLE</abbr> = phase-equilibrium relationship used for separations decisions.</span> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span>
-</section>
 
 <section class="artifact-panel evidence-status-card">
  <p class="artifact-label">SUPPORTING WORK</p>
@@ -38,7 +35,7 @@ body_class: case-file-page
 <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Variable</th><th>Why it matters</th><th>Decision use</th></tr></thead><tbody>
 <tr><td>Feed composition</td><td>Sets material-balance basis and separation difficulty.</td><td>Defines feasible recovery and purity targets.</td></tr>
 <tr><td>Operating temperature/pressure</td><td>Affects phase behavior, duty, and equipment feasibility.</td><td>Compares tradeoffs between energy and separation performance.</td></tr>
-<tr><td>Thermodynamic model</td><td>Controls whether predicted <abbr title="vapor-liquid equilibrium">VLE</abbr> behavior is physically reasonable.</td><td>Prevents black-box simulation claims.</td></tr>
+<tr><td>Thermodynamic model</td><td>Controls whether predicted vapor-liquid equilibrium (VLE) behavior is physically reasonable.</td><td>Prevents black-box simulation claims.</td></tr>
 <tr><td>Recycle/purge logic</td><td>Controls accumulation and steady-state feasibility.</td><td>Determines whether the flowsheet can close.</td></tr>
 </tbody></table></div>
 

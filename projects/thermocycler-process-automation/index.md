@@ -6,12 +6,13 @@ date_range: Summer 2025
 last_updated: May 2026
 prev_title: Printed Interconnect Reliability
 prev_url: /projects/printed-interconnect-reliability/
-next_title: Thin-Film Semiconductor Research
+next_title: Thin-Film Characterization-to-Process Logic
 next_url: /projects/thin-film-semiconductor-research/
-metric_chips: '<span>Control prototype</span><span>Thermal validation <abbr title="Critical-to-Quality">CTQs</abbr></span>'
+metric_chips: '<span>Control prototype</span><span>Thermal validation metrics</span>'
 description: Thermocycler automation case file focused on thermal-control validation, ramp rate, overshoot, settling time, and hold stability.
-subtitle: Embedded thermal-control work framed as validation logic for biological protocols.
-body_class: case-file-page
+subtitle: PCR thermal-control prototype focused on whether the sample region sees the intended thermal history.
+body_class: case-file-page thermocycler-process-automation
+affiliation: Mayo Clinic · Rochester, MN
 ---
 
 <section class="artifact-stack thermocycler-artifacts" aria-label="Thermocycler automation artifacts">
@@ -41,15 +42,13 @@ body_class: case-file-page
 
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
+ <p>This thermocycler work supported biological PCR: denaturation, annealing, and extension temperature setpoints repeated across cycles, where actual sample-region temperature determines whether the protocol works.</p>
  <ul class="snapshot-list">
   <li><strong>Controlled variables:</strong> denaturation, annealing, and extension setpoints.</li>
   <li><strong>Logged variables:</strong> measured block temperature versus time.</li>
-  <li><strong><abbr title="Critical-to-Quality">CTQs</abbr>:</strong> ramp rate, overshoot, settling time, hold stability, and cycle-to-cycle repeatability.</li>
+  <li><strong>Critical-to-quality metrics:</strong> ramp rate, overshoot, settling time, hold stability, and cycle-to-cycle repeatability.</li>
   <li><strong>Main lesson:</strong> sensor placement and thermal lag dominated apparent controller performance.</li>
  </ul>
-</section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Proportional-Integral-Derivative">PID</abbr> = feedback-control structure for adjusting heater/cooling output.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
 <section class="artifact-grid artifact-grid-two code-artifact-grid readable-code-grid">
@@ -64,7 +63,7 @@ body_class: case-file-page
         output = Kp*error + Ki*self.integral + Kd*derivative
         self.previous_error = error
         return clamp(output, 0, 100)</code></pre>
-  <p>Condensed control logic shows how the project moved beyond assembly into sensing, actuation, and feedback behavior.</p>
+  <p>Proportional-integral-derivative (PID) controller excerpt for converting temperature error into heater/cooling output.</p>
  </article>
  <article class="artifact-card code-artifact-card">
   <p class="artifact-label">STATE LOGIC</p>
@@ -79,17 +78,25 @@ if stable_near_target(measured_temp, target):
     start_hold_timer()
 if hold_timer_done():
     advance_to_next_state()</code></pre>
-  <p>State logic matters because biological protocols depend on thermal history, not just whether a nominal setpoint was entered.</p>
+  <p>Thermal-state machine excerpt for denaturation, annealing, and extension cycles.</p>
  </article>
 </section>
 
-<section class="artifact-panel evidence-status-card">
- <p class="artifact-label">VALIDATION STATUS</p>
- <h2>Validation criterion</h2>
- <p>The public page does not include a setpoint-versus-measured-temperature trace. The validation claim is therefore limited to control architecture and the criteria that a final trace must answer: ramp rate, overshoot, settling time, hold stability, and cycle repeatability.</p>
+<section class="artifact-panel evidence-status-card validation-target-card">
+ <p class="artifact-label">VALIDATION TARGET</p>
+ <div class="validation-target-grid">
+  <div>
+   <h2>Setpoint vs. measured-temperature trace</h2>
+   <p>Validation is judged by ramp rate, overshoot, settling time, hold stability, and cycle repeatability. The control code matters because it has to produce the intended thermal history at the sample region.</p>
+  </div>
+  <figure>
+   <img src="{{ '/assets/images/thermocycler-profile.svg' | relative_url }}" alt="Representative setpoint versus measured temperature profile" loading="lazy">
+   <figcaption>Representative validation target for the final trace.</figcaption>
+  </figure>
+ </div>
 </section>
 
-<section class="insight-block tone-dark"><p>Sensor placement and thermal lag dominated apparent controller performance. A setpoint is not validation unless the sample region sees the intended thermal history.</p></section>
+<section class="insight-block tone-dark"><p>Sensor placement and thermal lag dominated apparent controller performance. The sample region, not the nominal setpoint, is the temperature history that matters.</p></section>
 
 <section class="mini-flow-card"><h2>Control-loop sketch</h2><div class="mini-flow"><span>Setpoint</span><b>→</b><span>Controller output</span><b>→</b><span>Thermal block</span><b>→</b><span>Sensor reading</span><b>→</b><span>Protocol decision</span></div></section>
 
@@ -108,9 +115,9 @@ if hold_timer_done():
 
 ## What changed
 
-<div class="what-changed-block changed-panel"><p>The project taught me to treat temperature control as a validation problem, not just a code/hardware problem. A setpoint is meaningless unless the sample region actually experiences the intended thermal history.</p></div>
+<div class="what-changed-block changed-panel"><p>The project taught me to treat temperature control as a validation problem, not just a code/hardware problem. Controller behavior only matters when it produces the intended thermal history at the sample region.</p></div>
 
 <div class="case-cta-row two-button-cta">
- <a class="button primary" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Next: Thin-Film Semiconductor Research →</a>
+ <a class="button primary" href="{{ '/projects/thin-film-semiconductor-research/' | relative_url }}">Next: Thin-Film Characterization-to-Process Logic →</a>
  <a class="button secondary email-button" href="mailto:{{ site.email }}?subject=Thermocycler%20case%20file">Email Nathan</a>
 </div>

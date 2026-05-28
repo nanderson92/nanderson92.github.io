@@ -19,10 +19,7 @@ last_updated: May 2026
   <a class="button secondary" href="mailto:{{ site.email }}?subject=Scheduling%20a%20portfolio%20call&body=Hi%20Nathan%2C%0A%0AI%27d%20like%20to%20schedule%20a%20call%20about...">Schedule a call →</a>
   <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
   <a class="button secondary" href="{{ site.github }}">GitHub</a>
-  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">Resume</a>
- </div>
- <div class="fit-chip-row" aria-label="Best fit areas">
-  <span>Wet processing</span><span>Microfluidics &amp; printed electronics</span><span>Automation &amp; reliability</span><span>Advanced materials R&amp;D</span><span>Manufacturing development</span>
+  <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">View resume (PDF)</a>
  </div>
  <div class="fast-intro-block compact-fast-intro">
   <strong>Fast intro: send me</strong>
@@ -34,5 +31,5 @@ last_updated: May 2026
    <li>what decision you need to make</li>
   </ol>
  </div>
- <p class="contract-line">Open to internships, contract sprints, paid trial projects, and founding-engineer conversations. For U.S. roles, I can support W-2 internships or 1099-style project work where appropriate.</p>
+ <p class="contract-line">Open to internships, contract sprints, paid trial projects, and founding-engineer conversations. For U.S. roles, I can support W-2 internships or 1099-style project work where appropriate. I am based in U.S. Eastern Time during the academic year; the fastest outreach includes timeline, location/remote expectations, and the case file most relevant to the role.</p>
 </section>

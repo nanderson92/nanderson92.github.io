@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Thin-Film Semiconductor Research
-category: Materials · semiconductors · Georgia Tech
+title: Thin-Film Characterization-to-Process Logic
+category: Materials · semiconductors · Georgia Tech coursework/research
 date_range: 2025–present
 last_updated: May 2026
 prev_title: Thermocycler Process Automation
@@ -10,8 +10,9 @@ next_title: Droplet Image Analysis Workflows
 next_url: /projects/droplet-image-analysis-workflows/
 metric_chips: '<span>Process response</span><span>Characterization matrix</span>'
 description: Thin-film semiconductor research case file linking growth conditions to characterization readouts and process decisions.
-subtitle: Materials-characterization framing for connecting growth conditions to film response without overclaiming a single readout.
-body_class: case-file-page
+subtitle: A characterization readout becomes useful when it tells you whether the growth condition, substrate, or handling path should change.
+body_class: case-file-page thin-film-semiconductor-research
+affiliation: Georgia Tech materials / semiconductor process framing
 ---
 
 <section class="artifact-stack materials-artifacts" aria-label="Thin-film semiconductor research artifacts">
@@ -29,11 +30,8 @@ body_class: case-file-page
  <ul class="snapshot-list">
   <li><strong>System:</strong> thin-film semiconductor research where growth condition, substrate state, and characterization readout have to be interpreted together.</li>
   <li><strong>Inputs handled:</strong> growth condition, sample identity, processing history, characterization method, and comparison baseline.</li>
-  <li><strong>Outputs:</strong> morphology/composition/structure readouts tied to whether a process condition should be changed.</li>
+  <li><strong>Outputs:</strong> scanning electron microscopy (SEM), X-ray diffraction (XRD), and X-ray photoelectron spectroscopy (XPS) readouts tied to whether a process condition should be changed.</li>
  </ul>
-</section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="Scanning Electron Microscopy">SEM</abbr> = morphology/coverage imaging.</span> <span><abbr title="X-ray Diffraction">XRD</abbr> = crystallinity/phase readout.</span> <span><abbr title="X-ray Photoelectron Spectroscopy">XPS</abbr> = surface composition/chemical-state readout.</span>
 </section>
 
 <section class="insight-block tone-dark"><p>Characterization is a process screen, not just a discovery tool. Each readout should answer whether the growth condition, substrate, or handling path needs to change.</p></section>
@@ -43,10 +41,9 @@ body_class: case-file-page
 ## Characterization matrix
 
 <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Readout</th><th>What it can show</th><th>What it cannot prove alone</th></tr></thead><tbody>
-<tr><td><abbr title="Scanning Electron Microscopy">SEM</abbr> / optical</td><td>Morphology, coverage, defects, gross film quality.</td><td>Composition or phase identity by itself.</td></tr>
-<tr><td><abbr title="X-ray Diffraction">XRD</abbr></td><td>Crystallinity, phase, orientation signals.</td><td>Local surface chemistry or point defects.</td></tr>
-<tr><td><abbr title="X-ray Photoelectron Spectroscopy">XPS</abbr></td><td>Surface composition and chemical states.</td><td>Bulk structure without depth context.</td></tr>
-<tr><td>Raman</td><td>Vibrational signatures and structural indicators.</td><td>Full process causality without paired conditions.</td></tr>
+<tr><td>SEM / optical</td><td>Morphology, coverage, defects, gross film quality.</td><td>Composition or phase identity by itself.</td></tr>
+<tr><td>XRD</td><td>Crystallinity, phase, orientation signals.</td><td>Local surface chemistry or point defects.</td></tr>
+<tr><td>XPS</td><td>Surface composition and chemical states.</td><td>Bulk structure without depth context.</td></tr>
 </tbody></table></div>
 
 ## Next run
@@ -55,7 +52,7 @@ body_class: case-file-page
 
 ## What changed
 
-<div class="what-changed-block changed-panel"><p>The work made characterization feel like a process screen: each readout answers one part of the film-quality question and needs a paired process condition to become actionable.</p></div>
+<div class="what-changed-block changed-panel"><p>The work re-cast each characterization readout as a process screen with a paired pass/fail criterion and a clear next-run decision.</p></div>
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/droplet-image-analysis-workflows/' | relative_url }}">Next: Droplet Image Analysis Workflows →</a>

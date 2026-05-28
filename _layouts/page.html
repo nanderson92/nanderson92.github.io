@@ -26,7 +26,17 @@ layout: default
 </section>
 
 <section class="page-content">
- <div class="content-shell">
+ <div class="content-shell{% if page.url contains '/projects/' and page.url != '/projects/' %} case-content-shell{% endif %}">
+ {% if page.url contains '/projects/' and page.url != '/projects/' %}
+ <div class="case-content-grid">
+  <article class="case-main">{{ content }}</article>
+  <aside class="case-toc-wrap" aria-label="On this case file">
+   <p class="toc-kicker">On this case file</p>
+   <nav class="case-toc" data-case-toc></nav>
+  </aside>
+ </div>
+ {% else %}
  {{ content }}
+ {% endif %}
  </div>
 </section>

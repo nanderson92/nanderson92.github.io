@@ -10,8 +10,9 @@ next_title: Micromodular Electronics Deposition
 next_url: /projects/micromodular-deposition/
 metric_chips: '<span><strong>20×</strong> throughput increase</span><span><strong>~50%</strong> usable-yield improvement</span>'
 description: Microfluidic stem-cell microencapsulation case file showing 20× throughput and ~50% usable-yield improvement through flow and tooling changes.
-subtitle: Microfluidic capsule-generation work that made throughput useful by keeping yield and handling stability inside the operating window.
-body_class: case-file-page
+subtitle: Faster capsule generation became valuable only when flow ratio, droplet formation, crosslink timing, and collection stayed inside a usable operating window.
+body_class: case-file-page microencapsulation-process-development
+affiliation: Mayo Clinic · Rochester, MN
 ---
 
 <section class="artifact-stack microencap-artifacts" aria-label="Stem-cell microencapsulation artifacts">
@@ -19,14 +20,14 @@ body_class: case-file-page
   <p class="artifact-label">MICROSCOPY</p>
   <figure class="artifact-figure">
    <div class="artifact-image-frame frame-microscopy"><img src="{{ '/assets/images/artifact-microcapsule-microscopy-1100.webp' | relative_url }}" alt="Representative hydrogel microcapsules under microscopy" loading="lazy"></div>
-   <figcaption><strong>Figure 1. Representative hydrogel microcapsules from the microfluidic encapsulation workflow.</strong> This image shows capsule morphology, visual process output, and the type of microscopy evidence used for yield and quality assessment. Scale and run metadata are not shown in this cropped web artifact.</figcaption>
+   <figcaption><strong>Figure 1. Representative hydrogel microcapsules from the microfluidic encapsulation workflow.</strong> This image shows capsule morphology, visual process output, and the type of microscopy evidence used for yield and quality assessment.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide">
   <p class="artifact-label">QUANTITATIVE OUTPUT</p>
   <figure class="artifact-figure">
    <div class="artifact-image-frame frame-chart"><img src="{{ '/assets/images/artifact-peg-shell-thickness-1200.webp' | relative_url }}" alt="PEG shell thickness versus shell flow rate chart" loading="lazy"></div>
-   <figcaption><strong>Figure 2. <abbr title="polyethylene glycol">PEG</abbr> shell thickness as a function of shell flow rate.</strong> The exported analysis image supports the process claim that flow-rate changes shifted capsule structure. Axis and significance details are limited in this web artifact, so it is treated as supporting process evidence rather than a publication-quality statistical figure.</figcaption>
+   <figcaption><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> The exported analysis image shows shell-thickness increasing across tested shell-flow settings, supporting flow rate as a structural process lever.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide">
@@ -41,14 +42,11 @@ body_class: case-file-page
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> flow-focusing microfluidic alginate-core / <abbr title="polyethylene glycol">PEG</abbr>-shell capsule generation for <abbr title="adult retinal pigment epithelial cell line 19">ARPE-19</abbr> cell culture.</li>
+  <li><strong>System:</strong> flow-focusing microfluidic alginate-core / polyethylene glycol (PEG)-shell capsule generation for ARPE-19 retinal pigment epithelium cell culture.</li>
   <li><strong>Inputs adjusted:</strong> flow ratio, tooling geometry, shielding/crosslinking conditions, and collection workflow.</li>
   <li><strong>Measured outputs:</strong> capsule-generation rate, microscopy-counted usable yield, coalescence, shell integrity, and handling stability.</li>
   <li><strong>Result:</strong> increased capsule-generation throughput by 20× and improved microscopy-counted usable encapsulation yield by ~50% after flow-ratio, tooling, and crosslinking adjustments.</li>
  </ul>
-</section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement the workflow has to deliver.</span> <span><abbr title="Design of Experiments">DOE</abbr> = structured run plan.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
 </section>
 
 <section class="artifact-panel metric-before-after">
@@ -61,7 +59,7 @@ body_class: case-file-page
  </tbody></table></div>
 </section>
 
-<section class="insight-block tone-dark"><p>Faster capsule generation was only useful when flow ratio, droplet formation, crosslink timing, and collection stayed inside a usable operating window.</p></section>
+<section class="insight-block tone-dark"><p>Faster capsule generation became valuable only when flow ratio, droplet formation, crosslink timing, and collection stayed inside a usable operating window.</p></section>
 
 <section class="mini-flow-card"><h2>Capsule workflow</h2><div class="mini-flow"><span>Set flow ratio</span><b>→</b><span>Generate capsules</span><b>→</b><span>Crosslink</span><b>→</b><span>Microscopy QC</span><b>→</b><span>Classify usable yield</span></div></section>
 

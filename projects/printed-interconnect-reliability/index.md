@@ -8,10 +8,11 @@ prev_title: Micromodular Electronics Deposition
 prev_url: /projects/micromodular-deposition/
 next_title: Thermocycler Process Automation
 next_url: /projects/thermocycler-process-automation/
-metric_chips: '<span>Failure logic</span><span><abbr title="resistance normalized to initial resistance">R/R₀</abbr> drift screen</span>'
+metric_chips: '<span>Failure logic</span><span>Normalized resistance drift screen</span>'
 description: Printed interconnect reliability case file using resistance drift, stress intervals, and failure classes to guide upstream process checks.
 subtitle: Printed-line testing reframed as a reliability screen that maps resistance behavior back to upstream process checks.
-body_class: case-file-page
+body_class: case-file-page printed-interconnect-reliability
+affiliation: Filler Lab · Georgia Tech
 ---
 
 <section class="artifact-stack reliability-artifacts" aria-label="Printed interconnect measurement artifacts">
@@ -22,10 +23,17 @@ body_class: case-file-page
    <figcaption><strong>Figure 1. Measurement method: four-point resistance testing.</strong> Four-point probe logic separates current sourcing from voltage sensing, reducing contact-resistance artifacts when evaluating printed-line resistance and drift.</figcaption>
   </figure>
  </article>
+ <article class="artifact-card artifact-card-wide">
+  <p class="artifact-label">DRIFT SCREEN</p>
+  <figure class="artifact-figure">
+   <div class="artifact-image-frame frame-plot"><img src="{{ '/assets/images/reliability-drift-plot.svg' | relative_url }}" alt="Representative normalized resistance drift screen" loading="lazy"></div>
+   <figcaption><strong>Figure 2. Representative normalized resistance drift screen.</strong> Resistance normalized to its initial value as a resistance ratio (R/R₀) separates stable traces, smooth drift, intermittent behavior, and threshold crossings that should trigger upstream process checks.</figcaption>
+  </figure>
+ </article>
  <article class="artifact-card artifact-card-wide evidence-status-card">
   <p class="artifact-label">EVIDENCE STATUS</p>
-  <h2>Public artifacts shown here are method and decision logic.</h2>
-  <p>Microscope images, resistance-vs-time plots, and stress-protocol tables are not posted on this public page yet. The current case file therefore focuses on the control-plan structure: what should be measured, how failure classes map upstream, and how time-zero continuity can miss process-built vulnerability.</p>
+  <h2>Public view shows the screen architecture and failure-decision logic.</h2>
+  <p>Stress-protocol data and microscope evidence can be discussed separately where appropriate. This public page shows the control-plan structure: what should be measured, how failure classes map upstream, and how normalized resistance drift can reveal process-built vulnerability without exposing full unpublished stress data.</p>
  </article>
 </section>
 
@@ -33,15 +41,12 @@ body_class: case-file-page
  <h2>Setup</h2>
  <ul class="snapshot-list">
   <li><strong>System:</strong> printed interconnect lines measured before and after stress intervals.</li>
-  <li><strong>Inputs handled:</strong> initial resistance, normalized drift, stress timing, probe/contact state, and physical inspection notes.</li>
+  <li><strong>Inputs handled:</strong> initial resistance, normalized resistance drift (R/R₀), stress timing, probe/contact state, and physical inspection notes.</li>
   <li><strong>Outputs:</strong> pass, monitor, fail, and artifact classes that point to upstream print, cure, handling, or measurement checks.</li>
  </ul>
 </section>
-<section class="acronym-legend">
- <strong>Notation:</strong> <span><abbr title="resistance normalized to initial resistance">R/R₀</abbr> = normalized resistance drift.</span> <span><abbr title="Critical-to-Quality">CTQ</abbr> = measurable requirement.</span> <span><abbr title="Failure Mode and Effects Analysis">FMEA</abbr> = failure-mode map used to prioritize checks.</span>
-</section>
 
-<section class="insight-block tone-dark"><p>Time-zero continuity is not enough. A printed line can pass once and still carry process-built vulnerability under stress.</p></section>
+<section class="insight-block tone-dark"><p>A printed line can pass an initial continuity check and still carry process-built vulnerability under stress.</p></section>
 
 <section class="mini-flow-card"><h2>Reliability screen flow</h2><div class="mini-flow"><span>Measure initial resistance</span><b>→</b><span>Stress interval</span><b>→</b><span>Measure drift</span><b>→</b><span>Classify</span><b>→</b><span>Check upstream</span></div></section>
 
@@ -73,6 +78,8 @@ body_class: case-file-page
 ## What changed
 
 <div class="what-changed-block changed-panel"><p>This work reframed interconnect testing from a time-zero pass/fail check into a reliability screen that can identify process-built vulnerability before full device failure.</p></div>
+
+<section class="related-note-card artifact-panel"><h2>Related note</h2><p><a href="{{ '/notes/' | relative_url }}">Why time-zero continuity is the wrong test for printed lines →</a></p></section>
 
 <div class="case-cta-row two-button-cta">
  <a class="button primary" href="{{ '/projects/thermocycler-process-automation/' | relative_url }}">Next: Thermocycler Process Automation →</a>

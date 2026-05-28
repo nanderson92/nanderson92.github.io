@@ -3,7 +3,7 @@ layout: page
 title: Notes
 category: Thinking notes
 subtitle: Short engineering notes on measurement, reliability, and operator instincts.
-description: Engineering notes on printed-line reliability, wet-process changeovers, and CTQ judgment.
+description: Engineering notes on printed-line reliability, wet-process changeovers, and critical-to-quality judgment.
 body_class: notes-page
 last_updated: May 2026
 ---
@@ -17,4 +17,8 @@ last_updated: May 2026
  <p>That last class matters. Without an artifact bucket, the process team learns the wrong lesson. You can change ink, cure, substrate, or print settings when the real issue was probe contact. You can also dismiss a true material problem as noisy measurement because the measurement method was never separated from the line behavior. A four-point resistance setup helps because current sourcing and voltage sensing are separated, but the method still needs physical inspection and repeatable handling.</p>
  <p>The point of reliability screening is feedback. If a line starts high, I would look upstream at print continuity, line geometry, cure condition, and probe placement. If resistance drifts smoothly upward, I would look at environmental sensitivity, sintering/cure history, and material stability. If the line opens suddenly, I would inspect for cracking, delamination, handling damage, or a local defect. If readings jump in and out, I would retest before assigning it to the process.</p>
  <p>Time-zero continuity answers whether a circuit exists at the start. It does not answer whether the process made a robust interconnect. For early printed-electronics development, I would rather have a slower screen that names the failure mode than a fast screen that hides it.</p>
+ <footer class="note-signature-block">
+  <p><strong>Nathan Anderson</strong> · Chemical &amp; Biomolecular Engineering, Georgia Tech · Filler Lab</p>
+  <a class="button primary email-button" href="mailto:{{ site.email }}?subject=Printed-line%20reliability%20note">Discuss this →</a>
+ </footer>
 </article>
