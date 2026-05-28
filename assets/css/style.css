@@ -1397,3 +1397,65 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
 @media (max-width:640px){
   :where(.home-page,.projects-page) .portfolio-card .case-thumb{aspect-ratio:16 / 10!important;}
 }
+
+
+/* --- Homepage credential bar compact fit: May 2026 --- */
+.home-page .cell-microscopy-hero .credential-bar{
+  display:inline-flex!important;
+  width:max-content!important;
+  max-width:calc(100% - 24px)!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:0!important;
+  margin:18px 0 24px!important;
+  padding:10px 16px!important;
+  border:1px solid rgba(8,112,139,.20)!important;
+  border-radius:2px!important;
+  background:rgba(255,255,255,.68)!important;
+  box-shadow:0 10px 30px rgba(15,23,42,.045)!important;
+  backdrop-filter:blur(4px)!important;
+  -webkit-backdrop-filter:blur(4px)!important;
+  line-height:1!important;
+}
+.home-page .cell-microscopy-hero .credential-bar span{
+  display:inline-flex!important;
+  align-items:center!important;
+  position:relative!important;
+  padding:0!important;
+  margin:0!important;
+  white-space:nowrap!important;
+}
+.home-page .cell-microscopy-hero .credential-bar span + span{
+  margin-left:14px!important;
+}
+.home-page .cell-microscopy-hero .credential-bar span + span::before{
+  content:""!important;
+  position:static!important;
+  display:inline-block!important;
+  flex:0 0 auto!important;
+  width:4px!important;
+  height:4px!important;
+  margin:0 14px 0 0!important;
+  border-radius:999px!important;
+  background:#08708B!important;
+  transform:none!important;
+}
+@media (max-width:720px){
+  .home-page .cell-microscopy-hero .credential-bar{
+    width:fit-content!important;
+    max-width:calc(100vw - 36px)!important;
+    padding:9px 12px!important;
+    row-gap:6px!important;
+    column-gap:10px!important;
+  }
+  .home-page .cell-microscopy-hero .credential-bar span{
+    white-space:normal!important;
+  }
+  .home-page .cell-microscopy-hero .credential-bar span + span{
+    margin-left:0!important;
+  }
+  .home-page .cell-microscopy-hero .credential-bar span + span::before{
+    display:none!important;
+  }
+}
