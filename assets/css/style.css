@@ -1667,3 +1667,61 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
       )!important;
   }
 }
+
+/* --- Hero visibility correction: keep chip image visible while protecting text --- */
+.home-page .startup-hero-rebuilt.cell-microscopy-hero{
+  background:#06101c url('../images/homepage-hero-chip-bg.jpg') 66% center / cover no-repeat!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+  z-index:0!important;
+  background:url('../images/homepage-hero-chip-bg.jpg') 66% center / cover no-repeat!important;
+  opacity:1!important;
+  filter:brightness(.92) contrast(.94) saturate(.90)!important;
+  transform:scale(1.018)!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+  z-index:1!important;
+  pointer-events:none!important;
+  background:
+    radial-gradient(
+      ellipse at 28% 34%,
+      rgba(5,10,24,.34) 0%,
+      rgba(5,10,24,.24) 24%,
+      rgba(5,10,24,.12) 44%,
+      rgba(5,10,24,.04) 62%,
+      rgba(5,10,24,0) 78%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(5,10,24,.04) 0%,
+      rgba(5,10,24,.02) 62%,
+      rgba(255,255,255,.86) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(5,10,24,.68) 0%,
+      rgba(5,10,24,.46) 34%,
+      rgba(5,10,24,.17) 64%,
+      rgba(5,10,24,.03) 100%
+    )!important;
+}
+.home-page .cell-microscopy-hero .hero-copy h1{
+  text-shadow:0 3px 18px rgba(0,0,0,.34), 0 1px 2px rgba(0,0,0,.22)!important;
+}
+.home-page .cell-microscopy-hero .hero-lede{
+  text-shadow:0 2px 14px rgba(0,0,0,.28)!important;
+}
+@media (max-width:960px){
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero,
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+    background-position:64% center!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+    filter:brightness(.86) contrast(.92) saturate(.88)!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+    background:
+      radial-gradient(ellipse at 44% 30%, rgba(5,10,24,.32) 0%, rgba(5,10,24,.18) 42%, rgba(5,10,24,0) 74%),
+      linear-gradient(90deg, rgba(5,10,24,.70) 0%, rgba(5,10,24,.44) 56%, rgba(5,10,24,.12) 100%)!important;
+  }
+}
