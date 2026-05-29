@@ -1193,14 +1193,14 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
   min-height:clamp(640px,82vh,820px)!important;
   padding-top:clamp(116px,10vw,160px)!important;
   padding-bottom:clamp(90px,8vw,132px)!important;
-  background:#fff url('../images/homepage-hero-microcapsules-bg.jpg') center 44% / cover no-repeat!important;
+  background:#fff url('../images/homepage-hero-chip-bg.jpg') 60% center / cover no-repeat!important;
 }
 .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
   content:""!important;
   position:absolute!important;
   inset:0!important;
   z-index:0!important;
-  background:url('../images/homepage-hero-microcapsules-bg.jpg') center 44% / cover no-repeat!important;
+  background:url('../images/homepage-hero-chip-bg.jpg') 60% center / cover no-repeat!important;
   transform:scale(1.015)!important;
   opacity:.94!important;
 }
