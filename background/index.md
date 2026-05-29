@@ -28,8 +28,9 @@ last_updated: May 2026
 
 <section class="access-feature tone-dark">
  <p class="system-label">Why access matters</p>
- <h2>Systems decide who gets to use the future.</h2>
- <p>Growing up adopted from Incheon into small-town Minnesota made me notice who systems are built for. That observation is why manufacturability, not just discovery, is the question I care about.</p>
+ <h2>Systems decide who gets to participate in the future.</h2>
+ <p>Growing up adopted from Incheon into small-town Minnesota taught me that access is not automatic. Some people inherit systems built around them. Others have to learn how those systems work from the outside.</p>
+ <p>That is why I care about manufacturability. Discovery matters, but discovery alone does not change who gets access to new technology. The real question is whether a breakthrough can become affordable, reliable, scalable, and usable by people who were never in the room where it was invented.</p>
 </section>
 
 <section class="timeline-feature">
