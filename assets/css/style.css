@@ -1467,13 +1467,13 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
 .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
   background:url('../images/homepage-hero-chip-bg.jpg') 62% center / cover no-repeat!important;
   opacity:1!important;
-  filter:saturate(.86) contrast(.92) brightness(.72)!important;
+  filter:brightness(.82) contrast(.92) saturate(.90)!important;
   transform:scale(1.018)!important;
 }
 .home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
   background:
-    linear-gradient(180deg, rgba(7,14,32,.22) 0%, rgba(7,14,32,.12) 62%, rgba(255,255,255,.88) 100%),
-    linear-gradient(90deg, rgba(7,14,32,.86) 0%, rgba(7,14,32,.68) 34%, rgba(7,14,32,.24) 64%, rgba(7,14,32,.08) 100%)!important;
+    linear-gradient(180deg, rgba(7,14,32,.16) 0%, rgba(7,14,32,.08) 62%, rgba(255,255,255,.88) 100%),
+    linear-gradient(90deg, rgba(5,10,24,.78) 0%, rgba(5,10,24,.55) 38%, rgba(5,10,24,.18) 68%, rgba(5,10,24,.04) 100%)!important;
 }
 .home-page .cell-microscopy-hero .hero-copy{
   max-width:min(820px,100%)!important;
@@ -1556,12 +1556,12 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
   }
   .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
     background-position:60% center!important;
-    filter:saturate(.84) contrast(.90) brightness(.62)!important;
+    filter:brightness(.76) contrast(.90) saturate(.88)!important;
   }
   .home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
     background:
-      linear-gradient(180deg, rgba(7,14,32,.32) 0%, rgba(7,14,32,.20) 58%, rgba(255,255,255,.88) 100%),
-      linear-gradient(90deg, rgba(7,14,32,.84) 0%, rgba(7,14,32,.68) 60%, rgba(7,14,32,.30) 100%)!important;
+      linear-gradient(180deg, rgba(7,14,32,.28) 0%, rgba(7,14,32,.16) 58%, rgba(255,255,255,.88) 100%),
+      linear-gradient(90deg, rgba(5,10,24,.78) 0%, rgba(5,10,24,.58) 60%, rgba(5,10,24,.24) 100%)!important;
   }
 }
 @media (max-width:720px){
@@ -1582,6 +1582,6 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
 }
 @media (max-width:420px){
   .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
-    filter:saturate(.82) contrast(.88) brightness(.56)!important;
+    filter:brightness(.70) contrast(.88) saturate(.86)!important;
   }
 }
