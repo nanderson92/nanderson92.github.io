@@ -1725,3 +1725,28 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
       linear-gradient(90deg, rgba(5,10,24,.70) 0%, rgba(5,10,24,.44) 56%, rgba(5,10,24,.12) 100%)!important;
   }
 }
+
+/* --- Hero subhead readability patch: subtle glass box behind lede --- */
+.home-page .cell-microscopy-hero .hero-lede{
+  display:block!important;
+  width:fit-content!important;
+  max-width:min(660px, 100%)!important;
+  margin-top:22px!important;
+  padding:12px 16px!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  border-radius:14px!important;
+  background:rgba(5,10,24,.48)!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.18)!important;
+  backdrop-filter:blur(6px)!important;
+  -webkit-backdrop-filter:blur(6px)!important;
+  color:rgba(255,255,255,.94)!important;
+  text-shadow:0 1px 8px rgba(0,0,0,.20)!important;
+}
+@media (max-width:720px){
+  .home-page .cell-microscopy-hero .hero-lede{
+    width:auto!important;
+    padding:11px 13px!important;
+    border-radius:12px!important;
+    background:rgba(5,10,24,.56)!important;
+  }
+}
