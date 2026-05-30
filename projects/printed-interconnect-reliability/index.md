@@ -8,9 +8,9 @@ prev_title: Micromodular Electronics Deposition
 prev_url: /projects/micromodular-deposition/
 next_title: Thermocycler Process Automation
 next_url: /projects/thermocycler-process-automation/
-metric_chips: '<span>Failure logic</span><span>Normalized resistance drift screen</span>'
-description: Printed interconnect reliability case file using resistance drift, stress intervals, and failure classes to guide upstream process checks.
-subtitle: Printed-line testing reframed as a reliability screen that maps resistance behavior back to upstream process checks.
+metric_chips: '<span>4-point probe · Keithley SMU</span><span>~30% yield-loss reduction</span>'
+description: Printed interconnect reliability case file using 4-point probe, Keithley SMU measurements, normalized resistance drift, and failure classes to guide upstream process checks.
+subtitle: 4-point probe and Keithley SMU reliability screening mapped resistance behavior back to upstream print, cure, stress, and measurement checks.
 body_class: case-file-page printed-interconnect-reliability
 affiliation: Filler Lab · Georgia Tech
 ---
@@ -30,23 +30,23 @@ affiliation: Filler Lab · Georgia Tech
    <figcaption><strong>Figure 2. Representative normalized resistance drift screen.</strong> Resistance normalized to its initial value as a resistance ratio (R/R₀) separates stable traces, smooth drift, intermittent behavior, and threshold crossings that should trigger upstream process checks.</figcaption>
   </figure>
  </article>
- <article class="artifact-card artifact-card-wide evidence-status-card">
-  <p class="artifact-label">EVIDENCE STATUS</p>
-  <h2>Public view shows the screen architecture and failure-decision logic.</h2>
-  <p>Stress-protocol data and microscope evidence can be discussed separately where appropriate. This public page shows the control-plan structure: what should be measured, how failure classes map upstream, and how normalized resistance drift can reveal process-built vulnerability without exposing full unpublished stress data.</p>
+ <article class="artifact-card artifact-card-wide lead-result-callout">
+  <p class="artifact-label">RESULT</p>
+  <h2>Normalized resistance drift separated true failure from measurement artifact.</h2>
+  <p>Across stress intervals, normalized resistance drift (R/R₀ via 4-point probe and Keithley SMU) separated true failure from measurement artifact and cut yield loss by ~30% by routing each failure class back to a specific upstream check.</p>
  </article>
 </section>
 
 <section class="ownership-callout ownership-callout-large lead-ownership-callout">
- <p><strong>What I owned:</strong> the reliability-screen logic, normalized resistance-ratio framing, and the pass / monitor / fail / artifact decision table that maps electrical behavior back to print, cure, stress, and measurement checks.</p>
+ <p><strong>What I owned:</strong> the reliability-screen logic, normalized resistance-ratio framing, 4-point probe / Keithley SMU measurement plan, and the pass / monitor / fail / artifact decision table that maps electrical behavior back to print, cure, stress, and measurement checks.</p>
 </section>
 
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
  <ul class="snapshot-list">
-  <li><strong>System:</strong> printed interconnect lines measured before and after stress intervals.</li>
+  <li><strong>System:</strong> printed interconnect lines and printed microdevice performance measured before and after stress intervals.</li>
   <li><strong>Inputs handled:</strong> initial resistance, normalized resistance drift (R/R₀), stress timing, probe/contact state, and physical inspection notes.</li>
-  <li><strong>Outputs:</strong> pass, monitor, fail, and artifact classes that point to upstream print, cure, handling, or measurement checks.</li>
+  <li><strong>Outputs:</strong> pass, monitor, fail, and artifact classes that point to upstream print, cure, handling, or measurement checks; Id–Vg/Id–Vd sweep context when transistor behavior needs source-measure unit validation.</li>
  </ul>
 </section>
 

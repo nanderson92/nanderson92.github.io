@@ -16,7 +16,7 @@ last_updated: May 2026
  </div>
  <div class="contact-button-row prominent-contact-buttons">
   <a class="button primary email-button" href="mailto:{{ site.email }}?subject=Portfolio%20conversation">Email Nathan →</a>
-  <a class="button secondary" href="mailto:{{ site.email }}?subject=Scheduling%20a%20portfolio%20call&body=Hi%20Nathan%2C%0A%0AI%27d%20like%20to%20schedule%20a%20call%20about...">Schedule a call →</a>
+  <a class="button secondary" href="mailto:{{ site.email }}?subject=Scheduling%20a%20portfolio%20call&body=Hi%20Nathan%2C%0A%0AI%27d%20like%20to%20schedule%20a%20call%20about...">Email to schedule →</a>
   <a class="button secondary" href="{{ site.linkedin }}">LinkedIn</a>
   <a class="button secondary" href="{{ site.github }}">GitHub</a>
   <a class="button secondary" href="{{ '/assets/files/Nathan_Anderson_Resume.pdf' | relative_url }}" download="Nathan_Anderson_Resume.pdf">View resume (PDF)</a>

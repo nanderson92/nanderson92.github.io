@@ -27,7 +27,7 @@ affiliation: Mayo Clinic · Rochester, MN
   <p class="artifact-label">QUANTITATIVE OUTPUT</p>
   <figure class="artifact-figure">
    <div class="artifact-image-frame frame-chart"><img src="{{ '/assets/images/artifact-peg-shell-thickness-1200.webp' | relative_url }}" alt="PEG shell thickness versus shell flow rate chart" loading="lazy"></div>
-   <figcaption><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> The exported analysis image shows shell-thickness increasing across tested shell-flow settings, supporting flow rate as a structural process lever.</figcaption>
+   <figcaption><strong>Figure 2. PEG shell thickness as a function of shell flow rate.</strong> The chart separates 0 mM and 50 mM calcium chloride conditions and shows shell-thickness increasing across tested shell-flow settings, supporting flow rate and crosslinking condition as structural process levers.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide">

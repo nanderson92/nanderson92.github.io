@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thin-Film Characterization-to-Process Logic
-category: Materials · semiconductors · Georgia Tech coursework/research
+category: Materials · semiconductors · Georgia Tech
 date_range: 2025–present
 last_updated: May 2026
 prev_title: Thermocycler Process Automation
@@ -12,7 +12,7 @@ metric_chips: '<span>Process response</span><span>Characterization matrix</span>
 description: Thin-film semiconductor research case file linking growth conditions to characterization readouts and process decisions.
 subtitle: A characterization readout becomes useful when it tells you whether the growth condition, substrate, or handling path should change.
 body_class: case-file-page thin-film-semiconductor-research
-affiliation: Georgia Tech materials / semiconductor process framing
+affiliation: Georgia Tech materials / semiconductor characterization
 ---
 
 <section class="artifact-stack materials-artifacts" aria-label="Thin-film semiconductor research artifacts">
@@ -26,7 +26,7 @@ affiliation: Georgia Tech materials / semiconductor process framing
 </section>
 
 <section class="ownership-callout ownership-callout-large lead-ownership-callout">
- <p><strong>What I owned:</strong> the characterization-to-process framing, the readout limitation matrix, and the next-run control-plan logic for deciding when a film-growth condition should change.</p>
+ <p><strong>What I owned:</strong> the characterization-to-process framing, the readout limitation matrix, and the next-run control-plan logic for deciding when a film-growth condition should change. This page is kept as a process-logic case file rather than a data-claim page because no unpublished spectra are shown here.</p>
 </section>
 
 <section class="artifact-panel setup-snapshot">
@@ -34,7 +34,7 @@ affiliation: Georgia Tech materials / semiconductor process framing
  <ul class="snapshot-list">
   <li><strong>System:</strong> thin-film semiconductor research where growth condition, substrate state, and characterization readout have to be interpreted together.</li>
   <li><strong>Inputs handled:</strong> growth condition, sample identity, processing history, characterization method, and comparison baseline.</li>
-  <li><strong>Outputs:</strong> scanning electron microscopy (SEM), X-ray diffraction (XRD), and X-ray photoelectron spectroscopy (XPS) readouts tied to whether a process condition should be changed.</li>
+  <li><strong>Outputs:</strong> scanning electron microscopy (SEM), X-ray diffraction (XRD), Raman spectroscopy, and X-ray photoelectron spectroscopy (XPS) readouts tied to whether a process condition should be changed.</li>
  </ul>
 </section>
 

@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="Representative thermocycler temperature profile">
-<rect width="720" height="420" rx="34" fill="#fffaf4"/>
-<g stroke="#ead8c3" stroke-width="1"><path d="M90 70V330M210 70V330M330 70V330M450 70V330M570 70V330"/><path d="M72 105H640M72 180H640M72 255H640M72 330H640"/></g>
-<path d="M72 330H640" stroke="#2b2b2b" stroke-width="2"/><path d="M72 70V330" stroke="#2b2b2b" stroke-width="2"/>
-<path d="M85 285 L190 110 L290 110 L365 240 L455 240 L535 140 L620 140" fill="none" stroke="#C47D2B" stroke-width="5" stroke-dasharray="11 10" stroke-linecap="round"/>
-<path d="M85 295 C125 260 155 168 190 120 C220 98 265 104 292 116 C318 135 342 210 365 246 C390 269 430 250 456 242 C492 226 512 158 536 146 C564 132 596 138 620 144" fill="none" stroke="#1f3b46" stroke-width="7" stroke-linecap="round"/>
-<text x="70" y="40" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#071d24">setpoint vs. measured temperature</text>
-<text x="128" y="185" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#8C4E18">ramp rate</text>
-<text x="235" y="92" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#8C4E18">overshoot</text>
-<text x="478" y="168" font-family="ui-monospace,Menlo,monospace" font-size="17" fill="#8C4E18">hold stability</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-label="Setpoint versus measured temperature trace for thermocycler validation">
+<rect width="960" height="560" rx="34" fill="#fffaf4"/>
+<g stroke="#ead8c3" stroke-width="1.2"><path d="M110 86V450M250 86V450M390 86V450M530 86V450M670 86V450M810 86V450"/><path d="M90 125H855M90 215H855M90 305H855M90 395H855M90 450H855"/></g>
+<path d="M90 450H855" stroke="#0f172a" stroke-width="2.5"/><path d="M90 86V450" stroke="#0f172a" stroke-width="2.5"/>
+<text x="90" y="56" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="850" fill="#071d24">Setpoint vs. measured temperature</text>
+<text x="90" y="500" font-family="Inter,Arial,sans-serif" font-size="18" fill="#334155">Time through PCR cycle</text>
+<text x="24" y="300" transform="rotate(-90 24 300)" font-family="Inter,Arial,sans-serif" font-size="18" fill="#334155">Temperature</text>
+<path d="M110 395 L250 145 L390 145 L500 335 L630 335 L730 190 L840 190" fill="none" stroke="#C47D2B" stroke-width="6" stroke-dasharray="16 12" stroke-linecap="round"/>
+<path d="M110 410 C160 360 202 220 250 160 C285 126 350 134 392 154 C430 178 470 295 500 346 C535 383 595 351 632 340 C680 322 700 215 730 200 C765 180 810 188 840 196" fill="none" stroke="#08708B" stroke-width="8" stroke-linecap="round"/>
+<g font-family="ui-monospace,Menlo,monospace" font-size="20" fill="#8C4E18"><text x="160" y="275">ramp rate</text><text x="304" y="120">overshoot</text><text x="658" y="245">hold stability</text></g>
+<g font-family="Inter,Arial,sans-serif" font-size="18" fill="#0f172a"><rect x="610" y="92" width="230" height="72" rx="14" fill="#fff" stroke="#e2e8f0"/><path d="M632 118H690" stroke="#C47D2B" stroke-width="5" stroke-dasharray="12 8"/><text x="704" y="124">Setpoint</text><path d="M632 145H690" stroke="#08708B" stroke-width="7"/><text x="704" y="151">Measured</text></g>
+</svg>

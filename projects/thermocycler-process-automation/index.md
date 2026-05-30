@@ -8,9 +8,9 @@ prev_title: Printed Interconnect Reliability
 prev_url: /projects/printed-interconnect-reliability/
 next_title: Thin-Film Characterization-to-Process Logic
 next_url: /projects/thin-film-semiconductor-research/
-metric_chips: '<span>Control prototype</span><span>Thermal validation metrics</span>'
-description: Thermocycler automation case file focused on thermal-control validation, ramp rate, overshoot, settling time, and hold stability.
-subtitle: PCR thermal-control prototype focused on whether the sample region sees the intended thermal history.
+metric_chips: '<span>ESP32/Arduino</span><span>PID thermal control</span><span>Nanoliter qPCR</span>'
+description: ESP32/Arduino thermocycler automation case file for nanoliter qPCR, PID thermal control, ramp rate, overshoot, settling time, and hold stability.
+subtitle: ESP32/Arduino-controlled thermocycling automation for nanoliter qPCR, focused on whether the sample region sees the intended thermal history.
 body_class: case-file-page thermocycler-process-automation
 affiliation: Mayo Clinic · Rochester, MN
 ---
@@ -41,13 +41,13 @@ affiliation: Mayo Clinic · Rochester, MN
 </section>
 
 <section class="ownership-callout ownership-callout-large lead-ownership-callout">
- <p><strong>What I owned:</strong> control-logic implementation, thermal-state sequencing, hardware integration support, and validation criteria for ramp rate, overshoot, hold stability, and cycle repeatability.</p>
+ <p><strong>What I owned:</strong> ESP32/Arduino control-logic implementation, thermal-state sequencing, hardware integration support, and validation criteria for ramp rate, overshoot, hold stability, and cycle repeatability.</p>
  <p class="ownership-metric"><strong>Quantified context:</strong> the controller structure organizes three polymerase chain reaction (PCR) temperature stages and four validation targets before final sample-region temperature verification.</p>
 </section>
 
 <section class="artifact-panel setup-snapshot">
  <h2>Setup</h2>
- <p>This thermocycler work supported biological PCR: denaturation, annealing, and extension temperature setpoints repeated across cycles, where actual sample-region temperature determines whether the protocol works.</p>
+ <p><strong>Sensor placement and thermal lag dominated apparent controller performance.</strong> This thermocycler work supported biological PCR: denaturation, annealing, and extension temperature setpoints repeated across cycles, where actual sample-region temperature determines whether the protocol works.</p>
  <ul class="snapshot-list">
   <li><strong>Controlled variables:</strong> denaturation, annealing, and extension setpoints.</li>
   <li><strong>Logged variables:</strong> measured block temperature versus time.</li>
@@ -92,7 +92,7 @@ if hold_timer_done():
  <div class="validation-target-grid">
   <div>
    <h2>Setpoint vs. measured-temperature trace</h2>
-   <p>Validation is judged by ramp rate, overshoot, settling time, hold stability, and cycle repeatability. The control code matters because it has to produce the intended thermal history at the sample region.</p>
+   <p>Validation is judged by ramp rate, overshoot, settling time, hold stability, and cycle repeatability. The ESP32/Arduino control code matters because it has to produce the intended thermal history at the nanoliter sample region.</p>
   </div>
   <figure>
    <img src="{{ '/assets/images/thermocycler-profile.svg' | relative_url }}" alt="Representative setpoint versus measured temperature profile" loading="lazy">

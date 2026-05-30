@@ -2,14 +2,14 @@
 layout: page
 title: Engineering Case Files
 category: Selected work
-subtitle: Six case files across wet-processing, microfluidics, printed-electronics reliability, automation, materials characterization, and image analysis.
+subtitle: Six engineering case files tying physical observations to process decisions, with measurable wins in microfluidic throughput and usable yield.
 description: Engineering case files for wet processing, microfluidics, printed electronics reliability, automation, materials, and image-analysis workflows.
 body_class: projects-page
 last_updated: May 2026
 ---
 
 <section class="projects-index-hero startup-projects-hero plain-prose-section" aria-label="Projects introduction">
- <p>Six case files across wet-processing, microfluidics, printed-electronics reliability, automation, materials characterization, and image analysis. Each case names what was measured, what changed, and what I would run next.</p>
+ <p>Six engineering case files. Two shipped measurable wins — 20× throughput and ~50% usable-yield — and all six tie a physical observation to a process decision, measurement workflow, or design-of-experiments (DOE) screen.</p>
  <div class="case-filter-bar" aria-label="Filter case files">
   <button type="button" class="filter-chip is-active" data-filter="all">All</button>
   <button type="button" class="filter-chip" data-filter="wet">Wet processing</button>

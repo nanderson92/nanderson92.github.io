@@ -47,7 +47,7 @@ last_updated: May 2026
 <section id="earlier-work" class="earlier-work-block artifact-panel standard-card-section">
  <h2>Before process engineering</h2>
  <div class="two-column-evidence">
-  <article id="qsr-mini-case"><h3>Quick-Service Restaurant (QSR) operations</h3><p>Peak-hour service taught bottleneck thinking, line balancing, changeover discipline, preventive maintenance, and shipping under pressure. One improvement cycle produced a +20% cars/hr increase during peak shifts, based on shift-level throughput tracking.</p><span class="outcome-badge">+20% cars/hr</span></article>
+  <article id="qsr-mini-case"><h3>Shift Manager at McDonald’s</h3><p>Peak-hour service taught bottleneck thinking, line balancing, changeover discipline, preventive maintenance, and shipping under pressure. Improvement cycles increased cars/hr by ~20%, reduced order-to-handoff time by ~15%, and cut downtime by ~30% during shift operations.</p><span class="outcome-badge">+20% cars/hr · −15% handoff · −30% downtime</span></article>
   <article><h3>Early assay research</h3><p>Mayo Clinic DNA/PCR tagmentation work gave early exposure to protocol controls, repeatability, contamination risk, and troubleshooting loops. The transferable lesson was discipline: control what changes, document what failed, and rerun only after the failure mode is named.</p><span class="outcome-badge">PCR controls</span></article>
  </div>
 </section>
@@ -55,6 +55,15 @@ last_updated: May 2026
 <section class="mcdonalds-mini-case pull-quote-block">
  <p class="system-label">Operator-to-process-engineer arc</p>
  <p>Visible failure is usually late evidence. Prep, sequencing, staffing, equipment uptime, and handoff timing often decide the outcome before the miss appears. That operator instinct now shows up in how I read wet-lab workflows and early manufacturing screens.</p>
+</section>
+
+
+<section class="leadership-section artifact-panel standard-card-section" aria-label="Leadership and consulting">
+ <h2>Leadership and applied problem-solving</h2>
+ <div class="leadership-grid">
+  <article><h3>Founder &amp; President · Nanotechnology Club</h3><p>Built a student organization around making nanotechnology more accessible through discussion, demos, and project-based technical curiosity.</p></article>
+  <article><h3>Pro-bono Consultant · Consult Your Community</h3><p>Worked on client-facing problem definition, research, recommendation framing, and implementation logic for a nonprofit/community partner.</p></article>
+ </div>
 </section>
 
 <section class="background-tool-sidebar tools-section">
@@ -65,7 +74,7 @@ last_updated: May 2026
  <div class="skill-use-grid logo-tool-grid">
   <div class="skill-use"><span class="tool-logo">Py</span><h3>Python</h3><p>Image analysis, droplet tracking, data processing, plotting, and workflow automation; built the droplet-tracking workflow behind the deposition case files.</p></div>
   <div class="skill-use"><span class="tool-logo">M</span><h3>MATLAB</h3><p>Numerical methods, engineering computation, ODE workflows, and course-based modeling.</p></div>
-  <div class="skill-use"><span class="tool-logo">J</span><h3>JMP</h3><p>analysis of variance (ANOVA), reliability/statistical analysis, comparisons, and experimental interpretation.</p></div>
+  <div class="skill-use"><span class="tool-logo">J</span><h3>JMP</h3><p>design-of-experiments (DOE), analysis of variance (ANOVA), reliability/statistical analysis, comparisons, and experimental interpretation.</p></div>
   <div class="skill-use"><span class="tool-logo">A</span><h3>Aspen</h3><p>Process simulation, thermodynamics, separations, vapor-liquid equilibrium reasoning, and assumption-transparent flowsheets.</p></div>
   <div class="skill-use"><span class="tool-logo">IJ</span><h3>ImageJ/Fiji</h3><p>Microscopy/video segmentation, image calibration, and experimental measurement support.</p></div>
  </div>

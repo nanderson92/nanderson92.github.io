@@ -21,7 +21,7 @@ affiliation: Filler Lab · Georgia Tech
   <p class="artifact-label">SYSTEM ROADMAP</p>
   <h2>Where the deposition screen fits</h2>
   <p>The larger process is to fabricate discrete micromodular components, suspend them in an ink, print them into circuit locations, then analyze placement and route printed interconnects.</p>
-  <p>This case file focuses on the deposition step: choosing substrate/backing conditions that place suspended components in a pattern downstream wiring can actually use.</p>
+  <p>This case file focuses on the deposition step: choosing substrate/backing conditions that place suspended components in a pattern downstream wiring can actually use. The screen is structured as design-of-experiments (DOE) thinking: vary the substrate/backing condition, measure placement outputs, and decide whether the condition advances.</p>
  </div>
  <figure class="roadmap-overview-figure">
   <img src="{{ '/assets/images/micromodular-workflow-deposition-focus.png' | relative_url }}" alt="High-level micromodular electronics roadmap from component fabrication to circuit manufacturing, with deposition step highlighted" loading="lazy">
@@ -36,13 +36,13 @@ affiliation: Filler Lab · Georgia Tech
    <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/artifact-microdevice-trajectory-overlay-1400.webp' | relative_url }}" alt="Microdevice trajectory overlay relative to the marked droplet center" loading="lazy"></div>
    <figcaption><strong>Figure 1. Video-derived microdevice trajectories overlaid on a microscope frame.</strong> The droplet center is marked, allowing device motion to be decomposed into radial and tangential components. This converts a qualitative drying/deposition video into a substrate-screening artifact.</figcaption>
   </figure>
-  <div class="artifact-meta table-like-meta" aria-label="Public run metadata"><span><strong>Solvent</strong> isopropyl alcohol (IPA)</span><span><strong>Public metric set</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span><span><strong>Quantified context</strong> video-derived trajectory analysis plus AAO/device placement images support the substrate screen</span><span><strong>Analysis status</strong> representative run-level artifact; replicate-backed condition comparison is the next screen</span></div>
+  <div class="artifact-meta table-like-meta" aria-label="Run metadata"><span><strong>Solvent</strong> isopropyl alcohol (IPA)</span><span><strong>Metric set</strong> radial velocity, tangential velocity, tracking coverage, edge/center deposition tendency</span><span><strong>Screening method</strong> substrate/backing design-of-experiments (DOE) logic tied to device placement and downstream interconnect feasibility</span><span><strong>Decision output</strong> advance porous-support conditions that preserve drainage without creating edge-heavy crowding</span></div>
  </article>
  <article class="artifact-card artifact-card-wide substrate-artifact">
   <p class="artifact-label">SUBSTRATE SCREEN</p>
   <figure class="artifact-figure">
    <div class="artifact-image-frame frame-wide"><img src="{{ '/assets/images/micromodular-aao-device-comparison.webp' | relative_url }}" alt="AAO substrate baseline, AAO with deposited microdevices, and single micromodular device" loading="lazy"></div>
-   <figcaption><strong>Figure 2. AAO substrate and microdevice placement context.</strong> The comparison shows the porous anodic aluminum oxide (AAO) surface, a deposited-device field, and the individual micromodular device form factor. This makes the deposition screen specific to placement on AAO-like supports rather than reusing the workflow dashboard from the image-analysis case file.</figcaption>
+   <figcaption><strong>Figure 2. AAO substrate and microdevice placement context.</strong> The comparison shows the porous anodic aluminum oxide (AAO) surface, a deposited-device field, and the individual micromodular device form factor. This makes the deposition screen specific to placement on anodic aluminum oxide (AAO)-like supports and connects substrate choice to downstream wiring feasibility.</figcaption>
   </figure>
  </article>
  <article class="artifact-card artifact-card-wide compact-artifact">
@@ -102,7 +102,7 @@ Good deposition means uniform areal density, low edge bias, usable placement for
 ## Next run
 
 <div class="next-iteration-callout">
- <p>The next iteration should set a replicate-backed edge/center ratio and density-uniformity threshold, then compare AAO-like skins against cheaper and less brittle porous supports. The first condition to advance is the porous-support family that preserves drainage without creating edge-heavy crowding.</p>
+ <p>The next iteration should set an edge/center ratio and density-uniformity threshold, then compare AAO-like skins against cheaper and less brittle porous supports. The first condition to advance is the porous-support family that preserves drainage without creating edge-heavy crowding.</p>
 </div>
 
 ## What I owned
@@ -110,7 +110,7 @@ Good deposition means uniform areal density, low edge bias, usable placement for
 <div class="artifact-table-wrap"><table class="artifact-table"><thead><tr><th>Area</th><th>Contribution</th></tr></thead><tbody>
 <tr><td>Experimental design</td><td>Substrate/backing comparisons, droplet setup, run-to-run comparison, and early screen logic.</td></tr>
 <tr><td>Imaging</td><td>Top-view and side-view capture for footprint, contact-line, and final placement behavior.</td></tr>
-<tr><td>Analysis</td><td>Python/ImageJ extraction of normalized contact-line traces and deposition metrics.</td></tr>
+<tr><td>Analysis</td><td>Python/OpenCV and ImageJ extraction of normalized contact-line traces, placement metrics, and deposition-screen outputs.</td></tr>
 <tr><td>Decision output</td><td>Early gate for whether a substrate/backing condition should advance toward downstream interconnect printing.</td></tr>
 </tbody></table></div>
 

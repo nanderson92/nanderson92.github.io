@@ -10,7 +10,7 @@ next_title: Stem-Cell Microencapsulation
 next_url: /projects/microencapsulation-process-development/
 metric_chips: '<span>Video → metric</span><span>Segmentation workflow</span>'
 description: Image-analysis case file turning microscopy videos into calibrated droplet traces, critical-to-quality measurement notes, and QC-ready outputs.
-subtitle: Microscopy-video workflows for converting droplet behavior into calibrated time-series outputs.
+subtitle: Python/OpenCV microscopy-video workflows for converting droplet behavior into calibrated time-series outputs.
 body_class: case-file-page droplet-image-analysis-workflows
 affiliation: Filler Lab · Georgia Tech
 ---
@@ -18,12 +18,12 @@ affiliation: Filler Lab · Georgia Tech
 <section class="analysis-pipeline-card lead-pipeline-card">
  <p class="artifact-label">METHOD PIPELINE</p>
  <h2>Raw video → calibration → object detection → track linking → radial/tangential decomposition → dashboard export</h2>
- <p>The workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
+ <p>The Python/OpenCV workflow turns microscopy frames into auditable process metrics, so runs can be compared by motion, coverage, and deposition behavior instead of visual impression alone.</p>
 </section>
 
 <section class="ownership-callout ownership-callout-large lead-ownership-callout">
- <p><strong>What I owned:</strong> the raw-video-to-metric workflow, frame calibration logic, track-linking checks, radial/tangential decomposition, and dashboard export structure.</p>
- <p class="ownership-metric"><strong>Quantified context:</strong> the exported dashboard carries four time-series views from a representative droplet run: population speed, radial velocity, angular-velocity tendency, and tracking coverage.</p>
+ <p><strong>What I owned:</strong> the Python/OpenCV raw-video-to-metric workflow, frame calibration logic, track-linking checks, radial/tangential decomposition, and dashboard export structure.</p>
+ <p class="ownership-metric"><strong>Quantified context:</strong> the exported dashboard carries four time-series views from each processed droplet run: population speed, radial velocity, angular-velocity tendency, and tracking coverage.</p>
 </section>
 
 <section class="artifact-grid artifact-grid-two" aria-label="Droplet image analysis artifacts">
@@ -51,7 +51,7 @@ affiliation: Filler Lab · Georgia Tech
  <article class="artifact-card setup-artifact-card">
   <p class="artifact-label">MEASUREMENT SETUP</p>
   <figure class="artifact-figure">
-   <div class="artifact-image-frame frame-photo"><img src="{{ '/assets/images/artifact-rame-hart-goniometer-cropped.webp' | relative_url }}" alt="Cropped Rame-Hart goniometer setup" loading="lazy"></div>
+   <div class="artifact-image-frame frame-photo"><img src="{{ '/assets/images/artifact-rame-hart-goniometer-cropped.jpg' | relative_url }}" alt="Cropped Rame-Hart goniometer setup" loading="lazy"></div>
    <figcaption><strong>Figure 4. Rame-Hart goniometer setup.</strong> Setup image for droplet shape, contact angle, and volume/time characterization.</figcaption>
   </figure>
  </article>
@@ -63,6 +63,7 @@ affiliation: Filler Lab · Georgia Tech
   <li><strong>System:</strong> microscopy videos of droplets used to compare wetting, contact-line motion, and deposition behavior.</li>
   <li><strong>Inputs handled:</strong> frame rate, pixel calibration, crop region, segmentation settings, and trace export format.</li>
   <li><strong>Outputs:</strong> normalized radius traces, contact-line classifications, critical-to-quality measurement notes, and export-ready tables for comparing runs.</li>
+  <li><strong>Stack:</strong> Python, OpenCV, ImageJ/Fiji, and export-ready plotting for run comparison.</li>
  </ul>
 </section>
 

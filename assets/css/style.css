@@ -1750,3 +1750,20 @@ abbr{border-bottom:0!important;text-decoration:none!important;cursor:inherit!imp
     background:rgba(5,10,24,.56)!important;
   }
 }
+
+
+/* --- Resume-specific credibility/readability pass: May 2026 --- */
+:root{--muted:#475569!important;}
+p{color:rgba(15,23,42,.88);}
+.hero-lede,.card p,.case-card p,.portfolio-card p,.artifact-wall-card p,.artifact-card p,.case-file-page p{font-size:1.0625rem;}
+.technical-proof,.home-library,.project-strip,.artifact-wall-section,.case-group,.standard-card-section,.background-depth,.timeline-feature,.background-tool-sidebar{padding-block:clamp(3.5rem,6vw,4.5rem)!important;}
+.homepage-proof-first{padding-bottom:clamp(2.75rem,5vw,4rem)!important;}
+.supporting-home-cases{padding-top:clamp(2.75rem,5vw,4rem)!important;}
+.validation-target-card figure img,.validation-target-grid img{display:block;width:100%;max-width:720px;height:auto;min-height:260px;object-fit:contain;}
+.setup-artifact-card .artifact-image-frame img,.frame-photo img{display:block;width:100%;height:auto;object-fit:contain;}
+.resume-specificity-callout,.lead-result-callout,.leadership-grid{border:1px solid rgba(8,112,139,.16);background:#fff;border-radius:24px;box-shadow:0 18px 48px rgba(15,23,42,.06);padding:clamp(22px,3vw,34px);}
+.resume-specificity-callout strong,.lead-result-callout strong{color:#07111f;}
+.leadership-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.leadership-grid article{padding:20px;border-radius:18px;background:#f8fafc;border:1px solid rgba(15,23,42,.08);}
+.leadership-grid h3{margin-top:0;}
+@media(max-width:800px){.leadership-grid{grid-template-columns:1fr;}}
