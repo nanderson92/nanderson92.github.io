@@ -1918,3 +1918,90 @@ p{color:rgba(15,23,42,.88);}
     border-radius:22px 22px 0 0!important;
   }
 }
+
+
+/* --- Homepage final polish pass: hero scale, image crop, section transition, nav hierarchy --- */
+.home-page .startup-hero-rebuilt.cell-microscopy-hero{
+  background-position:68% center!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+  background-position:68% center!important;
+  filter:brightness(.80) contrast(.90) saturate(.86)!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+  background:
+    linear-gradient(90deg,
+      rgba(4,8,14,.82) 0%,
+      rgba(4,8,14,.62) 38%,
+      rgba(4,8,14,.22) 68%,
+      rgba(4,8,14,.05) 100%
+    ),
+    linear-gradient(180deg,
+      rgba(4,8,14,.18) 0%,
+      rgba(4,8,14,.04) 45%,
+      rgba(4,8,14,.42) 100%
+    )!important;
+}
+.home-page .cell-microscopy-hero .hero-copy{
+  max-width:760px!important;
+}
+.home-page .cell-microscopy-hero .hero-copy h1{
+  font-size:clamp(4rem, 6.6vw, 7.2rem)!important;
+  line-height:.92!important;
+  letter-spacing:-.065em!important;
+  max-width:760px!important;
+}
+.home-page .cell-microscopy-hero .hero-lede{
+  max-width:680px!important;
+}
+.home-page .cell-microscopy-hero .hero-eyebrow{
+  margin-bottom:22px!important;
+}
+.home-page .technical-proof.homepage-proof-first{
+  margin-top:-36px!important;
+  padding-top:48px!important;
+}
+.home-page .technical-proof.homepage-proof-first .section-heading{
+  padding-top:0!important;
+}
+.topbar-brand.brand-mark{
+  transition:background .18s ease, transform .18s ease, box-shadow .18s ease!important;
+  padding:6px 10px 6px 6px!important;
+  border-radius:999px!important;
+}
+.topbar-brand.brand-mark:hover{
+  background:rgba(15,23,42,.06)!important;
+  transform:translateY(-1px)!important;
+  box-shadow:0 8px 22px rgba(15,23,42,.08)!important;
+}
+.brand-monogram{
+  width:34px!important;
+  height:34px!important;
+  font-size:.84rem!important;
+}
+.topbar-nav{
+  gap:clamp(24px,2.5vw,36px)!important;
+}
+.topbar-resume.nav-text-resume{
+  padding:8px 13px!important;
+  border-radius:999px!important;
+  background:rgba(15,23,42,.06)!important;
+  color:#0f172a!important;
+  font-weight:800!important;
+}
+.topbar-resume.nav-text-resume:hover{
+  background:rgba(8,112,139,.12)!important;
+  color:#075f75!important;
+}
+@media (max-width:960px){
+  .home-page .cell-microscopy-hero .hero-copy h1{
+    font-size:clamp(3.05rem, 12vw, 5.25rem)!important;
+  }
+}
+@media (max-width:480px){
+  .home-page .technical-proof.homepage-proof-first{
+    margin-top:-28px!important;
+    padding-top:40px!important;
+  }
+}
+
