@@ -1767,3 +1767,154 @@ p{color:rgba(15,23,42,.88);}
 .leadership-grid article{padding:20px;border-radius:18px;background:#f8fafc;border:1px solid rgba(15,23,42,.08);}
 .leadership-grid h3{margin-top:0;}
 @media(max-width:800px){.leadership-grid{grid-template-columns:1fr;}}
+
+
+/* --- Homepage hero composition polish: recruiter-facing chip hero --- */
+.home-page .startup-hero-rebuilt.cell-microscopy-hero{
+  background:#071020 url('../images/homepage-hero-chip-bg.jpg') 63% center / cover no-repeat!important;
+  min-height:clamp(690px,84vh,850px)!important;
+  padding-top:clamp(124px,10vw,164px)!important;
+  padding-bottom:clamp(86px,7vw,112px)!important;
+  isolation:isolate!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+  background:url('../images/homepage-hero-chip-bg.jpg') 63% center / cover no-repeat!important;
+  opacity:1!important;
+  filter:brightness(.80) contrast(.90) saturate(.86)!important;
+  transform:scale(1.02)!important;
+  z-index:0!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+  z-index:1!important;
+  background:
+    linear-gradient(90deg, rgba(5,10,18,.82) 0%, rgba(5,10,18,.60) 36%, rgba(5,10,18,.18) 68%, rgba(5,10,18,.05) 100%),
+    linear-gradient(180deg, rgba(5,10,18,.25) 0%, rgba(5,10,18,.05) 45%, rgba(5,10,18,.42) 100%)!important;
+}
+.home-page .cell-microscopy-hero .hero-inner{
+  width:min(1180px, calc(100% - 48px))!important;
+  max-width:none!important;
+  margin-inline:auto!important;
+  padding-inline:0!important;
+}
+.home-page .cell-microscopy-hero .hero-copy{
+  max-width:760px!important;
+  position:relative!important;
+  z-index:2!important;
+}
+.home-page .cell-microscopy-hero .hero-copy h1{
+  max-width:760px!important;
+  font-size:clamp(4rem, 7.2vw, 7.8rem)!important;
+  line-height:.92!important;
+  letter-spacing:-.06em!important;
+  color:#fff!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.20), 0 1px 2px rgba(0,0,0,.20)!important;
+}
+.home-page .cell-microscopy-hero .hero-lede{
+  display:block!important;
+  max-width:760px!important;
+  width:fit-content!important;
+  margin-top:22px!important;
+  padding:18px 22px!important;
+  border-radius:18px!important;
+  background:rgba(10,16,28,.58)!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  backdrop-filter:blur(18px)!important;
+  -webkit-backdrop-filter:blur(18px)!important;
+  box-shadow:0 18px 50px rgba(0,0,0,.25)!important;
+  color:rgba(255,255,255,.94)!important;
+  font-size:clamp(1.05rem,1.34vw,1.25rem)!important;
+  line-height:1.62!important;
+  letter-spacing:-.015em!important;
+  text-shadow:0 1px 8px rgba(0,0,0,.16)!important;
+}
+.home-page .cell-microscopy-hero .credential-bar{
+  margin-top:20px!important;
+  margin-bottom:24px!important;
+  background:rgba(7,14,32,.46)!important;
+  border-color:rgba(255,255,255,.20)!important;
+  box-shadow:0 14px 36px rgba(0,0,0,.18)!important;
+  color:#f8fafc!important;
+}
+.home-page .cell-microscopy-hero .hero-actions{
+  align-items:center!important;
+  gap:14px!important;
+}
+.home-page .cell-microscopy-hero .hero-actions .button.primary{
+  background:linear-gradient(135deg,#0ea5c6,#0284c7)!important;
+  color:#fff!important;
+  box-shadow:0 14px 34px rgba(14,165,198,.35)!important;
+}
+.home-page .cell-microscopy-hero .hero-actions .button.secondary{
+  background:rgba(255,255,255,.88)!important;
+  color:#0f172a!important;
+  border-color:rgba(255,255,255,.52)!important;
+  box-shadow:0 10px 26px rgba(0,0,0,.10)!important;
+}
+.home-page .cell-microscopy-hero .hero-actions .button.tertiary{
+  background:rgba(255,255,255,.68)!important;
+  color:#0f172a!important;
+  border:1px solid rgba(255,255,255,.44)!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.08)!important;
+}
+.home-page .cell-microscopy-hero .hero-actions .button:hover{
+  transform:translateY(-2px)!important;
+}
+.home-page .technical-proof.homepage-proof-first{
+  margin-top:-48px!important;
+  padding-top:56px!important;
+  border-radius:28px 28px 0 0!important;
+  box-shadow:0 -20px 54px rgba(15,23,42,.12)!important;
+}
+.topbar{
+  height:72px!important;
+  background:rgba(250,250,248,.88)!important;
+  backdrop-filter:blur(18px)!important;
+  -webkit-backdrop-filter:blur(18px)!important;
+  border-bottom:1px solid rgba(15,23,42,.08)!important;
+}
+.topbar-nav{
+  gap:clamp(20px,2.2vw,32px)!important;
+}
+.topbar-nav a{
+  font-size:.92rem!important;
+  font-weight:700!important;
+  letter-spacing:-.01em!important;
+}
+@media (max-width:960px){
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero{
+    background-position:68% center!important;
+    padding-top:104px!important;
+    padding-bottom:88px!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+    background-position:68% center!important;
+    filter:brightness(.76) contrast(.90) saturate(.84)!important;
+  }
+  .home-page .startup-hero-rebuilt.cell-microscopy-hero::after{
+    background:
+      linear-gradient(90deg, rgba(5,10,18,.86) 0%, rgba(5,10,18,.70) 54%, rgba(5,10,18,.28) 100%),
+      linear-gradient(180deg, rgba(5,10,18,.22) 0%, rgba(5,10,18,.10) 54%, rgba(5,10,18,.46) 100%)!important;
+  }
+  .home-page .cell-microscopy-hero .hero-inner{
+    width:min(100% - 36px, 760px)!important;
+  }
+  .home-page .cell-microscopy-hero .hero-copy h1{
+    font-size:clamp(3.05rem, 13vw, 5.6rem)!important;
+    max-width:100%!important;
+  }
+  .home-page .cell-microscopy-hero .hero-lede{
+    max-width:100%!important;
+    width:auto!important;
+    padding:16px 18px!important;
+  }
+}
+@media (max-width:480px){
+  .home-page .cell-microscopy-hero .hero-actions .button{
+    white-space:nowrap!important;
+  }
+  .home-page .technical-proof.homepage-proof-first{
+    margin-top:-34px!important;
+    padding-top:42px!important;
+    border-radius:22px 22px 0 0!important;
+  }
+}
