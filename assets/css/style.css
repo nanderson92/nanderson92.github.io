@@ -2005,3 +2005,76 @@ p{color:rgba(15,23,42,.88);}
   }
 }
 
+
+
+/* --- Homepage final alignment refinements: hero text left, tighter title, calmer card transition --- */
+@media (min-width: 1040px){
+  .home-page .cell-microscopy-hero .hero-inner{
+    transform:translateX(-70px)!important;
+  }
+}
+@media (min-width: 1440px){
+  .home-page .cell-microscopy-hero .hero-inner{
+    transform:translateX(-84px)!important;
+  }
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero{
+  background-position:68% center!important;
+}
+.home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
+  background-position:68% center!important;
+}
+.home-page .cell-microscopy-hero .hero-copy{
+  max-width:720px!important;
+}
+.home-page .cell-microscopy-hero .hero-copy h1{
+  font-size:clamp(4rem, 6.2vw, 7rem)!important;
+  max-width:720px!important;
+  line-height:.92!important;
+  letter-spacing:-.065em!important;
+}
+.home-page .cell-microscopy-hero .hero-lede{
+  max-width:660px!important;
+  padding:16px 22px!important;
+  border-radius:16px!important;
+}
+.home-page .technical-proof.homepage-proof-first{
+  margin-top:-34px!important;
+  padding-top:44px!important;
+}
+.home-page .technical-proof.homepage-proof-first .section-heading{
+  margin-bottom:24px!important;
+}
+.home-page .technical-proof.homepage-proof-first .section-heading h2{
+  margin-bottom:10px!important;
+}
+.home-page .technical-proof.homepage-proof-first .section-heading p{
+  max-width:720px!important;
+  color:#334155!important;
+}
+.topbar{
+  padding-left:max(24px, calc((100vw - 1280px) / 2 + 32px))!important;
+  padding-right:max(24px, calc((100vw - 1280px) / 2 + 32px))!important;
+}
+@media (max-width: 1039px){
+  .home-page .cell-microscopy-hero .hero-inner{
+    transform:none!important;
+  }
+}
+@media (max-width: 960px){
+  .home-page .cell-microscopy-hero .hero-copy,
+  .home-page .cell-microscopy-hero .hero-copy h1,
+  .home-page .cell-microscopy-hero .hero-lede{
+    max-width:100%!important;
+  }
+  .topbar{
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+}
+@media (max-width:480px){
+  .home-page .technical-proof.homepage-proof-first{
+    margin-top:-26px!important;
+    padding-top:38px!important;
+  }
+}
