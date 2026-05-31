@@ -2021,10 +2021,10 @@ footer h2{
   letter-spacing:-0.04em!important;
 }
 .home-page .startup-hero-rebuilt.cell-microscopy-hero{
-  background:#050a12 url('../images/homepage-hero-real-artifact.webp') 55% center / cover no-repeat!important;
+  background:#050a12 url('../images/homepage-hero-chip-bg.webp') 55% center / cover no-repeat!important;
 }
 .home-page .startup-hero-rebuilt.cell-microscopy-hero::before{
-  background:url('../images/homepage-hero-real-artifact.webp') 55% center / cover no-repeat!important;
+  background:url('../images/homepage-hero-chip-bg.webp') 55% center / cover no-repeat!important;
   filter:brightness(.74) contrast(.94) saturate(.88)!important;
   opacity:1!important;
 }
